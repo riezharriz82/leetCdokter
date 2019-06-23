@@ -1,20 +1,21 @@
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestValidParentheses {
 
-	@Test
-	public void test() {
-		assertTrue(new ValidParentheses().isValid("()"));
+    @Test
+    public void test() {
+        assertTrue(new ValidParentheses().isValid("()"));
 
-		assertTrue(new ValidParentheses().isValid("()[]{}"));
+        assertTrue(new ValidParentheses().isValid("()[]{}"));
 
-		assertTrue(new ValidParentheses().isValid("(]") == false);
+        assertEquals(false, new ValidParentheses().isValid("(]"));
 
-		assertTrue(new ValidParentheses().isValid("([)]") == false);
+        assertEquals(false, new ValidParentheses().isValid("([)]"));
 
-		assertTrue(new ValidParentheses().isValid("{[]}"));
-	}
+        assertTrue(new ValidParentheses().isValid("{[]}"));
+    }
 
 }
