@@ -1,0 +1,7 @@
+<root>
+    <item name='java.util.function.BiConsumer void accept(T, U)'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val name="pure" val="true"/>
+        </annotation>
+    </item>
+</root>
