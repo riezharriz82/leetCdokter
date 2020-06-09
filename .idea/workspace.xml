@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solved easy k-diff">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CanPlaceFlowers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode-practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode-practice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KClosestPointToOrigin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LongestCommonPrefix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumberOfIslands.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PalindromeNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReverseInteger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ValidParentheses.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/KClosestPointToOriginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KClosestPointToOriginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/NumberOfIslandsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NumberOfIslandsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestLongestCommonPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestLongestCommonPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestPalindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPalindromeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestReverseInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestReverseInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestValidParentheses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,20 +28,12 @@
       <GitPushTagMode />
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1OYjUozR2wA5XfxN4lSupdXEdA9" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -83,30 +63,48 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ThirdMaximumNumberTest">
-    <configuration name="BuddyStringsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CanPlaceFlowersTest">
+    <configuration name="CanPlaceFlowersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BuddyStringsTest" />
+      <option name="MAIN_CLASS_NAME" value="CanPlaceFlowersTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountPrimesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CountPrimesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountPrimesTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CountPrimesTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThirdMaximumNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KDiffPairInArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ThirdMaximumNumberTest" />
+      <option name="MAIN_CLASS_NAME" value="KDiffPairInArrayTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThirdMaximumNumberTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KDiffPairInArrayTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ThirdMaximumNumberTest" />
+      <option name="MAIN_CLASS_NAME" value="KDiffPairInArrayTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -123,49 +121,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Java Scratch.Scratch" />
-      <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.BuddyStringsTest.test" />
-      <item itemvalue="JUnit.ThirdMaximumNumberTest" />
-      <item itemvalue="JUnit.ThirdMaximumNumberTest.test" />
+      <item itemvalue="JUnit.CountPrimesTest" />
+      <item itemvalue="JUnit.CountPrimesTest.test" />
+      <item itemvalue="JUnit.KDiffPairInArrayTest" />
+      <item itemvalue="JUnit.KDiffPairInArrayTest.test" />
+      <item itemvalue="JUnit.CanPlaceFlowersTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ThirdMaximumNumberTest" />
-        <item itemvalue="JUnit.ThirdMaximumNumberTest.test" />
-        <item itemvalue="JUnit.BuddyStringsTest.test" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Java Scratch.Scratch (1)" />
+        <item itemvalue="JUnit.CanPlaceFlowersTest" />
+        <item itemvalue="JUnit.KDiffPairInArrayTest" />
+        <item itemvalue="JUnit.KDiffPairInArrayTest.test" />
+        <item itemvalue="JUnit.CountPrimesTest.test" />
+        <item itemvalue="JUnit.CountPrimesTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -182,7 +154,42 @@
       <option name="project" value="LOCAL" />
       <updated>1562499782584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Solved easy shortest unsorted continuous subarray">
+      <created>1591645201043</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591645201043</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Solved easy count primes">
+      <created>1591649574170</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591649574170</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update .gitignore">
+      <created>1591649667271</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591649667271</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update .gitignore">
+      <created>1591649729908</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591649729908</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Solved easy k-diff">
+      <created>1591691254640</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591691254640</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,71 +197,94 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Solved medium KClosestPointToOrigin using QuickSelect and MaxHeap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved medium KClosestPointToOrigin using QuickSelect and MaxHeap" />
+    <MESSAGE value="Solved easy shortest unsorted continuous subarray" />
+    <MESSAGE value="Solved easy count primes" />
+    <MESSAGE value="update .gitignore" />
+    <MESSAGE value="Solved easy k-diff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved easy k-diff" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="183" key="#Project_Structure" timestamp="1590521162271">
+    <state x="552" y="183" key="#Project_Structure" timestamp="1591640833812">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1590521162271" />
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590521729024">
+    <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1591640833812" />
+    <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1591649760836">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590521729024" />
+    <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1591649760836" />
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591640262837">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1591640262837" />
     <state x="756" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590521126547">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="756" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1590521126547" />
-    <state width="1877" height="254" key="GridCell.Tab.0.bottom" timestamp="1591295099252">
+    <state x="540" y="102" key="CommitChangelistDialog2" timestamp="1591691254163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="254" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591295099252" />
-    <state width="1877" height="254" key="GridCell.Tab.0.center" timestamp="1591295099252">
+    <state x="540" y="102" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591691254163" />
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1591729451067">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="254" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591295099252" />
-    <state width="1877" height="254" key="GridCell.Tab.0.left" timestamp="1591295099252">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591729451067" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1591729451067">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="254" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591295099252" />
-    <state width="1877" height="254" key="GridCell.Tab.0.right" timestamp="1591295099252">
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591729451067" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1591729451067">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="254" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591295099252" />
-    <state width="1877" height="374" key="GridCell.Tab.1.bottom" timestamp="1590522617774">
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591729451067" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1591729451067">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1590522617774" />
-    <state width="1877" height="374" key="GridCell.Tab.1.center" timestamp="1590522617774">
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591729451067" />
+    <state width="1877" height="373" key="GridCell.Tab.1.bottom" timestamp="1591689823982">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1590522617774" />
-    <state width="1877" height="374" key="GridCell.Tab.1.left" timestamp="1590522617774">
+    <state width="1877" height="373" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591689823982" />
+    <state width="1877" height="373" key="GridCell.Tab.1.center" timestamp="1591689823982">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1590522617774" />
-    <state width="1877" height="374" key="GridCell.Tab.1.right" timestamp="1590522617774">
+    <state width="1877" height="373" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591689823982" />
+    <state width="1877" height="373" key="GridCell.Tab.1.left" timestamp="1591689823982">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="374" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1590522617774" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1590522251483">
+    <state width="1877" height="373" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591689823982" />
+    <state width="1877" height="373" key="GridCell.Tab.1.right" timestamp="1591689823982">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1590522251483" />
+    <state width="1877" height="373" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591689823982" />
+    <state x="461" y="167" key="SettingsEditor" timestamp="1591641085894">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1591641085894" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591691263240">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591691263240" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590521839325" />
+    <state width="600" height="398" key="javadoc.popup.new" timestamp="1591689467727">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1591689467727" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1591294366029">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -267,6 +297,11 @@
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java</url>
           <line>14</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/KDiffPairInArray.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
