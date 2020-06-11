@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solved RepeatedStringMatch. TODO implement it by robin karp">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,22 +79,21 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShuffleTheArrayTest">
-    <configuration name="RepeatedStringMatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LengthofLastWordTest">
+    <configuration name="LengthofLastWordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RepeatedStringMatchTest" />
+      <option name="MAIN_CLASS_NAME" value="LengthofLastWordTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepeatedStringMatchTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepeatedStringMatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RepeatedStringMatchTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,18 +139,18 @@
     <list>
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.RepeatedStringMatchTest" />
-      <item itemvalue="JUnit.RepeatedStringMatchTest.test" />
       <item itemvalue="JUnit.SumOfSquareNumbersTest" />
       <item itemvalue="JUnit.ShuffleTheArrayTest" />
       <item itemvalue="JUnit.ShuffleTheArrayTest.test" />
+      <item itemvalue="JUnit.LengthofLastWordTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LengthofLastWordTest" />
         <item itemvalue="JUnit.ShuffleTheArrayTest" />
         <item itemvalue="JUnit.ShuffleTheArrayTest.test" />
         <item itemvalue="JUnit.SumOfSquareNumbersTest" />
         <item itemvalue="JUnit.RepeatedStringMatchTest" />
-        <item itemvalue="JUnit.RepeatedStringMatchTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591818856458</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Solved two easy ShuffleTheArray and SumOfSquareNumbers">
+      <created>1591901578955</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591901578955</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update link in SumOfSquareNumbers">
+      <created>1591902134204</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591902134204</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +256,9 @@
     <MESSAGE value="Solved easy k-diff" />
     <MESSAGE value="Solved easy CanPlaceFlowers" />
     <MESSAGE value="Solved RepeatedStringMatch. TODO implement it by robin karp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved RepeatedStringMatch. TODO implement it by robin karp" />
+    <MESSAGE value="Solved two easy ShuffleTheArray and SumOfSquareNumbers" />
+    <MESSAGE value="Update link in SumOfSquareNumbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update link in SumOfSquareNumbers" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -265,26 +280,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="756" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1590521126547" />
-    <state x="540" y="102" key="CommitChangelistDialog2" timestamp="1591818873452">
+    <state x="540" y="102" key="CommitChangelistDialog2" timestamp="1591902133714">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="540" y="102" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591818873452" />
-    <state width="1877" height="370" key="GridCell.Tab.0.bottom" timestamp="1591901357350">
+    <state x="540" y="102" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591902133714" />
+    <state width="1877" height="246" key="GridCell.Tab.0.bottom" timestamp="1591902619563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="370" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
-    <state width="1877" height="370" key="GridCell.Tab.0.center" timestamp="1591901357350">
+    <state width="1877" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591902619563" />
+    <state width="1877" height="246" key="GridCell.Tab.0.center" timestamp="1591902619563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="370" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
-    <state width="1877" height="370" key="GridCell.Tab.0.left" timestamp="1591901357350">
+    <state width="1877" height="246" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591902619563" />
+    <state width="1877" height="246" key="GridCell.Tab.0.left" timestamp="1591902619563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="370" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
-    <state width="1877" height="370" key="GridCell.Tab.0.right" timestamp="1591901357350">
+    <state width="1877" height="246" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591902619563" />
+    <state width="1877" height="246" key="GridCell.Tab.0.right" timestamp="1591902619563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="370" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
+    <state width="1877" height="246" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591902619563" />
     <state width="1877" height="370" key="GridCell.Tab.1.bottom" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -309,10 +324,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1591898513326" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591818859464">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591902135497">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591818859464" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591902135497" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -321,10 +336,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1591818794930" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1591294366029">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1591902435616">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1591294366029" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1591902435616" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -346,7 +361,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ShuffleTheArray.java</url>
-          <line>12</line>
+          <line>11</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
