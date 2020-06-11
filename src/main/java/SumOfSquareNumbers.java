@@ -33,4 +33,7 @@ public class SumOfSquareNumbers {
         }
         return false;
     }
+
+    //Another solution can be by leveraging a square number is 1+3+5+7+..
+    //See https://leetcode.com/problems/valid-perfect-square/discuss/83874/A-square-number-is-1%2B3%2B5%2B7%2B...-JAVA-code
 }
