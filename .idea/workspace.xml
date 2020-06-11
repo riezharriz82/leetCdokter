@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solved easy k-diff">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CanPlaceFlowers.java" afterDir="false" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solved RepeatedStringMatch. TODO implement it by robin karp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode-practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode-practice.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,50 +79,50 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CanPlaceFlowersTest">
-    <configuration name="CanPlaceFlowersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ShuffleTheArrayTest">
+    <configuration name="RepeatedStringMatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CanPlaceFlowersTest" />
+      <option name="MAIN_CLASS_NAME" value="RepeatedStringMatchTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountPrimesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepeatedStringMatchTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CountPrimesTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountPrimesTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CountPrimesTest" />
+      <option name="MAIN_CLASS_NAME" value="RepeatedStringMatchTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KDiffPairInArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShuffleTheArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KDiffPairInArrayTest" />
+      <option name="MAIN_CLASS_NAME" value="ShuffleTheArrayTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KDiffPairInArrayTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShuffleTheArrayTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KDiffPairInArrayTest" />
+      <option name="MAIN_CLASS_NAME" value="ShuffleTheArrayTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumOfSquareNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SumOfSquareNumbersTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,19 +139,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.CountPrimesTest" />
-      <item itemvalue="JUnit.CountPrimesTest.test" />
-      <item itemvalue="JUnit.KDiffPairInArrayTest" />
-      <item itemvalue="JUnit.KDiffPairInArrayTest.test" />
-      <item itemvalue="JUnit.CanPlaceFlowersTest" />
+      <item itemvalue="JUnit.RepeatedStringMatchTest" />
+      <item itemvalue="JUnit.RepeatedStringMatchTest.test" />
+      <item itemvalue="JUnit.SumOfSquareNumbersTest" />
+      <item itemvalue="JUnit.ShuffleTheArrayTest" />
+      <item itemvalue="JUnit.ShuffleTheArrayTest.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CanPlaceFlowersTest" />
-        <item itemvalue="JUnit.KDiffPairInArrayTest" />
-        <item itemvalue="JUnit.KDiffPairInArrayTest.test" />
-        <item itemvalue="JUnit.CountPrimesTest.test" />
-        <item itemvalue="JUnit.CountPrimesTest" />
+        <item itemvalue="JUnit.ShuffleTheArrayTest" />
+        <item itemvalue="JUnit.ShuffleTheArrayTest.test" />
+        <item itemvalue="JUnit.SumOfSquareNumbersTest" />
+        <item itemvalue="JUnit.RepeatedStringMatchTest" />
+        <item itemvalue="JUnit.RepeatedStringMatchTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591691254640</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Solved easy CanPlaceFlowers">
+      <created>1591729896890</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591729896890</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Solved RepeatedStringMatch. TODO implement it by robin karp">
+      <created>1591818856458</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591818856458</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +241,9 @@
     <MESSAGE value="Solved easy count primes" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="Solved easy k-diff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved easy k-diff" />
+    <MESSAGE value="Solved easy CanPlaceFlowers" />
+    <MESSAGE value="Solved RepeatedStringMatch. TODO implement it by robin karp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved RepeatedStringMatch. TODO implement it by robin karp" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -233,58 +265,62 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="756" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1590521126547" />
-    <state x="540" y="102" key="CommitChangelistDialog2" timestamp="1591691254163">
+    <state x="540" y="102" key="CommitChangelistDialog2" timestamp="1591818873452">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="540" y="102" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591691254163" />
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1591729451067">
+    <state x="540" y="102" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591818873452" />
+    <state width="1877" height="370" key="GridCell.Tab.0.bottom" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591729451067" />
-    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1591729451067">
+    <state width="1877" height="370" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
+    <state width="1877" height="370" key="GridCell.Tab.0.center" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591729451067" />
-    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1591729451067">
+    <state width="1877" height="370" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
+    <state width="1877" height="370" key="GridCell.Tab.0.left" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591729451067" />
-    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1591729451067">
+    <state width="1877" height="370" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
+    <state width="1877" height="370" key="GridCell.Tab.0.right" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591729451067" />
-    <state width="1877" height="373" key="GridCell.Tab.1.bottom" timestamp="1591689823982">
+    <state width="1877" height="370" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
+    <state width="1877" height="370" key="GridCell.Tab.1.bottom" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591689823982" />
-    <state width="1877" height="373" key="GridCell.Tab.1.center" timestamp="1591689823982">
+    <state width="1877" height="370" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
+    <state width="1877" height="370" key="GridCell.Tab.1.center" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591689823982" />
-    <state width="1877" height="373" key="GridCell.Tab.1.left" timestamp="1591689823982">
+    <state width="1877" height="370" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
+    <state width="1877" height="370" key="GridCell.Tab.1.left" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591689823982" />
-    <state width="1877" height="373" key="GridCell.Tab.1.right" timestamp="1591689823982">
+    <state width="1877" height="370" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
+    <state width="1877" height="370" key="GridCell.Tab.1.right" timestamp="1591901357350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="373" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591689823982" />
+    <state width="1877" height="370" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591901357350" />
     <state x="461" y="167" key="SettingsEditor" timestamp="1591641085894">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1591641085894" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591691263240">
+    <state x="681" y="266" width="540" height="524" key="StructurePopup" timestamp="1591898513326">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591691263240" />
+    <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1591898513326" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591818859464">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591818859464" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590521839325" />
-    <state width="600" height="398" key="javadoc.popup.new" timestamp="1591689467727">
+    <state width="600" height="398" key="javadoc.popup.new" timestamp="1591818794930">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1591689467727" />
+    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1591818794930" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1591294366029">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -302,6 +338,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/KDiffPairInArray.java</url>
           <line>42</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RepeatedStringMatch.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ShuffleTheArray.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
