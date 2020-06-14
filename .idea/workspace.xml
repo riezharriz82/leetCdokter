@@ -79,48 +79,47 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RotateArrayTest.test">
-    <configuration name="LengthofLastWordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in leetcode-practice">
+    <configuration name="All in leetcode-practice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LengthofLastWordTest" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountofSmallerNumbersAfterSelfTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CountofSmallerNumbersAfterSelfTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RotateArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountofSmallerNumbersAfterSelfTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RotateArrayTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RotateArrayTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RotateArrayTest" />
+      <option name="MAIN_CLASS_NAME" value="CountofSmallerNumbersAfterSelfTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShuffleTheArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateTargetArrayinGivenOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShuffleTheArrayTest" />
+      <option name="MAIN_CLASS_NAME" value="CreateTargetArrayinGivenOrderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShuffleTheArrayTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateTargetArrayinGivenOrderTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShuffleTheArrayTest" />
+      <option name="MAIN_CLASS_NAME" value="CreateTargetArrayinGivenOrderTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -139,19 +138,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.LengthofLastWordTest" />
-      <item itemvalue="JUnit.ShuffleTheArrayTest" />
-      <item itemvalue="JUnit.ShuffleTheArrayTest.test" />
-      <item itemvalue="JUnit.RotateArrayTest" />
-      <item itemvalue="JUnit.RotateArrayTest.test" />
+      <item itemvalue="JUnit.CreateTargetArrayinGivenOrderTest" />
+      <item itemvalue="JUnit.CreateTargetArrayinGivenOrderTest.test" />
+      <item itemvalue="JUnit.CountofSmallerNumbersAfterSelfTest" />
+      <item itemvalue="JUnit.CountofSmallerNumbersAfterSelfTest.test" />
+      <item itemvalue="JUnit.All in leetcode-practice" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RotateArrayTest.test" />
-        <item itemvalue="JUnit.RotateArrayTest" />
-        <item itemvalue="JUnit.LengthofLastWordTest" />
-        <item itemvalue="JUnit.ShuffleTheArrayTest" />
-        <item itemvalue="JUnit.ShuffleTheArrayTest.test" />
+        <item itemvalue="JUnit.All in leetcode-practice" />
+        <item itemvalue="JUnit.CreateTargetArrayinGivenOrderTest" />
+        <item itemvalue="JUnit.CountofSmallerNumbersAfterSelfTest" />
+        <item itemvalue="JUnit.CountofSmallerNumbersAfterSelfTest.test" />
+        <item itemvalue="JUnit.CreateTargetArrayinGivenOrderTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591903544581</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Solved easy RotateArray">
+      <created>1591981126059</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1591981126059</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,7 +273,8 @@
     <MESSAGE value="Solved two easy ShuffleTheArray and SumOfSquareNumbers" />
     <MESSAGE value="Update link in SumOfSquareNumbers" />
     <MESSAGE value="Solved easy LengthOfLastWords" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved easy LengthOfLastWords" />
+    <MESSAGE value="Solved easy RotateArray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved easy RotateArray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -277,6 +284,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1591640833812" />
+    <state x="540" y="380" key="#com.intellij.debugger.ui.breakpoints.EditClassFiltersDialog" timestamp="1592130861520">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="540" y="380" key="#com.intellij.debugger.ui.breakpoints.EditClassFiltersDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592130861520" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1592119856764">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1592119856764" />
+    <state x="689" y="315" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592130784851">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="689" y="315" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592130784851" />
     <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1591649760836">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -289,46 +308,50 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="756" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1590521126547" />
+    <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1592145012474">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592145012474" />
     <state x="715" y="228" key="#xdebugger.evaluate" timestamp="1591980190475">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1591980190475" />
-    <state x="540" y="102" key="CommitChangelistDialog2" timestamp="1591903544103">
+    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2" timestamp="1591981125494">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="540" y="102" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591903544103" />
-    <state width="1877" height="368" key="GridCell.Tab.0.bottom" timestamp="1591980244188">
+    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1591981125494" />
+    <state width="1877" height="238" key="GridCell.Tab.0.bottom" timestamp="1592148323741">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591980244188" />
-    <state width="1877" height="368" key="GridCell.Tab.0.center" timestamp="1591980244188">
+    <state width="1877" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592148323741" />
+    <state width="1877" height="238" key="GridCell.Tab.0.center" timestamp="1592148323740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591980244188" />
-    <state width="1877" height="368" key="GridCell.Tab.0.left" timestamp="1591980244188">
+    <state width="1877" height="238" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592148323740" />
+    <state width="1877" height="238" key="GridCell.Tab.0.left" timestamp="1592148323740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591980244188" />
-    <state width="1877" height="368" key="GridCell.Tab.0.right" timestamp="1591980244188">
+    <state width="1877" height="238" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592148323740" />
+    <state width="1877" height="238" key="GridCell.Tab.0.right" timestamp="1592148323740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591980244188" />
-    <state width="1877" height="368" key="GridCell.Tab.1.bottom" timestamp="1591980239078">
+    <state width="1877" height="238" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592148323740" />
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom" timestamp="1592147658665">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1591980239078" />
-    <state width="1877" height="368" key="GridCell.Tab.1.center" timestamp="1591980239077">
+    <state width="1877" height="361" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592147658665" />
+    <state width="1877" height="361" key="GridCell.Tab.1.center" timestamp="1592147658665">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1591980239077" />
-    <state width="1877" height="368" key="GridCell.Tab.1.left" timestamp="1591980239077">
+    <state width="1877" height="361" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592147658665" />
+    <state width="1877" height="361" key="GridCell.Tab.1.left" timestamp="1592147658665">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1591980239077" />
-    <state width="1877" height="368" key="GridCell.Tab.1.right" timestamp="1591980239078">
+    <state width="1877" height="361" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592147658665" />
+    <state width="1877" height="361" key="GridCell.Tab.1.right" timestamp="1592147658665">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="368" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1591980239078" />
+    <state width="1877" height="361" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592147658665" />
     <state x="461" y="167" key="SettingsEditor" timestamp="1591641085894">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -337,18 +360,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="540" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1591898513326" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591903545929">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591981153058">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591903545929" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1591981153058" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590521839325" />
-    <state width="600" height="398" key="javadoc.popup.new" timestamp="1591818794930">
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592139326501">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1591818794930" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1592139326501" />
+    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1592131160361">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1592131160361" />
+    <state width="600" height="398" key="javadoc.popup.new" timestamp="1592144566069">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1592144566069" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1592144150309">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592144150309" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1591902435616">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -357,32 +392,62 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java</url>
           <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/KDiffPairInArray.java</url>
           <line>42</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/RepeatedStringMatch.java</url>
           <line>5</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ShuffleTheArray.java</url>
           <line>11</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/RotateArray.java</url>
-          <line>15</line>
+          <line>12</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CreateTargetArrayinGivenOrder.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CreateTargetArrayinGivenOrder.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CreateTargetArrayinGivenOrder.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CreateTargetArrayinGivenOrder.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="java-exception">
+          <condition expression="this instanceof java.lang.ArrayIndexOutOfBoundsException" language="JAVA" />
+          <properties>
+            <catch-class-filters>
+              <class-filter pattern="java.lang.ArrayIndexOutOfBoundsException" />
+            </catch-class-filters>
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
