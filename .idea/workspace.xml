@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ValidParentheses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +79,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HouseRobberTest">
+  <component name="RunManager" selected="JUnit.MaximumSubarrayTest">
     <configuration name="HouseRobberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HouseRobberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumSubarrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MaximumSubarrayTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,24 +107,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSortedArrayTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwoSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
-      <shortenClasspath name="MANIFEST" />
-      <useClassPathOnly />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MergeSortedArrayTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
+      <option name="MAIN_CLASS_NAME" value="TwoSumTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinStackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwoSumTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MinStackTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="TwoSumTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,30 +136,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidPalindromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ValidPalindromeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.MinStackTest" />
-      <item itemvalue="JUnit.ValidPalindromeTest" />
       <item itemvalue="JUnit.MergeSortedArrayTest" />
-      <item itemvalue="JUnit.MergeSortedArrayTest.test" />
       <item itemvalue="JUnit.HouseRobberTest" />
+      <item itemvalue="JUnit.TwoSumTest" />
+      <item itemvalue="JUnit.TwoSumTest.test" />
+      <item itemvalue="JUnit.MaximumSubarrayTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MaximumSubarrayTest" />
+        <item itemvalue="JUnit.TwoSumTest.test" />
+        <item itemvalue="JUnit.TwoSumTest" />
         <item itemvalue="JUnit.HouseRobberTest" />
         <item itemvalue="JUnit.MergeSortedArrayTest" />
-        <item itemvalue="JUnit.MergeSortedArrayTest.test" />
-        <item itemvalue="JUnit.ValidPalindromeTest" />
-        <item itemvalue="JUnit.MinStackTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592167001935</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Solved easy HouseRobber">
+      <created>1592235321808</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1592235321808</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +305,8 @@
     <MESSAGE value="Solved one easy and one hard" />
     <MESSAGE value="Solved easy MinStack" />
     <MESSAGE value="Solved two easy problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved two easy problems" />
+    <MESSAGE value="Solved easy HouseRobber" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved easy HouseRobber" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -320,10 +324,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1592119856764">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1592236192625">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1592119856764" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1592236192625" />
     <state x="689" y="315" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592130784851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -348,30 +352,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1591980190475" />
-    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2" timestamp="1592167001445">
+    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2" timestamp="1592235321297">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1592167001445" />
+    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1592235321297" />
     <state x="368" y="174" key="DiffContextDialog" timestamp="1592166983341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592166983341" />
-    <state width="1877" height="312" key="GridCell.Tab.0.bottom" timestamp="1592235144568">
+    <state width="1877" height="311" key="GridCell.Tab.0.bottom" timestamp="1592251389692">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="312" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592235144568" />
-    <state width="1877" height="312" key="GridCell.Tab.0.center" timestamp="1592235144568">
+    <state width="1877" height="311" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592251389692" />
+    <state width="1877" height="311" key="GridCell.Tab.0.center" timestamp="1592251389692">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="312" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592235144568" />
-    <state width="1877" height="312" key="GridCell.Tab.0.left" timestamp="1592235144568">
+    <state width="1877" height="311" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592251389692" />
+    <state width="1877" height="311" key="GridCell.Tab.0.left" timestamp="1592251389692">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="312" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592235144568" />
-    <state width="1877" height="312" key="GridCell.Tab.0.right" timestamp="1592235144568">
+    <state width="1877" height="311" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592251389692" />
+    <state width="1877" height="311" key="GridCell.Tab.0.right" timestamp="1592251389692">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="312" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592235144568" />
+    <state width="1877" height="311" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592251389692" />
     <state width="1877" height="256" key="GridCell.Tab.1.bottom" timestamp="1592165089160">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -396,10 +400,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1592156886995" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1592167020945">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1592235323166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1592167020945" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1592235323166" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
