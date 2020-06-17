@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ListNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,20 +80,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlusOneTest">
-    <configuration name="HouseRobberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ReverseLinkedListTest">
+    <configuration name="MaximumDepthOfBinaryTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HouseRobberTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaximumSubarrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MaximumSubarrayTest" />
+      <option name="MAIN_CLASS_NAME" value="MaximumDepthOfBinaryTreeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,21 +99,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReverseLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TwoSumTest" />
+      <option name="MAIN_CLASS_NAME" value="ReverseLinkedListTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSumTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SingleNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TwoSumTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="SingleNumberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SymmetricTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SymmetricTreeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,19 +138,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.HouseRobberTest" />
-      <item itemvalue="JUnit.TwoSumTest" />
-      <item itemvalue="JUnit.TwoSumTest.test" />
-      <item itemvalue="JUnit.MaximumSubarrayTest" />
       <item itemvalue="JUnit.PlusOneTest" />
+      <item itemvalue="JUnit.SymmetricTreeTest" />
+      <item itemvalue="JUnit.MaximumDepthOfBinaryTreeTest" />
+      <item itemvalue="JUnit.SingleNumberTest" />
+      <item itemvalue="JUnit.ReverseLinkedListTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReverseLinkedListTest" />
+        <item itemvalue="JUnit.SingleNumberTest" />
+        <item itemvalue="JUnit.MaximumDepthOfBinaryTreeTest" />
+        <item itemvalue="JUnit.SymmetricTreeTest" />
         <item itemvalue="JUnit.PlusOneTest" />
-        <item itemvalue="JUnit.MaximumSubarrayTest" />
-        <item itemvalue="JUnit.TwoSumTest.test" />
-        <item itemvalue="JUnit.TwoSumTest" />
-        <item itemvalue="JUnit.HouseRobberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +288,28 @@
       <option name="project" value="LOCAL" />
       <updated>1592255929982</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Solved easy PlusOne">
+      <created>1592334695516</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1592334695516</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Solved easy SymmetricTree">
+      <created>1592336083914</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1592336083914</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Solved two easy SingleNumber and MaximumDepthOfBinaryTree">
+      <created>1592420748224</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1592420748224</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +343,10 @@
     <MESSAGE value="Solved easy HouseRobber" />
     <MESSAGE value="Solved easy maximum subarray" />
     <MESSAGE value="Solved easy fizz buzz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved easy fizz buzz" />
+    <MESSAGE value="Solved easy PlusOne" />
+    <MESSAGE value="Solved easy SymmetricTree" />
+    <MESSAGE value="Solved two easy SingleNumber and MaximumDepthOfBinaryTree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved two easy SingleNumber and MaximumDepthOfBinaryTree" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -356,10 +380,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1591640262837" />
-    <state x="756" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590521126547">
+    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592335255002">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="756" y="384" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1590521126547" />
+    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1592335255002" />
     <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1592145012474">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -368,30 +392,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1591980190475" />
-    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2" timestamp="1592255929505">
+    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2" timestamp="1592420747631">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1592255929505" />
+    <state x="869" y="234" width="763" height="759" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1592420747631" />
     <state x="368" y="174" key="DiffContextDialog" timestamp="1592166983341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592166983341" />
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom" timestamp="1592334218875">
+    <state width="1877" height="307" key="GridCell.Tab.0.bottom" timestamp="1592422629216">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592334218875" />
-    <state width="1877" height="310" key="GridCell.Tab.0.center" timestamp="1592334218875">
+    <state width="1877" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592422629216" />
+    <state width="1877" height="307" key="GridCell.Tab.0.center" timestamp="1592422629216">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592334218875" />
-    <state width="1877" height="310" key="GridCell.Tab.0.left" timestamp="1592334218875">
+    <state width="1877" height="307" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592422629216" />
+    <state width="1877" height="307" key="GridCell.Tab.0.left" timestamp="1592422629215">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592334218875" />
-    <state width="1877" height="310" key="GridCell.Tab.0.right" timestamp="1592334218875">
+    <state width="1877" height="307" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592422629215" />
+    <state width="1877" height="307" key="GridCell.Tab.0.right" timestamp="1592422629216">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592334218875" />
+    <state width="1877" height="307" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592422629216" />
     <state width="1877" height="256" key="GridCell.Tab.1.bottom" timestamp="1592165089160">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -416,10 +440,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1592156886995" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1592255935355">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1592420753573">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1592255935355" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1592420753573" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
