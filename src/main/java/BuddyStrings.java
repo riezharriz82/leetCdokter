@@ -1,9 +1,19 @@
 import java.util.Arrays;
 
+/**
+ * https://leetcode.com/problems/buddy-strings/
+ * Given two strings A and B of lowercase letters, return true if and only if we can swap two letters in A so that the result equals B.
+ * <p>
+ * Example 1:
+ * <p>
+ * Input: A = "ab", B = "ba"
+ * Output: true
+ * Example 2:
+ * <p>
+ * Input: A = "ab", B = "ab"
+ * Output: false
+ */
 public class BuddyStrings {
-    /**
-     * https://leetcode.com/problems/buddy-strings/
-     */
     public boolean buddyStrings(String A, String B) {
         if (A.length() != B.length()) {
             return false;
