@@ -8,27 +8,27 @@
  * 1
  * / \
  * 2   3
- * / \
- * 4   5
+ * /    \
+ * 4     5
  * Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
  * <p>
  * Note: The length of path between two nodes is represented by the number of edges between them.
  */
 public class DiameterOfBinaryTree {
-    int maxDiameter;
 
     public int diameterOfBinaryTree(TreeNode root) {
-        helper(root);
-        return maxDiameter;
+        int[] diameter = new int[1];
+        helper(root, diameter);
+        return diameter[0];
     }
 
-    private int helper(TreeNode root) {
+    private int helper(TreeNode root, int[] diameter) {
         if (root == null) {
             return 0;
         }
-        int left = helper(root.left);
-        int right = helper(root.right);
-        maxDiameter = Math.max(maxDiameter, left + right);
+        int left = helper(root.left, diameter);
+        int right = helper(root.right, diameter);
+        diameter[0] = Math.max(diameter[0], left + right);
         return Math.max(left, right) + 1;
     }
 }
