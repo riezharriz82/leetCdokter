@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solved two easy">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DiameterOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MergeTwoBinaryTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DiameterOfBinaryTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MergeTwoBinaryTreesTest.java" afterDir="false" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +79,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DiameterOfBinaryTreeTest">
+  <component name="RunManager" selected="JUnit.ThreeSumTest">
     <configuration name="DiameterOfBinaryTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,19 +107,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoveZeroesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PathSum3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MoveZeroesTest" />
+      <option name="MAIN_CLASS_NAME" value="PathSum3Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PathSum3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThreeSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PathSum3Test" />
+      <option name="MAIN_CLASS_NAME" value="ThreeSumTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,19 +137,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.MoveZeroesTest" />
       <item itemvalue="JUnit.FindAllNumberDisappearedInArrayTest" />
       <item itemvalue="JUnit.PathSum3Test" />
       <item itemvalue="JUnit.MergeTwoBinaryTreesTest" />
       <item itemvalue="JUnit.DiameterOfBinaryTreeTest" />
+      <item itemvalue="JUnit.ThreeSumTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThreeSumTest" />
         <item itemvalue="JUnit.DiameterOfBinaryTreeTest" />
         <item itemvalue="JUnit.MergeTwoBinaryTreesTest" />
         <item itemvalue="JUnit.PathSum3Test" />
         <item itemvalue="JUnit.FindAllNumberDisappearedInArrayTest" />
-        <item itemvalue="JUnit.MoveZeroesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592675692169</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Solved two easy">
+      <created>1592678030997</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1592678030997</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update DiameterOfBinaryTree to not use class member">
+      <created>1592679730883</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1592679730883</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,7 +374,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved easy shortest unsorted continuous subarray" />
     <MESSAGE value="Solved easy count primes" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="Solved easy k-diff" />
@@ -389,7 +398,8 @@
     <MESSAGE value="Solved three easy problems" />
     <MESSAGE value="Solved easy PathSum3" />
     <MESSAGE value="Solved two easy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved two easy" />
+    <MESSAGE value="Update DiameterOfBinaryTree to not use class member" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update DiameterOfBinaryTree to not use class member" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -435,30 +445,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1591980190475" />
-    <state x="47" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1592677976812">
+    <state x="47" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1592679730427">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="47" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1592677976812" />
+    <state x="47" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1592679730427" />
     <state x="368" y="174" key="DiffContextDialog" timestamp="1592166983341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592166983341" />
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom" timestamp="1592677757973">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1592686532740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592677757973" />
-    <state width="1877" height="300" key="GridCell.Tab.0.center" timestamp="1592677757973">
+    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592686532740" />
+    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1592686532740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592677757973" />
-    <state width="1877" height="300" key="GridCell.Tab.0.left" timestamp="1592677757973">
+    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592686532740" />
+    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1592686532740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592677757973" />
-    <state width="1877" height="300" key="GridCell.Tab.0.right" timestamp="1592677757973">
+    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592686532740" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1592686532740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="300" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592677757973" />
+    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592686532740" />
     <state width="1877" height="255" key="GridCell.Tab.1.bottom" timestamp="1592673921614">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -483,10 +493,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1592427452449" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1592677998723">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1592679732225">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1592677998723" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1592679732225" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -503,14 +513,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1592131160361" />
-    <state width="600" height="398" key="javadoc.popup.new" timestamp="1592673704187">
+    <state width="600" height="398" key="javadoc.popup.new" timestamp="1592684768267">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1592673704187" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1592144150309">
+    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1592684768267" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1592679603549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592144150309" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592679603549" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1592595892125">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
