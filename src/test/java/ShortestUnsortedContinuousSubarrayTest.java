@@ -7,5 +7,6 @@ public class ShortestUnsortedContinuousSubarrayTest {
     public void test() {
         assertEquals(5, new ShortestUnsortedContinuousSubarray().findUnsortedSubarrayInLinearTime(new int[]{2, 6, 4, 8, 10, 9, 15}));
         assertEquals(0, new ShortestUnsortedContinuousSubarray().findUnsortedSubarrayInLinearTime(new int[]{1, 2, 3, 4}));
+        assertEquals(4, new ShortestUnsortedContinuousSubarray().findUnsortedSubarrayInLinearTime(new int[]{3, 4, 2, 3}));
     }
 }
