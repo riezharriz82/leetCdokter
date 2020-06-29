@@ -30,7 +30,7 @@ public class CombinationSum2 {
         return res;
     }
 
-    //time complexity n^target (considering each candidate and going as deep as target) took 2ms
+    //time complexity is 2^n as we iterate over all the possible subset of candidate set
     private void helper(int[] candidates, List<List<Integer>> res, List<Integer> curResult, int curIndex, int curSum, int target) {
         if (curSum == target) {
             res.add(new ArrayList<>(curResult)); //need to create a new copy of curResult as curResult will be eventually empty
