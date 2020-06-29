@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CombinationSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CombinationSum2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GenerateBracketsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GenerateBracketsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GenerateBracketsTest.test">
+  <component name="RunManager" selected="JUnit.LetterCombinationsOfPhoneNumberTest">
     <configuration name="CombinationSum2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -118,10 +118,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MountainArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LetterCombinationsOfPhoneNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MountainArrayTest" />
+      <option name="MAIN_CLASS_NAME" value="LetterCombinationsOfPhoneNumberTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,19 +139,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.MountainArrayTest" />
       <item itemvalue="JUnit.CombinationSumTest" />
       <item itemvalue="JUnit.CombinationSum2Test" />
       <item itemvalue="JUnit.GenerateBracketsTest" />
       <item itemvalue="JUnit.GenerateBracketsTest.test" />
+      <item itemvalue="JUnit.LetterCombinationsOfPhoneNumberTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GenerateBracketsTest.test" />
+        <item itemvalue="JUnit.LetterCombinationsOfPhoneNumberTest" />
         <item itemvalue="JUnit.GenerateBracketsTest" />
+        <item itemvalue="JUnit.GenerateBracketsTest.test" />
         <item itemvalue="JUnit.CombinationSum2Test" />
         <item itemvalue="JUnit.CombinationSumTest" />
-        <item itemvalue="JUnit.MountainArrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -464,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593434709478</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Solved medium GenerateBrackets using backtracking -- khud se kia with first attempt -- wooooohoooo">
+      <created>1593440999479</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1593440999479</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +488,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved easy fizz buzz" />
     <MESSAGE value="Solved easy PlusOne" />
     <MESSAGE value="Solved easy SymmetricTree" />
     <MESSAGE value="Solved two easy SingleNumber and MaximumDepthOfBinaryTree" />
@@ -506,7 +512,8 @@
     <MESSAGE value="Solved easy MountainArray" />
     <MESSAGE value="Solved medium CombinationSum using both Backtracking and DP" />
     <MESSAGE value="Solved medium CombinationSum2 using Backtracking, very similar to CombinationSum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved medium CombinationSum2 using Backtracking, very similar to CombinationSum" />
+    <MESSAGE value="Solved medium GenerateBrackets using backtracking -- khud se kia with first attempt -- wooooohoooo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved medium GenerateBrackets using backtracking -- khud se kia with first attempt -- wooooohoooo" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -532,10 +539,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1592236192625">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1593444411847">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1592236192625" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1593444411847" />
     <state x="689" y="315" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592130784851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -560,46 +567,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593440673321" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593434708974">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593440998984">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593434708974" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593440998984" />
     <state x="368" y="174" key="DiffContextDialog" timestamp="1592166983341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592166983341" />
-    <state width="1877" height="245" key="GridCell.Tab.0.bottom" timestamp="1593440844781">
+    <state width="1877" height="244" key="GridCell.Tab.0.bottom" timestamp="1593443985182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593440844781" />
-    <state width="1877" height="245" key="GridCell.Tab.0.center" timestamp="1593440844781">
+    <state width="1877" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593443985182" />
+    <state width="1877" height="244" key="GridCell.Tab.0.center" timestamp="1593443985181">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593440844781" />
-    <state width="1877" height="245" key="GridCell.Tab.0.left" timestamp="1593440844780">
+    <state width="1877" height="244" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593443985181" />
+    <state width="1877" height="244" key="GridCell.Tab.0.left" timestamp="1593443985181">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593440844780" />
-    <state width="1877" height="245" key="GridCell.Tab.0.right" timestamp="1593440844781">
+    <state width="1877" height="244" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593443985181" />
+    <state width="1877" height="244" key="GridCell.Tab.0.right" timestamp="1593443985182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593440844781" />
-    <state width="1877" height="245" key="GridCell.Tab.1.bottom" timestamp="1593440686915">
+    <state width="1877" height="244" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593443985182" />
+    <state width="1877" height="244" key="GridCell.Tab.1.bottom" timestamp="1593443985182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593440686915" />
-    <state width="1877" height="245" key="GridCell.Tab.1.center" timestamp="1593440686915">
+    <state width="1877" height="244" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593443985182" />
+    <state width="1877" height="244" key="GridCell.Tab.1.center" timestamp="1593443985182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593440686915" />
-    <state width="1877" height="245" key="GridCell.Tab.1.left" timestamp="1593440686915">
+    <state width="1877" height="244" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593443985182" />
+    <state width="1877" height="244" key="GridCell.Tab.1.left" timestamp="1593443985182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593440686915" />
-    <state width="1877" height="245" key="GridCell.Tab.1.right" timestamp="1593440686915">
+    <state width="1877" height="244" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593443985182" />
+    <state width="1877" height="244" key="GridCell.Tab.1.right" timestamp="1593443985182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="245" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593440686915" />
+    <state width="1877" height="244" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593443985182" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -612,10 +619,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1593427277948" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593434712028">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593441002938">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593434712028" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593441002938" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -636,18 +643,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593435686473" />
-    <state width="600" height="398" key="javadoc.popup.new" timestamp="1593439931354">
+    <state width="600" height="398" key="javadoc.popup.new" timestamp="1593444336289">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593439931354" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1593439639434">
+    <state width="600" height="398" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593444336289" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1593444549618">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593439639434" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593435888398">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593444549618" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593441360813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593435888398" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593441360813" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -709,17 +716,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GenerateBrackets.java</url>
-          <line>39</line>
+          <line>38</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GenerateBrackets.java</url>
-          <line>41</line>
+          <line>40</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GenerateBrackets.java</url>
-          <line>35</line>
+          <line>34</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
