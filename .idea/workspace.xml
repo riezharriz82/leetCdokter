@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solved medium CombinationSum2 using Backtracking, very similar to CombinationSum">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CombinationSum2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CombinationSum2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,20 +81,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CombinationSumTest">
-    <configuration name="CombinationSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CombinationSum2Test">
+    <configuration name="CombinationSum2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CombinationSumTest" />
+      <option name="MAIN_CLASS_NAME" value="CombinationSum2Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DecodeStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CombinationSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DecodeStringTest" />
+      <option name="MAIN_CLASS_NAME" value="CombinationSumTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,19 +140,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.DecodeStringTest" />
       <item itemvalue="JUnit.FloodFillTest" />
       <item itemvalue="JUnit.FloodFillTest.test" />
       <item itemvalue="JUnit.MountainArrayTest" />
       <item itemvalue="JUnit.CombinationSumTest" />
+      <item itemvalue="JUnit.CombinationSum2Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CombinationSum2Test" />
         <item itemvalue="JUnit.CombinationSumTest" />
         <item itemvalue="JUnit.MountainArrayTest" />
         <item itemvalue="JUnit.FloodFillTest.test" />
         <item itemvalue="JUnit.FloodFillTest" />
-        <item itemvalue="JUnit.DecodeStringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593374462939</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Solved medium CombinationSum using both Backtracking and DP">
+      <created>1593433409628</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1593433409628</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,8 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved easy HouseRobber" />
-    <MESSAGE value="Solved easy maximum subarray" />
     <MESSAGE value="Solved easy fizz buzz" />
     <MESSAGE value="Solved easy PlusOne" />
     <MESSAGE value="Solved easy SymmetricTree" />
@@ -491,7 +498,9 @@
     <MESSAGE value="Solved medium DecodeString" />
     <MESSAGE value="Solved easy FloodFill using DFS/BFS" />
     <MESSAGE value="Solved easy MountainArray" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved easy MountainArray" />
+    <MESSAGE value="Solved medium CombinationSum using both Backtracking and DP" />
+    <MESSAGE value="Solved medium CombinationSum2 using Backtracking, very similar to CombinationSum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved medium CombinationSum2 using Backtracking, very similar to CombinationSum" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -545,30 +554,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1591980190475" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593374462482">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593434686086">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593374462482" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593434686086" />
     <state x="368" y="174" key="DiffContextDialog" timestamp="1592166983341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592166983341" />
-    <state width="1877" height="260" key="GridCell.Tab.0.bottom" timestamp="1593433155523">
+    <state width="1877" height="260" key="GridCell.Tab.0.bottom" timestamp="1593434686134">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593433155523" />
-    <state width="1877" height="260" key="GridCell.Tab.0.center" timestamp="1593433155522">
+    <state width="1877" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593434686134" />
+    <state width="1877" height="260" key="GridCell.Tab.0.center" timestamp="1593434686134">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="260" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593433155522" />
-    <state width="1877" height="260" key="GridCell.Tab.0.left" timestamp="1593433155521">
+    <state width="1877" height="260" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593434686134" />
+    <state width="1877" height="260" key="GridCell.Tab.0.left" timestamp="1593434686134">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="260" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593433155521" />
-    <state width="1877" height="260" key="GridCell.Tab.0.right" timestamp="1593433155522">
+    <state width="1877" height="260" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593434686134" />
+    <state width="1877" height="260" key="GridCell.Tab.0.right" timestamp="1593434686134">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="260" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593433155522" />
+    <state width="1877" height="260" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593434686134" />
     <state width="1877" height="247" key="GridCell.Tab.1.bottom" timestamp="1593432358749">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -597,10 +606,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1593427277948" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593374465373">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593433410967">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593374465373" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593433410967" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
