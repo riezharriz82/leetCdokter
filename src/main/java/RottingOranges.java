@@ -36,6 +36,8 @@ public class RottingOranges {
         }
         if (fresh > 0) {
             int res = doBFS(queue, grid);
+            //instead of doing this alternatively can count no of fresh oranges processed by BFS vs actual fresh
+            //if they match then no fresh oranges is unreachable otherwise return -1
             for (int i = 0; i < grid.length; i++) {
                 for (int j = 0; j < grid[0].length; j++) {
                     if (grid[i][j] == 1) {
