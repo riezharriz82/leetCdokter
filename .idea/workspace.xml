@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solved medium CountSquareSubMatrices with all ones using DP -- nifty little solution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountBattleships.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountBattleships.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,16 +79,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CountSquareSubMatricesWithAllOnesTest.test">
-    <configuration name="CombinationSum3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CombinationSum3Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LargestPlusSignTest">
     <configuration name="CombinationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -118,10 +108,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RottingOrangesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LargestPlusSignTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RottingOrangesTest" />
+      <option name="MAIN_CLASS_NAME" value="LargestPlusSignTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,21 +127,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.RottingOrangesTest" />
-      <item itemvalue="JUnit.CombinationSum3Test" />
       <item itemvalue="JUnit.CombinationsTest" />
       <item itemvalue="JUnit.CountBattleshipsTest" />
       <item itemvalue="JUnit.CountSquareSubMatricesWithAllOnesTest.test" />
+      <item itemvalue="Java Scratch.Scratch" />
+      <item itemvalue="JUnit.LargestPlusSignTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LargestPlusSignTest" />
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.CountSquareSubMatricesWithAllOnesTest.test" />
         <item itemvalue="JUnit.CountBattleshipsTest" />
         <item itemvalue="JUnit.CombinationsTest" />
-        <item itemvalue="JUnit.CombinationSum3Test" />
-        <item itemvalue="JUnit.RottingOrangesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -162,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Solved RepeatedStringMatch. TODO implement it by robin karp">
-      <created>1591818856458</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1591818856458</updated>
     </task>
     <task id="LOCAL-00009" summary="Solved two easy ShuffleTheArray and SumOfSquareNumbers">
       <created>1591901578955</created>
@@ -506,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593602758073</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Solved medium CountSquareSubMatrices with all ones using DP -- nifty little solution">
+      <created>1593604361087</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1593604361087</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +520,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium problem Search2DMatrixII" />
     <MESSAGE value="Solved two medium problem MinimumPathSum and NextGreaterElement" />
     <MESSAGE value="Solved two easy problem CheckIfNAndItsDoubleExist and ChangeOnlyOneElementToSortArray" />
     <MESSAGE value="Solved two easy problem" />
@@ -548,7 +544,8 @@
     <MESSAGE value="Solved medium CombinationSum3 using backtracking" />
     <MESSAGE value="Solved medium Combinations using BackTracking" />
     <MESSAGE value="Solved medium CountBattleships with and without dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved medium CountBattleships with and without dfs" />
+    <MESSAGE value="Solved medium CountSquareSubMatrices with all ones using DP -- nifty little solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved medium CountSquareSubMatrices with all ones using DP -- nifty little solution" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -602,30 +599,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593440673321" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593602757571">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593604374518">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593602757571" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593604374518" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593466633158">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593466633158" />
-    <state width="1877" height="239" key="GridCell.Tab.0.bottom" timestamp="1593603866190">
+    <state width="1877" height="238" key="GridCell.Tab.0.bottom" timestamp="1593618580852">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593603866190" />
-    <state width="1877" height="239" key="GridCell.Tab.0.center" timestamp="1593603866190">
+    <state width="1877" height="238" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593618580852" />
+    <state width="1877" height="238" key="GridCell.Tab.0.center" timestamp="1593618580852">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593603866190" />
-    <state width="1877" height="239" key="GridCell.Tab.0.left" timestamp="1593603866190">
+    <state width="1877" height="238" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593618580852" />
+    <state width="1877" height="238" key="GridCell.Tab.0.left" timestamp="1593618580852">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593603866190" />
-    <state width="1877" height="239" key="GridCell.Tab.0.right" timestamp="1593603866190">
+    <state width="1877" height="238" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593618580852" />
+    <state width="1877" height="238" key="GridCell.Tab.0.right" timestamp="1593618580852">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="239" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593603866190" />
+    <state width="1877" height="238" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593618580852" />
     <state width="1877" height="241" key="GridCell.Tab.1.bottom" timestamp="1593548493358">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -650,14 +647,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1592427505528" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1593427277948">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1593605018988">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1593427277948" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593602759655">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1593605018988" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1593605021866">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593602759655" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593604363275">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593604363275" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
