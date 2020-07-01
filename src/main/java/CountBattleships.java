@@ -26,10 +26,10 @@ public class CountBattleships {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
                 if (board[i][j] == 'X') {
-                    if (i > 0 && board[i - 1][j] == 'X') {
+                    if (i > 0 && board[i - 1][j] == 'X') { //skip incrementing the count if the top one is also 'X' as it has been counted before
                         continue;
                     }
-                    if (j > 0 && board[i][j - 1] == 'X') {
+                    if (j > 0 && board[i][j - 1] == 'X') { //skip incrementing the count if the adjacent left is a battleship as it has been counted before
                         continue;
                     }
                     res++;
