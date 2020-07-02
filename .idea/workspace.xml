@@ -87,7 +87,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PermutationsTest">
+  <component name="RunManager" selected="JUnit.TwoCitySchedulingTest">
     <configuration name="LargestPlusSignTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,6 +115,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TwoCitySchedulingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TwoCitySchedulingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -134,28 +143,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.LargestPlusSignTest" />
       <item itemvalue="JUnit.PowerSetTest" />
       <item itemvalue="JUnit.WordSearchTest" />
       <item itemvalue="JUnit.PermutationsTest" />
+      <item itemvalue="JUnit.TwoCitySchedulingTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TwoCitySchedulingTest" />
         <item itemvalue="JUnit.PermutationsTest" />
         <item itemvalue="JUnit.WordSearchTest" />
         <item itemvalue="JUnit.PowerSetTest" />
         <item itemvalue="JUnit.LargestPlusSignTest" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -166,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Solved one easy and one hard">
-      <created>1592148832783</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1592148832783</updated>
     </task>
     <task id="LOCAL-00014" summary="Solved easy MinStack">
       <created>1592158013171</created>
@@ -510,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593635038712</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Solved easy deleteNodeInLinkedList without head pointer">
+      <created>1593691763445</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1593691763445</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +529,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium findTheDuplicateNumber using SlowAndFastPointer approach" />
     <MESSAGE value="Solved two easy DesignHashMap and DesignHashSet problem&#10;&#10;Ideally it should have been solved as an array of nodes with bounded size and then finding an index and then using chains to address conflicts" />
     <MESSAGE value="Solved medium DecodeString" />
     <MESSAGE value="Solved easy FloodFill using DFS/BFS" />
@@ -552,7 +553,8 @@
     <MESSAGE value="Solved medium PowerSet using backtracking" />
     <MESSAGE value="Solved medium WordSearch using Backtracking and DFS" />
     <MESSAGE value="Solved medium Permutations using Backtracking" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved medium Permutations using Backtracking" />
+    <MESSAGE value="Solved easy deleteNodeInLinkedList without head pointer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved easy deleteNodeInLinkedList without head pointer" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -606,30 +608,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593440673321" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593635038233">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593691763013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593635038233" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593691763013" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593644857804" />
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1593644588501">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom" timestamp="1593693824126">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593644588501" />
-    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1593644588501">
+    <state width="1877" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593693824126" />
+    <state width="1877" height="231" key="GridCell.Tab.0.center" timestamp="1593693824126">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593644588501" />
-    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1593644588501">
+    <state width="1877" height="231" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593693824126" />
+    <state width="1877" height="231" key="GridCell.Tab.0.left" timestamp="1593693824126">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593644588501" />
-    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1593644588501">
+    <state width="1877" height="231" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593693824126" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right" timestamp="1593693824126">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593644588501" />
+    <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593693824126" />
     <state width="1877" height="321" key="GridCell.Tab.1.bottom" timestamp="1593632730438">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -662,10 +664,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593635039772">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593691765652">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593635039772" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593691765652" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -686,10 +688,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593446799392" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1593625350927">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1593691837405">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593625350927" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593691837405" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1593630707849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
