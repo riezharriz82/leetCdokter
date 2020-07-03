@@ -88,20 +88,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrisonCellAfterNDaysTest">
+  <component name="RunManager" selected="JUnit.WordSearch2Test">
     <configuration name="AddAndSearchWordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddAndSearchWordTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Permutations2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Permutations2Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,21 +135,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordSearch2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WordSearch2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.Permutations2Test" />
       <item itemvalue="JUnit.TopKFrequentElementsTest" />
       <item itemvalue="JUnit.TrieTest" />
       <item itemvalue="JUnit.AddAndSearchWordTest" />
       <item itemvalue="JUnit.PrisonCellAfterNDaysTest" />
+      <item itemvalue="JUnit.WordSearch2Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WordSearch2Test" />
         <item itemvalue="JUnit.PrisonCellAfterNDaysTest" />
         <item itemvalue="JUnit.AddAndSearchWordTest" />
         <item itemvalue="JUnit.TrieTest" />
         <item itemvalue="JUnit.TopKFrequentElementsTest" />
-        <item itemvalue="JUnit.Permutations2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -169,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Solved two easy SingleNumber and MaximumDepthOfBinaryTree">
-      <created>1592420748224</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1592420748224</updated>
     </task>
     <task id="LOCAL-00022" summary="Solved easy ReverseLinkedList">
       <created>1592422778693</created>
@@ -513,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593788404568</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Solve medium PrisonCellAfterNDays -- related to repetitions in finite possible states">
+      <created>1593793653571</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1593793653571</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -530,7 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium LetterCombinationsOfPhoneNumber" />
     <MESSAGE value="Solved medium UniquePaths" />
     <MESSAGE value="Solved medium MergeIntervals" />
     <MESSAGE value="Solved easy IslandPerimeter" />
@@ -555,7 +554,8 @@
     <MESSAGE value="Solve medium find top k frequent elements in an array using minheap and hashmap" />
     <MESSAGE value="Solve medium Trie -- implemented in first attempt. &#10;&#10;Sad i couldn't do it in DeShaw interview" />
     <MESSAGE value="Solve medium AddAndSearchWords in dictionary using trie -- Support regex input of '.' using dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium AddAndSearchWords in dictionary using trie -- Support regex input of '.' using dfs" />
+    <MESSAGE value="Solve medium PrisonCellAfterNDays -- related to repetitions in finite possible states" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium PrisonCellAfterNDays -- related to repetitions in finite possible states" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -609,46 +609,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593791320517" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593788403964">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593793653128">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593788403964" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593793653128" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593644857804" />
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom" timestamp="1593793483267">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom" timestamp="1593808099902">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593793483267" />
-    <state width="1877" height="220" key="GridCell.Tab.0.center" timestamp="1593793483267">
+    <state width="1877" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593808099902" />
+    <state width="1877" height="215" key="GridCell.Tab.0.center" timestamp="1593808099902">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593793483267" />
-    <state width="1877" height="220" key="GridCell.Tab.0.left" timestamp="1593793483267">
+    <state width="1877" height="215" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593808099902" />
+    <state width="1877" height="215" key="GridCell.Tab.0.left" timestamp="1593808099902">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593793483267" />
-    <state width="1877" height="220" key="GridCell.Tab.0.right" timestamp="1593793483267">
+    <state width="1877" height="215" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593808099902" />
+    <state width="1877" height="215" key="GridCell.Tab.0.right" timestamp="1593808099902">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593793483267" />
-    <state width="1877" height="316" key="GridCell.Tab.1.bottom" timestamp="1593793425308">
+    <state width="1877" height="215" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593808099902" />
+    <state width="1877" height="314" key="GridCell.Tab.1.bottom" timestamp="1593808097012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593793425308" />
-    <state width="1877" height="316" key="GridCell.Tab.1.center" timestamp="1593793425307">
+    <state width="1877" height="314" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593808097012" />
+    <state width="1877" height="314" key="GridCell.Tab.1.center" timestamp="1593808097012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593793425307" />
-    <state width="1877" height="316" key="GridCell.Tab.1.left" timestamp="1593793425307">
+    <state width="1877" height="314" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593808097012" />
+    <state width="1877" height="314" key="GridCell.Tab.1.left" timestamp="1593808097012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593793425307" />
-    <state width="1877" height="316" key="GridCell.Tab.1.right" timestamp="1593793425308">
+    <state width="1877" height="314" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593808097012" />
+    <state width="1877" height="314" key="GridCell.Tab.1.right" timestamp="1593808097012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593793425308" />
+    <state width="1877" height="314" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593808097012" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -665,10 +665,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593788405636">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593793655086">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593788405636" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593793655086" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -681,30 +681,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592428156376" />
-    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1592131160361">
+    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593806909164">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1592131160361" />
+    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1593806909164" />
     <state x="690" y="275" key="extract.method.dialog" timestamp="1593792443839">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="534" key="find.popup" timestamp="1593774187856">
+    <state x="667" y="258" width="585" height="534" key="find.popup" timestamp="1593801557838">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593774187856" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1593791378972">
+    <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593801557838" />
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1593796532617">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593791378972" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593796532617" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1593630707849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593630707849" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593778931659">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593807522522">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593778931659" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593807522522" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -824,10 +824,15 @@
           <line>69</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/WordSearch2.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
-        <breakpoint type="java-exception">
-          <condition expression="this instanceof java.lang.ArrayIndexOutOfBoundsException" language="JAVA" />
+        <breakpoint enabled="true" type="java-exception">
+          <condition expression="this instanceof java.lang.NullPointerException" language="JAVA" />
           <properties>
             <catch-class-filters>
               <class-filter pattern="java.lang.ArrayIndexOutOfBoundsException" />
