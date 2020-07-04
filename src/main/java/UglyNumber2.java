@@ -57,7 +57,7 @@ public class UglyNumber2 {
             if (min == by5) {
                 five_index++;
             }
-            res[i + 1] = min;
+            res[i + 1] = min; //since we are doing i+1, we need array of size n+1
         }
         return res[n - 1];
     }

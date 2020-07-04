@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UglyNumber2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UglyNumber2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Solved easy ReverseString">
-      <created>1592427304157</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1592427304157</updated>
     </task>
     <task id="LOCAL-00024" summary="Update javadoc">
       <created>1592429646258</created>
@@ -513,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593808622968</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Solve medium UglyNumber2 -- tricky question using DP">
+      <created>1593886612255</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1593886612256</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -530,7 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium MergeIntervals" />
     <MESSAGE value="Solved easy IslandPerimeter" />
     <MESSAGE value="Solved two medium island problems via DFS" />
     <MESSAGE value="Leetcode premium question NumberOfDistinctIslands -- Question about finding similar shapes in a matrix" />
@@ -555,7 +554,8 @@
     <MESSAGE value="Solve medium AddAndSearchWords in dictionary using trie -- Support regex input of '.' using dfs" />
     <MESSAGE value="Solve medium PrisonCellAfterNDays -- related to repetitions in finite possible states" />
     <MESSAGE value="Solve hard WordSearch2 -- search multiple words in a grid via DFS and Trie -- trie solution is much faster&#10;&#10;Found it a bit tricky to increment trie and grid simultaneously and check for valid words." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard WordSearch2 -- search multiple words in a grid via DFS and Trie -- trie solution is much faster&#10;&#10;Found it a bit tricky to increment trie and grid simultaneously and check for valid words." />
+    <MESSAGE value="Solve medium UglyNumber2 -- tricky question using DP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium UglyNumber2 -- tricky question using DP" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -609,10 +609,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="715" y="228" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593791320517" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593808622410">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593886611542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593808622410" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593886611542" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -665,10 +665,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593808624881">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593886613237">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593808624881" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593886613237" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
