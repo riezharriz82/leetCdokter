@@ -171,13 +171,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00029" summary="Update DiameterOfBinaryTree to not use class member">
-      <created>1592686983277</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1592686983277</updated>
-    </task>
     <task id="LOCAL-00030" summary="Solved two medium tree problems - ValidateBST and IterativeInorderTraversal">
       <created>1592730972175</created>
       <option name="number" value="00030" />
@@ -514,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593956787187</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Solved medium CountingBits using DP -- nifty bitwise operations">
+      <created>1593960100534</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1593960100534</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +531,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update comment in RottingOranges" />
     <MESSAGE value="Solved medium CombinationSum3 using backtracking" />
     <MESSAGE value="Solved medium Combinations using BackTracking" />
     <MESSAGE value="Solved medium CountBattleships with and without dfs" />
@@ -556,7 +555,8 @@
     <MESSAGE value="Solved medium LevelOrderTraversal in reverse using Stack and Queue" />
     <MESSAGE value="Solved easy ArrangingCoins using maths -- think about multiplying large ints, use long wherever applicable" />
     <MESSAGE value="Solved medium LastMomentAntFallsOff -- brain teaser problem, should have been able to solve it if I did some runs on the paper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved medium LastMomentAntFallsOff -- brain teaser problem, should have been able to solve it if I did some runs on the paper" />
+    <MESSAGE value="Solved medium CountingBits using DP -- nifty bitwise operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved medium CountingBits using DP -- nifty bitwise operations" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -610,10 +610,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593954110954" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593956786724">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593960100066">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593956786724" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593960100066" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -666,10 +666,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593956788488">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593960101593">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593956788488" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593960101593" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -694,10 +694,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593951675114" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1593952105152">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1593960394793">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593952105152" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593960394793" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1593630707849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
