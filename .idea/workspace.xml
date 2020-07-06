@@ -88,7 +88,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MajorityElement2Test">
+  <component name="RunManager" selected="JUnit.CountUniqueBSTTest">
     <configuration name="ArrangingCoinsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -108,10 +108,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTreeLevelOrderTraversal2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CountUniqueBSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BinaryTreeLevelOrderTraversal2Test" />
+      <option name="MAIN_CLASS_NAME" value="CountUniqueBSTTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,19 +148,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.BinaryTreeLevelOrderTraversal2Test" />
       <item itemvalue="JUnit.ArrangingCoinsTest" />
       <item itemvalue="JUnit.ArrangingCoinsTest.test" />
       <item itemvalue="JUnit.MajorityElement2Test" />
       <item itemvalue="JUnit.MajorityElement2Test.test" />
+      <item itemvalue="JUnit.CountUniqueBSTTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CountUniqueBSTTest" />
         <item itemvalue="JUnit.MajorityElement2Test" />
         <item itemvalue="JUnit.MajorityElement2Test.test" />
         <item itemvalue="JUnit.ArrangingCoinsTest.test" />
         <item itemvalue="JUnit.ArrangingCoinsTest" />
-        <item itemvalue="JUnit.BinaryTreeLevelOrderTraversal2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Solved medium problem SubarraySumEqualsK">
-      <created>1592849143521</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1592849143521</updated>
     </task>
     <task id="LOCAL-00032" summary="Solved medium problem Search2DMatrixII">
       <created>1592853400580</created>
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593961483386</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Solve medium MajorityElement2 using generalized voting algorithm">
+      <created>1593971791975</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1593971791975</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +532,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium Combinations using BackTracking" />
     <MESSAGE value="Solved medium CountBattleships with and without dfs" />
     <MESSAGE value="Solved medium CountSquareSubMatrices with all ones using DP -- nifty little solution" />
     <MESSAGE value="Solved medium LargestPlusSign -- very nice approach" />
@@ -557,7 +556,8 @@
     <MESSAGE value="Solved medium LastMomentAntFallsOff -- brain teaser problem, should have been able to solve it if I did some runs on the paper" />
     <MESSAGE value="Solved medium CountingBits using DP -- nifty bitwise operations" />
     <MESSAGE value="Solved easy MajorityElement using Boyer Moore voting algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved easy MajorityElement using Boyer Moore voting algorithm" />
+    <MESSAGE value="Solve medium MajorityElement2 using generalized voting algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium MajorityElement2 using generalized voting algorithm" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -611,10 +611,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593961482919">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1593971791504">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593961482919" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1593971791504" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -667,10 +667,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593961485840">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1593971793595">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593961485840" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593971793595" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -679,10 +679,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593965558347" />
-    <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593964879720">
+    <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594034173381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593964879720" />
+    <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594034173381" />
     <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593806909164">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593630707849" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1593810813371">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594031883086">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593810813371" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594031883086" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
