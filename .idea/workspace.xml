@@ -33,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,16 +88,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CountUniqueBSTTest">
-    <configuration name="ArrangingCoinsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ArrangingCoinsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.GroupAnagramsTest">
     <configuration name="ArrangingCoinsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -112,6 +103,15 @@
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CountUniqueBSTTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupAnagramsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GroupAnagramsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,19 +148,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.ArrangingCoinsTest" />
       <item itemvalue="JUnit.ArrangingCoinsTest.test" />
       <item itemvalue="JUnit.MajorityElement2Test" />
       <item itemvalue="JUnit.MajorityElement2Test.test" />
       <item itemvalue="JUnit.CountUniqueBSTTest" />
+      <item itemvalue="JUnit.GroupAnagramsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GroupAnagramsTest" />
         <item itemvalue="JUnit.CountUniqueBSTTest" />
         <item itemvalue="JUnit.MajorityElement2Test" />
         <item itemvalue="JUnit.MajorityElement2Test.test" />
         <item itemvalue="JUnit.ArrangingCoinsTest.test" />
-        <item itemvalue="JUnit.ArrangingCoinsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Solved two medium problem MinimumPathSum and NextGreaterElement">
-      <created>1592938643380</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1592938643380</updated>
     </task>
     <task id="LOCAL-00034" summary="Solved two easy problem CheckIfNAndItsDoubleExist and ChangeOnlyOneElementToSortArray">
       <created>1593018787021</created>
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594034267429</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Solve medium CountUniqueBST using DP -- tricky question">
+      <created>1594035283014</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1594035283014</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +532,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium CountSquareSubMatrices with all ones using DP -- nifty little solution" />
     <MESSAGE value="Solved medium LargestPlusSign -- very nice approach" />
     <MESSAGE value="Solved medium PowerSet using backtracking" />
     <MESSAGE value="Solved medium WordSearch using Backtracking and DFS" />
@@ -557,12 +556,17 @@
     <MESSAGE value="Solved easy MajorityElement using Boyer Moore voting algorithm" />
     <MESSAGE value="Solve medium MajorityElement2 using generalized voting algorithm" />
     <MESSAGE value="Solve medium KthSmallestElementInBST using inorder traversal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium KthSmallestElementInBST using inorder traversal" />
+    <MESSAGE value="Solve medium CountUniqueBST using DP -- tricky question" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium CountUniqueBST using DP -- tricky question" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="726" y="229" key="#Auto_Import" timestamp="1594042087648">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1594042087648" />
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1592860555493">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -611,46 +615,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594034266974">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594035282468">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594034266974" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594035282468" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593644857804" />
-    <state width="1877" height="206" key="GridCell.Tab.0.bottom" timestamp="1594034982340">
+    <state width="1877" height="203" key="GridCell.Tab.0.bottom" timestamp="1594059471228">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="206" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594034982340" />
-    <state width="1877" height="206" key="GridCell.Tab.0.center" timestamp="1594034982340">
+    <state width="1877" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594059471228" />
+    <state width="1877" height="203" key="GridCell.Tab.0.center" timestamp="1594059471227">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="206" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594034982340" />
-    <state width="1877" height="206" key="GridCell.Tab.0.left" timestamp="1594034982340">
+    <state width="1877" height="203" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594059471227" />
+    <state width="1877" height="203" key="GridCell.Tab.0.left" timestamp="1594059471227">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="206" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594034982340" />
-    <state width="1877" height="206" key="GridCell.Tab.0.right" timestamp="1594034982340">
+    <state width="1877" height="203" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594059471227" />
+    <state width="1877" height="203" key="GridCell.Tab.0.right" timestamp="1594059471227">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="206" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594034982340" />
-    <state width="1877" height="310" key="GridCell.Tab.1.bottom" timestamp="1594034662771">
+    <state width="1877" height="203" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594059471227" />
+    <state width="1877" height="310" key="GridCell.Tab.1.bottom" timestamp="1594043330298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594034662771" />
-    <state width="1877" height="310" key="GridCell.Tab.1.center" timestamp="1594034662771">
+    <state width="1877" height="310" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594043330298" />
+    <state width="1877" height="310" key="GridCell.Tab.1.center" timestamp="1594043330298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594034662771" />
-    <state width="1877" height="310" key="GridCell.Tab.1.left" timestamp="1594034662771">
+    <state width="1877" height="310" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594043330298" />
+    <state width="1877" height="310" key="GridCell.Tab.1.left" timestamp="1594043330298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594034662771" />
-    <state width="1877" height="310" key="GridCell.Tab.1.right" timestamp="1594034662771">
+    <state width="1877" height="310" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594043330298" />
+    <state width="1877" height="310" key="GridCell.Tab.1.right" timestamp="1594043330298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594034662771" />
+    <state width="1877" height="310" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594043330298" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -667,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594034269476">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594035284179">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594034269476" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594035284179" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -691,14 +695,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="534" key="find.popup" timestamp="1593951675114">
+    <state x="667" y="258" width="585" height="534" key="find.popup" timestamp="1594041875610">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1593951675114" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1593964509272">
+    <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594041875610" />
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1594043211163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1593964509272" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1594043211163" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1593630707849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -866,6 +870,11 @@
           <line>37</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GroupAnagrams.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception">
@@ -881,6 +890,7 @@
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="grid" />
+        <watch expression="uniqueString.entrySet().toArray()[0]" />
       </configuration>
     </watches-manager>
   </component>
