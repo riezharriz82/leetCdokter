@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode-practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode-practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +77,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -88,17 +90,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GroupAnagramsTest">
-    <configuration name="ArrangingCoinsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ArrangingCoinsTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PerfectSquaresTest">
     <configuration name="CountUniqueBSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -117,19 +109,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MajorityElement2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PerfectSquaresTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MajorityElement2Test" />
+      <option name="MAIN_CLASS_NAME" value="PerfectSquaresTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MajorityElement2Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TargetSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MajorityElement2Test" />
+      <option name="MAIN_CLASS_NAME" value="TargetSumTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TargetSumTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TargetSumTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -148,19 +149,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.ArrangingCoinsTest.test" />
-      <item itemvalue="JUnit.MajorityElement2Test" />
-      <item itemvalue="JUnit.MajorityElement2Test.test" />
       <item itemvalue="JUnit.CountUniqueBSTTest" />
       <item itemvalue="JUnit.GroupAnagramsTest" />
+      <item itemvalue="JUnit.TargetSumTest" />
+      <item itemvalue="JUnit.TargetSumTest.test" />
+      <item itemvalue="JUnit.PerfectSquaresTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PerfectSquaresTest" />
+        <item itemvalue="JUnit.TargetSumTest.test" />
+        <item itemvalue="JUnit.TargetSumTest" />
         <item itemvalue="JUnit.GroupAnagramsTest" />
         <item itemvalue="JUnit.CountUniqueBSTTest" />
-        <item itemvalue="JUnit.MajorityElement2Test" />
-        <item itemvalue="JUnit.MajorityElement2Test.test" />
-        <item itemvalue="JUnit.ArrangingCoinsTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Solved two easy problem CheckIfNAndItsDoubleExist and ChangeOnlyOneElementToSortArray">
-      <created>1593018787021</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1593018787021</updated>
     </task>
     <task id="LOCAL-00035" summary="Solved two easy problem">
       <created>1593030578421</created>
@@ -515,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594035283014</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Solve medium GroupAnagrams using sorting and via generating a custom key by counting characters">
+      <created>1594059864799</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1594059864800</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium LargestPlusSign -- very nice approach" />
     <MESSAGE value="Solved medium PowerSet using backtracking" />
     <MESSAGE value="Solved medium WordSearch using Backtracking and DFS" />
     <MESSAGE value="Solved medium Permutations using Backtracking" />
@@ -557,7 +557,8 @@
     <MESSAGE value="Solve medium MajorityElement2 using generalized voting algorithm" />
     <MESSAGE value="Solve medium KthSmallestElementInBST using inorder traversal" />
     <MESSAGE value="Solve medium CountUniqueBST using DP -- tricky question" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium CountUniqueBST using DP -- tricky question" />
+    <MESSAGE value="Solve medium GroupAnagrams using sorting and via generating a custom key by counting characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium GroupAnagrams using sorting and via generating a custom key by counting characters" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -575,10 +576,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1592846532567" />
-    <state x="552" y="183" key="#Project_Structure" timestamp="1591640833812">
+    <state x="552" y="183" key="#Project_Structure" timestamp="1594062003472">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1591640833812" />
+    <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594062003472" />
     <state x="540" y="380" key="#com.intellij.debugger.ui.breakpoints.EditClassFiltersDialog" timestamp="1592130861520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -615,54 +616,54 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594035282468">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594059864310">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594035282468" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594059864310" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593644857804" />
-    <state width="1877" height="203" key="GridCell.Tab.0.bottom" timestamp="1594059471228">
+    <state width="1877" height="199" key="GridCell.Tab.0.bottom" timestamp="1594155573092">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594059471228" />
-    <state width="1877" height="203" key="GridCell.Tab.0.center" timestamp="1594059471227">
+    <state width="1877" height="199" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594155573092" />
+    <state width="1877" height="199" key="GridCell.Tab.0.center" timestamp="1594155573092">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="203" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594059471227" />
-    <state width="1877" height="203" key="GridCell.Tab.0.left" timestamp="1594059471227">
+    <state width="1877" height="199" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594155573092" />
+    <state width="1877" height="199" key="GridCell.Tab.0.left" timestamp="1594155573092">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="203" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594059471227" />
-    <state width="1877" height="203" key="GridCell.Tab.0.right" timestamp="1594059471227">
+    <state width="1877" height="199" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594155573092" />
+    <state width="1877" height="199" key="GridCell.Tab.0.right" timestamp="1594155573092">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="203" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594059471227" />
-    <state width="1877" height="310" key="GridCell.Tab.1.bottom" timestamp="1594043330298">
+    <state width="1877" height="199" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594155573092" />
+    <state width="1877" height="309" key="GridCell.Tab.1.bottom" timestamp="1594108896979">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594043330298" />
-    <state width="1877" height="310" key="GridCell.Tab.1.center" timestamp="1594043330298">
+    <state width="1877" height="309" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594108896979" />
+    <state width="1877" height="309" key="GridCell.Tab.1.center" timestamp="1594108896979">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594043330298" />
-    <state width="1877" height="310" key="GridCell.Tab.1.left" timestamp="1594043330298">
+    <state width="1877" height="309" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594108896979" />
+    <state width="1877" height="309" key="GridCell.Tab.1.left" timestamp="1594108896979">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594043330298" />
-    <state width="1877" height="310" key="GridCell.Tab.1.right" timestamp="1594043330298">
+    <state width="1877" height="309" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594108896979" />
+    <state width="1877" height="309" key="GridCell.Tab.1.right" timestamp="1594108896979">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="310" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594043330298" />
+    <state width="1877" height="309" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594108896979" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="540" y="268" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593289890023" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1592427505528">
+    <state x="461" y="167" key="SettingsEditor" timestamp="1594108405931">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1592427505528" />
+    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594108405931" />
     <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1593951798794">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -671,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594035284179">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594059867313">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594035284179" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594059867313" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -695,10 +696,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="534" key="find.popup" timestamp="1594041875610">
+    <state x="667" y="258" width="585" height="534" key="find.popup" timestamp="1594061991295">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594041875610" />
+    <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594061991295" />
     <state width="600" height="230" key="javadoc.popup.new" timestamp="1594043211163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -874,6 +875,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/GroupAnagrams.java</url>
           <line>51</line>
           <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TargetSum.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TargetSum.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TargetSum.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="88" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
