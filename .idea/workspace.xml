@@ -88,11 +88,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PerfectSquaresTest">
-    <configuration name="CountUniqueBSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FindAllAnagramInStringTest">
+    <configuration name="FindAllAnagramInStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CountUniqueBSTTest" />
+      <option name="MAIN_CLASS_NAME" value="FindAllAnagramInStringTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,19 +147,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.CountUniqueBSTTest" />
       <item itemvalue="JUnit.GroupAnagramsTest" />
       <item itemvalue="JUnit.PerfectSquaresTest" />
       <item itemvalue="JUnit.TargetSumTest" />
       <item itemvalue="JUnit.TargetSumTest.test" />
+      <item itemvalue="JUnit.FindAllAnagramInStringTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindAllAnagramInStringTest" />
         <item itemvalue="JUnit.PerfectSquaresTest" />
         <item itemvalue="JUnit.TargetSumTest.test" />
         <item itemvalue="JUnit.TargetSumTest" />
         <item itemvalue="JUnit.GroupAnagramsTest" />
-        <item itemvalue="JUnit.CountUniqueBSTTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,13 +170,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Solved medium findTheDuplicateNumber using SlowAndFastPointer approach">
-      <created>1593118210342</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1593118210342</updated>
     </task>
     <task id="LOCAL-00038" summary="Solved two easy DesignHashMap and DesignHashSet problem&#10;&#10;Ideally it should have been solved as an array of nodes with bounded size and then finding an index and then using chains to address conflicts">
       <created>1593353499925</created>
@@ -514,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594156380299</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Solve medium MaximumWidthOfBinaryTree -- tricky question, leverage 2*i, 2*i + 1 trick about child indexes">
+      <created>1594323494510</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1594323494511</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +531,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium Permutations using Backtracking" />
     <MESSAGE value="Solved easy deleteNodeInLinkedList without head pointer" />
     <MESSAGE value="Solved easy twoCityScheduling Problem -- neat question" />
     <MESSAGE value="Solved medium pickRandomIndicesWithWeight using cumulative sum and binary search -- tricky problem" />
@@ -556,7 +555,8 @@
     <MESSAGE value="Solve medium GroupAnagrams using sorting and via generating a custom key by counting characters" />
     <MESSAGE value="Solve medium PerfectSquares using DP -- math is hard" />
     <MESSAGE value="Solve medium TargetSum using DP and backtracking" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium TargetSum using DP and backtracking" />
+    <MESSAGE value="Solve medium MaximumWidthOfBinaryTree -- tricky question, leverage 2*i, 2*i + 1 trick about child indexes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium MaximumWidthOfBinaryTree -- tricky question, leverage 2*i, 2*i + 1 trick about child indexes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -574,10 +574,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1594156466904" />
-    <state x="552" y="183" key="#Project_Structure" timestamp="1594062003472">
+    <state x="552" y="183" key="#Project_Structure" timestamp="1594324360886">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594062003472" />
+    <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594324360886" />
     <state x="540" y="380" key="#com.intellij.debugger.ui.breakpoints.EditClassFiltersDialog" timestamp="1592130861520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -598,10 +598,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1591649760836" />
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591640262837">
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594324284210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1591640262837" />
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594324284210" />
     <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592677656988">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -614,30 +614,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594156379798">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594323493814">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594156379798" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594323493814" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593644857804" />
-    <state width="1877" height="309" key="GridCell.Tab.0.bottom" timestamp="1594156400216">
+    <state width="1877" height="198" key="GridCell.Tab.0.bottom" timestamp="1594325707214">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594156400216" />
-    <state width="1877" height="309" key="GridCell.Tab.0.center" timestamp="1594156400216">
+    <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594325707214" />
+    <state width="1877" height="198" key="GridCell.Tab.0.center" timestamp="1594325707214">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594156400216" />
-    <state width="1877" height="309" key="GridCell.Tab.0.left" timestamp="1594156400216">
+    <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594325707214" />
+    <state width="1877" height="198" key="GridCell.Tab.0.left" timestamp="1594325707213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594156400216" />
-    <state width="1877" height="309" key="GridCell.Tab.0.right" timestamp="1594156400216">
+    <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594325707213" />
+    <state width="1877" height="198" key="GridCell.Tab.0.right" timestamp="1594325707214">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="309" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594156400216" />
+    <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594325707214" />
     <state width="1877" height="309" key="GridCell.Tab.1.bottom" timestamp="1594156400216">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -670,18 +670,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594156391259">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594323495477">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594156391259" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594323495477" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590521839325" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593965558347">
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594325060320">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1593965558347" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594325060320" />
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594034173381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -698,14 +698,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594061991295" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1594297885823">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1594378851847">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1594297885823" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1593630707849">
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1594378851847" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1594325592260">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593630707849" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594325592260" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594310707728">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
