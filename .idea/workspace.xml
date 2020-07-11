@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyHashMapTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +56,13 @@
       </set>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1OYjUozR2wA5XfxN4lSupdXEdA9" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -61,9 +73,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
@@ -75,7 +87,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -156,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FindAllAnagramInStringTest" />
+        <item itemvalue="JUnit.GroupAnagramsTest" />
         <item itemvalue="JUnit.PerfectSquaresTest" />
         <item itemvalue="JUnit.TargetSumTest.test" />
         <item itemvalue="JUnit.TargetSumTest" />
-        <item itemvalue="JUnit.GroupAnagramsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Solved two easy DesignHashMap and DesignHashSet problem&#10;&#10;Ideally it should have been solved as an array of nodes with bounded size and then finding an index and then using chains to address conflicts">
-      <created>1593353499925</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1593353499925</updated>
     </task>
     <task id="LOCAL-00039" summary="Solved medium DecodeString">
       <created>1593360243868</created>
@@ -514,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594323494511</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Solve medium MakingFileNamesUnique -- simple question">
+      <created>1594380758206</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1594380758207</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved easy deleteNodeInLinkedList without head pointer" />
     <MESSAGE value="Solved easy twoCityScheduling Problem -- neat question" />
     <MESSAGE value="Solved medium pickRandomIndicesWithWeight using cumulative sum and binary search -- tricky problem" />
     <MESSAGE value="Solved medium InsertDeleteGetRandom in constant time using arrays and hashmap" />
@@ -556,7 +567,8 @@
     <MESSAGE value="Solve medium PerfectSquares using DP -- math is hard" />
     <MESSAGE value="Solve medium TargetSum using DP and backtracking" />
     <MESSAGE value="Solve medium MaximumWidthOfBinaryTree -- tricky question, leverage 2*i, 2*i + 1 trick about child indexes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium MaximumWidthOfBinaryTree -- tricky question, leverage 2*i, 2*i + 1 trick about child indexes" />
+    <MESSAGE value="Solve medium MakingFileNamesUnique -- simple question" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium MakingFileNamesUnique -- simple question" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -594,10 +606,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="689" y="315" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592130784851" />
-    <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1591649760836">
+    <state x="683" y="214" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1594451678382">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1591649760836" />
+    <state x="683" y="214" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451678382" />
+    <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594451490581">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451490581" />
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1594324284210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -606,6 +622,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1592677656988" />
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594384167063">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594384167063" />
     <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1593428979633">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -614,30 +634,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594323493814">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594380757525">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594323493814" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594380757525" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1593644857804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593644857804" />
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom" timestamp="1594325707214">
+    <state width="1877" height="197" key="GridCell.Tab.0.bottom" timestamp="1594452379880">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594325707214" />
-    <state width="1877" height="198" key="GridCell.Tab.0.center" timestamp="1594325707214">
+    <state width="1877" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594452379880" />
+    <state width="1877" height="197" key="GridCell.Tab.0.center" timestamp="1594452379880">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594325707214" />
-    <state width="1877" height="198" key="GridCell.Tab.0.left" timestamp="1594325707213">
+    <state width="1877" height="197" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594452379880" />
+    <state width="1877" height="197" key="GridCell.Tab.0.left" timestamp="1594452379880">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594325707213" />
-    <state width="1877" height="198" key="GridCell.Tab.0.right" timestamp="1594325707214">
+    <state width="1877" height="197" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594452379880" />
+    <state width="1877" height="197" key="GridCell.Tab.0.right" timestamp="1594452379880">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594325707214" />
+    <state width="1877" height="197" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594452379880" />
     <state width="1877" height="309" key="GridCell.Tab.1.bottom" timestamp="1594156400216">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -658,10 +678,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="540" y="268" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593289890023" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1594108405931">
+    <state x="490" y="180" key="Maven.ArtifactSearchDialog" timestamp="1594451518521">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594108405931" />
+    <state x="490" y="180" key="Maven.ArtifactSearchDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451518521" />
+    <state x="461" y="167" key="SettingsEditor" timestamp="1594451782901">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594451782901" />
     <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1593951798794">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -670,14 +694,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1593605021866" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594323495477">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594380760344">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594323495477" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594380760344" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590521839325" />
+    <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1594451868089">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1594451868089" />
     <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594325060320">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -698,18 +726,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594061991295" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1594378851847">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1594384101706">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1594378851847" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1594384101706" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1594325592260">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594325592260" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594310707728">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594451757736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594310707728" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594451757736" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
