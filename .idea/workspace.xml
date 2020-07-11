@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve easy Identify whether a binary tree is height balanced or not using DFS" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Solved easy MountainArray">
-      <created>1593374462939</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1593374462939</updated>
     </task>
     <task id="LOCAL-00042" summary="Solved medium CombinationSum using both Backtracking and DP">
       <created>1593433409628</created>
@@ -519,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594452815367</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Solve easy Identify whether a binary tree is height balanced or not using DFS">
+      <created>1594486009476</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1594486009476</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved medium InsertDeleteGetRandom in constant time using arrays and hashmap" />
     <MESSAGE value="Solved medium Permutations2 -- variant of Permutations in which input has duplicates" />
     <MESSAGE value="Solve medium find top k frequent elements in an array using minheap and hashmap" />
     <MESSAGE value="Solve medium Trie -- implemented in first attempt. &#10;&#10;Sad i couldn't do it in DeShaw interview" />
@@ -561,7 +558,8 @@
     <MESSAGE value="Solve medium MakingFileNamesUnique -- simple question" />
     <MESSAGE value="Solve easy FindTheAdditionalCharacter in another string" />
     <MESSAGE value="Revert remove MyHashMap class to solve intellij import issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert remove MyHashMap class to solve intellij import issues" />
+    <MESSAGE value="Solve easy Identify whether a binary tree is height balanced or not using DFS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy Identify whether a binary tree is height balanced or not using DFS" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -627,10 +625,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594452814652">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594486028375">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594452814652" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594486028375" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1594452654715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -691,10 +689,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594452823093">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594486012586">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594452823093" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594486012586" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

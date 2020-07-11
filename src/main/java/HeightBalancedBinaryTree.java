@@ -16,7 +16,8 @@
  * </pre>
  */
 public class HeightBalancedBinaryTree {
-    boolean isBalanced = true;
+    boolean isBalanced = true; //can avoid this by returning a special value from helper function when found to be unbalanced e.g. -1
+    //need to check the left and right return value for -1 and then return -1 too
 
     public boolean isBalanced(TreeNode root) {
         helper(root);
