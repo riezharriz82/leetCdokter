@@ -28,22 +28,25 @@ public class PathWithMaxProbability {
             nodes.get(edges[i][1]).add(new Pair<>(edges[i][0], succProb[i])); //its a undirected graph, add reverse edge as well
         }
         double[] distance = new double[n];
-
-        Djikstra(nodes, distance, start, end);
+        boolean[] visited = new boolean[n];
+        Djikstra(nodes, distance, visited, start, end);
         return distance[end];
     }
 
-    private void Djikstra(List<List<Pair<Integer, Double>>> nodes, double[] distance, int start, int end) {
+    private void Djikstra(List<List<Pair<Integer, Double>>> nodes, double[] distance, boolean[] visited, int start, int end) {
         PriorityQueue<Pair<Integer, Double>> minHeap = new PriorityQueue<>((o1, o2) -> Double.compare(o2.getValue(), o1.getValue()));
         minHeap.add(new Pair<>(start, 1D));
         distance[start] = 1;
         while (!minHeap.isEmpty()) {
             Pair<Integer, Double> head = minHeap.remove();
+            visited[head.getKey()] = true;
             if (head.getKey() == end) {
                 return; // no need to continue finding max probability for all the nodes
             }
             for (Pair<Integer, Double> adjacentNodes : nodes.get(head.getKey())) {
-                if (distance[adjacentNodes.getKey()] < distance[head.getKey()] * adjacentNodes.getValue()) {
+                //priority queue will return the longest path first, so if we visit the same node again, we will only get a smaller path
+                // hence the visited check
+                if (distance[adjacentNodes.getKey()] < distance[head.getKey()] * adjacentNodes.getValue() && !visited[adjacentNodes.getKey()]) {
                     distance[adjacentNodes.getKey()] = distance[head.getKey()] * adjacentNodes.getValue();
                     minHeap.add(new Pair<>(adjacentNodes.getKey(), distance[adjacentNodes.getKey()]));
                 }

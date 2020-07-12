@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PathWithMaxProbability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PathWithMaxProbability.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Solved medium GenerateBrackets using backtracking -- khud se kia with first attempt -- wooooohoooo">
-      <created>1593440999479</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1593440999479</updated>
     </task>
     <task id="LOCAL-00045" summary="Solved medium LetterCombinationsOfPhoneNumber">
       <created>1593444692314</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594571426066</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Solve medium find path with max probability in undirected graph using BFS and Djikstra -- tricky question">
+      <created>1594574707604</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1594574707604</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -533,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Trie -- implemented in first attempt. &#10;&#10;Sad i couldn't do it in DeShaw interview" />
     <MESSAGE value="Solve medium AddAndSearchWords in dictionary using trie -- Support regex input of '.' using dfs" />
     <MESSAGE value="Solve medium PrisonCellAfterNDays -- related to repetitions in finite possible states" />
     <MESSAGE value="Solve hard WordSearch2 -- search multiple words in a grid via DFS and Trie -- trie solution is much faster&#10;&#10;Found it a bit tricky to increment trie and grid simultaneously and check for valid words." />
@@ -558,7 +558,8 @@
     <MESSAGE value="Solve easy Identify whether a binary tree is height balanced or not using DFS" />
     <MESSAGE value="Add comment in order to avoid global variable in HeightBalancedBinaryTree" />
     <MESSAGE value="Solve find whether a binary tree is subtree of another binary tree using preorder/inorder traversal and dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve find whether a binary tree is subtree of another binary tree using preorder/inorder traversal and dfs" />
+    <MESSAGE value="Solve medium find path with max probability in undirected graph using BFS and Djikstra -- tricky question" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find path with max probability in undirected graph using BFS and Djikstra -- tricky question" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -624,30 +625,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594571425542">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594574706989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594571425542" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594574706989" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1594452654715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594452654715" />
-    <state width="1877" height="194" key="GridCell.Tab.0.bottom" timestamp="1594573941755">
+    <state width="1877" height="194" key="GridCell.Tab.0.bottom" timestamp="1594576794288">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="194" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594573941755" />
-    <state width="1877" height="194" key="GridCell.Tab.0.center" timestamp="1594573941755">
+    <state width="1877" height="194" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594576794288" />
+    <state width="1877" height="194" key="GridCell.Tab.0.center" timestamp="1594576794288">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="194" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594573941755" />
-    <state width="1877" height="194" key="GridCell.Tab.0.left" timestamp="1594573941755">
+    <state width="1877" height="194" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594576794288" />
+    <state width="1877" height="194" key="GridCell.Tab.0.left" timestamp="1594576794288">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="194" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594573941755" />
-    <state width="1877" height="194" key="GridCell.Tab.0.right" timestamp="1594573941755">
+    <state width="1877" height="194" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594576794288" />
+    <state width="1877" height="194" key="GridCell.Tab.0.right" timestamp="1594576794288">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="194" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594573941755" />
+    <state width="1877" height="194" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594576794288" />
     <state width="1877" height="307" key="GridCell.Tab.1.bottom" timestamp="1594485097316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -688,10 +689,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594571427167">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594574708663">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594571427167" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594574708663" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
