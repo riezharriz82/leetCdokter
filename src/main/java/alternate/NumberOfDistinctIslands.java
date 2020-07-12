@@ -1,3 +1,5 @@
+package alternate;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -33,7 +35,7 @@ public class NumberOfDistinctIslands {
                 if (grid[i][j] == 1) {
                     dfs(grid, i, j, i, j, set);
                     res.add(set.toString()); // set will ensure that we don't add duplicate shapes
-                    //we need not worry about the order of processing as we are sweeping them in one order left to right/ top to bottom
+                    //we need not worry about the order of processing as we are sweeping them in one order left to right, top to bottom
                 }
             }
         }
@@ -44,7 +46,7 @@ public class NumberOfDistinctIslands {
         int m = grid.length, n = grid[0].length;
         if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0) return;
         set.add((i - baseX) + "_" + (j - baseY)); //add the hash of local coordinate
-        grid[i][j] = 0; //act as visitedJ
+        grid[i][j] = 0; //act as visited
         dfs(grid, i + 1, j, baseX, baseY, set);
         dfs(grid, i - 1, j, baseX, baseY, set);
         dfs(grid, i, j - 1, baseX, baseY, set);
