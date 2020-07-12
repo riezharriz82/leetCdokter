@@ -19,6 +19,12 @@ import java.util.Map;
  * Explanation: Note that sub-arrays [1,2] and [2,1] cannot be an answer because they overlap.
  */
 public class FindTwoNonOverlappingSubarrayWithTargetSum {
+
+    //Another way would be https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/discuss/685356/Google-Onsite-Question-or-Very-Easy-Java-O(n)-with-explanation
+    // Find size of subarray that equals target sum and ends at index i for all i
+    // Reverse the array and do the same
+    // Update the left array to be minimum of previous index or current
+    // Now for each indices, in order to find non overlapping results, calculate left[i-1] + right[i]
     public int minSumOfLengths(int[] arr, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         int sum = 0;
