@@ -33,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -175,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Solved medium RottingOranges -- BFS from multiple roots">
-      <created>1593533865371</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1593533865371</updated>
     </task>
     <task id="LOCAL-00053" summary="Update comment in RottingOranges">
       <created>1593534266358</created>
@@ -519,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594621918462</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Solve medium find all anagrams in a string using optimized sliding window">
+      <created>1594666994993</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1594666994994</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved easy ArrangingCoins using maths -- think about multiplying large ints, use long wherever applicable" />
     <MESSAGE value="Solved medium LastMomentAntFallsOff -- brain teaser problem, should have been able to solve it if I did some runs on the paper" />
     <MESSAGE value="Solved medium CountingBits using DP -- nifty bitwise operations" />
     <MESSAGE value="Solved easy MajorityElement using Boyer Moore voting algorithm" />
@@ -561,7 +560,8 @@
     <MESSAGE value="Solve medium find non overlapping subarrays of minimum size with target sum -- very similar to subarray sum equals k but with a twist" />
     <MESSAGE value="Add another way to solve FindTwoNonOverlappingSubarrayWithTargetSum by reversing the array" />
     <MESSAGE value="Update documentation in MaximumWidthOfBinaryTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update documentation in MaximumWidthOfBinaryTree" />
+    <MESSAGE value="Solve medium find all anagrams in a string using optimized sliding window" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all anagrams in a string using optimized sliding window" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -631,10 +631,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594621917889">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594667394731">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594621917889" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594667394731" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1594594948484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -695,10 +695,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594621919568">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594666996087">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594621919568" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594666996087" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -739,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594486861966" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594666532180">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594672479517">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594666532180" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594672479517" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
