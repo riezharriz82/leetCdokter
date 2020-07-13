@@ -11,6 +11,9 @@ import java.util.Map;
  * <p>
  * The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level,
  * where the null nodes between the end-nodes are also counted into the length calculation.
+ * <p>
+ * This problem differs from the maximum diameter of a binary tree e.g {1,2,3,4} maximum width is 2 but maximum diameter is 3
+ * Width is considered for one level
  */
 public class MaximumWidthOfBinaryTree {
     public int widthOfBinaryTreeSimplified(TreeNode root) {

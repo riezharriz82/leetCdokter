@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FindTwoNonOverlappingSubarrayWithTargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindTwoNonOverlappingSubarrayWithTargetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumWidthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumWidthOfBinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Leetcode premium question NumberOfDistinctIslands -- Question about finding similar shapes in a matrix">
-      <created>1593524298542</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1593524298547</updated>
     </task>
     <task id="LOCAL-00051" summary="Solved medium ContainerWithMostWater -- tricky question, solved via two pointer approach">
       <created>1593525936766</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594593254301</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Add another way to solve FindTwoNonOverlappingSubarrayWithTargetSum by reversing the array">
+      <created>1594593982991</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1594593982991</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,7 +535,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solved easy hamming distance using bitwise operations" />
     <MESSAGE value="Solved medium LevelOrderTraversal in reverse using Stack and Queue" />
     <MESSAGE value="Solved easy ArrangingCoins using maths -- think about multiplying large ints, use long wherever applicable" />
     <MESSAGE value="Solved medium LastMomentAntFallsOff -- brain teaser problem, should have been able to solve it if I did some runs on the paper" />
@@ -560,7 +559,8 @@
     <MESSAGE value="Solve premium question, find total no of meeting rooms required using sort and min heap" />
     <MESSAGE value="Solve easy reverseBits of a number using bitwise operations" />
     <MESSAGE value="Solve medium find non overlapping subarrays of minimum size with target sum -- very similar to subarray sum equals k but with a twist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find non overlapping subarrays of minimum size with target sum -- very similar to subarray sum equals k but with a twist" />
+    <MESSAGE value="Add another way to solve FindTwoNonOverlappingSubarrayWithTargetSum by reversing the array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add another way to solve FindTwoNonOverlappingSubarrayWithTargetSum by reversing the array" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -630,14 +630,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594593253862">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594593982497">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594593253862" />
-    <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1594452654715">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594593982497" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1594594948484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594452654715" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594594948484" />
     <state width="1877" height="194" key="GridCell.Tab.0.bottom" timestamp="1594593810829">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -694,10 +694,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594593255774">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594593984168">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594593255774" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594593984168" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -738,10 +738,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594486861966" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594582359988">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594595082808">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594582359988" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594595082808" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
