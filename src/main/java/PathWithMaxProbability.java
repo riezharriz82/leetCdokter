@@ -18,6 +18,9 @@ import java.util.*;
  */
 public class PathWithMaxProbability {
 
+    //you can use djikstra to find path with maximum probability but you can use it to find longest path
+    //finding longest path is NP hard problem, for DAG graph, it can be solved in linear time using topological sort
+    //then for each vertices in topological ordering, update the longest path for its adjacent nodes
     public double maxProbabilityUsingDjikstra(int n, int[][] edges, double[] succProb, int start, int end) {
         List<List<Pair<Integer, Double>>> nodes = new ArrayList<>(n);
         for (int i = 0; i < n; i++) {
@@ -44,8 +47,6 @@ public class PathWithMaxProbability {
                 return; // no need to continue finding max probability for all the nodes
             }
             for (Pair<Integer, Double> adjacentNodes : nodes.get(head.getKey())) {
-                //priority queue will return the longest path first, so if we visit the same node again, we will only get a smaller path
-                // hence the visited check
                 if (distance[adjacentNodes.getKey()] < distance[head.getKey()] * adjacentNodes.getValue() && !visited[adjacentNodes.getKey()]) {
                     distance[adjacentNodes.getKey()] = distance[head.getKey()] * adjacentNodes.getValue();
                     minHeap.add(new Pair<>(adjacentNodes.getKey(), distance[adjacentNodes.getKey()]));
