@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinHeightTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinHeightTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MinHeightTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MinHeightTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Solved easy deleteNodeInLinkedList without head pointer">
-      <created>1593691763445</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1593691763445</updated>
     </task>
     <task id="LOCAL-00063" summary="Solved easy twoCityScheduling Problem -- neat question">
       <created>1593694553583</created>
@@ -523,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594901036705</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="Solve medium find root of min height tree by calculating the diameter of the tree followed by finding the center of the diameter -- very good question">
+      <created>1594928792429</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1594928792429</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -545,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium MaximumWidthOfBinaryTree -- tricky question, leverage 2*i, 2*i + 1 trick about child indexes" />
     <MESSAGE value="Solve medium MakingFileNamesUnique -- simple question" />
     <MESSAGE value="Solve easy FindTheAdditionalCharacter in another string" />
     <MESSAGE value="Revert remove MyHashMap class to solve intellij import issues" />
@@ -570,7 +571,8 @@
     <MESSAGE value="Update documentation for finding longest path in graph" />
     <MESSAGE value="Update typo" />
     <MESSAGE value="Solve medium calculate exponent in logn by squaring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium calculate exponent in logn by squaring" />
+    <MESSAGE value="Solve medium find root of min height tree by calculating the diameter of the tree followed by finding the center of the diameter -- very good question" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find root of min height tree by calculating the diameter of the tree followed by finding the center of the diameter -- very good question" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -640,30 +642,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594901035941">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594928791696">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594901035941" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1594848797799">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594928791696" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1594929438843">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594848797799" />
-    <state width="1877" height="188" key="GridCell.Tab.0.bottom" timestamp="1594928337173">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594929438843" />
+    <state width="1877" height="188" key="GridCell.Tab.0.bottom" timestamp="1594929855763">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594928337173" />
-    <state width="1877" height="188" key="GridCell.Tab.0.center" timestamp="1594928337173">
+    <state width="1877" height="188" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594929855763" />
+    <state width="1877" height="188" key="GridCell.Tab.0.center" timestamp="1594929855763">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594928337173" />
-    <state width="1877" height="188" key="GridCell.Tab.0.left" timestamp="1594928337172">
+    <state width="1877" height="188" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594929855763" />
+    <state width="1877" height="188" key="GridCell.Tab.0.left" timestamp="1594929855763">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594928337172" />
-    <state width="1877" height="188" key="GridCell.Tab.0.right" timestamp="1594928337173">
+    <state width="1877" height="188" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594929855763" />
+    <state width="1877" height="188" key="GridCell.Tab.0.right" timestamp="1594929855763">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="188" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594928337173" />
+    <state width="1877" height="188" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594929855763" />
     <state width="1877" height="277" key="GridCell.Tab.1.bottom" timestamp="1594928303263">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -704,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594901037537">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594928793287">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594901037537" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594928793287" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -953,12 +955,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/MinHeightTree.java</url>
-          <line>47</line>
+          <line>70</line>
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/MinHeightTree.java</url>
-          <line>56</line>
+          <line>79</line>
           <option name="timeStamp" value="107" />
         </line-breakpoint>
       </breakpoints>

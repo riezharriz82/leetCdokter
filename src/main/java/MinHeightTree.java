@@ -26,6 +26,29 @@ import java.util.List;
  */
 public class MinHeightTree {
 
+    public List<Integer> findMinHeightTreesByRemovingLeafNodes(int n, int[][] edges) {
+        List<List<Integer>> graph = buildGraph(edges, n);
+        List<Integer> leaves = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            if (graph.get(i).size() == 1) { //nodes with degree 1 are the leaves
+                leaves.add(i);
+            }
+        }
+        while (n > 2) { // do it until only 1 (in case of odd length max diameter) or 2 nodes (even length max diameter) remain
+            n -= leaves.size();
+            List<Integer> nextLeaves = new ArrayList<>();
+            for (int leaf : leaves) {
+                int adjacentNode = graph.get(leaf).get(0);
+                graph.get(adjacentNode).remove((Integer) leaf); //remove the current leaf from the adjacent node edges
+                if (graph.get(adjacentNode).size() == 1) { //check if by removing the edge adjacent node becomes a leaf
+                    nextLeaves.add(adjacentNode);
+                }
+            }
+            leaves = nextLeaves;
+        }
+        return leaves;
+    }
+
     /**
      * 0) Pick arbitrary starting node
      * <p>
@@ -39,7 +62,7 @@ public class MinHeightTree {
      * 3) There is a theorem saying that center lies at the middle of the diameter,
      * seen as a path. If such path has odd length, there are two centers.
      */
-    public List<Integer> findMinHeightTrees(int n, int[][] edges) {
+    public List<Integer> findMinHeightTreesByFindingMaxDiameter(int n, int[][] edges) {
         List<List<Integer>> graph = buildGraph(edges, n);
         boolean[] visited = new boolean[n];
         int[] distanceFromInitialNode = new int[n];
