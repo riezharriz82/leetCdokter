@@ -180,13 +180,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00064" summary="Solved medium pickRandomIndicesWithWeight using cumulative sum and binary search -- tricky problem">
-      <created>1593699071306</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1593699071306</updated>
-    </task>
     <task id="LOCAL-00065" summary="Solved medium InsertDeleteGetRandom in constant time using arrays and hashmap">
       <created>1593716458184</created>
       <option name="number" value="00065" />
@@ -523,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594930313777</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Solve medium divide array in sets of K consecutive numbers using treemap -- was able to almost solve it on my own">
+      <created>1595016030102</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1595016030102</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -545,7 +545,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy FindTheAdditionalCharacter in another string" />
     <MESSAGE value="Revert remove MyHashMap class to solve intellij import issues" />
     <MESSAGE value="Solve easy Identify whether a binary tree is height balanced or not using DFS" />
     <MESSAGE value="Add comment in order to avoid global variable in HeightBalancedBinaryTree" />
@@ -570,7 +569,8 @@
     <MESSAGE value="Solve medium calculate exponent in logn by squaring" />
     <MESSAGE value="Solve medium find root of min height tree by calculating the diameter of the tree followed by finding the center of the diameter -- very good question" />
     <MESSAGE value="Solve medium find root of min height tree by removing leaf nodes one by one until only the center node remains" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find root of min height tree by removing leaf nodes one by one until only the center node remains" />
+    <MESSAGE value="Solve medium divide array in sets of K consecutive numbers using treemap -- was able to almost solve it on my own" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium divide array in sets of K consecutive numbers using treemap -- was able to almost solve it on my own" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -640,14 +640,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1594930313162">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595016029233">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1594930313162" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1594932831512">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595016029233" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595019003722">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594932831512" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595019003722" />
     <state width="1877" height="187" key="GridCell.Tab.0.bottom" timestamp="1595015531506">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -704,10 +704,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1594930314739">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595016031125">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1594930314739" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595016031125" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -748,10 +748,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594486861966" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595015459843">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595019002431">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595015459843" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595019002431" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
