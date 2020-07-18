@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00066" summary="Solved medium Permutations2 -- variant of Permutations in which input has duplicates">
-      <created>1593718256695</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1593718256695</updated>
-    </task>
     <task id="LOCAL-00067" summary="Solve medium find top k frequent elements in an array using minheap and hashmap">
       <created>1593776979545</created>
       <option name="number" value="00067" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595019191513</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="Solved medium shortest path to reach a node in a matrix using BFS and A* algorithm -- A* requires an heuristic function to find approximate cost to reach target along with a cost matrix which decides whether to continue this path">
+      <created>1595072379803</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1595072379803</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy Identify whether a binary tree is height balanced or not using DFS" />
     <MESSAGE value="Add comment in order to avoid global variable in HeightBalancedBinaryTree" />
     <MESSAGE value="Solve find whether a binary tree is subtree of another binary tree using preorder/inorder traversal and dfs" />
     <MESSAGE value="Solve medium find path with max probability in undirected graph using BFS and Djikstra -- tricky question" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve medium find root of min height tree by removing leaf nodes one by one until only the center node remains" />
     <MESSAGE value="Solve medium divide array in sets of K consecutive numbers using treemap -- was able to almost solve it on my own" />
     <MESSAGE value="Update documentation in DeleteNodeInLinkedListWithoutHeadPointer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update documentation in DeleteNodeInLinkedListWithoutHeadPointer" />
+    <MESSAGE value="Solved medium shortest path to reach a node in a matrix using BFS and A* algorithm -- A* requires an heuristic function to find approximate cost to reach target along with a cost matrix which decides whether to continue this path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved medium shortest path to reach a node in a matrix using BFS and A* algorithm -- A* requires an heuristic function to find approximate cost to reach target along with a cost matrix which decides whether to continue this path" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,30 +642,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595019190982">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595072379179">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595019190982" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595072379179" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595019702978">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595019702978" />
-    <state width="1877" height="185" key="GridCell.Tab.0.bottom" timestamp="1595072016362">
+    <state width="1877" height="185" key="GridCell.Tab.0.bottom" timestamp="1595072192213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595072016362" />
-    <state width="1877" height="185" key="GridCell.Tab.0.center" timestamp="1595072016362">
+    <state width="1877" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595072192213" />
+    <state width="1877" height="185" key="GridCell.Tab.0.center" timestamp="1595072192213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595072016362" />
-    <state width="1877" height="185" key="GridCell.Tab.0.left" timestamp="1595072016362">
+    <state width="1877" height="185" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595072192213" />
+    <state width="1877" height="185" key="GridCell.Tab.0.left" timestamp="1595072192212">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595072016362" />
-    <state width="1877" height="185" key="GridCell.Tab.0.right" timestamp="1595072016362">
+    <state width="1877" height="185" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595072192212" />
+    <state width="1877" height="185" key="GridCell.Tab.0.right" timestamp="1595072192213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595072016362" />
+    <state width="1877" height="185" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595072192213" />
     <state width="1877" height="277" key="GridCell.Tab.1.bottom" timestamp="1594928303263">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595019192865">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595072380632">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595019192865" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595072380632" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -738,10 +738,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595070419278" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595015515204">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595074941954">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595015515204" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595074941954" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1594853697448">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
