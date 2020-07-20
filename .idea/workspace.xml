@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00069" summary="Solve medium AddAndSearchWords in dictionary using trie -- Support regex input of '.' using dfs">
-      <created>1593788404568</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1593788404568</updated>
-    </task>
     <task id="LOCAL-00070" summary="Solve medium PrisonCellAfterNDays -- related to repetitions in finite possible states">
       <created>1593793653571</created>
       <option name="number" value="00070" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595087122026</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Solve medium shuffle an array using fisher yates algorithm in the first attempt">
+      <created>1595091259771</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1595091259771</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find path with max probability in undirected graph using BFS and Djikstra -- tricky question" />
     <MESSAGE value="Update Djikstra logic in PathWithMaxProbability to use visited array to avoid taking unnecessary path" />
     <MESSAGE value="Solve medium find min difference between largest and smallest number in an array after changing any number to any value at most 3 times -- very tricky" />
     <MESSAGE value="Solve premium question, find total no of meeting rooms required using sort and min heap" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solved medium shortest path to reach a node in a matrix using BFS and A* algorithm -- A* requires an heuristic function to find approximate cost to reach target along with a cost matrix which decides whether to continue this path" />
     <MESSAGE value="Solve easy find whether a string is subsequence of another string using two pointer approach" />
     <MESSAGE value="Solve medium is sudoku valid -- tricky part was to find the subgrid index using % and /, math is hard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium is sudoku valid -- tricky part was to find the subgrid index using % and /, math is hard" />
+    <MESSAGE value="Solve medium shuffle an array using fisher yates algorithm in the first attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium shuffle an array using fisher yates algorithm in the first attempt" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,14 +642,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595087121464">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595091259235">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595087121464" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595019702978">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595091259235" />
+    <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1595262203758">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595019702978" />
+    <state x="368" y="174" width="1536" height="867" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595262203758" />
     <state width="1877" height="185" key="GridCell.Tab.0.bottom" timestamp="1595087064482">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595087123021">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595091260746">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595087123021" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595091260746" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -750,10 +750,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594486861966" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595019002431">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595091392046">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595019002431" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595091392046" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
