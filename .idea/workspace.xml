@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00073" summary="Update comment in UglyNumber2">
-      <created>1593890229234</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1593890229234</updated>
-    </task>
     <task id="LOCAL-00074" summary="Solved easy hamming distance using bitwise operations">
       <created>1593950507020</created>
       <option name="number" value="00074" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595269645688</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Update CombinationSum3 by simplifying logic">
+      <created>1595275566660</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1595275566660</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy reverseBits of a number using bitwise operations" />
     <MESSAGE value="Solve medium find non overlapping subarrays of minimum size with target sum -- very similar to subarray sum equals k but with a twist" />
     <MESSAGE value="Add another way to solve FindTwoNonOverlappingSubarrayWithTargetSum by reversing the array" />
     <MESSAGE value="Update documentation in MaximumWidthOfBinaryTree" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve easy min cost to reach top of the stairs using DP" />
     <MESSAGE value="Solve medium number of nodes in the subtree with same label using DFS -- in case where you need to build a tree from the edges treat it similar to creation of an undirected graph" />
     <MESSAGE value="Solve medium delete node in a BST -- tricky question, need to carefully update the pointers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium delete node in a BST -- tricky question, need to carefully update the pointers" />
+    <MESSAGE value="Update CombinationSum3 by simplifying logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update CombinationSum3 by simplifying logic" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,30 +642,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595269645097">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595275566016">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595269645097" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595274912239">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595275566016" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595277159203">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595274912239" />
-    <state width="1877" height="185" key="GridCell.Tab.0.bottom" timestamp="1595087064482">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595277159203" />
+    <state width="1877" height="184" key="GridCell.Tab.0.bottom" timestamp="1595275571344">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595087064482" />
-    <state width="1877" height="185" key="GridCell.Tab.0.center" timestamp="1595087064482">
+    <state width="1877" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595275571344" />
+    <state width="1877" height="184" key="GridCell.Tab.0.center" timestamp="1595275571343">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595087064482" />
-    <state width="1877" height="185" key="GridCell.Tab.0.left" timestamp="1595087064482">
+    <state width="1877" height="184" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595275571343" />
+    <state width="1877" height="184" key="GridCell.Tab.0.left" timestamp="1595275571343">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595087064482" />
-    <state width="1877" height="185" key="GridCell.Tab.0.right" timestamp="1595087064482">
+    <state width="1877" height="184" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595275571343" />
+    <state width="1877" height="184" key="GridCell.Tab.0.right" timestamp="1595275571344">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="185" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595087064482" />
+    <state width="1877" height="184" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595275571344" />
     <state width="1877" height="277" key="GridCell.Tab.1.bottom" timestamp="1595085883268">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595269646720">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595275567914">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595269646720" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595275567914" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -738,10 +738,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595267169965">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595278575013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595267169965" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595278575013" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595265110499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
