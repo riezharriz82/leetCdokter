@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00071" summary="Solve hard WordSearch2 -- search multiple words in a grid via DFS and Trie -- trie solution is much faster&#10;&#10;Found it a bit tricky to increment trie and grid simultaneously and check for valid words.">
-      <created>1593808622968</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1593808622968</updated>
-    </task>
     <task id="LOCAL-00072" summary="Solve medium UglyNumber2 -- tricky question using DP">
       <created>1593886612255</created>
       <option name="number" value="00072" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595262466141</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Solve medium number of nodes in the subtree with same label using DFS -- in case where you need to build a tree from the edges treat it similar to creation of an undirected graph">
+      <created>1595266514888</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1595266514888</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find min difference between largest and smallest number in an array after changing any number to any value at most 3 times -- very tricky" />
     <MESSAGE value="Solve premium question, find total no of meeting rooms required using sort and min heap" />
     <MESSAGE value="Solve easy reverseBits of a number using bitwise operations" />
     <MESSAGE value="Solve medium find non overlapping subarrays of minimum size with target sum -- very similar to subarray sum equals k but with a twist" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve medium is sudoku valid -- tricky part was to find the subgrid index using % and /, math is hard" />
     <MESSAGE value="Solve medium shuffle an array using fisher yates algorithm in the first attempt" />
     <MESSAGE value="Solve easy min cost to reach top of the stairs using DP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy min cost to reach top of the stairs using DP" />
+    <MESSAGE value="Solve medium number of nodes in the subtree with same label using DFS -- in case where you need to build a tree from the edges treat it similar to creation of an undirected graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium number of nodes in the subtree with same label using DFS -- in case where you need to build a tree from the edges treat it similar to creation of an undirected graph" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,10 +642,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595262465453">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595266514162">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595262465453" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595266514162" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1595262203758">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595262467299">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595266516335">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595262467299" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595266516335" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -738,10 +738,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595089648207">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595267169965">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595089648207" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595267169965" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595265110499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
