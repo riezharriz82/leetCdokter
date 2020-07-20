@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00070" summary="Solve medium PrisonCellAfterNDays -- related to repetitions in finite possible states">
-      <created>1593793653571</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1593793653571</updated>
-    </task>
     <task id="LOCAL-00071" summary="Solve hard WordSearch2 -- search multiple words in a grid via DFS and Trie -- trie solution is much faster&#10;&#10;Found it a bit tricky to increment trie and grid simultaneously and check for valid words.">
       <created>1593808622968</created>
       <option name="number" value="00071" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595091259771</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Solve easy min cost to reach top of the stairs using DP">
+      <created>1595262466141</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1595262466141</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update Djikstra logic in PathWithMaxProbability to use visited array to avoid taking unnecessary path" />
     <MESSAGE value="Solve medium find min difference between largest and smallest number in an array after changing any number to any value at most 3 times -- very tricky" />
     <MESSAGE value="Solve premium question, find total no of meeting rooms required using sort and min heap" />
     <MESSAGE value="Solve easy reverseBits of a number using bitwise operations" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve easy find whether a string is subsequence of another string using two pointer approach" />
     <MESSAGE value="Solve medium is sudoku valid -- tricky part was to find the subgrid index using % and /, math is hard" />
     <MESSAGE value="Solve medium shuffle an array using fisher yates algorithm in the first attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium shuffle an array using fisher yates algorithm in the first attempt" />
+    <MESSAGE value="Solve easy min cost to reach top of the stairs using DP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy min cost to reach top of the stairs using DP" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -602,10 +602,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1595069667963">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1595262772091">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595069667963" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595262772091" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1594580841131">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -642,10 +642,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595091259235">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595262465453">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595091259235" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595262465453" />
     <state x="368" y="174" width="1536" height="867" key="DiffContextDialog" timestamp="1595262203758">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595091260746">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595262467299">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595091260746" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595262467299" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -742,10 +742,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595089648207" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1594853697448">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595265110499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594853697448" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595265110499" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1594486861966">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
