@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00074" summary="Solved easy hamming distance using bitwise operations">
-      <created>1593950507020</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1593950507020</updated>
-    </task>
     <task id="LOCAL-00075" summary="Solved medium LevelOrderTraversal in reverse using Stack and Queue">
       <created>1593952696191</created>
       <option name="number" value="00075" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595275566660</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Solve easy remove elements from linked list which matches a specific key by appending the filtered keys to a dummy node">
+      <created>1595278995953</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1595278995953</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find non overlapping subarrays of minimum size with target sum -- very similar to subarray sum equals k but with a twist" />
     <MESSAGE value="Add another way to solve FindTwoNonOverlappingSubarrayWithTargetSum by reversing the array" />
     <MESSAGE value="Update documentation in MaximumWidthOfBinaryTree" />
     <MESSAGE value="Solve medium find all anagrams in a string using optimized sliding window" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve medium number of nodes in the subtree with same label using DFS -- in case where you need to build a tree from the edges treat it similar to creation of an undirected graph" />
     <MESSAGE value="Solve medium delete node in a BST -- tricky question, need to carefully update the pointers" />
     <MESSAGE value="Update CombinationSum3 by simplifying logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update CombinationSum3 by simplifying logic" />
+    <MESSAGE value="Solve easy remove elements from linked list which matches a specific key by appending the filtered keys to a dummy node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy remove elements from linked list which matches a specific key by appending the filtered keys to a dummy node" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,10 +642,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595275566016">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595278995149">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595275566016" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595278995149" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595277159203">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595275567914">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595278996923">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595275567914" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595278996923" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
