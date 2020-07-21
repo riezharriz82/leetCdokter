@@ -40,11 +40,18 @@ public class GameOfLife {
      * <p>
      * Also another way of solving this problem when the entire board can't fit into memory would be to just store into disk row by row
      * For each ith row, all the adjacent 8 nodes, lies in the i-1th row or i+1st row, we can only pull those row into memory and be done with it.
+     * <p>
+     * State changes can be modelled by storing the states in bit
+     * [2nd bit, 1st bit] = [next state, current state]
+     * <p>
+     * 00  dead (next) <- dead (current)
+     * 01  dead (next) <- live (current)
+     * 10  live (next) <- dead (current)
+     * 11  live (next) <- live (current)
      */
     public void gameOfLife(int[][] board) {
         int m = board.length;
         int n = board[0].length;
-        int[][] res = new int[m][n];
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -58,26 +65,27 @@ public class GameOfLife {
                         int new_x = i + x;
                         int new_y = j + y;
                         if (new_x >= 0 && new_x < m && new_y >= 0 && new_y < n) {
-                            if (board[new_x][new_y] == 1) {
-                                aliveNeighbours++;
-                            }
+                            aliveNeighbours += board[new_x][new_y] & 1; //need to only look at the right most bit, which is the current bit
                         }
                     }
                 }
                 if (val == 0 && aliveNeighbours == 3) {
-                    res[i][j] = 1; //rule 4
+                    board[i][j] = 2; //2 in binary is 10, previous state was 0, current state is 1
                 } else if (val == 1 && aliveNeighbours < 2) {
-                    res[i][j] = 0; //rule 1
+                    board[i][j] = 1; //1 in binary is 01, previous state was 1, current state is 0
                 } else if (val == 1 && aliveNeighbours > 3) {
-                    res[i][j] = 0;
-                } else {
-                    res[i][j] = board[i][j];
+                    board[i][j] = 1; //previous state was 1, current state is 0
+                } else if (val == 1) {
+                    //alive neighbours == 2 or 3
+                    board[i][j] = 3; //previous state is 1, current state is 1
                 }
             }
         }
 
         for (int i = 0; i < m; i++) {
-            System.arraycopy(res[i], 0, board[i], 0, n);
+            for (int j = 0; j < n; j++) {
+                board[i][j] >>= 1; //right shift by 1, so that next state becomes the current state
+            }
         }
     }
 }
