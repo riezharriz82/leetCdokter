@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00075" summary="Solved medium LevelOrderTraversal in reverse using Stack and Queue">
-      <created>1593952696191</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1593952696191</updated>
-    </task>
     <task id="LOCAL-00076" summary="Solved easy ArrangingCoins using maths -- think about multiplying large ints, use long wherever applicable">
       <created>1593954662653</created>
       <option name="number" value="00076" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595278995953</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="Solve medium product of array elements except self with and without extra space">
+      <created>1595282655540</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1595282655540</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another way to solve FindTwoNonOverlappingSubarrayWithTargetSum by reversing the array" />
     <MESSAGE value="Update documentation in MaximumWidthOfBinaryTree" />
     <MESSAGE value="Solve medium find all anagrams in a string using optimized sliding window" />
     <MESSAGE value="Solve medium count nodes in complete binary tree in O(logn)(logn) by pruning subtrees" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve medium delete node in a BST -- tricky question, need to carefully update the pointers" />
     <MESSAGE value="Update CombinationSum3 by simplifying logic" />
     <MESSAGE value="Solve easy remove elements from linked list which matches a specific key by appending the filtered keys to a dummy node" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy remove elements from linked list which matches a specific key by appending the filtered keys to a dummy node" />
+    <MESSAGE value="Solve medium product of array elements except self with and without extra space" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium product of array elements except self with and without extra space" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,14 +642,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595278995149">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595282654868">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595278995149" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595277159203">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595282654868" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595335946531">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595277159203" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595335946531" />
     <state width="1877" height="184" key="GridCell.Tab.0.bottom" timestamp="1595275571344">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595278996923">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595282656611">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595278996923" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595282656611" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
