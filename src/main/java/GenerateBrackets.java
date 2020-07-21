@@ -26,14 +26,8 @@ public class GenerateBrackets {
     private void helper(int curOpen, int curClose, int maxOpen, List<String> res, StringBuilder curAnswer) {
         if (curOpen > maxOpen || curClose > curOpen) {
             return;
-        } else if (curOpen == maxOpen) {
-            int curLength = curAnswer.length();
-            //close all the open brackets
-            for (int i = curClose; i < maxOpen; i++) {
-                curAnswer.append(")");
-            }
+        } else if (curOpen + curClose == 2 * maxOpen) {
             res.add(curAnswer.toString());
-            curAnswer.setLength(curLength);
         } else {
             helper(curOpen + 1, curClose, maxOpen, res, curAnswer.append("("));
             curAnswer.setLength(curAnswer.length() - 1);
