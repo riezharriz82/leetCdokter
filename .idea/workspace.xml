@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GenerateBrackets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenerateBrackets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Solved easy MajorityElement using Boyer Moore voting algorithm">
-      <created>1593961483386</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1593961483386</updated>
     </task>
     <task id="LOCAL-00080" summary="Solve medium MajorityElement2 using generalized voting algorithm">
       <created>1593971791975</created>
@@ -526,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595343050580</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="Update GenerateBrackets by simplifying logic">
+      <created>1595368085181</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1595368085182</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium LCA of Binary tree" />
     <MESSAGE value="Solve medium course schedule using topological sort" />
     <MESSAGE value="Solve medium course schedule 2 -- need to print topological sort" />
     <MESSAGE value="Solve easy check if two rectangles overlap using maths which is very hard" />
@@ -573,7 +571,8 @@
     <MESSAGE value="Solve medium odd and even linked list by managing two dummy head/tail nodes" />
     <MESSAGE value="Solve medium GameOfLife -- good follow up questions on handling sparse matrices -- store only the information required or process row by row" />
     <MESSAGE value="Update GameOfLife to not use extra space -- state transitions can be stored in individual bits e.g. rightmost bit can store the current state, next state can be stored in the adjacent left of the rightmost bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update GameOfLife to not use extra space -- state transitions can be stored in individual bits e.g. rightmost bit can store the current state, next state can be stored in the adjacent left of the rightmost bit" />
+    <MESSAGE value="Update GenerateBrackets by simplifying logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update GenerateBrackets by simplifying logic" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -643,30 +642,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595343050031">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595368084570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595343050031" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595367992925">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595368084570" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595370148464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595367992925" />
-    <state width="1877" height="182" key="GridCell.Tab.0.bottom" timestamp="1595342901791">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595370148464" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595368088264">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595342901791" />
-    <state width="1877" height="182" key="GridCell.Tab.0.center" timestamp="1595342901791">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595368088264" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595368088264">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595342901791" />
-    <state width="1877" height="182" key="GridCell.Tab.0.left" timestamp="1595342901791">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595368088264" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595368088264">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595342901791" />
-    <state width="1877" height="182" key="GridCell.Tab.0.right" timestamp="1595342901791">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595368088264" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595368088264">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="182" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595342901791" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595368088264" />
     <state width="1877" height="276" key="GridCell.Tab.1.bottom" timestamp="1595337833300">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595343051857">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595368086384">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595343051857" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595368086384" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -719,10 +718,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1594451868089" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595070394201">
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595407054011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595070394201" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595407054011" />
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594592599434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -739,10 +738,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595337648205">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595451479632">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595337648205" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595451479632" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595265110499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -813,21 +812,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/CombinationSum.java</url>
           <line>30</line>
           <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GenerateBrackets.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GenerateBrackets.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GenerateBrackets.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/RottingOrangesTest.java</url>
