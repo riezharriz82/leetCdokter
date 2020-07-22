@@ -99,11 +99,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GenerateBracketsTest">
+  <component name="RunManager" selected="JUnit.ContainsDuplicate3Test">
     <configuration name="CombinationSum3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CombinationSum3Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainsDuplicate3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContainsDuplicate3Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,15 +131,6 @@
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GenerateBracketsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShortestPathInBinaryMatrixTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShortestPathInBinaryMatrixTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,19 +158,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.ShortestPathInBinaryMatrixTest" />
       <item itemvalue="JUnit.ValidSudokuTest.test" />
       <item itemvalue="JUnit.CombinationSum3Test" />
       <item itemvalue="JUnit.GameOfLifeTest" />
       <item itemvalue="JUnit.GenerateBracketsTest" />
+      <item itemvalue="JUnit.ContainsDuplicate3Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContainsDuplicate3Test" />
         <item itemvalue="JUnit.GenerateBracketsTest" />
         <item itemvalue="JUnit.GameOfLifeTest" />
         <item itemvalue="JUnit.CombinationSum3Test" />
         <item itemvalue="JUnit.ValidSudokuTest.test" />
-        <item itemvalue="JUnit.ShortestPathInBinaryMatrixTest" />
       </list>
     </recent_temporary>
   </component>
@@ -181,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Solve medium CountUniqueBST using DP -- tricky question">
-      <created>1594035283014</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1594035283014</updated>
     </task>
     <task id="LOCAL-00083" summary="Solve medium GroupAnagrams using sorting and via generating a custom key by counting characters">
       <created>1594059864799</created>
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595453044370</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Solve easy contains duplicate element by fixed sliding window implementation">
+      <created>1595454571725</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1595454571725</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy check if two rectangles overlap using maths which is very hard" />
     <MESSAGE value="Update logic in RectangleOverlap" />
     <MESSAGE value="Update documentation for finding longest path in graph" />
     <MESSAGE value="Update typo" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Update GenerateBrackets by simplifying logic" />
     <MESSAGE value="Solve medium zig-zag level order traversal using dfs" />
     <MESSAGE value="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region" />
+    <MESSAGE value="Solve easy contains duplicate element by fixed sliding window implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy contains duplicate element by fixed sliding window implementation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,46 +642,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595453043813">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595454570975">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595453043813" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595454570975" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595370148464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595370148464" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1595368088264">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1595456381212">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595368088264" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1595368088264">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595456381212" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1595456381212">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595368088264" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1595368088264">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595456381212" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1595456381211">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595368088264" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1595368088264">
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595456381211" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1595456381212">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595368088264" />
-    <state width="1877" height="276" key="GridCell.Tab.1.bottom" timestamp="1595337833300">
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595456381212" />
+    <state width="1877" height="275" key="GridCell.Tab.1.bottom" timestamp="1595456238476">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595337833300" />
-    <state width="1877" height="276" key="GridCell.Tab.1.center" timestamp="1595337833300">
+    <state width="1877" height="275" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595456238476" />
+    <state width="1877" height="275" key="GridCell.Tab.1.center" timestamp="1595456238476">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595337833300" />
-    <state width="1877" height="276" key="GridCell.Tab.1.left" timestamp="1595337833300">
+    <state width="1877" height="275" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595456238476" />
+    <state width="1877" height="275" key="GridCell.Tab.1.left" timestamp="1595456238476">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595337833300" />
-    <state width="1877" height="276" key="GridCell.Tab.1.right" timestamp="1595337833300">
+    <state width="1877" height="275" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595456238476" />
+    <state width="1877" height="275" key="GridCell.Tab.1.right" timestamp="1595456238476">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595337833300" />
+    <state width="1877" height="275" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595456238476" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595453045649">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595454572746">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595453045649" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595454572746" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -738,18 +738,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595451479632">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595457614640">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595451479632" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595457614640" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595265110499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595265110499" />
-    <state x="616" y="243" key="run.anything.popup" timestamp="1594486861966">
+    <state x="616" y="243" key="run.anything.popup" timestamp="1595454832517">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594486861966" />
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595367991294">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
