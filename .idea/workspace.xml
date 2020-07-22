@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Solve medium KthSmallestElementInBST using inorder traversal">
-      <created>1594034267429</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1594034267429</updated>
     </task>
     <task id="LOCAL-00082" summary="Solve medium CountUniqueBST using DP -- tricky question">
       <created>1594035283014</created>
@@ -523,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595451663293</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region">
+      <created>1595453044370</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1595453044370</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -545,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium course schedule 2 -- need to print topological sort" />
     <MESSAGE value="Solve easy check if two rectangles overlap using maths which is very hard" />
     <MESSAGE value="Update logic in RectangleOverlap" />
     <MESSAGE value="Update documentation for finding longest path in graph" />
@@ -570,7 +571,8 @@
     <MESSAGE value="Update GameOfLife to not use extra space -- state transitions can be stored in individual bits e.g. rightmost bit can store the current state, next state can be stored in the adjacent left of the rightmost bit" />
     <MESSAGE value="Update GenerateBrackets by simplifying logic" />
     <MESSAGE value="Solve medium zig-zag level order traversal using dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium zig-zag level order traversal using dfs" />
+    <MESSAGE value="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -640,10 +642,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595451662489">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595453043813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595451662489" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595453043813" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595370148464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -704,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595451665004">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595453045649">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595451665004" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595453045649" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
