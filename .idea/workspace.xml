@@ -99,20 +99,30 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContainsDuplicate3Test">
-    <configuration name="CombinationSum3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FindTwoSingleNumberTest">
+    <configuration name="ContainsDuplicate3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CombinationSum3Test" />
+      <option name="MAIN_CLASS_NAME" value="ContainsDuplicate3Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainsDuplicate3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainsDuplicate3Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ContainsDuplicate3Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindTwoSingleNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindTwoSingleNumberTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,31 +156,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidSudokuTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ValidSudokuTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.ValidSudokuTest.test" />
-      <item itemvalue="JUnit.CombinationSum3Test" />
       <item itemvalue="JUnit.GameOfLifeTest" />
       <item itemvalue="JUnit.GenerateBracketsTest" />
       <item itemvalue="JUnit.ContainsDuplicate3Test" />
+      <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
+      <item itemvalue="JUnit.FindTwoSingleNumberTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindTwoSingleNumberTest" />
+        <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
         <item itemvalue="JUnit.ContainsDuplicate3Test" />
         <item itemvalue="JUnit.GenerateBracketsTest" />
         <item itemvalue="JUnit.GameOfLifeTest" />
-        <item itemvalue="JUnit.CombinationSum3Test" />
-        <item itemvalue="JUnit.ValidSudokuTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -181,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Solve medium GroupAnagrams using sorting and via generating a custom key by counting characters">
-      <created>1594059864799</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1594059864800</updated>
     </task>
     <task id="LOCAL-00084" summary="Solve medium PerfectSquares using DP -- math is hard">
       <created>1594156286815</created>
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595454571725</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions">
+      <created>1595458149539</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1595458149539</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update logic in RectangleOverlap" />
     <MESSAGE value="Update documentation for finding longest path in graph" />
     <MESSAGE value="Update typo" />
     <MESSAGE value="Solve medium calculate exponent in logn by squaring" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve medium zig-zag level order traversal using dfs" />
     <MESSAGE value="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region" />
     <MESSAGE value="Solve easy contains duplicate element by fixed sliding window implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy contains duplicate element by fixed sliding window implementation" />
+    <MESSAGE value="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -638,50 +638,50 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595271326137" />
-    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1593968432698">
+    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1595527777727">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1593968432698" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595454570975">
+    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595458148800">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595454570975" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595458148800" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595370148464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595370148464" />
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1595456381212">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595456381212" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1595456381212">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595456381212" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1595456381211">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595456381211" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1595456381212">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595456381212" />
-    <state width="1877" height="275" key="GridCell.Tab.1.bottom" timestamp="1595456238476">
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
+    <state width="1877" height="274" key="GridCell.Tab.1.bottom" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595456238476" />
-    <state width="1877" height="275" key="GridCell.Tab.1.center" timestamp="1595456238476">
+    <state width="1877" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
+    <state width="1877" height="274" key="GridCell.Tab.1.center" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595456238476" />
-    <state width="1877" height="275" key="GridCell.Tab.1.left" timestamp="1595456238476">
+    <state width="1877" height="274" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
+    <state width="1877" height="274" key="GridCell.Tab.1.left" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595456238476" />
-    <state width="1877" height="275" key="GridCell.Tab.1.right" timestamp="1595456238476">
+    <state width="1877" height="274" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
+    <state width="1877" height="274" key="GridCell.Tab.1.right" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595456238476" />
+    <state width="1877" height="274" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595454572746">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595458152181">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595454572746" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595458152181" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -947,6 +947,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/MinHeightTree.java</url>
           <line>79</line>
           <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FindTwoSingleNumber.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="116" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
