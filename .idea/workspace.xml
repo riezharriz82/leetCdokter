@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RootToLeafPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RootToLeafPathSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindTwoSingleNumberTest">
+  <component name="RunManager" selected="JUnit.RootToLeafPathSumTest">
     <configuration name="ContainsDuplicate3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -128,19 +129,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameOfLifeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GenerateBracketsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameOfLifeTest" />
+      <option name="MAIN_CLASS_NAME" value="GenerateBracketsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenerateBracketsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RootToLeafPathSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenerateBracketsTest" />
+      <option name="MAIN_CLASS_NAME" value="RootToLeafPathSumTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,19 +159,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.GameOfLifeTest" />
       <item itemvalue="JUnit.GenerateBracketsTest" />
       <item itemvalue="JUnit.ContainsDuplicate3Test" />
       <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
       <item itemvalue="JUnit.FindTwoSingleNumberTest" />
+      <item itemvalue="JUnit.RootToLeafPathSumTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RootToLeafPathSumTest" />
         <item itemvalue="JUnit.FindTwoSingleNumberTest" />
         <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
         <item itemvalue="JUnit.ContainsDuplicate3Test" />
         <item itemvalue="JUnit.GenerateBracketsTest" />
-        <item itemvalue="JUnit.GameOfLifeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -181,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Solve medium PerfectSquares using DP -- math is hard">
-      <created>1594156286815</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1594156286816</updated>
     </task>
     <task id="LOCAL-00085" summary="Solve medium TargetSum using DP and backtracking">
       <created>1594156380299</created>
@@ -525,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595458149539</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset">
+      <created>1595528165937</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1595528165937</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update documentation for finding longest path in graph" />
     <MESSAGE value="Update typo" />
     <MESSAGE value="Solve medium calculate exponent in logn by squaring" />
     <MESSAGE value="Solve medium find root of min height tree by calculating the diameter of the tree followed by finding the center of the diameter -- very good question" />
@@ -572,7 +572,8 @@
     <MESSAGE value="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region" />
     <MESSAGE value="Solve easy contains duplicate element by fixed sliding window implementation" />
     <MESSAGE value="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions" />
+    <MESSAGE value="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,30 +643,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595458148800">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595528165297">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595458148800" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595370148464">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595528165297" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595533570679">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595370148464" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1595527793013">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595533570679" />
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1595533429191">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1595527793013">
+    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595533429191" />
+    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1595533429191">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1595527793013">
+    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595533429191" />
+    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1595533429190">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1595527793013">
+    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595533429190" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1595533429191">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595527793013" />
+    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595533429191" />
     <state width="1877" height="274" key="GridCell.Tab.1.bottom" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595458152181">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595528167655">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595458152181" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595528167655" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -750,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595367991294">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595533425617">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595367991294" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595533425617" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -950,7 +951,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FindTwoSingleNumber.java</url>
-          <line>9</line>
+          <line>23</line>
           <option name="timeStamp" value="116" />
         </line-breakpoint>
       </breakpoints>

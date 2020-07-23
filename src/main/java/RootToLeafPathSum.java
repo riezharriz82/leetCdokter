@@ -28,6 +28,7 @@ public class RootToLeafPathSum {
             return false;
         }
         curSum += root.val;
+        //this explicit check is required so that we don't include path sum with only one child (1 -> 2)
         if (root.left == null && root.right == null) {
             return curSum == target;
         }
