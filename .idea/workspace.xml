@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RootToLeafPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RootToLeafPathSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Solve medium TargetSum using DP and backtracking">
-      <created>1594156380299</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1594156380299</updated>
     </task>
     <task id="LOCAL-00086" summary="Solve medium MaximumWidthOfBinaryTree -- tricky question, leverage 2*i, 2*i + 1 trick about child indexes">
       <created>1594323494510</created>
@@ -526,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595528165937</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="Update documentation in RootToLeafPathSum to add condition to check whether node is leaf or not">
+      <created>1595533616007</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1595533616007</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update typo" />
     <MESSAGE value="Solve medium calculate exponent in logn by squaring" />
     <MESSAGE value="Solve medium find root of min height tree by calculating the diameter of the tree followed by finding the center of the diameter -- very good question" />
     <MESSAGE value="Solve medium find root of min height tree by removing leaf nodes one by one until only the center node remains" />
@@ -573,7 +571,8 @@
     <MESSAGE value="Solve easy contains duplicate element by fixed sliding window implementation" />
     <MESSAGE value="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions" />
     <MESSAGE value="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset" />
+    <MESSAGE value="Update documentation in RootToLeafPathSum to add condition to check whether node is leaf or not" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update documentation in RootToLeafPathSum to add condition to check whether node is leaf or not" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -643,30 +642,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595528165297">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595533615532">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595528165297" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595533615532" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595533570679">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595533570679" />
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1595533429191">
+    <state width="916" height="282" key="GridCell.Tab.0.bottom" timestamp="1595535029471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595533429191" />
-    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1595533429191">
+    <state width="916" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595535029471" />
+    <state width="916" height="282" key="GridCell.Tab.0.center" timestamp="1595535029471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595533429191" />
-    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1595533429190">
+    <state width="916" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595535029471" />
+    <state width="916" height="282" key="GridCell.Tab.0.left" timestamp="1595535029471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595533429190" />
-    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1595533429191">
+    <state width="916" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595535029471" />
+    <state width="916" height="282" key="GridCell.Tab.0.right" timestamp="1595535029471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595533429191" />
+    <state width="916" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595535029471" />
     <state width="1877" height="274" key="GridCell.Tab.1.bottom" timestamp="1595527793013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595528167655">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595533617029">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595528167655" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595533617029" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +742,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595457614640" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595265110499">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595535576917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595265110499" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595535576917" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1595454832517">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
