@@ -1,3 +1,5 @@
+import common.TreeNode;
+
 /**
  * https://leetcode.com/problems/symmetric-tree/
  */

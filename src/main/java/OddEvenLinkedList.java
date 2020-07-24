@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /**
  * https://leetcode.com/problems/odd-even-linked-list/
  * <p>

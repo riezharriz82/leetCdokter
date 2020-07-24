@@ -1,3 +1,5 @@
+import common.TreeNode;
+
 /**
  * https://leetcode.com/problems/validate-binary-search-tree/
  * Given a binary tree, determine if it is a valid binary search tree (BST).

@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /**
  * https://leetcode.com/problems/delete-node-in-a-linked-list/
  * <p>

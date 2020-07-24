@@ -1,3 +1,5 @@
+import common.TreeNode;
+
 /**
  * https://leetcode.com/problems/merge-two-binary-trees/
  * <p>

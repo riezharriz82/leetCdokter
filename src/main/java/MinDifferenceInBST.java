@@ -1,3 +1,5 @@
+import common.TreeNode;
+
 /**
  * https://leetcode.com/problems/minimum-distance-between-bst-nodes/
  * Given a Binary Search Tree (BST) with the root node root, return the minimum difference between the values of any two different nodes in the tree.
@@ -7,7 +9,7 @@
  * Input: root = [4,2,6,1,3,null,null]
  * Output: 1
  * Explanation:
- * Note that root is a TreeNode object, not an array.
+ * Note that root is a common.TreeNode object, not an array.
  * <pre>
  *           4
  *         /   \

@@ -1,10 +1,12 @@
+package common;
+
 /**
  * https://leetcode.com/problems/maximum-binary-tree/
  */
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+public class TreeNode {
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
 
     TreeNode() {
     }
