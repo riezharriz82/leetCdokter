@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00087" summary="Solve medium MakingFileNamesUnique -- simple question">
-      <created>1594380758206</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1594380758207</updated>
-    </task>
     <task id="LOCAL-00088" summary="Solve easy FindTheAdditionalCharacter in another string">
       <created>1594452641173</created>
       <option name="number" value="00088" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595538510148</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Solve medium find all paths from source to target node in a DAG using DFS + Backtracking in first attempt">
+      <created>1595606374944</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1595606374944</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find root of min height tree by calculating the diameter of the tree followed by finding the center of the diameter -- very good question" />
     <MESSAGE value="Solve medium find root of min height tree by removing leaf nodes one by one until only the center node remains" />
     <MESSAGE value="Solve medium divide array in sets of K consecutive numbers using treemap -- was able to almost solve it on my own" />
     <MESSAGE value="Update documentation in DeleteNodeInLinkedListWithoutHeadPointer" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset" />
     <MESSAGE value="Update documentation in RootToLeafPathSum to add condition to check whether node is leaf or not" />
     <MESSAGE value="Solve medium list all nodes at a distance K from a given node -- tricky question, need to carefully handle which subtree target lies in" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium list all nodes at a distance K from a given node -- tricky question, need to carefully handle which subtree target lies in" />
+    <MESSAGE value="Solve medium find all paths from source to target node in a DAG using DFS + Backtracking in first attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all paths from source to target node in a DAG using DFS + Backtracking in first attempt" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,10 +642,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595538509625">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595606374347">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595538509625" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595606374347" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595533570679">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595538511148">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595606376083">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595538511148" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595606376083" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -738,10 +738,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595457614640">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595606817607">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595457614640" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595606817607" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595535576917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
