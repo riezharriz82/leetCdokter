@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00089" summary="Revert remove MyHashMap class to solve intellij import issues">
-      <created>1594452815367</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1594452815367</updated>
-    </task>
     <task id="LOCAL-00090" summary="Solve easy Identify whether a binary tree is height balanced or not using DFS">
       <created>1594486009476</created>
       <option name="number" value="00090" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595607103618</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="Solve medium populate next right pointer in a binary tree in constant space by level order traversal -- iterate all nodes present at one level and keep updating next pointer of nodes of next level">
+      <created>1595610424942</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1595610424942</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +547,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium divide array in sets of K consecutive numbers using treemap -- was able to almost solve it on my own" />
     <MESSAGE value="Update documentation in DeleteNodeInLinkedListWithoutHeadPointer" />
     <MESSAGE value="Solved medium shortest path to reach a node in a matrix using BFS and A* algorithm -- A* requires an heuristic function to find approximate cost to reach target along with a cost matrix which decides whether to continue this path" />
     <MESSAGE value="Solve easy find whether a string is subsequence of another string using two pointer approach" />
@@ -572,7 +571,8 @@
     <MESSAGE value="Solve medium list all nodes at a distance K from a given node -- tricky question, need to carefully handle which subtree target lies in" />
     <MESSAGE value="Solve medium find all paths from source to target node in a DAG using DFS + Backtracking in first attempt" />
     <MESSAGE value="Solve medium find right side view of binary tree using DFS and keeping the rightmost value found in a level" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find right side view of binary tree using DFS and keeping the rightmost value found in a level" />
+    <MESSAGE value="Solve medium populate next right pointer in a binary tree in constant space by level order traversal -- iterate all nodes present at one level and keep updating next pointer of nodes of next level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium populate next right pointer in a binary tree in constant space by level order traversal -- iterate all nodes present at one level and keep updating next pointer of nodes of next level" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,14 +642,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595607103053">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595610424415">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595607103053" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595533570679">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595610424415" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595610972059">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595533570679" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595610972059" />
     <state width="916" height="282" key="GridCell.Tab.0.bottom" timestamp="1595535029471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595607104641">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595610425840">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595607104641" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595610425840" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

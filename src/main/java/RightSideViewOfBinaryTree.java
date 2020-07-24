@@ -20,19 +20,31 @@ import java.util.List;
 public class RightSideViewOfBinaryTree {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        DFS(root, res, 0);
+        DFSByTraversingRightSideFirst(root, res, 0);
         return res;
     }
 
-    private void DFS(TreeNode root, List<Integer> res, int currentLevel) {
+    private void DFSByTraversingRightSideFirst(TreeNode root, List<Integer> res, int currentLevel) {
+        if (root != null) {
+            if (currentLevel == res.size()) { //first time seeing this level, need to add
+                res.add(root.val);
+            }
+            //since we are traversing the right side first, we are bound to first see the rightmost side of a level, hence
+            // we don't need to override anything in the result
+            DFSByTraversingRightSideFirst(root.right, res, currentLevel + 1);
+            DFSByTraversingRightSideFirst(root.left, res, currentLevel + 1);
+        }
+    }
+
+    private void DFSByTraversingLeftSideFirst(TreeNode root, List<Integer> res, int currentLevel) {
         if (root != null) {
             if (currentLevel == res.size()) { //first time seeing this level, need to add
                 res.add(root.val);
             } else { //number already present at this level, need to override it, so that we only keep the rightmost element present in the level
                 res.set(currentLevel, root.val);
             }
-            DFS(root.left, res, currentLevel + 1);
-            DFS(root.right, res, currentLevel + 1);
+            DFSByTraversingLeftSideFirst(root.left, res, currentLevel + 1);
+            DFSByTraversingLeftSideFirst(root.right, res, currentLevel + 1);
         }
     }
 }
