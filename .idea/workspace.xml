@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +89,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="common" />
       <recent name="alternate" />
       <recent name="" />
     </key>
@@ -179,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Solve find whether a binary tree is subtree of another binary tree using preorder/inorder traversal and dfs">
-      <created>1594571426066</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1594571426066</updated>
     </task>
     <task id="LOCAL-00093" summary="Solve medium find path with max probability in undirected graph using BFS and Djikstra -- tricky question">
       <created>1594574707604</created>
@@ -523,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595614486588</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="Add solution of Boundary traversal of binary tree in single traversal of tree using modified preorder traversal">
+      <created>1595614607094</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1595614607094</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -545,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find whether a string is subsequence of another string using two pointer approach" />
     <MESSAGE value="Solve medium is sudoku valid -- tricky part was to find the subgrid index using % and /, math is hard" />
     <MESSAGE value="Solve medium shuffle an array using fisher yates algorithm in the first attempt" />
     <MESSAGE value="Solve easy min cost to reach top of the stairs using DP" />
@@ -570,7 +572,8 @@
     <MESSAGE value="Solve medium populate next right pointer in a binary tree in constant space by level order traversal -- iterate all nodes present at one level and keep updating next pointer of nodes of next level" />
     <MESSAGE value="Simplify RightSideViewOfBinaryTree by traversing right side first to prevent overriding in the result array" />
     <MESSAGE value="Move TreeNode and ListNode from default package -- apparently you can't import classes from default package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move TreeNode and ListNode from default package -- apparently you can't import classes from default package" />
+    <MESSAGE value="Add solution of Boundary traversal of binary tree in single traversal of tree using modified preorder traversal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add solution of Boundary traversal of binary tree in single traversal of tree using modified preorder traversal" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -640,10 +643,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595614485927">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595614606499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595614485927" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595614606499" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595610972059">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -704,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595612060400">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595614608980">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595612060400" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595614608980" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -736,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595613039913">
+    <state width="600" height="230" key="javadoc.popup.new" timestamp="1595617930119">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595613039913" />
+    <state width="600" height="230" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595617930119" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595535576917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
