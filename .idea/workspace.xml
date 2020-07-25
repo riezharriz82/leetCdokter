@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Solve premium question, find total no of meeting rooms required using sort and min heap">
-      <created>1594582176444</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1594582176444</updated>
     </task>
     <task id="LOCAL-00097" summary="Solve easy reverseBits of a number using bitwise operations">
       <created>1594589498063</created>
@@ -524,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595694838531</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="Solve medium find number of way to split a string into two parts having equal number of distinct characters&#10;&#10;TIP: When dealing with questions related to split, try to solve the problem left to right and right to left separately.">
+      <created>1595695463331</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1595695463331</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -546,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium number of nodes in the subtree with same label using DFS -- in case where you need to build a tree from the edges treat it similar to creation of an undirected graph" />
     <MESSAGE value="Solve medium delete node in a BST -- tricky question, need to carefully update the pointers" />
     <MESSAGE value="Update CombinationSum3 by simplifying logic" />
     <MESSAGE value="Solve easy remove elements from linked list which matches a specific key by appending the filtered keys to a dummy node" />
@@ -571,7 +572,8 @@
     <MESSAGE value="Solve easy Next greater element 1 by using stack" />
     <MESSAGE value="Solve medium find Next Greater Element in a circular array in first attempt by looping the input array twice" />
     <MESSAGE value="Solve medium find number of subarrays with odd sum using maths -- very tricky and hard problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find number of subarrays with odd sum using maths -- very tricky and hard problem" />
+    <MESSAGE value="Solve medium find number of way to split a string into two parts having equal number of distinct characters&#10;&#10;TIP: When dealing with questions related to split, try to solve the problem left to right and right to left separately." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find number of way to split a string into two parts having equal number of distinct characters&#10;&#10;TIP: When dealing with questions related to split, try to solve the problem left to right and right to left separately." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -641,30 +643,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595694838076">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595695462804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595694838076" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595695462804" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595610972059">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595610972059" />
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom" timestamp="1595687283063">
+    <state width="1877" height="194" key="GridCell.Tab.0.bottom" timestamp="1595695168884">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595687283063" />
-    <state width="1877" height="273" key="GridCell.Tab.0.center" timestamp="1595687283063">
+    <state width="1877" height="194" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595695168884" />
+    <state width="1877" height="194" key="GridCell.Tab.0.center" timestamp="1595695168884">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595687283063" />
-    <state width="1877" height="273" key="GridCell.Tab.0.left" timestamp="1595687283063">
+    <state width="1877" height="194" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595695168884" />
+    <state width="1877" height="194" key="GridCell.Tab.0.left" timestamp="1595695168884">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595687283063" />
-    <state width="1877" height="273" key="GridCell.Tab.0.right" timestamp="1595687283063">
+    <state width="1877" height="194" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595695168884" />
+    <state width="1877" height="194" key="GridCell.Tab.0.right" timestamp="1595695168884">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595687283063" />
+    <state width="1877" height="194" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595695168884" />
     <state width="1877" height="273" key="GridCell.Tab.1.bottom" timestamp="1595687283063">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -705,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595694840930">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595695464431">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595694840930" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595695464431" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -737,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="824" height="247" key="javadoc.popup.new" timestamp="1595694846737">
+    <state width="824" height="247" key="javadoc.popup.new" timestamp="1595695166727">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="824" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595694846737" />
+    <state width="824" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595695166727" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595535576917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
