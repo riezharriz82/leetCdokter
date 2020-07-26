@@ -183,13 +183,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00103" summary="Solve medium LCA of Binary tree">
-      <created>1594673403972</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1594673403972</updated>
-    </task>
     <task id="LOCAL-00104" summary="Solve medium course schedule using topological sort">
       <created>1594754427289</created>
       <option name="number" value="00104" />
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595766480732</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="Solve medium find no of subarrays with k odd numbers by transforming it to subarray sum equals k. Sliding window solution is also possible but I found it difficult to visualize.&#10;&#10;TIP: Problems with at most K constraint can probably be solved using sliding window as well.">
+      <created>1595774450985</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1595774450985</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update GameOfLife to not use extra space -- state transitions can be stored in individual bits e.g. rightmost bit can store the current state, next state can be stored in the adjacent left of the rightmost bit" />
     <MESSAGE value="Update GenerateBrackets by simplifying logic" />
     <MESSAGE value="Solve medium zig-zag level order traversal using dfs" />
     <MESSAGE value="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region" />
@@ -573,7 +572,8 @@
     <MESSAGE value="Solve medium Bulb Switcher 4 in first attempt -- question related to reach a target state from input state&#10;&#10;Similar to MinimumNumberOfOperationstoReachTargetArray" />
     <MESSAGE value="Solve medium find number of leaf pairs lying within a target distance using post order traversal and keeping track of {distance to leaf node, no of leaf nodes} from left/right subarray&#10;&#10;Similar to NumberOfNodesInTheSubTreeWithSameLabel" />
     <MESSAGE value="Solve medium find minimum in rotated sorted array with and without duplicates using modified binary search. In case of duplicates, travel in both directions to find the smallest index value and resume search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find minimum in rotated sorted array with and without duplicates using modified binary search. In case of duplicates, travel in both directions to find the smallest index value and resume search" />
+    <MESSAGE value="Solve medium find no of subarrays with k odd numbers by transforming it to subarray sum equals k. Sliding window solution is also possible but I found it difficult to visualize.&#10;&#10;TIP: Problems with at most K constraint can probably be solved using sliding window as well." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find no of subarrays with k odd numbers by transforming it to subarray sum equals k. Sliding window solution is also possible but I found it difficult to visualize.&#10;&#10;TIP: Problems with at most K constraint can probably be solved using sliding window as well." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -643,14 +643,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595766480258">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595774450517">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595766480258" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595610972059">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595774450517" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595793177075">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595610972059" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595793177075" />
     <state width="1877" height="192" key="GridCell.Tab.0.bottom" timestamp="1595702656299">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595766481719">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595774452036">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595766481719" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595774452036" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

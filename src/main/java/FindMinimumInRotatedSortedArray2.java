@@ -72,18 +72,18 @@ public class FindMinimumInRotatedSortedArray2 {
         return nums[low];
     }
 
+    //PRO TIP: Use <= in binary search when you want to return the actual value from the binary search
+    // Use < if you want to return the index instead
     public int findMin(int[] nums) {
         int low = 0, high = nums.length - 1;
         while (low <= high) {
             int mid = (low + high) / 2;
             if (low == high) { // base conditions, single element remaining
                 return nums[low];
-            } else if (low + 1 == high) { //base condition, two elements remaining
-                return Math.min(nums[low], nums[high]);
             } else if (nums[mid] < nums[high]) { //right half is sorted, need to look in left half
                 high = mid;
             } else { //right half unsorted, look in right half
-                low = mid;
+                low = mid + 1;
             }
         }
         return -1;
