@@ -183,13 +183,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00100" summary="Update documentation in MaximumWidthOfBinaryTree">
-      <created>1594621918462</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1594621918462</updated>
-    </task>
     <task id="LOCAL-00101" summary="Solve medium find all anagrams in a string using optimized sliding window">
       <created>1594666994993</created>
       <option name="number" value="00101" />
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595748598705</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="Solve medium Bulb Switcher 4 in first attempt -- question related to reach a target state from input state&#10;&#10;Similar to MinimumNumberOfOperationstoReachTargetArray">
+      <created>1595760512646</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1595760512646</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium product of array elements except self with and without extra space" />
     <MESSAGE value="Solve medium odd and even linked list by managing two dummy head/tail nodes" />
     <MESSAGE value="Solve medium GameOfLife -- good follow up questions on handling sparse matrices -- store only the information required or process row by row" />
     <MESSAGE value="Update GameOfLife to not use extra space -- state transitions can be stored in individual bits e.g. rightmost bit can store the current state, next state can be stored in the adjacent left of the rightmost bit" />
@@ -573,7 +572,8 @@
     <MESSAGE value="Solve hard find minimum no of operations to reach target array -- Don't give up early instead try to build solutions from input of size = 1, size = 2, size = 3" />
     <MESSAGE value="Solve two medium problems related to next permutation -- trick is to find which indices to swap and sort from" />
     <MESSAGE value="Solve easy digital root of a number using fixed math formula" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy digital root of a number using fixed math formula" />
+    <MESSAGE value="Solve medium Bulb Switcher 4 in first attempt -- question related to reach a target state from input state&#10;&#10;Similar to MinimumNumberOfOperationstoReachTargetArray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Bulb Switcher 4 in first attempt -- question related to reach a target state from input state&#10;&#10;Similar to MinimumNumberOfOperationstoReachTargetArray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -643,10 +643,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595748598266">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595760512194">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595748598266" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595760512194" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595610972059">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595748600211">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595760513942">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595748600211" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595760513942" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -739,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="819" height="247" key="javadoc.popup.new" timestamp="1595760216515">
+    <state width="819" height="247" key="javadoc.popup.new" timestamp="1595761155634">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="819" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595760216515" />
+    <state width="819" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595761155634" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595535576917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -751,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595704776357">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595760642715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595704776357" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595760642715" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
