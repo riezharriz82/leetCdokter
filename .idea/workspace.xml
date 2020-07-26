@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve two medium problems related to next permutation -- trick is to find which indices to swap and sort from">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00099" summary="Add another way to solve FindTwoNonOverlappingSubarrayWithTargetSum by reversing the array">
-      <created>1594593982991</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1594593982991</updated>
     </task>
     <task id="LOCAL-00100" summary="Update documentation in MaximumWidthOfBinaryTree">
       <created>1594621918462</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595704360791</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="Solve easy digital root of a number using fixed math formula">
+      <created>1595748598705</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1595748598705</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy remove elements from linked list which matches a specific key by appending the filtered keys to a dummy node" />
     <MESSAGE value="Solve medium product of array elements except self with and without extra space" />
     <MESSAGE value="Solve medium odd and even linked list by managing two dummy head/tail nodes" />
     <MESSAGE value="Solve medium GameOfLife -- good follow up questions on handling sparse matrices -- store only the information required or process row by row" />
@@ -573,7 +572,8 @@
     <MESSAGE value="Solve medium find number of way to split a string into two parts having equal number of distinct characters&#10;&#10;TIP: When dealing with questions related to split, try to solve the problem left to right and right to left separately." />
     <MESSAGE value="Solve hard find minimum no of operations to reach target array -- Don't give up early instead try to build solutions from input of size = 1, size = 2, size = 3" />
     <MESSAGE value="Solve two medium problems related to next permutation -- trick is to find which indices to swap and sort from" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve two medium problems related to next permutation -- trick is to find which indices to swap and sort from" />
+    <MESSAGE value="Solve easy digital root of a number using fixed math formula" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy digital root of a number using fixed math formula" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -643,10 +643,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595704772600">
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595748598266">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595704772600" />
+    <state x="277" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595748598266" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595610972059">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595704362178">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595748600211">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595704362178" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595748600211" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -739,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="534" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595088979198" />
-    <state width="824" height="247" key="javadoc.popup.new" timestamp="1595709242541">
+    <state width="819" height="247" key="javadoc.popup.new" timestamp="1595760216515">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="824" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595709242541" />
+    <state width="819" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1595760216515" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595535576917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
