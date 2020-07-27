@@ -183,13 +183,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00106" summary="Solve easy check if two rectangles overlap using maths which is very hard">
-      <created>1594837044440</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1594837044441</updated>
-    </task>
     <task id="LOCAL-00107" summary="Update logic in RectangleOverlap">
       <created>1594837889575</created>
       <option name="number" value="00107" />
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595800385190</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray">
+      <created>1595876288423</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1595876288423</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region" />
     <MESSAGE value="Solve easy contains duplicate element by fixed sliding window implementation" />
     <MESSAGE value="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions" />
     <MESSAGE value="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset" />
@@ -573,7 +572,8 @@
     <MESSAGE value="Solve medium find no of subarrays with k odd numbers by transforming it to subarray sum equals k. Sliding window solution is also possible but I found it difficult to visualize.&#10;&#10;TIP: Problems with at most K constraint can probably be solved using sliding window as well." />
     <MESSAGE value="Simplify code in FindMinimumInRotatedSortedArray2" />
     <MESSAGE value="Solve GFG find no of ways to pair people using DP&#10;&#10;Was asked this during my amazon onsite, absolutely failed at answering why (n-1) is required ! I memoized the solution that time without understanding the concept, this time I reached the solution on my own." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve GFG find no of ways to pair people using DP&#10;&#10;Was asked this during my amazon onsite, absolutely failed at answering why (n-1) is required ! I memoized the solution that time without understanding the concept, this time I reached the solution on my own." />
+    <MESSAGE value="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -643,10 +643,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595800384688">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595876287749">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595800384688" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595876287749" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595801379353">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595800385945">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595876289357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595800385945" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595876289357" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
