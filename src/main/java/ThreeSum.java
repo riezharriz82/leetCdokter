@@ -19,6 +19,8 @@ import java.util.List;
  * </pre>
  */
 public class ThreeSum {
+    //Main emphasis of the problem is how will you skip duplicates
+    // Try dry running on the paper for some input e.g {-2,-2,-2,0,0,1,1,2,2}
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         int n = nums.length;
