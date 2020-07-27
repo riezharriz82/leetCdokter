@@ -183,13 +183,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00107" summary="Update logic in RectangleOverlap">
-      <created>1594837889575</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1594837889575</updated>
-    </task>
     <task id="LOCAL-00108" summary="Update documentation for finding longest path in graph">
       <created>1594846221285</created>
       <option name="number" value="00108" />
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595876288423</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="Solve medium create binary tree from inorder and preorder traversal by fixing the root first and then recursively fixing the root of left/right subarray">
+      <created>1595876984572</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1595876984572</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy contains duplicate element by fixed sliding window implementation" />
     <MESSAGE value="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions" />
     <MESSAGE value="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset" />
     <MESSAGE value="Update documentation in RootToLeafPathSum to add condition to check whether node is leaf or not" />
@@ -573,7 +572,8 @@
     <MESSAGE value="Simplify code in FindMinimumInRotatedSortedArray2" />
     <MESSAGE value="Solve GFG find no of ways to pair people using DP&#10;&#10;Was asked this during my amazon onsite, absolutely failed at answering why (n-1) is required ! I memoized the solution that time without understanding the concept, this time I reached the solution on my own." />
     <MESSAGE value="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
+    <MESSAGE value="Solve medium create binary tree from inorder and preorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium create binary tree from inorder and preorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -643,10 +643,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595876287749">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595876984061">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595876287749" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595876984061" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595801379353">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595876289357">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595876985857">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595876289357" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595876985857" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -751,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595875130774">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595876991157">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595875130774" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595876991157" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
