@@ -183,13 +183,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00112" summary="Solve medium find root of min height tree by removing leaf nodes one by one until only the center node remains">
-      <created>1594930313777</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1594930313777</updated>
-    </task>
     <task id="LOCAL-00113" summary="Solve medium divide array in sets of K consecutive numbers using treemap -- was able to almost solve it on my own">
       <created>1595016030102</created>
       <option name="number" value="00113" />
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595935536549</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="Solve hard Task Scheduler problem, similar to rearrange a string where similar characters are k distance apart&#10;&#10;Learning -- New problem, Visualize the problem, once a task is picked it can't be picked up for the next k time. Which task to pick first? In order to solve the answer in minimum cycles, you need to create less holes as possible, which is possible only if you pick most frequent task first, so that you can try to fill the holes with less frequent tasks">
+      <created>1595946897794</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1595946897794</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find all paths from source to target node in a DAG using DFS + Backtracking in first attempt" />
     <MESSAGE value="Solve medium find right side view of binary tree using DFS and keeping the rightmost value found in a level" />
     <MESSAGE value="Solve medium populate next right pointer in a binary tree in constant space by level order traversal -- iterate all nodes present at one level and keep updating next pointer of nodes of next level" />
     <MESSAGE value="Simplify RightSideViewOfBinaryTree by traversing right side first to prevent overriding in the result array" />
@@ -573,16 +572,17 @@
     <MESSAGE value="Solve medium Construct tree from preorder and postorder traversal by fixing one root at a time. Care must be taken to adjust the indices for left/right subarray. I messed up setting up the indices during original attempt" />
     <MESSAGE value="Update documentation on how to think about handling duplicates in ThreeSum" />
     <MESSAGE value="Solve medium Maximum sum of circular subarray by subtracting minimum subarray sum from total sum&#10;&#10;Learning -- Circular subarray questions can be solved by filtering out middle elements from the original array, so only wrapped elements remain." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Maximum sum of circular subarray by subtracting minimum subarray sum from total sum&#10;&#10;Learning -- Circular subarray questions can be solved by filtering out middle elements from the original array, so only wrapped elements remain." />
+    <MESSAGE value="Solve hard Task Scheduler problem, similar to rearrange a string where similar characters are k distance apart&#10;&#10;Learning -- New problem, Visualize the problem, once a task is picked it can't be picked up for the next k time. Which task to pick first? In order to solve the answer in minimum cycles, you need to create less holes as possible, which is possible only if you pick most frequent task first, so that you can try to fill the holes with less frequent tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard Task Scheduler problem, similar to rearrange a string where similar characters are k distance apart&#10;&#10;Learning -- New problem, Visualize the problem, once a task is picked it can't be picked up for the next k time. Which task to pick first? In order to solve the answer in minimum cycles, you need to create less holes as possible, which is possible only if you pick most frequent task first, so that you can try to fill the holes with less frequent tasks" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="726" y="229" key="#Auto_Import" timestamp="1594042087648">
+    <state x="726" y="229" key="#Auto_Import" timestamp="1595963541170">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1594042087648" />
+    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1595963541170" />
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1592860555493">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -643,10 +643,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595935535700">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595946897204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595935535700" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595946897204" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595933694550">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595935537350">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595946898958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595935537350" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595946898958" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
