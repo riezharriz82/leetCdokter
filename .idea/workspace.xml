@@ -183,13 +183,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00113" summary="Solve medium divide array in sets of K consecutive numbers using treemap -- was able to almost solve it on my own">
-      <created>1595016030102</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1595016030102</updated>
-    </task>
     <task id="LOCAL-00114" summary="Update documentation in DeleteNodeInLinkedListWithoutHeadPointer">
       <created>1595019191513</created>
       <option name="number" value="00114" />
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595946897794</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="Solve medium Bottom left value of a binary tree by DFS and keeping track of the first node of last level">
+      <created>1595963643930</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1595963643930</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find right side view of binary tree using DFS and keeping the rightmost value found in a level" />
     <MESSAGE value="Solve medium populate next right pointer in a binary tree in constant space by level order traversal -- iterate all nodes present at one level and keep updating next pointer of nodes of next level" />
     <MESSAGE value="Simplify RightSideViewOfBinaryTree by traversing right side first to prevent overriding in the result array" />
     <MESSAGE value="Move TreeNode and ListNode from default package -- apparently you can't import classes from default package" />
@@ -573,7 +572,8 @@
     <MESSAGE value="Update documentation on how to think about handling duplicates in ThreeSum" />
     <MESSAGE value="Solve medium Maximum sum of circular subarray by subtracting minimum subarray sum from total sum&#10;&#10;Learning -- Circular subarray questions can be solved by filtering out middle elements from the original array, so only wrapped elements remain." />
     <MESSAGE value="Solve hard Task Scheduler problem, similar to rearrange a string where similar characters are k distance apart&#10;&#10;Learning -- New problem, Visualize the problem, once a task is picked it can't be picked up for the next k time. Which task to pick first? In order to solve the answer in minimum cycles, you need to create less holes as possible, which is possible only if you pick most frequent task first, so that you can try to fill the holes with less frequent tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard Task Scheduler problem, similar to rearrange a string where similar characters are k distance apart&#10;&#10;Learning -- New problem, Visualize the problem, once a task is picked it can't be picked up for the next k time. Which task to pick first? In order to solve the answer in minimum cycles, you need to create less holes as possible, which is possible only if you pick most frequent task first, so that you can try to fill the holes with less frequent tasks" />
+    <MESSAGE value="Solve medium Bottom left value of a binary tree by DFS and keeping track of the first node of last level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Bottom left value of a binary tree by DFS and keeping track of the first node of last level" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -643,14 +643,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595946897204">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1595963643226">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595946897204" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595933694550">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1595963643226" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595965730787">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595933694550" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595965730787" />
     <state width="1877" height="273" key="GridCell.Tab.0.bottom" timestamp="1595871410851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595946898958">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595963644743">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595946898958" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595963644743" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -751,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595933665760">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595965282527">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595933665760" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595965282527" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
