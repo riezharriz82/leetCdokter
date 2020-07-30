@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve easy Merge two sorted linked list by keeping a dummy node to append to">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindMinimumInRotatedSortedArray2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindMinimumInRotatedSortedArray2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00118" summary="Solve medium shuffle an array using fisher yates algorithm in the first attempt">
-      <created>1595091259771</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1595091259771</updated>
     </task>
     <task id="LOCAL-00119" summary="Solve easy min cost to reach top of the stairs using DP">
       <created>1595262466141</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596132492296</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="Solve medium kth smallest element in M sorted list by using priority queue">
+      <created>1596134419873</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1596134419873</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy Next greater element 1 by using stack" />
     <MESSAGE value="Solve medium find Next Greater Element in a circular array in first attempt by looping the input array twice" />
     <MESSAGE value="Solve medium find number of subarrays with odd sum using maths -- very tricky and hard problem" />
     <MESSAGE value="Solve medium find number of way to split a string into two parts having equal number of distinct characters&#10;&#10;TIP: When dealing with questions related to split, try to solve the problem left to right and right to left separately." />
@@ -574,7 +573,8 @@
     <MESSAGE value="Solve medium Best time to buy and sell stock with cooldown -- able to solve it in n^2 in my first attempt by leveraging LIS.&#10;&#10;Learning -- Think of how to build best result for an index by leveraging results from previous state" />
     <MESSAGE value="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
     <MESSAGE value="Solve easy Merge two sorted linked list by keeping a dummy node to append to" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy Merge two sorted linked list by keeping a dummy node to append to" />
+    <MESSAGE value="Solve medium kth smallest element in M sorted list by using priority queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium kth smallest element in M sorted list by using priority queue" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -644,10 +644,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596132508243">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596134419296">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596132508243" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596134419296" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596123209505">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -708,10 +708,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596132494102">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596134420912">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596132494102" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596134420912" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -752,10 +752,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596132011967">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596134569322">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596132011967" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596134569322" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

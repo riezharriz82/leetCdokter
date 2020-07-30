@@ -63,6 +63,8 @@ public class FindMinimumInRotatedSortedArray2 {
         int low = 0, high = nums.length - 1;
         while (low < high) {
             int mid = (low + high) / 2;
+            //need to compare mid and high first instead of low and mid because the array can be not rotated at all, and then we will be go in
+            //incorrect direction i.e. right
             if (nums[mid] < nums[high]) {
                 high = mid;
             } else {
