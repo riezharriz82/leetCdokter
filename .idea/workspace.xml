@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +100,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BestTimeToBuyAndSellStockWithCooldownTest">
+  <component name="RunManager" selected="JUnit.WordBreak2Test">
     <configuration name="BestTimeToBuyAndSellStockWithCooldownTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,15 +116,6 @@
       <option name="MAIN_CLASS_NAME" value="BestTimeToBuyAndSellStockWithCooldownTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckIfNAndItsDoubleExistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CheckIfNAndItsDoubleExistTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,21 +149,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordBreak2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WordBreak2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.CheckIfNAndItsDoubleExistTest" />
       <item itemvalue="JUnit.NextGreaterElement2Test" />
       <item itemvalue="JUnit.NextGreaterElement3Test.test" />
       <item itemvalue="JUnit.BestTimeToBuyAndSellStockWithCooldownTest.test" />
       <item itemvalue="JUnit.BestTimeToBuyAndSellStockWithCooldownTest" />
+      <item itemvalue="JUnit.WordBreak2Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WordBreak2Test" />
         <item itemvalue="JUnit.BestTimeToBuyAndSellStockWithCooldownTest" />
         <item itemvalue="JUnit.BestTimeToBuyAndSellStockWithCooldownTest.test" />
         <item itemvalue="JUnit.NextGreaterElement3Test.test" />
         <item itemvalue="JUnit.NextGreaterElement2Test" />
-        <item itemvalue="JUnit.CheckIfNAndItsDoubleExistTest" />
       </list>
     </recent_temporary>
   </component>
@@ -181,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Solve easy find whether a string is subsequence of another string using two pointer approach">
-      <created>1595075669665</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1595075669665</updated>
     </task>
     <task id="LOCAL-00117" summary="Solve medium is sudoku valid -- tricky part was to find the subgrid index using % and /, math is hard">
       <created>1595087122025</created>
@@ -525,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596034948780</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)">
+      <created>1596035180520</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1596035180520</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -547,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Move TreeNode and ListNode from default package -- apparently you can't import classes from default package" />
     <MESSAGE value="Add solution of Boundary traversal of binary tree in single traversal of tree using modified preorder traversal" />
     <MESSAGE value="Solve easy Next greater element 1 by using stack" />
     <MESSAGE value="Solve medium find Next Greater Element in a circular array in first attempt by looping the input array twice" />
@@ -572,7 +573,8 @@
     <MESSAGE value="Solve medium Bottom left value of a binary tree by DFS and keeping track of the first node of last level" />
     <MESSAGE value="Solve medium set rows and columns of a matrix to 0 if any value in that row and column is 0 by reusing first row and first column as a place for keeping flags.&#10;&#10;Learning -- Initially I thought of using the first row and first column by negating the value but it won't work if matrix contains negative number. But placing 0 won't hurt as it's actually a part of the result. So sometimes placing the target result during intermediate operations can help" />
     <MESSAGE value="Solve medium Best time to buy and sell stock with cooldown -- able to solve it in n^2 in my first attempt by leveraging LIS.&#10;&#10;Learning -- Think of how to build best result for an index by leveraging results from previous state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Best time to buy and sell stock with cooldown -- able to solve it in n^2 in my first attempt by leveraging LIS.&#10;&#10;Learning -- Think of how to build best result for an index by leveraging results from previous state" />
+    <MESSAGE value="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -642,46 +644,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596035011997">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596132007258">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596035011997" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1595965730787">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596132007258" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596123209505">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595965730787" />
-    <state width="1877" height="190" key="GridCell.Tab.0.bottom" timestamp="1596033128469">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596123209505" />
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1596131302651">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596033128469" />
-    <state width="1877" height="190" key="GridCell.Tab.0.center" timestamp="1596033128468">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596131302651" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1596131302650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="190" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596033128468" />
-    <state width="1877" height="190" key="GridCell.Tab.0.left" timestamp="1596033128468">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596131302650" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1596131302650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="190" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596033128468" />
-    <state width="1877" height="190" key="GridCell.Tab.0.right" timestamp="1596033128468">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596131302650" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1596131302651">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="190" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596033128468" />
-    <state width="1877" height="273" key="GridCell.Tab.1.bottom" timestamp="1596029378503">
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596131302651" />
+    <state width="1877" height="272" key="GridCell.Tab.1.bottom" timestamp="1596131302651">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596029378503" />
-    <state width="1877" height="273" key="GridCell.Tab.1.center" timestamp="1596029378503">
+    <state width="1877" height="272" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596131302651" />
+    <state width="1877" height="272" key="GridCell.Tab.1.center" timestamp="1596131302651">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596029378503" />
-    <state width="1877" height="273" key="GridCell.Tab.1.left" timestamp="1596029378503">
+    <state width="1877" height="272" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596131302651" />
+    <state width="1877" height="272" key="GridCell.Tab.1.left" timestamp="1596131302651">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596029378503" />
-    <state width="1877" height="273" key="GridCell.Tab.1.right" timestamp="1596029378503">
+    <state width="1877" height="272" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596131302651" />
+    <state width="1877" height="272" key="GridCell.Tab.1.right" timestamp="1596131302651">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="273" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596029378503" />
+    <state width="1877" height="272" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596131302651" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -694,10 +696,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1595875138058" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1595613180254">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1596124870261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1595613180254" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1596124870261" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1594755133001">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,10 +708,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1595969223274">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596035181378">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595969223274" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596035181378" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -738,10 +740,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595767423571" />
-    <state width="819" height="247" key="javadoc.popup.new" timestamp="1596031303228">
+    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596124029399">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="819" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596031303228" />
+    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596124029399" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595535576917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -750,10 +752,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595965282527">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596132011967">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595965282527" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596132011967" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,6 +954,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/BestTimeToBuyAndSellStockWithCooldown.java</url>
           <line>45</line>
           <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/WordBreak2.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/WordBreak2.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="121" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
