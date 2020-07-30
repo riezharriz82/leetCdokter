@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve easy Merge two sorted linked list by keeping a dummy node to append to">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00117" summary="Solve medium is sudoku valid -- tricky part was to find the subgrid index using % and /, math is hard">
-      <created>1595087122025</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1595087122026</updated>
     </task>
     <task id="LOCAL-00118" summary="Solve medium shuffle an array using fisher yates algorithm in the first attempt">
       <created>1595091259771</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596035180520</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="Solve easy Merge two sorted linked list by keeping a dummy node to append to">
+      <created>1596132492296</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1596132492296</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add solution of Boundary traversal of binary tree in single traversal of tree using modified preorder traversal" />
     <MESSAGE value="Solve easy Next greater element 1 by using stack" />
     <MESSAGE value="Solve medium find Next Greater Element in a circular array in first attempt by looping the input array twice" />
     <MESSAGE value="Solve medium find number of subarrays with odd sum using maths -- very tricky and hard problem" />
@@ -574,7 +573,8 @@
     <MESSAGE value="Solve medium set rows and columns of a matrix to 0 if any value in that row and column is 0 by reusing first row and first column as a place for keeping flags.&#10;&#10;Learning -- Initially I thought of using the first row and first column by negating the value but it won't work if matrix contains negative number. But placing 0 won't hurt as it's actually a part of the result. So sometimes placing the target result during intermediate operations can help" />
     <MESSAGE value="Solve medium Best time to buy and sell stock with cooldown -- able to solve it in n^2 in my first attempt by leveraging LIS.&#10;&#10;Learning -- Think of how to build best result for an index by leveraging results from previous state" />
     <MESSAGE value="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
+    <MESSAGE value="Solve easy Merge two sorted linked list by keeping a dummy node to append to" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy Merge two sorted linked list by keeping a dummy node to append to" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -604,10 +604,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1595262772091">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1596133141405">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595262772091" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1596133141405" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1595614389259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -644,10 +644,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595527777727" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596132007258">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596132508243">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596132007258" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596132508243" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596123209505">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -708,10 +708,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596035181378">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596132494102">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596035181378" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596132494102" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -740,10 +740,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595767423571" />
-    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596124029399">
+    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596134312834">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596124029399" />
+    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596134312834" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1595535576917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
