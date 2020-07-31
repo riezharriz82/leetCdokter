@@ -55,6 +55,10 @@ public class WordBreak1 {
     /**
      * My original n^2 approach, similar to longest increasing subsequence DP
      * For each substring ending at index i, store whether it's possible to find all the constituent words in the dictionary
+     * <p>
+     * Instead of a 1D DP, 2D DP can also be used to store results for substring of length 1, 2, 3 .. s.length()
+     * 2D DP will store results for all intermediate strings possible after introducing cuts for every previous index
+     * https://github.com/mission-peace/interview/blob/master/src/com/interview/dynamic/BreakMultipleWordsWithNoSpaceIntoSpace.java#L60
      */
     public boolean wordBreak(String s, List<String> wordDict) {
         HashSet<String> dictionary = new HashSet<>(wordDict);
