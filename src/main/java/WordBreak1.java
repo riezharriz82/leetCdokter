@@ -1,6 +1,28 @@
 import java.util.HashSet;
 import java.util.List;
 
+/**
+ * https://leetcode.com/problems/word-break/
+ * <p>
+ * Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, determine if s can be segmented
+ * into a space-separated sequence of one or more dictionary words.
+ * <p>
+ * Note:
+ * <p>
+ * The same word in the dictionary may be reused multiple times in the segmentation.
+ * You may assume the dictionary does not contain duplicate words.
+ * <p>
+ * Input: s = "leetcode", wordDict = ["leet", "code"]
+ * Output: true
+ * Explanation: Return true because "leetcode" can be segmented as "leet code".
+ * <p>
+ * Input: s = "applepenapple", wordDict = ["apple", "pen"]
+ * Output: true
+ * Explanation: Return true because "applepenapple" can be segmented as "apple pen apple".
+ * Note that you are allowed to reuse a dictionary word.
+ * <p>
+ * See {@link PerfectSquares} for similar problem
+ */
 public class WordBreak1 {
 
     /**

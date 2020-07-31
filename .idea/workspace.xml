@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PerfectSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PerfectSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WordBreak1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WordBreak1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PerfectSquaresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PerfectSquaresTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,12 +103,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WordBreak1Test">
-    <configuration name="BestTimeToBuyAndSellStockWithCooldownTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PerfectSquaresTest.test">
+    <configuration name="PerfectSquaresTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BestTimeToBuyAndSellStockWithCooldownTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="PerfectSquaresTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,19 +161,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.BestTimeToBuyAndSellStockWithCooldownTest" />
       <item itemvalue="JUnit.WordBreak2Test" />
       <item itemvalue="JUnit.WordBreak1Test.test" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.WordBreak1Test" />
+      <item itemvalue="JUnit.PerfectSquaresTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PerfectSquaresTest.test" />
         <item itemvalue="JUnit.WordBreak1Test" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.WordBreak1Test.test" />
         <item itemvalue="JUnit.WordBreak2Test" />
-        <item itemvalue="JUnit.BestTimeToBuyAndSellStockWithCooldownTest" />
       </list>
     </recent_temporary>
   </component>
@@ -180,13 +184,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00120" summary="Solve medium number of nodes in the subtree with same label using DFS -- in case where you need to build a tree from the edges treat it similar to creation of an undirected graph">
-      <created>1595266514888</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1595266514888</updated>
     </task>
     <task id="LOCAL-00121" summary="Solve medium delete node in a BST -- tricky question, need to carefully update the pointers">
       <created>1595269645688</created>
@@ -524,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596134936319</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring.">
+      <created>1596220807909</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1596220807909</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -546,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find number of subarrays with odd sum using maths -- very tricky and hard problem" />
     <MESSAGE value="Solve medium find number of way to split a string into two parts having equal number of distinct characters&#10;&#10;TIP: When dealing with questions related to split, try to solve the problem left to right and right to left separately." />
     <MESSAGE value="Solve hard find minimum no of operations to reach target array -- Don't give up early instead try to build solutions from input of size = 1, size = 2, size = 3" />
     <MESSAGE value="Solve two medium problems related to next permutation -- trick is to find which indices to swap and sort from" />
@@ -571,7 +574,8 @@
     <MESSAGE value="Solve easy Merge two sorted linked list by keeping a dummy node to append to" />
     <MESSAGE value="Solve medium kth smallest element in M sorted list by using priority queue" />
     <MESSAGE value="Update gotcha in FindMinimumInRotatedSortedArray2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update gotcha in FindMinimumInRotatedSortedArray2" />
+    <MESSAGE value="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -641,10 +645,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596148671831" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596134935742">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596220807132">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596134935742" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596220807132" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596123209505">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -705,10 +709,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596134937264">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596220809333">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596134937264" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596220809333" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -737,10 +741,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595767423571" />
-    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596219987611">
+    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596220859206">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596219987611" />
+    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596220859206" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596147155250">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -749,10 +753,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596134569322">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596221954633">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596134569322" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596221954633" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -954,17 +958,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/WordBreak2.java</url>
-          <line>39</line>
+          <line>29</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/WordBreak2.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/WordBreak1.java</url>
-          <line>37</line>
+          <line>59</line>
           <option name="timeStamp" value="122" />
         </line-breakpoint>
       </breakpoints>

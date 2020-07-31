@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/perfect-squares/
  * <p>
@@ -12,6 +14,24 @@
  * Explanation: 13 = 4 + 9.
  */
 public class PerfectSquares {
+    /**
+     * This is similar to the optimized code in {@link WordBreak1}
+     */
+    public int numSquaresUsingBFS(int n) {
+        int[] dp = new int[n + 1];
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[0] = 0;
+        for (int i = 1; i * i <= n; i++) {
+            dp[i * i] = 1; //this are the nodes reachable in 1 hop
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; i + j * j <= n; j++) {
+                dp[i + j * j] = Math.min(dp[i + j * j], dp[i] + 1); // from the current node, mark the next nodes reachable in 1 hop
+            }
+        }
+        return dp[n];
+    }
+
     public int numSquares(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 0;
