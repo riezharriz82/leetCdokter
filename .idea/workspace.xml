@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PerfectSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PerfectSquares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WordBreak1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WordBreak1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PerfectSquaresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PerfectSquaresTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PerfectSquaresTest.test">
+  <component name="RunManager" selected="JUnit.WordBreak2Test.test">
     <configuration name="PerfectSquaresTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -143,11 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordBreak2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordBreak2Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WordBreak2Test" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,19 +159,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.WordBreak2Test" />
       <item itemvalue="JUnit.WordBreak1Test.test" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.WordBreak1Test" />
       <item itemvalue="JUnit.PerfectSquaresTest.test" />
+      <item itemvalue="JUnit.WordBreak2Test.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WordBreak2Test.test" />
         <item itemvalue="JUnit.PerfectSquaresTest.test" />
         <item itemvalue="JUnit.WordBreak1Test" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.WordBreak1Test.test" />
-        <item itemvalue="JUnit.WordBreak2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -184,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00121" summary="Solve medium delete node in a BST -- tricky question, need to carefully update the pointers">
-      <created>1595269645688</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1595269645688</updated>
     </task>
     <task id="LOCAL-00122" summary="Update CombinationSum3 by simplifying logic">
       <created>1595275566660</created>
@@ -528,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596220807909</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="Add BFS Logic in PerfectSquares. Similar to WordBreak1&#10;&#10;Learning -- In case of problems where you need to find min no of steps required to reach a final state and you are trying to solve it by finding minimum steps to reach previous state, its much optimal to use BFS and directly mark nodes reachable in 1 step from root. Then repeat the same process for the marked nodes.">
+      <created>1596222482677</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1596222482677</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -550,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find number of way to split a string into two parts having equal number of distinct characters&#10;&#10;TIP: When dealing with questions related to split, try to solve the problem left to right and right to left separately." />
     <MESSAGE value="Solve hard find minimum no of operations to reach target array -- Don't give up early instead try to build solutions from input of size = 1, size = 2, size = 3" />
     <MESSAGE value="Solve two medium problems related to next permutation -- trick is to find which indices to swap and sort from" />
     <MESSAGE value="Solve easy digital root of a number using fixed math formula" />
@@ -575,7 +572,8 @@
     <MESSAGE value="Solve medium kth smallest element in M sorted list by using priority queue" />
     <MESSAGE value="Update gotcha in FindMinimumInRotatedSortedArray2" />
     <MESSAGE value="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring." />
+    <MESSAGE value="Add BFS Logic in PerfectSquares. Similar to WordBreak1&#10;&#10;Learning -- In case of problems where you need to find min no of steps required to reach a final state and you are trying to solve it by finding minimum steps to reach previous state, its much optimal to use BFS and directly mark nodes reachable in 1 step from root. Then repeat the same process for the marked nodes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add BFS Logic in PerfectSquares. Similar to WordBreak1&#10;&#10;Learning -- In case of problems where you need to find min no of steps required to reach a final state and you are trying to solve it by finding minimum steps to reach previous state, its much optimal to use BFS and directly mark nodes reachable in 1 step from root. Then repeat the same process for the marked nodes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -605,10 +603,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1596133141405">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1596223759748">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1596133141405" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1596223759748" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1595614389259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -641,50 +639,50 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595271326137" />
-    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1596148671831">
+    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1596223706651">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596148671831" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596220807132">
+    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596222481751">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596220807132" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596222481751" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596123209505">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596123209505" />
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1596220392172">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596227565792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596220392172" />
-    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1596220392172">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596227565792" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596227565791">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596220392172" />
-    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1596220392172">
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596227565791" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596227565791">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596220392172" />
-    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1596220392172">
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596227565791" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596227565792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596220392172" />
-    <state width="1877" height="271" key="GridCell.Tab.1.bottom" timestamp="1596149006153">
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596227565792" />
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1596224030565">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="271" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596149006153" />
-    <state width="1877" height="271" key="GridCell.Tab.1.center" timestamp="1596149006153">
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596224030565" />
+    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1596224030564">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="271" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596149006153" />
-    <state width="1877" height="271" key="GridCell.Tab.1.left" timestamp="1596149006152">
+    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596224030564" />
+    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1596224030564">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="271" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596149006152" />
-    <state width="1877" height="271" key="GridCell.Tab.1.right" timestamp="1596149006153">
+    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596224030564" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1596224030564">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="271" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596149006153" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596224030564" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -709,10 +707,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596220809333">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596222484552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596220809333" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596222484552" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -741,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595767423571" />
-    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596220859206">
+    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596222930179">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596220859206" />
+    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596222930179" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596147155250">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -753,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595454832517" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596221954633">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596223232629">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596221954633" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596223232629" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -958,7 +956,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/WordBreak2.java</url>
-          <line>29</line>
+          <line>114</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
