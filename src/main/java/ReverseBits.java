@@ -13,6 +13,9 @@ public class ReverseBits {
         int res = 0;
         for (int i = 0; i < 32; i++) {
             res <<= 1;
+            //this is important, initially i did left shifting at the end but it creates an extra left shift
+            // do a dry run with 4 bits for {0,1,1,1}
+            // shifting it initially creates place for the result of the & operation to be set
             res |= (n & 1);
             n >>= 1;
         }

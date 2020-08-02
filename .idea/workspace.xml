@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReverseBits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReverseBits.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Update documentation in RootToLeafPathSum to add condition to check whether node is leaf or not">
-      <created>1595533616007</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1595533616007</updated>
     </task>
     <task id="LOCAL-00135" summary="Solve medium list all nodes at a distance K from a given node -- tricky question, need to carefully handle which subtree target lies in">
       <created>1595538510148</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596398395579</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="Solve easy best time to buy and sell stock with only one transaction allowed by keeping track of the largest number on the right">
+      <created>1596401366863</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1596401366863</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -580,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Construct tree from preorder and postorder traversal by fixing one root at a time. Care must be taken to adjust the indices for left/right subarray. I messed up setting up the indices during original attempt" />
     <MESSAGE value="Update documentation on how to think about handling duplicates in ThreeSum" />
     <MESSAGE value="Solve medium Maximum sum of circular subarray by subtracting minimum subarray sum from total sum&#10;&#10;Learning -- Circular subarray questions can be solved by filtering out middle elements from the original array, so only wrapped elements remain." />
     <MESSAGE value="Solve hard Task Scheduler problem, similar to rearrange a string where similar characters are k distance apart&#10;&#10;Learning -- New problem, Visualize the problem, once a task is picked it can't be picked up for the next k time. Which task to pick first? In order to solve the answer in minimum cycles, you need to create less holes as possible, which is possible only if you pick most frequent task first, so that you can try to fill the holes with less frequent tasks" />
@@ -605,7 +605,8 @@
     <MESSAGE value="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON" />
     <MESSAGE value="Solve easy convert sorted array to height balanced BST by fixing middle element as the root" />
     <MESSAGE value="Solve easy find first bad commit version by binary search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find first bad commit version by binary search" />
+    <MESSAGE value="Solve easy best time to buy and sell stock with only one transaction allowed by keeping track of the largest number on the right" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy best time to buy and sell stock with only one transaction allowed by keeping track of the largest number on the right" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -679,10 +680,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596398395110">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596401366403">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596398395110" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596401366403" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +744,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596398396443">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596401367686">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596398396443" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596401367686" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596360274798" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596401206076">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596401481206">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596401206076" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596401481206" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
