@@ -100,11 +100,21 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConstructMaximumBinaryTreeTest.test">
+  <component name="RunManager" selected="JUnit.MaximumSwapTest.test">
     <configuration name="ConstructMaximumBinaryTreeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ConstructMaximumBinaryTreeTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumSwapTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MaximumSwapTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -150,28 +160,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.PerfectSquaresTest.test" />
       <item itemvalue="JUnit.WordBreak1Test" />
       <item itemvalue="JUnit.WordBreak2Test.test" />
       <item itemvalue="JUnit.ConstructMaximumBinaryTreeTest.test" />
+      <item itemvalue="JUnit.MaximumSwapTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MaximumSwapTest.test" />
         <item itemvalue="JUnit.ConstructMaximumBinaryTreeTest.test" />
         <item itemvalue="JUnit.WordBreak2Test.test" />
         <item itemvalue="JUnit.PerfectSquaresTest.test" />
         <item itemvalue="JUnit.WordBreak1Test" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -183,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00129" summary="Solve medium zig-zag level order traversal using dfs">
-      <created>1595451663293</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1595451663293</updated>
     </task>
     <task id="LOCAL-00130" summary="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region">
       <created>1595453044370</created>
@@ -527,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596373195408</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange.">
+      <created>1596382046533</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1596382046533</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify code in FindMinimumInRotatedSortedArray2" />
     <MESSAGE value="Solve GFG find no of ways to pair people using DP&#10;&#10;Was asked this during my amazon onsite, absolutely failed at answering why (n-1) is required ! I memoized the solution that time without understanding the concept, this time I reached the solution on my own." />
     <MESSAGE value="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
     <MESSAGE value="Solve medium create binary tree from inorder and preorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
@@ -574,7 +576,8 @@
     <MESSAGE value="Solve medium construct maximum binary tree -- My initial approach was n^2 but can be optimized by using monotonic stack&#10;&#10;Learning -- monotonic stack are very powerful in dealing with problems related to finding greater element" />
     <MESSAGE value="Update problem statement in ZigZagTraversal" />
     <MESSAGE value="Add logic to solve GFG Assembly line scheduling problem via DP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logic to solve GFG Assembly line scheduling problem via DP" />
+    <MESSAGE value="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -648,10 +651,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596373194970">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596382046041">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596373194970" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596382046041" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -712,10 +715,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596373196844">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596382047604">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596373196844" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596382047604" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
