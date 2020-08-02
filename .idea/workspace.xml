@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,11 +100,30 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MaximumSwapTest.test">
+  <component name="RunManager" selected="JUnit.FindMaximumScoreBySwitchingPathsTest">
     <configuration name="ConstructMaximumBinaryTreeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ConstructMaximumBinaryTreeTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMaximumScoreBySwitchingPathsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindMaximumScoreBySwitchingPathsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMaximumScoreBySwitchingPathsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindMaximumScoreBySwitchingPathsTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -121,31 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PerfectSquaresTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PerfectSquaresTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordBreak1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WordBreak1Test" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,19 +162,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.PerfectSquaresTest.test" />
-      <item itemvalue="JUnit.WordBreak1Test" />
       <item itemvalue="JUnit.WordBreak2Test.test" />
       <item itemvalue="JUnit.ConstructMaximumBinaryTreeTest.test" />
       <item itemvalue="JUnit.MaximumSwapTest.test" />
+      <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest.test" />
+      <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest" />
+        <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest.test" />
         <item itemvalue="JUnit.MaximumSwapTest.test" />
         <item itemvalue="JUnit.ConstructMaximumBinaryTreeTest.test" />
         <item itemvalue="JUnit.WordBreak2Test.test" />
-        <item itemvalue="JUnit.PerfectSquaresTest.test" />
-        <item itemvalue="JUnit.WordBreak1Test" />
       </list>
     </recent_temporary>
   </component>
@@ -186,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00130" summary="Add premium smallest common region, cool way of finding lca of two nodes by storing (node, parent) in hashmap and walking the parents for both region">
-      <created>1595453044370</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1595453044370</updated>
     </task>
     <task id="LOCAL-00131" summary="Solve easy contains duplicate element by fixed sliding window implementation">
       <created>1595454571725</created>
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596382046533</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number">
+      <created>1596386116863</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1596386116863</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -552,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve GFG find no of ways to pair people using DP&#10;&#10;Was asked this during my amazon onsite, absolutely failed at answering why (n-1) is required ! I memoized the solution that time without understanding the concept, this time I reached the solution on my own." />
     <MESSAGE value="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
     <MESSAGE value="Solve medium create binary tree from inorder and preorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
     <MESSAGE value="Solve easy find LCA of BST by pruning the search space every step" />
@@ -577,7 +576,8 @@
     <MESSAGE value="Update problem statement in ZigZagTraversal" />
     <MESSAGE value="Add logic to solve GFG Assembly line scheduling problem via DP" />
     <MESSAGE value="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange." />
+    <MESSAGE value="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -651,46 +651,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596382046041">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596387903290">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596382046041" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596387903290" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596228305570" />
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596365599274">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596395667142">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596365599274" />
-    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596365599274">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596395667142" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596395667142">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596365599274" />
-    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596365599274">
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596395667142" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596395667142">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596365599274" />
-    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596365599274">
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596395667142" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596395667142">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596365599274" />
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1596365594213">
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596395667142" />
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1596394984552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596365594213" />
-    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1596365594213">
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596394984552" />
+    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1596394984552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596365594213" />
-    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1596365594213">
+    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596394984552" />
+    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1596394984552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596365594213" />
-    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1596365594213">
+    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596394984552" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1596394984552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596365594213" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596394984552" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -715,10 +715,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596382047604">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596386627588">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596382047604" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596386627588" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
