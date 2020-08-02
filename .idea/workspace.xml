@@ -100,7 +100,17 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WordBreak2Test.test">
+  <component name="RunManager" selected="JUnit.ConstructMaximumBinaryTreeTest.test">
+    <configuration name="ConstructMaximumBinaryTreeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ConstructMaximumBinaryTreeTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PerfectSquaresTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -130,16 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordBreak1Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WordBreak1Test" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WordBreak2Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -162,16 +162,16 @@
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.PerfectSquaresTest.test" />
       <item itemvalue="JUnit.WordBreak1Test" />
-      <item itemvalue="JUnit.WordBreak1Test.test" />
       <item itemvalue="JUnit.WordBreak2Test.test" />
+      <item itemvalue="JUnit.ConstructMaximumBinaryTreeTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConstructMaximumBinaryTreeTest.test" />
         <item itemvalue="JUnit.WordBreak2Test.test" />
         <item itemvalue="JUnit.PerfectSquaresTest.test" />
         <item itemvalue="JUnit.WordBreak1Test" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="JUnit.WordBreak1Test.test" />
       </list>
     </recent_temporary>
   </component>
@@ -183,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00125" summary="Solve medium odd and even linked list by managing two dummy head/tail nodes">
-      <created>1595336004189</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1595336004189</updated>
     </task>
     <task id="LOCAL-00126" summary="Solve medium GameOfLife -- good follow up questions on handling sparse matrices -- store only the information required or process row by row">
       <created>1595339022440</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596342248169</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="Solve easy DI String Match problem -- Given a string of I and D, need to convert into increasing and decreasing series of 0 and 1, solved it by greedy&#10;&#10;Submitted a problem statement as a variant of the problem which generates the minimum pattern">
+      <created>1596362678435</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1596362678435</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Bulb Switcher 4 in first attempt -- question related to reach a target state from input state&#10;&#10;Similar to MinimumNumberOfOperationstoReachTargetArray" />
     <MESSAGE value="Solve medium find number of leaf pairs lying within a target distance using post order traversal and keeping track of {distance to leaf node, no of leaf nodes} from left/right subarray&#10;&#10;Similar to NumberOfNodesInTheSubTreeWithSameLabel" />
     <MESSAGE value="Solve medium find minimum in rotated sorted array with and without duplicates using modified binary search. In case of duplicates, travel in both directions to find the smallest index value and resume search" />
     <MESSAGE value="Solve medium find no of subarrays with k odd numbers by transforming it to subarray sum equals k. Sliding window solution is also possible but I found it difficult to visualize.&#10;&#10;TIP: Problems with at most K constraint can probably be solved using sliding window as well." />
@@ -574,7 +573,8 @@
     <MESSAGE value="Solve hard list all ways to break sentence from the words present in the dictionary. Similar to WordBreak1&#10;&#10;Learning -- When you want to list all ways to reach a target node from start using BFS, it's better to first check whether we can reach destination or not" />
     <MESSAGE value="Update documentation for storing intermediate results in 2D DP instead of the current 1D DP -- tushar roy rocks&#10;&#10;Learning -- Currently not all intermediate results are stored in 1D DP, 2D DP will fix that" />
     <MESSAGE value="Solve easy find winner of array game -- Similar to MajorityElement and PrisonCellAfterNDays" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find winner of array game -- Similar to MajorityElement and PrisonCellAfterNDays" />
+    <MESSAGE value="Solve easy DI String Match problem -- Given a string of I and D, need to convert into increasing and decreasing series of 0 and 1, solved it by greedy&#10;&#10;Submitted a problem statement as a variant of the problem which generates the minimum pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy DI String Match problem -- Given a string of I and D, need to convert into increasing and decreasing series of 0 and 1, solved it by greedy&#10;&#10;Submitted a problem statement as a variant of the problem which generates the minimum pattern" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -588,10 +588,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" width="816" height="729" key="#Intentions/0.0.1920.1050@0.0.1920.1050" timestamp="1592860555493" />
-    <state x="552" y="166" key="#Plugins" timestamp="1594156466904">
+    <state x="552" y="166" key="#Plugins" timestamp="1596366717323">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1594156466904" />
+    <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1596366717323" />
     <state x="552" y="183" key="#Project_Structure" timestamp="1594324360886">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -632,6 +632,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1595614401981" />
+    <state x="504" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596366704312">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="504" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596366704312" />
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594384167063">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -644,46 +648,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596342247520">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596362677913">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596342247520" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596362677913" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596228305570" />
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596227565792">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596365599274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596227565792" />
-    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596227565791">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596365599274" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596365599274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596227565791" />
-    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596227565791">
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596365599274" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596365599274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596227565791" />
-    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596227565792">
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596365599274" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596365599274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596227565792" />
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1596224030565">
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596365599274" />
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1596365594213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596224030565" />
-    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1596224030564">
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596365594213" />
+    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1596365594213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596224030564" />
-    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1596224030564">
+    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596365594213" />
+    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1596365594213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596224030564" />
-    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1596224030564">
+    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596365594213" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1596365594213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596224030564" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596365594213" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -708,10 +712,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596342249353">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596362679492">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596342249353" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596362679492" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -740,10 +744,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596338175458" />
-    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596360344443">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596369239846">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596360344443" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596369239846" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596147155250">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -752,10 +756,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596360274798" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596360153604">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596366708773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596360153604" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596366708773" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -964,6 +968,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/WordBreak1.java</url>
           <line>63</line>
           <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ConstructMaximumBinaryTree.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="123" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
