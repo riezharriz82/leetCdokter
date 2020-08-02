@@ -184,13 +184,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00128" summary="Update GenerateBrackets by simplifying logic">
-      <created>1595368085181</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1595368085182</updated>
-    </task>
     <task id="LOCAL-00129" summary="Solve medium zig-zag level order traversal using dfs">
       <created>1595451663293</created>
       <option name="number" value="00129" />
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596370366836</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="Add logic to solve GFG Assembly line scheduling problem via DP">
+      <created>1596373195408</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1596373195408</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find no of subarrays with k odd numbers by transforming it to subarray sum equals k. Sliding window solution is also possible but I found it difficult to visualize.&#10;&#10;TIP: Problems with at most K constraint can probably be solved using sliding window as well." />
     <MESSAGE value="Simplify code in FindMinimumInRotatedSortedArray2" />
     <MESSAGE value="Solve GFG find no of ways to pair people using DP&#10;&#10;Was asked this during my amazon onsite, absolutely failed at answering why (n-1) is required ! I memoized the solution that time without understanding the concept, this time I reached the solution on my own." />
     <MESSAGE value="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
@@ -574,7 +573,8 @@
     <MESSAGE value="Solve easy DI String Match problem -- Given a string of I and D, need to convert into increasing and decreasing series of 0 and 1, solved it by greedy&#10;&#10;Submitted a problem statement as a variant of the problem which generates the minimum pattern" />
     <MESSAGE value="Solve medium construct maximum binary tree -- My initial approach was n^2 but can be optimized by using monotonic stack&#10;&#10;Learning -- monotonic stack are very powerful in dealing with problems related to finding greater element" />
     <MESSAGE value="Update problem statement in ZigZagTraversal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update problem statement in ZigZagTraversal" />
+    <MESSAGE value="Add logic to solve GFG Assembly line scheduling problem via DP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add logic to solve GFG Assembly line scheduling problem via DP" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -648,10 +648,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596370366357">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596373194970">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596370366357" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596373194970" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -712,10 +712,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596370375360">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596373196844">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596370375360" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596373196844" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
