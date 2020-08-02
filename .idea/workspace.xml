@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium construct maximum binary tree -- My initial approach was n^2 but can be optimized by using monotonic stack&#10;&#10;Learning -- monotonic stack are very powerful in dealing with problems related to finding greater element">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZigZagTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZigZagTraversal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00126" summary="Solve medium GameOfLife -- good follow up questions on handling sparse matrices -- store only the information required or process row by row">
-      <created>1595339022440</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1595339022440</updated>
     </task>
     <task id="LOCAL-00127" summary="Update GameOfLife to not use extra space -- state transitions can be stored in individual bits e.g. rightmost bit can store the current state, next state can be stored in the adjacent left of the rightmost bit">
       <created>1595343050580</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596362678435</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="Solve medium construct maximum binary tree -- My initial approach was n^2 but can be optimized by using monotonic stack&#10;&#10;Learning -- monotonic stack are very powerful in dealing with problems related to finding greater element">
+      <created>1596370106460</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1596370106460</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find number of leaf pairs lying within a target distance using post order traversal and keeping track of {distance to leaf node, no of leaf nodes} from left/right subarray&#10;&#10;Similar to NumberOfNodesInTheSubTreeWithSameLabel" />
     <MESSAGE value="Solve medium find minimum in rotated sorted array with and without duplicates using modified binary search. In case of duplicates, travel in both directions to find the smallest index value and resume search" />
     <MESSAGE value="Solve medium find no of subarrays with k odd numbers by transforming it to subarray sum equals k. Sliding window solution is also possible but I found it difficult to visualize.&#10;&#10;TIP: Problems with at most K constraint can probably be solved using sliding window as well." />
     <MESSAGE value="Simplify code in FindMinimumInRotatedSortedArray2" />
@@ -574,7 +573,8 @@
     <MESSAGE value="Update documentation for storing intermediate results in 2D DP instead of the current 1D DP -- tushar roy rocks&#10;&#10;Learning -- Currently not all intermediate results are stored in 1D DP, 2D DP will fix that" />
     <MESSAGE value="Solve easy find winner of array game -- Similar to MajorityElement and PrisonCellAfterNDays" />
     <MESSAGE value="Solve easy DI String Match problem -- Given a string of I and D, need to convert into increasing and decreasing series of 0 and 1, solved it by greedy&#10;&#10;Submitted a problem statement as a variant of the problem which generates the minimum pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy DI String Match problem -- Given a string of I and D, need to convert into increasing and decreasing series of 0 and 1, solved it by greedy&#10;&#10;Submitted a problem statement as a variant of the problem which generates the minimum pattern" />
+    <MESSAGE value="Solve medium construct maximum binary tree -- My initial approach was n^2 but can be optimized by using monotonic stack&#10;&#10;Learning -- monotonic stack are very powerful in dealing with problems related to finding greater element" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium construct maximum binary tree -- My initial approach was n^2 but can be optimized by using monotonic stack&#10;&#10;Learning -- monotonic stack are very powerful in dealing with problems related to finding greater element" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -648,10 +648,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596362677913">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596370123214">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596362677913" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596370123214" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -712,10 +712,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596362679492">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596370108064">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596362679492" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596370108064" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -744,10 +744,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596338175458" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596369239846">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596370262091">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596369239846" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596370262091" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596147155250">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -756,10 +756,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596360274798" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596366708773">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596370205066">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596366708773" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596370205066" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
