@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00132" summary="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions">
-      <created>1595458149539</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1595458149539</updated>
-    </task>
     <task id="LOCAL-00133" summary="Solve medium find two single numbers in an array of duplicates by dividing the array into groups with a bit set or unset">
       <created>1595528165937</created>
       <option name="number" value="00133" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596396151576</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="Solve easy convert sorted array to height balanced BST by fixing middle element as the root">
+      <created>1596397156467</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1596397156467</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -580,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium create binary tree from inorder and preorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
     <MESSAGE value="Solve easy find LCA of BST by pruning the search space every step" />
     <MESSAGE value="Solve medium Construct tree from preorder and postorder traversal by fixing one root at a time. Care must be taken to adjust the indices for left/right subarray. I messed up setting up the indices during original attempt" />
     <MESSAGE value="Update documentation on how to think about handling duplicates in ThreeSum" />
@@ -605,7 +604,8 @@
     <MESSAGE value="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange." />
     <MESSAGE value="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number" />
     <MESSAGE value="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON" />
+    <MESSAGE value="Solve easy convert sorted array to height balanced BST by fixing middle element as the root" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy convert sorted array to height balanced BST by fixing middle element as the root" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -679,10 +679,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="175" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596396151029">
+    <state x="175" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596397155976">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="175" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596396151029" />
+    <state x="175" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596397155976" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596396278788">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596397157333">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596396278788" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596397157333" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
