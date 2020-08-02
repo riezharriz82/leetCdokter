@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WordBreak1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WordBreak1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,11 +158,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.WordBreak1Test.test" />
       <item itemvalue="Java Scratch.Scratch" />
-      <item itemvalue="JUnit.WordBreak1Test" />
+      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.PerfectSquaresTest.test" />
+      <item itemvalue="JUnit.WordBreak1Test" />
+      <item itemvalue="JUnit.WordBreak1Test.test" />
       <item itemvalue="JUnit.WordBreak2Test.test" />
     </list>
     <recent_temporary>
@@ -176,6 +175,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
@@ -183,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Solve easy remove elements from linked list which matches a specific key by appending the filtered keys to a dummy node">
-      <created>1595278995953</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1595278995953</updated>
     </task>
     <task id="LOCAL-00124" summary="Solve medium product of array elements except self with and without extra space">
       <created>1595282655540</created>
@@ -527,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596228514193</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Update documentation for storing intermediate results in 2D DP instead of the current 1D DP -- tushar roy rocks&#10;&#10;Learning -- Currently not all intermediate results are stored in 1D DP, 2D DP will fix that">
+      <created>1596229577055</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1596229577056</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +549,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve two medium problems related to next permutation -- trick is to find which indices to swap and sort from" />
     <MESSAGE value="Solve easy digital root of a number using fixed math formula" />
     <MESSAGE value="Solve medium Bulb Switcher 4 in first attempt -- question related to reach a target state from input state&#10;&#10;Similar to MinimumNumberOfOperationstoReachTargetArray" />
     <MESSAGE value="Solve medium find number of leaf pairs lying within a target distance using post order traversal and keeping track of {distance to leaf node, no of leaf nodes} from left/right subarray&#10;&#10;Similar to NumberOfNodesInTheSubTreeWithSameLabel" />
@@ -574,7 +573,8 @@
     <MESSAGE value="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring." />
     <MESSAGE value="Add BFS Logic in PerfectSquares. Similar to WordBreak1&#10;&#10;Learning -- In case of problems where you need to find min no of steps required to reach a final state and you are trying to solve it by finding minimum steps to reach previous state, its much optimal to use BFS and directly mark nodes reachable in 1 step from root. Then repeat the same process for the marked nodes." />
     <MESSAGE value="Solve hard list all ways to break sentence from the words present in the dictionary. Similar to WordBreak1&#10;&#10;Learning -- When you want to list all ways to reach a target node from start using BFS, it's better to first check whether we can reach destination or not" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard list all ways to break sentence from the words present in the dictionary. Similar to WordBreak1&#10;&#10;Learning -- When you want to list all ways to reach a target node from start using BFS, it's better to first check whether we can reach destination or not" />
+    <MESSAGE value="Update documentation for storing intermediate results in 2D DP instead of the current 1D DP -- tushar roy rocks&#10;&#10;Learning -- Currently not all intermediate results are stored in 1D DP, 2D DP will fix that" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update documentation for storing intermediate results in 2D DP instead of the current 1D DP -- tushar roy rocks&#10;&#10;Learning -- Currently not all intermediate results are stored in 1D DP, 2D DP will fix that" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -624,10 +624,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451490581" />
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595684579494">
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596270193315">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595684579494" />
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596270193315" />
     <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595614401981">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -644,10 +644,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596228513502">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596229576364">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596228513502" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596229576364" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -708,10 +708,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596228515168">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596229577956">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596228515168" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596229577956" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -736,14 +736,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="596" key="find.popup" timestamp="1595767423571">
+    <state x="667" y="258" width="585" height="596" key="find.popup" timestamp="1596338175458">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595767423571" />
-    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596222930179">
+    <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596338175458" />
+    <state width="771" height="247" key="javadoc.popup.new" timestamp="1596229434225">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596222930179" />
+    <state width="771" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596229434225" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596147155250">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -752,10 +752,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596229363548" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596228519728">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596338181016">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596228519728" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596338181016" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
