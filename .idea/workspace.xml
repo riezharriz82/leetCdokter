@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00131" summary="Solve easy contains duplicate element by fixed sliding window implementation">
-      <created>1595454571725</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1595454571725</updated>
     </task>
     <task id="LOCAL-00132" summary="Solve medium find whether numbers that lies within a range exists or not using treeSet -- got TLE while using HashSet&#10;&#10;Use TreeSet for lower_bound / upper_bound questions">
       <created>1595458149539</created>
@@ -530,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596386116863</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON">
+      <created>1596396151576</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1596396151576</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,7 +524,43 @@
       <map>
         <entry key="1">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="snehasishiiita" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
         <entry key="MAIN">
@@ -548,11 +570,16 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+        <entry key="2" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
     <MESSAGE value="Solve medium create binary tree from inorder and preorder traversal by fixing the root first and then recursively fixing the root of left/right subarray" />
     <MESSAGE value="Solve easy find LCA of BST by pruning the search space every step" />
     <MESSAGE value="Solve medium Construct tree from preorder and postorder traversal by fixing one root at a time. Care must be taken to adjust the indices for left/right subarray. I messed up setting up the indices during original attempt" />
@@ -577,7 +604,8 @@
     <MESSAGE value="Add logic to solve GFG Assembly line scheduling problem via DP" />
     <MESSAGE value="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange." />
     <MESSAGE value="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number" />
+    <MESSAGE value="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -651,10 +679,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596387903290">
+    <state x="175" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596396151029">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596387903290" />
+    <state x="175" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596396151029" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -715,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596386627588">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596396278788">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596386627588" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596396278788" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
