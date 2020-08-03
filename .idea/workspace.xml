@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00136" summary="Solve medium find all paths from source to target node in a DAG using DFS + Backtracking in first attempt">
-      <created>1595606374944</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1595606374944</updated>
-    </task>
     <task id="LOCAL-00137" summary="Solve medium find right side view of binary tree using DFS and keeping the rightmost value found in a level">
       <created>1595607103618</created>
       <option name="number" value="00137" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596402874246</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="Solve medium Best to time buy and sell stock in multiple transactions">
+      <created>1596461726636</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1596461726636</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -580,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Maximum sum of circular subarray by subtracting minimum subarray sum from total sum&#10;&#10;Learning -- Circular subarray questions can be solved by filtering out middle elements from the original array, so only wrapped elements remain." />
     <MESSAGE value="Solve hard Task Scheduler problem, similar to rearrange a string where similar characters are k distance apart&#10;&#10;Learning -- New problem, Visualize the problem, once a task is picked it can't be picked up for the next k time. Which task to pick first? In order to solve the answer in minimum cycles, you need to create less holes as possible, which is possible only if you pick most frequent task first, so that you can try to fill the holes with less frequent tasks" />
     <MESSAGE value="Solve medium Bottom left value of a binary tree by DFS and keeping track of the first node of last level" />
     <MESSAGE value="Solve medium set rows and columns of a matrix to 0 if any value in that row and column is 0 by reusing first row and first column as a place for keeping flags.&#10;&#10;Learning -- Initially I thought of using the first row and first column by negating the value but it won't work if matrix contains negative number. But placing 0 won't hurt as it's actually a part of the result. So sometimes placing the target result during intermediate operations can help" />
@@ -605,7 +604,8 @@
     <MESSAGE value="Solve easy find first bad commit version by binary search" />
     <MESSAGE value="Solve easy best time to buy and sell stock with only one transaction allowed by keeping track of the largest number on the right" />
     <MESSAGE value="Update gotcha in ReverseBits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update gotcha in ReverseBits" />
+    <MESSAGE value="Solve medium Best to time buy and sell stock in multiple transactions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Best to time buy and sell stock in multiple transactions" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -679,10 +679,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596402873727">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596461726116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596402873727" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596461726116" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596228305570">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596402875212">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596461727346">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596402875212" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596461727346" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -771,10 +771,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="596" key="find.popup" timestamp="1596371948020">
+    <state x="667" y="258" width="585" height="596" key="find.popup" timestamp="1596487897215">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596371948020" />
+    <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596487897215" />
     <state width="735" height="247" key="javadoc.popup.new" timestamp="1596370262091">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
