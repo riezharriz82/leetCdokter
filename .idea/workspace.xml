@@ -172,13 +172,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00138" summary="Solve medium populate next right pointer in a binary tree in constant space by level order traversal -- iterate all nodes present at one level and keep updating next pointer of nodes of next level">
-      <created>1595610424942</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1595610424942</updated>
-    </task>
     <task id="LOCAL-00139" summary="Simplify RightSideViewOfBinaryTree by traversing right side first to prevent overriding in the result array">
       <created>1595612059265</created>
       <option name="number" value="00139" />
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596491672584</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit">
+      <created>1596566935822</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1596566935822</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Bottom left value of a binary tree by DFS and keeping track of the first node of last level" />
     <MESSAGE value="Solve medium set rows and columns of a matrix to 0 if any value in that row and column is 0 by reusing first row and first column as a place for keeping flags.&#10;&#10;Learning -- Initially I thought of using the first row and first column by negating the value but it won't work if matrix contains negative number. But placing 0 won't hurt as it's actually a part of the result. So sometimes placing the target result during intermediate operations can help" />
     <MESSAGE value="Solve medium Best time to buy and sell stock with cooldown -- able to solve it in n^2 in my first attempt by leveraging LIS.&#10;&#10;Learning -- Think of how to build best result for an index by leveraging results from previous state" />
     <MESSAGE value="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
@@ -604,7 +603,8 @@
     <MESSAGE value="Update gotcha in ReverseBits" />
     <MESSAGE value="Solve medium Best to time buy and sell stock in multiple transactions" />
     <MESSAGE value="Solve easy pascal's triangle -- question asked in my morgan stanley campus online assessment test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy pascal's triangle -- question asked in my morgan stanley campus online assessment test" />
+    <MESSAGE value="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit&#10;&#10;Learnings -- n &amp; (n - 1) unset the rightmost set bit, n &amp; -n only keeps the rightmost set bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit&#10;&#10;Learnings -- n &amp; (n - 1) unset the rightmost set bit, n &amp; -n only keeps the rightmost set bit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -678,30 +678,34 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596491672016">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596566935247">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596491672016" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596566935247" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596493512804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596493512804" />
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596553898420">
+    <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596553898420" />
-    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596553898420">
+    <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596566941606">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596553898420" />
-    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596553898420">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596566941606" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596566941606">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596553898420" />
-    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596553898420">
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596566941606" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596566941606">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596553898420" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596566941606" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596566941606">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596566941606" />
     <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1596552511366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -742,10 +746,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596491673627">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596567116754">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596491673627" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596567116754" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
