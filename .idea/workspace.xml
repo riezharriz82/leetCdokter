@@ -172,13 +172,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00139" summary="Simplify RightSideViewOfBinaryTree by traversing right side first to prevent overriding in the result array">
-      <created>1595612059265</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1595612059265</updated>
-    </task>
     <task id="LOCAL-00140" summary="Move TreeNode and ListNode from default package -- apparently you can't import classes from default package">
       <created>1595614486588</created>
       <option name="number" value="00140" />
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596566935822</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="Solve hard find best time to buy and sell stock if allowed to perform at most 2 transactions&#10;&#10;Learning -- Did my initial code in n^2 time, similar to longest increasing subsequence.">
+      <created>1596574833477</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1596574833477</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium set rows and columns of a matrix to 0 if any value in that row and column is 0 by reusing first row and first column as a place for keeping flags.&#10;&#10;Learning -- Initially I thought of using the first row and first column by negating the value but it won't work if matrix contains negative number. But placing 0 won't hurt as it's actually a part of the result. So sometimes placing the target result during intermediate operations can help" />
     <MESSAGE value="Solve medium Best time to buy and sell stock with cooldown -- able to solve it in n^2 in my first attempt by leveraging LIS.&#10;&#10;Learning -- Think of how to build best result for an index by leveraging results from previous state" />
     <MESSAGE value="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
     <MESSAGE value="Solve easy Merge two sorted linked list by keeping a dummy node to append to" />
@@ -604,7 +603,8 @@
     <MESSAGE value="Solve medium Best to time buy and sell stock in multiple transactions" />
     <MESSAGE value="Solve easy pascal's triangle -- question asked in my morgan stanley campus online assessment test" />
     <MESSAGE value="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit&#10;&#10;Learnings -- n &amp; (n - 1) unset the rightmost set bit, n &amp; -n only keeps the rightmost set bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit&#10;&#10;Learnings -- n &amp; (n - 1) unset the rightmost set bit, n &amp; -n only keeps the rightmost set bit" />
+    <MESSAGE value="Solve hard find best time to buy and sell stock if allowed to perform at most 2 transactions&#10;&#10;Learning -- Did my initial code in n^2 time, similar to longest increasing subsequence." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find best time to buy and sell stock if allowed to perform at most 2 transactions&#10;&#10;Learning -- Did my initial code in n^2 time, similar to longest increasing subsequence." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -678,14 +678,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596566935247">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596574832996">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596566935247" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596493512804">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596574832996" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596621816261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596493512804" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596621816261" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -746,10 +746,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596567116754">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596574840360">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596567116754" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596574840360" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -782,18 +782,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596566343778" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596147155250">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596639220876">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596147155250" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596639220876" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1596566640335">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596566640335" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596401481206">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596622019728">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596401481206" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596622019728" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
