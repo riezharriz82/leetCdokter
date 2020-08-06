@@ -172,13 +172,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00141" summary="Add solution of Boundary traversal of binary tree in single traversal of tree using modified preorder traversal">
-      <created>1595614607094</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1595614607094</updated>
-    </task>
     <task id="LOCAL-00142" summary="Solve easy Next greater element 1 by using stack">
       <created>1595618969553</created>
       <option name="number" value="00142" />
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596640765175</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="Solve easy sort in place even odd array by two pointer approach">
+      <created>1596752391649</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1596752391649</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)" />
     <MESSAGE value="Solve easy Merge two sorted linked list by keeping a dummy node to append to" />
     <MESSAGE value="Solve medium kth smallest element in M sorted list by using priority queue" />
     <MESSAGE value="Update gotcha in FindMinimumInRotatedSortedArray2" />
@@ -604,7 +603,8 @@
     <MESSAGE value="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit&#10;&#10;Learnings -- n &amp; (n - 1) unset the rightmost set bit, n &amp; -n only keeps the rightmost set bit" />
     <MESSAGE value="Solve hard find best time to buy and sell stock if allowed to perform at most 2 transactions&#10;&#10;Learning -- Did my initial code in n^2 time, similar to longest increasing subsequence." />
     <MESSAGE value="Solve medium Generate unique bst. Follow up problem to Count unique BST. &#10;&#10;Learning -- Was able to figure out the recursion but was not able to figure out how to create new roots. Idea was to create new root for every possible combination of left and right subroots." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Generate unique bst. Follow up problem to Count unique BST. &#10;&#10;Learning -- Was able to figure out the recursion but was not able to figure out how to create new roots. Idea was to create new root for every possible combination of left and right subroots." />
+    <MESSAGE value="Solve easy sort in place even odd array by two pointer approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy sort in place even odd array by two pointer approach" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -678,10 +678,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596640764627">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596752390962">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596640764627" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596752390962" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596621816261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -746,10 +746,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596640767165">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596752392847">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596640767165" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596752392847" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
