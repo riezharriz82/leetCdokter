@@ -172,13 +172,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00146" summary="Solve hard find minimum no of operations to reach target array -- Don't give up early instead try to build solutions from input of size = 1, size = 2, size = 3">
-      <created>1595698043189</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1595698043189</updated>
-    </task>
     <task id="LOCAL-00147" summary="Solve two medium problems related to next permutation -- trick is to find which indices to swap and sort from">
       <created>1595704360791</created>
       <option name="number" value="00147" />
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596829172503</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="Solve easy but tricky isomorphic strings &#10;&#10;Learning -- Read the problem statement carefully you dumb fuck. Initially I completely ignored about the fact that no two characters can have same mapping">
+      <created>1596833603880</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1596833603880</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add BFS Logic in PerfectSquares. Similar to WordBreak1&#10;&#10;Learning -- In case of problems where you need to find min no of steps required to reach a final state and you are trying to solve it by finding minimum steps to reach previous state, its much optimal to use BFS and directly mark nodes reachable in 1 step from root. Then repeat the same process for the marked nodes." />
     <MESSAGE value="Solve hard list all ways to break sentence from the words present in the dictionary. Similar to WordBreak1&#10;&#10;Learning -- When you want to list all ways to reach a target node from start using BFS, it's better to first check whether we can reach destination or not" />
     <MESSAGE value="Update documentation for storing intermediate results in 2D DP instead of the current 1D DP -- tushar roy rocks&#10;&#10;Learning -- Currently not all intermediate results are stored in 1D DP, 2D DP will fix that" />
     <MESSAGE value="Solve easy find winner of array game -- Similar to MajorityElement and PrisonCellAfterNDays" />
@@ -604,7 +603,8 @@
     <MESSAGE value="Solve medium Vertical order traversal of binary tree using treemap and priority queue to match the desired output" />
     <MESSAGE value="Solve medium generate all root leaf paths in binary tree" />
     <MESSAGE value="Solve medium find all root to leaf path that matches the target sum by backtracking and keeping track of current path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all root to leaf path that matches the target sum by backtracking and keeping track of current path" />
+    <MESSAGE value="Solve easy but tricky isomorphic strings &#10;&#10;Learning -- Read the problem statement carefully you dumb fuck. Initially I completely ignored about the fact that no two characters can have same mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy but tricky isomorphic strings &#10;&#10;Learning -- Read the problem statement carefully you dumb fuck. Initially I completely ignored about the fact that no two characters can have same mapping" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -678,10 +678,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596829171963">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596833603282">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596829171963" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596833603282" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -746,10 +746,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596829178138">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596833605356">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596829178138" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596833605356" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -774,14 +774,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="596" key="find.popup" timestamp="1596829024364">
+    <state x="667" y="258" width="585" height="596" key="find.popup" timestamp="1596841422381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596829024364" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596828040176">
+    <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596841422381" />
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596842064371">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596828040176" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596842064370" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596827018417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
