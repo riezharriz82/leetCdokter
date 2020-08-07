@@ -172,13 +172,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00142" summary="Solve easy Next greater element 1 by using stack">
-      <created>1595618969553</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1595618969553</updated>
-    </task>
     <task id="LOCAL-00143" summary="Solve medium find Next Greater Element in a circular array in first attempt by looping the input array twice">
       <created>1595685438112</created>
       <option name="number" value="00143" />
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596752391649</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="Solve easy length of the longest palindrome that can be formed from the existing characters by counting characters with even pairs and single count">
+      <created>1596753688695</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1596753688695</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy Merge two sorted linked list by keeping a dummy node to append to" />
     <MESSAGE value="Solve medium kth smallest element in M sorted list by using priority queue" />
     <MESSAGE value="Update gotcha in FindMinimumInRotatedSortedArray2" />
     <MESSAGE value="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring." />
@@ -604,7 +603,8 @@
     <MESSAGE value="Solve hard find best time to buy and sell stock if allowed to perform at most 2 transactions&#10;&#10;Learning -- Did my initial code in n^2 time, similar to longest increasing subsequence." />
     <MESSAGE value="Solve medium Generate unique bst. Follow up problem to Count unique BST. &#10;&#10;Learning -- Was able to figure out the recursion but was not able to figure out how to create new roots. Idea was to create new root for every possible combination of left and right subroots." />
     <MESSAGE value="Solve easy sort in place even odd array by two pointer approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy sort in place even odd array by two pointer approach" />
+    <MESSAGE value="Solve easy length of the longest palindrome that can be formed from the existing characters by counting characters with even pairs and single count" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy length of the longest palindrome that can be formed from the existing characters by counting characters with even pairs and single count" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -678,14 +678,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596752390962">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596753688078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596752390962" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596621816261">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596753688078" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596621816261" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596756479445" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -746,10 +746,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596752392847">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596753692700">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596752392847" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596753692700" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -758,10 +758,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1594451868089" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595407054011">
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596825055017">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1595407054011" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596825055017" />
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594592599434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
