@@ -7,7 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VerticalOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VerticalOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PathSum3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PathSum3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00144" summary="Solve medium find number of subarrays with odd sum using maths -- very tricky and hard problem">
-      <created>1595694838531</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1595694838531</updated>
     </task>
     <task id="LOCAL-00145" summary="Solve medium find number of way to split a string into two parts having equal number of distinct characters&#10;&#10;TIP: When dealing with questions related to split, try to solve the problem left to right and right to left separately.">
       <created>1595695463331</created>
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596826069354</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="Solve medium generate all root leaf paths in binary tree">
+      <created>1596827925704</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1596827925704</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -580,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update gotcha in FindMinimumInRotatedSortedArray2" />
     <MESSAGE value="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring." />
     <MESSAGE value="Add BFS Logic in PerfectSquares. Similar to WordBreak1&#10;&#10;Learning -- In case of problems where you need to find min no of steps required to reach a final state and you are trying to solve it by finding minimum steps to reach previous state, its much optimal to use BFS and directly mark nodes reachable in 1 step from root. Then repeat the same process for the marked nodes." />
     <MESSAGE value="Solve hard list all ways to break sentence from the words present in the dictionary. Similar to WordBreak1&#10;&#10;Learning -- When you want to list all ways to reach a target node from start using BFS, it's better to first check whether we can reach destination or not" />
@@ -605,7 +604,8 @@
     <MESSAGE value="Solve easy sort in place even odd array by two pointer approach" />
     <MESSAGE value="Solve easy length of the longest palindrome that can be formed from the existing characters by counting characters with even pairs and single count" />
     <MESSAGE value="Solve medium Vertical order traversal of binary tree using treemap and priority queue to match the desired output" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Vertical order traversal of binary tree using treemap and priority queue to match the desired output" />
+    <MESSAGE value="Solve medium generate all root leaf paths in binary tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium generate all root leaf paths in binary tree" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -679,10 +679,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596826068572">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596827925126">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596826068572" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596827925126" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -747,10 +747,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596826070154">
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1596827927887">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596826070154" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596827927887" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -779,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596487897215" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596566343778">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596828040176">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596566343778" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596828040176" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596827018417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
