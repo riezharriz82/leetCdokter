@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FindTwoNonOverlappingSubarrayWithTargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindTwoNonOverlappingSubarrayWithTargetSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00149" summary="Solve medium Bulb Switcher 4 in first attempt -- question related to reach a target state from input state&#10;&#10;Similar to MinimumNumberOfOperationstoReachTargetArray">
-      <created>1595760512646</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1595760512646</updated>
     </task>
     <task id="LOCAL-00150" summary="Solve medium find number of leaf pairs lying within a target distance using post order traversal and keeping track of {distance to leaf node, no of leaf nodes} from left/right subarray&#10;&#10;Similar to NumberOfNodesInTheSubTreeWithSameLabel">
       <created>1595762170935</created>
@@ -513,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596843238294</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="Update documentation for logic in FindTwoNonOverlappingSubarrayWithTargetSum">
+      <created>1596973731267</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1596973731268</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -577,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find winner of array game -- Similar to MajorityElement and PrisonCellAfterNDays" />
     <MESSAGE value="Solve easy DI String Match problem -- Given a string of I and D, need to convert into increasing and decreasing series of 0 and 1, solved it by greedy&#10;&#10;Submitted a problem statement as a variant of the problem which generates the minimum pattern" />
     <MESSAGE value="Solve medium construct maximum binary tree -- My initial approach was n^2 but can be optimized by using monotonic stack&#10;&#10;Learning -- monotonic stack are very powerful in dealing with problems related to finding greater element" />
     <MESSAGE value="Update problem statement in ZigZagTraversal" />
@@ -602,7 +600,8 @@
     <MESSAGE value="Solve easy but tricky isomorphic strings &#10;&#10;Learning -- Read the problem statement carefully you dumb fuck. Initially I completely ignored about the fact that no two characters can have same mapping" />
     <MESSAGE value="Solve medium find smallest string starting from leaf in binary tree by appending current path in a linked list to avoid reversing the path&#10;&#10;Learning -- Use linked list wherever we need to reverse the input and index specific access is not required" />
     <MESSAGE value="Solve medium find all root to leaf path sum in binary tree&#10;&#10;Learning -- In tree related problems, sometimes we can avoid global variable by relying on results of left and right subtree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all root to leaf path sum in binary tree&#10;&#10;Learning -- In tree related problems, sometimes we can avoid global variable by relying on results of left and right subtree" />
+    <MESSAGE value="Update documentation for logic in FindTwoNonOverlappingSubarrayWithTargetSum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update documentation for logic in FindTwoNonOverlappingSubarrayWithTargetSum" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -676,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596843237767">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596973730565">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596843237767" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596973730565" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -744,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596843240379">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596973732755">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596843240379" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596973732755" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
