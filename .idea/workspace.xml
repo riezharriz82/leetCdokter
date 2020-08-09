@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindTwoNonOverlappingSubarrayWithTargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindTwoNonOverlappingSubarrayWithTargetSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PowerOf4Test.test">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="FindMaximumScoreBySwitchingPathsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,16 +101,6 @@
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FindMaximumScoreBySwitchingPathsTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MaximumSwapTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MaximumSwapTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -145,21 +136,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.MaximumSwapTest.test" />
       <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest.test" />
       <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest" />
       <item itemvalue="JUnit.PowerOf4Test.test" />
       <item itemvalue="JUnit.PowerOf4Test" />
+      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.PowerOf4Test.test" />
         <item itemvalue="JUnit.PowerOf4Test" />
         <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest" />
         <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest.test" />
-        <item itemvalue="JUnit.MaximumSwapTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00148" summary="Solve easy digital root of a number using fixed math formula">
-      <created>1595748598705</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1595748598705</updated>
     </task>
     <task id="LOCAL-00149" summary="Solve medium Bulb Switcher 4 in first attempt -- question related to reach a target state from input state&#10;&#10;Similar to MinimumNumberOfOperationstoReachTargetArray">
       <created>1595760512646</created>
@@ -515,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596842640219</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="Solve medium find all root to leaf path sum in binary tree&#10;&#10;Learning -- In tree related problems, sometimes we can avoid global variable by relying on results of left and right subtree">
+      <created>1596843238294</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1596843238294</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update documentation for storing intermediate results in 2D DP instead of the current 1D DP -- tushar roy rocks&#10;&#10;Learning -- Currently not all intermediate results are stored in 1D DP, 2D DP will fix that" />
     <MESSAGE value="Solve easy find winner of array game -- Similar to MajorityElement and PrisonCellAfterNDays" />
     <MESSAGE value="Solve easy DI String Match problem -- Given a string of I and D, need to convert into increasing and decreasing series of 0 and 1, solved it by greedy&#10;&#10;Submitted a problem statement as a variant of the problem which generates the minimum pattern" />
     <MESSAGE value="Solve medium construct maximum binary tree -- My initial approach was n^2 but can be optimized by using monotonic stack&#10;&#10;Learning -- monotonic stack are very powerful in dealing with problems related to finding greater element" />
@@ -604,7 +601,8 @@
     <MESSAGE value="Solve medium find all root to leaf path that matches the target sum by backtracking and keeping track of current path" />
     <MESSAGE value="Solve easy but tricky isomorphic strings &#10;&#10;Learning -- Read the problem statement carefully you dumb fuck. Initially I completely ignored about the fact that no two characters can have same mapping" />
     <MESSAGE value="Solve medium find smallest string starting from leaf in binary tree by appending current path in a linked list to avoid reversing the path&#10;&#10;Learning -- Use linked list wherever we need to reverse the input and index specific access is not required" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find smallest string starting from leaf in binary tree by appending current path in a linked list to avoid reversing the path&#10;&#10;Learning -- Use linked list wherever we need to reverse the input and index specific access is not required" />
+    <MESSAGE value="Solve medium find all root to leaf path sum in binary tree&#10;&#10;Learning -- In tree related problems, sometimes we can avoid global variable by relying on results of left and right subtree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all root to leaf path sum in binary tree&#10;&#10;Learning -- In tree related problems, sometimes we can avoid global variable by relying on results of left and right subtree" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -678,10 +676,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596842639635">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596843237767">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596842639635" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596843237767" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -690,22 +688,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596566941606">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596885835985">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596566941606" />
-    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596566941606">
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596885835985" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596885835985">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596566941606" />
-    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596566941606">
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596885835985" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596885835985">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596566941606" />
-    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596566941606">
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596885835985" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596885835985">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596566941606" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596885835985" />
     <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1596552511366">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -746,10 +744,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596842642498">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596843240379">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596842642498" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596843240379" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -758,10 +756,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1594451868089" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596825055017">
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596889034553">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596825055017" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596889034553" />
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594592599434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -774,14 +772,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="596" key="find.popup" timestamp="1596841422381">
+    <state x="667" y="258" width="585" height="624" key="find.popup" timestamp="1596901472298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="596" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596841422381" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596842064371">
+    <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596901472298" />
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596901691206">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596842064370" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596901691206" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596827018417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596566640335" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596829013872">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596941880934">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596829013872" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596941880934" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

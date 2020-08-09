@@ -43,6 +43,9 @@ public class FindTwoNonOverlappingSubarrayWithTargetSum {
             }
             //check if subarray sum equals target is present after index i
             //update result only if valid left subarray is found
+            //this is done outside of previous if block because its not necessarily to be the right block to immediately start after
+            //e.g {5,10,1,15}, 15 -- At value 10, prefix sum is 15, so we would look for a subarray on right with sum 30 which does not exist
+            //however we still set left size in hope of finding non adjacent subarray which equals target sum
             if (map.containsKey(sum + target) && leftSize != Integer.MAX_VALUE) {
                 result = Math.min(result, leftSize + map.get(sum + target) - i);
             }
