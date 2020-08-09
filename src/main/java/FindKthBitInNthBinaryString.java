@@ -31,10 +31,12 @@ public class FindKthBitInNthBinaryString {
         } else if (k - 1 < mid) { // it's similar to going left side which is n - 1 value
             return findKthBitRecursive(n - 1, k);
         } else {
-            int offset = k - (mid + 1) - 1; // how far from mid
+            int offset = (k - 1) - mid; // how far from mid
+            //if k would have been 0 based, offset would be k - mid, but k is 1 based so need to subtract 1
             //since right half is reverse of left half, new index will be mid - offset
+            //need to add 1 to the new k because k is 1 based
             //invert the result
-            return findKthBitRecursive(n - 1, mid - offset) == '1' ? '0' : '1';
+            return findKthBitRecursive(n - 1, mid - offset + 1) == '1' ? '0' : '1';
         }
     }
 
