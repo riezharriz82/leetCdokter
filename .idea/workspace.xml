@@ -169,20 +169,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00152" summary="Solve medium find no of subarrays with k odd numbers by transforming it to subarray sum equals k. Sliding window solution is also possible but I found it difficult to visualize.&#10;&#10;TIP: Problems with at most K constraint can probably be solved using sliding window as well.">
-      <created>1595774450985</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1595774450985</updated>
-    </task>
-    <task id="LOCAL-00153" summary="Simplify code in FindMinimumInRotatedSortedArray2">
-      <created>1595793372654</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1595793372654</updated>
-    </task>
     <task id="LOCAL-00154" summary="Solve GFG find no of ways to pair people using DP&#10;&#10;Was asked this during my amazon onsite, absolutely failed at answering why (n-1) is required ! I memoized the solution that time without understanding the concept, this time I reached the solution on my own.">
       <created>1595800385190</created>
       <option name="number" value="00154" />
@@ -512,7 +498,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596976818714</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="Solve medium can a string be converted to another string in k moves by shifting characters&#10;&#10;Learning -- Handling circular distance was too time consuming for me, got TLE in the first submission because I was looping through the mulipliers for each diff and was checking if that iteration is available and within bounds. Availability was handled by a hashset. &#10;Similar to MakingFileNamesUnique">
+      <created>1596983827366</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1596983827366</updated>
+    </task>
+    <task id="LOCAL-00202" summary="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray">
+      <created>1596983936840</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1596983936840</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,8 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update problem statement in ZigZagTraversal" />
-    <MESSAGE value="Add logic to solve GFG Assembly line scheduling problem via DP" />
     <MESSAGE value="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange." />
     <MESSAGE value="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number" />
     <MESSAGE value="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON" />
@@ -601,7 +599,9 @@
     <MESSAGE value="Update documentation for logic in FindTwoNonOverlappingSubarrayWithTargetSum" />
     <MESSAGE value="Solve medium Find Kth Bit in Nth String using brute force in contest. Was not able to solve the logic behind offset" />
     <MESSAGE value="Update logic behind finding offset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update logic behind finding offset" />
+    <MESSAGE value="Solve medium can a string be converted to another string in k moves by shifting characters&#10;&#10;Learning -- Handling circular distance was too time consuming for me, got TLE in the first submission because I was looping through the mulipliers for each diff and was checking if that iteration is available and within bounds. Availability was handled by a hashset. &#10;Similar to MakingFileNamesUnique" />
+    <MESSAGE value="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596976818145">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596983936299">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596976818145" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596983936299" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -735,18 +735,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1596982647599" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1596980255523">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1596983576828">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1596980255523" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1596983576828" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1594452772075">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596976819740">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596983948693">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596976819740" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596983948693" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -771,10 +771,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="624" key="find.popup" timestamp="1596901472298">
+    <state x="667" y="258" width="585" height="624" key="find.popup" timestamp="1596983808492">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596901472298" />
+    <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596983808492" />
     <state width="735" height="247" key="javadoc.popup.new" timestamp="1596901691206">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,10 +787,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596566640335" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596982848013">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1596983802703">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596982848013" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596983802703" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
