@@ -169,13 +169,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00155" summary="Solve medium create binary tree from inorder and postorder traversal by fixing the root first and then recursively fixing the root of left/right subarray">
-      <created>1595876288423</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1595876288423</updated>
-    </task>
     <task id="LOCAL-00156" summary="Solve medium create binary tree from inorder and preorder traversal by fixing the root first and then recursively fixing the root of left/right subarray">
       <created>1595876984572</created>
       <option name="number" value="00156" />
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596986348162</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="Solve hard max path sum of binary tree between any two nodes with positive and negative values&#10;&#10;Learnings -- Was able to do it on my own but the code had lots of if and else's. In case of negative answer from subtree it's better not to consider that subtree at all to simplify code">
+      <created>1596997115695</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1596997115695</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number" />
     <MESSAGE value="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON" />
     <MESSAGE value="Solve easy convert sorted array to height balanced BST by fixing middle element as the root" />
     <MESSAGE value="Solve easy find first bad commit version by binary search" />
@@ -601,7 +600,8 @@
     <MESSAGE value="Solve medium can a string be converted to another string in k moves by shifting characters&#10;&#10;Learning -- Handling circular distance was too time consuming for me, got TLE in the first submission because I was looping through the mulipliers for each diff and was checking if that iteration is available and within bounds. Availability was handled by a hashset. &#10;Similar to MakingFileNamesUnique" />
     <MESSAGE value="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray" />
     <MESSAGE value="Solve medium make parantheses valid by adding missing brackets by stack or keeping track of balances&#10;&#10;Learning -- In case of making things balanced, instead of using stack, just tracking counter of balance is fast and more effective" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium make parantheses valid by adding missing brackets by stack or keeping track of balances&#10;&#10;Learning -- In case of making things balanced, instead of using stack, just tracking counter of balance is fast and more effective" />
+    <MESSAGE value="Solve hard max path sum of binary tree between any two nodes with positive and negative values&#10;&#10;Learnings -- Was able to do it on my own but the code had lots of if and else's. In case of negative answer from subtree it's better not to consider that subtree at all to simplify code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard max path sum of binary tree between any two nodes with positive and negative values&#10;&#10;Learnings -- Was able to do it on my own but the code had lots of if and else's. In case of negative answer from subtree it's better not to consider that subtree at all to simplify code" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596986347542">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1596997115101">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596986347542" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1596997115101" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596986349842">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1596997116521">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596986349842" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596997116521" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
