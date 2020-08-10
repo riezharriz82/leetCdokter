@@ -1,3 +1,5 @@
+import java.util.ArrayDeque;
+
 /**
  * https://leetcode.com/problems/excel-sheet-column-number/
  * <p>
@@ -16,6 +18,31 @@
  */
 public class ExcelSheetColumnNumber {
 
+    /**
+     * https://leetcode.com/problems/excel-sheet-column-title/
+     * Input: 701
+     * Output: "ZY"
+     */
+    public String convertToTitle(int n) {
+        ArrayDeque<Character> stack = new ArrayDeque<>();
+        while (n != 0) {
+            n--; //this step is the most important one, this is required because 0 is not present as valid digit so every digit is off by 1
+            //rest everything is similar to how you will treat binary string
+            int remainder = (n % 26);
+            stack.push((char) ('A' + remainder));
+            n /= 26;
+        }
+        StringBuilder res = new StringBuilder();
+        while (!stack.isEmpty()) {
+            res.append(stack.pop());
+        }
+        return res.toString();
+    }
+
+    /**
+     * Instead of using Math.pow and iterate from the end like a noob, instead iterate from the start and multiply the base to the previous result
+     * {@link DecodeString} used the same pattern for multiplier
+     */
     public int titleToNumberSimplified(String s) {
         int n = s.length();
         int res = 0;
