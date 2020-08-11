@@ -169,13 +169,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00159" summary="Update documentation on how to think about handling duplicates in ThreeSum">
-      <created>1595884394144</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1595884394144</updated>
-    </task>
     <task id="LOCAL-00160" summary="Solve medium Maximum sum of circular subarray by subtracting minimum subarray sum from total sum&#10;&#10;Learning -- Circular subarray questions can be solved by filtering out middle elements from the original array, so only wrapped elements remain.">
       <created>1595935536548</created>
       <option name="number" value="00160" />
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597062471350</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort">
+      <created>1597174791164</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1597174791164</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy best time to buy and sell stock with only one transaction allowed by keeping track of the largest number on the right" />
     <MESSAGE value="Update gotcha in ReverseBits" />
     <MESSAGE value="Solve medium Best to time buy and sell stock in multiple transactions" />
     <MESSAGE value="Solve easy pascal's triangle -- question asked in my morgan stanley campus online assessment test" />
@@ -601,7 +600,8 @@
     <MESSAGE value="Solve medium time needed to inform all employees using DFS and tracking max time from all the reportees" />
     <MESSAGE value="Solve easy convert excel sheet column title to column number by treating it similar to binary number." />
     <MESSAGE value="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1" />
+    <MESSAGE value="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597062470694">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597174790475">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597062470694" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597174790475" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597062472341">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597174792308">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597062472341" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597174792308" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -775,10 +775,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596983808492" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1596901691206">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1597175983328">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1596901691206" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1597175983328" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596827018417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,10 +787,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596566640335" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597169847461">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597175205787">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597169847461" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597175205787" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
