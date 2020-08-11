@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExcelSheetColumnNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExcelSheetColumnNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00158" summary="Solve medium Construct tree from preorder and postorder traversal by fixing one root at a time. Care must be taken to adjust the indices for left/right subarray. I messed up setting up the indices during original attempt">
-      <created>1595880860535</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1595880860535</updated>
     </task>
     <task id="LOCAL-00159" summary="Update documentation on how to think about handling duplicates in ThreeSum">
       <created>1595884394144</created>
@@ -513,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597060091504</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1">
+      <created>1597062471350</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1597062471350</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -577,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find first bad commit version by binary search" />
     <MESSAGE value="Solve easy best time to buy and sell stock with only one transaction allowed by keeping track of the largest number on the right" />
     <MESSAGE value="Update gotcha in ReverseBits" />
     <MESSAGE value="Solve medium Best to time buy and sell stock in multiple transactions" />
@@ -602,7 +600,8 @@
     <MESSAGE value="Solve hard max path sum of binary tree between any two nodes with positive and negative values&#10;&#10;Learnings -- Was able to do it on my own but the code had lots of if and else's. In case of negative answer from subtree it's better not to consider that subtree at all to simplify code" />
     <MESSAGE value="Solve medium time needed to inform all employees using DFS and tracking max time from all the reportees" />
     <MESSAGE value="Solve easy convert excel sheet column title to column number by treating it similar to binary number." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy convert excel sheet column title to column number by treating it similar to binary number." />
+    <MESSAGE value="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -676,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597060090826">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597062470694">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597060090826" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597062470694" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -744,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597060092854">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597062472341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597060092854" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597062472341" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -788,10 +787,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596566640335" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597062206326">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597169847461">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597062206326" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597169847461" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
