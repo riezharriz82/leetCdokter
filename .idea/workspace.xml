@@ -169,13 +169,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00160" summary="Solve medium Maximum sum of circular subarray by subtracting minimum subarray sum from total sum&#10;&#10;Learning -- Circular subarray questions can be solved by filtering out middle elements from the original array, so only wrapped elements remain.">
-      <created>1595935536548</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1595935536549</updated>
-    </task>
     <task id="LOCAL-00161" summary="Solve hard Task Scheduler problem, similar to rearrange a string where similar characters are k distance apart&#10;&#10;Learning -- New problem, Visualize the problem, once a task is picked it can't be picked up for the next k time. Which task to pick first? In order to solve the answer in minimum cycles, you need to create less holes as possible, which is possible only if you pick most frequent task first, so that you can try to fill the holes with less frequent tasks">
       <created>1595946897794</created>
       <option name="number" value="00161" />
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597174791164</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="Solve medium length of longest substring without repeating characters by sliding window&#10;&#10;Learning -- always use a char array of 256 characters to represent ascii character range">
+      <created>1597178065097</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1597178065097</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update gotcha in ReverseBits" />
     <MESSAGE value="Solve medium Best to time buy and sell stock in multiple transactions" />
     <MESSAGE value="Solve easy pascal's triangle -- question asked in my morgan stanley campus online assessment test" />
     <MESSAGE value="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit&#10;&#10;Learnings -- n &amp; (n - 1) unset the rightmost set bit, n &amp; -n only keeps the rightmost set bit" />
@@ -601,7 +600,8 @@
     <MESSAGE value="Solve easy convert excel sheet column title to column number by treating it similar to binary number." />
     <MESSAGE value="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1" />
     <MESSAGE value="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort" />
+    <MESSAGE value="Solve medium length of longest substring without repeating characters by sliding window&#10;&#10;Learning -- always use a char array of 256 characters to represent ascii character range" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium length of longest substring without repeating characters by sliding window&#10;&#10;Learning -- always use a char array of 256 characters to represent ascii character range" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597174790475">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597178064324">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597174790475" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597178064324" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597174792308">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597178066085">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597174792308" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597178066085" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,10 +787,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596566640335" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597175205787">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597182879310">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597175205787" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597182879310" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
