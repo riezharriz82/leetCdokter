@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CombinationIteratorRecursive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CombinationIteratorRecursive.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CombinationIteratorRecursiveTest.test">
+  <component name="RunManager" selected="JUnit.NQueenTest">
     <configuration name="CombinationIteratorRecursiveTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -110,12 +109,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PowerOf4Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NQueenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PowerOf4Test" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="NQueenTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,19 +144,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.PowerOf4Test.test" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.LargestRectangleHistogramTest" />
       <item itemvalue="JUnit.CombinationIteratorRecursiveTest.test" />
+      <item itemvalue="JUnit.NQueenTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NQueenTest" />
         <item itemvalue="JUnit.CombinationIteratorRecursiveTest.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.LargestRectangleHistogramTest" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="JUnit.PowerOf4Test.test" />
       </list>
     </recent_temporary>
   </component>
@@ -170,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00165" summary="Solve medium Construct BST from provided preorder traversal by leveraging the same trick used in validate whether the tree is BST or not (range bound trick)">
-      <created>1596035180520</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1596035180520</updated>
     </task>
     <task id="LOCAL-00166" summary="Solve easy Merge two sorted linked list by keeping a dummy node to append to">
       <created>1596132492296</created>
@@ -514,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597507960199</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick.">
+      <created>1597510294263</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1597510294263</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -578,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Generate unique bst. Follow up problem to Count unique BST. &#10;&#10;Learning -- Was able to figure out the recursion but was not able to figure out how to create new roots. Idea was to create new root for every possible combination of left and right subroots." />
     <MESSAGE value="Solve easy sort in place even odd array by two pointer approach" />
     <MESSAGE value="Solve easy length of the longest palindrome that can be formed from the existing characters by counting characters with even pairs and single count" />
     <MESSAGE value="Solve medium Vertical order traversal of binary tree using treemap and priority queue to match the desired output" />
@@ -603,7 +600,8 @@
     <MESSAGE value="Solve medium rearrange words in a sentence by word length. Tricky thing was to handle it in stable order i.e strings with same length should be returned in original order. Arrays.sort provides stable sorting, hence need not worry about storing the indices as a pair in another array and then sort it by providing a custom comparator.&#10;Google sure is tricky :)" />
     <MESSAGE value="Solve hard largest rectangle in histogram by utilizing monotonic stack to find the index of the element smaller than current element on left / right side&#10;&#10;Learnings -- Utilize monotonic stack wherever first smaller/greater element than current element is required." />
     <MESSAGE value="Solve medium Generate all possible combinations of a string that are of a specific length by recursion&#10;&#10;Learnings -- Identified very late that it can be solved using recursion, spent a lot in solving it via converting an integer to a different radix approach told by Deepak." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Generate all possible combinations of a string that are of a specific length by recursion&#10;&#10;Learnings -- Identified very late that it can be solved using recursion, spent a lot in solving it via converting an integer to a different radix approach told by Deepak." />
+    <MESSAGE value="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -677,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597507959280">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597510293608">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597507959280" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597510293608" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -689,38 +687,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1597509783248">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1597515859918">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597509783248" />
-    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1597509783248">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597515859918" />
+    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1597515859918">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597509783248" />
-    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1597509783248">
+    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597515859918" />
+    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1597515859918">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597509783248" />
-    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1597509783248">
+    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597515859918" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1597515859918">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597509783248" />
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1597509783248">
+    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597515859918" />
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1597515765101">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597509783248" />
-    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1597509783248">
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597515765101" />
+    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1597515765101">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597509783248" />
-    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1597509783248">
+    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597515765101" />
+    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1597515765101">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597509783248" />
-    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1597509783248">
+    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597515765101" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1597515765101">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597509783248" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597515765101" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -745,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597507961469">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597510295271">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597507961469" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597510295271" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -781,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1597349394090" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1597506780883">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1597514591762">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597506780883" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597514591762" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1596566640335">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1006,6 +1004,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/LargestRectangleInHistogram.java</url>
           <line>30</line>
           <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NQueen.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="132" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
