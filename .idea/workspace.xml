@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
@@ -86,22 +89,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
-    <configuration name="FindMaximumScoreBySwitchingPathsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Java Scratch.Scratch (1)">
+    <configuration name="LargestRectangleHistogramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FindMaximumScoreBySwitchingPathsTest" />
+      <option name="MAIN_CLASS_NAME" value="LargestRectangleHistogramTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindMaximumScoreBySwitchingPathsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FindMaximumScoreBySwitchingPathsTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,6 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Scratch" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
@@ -144,19 +144,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest.test" />
-      <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest" />
       <item itemvalue="JUnit.PowerOf4Test.test" />
       <item itemvalue="JUnit.PowerOf4Test" />
       <item itemvalue="Java Scratch.Scratch" />
+      <item itemvalue="Java Scratch.Scratch (1)" />
+      <item itemvalue="JUnit.LargestRectangleHistogramTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch (1)" />
+        <item itemvalue="JUnit.LargestRectangleHistogramTest" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.PowerOf4Test.test" />
         <item itemvalue="JUnit.PowerOf4Test" />
-        <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest" />
-        <item itemvalue="JUnit.FindMaximumScoreBySwitchingPathsTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -168,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00162" summary="Solve medium Bottom left value of a binary tree by DFS and keeping track of the first node of last level">
-      <created>1595963643930</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1595963643930</updated>
     </task>
     <task id="LOCAL-00163" summary="Solve medium set rows and columns of a matrix to 0 if any value in that row and column is 0 by reusing first row and first column as a place for keeping flags.&#10;&#10;Learning -- Initially I thought of using the first row and first column by negating the value but it won't work if matrix contains negative number. But placing 0 won't hurt as it's actually a part of the result. So sometimes placing the target result during intermediate operations can help">
       <created>1595969222334</created>
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597267090936</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="Solve medium rearrange words in a sentence by word length. Tricky thing was to handle it in stable order i.e strings with same length should be returned in original order. Arrays.sort provides stable sorting, hence need not worry about storing the indices as a pair in another array and then sort it by providing a custom comparator.&#10;Google sure is tricky :)">
+      <created>1597269210244</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1597269210244</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy pascal's triangle -- question asked in my morgan stanley campus online assessment test" />
     <MESSAGE value="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit&#10;&#10;Learnings -- n &amp; (n - 1) unset the rightmost set bit, n &amp; -n only keeps the rightmost set bit" />
     <MESSAGE value="Solve hard find best time to buy and sell stock if allowed to perform at most 2 transactions&#10;&#10;Learning -- Did my initial code in n^2 time, similar to longest increasing subsequence." />
     <MESSAGE value="Solve medium Generate unique bst. Follow up problem to Count unique BST. &#10;&#10;Learning -- Was able to figure out the recursion but was not able to figure out how to create new roots. Idea was to create new root for every possible combination of left and right subroots." />
@@ -601,7 +600,8 @@
     <MESSAGE value="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort" />
     <MESSAGE value="Solve medium length of longest substring without repeating characters by sliding window&#10;&#10;Learning -- always use a char array of 256 characters to represent ascii character range" />
     <MESSAGE value="Solve medium divide two integers using bitwise operators in logarithmic order. Initially I did it with repeated subtraction but that was very slow.&#10;&#10;Learning -- In case when we want to check for presence of opposing things, use XOR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium divide two integers using bitwise operators in logarithmic order. Initially I did it with repeated subtraction but that was very slow.&#10;&#10;Learning -- In case when we want to check for presence of opposing things, use XOR" />
+    <MESSAGE value="Solve medium rearrange words in a sentence by word length. Tricky thing was to handle it in stable order i.e strings with same length should be returned in original order. Arrays.sort provides stable sorting, hence need not worry about storing the indices as a pair in another array and then sort it by providing a custom comparator.&#10;Google sure is tricky :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium rearrange words in a sentence by word length. Tricky thing was to handle it in stable order i.e strings with same length should be returned in original order. Arrays.sort provides stable sorting, hence need not worry about storing the indices as a pair in another array and then sort it by providing a custom comparator.&#10;Google sure is tricky :)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597267090187">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597269209617">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597267090187" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597269209617" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -687,38 +687,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1596885835985">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1597500523579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596885835985" />
-    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1596885835985">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597500523579" />
+    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1597500523578">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596885835985" />
-    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1596885835985">
+    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597500523578" />
+    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1597500523578">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596885835985" />
-    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1596885835985">
+    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597500523578" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1597500523579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596885835985" />
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1596552511366">
+    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597500523579" />
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1597490976155">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596552511366" />
-    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1596552511366">
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597490976155" />
+    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1597490976155">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596552511366" />
-    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1596552511366">
+    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597490976155" />
+    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1597490976154">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596552511366" />
-    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1596552511366">
+    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597490976154" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1597490976155">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596552511366" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597490976155" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +743,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597267091723">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597269211171">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597267091723" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597269211171" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -771,14 +771,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="624" key="find.popup" timestamp="1596983808492">
+    <state x="667" y="258" width="585" height="624" key="find.popup" timestamp="1597351241956">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596983808492" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1597268425388">
+    <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597351241956" />
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1597349394090">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1597268425388" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1597349394090" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1596827018417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,19 +787,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596566640335" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597267996376">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597488014399">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597267996376" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597488014399" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/KDiffPairInArray.java</url>
           <line>50</line>
@@ -1004,6 +999,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ConstructMaximumBinaryTree.java</url>
           <line>37</line>
           <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LargestRectangleInHistogram.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
