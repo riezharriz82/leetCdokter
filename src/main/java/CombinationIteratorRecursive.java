@@ -22,6 +22,11 @@ public class CombinationIteratorRecursive {
     private final List<String> result;
     private int index;
 
+    //An alternative approach to solve this problem would be to leverage Integer.bitCount() to find no of set bits from 2^characters.length() - 1 till 1
+    // and check whether the no of set bits equals combination length or not
+    // eg. for {abc, 2}, 6 (110), 5 (101), 3 (011) are such numbers
+    // the set bits indicates the indices in the characters to use  e.g. {110} indicates to use {ab} as result
+    // Refer https://leetcode.com/problems/iterator-for-combination/discuss/789180/Java-or-2-different-solution-or-With-detailed-explanation
     public CombinationIteratorRecursive(String characters, int combinationLength) {
         List<String> res = new ArrayList<>();
         DFS(combinationLength, new StringBuilder(), res, 0, characters);
