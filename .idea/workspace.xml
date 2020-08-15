@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NQueen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NQueen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Solve easy Merge two sorted linked list by keeping a dummy node to append to">
-      <created>1596132492296</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1596132492296</updated>
     </task>
     <task id="LOCAL-00167" summary="Solve medium kth smallest element in M sorted list by using priority queue">
       <created>1596134419873</created>
@@ -512,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597510294263</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="Solve hard NQueen problem using recursion and backtracking.&#10;&#10;Learning -- Generate diagonal path for an element in a matrix and whenever problems like generate all path/combinations is seen in the question, try to use recursion first then think of optimizing it.">
+      <created>1597517438301</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1597517438301</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy sort in place even odd array by two pointer approach" />
     <MESSAGE value="Solve easy length of the longest palindrome that can be formed from the existing characters by counting characters with even pairs and single count" />
     <MESSAGE value="Solve medium Vertical order traversal of binary tree using treemap and priority queue to match the desired output" />
     <MESSAGE value="Solve medium generate all root leaf paths in binary tree" />
@@ -601,7 +601,8 @@
     <MESSAGE value="Solve hard largest rectangle in histogram by utilizing monotonic stack to find the index of the element smaller than current element on left / right side&#10;&#10;Learnings -- Utilize monotonic stack wherever first smaller/greater element than current element is required." />
     <MESSAGE value="Solve medium Generate all possible combinations of a string that are of a specific length by recursion&#10;&#10;Learnings -- Identified very late that it can be solved using recursion, spent a lot in solving it via converting an integer to a different radix approach told by Deepak." />
     <MESSAGE value="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick." />
+    <MESSAGE value="Solve hard NQueen problem using recursion and backtracking.&#10;&#10;Learning -- Generate diagonal path for an element in a matrix and whenever problems like generate all path/combinations is seen in the question, try to use recursion first then think of optimizing it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard NQueen problem using recursion and backtracking.&#10;&#10;Learning -- Generate diagonal path for an element in a matrix and whenever problems like generate all path/combinations is seen in the question, try to use recursion first then think of optimizing it." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +676,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597510293608">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597517437696">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597510293608" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597517437696" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1596756479445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -743,10 +744,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597510295271">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597517439450">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597510295271" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597517439450" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -779,10 +780,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1597349394090" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1597514591762">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1597518392045">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597514591762" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597518392045" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1596566640335">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1007,7 +1008,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/NQueen.java</url>
-          <line>47</line>
+          <line>53</line>
           <option name="timeStamp" value="132" />
         </line-breakpoint>
       </breakpoints>

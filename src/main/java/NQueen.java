@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -39,11 +40,16 @@ public class NQueen {
             Arrays.fill(rows, '.');
         }
         List<List<String>> res = new ArrayList<>();
-        DFS(0, board, n, res, 0);
+        HashSet<Integer> columns = new HashSet<>();
+        HashSet<Integer> diagonal1 = new HashSet<>();
+        HashSet<Integer> diagonal2 = new HashSet<>();
+
+        DFS(0, board, n, res, 0, columns, diagonal1, diagonal2);
         return res;
     }
 
-    private void DFS(int queensPlaced, char[][] board, int queensRequired, List<List<String>> result, int row) {
+    private void DFS(int queensPlaced, char[][] board, int queensRequired, List<List<String>> result, int row,
+                     HashSet<Integer> columns, HashSet<Integer> diagonal1, HashSet<Integer> diagonal2) {
         if (queensPlaced == queensRequired) {
             List<String> stateOfBoard = new ArrayList<>();
             for (char[] rows : board) {
@@ -53,15 +59,24 @@ public class NQueen {
         } else {
             for (int i = 0; i < board.length; i++) {
                 //try to put queen in one of the columns of this row and recur
-                if (isSafe(board, row, i)) {
+                if (!columns.contains(i) && !diagonal1.contains(row - i) && !diagonal2.contains(row + i)) {
+                    columns.add(i);
+                    //very neat trick, all the elements of diagonal follow this property, so we can leverage this to avoid iterating
+                    // the diagonal elements to check for presence of queen
+                    diagonal1.add(row - i);
+                    diagonal2.add(row + i);
                     board[row][i] = 'Q';
-                    DFS(queensPlaced + 1, board, queensRequired, result, row + 1);
+                    DFS(queensPlaced + 1, board, queensRequired, result, row + 1, columns, diagonal1, diagonal2);
                     board[row][i] = '.'; //backtrack
+                    columns.remove(i);
+                    diagonal1.remove(row - i);
+                    diagonal2.remove(row + i);
                 }
             }
         }
     }
 
+    //not required because of hashset
     private boolean isSafe(char[][] board, int row, int col) {
         //check current column
         for (int i = 0; i < board.length; i++) {
