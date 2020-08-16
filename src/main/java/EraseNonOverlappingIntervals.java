@@ -18,6 +18,9 @@ public class EraseNonOverlappingIntervals {
     // since we are picking the interval that finishes early, first; we are bound to get the maximum no of non-overlapping intervals
     public int eraseOverlapIntervalsSimplified(int[][] intervals) {
         int n = intervals.length;
+        if (n == 0) {
+            return 0;
+        }
         Interval[] input = new Interval[intervals.length];
         for (int i = 0; i < n; i++) {
             input[i] = new Interval(intervals[i][0], intervals[i][1]);
@@ -33,7 +36,7 @@ public class EraseNonOverlappingIntervals {
             }
         }
         //Total intervals - non-overlapping intervals will give overlapping intervals
-        return input.length - index;
+        return n - index;
     }
 
     /**
@@ -47,6 +50,9 @@ public class EraseNonOverlappingIntervals {
      */
     public int eraseOverlapIntervals(int[][] intervals) {
         int n = intervals.length;
+        if (n == 0) {
+            return 0;
+        }
         Interval[] input = new Interval[intervals.length];
         for (int i = 0; i < n; i++) {
             input[i] = new Interval(intervals[i][0], intervals[i][1]);
@@ -67,6 +73,6 @@ public class EraseNonOverlappingIntervals {
             }
         }
         //Total intervals - non-overlapping intervals will give overlapping intervals
-        return input.length - index;
+        return n - index;
     }
 }

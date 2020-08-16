@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/MeetingsRoom2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/MeetingsRoom2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EraseNonOverlappingIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EraseNonOverlappingIntervals.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00168" summary="Update gotcha in FindMinimumInRotatedSortedArray2">
-      <created>1596134936319</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1596134936319</updated>
     </task>
     <task id="LOCAL-00169" summary="Solve medium whether a sentence is valid or not from the words present in the dictionary.&#10;&#10;Learning: My initial approach was very similar to LIS and I generated all the substrings and checked whether they are present in the dictionary or not. However in case when there are few words in the dictionary this won't be efficient.&#10;An efficient way would be to iterate over the words in the dictionary and check whether the string starts with any of them. If yes, mark that index. Repeat the process for remaining substring.">
       <created>1596220807909</created>
@@ -521,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597518909722</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="Solve medium remove minimum no of non-overlapping intervals by picking the interval that finishes first and then moving on to pick the next non overlapping interval&#10;&#10;Learnings -- Problem can be reworded by finding maximum no of non-overlapping intervals and result can be total elements - maximum no.">
+      <created>1597611165126</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1597611165126</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +585,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Vertical order traversal of binary tree using treemap and priority queue to match the desired output" />
     <MESSAGE value="Solve medium generate all root leaf paths in binary tree" />
     <MESSAGE value="Solve medium find all root to leaf path that matches the target sum by backtracking and keeping track of current path" />
     <MESSAGE value="Solve easy but tricky isomorphic strings &#10;&#10;Learning -- Read the problem statement carefully you dumb fuck. Initially I completely ignored about the fact that no two characters can have same mapping" />
@@ -610,7 +609,8 @@
     <MESSAGE value="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick." />
     <MESSAGE value="Solve hard NQueen problem using recursion and backtracking.&#10;&#10;Learning -- Generate diagonal path for an element in a matrix and whenever problems like generate all path/combinations is seen in the question, try to use recursion first then think of optimizing it." />
     <MESSAGE value="Update NQueen problem by not iterating over the diagonal path to check for queen, instead leverage property that all diagonal elements have value = row + col and value = row - col, use hashset to store this" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update NQueen problem by not iterating over the diagonal path to check for queen, instead leverage property that all diagonal elements have value = row + col and value = row - col, use hashset to store this" />
+    <MESSAGE value="Solve medium remove minimum no of non-overlapping intervals by picking the interval that finishes first and then moving on to pick the next non overlapping interval&#10;&#10;Learnings -- Problem can be reworded by finding maximum no of non-overlapping intervals and result can be total elements - maximum no." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium remove minimum no of non-overlapping intervals by picking the interval that finishes first and then moving on to pick the next non overlapping interval&#10;&#10;Learnings -- Problem can be reworded by finding maximum no of non-overlapping intervals and result can be total elements - maximum no." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -692,10 +692,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597518909059">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597611164515">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597518909059" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597611164515" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1597520692380">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -760,10 +760,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597518910934">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597611167494">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597518910934" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597611167494" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -796,10 +796,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597351241956" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1597349394090">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1597612206183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1597349394090" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1597612206183" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1597518392045">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
