@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/MeetingsRoom2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/MeetingsRoom2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/common" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -82,6 +84,9 @@
       <recent name="alternate" />
       <recent name="" />
     </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="common" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -89,11 +94,21 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KthSymbolInGrammarTest.test">
+  <component name="RunManager" selected="JUnit.EraseNonOverlappingIntervalsTest.test">
     <configuration name="CombinationIteratorRecursiveTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CombinationIteratorRecursiveTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EraseNonOverlappingIntervalsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EraseNonOverlappingIntervalsTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -106,15 +121,6 @@
       <option name="MAIN_CLASS_NAME" value="KthSymbolInGrammarTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LargestRectangleHistogramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LargestRectangleHistogramTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,20 +152,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Java Scratch.Scratch (1)" />
-      <item itemvalue="JUnit.LargestRectangleHistogramTest" />
+      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.CombinationIteratorRecursiveTest.test" />
       <item itemvalue="JUnit.NQueenTest" />
       <item itemvalue="JUnit.KthSymbolInGrammarTest.test" />
+      <item itemvalue="JUnit.EraseNonOverlappingIntervalsTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EraseNonOverlappingIntervalsTest.test" />
         <item itemvalue="JUnit.KthSymbolInGrammarTest.test" />
         <item itemvalue="JUnit.NQueenTest" />
         <item itemvalue="JUnit.CombinationIteratorRecursiveTest.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
-        <item itemvalue="JUnit.LargestRectangleHistogramTest" />
       </list>
     </recent_temporary>
   </component>
@@ -638,10 +644,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1596223759748" />
-    <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1595614389259">
+    <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595614389259" />
+    <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609089094" />
     <state x="689" y="315" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592130784851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -658,10 +664,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596270193315" />
+    <state x="820" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597609083441">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="820" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609083441" />
     <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595614401981">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1595614401981" />
+    <state x="743" y="369" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1597609092731">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="743" y="369" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609092731" />
     <state x="504" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597507849061">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -690,38 +704,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom" timestamp="1597521749801">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1597610557395">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597521749801" />
-    <state width="1877" height="269" key="GridCell.Tab.0.center" timestamp="1597521749800">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597610557395" />
+    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1597610557395">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597521749800" />
-    <state width="1877" height="269" key="GridCell.Tab.0.left" timestamp="1597521749800">
+    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597610557395" />
+    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1597610557395">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597521749800" />
-    <state width="1877" height="269" key="GridCell.Tab.0.right" timestamp="1597521749801">
+    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597610557395" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1597610557395">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597521749801" />
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1597521749801">
+    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597610557395" />
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1597606888190">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597521749801" />
-    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1597521749801">
+    <state width="1877" height="269" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597606888190" />
+    <state width="1877" height="269" key="GridCell.Tab.1.center" timestamp="1597606888190">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597521749801" />
-    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1597521749801">
+    <state width="1877" height="269" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597606888190" />
+    <state width="1877" height="269" key="GridCell.Tab.1.left" timestamp="1597606888190">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597521749801" />
-    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1597521749801">
+    <state width="1877" height="269" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597606888190" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right" timestamp="1597606888190">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597521749801" />
+    <state width="1877" height="269" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597606888190" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -750,6 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597518910934" />
+    <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="775" y="303" key="chooseDestDirectoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609092682" />
     <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -766,10 +784,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594592599434" />
-    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593806909164">
+    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1597606354834">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1593806909164" />
+    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1597606354834" />
     <state x="690" y="275" key="extract.method.dialog" timestamp="1593792443839">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,10 +808,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596566640335" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597519843028">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597609511443">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597519843028" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597609511443" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

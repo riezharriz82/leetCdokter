@@ -1,5 +1,7 @@
 package alternate;
 
+import common.Interval;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -26,15 +28,5 @@ public class MeetingsRoom2 {
         }
 
         return minHeap.size();
-    }
-
-    private class Interval {
-        int start;
-        int end;
-
-        Interval(int start, int end) {
-            this.start = start;
-            this.end = end;
-        }
     }
 }
