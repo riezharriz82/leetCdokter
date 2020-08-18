@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00172" summary="Update documentation for storing intermediate results in 2D DP instead of the current 1D DP -- tushar roy rocks&#10;&#10;Learning -- Currently not all intermediate results are stored in 1D DP, 2D DP will fix that">
-      <created>1596229577055</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1596229577056</updated>
-    </task>
     <task id="LOCAL-00173" summary="Solve easy find winner of array game -- Similar to MajorityElement and PrisonCellAfterNDays">
       <created>1596342248168</created>
       <option name="number" value="00173" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597667914430</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="Solve easy Divisor Game theory problem, was not able to solve it on my own, eventually solved it by recursion and top down memoization. &#10;&#10;Learnings -- In case of game theory problems, first try all the combinations and check if we can win/fail.">
+      <created>1597681760088</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1597681760088</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -569,19 +569,7 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="uglynum" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -596,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find smallest string starting from leaf in binary tree by appending current path in a linked list to avoid reversing the path&#10;&#10;Learning -- Use linked list wherever we need to reverse the input and index specific access is not required" />
     <MESSAGE value="Solve medium find all root to leaf path sum in binary tree&#10;&#10;Learning -- In tree related problems, sometimes we can avoid global variable by relying on results of left and right subtree" />
     <MESSAGE value="Update documentation for logic in FindTwoNonOverlappingSubarrayWithTargetSum" />
     <MESSAGE value="Solve medium Find Kth Bit in Nth String using brute force in contest. Was not able to solve the logic behind offset" />
@@ -621,7 +608,8 @@
     <MESSAGE value="Solve medium minimum arrows required to burst balloons by sorting the input by end diameter, resulting in to track non overlapping balloons" />
     <MESSAGE value="Solve medium find sum of nodes whose grand parents have even values. My initial approach was bottom up where each node returns the child sum and grandchild sum to its parent and parent updates the result. Although I solved it in first attempt, code could have been simplified if we followed top down approach in which we let each node make aware of their grandparents so they can update result directly." />
     <MESSAGE value="Solve easy Distribute N candies to K people by just simulating the distribution process. Give 1 candy first, then 2, 3, 4, 5.. until we run out of it. &#10;&#10;Learnings -- In case of distribution problem, sometimes its simple to just simulate the distribution itself. My initial approach was similar but the implementation was crude. Check leetcode submission history to find my initial approach." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy Distribute N candies to K people by just simulating the distribution process. Give 1 candy first, then 2, 3, 4, 5.. until we run out of it. &#10;&#10;Learnings -- In case of distribution problem, sometimes its simple to just simulate the distribution itself. My initial approach was similar but the implementation was crude. Check leetcode submission history to find my initial approach." />
+    <MESSAGE value="Solve easy Divisor Game theory problem, was not able to solve it on my own, eventually solved it by recursion and top down memoization. &#10;&#10;Learnings -- In case of game theory problems, first try all the combinations and check if we can win/fail." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy Divisor Game theory problem, was not able to solve it on my own, eventually solved it by recursion and top down memoization. &#10;&#10;Learnings -- In case of game theory problems, first try all the combinations and check if we can win/fail." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -703,14 +691,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597667913901">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597681759499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597667913901" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1597618672393">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597681759499" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1597685492606">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597618672393" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597685492606" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -771,10 +759,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597667915772">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597681761091">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597667915772" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597681761091" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1049,7 +1037,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DivisorGame.java</url>
-          <line>36</line>
+          <line>34</line>
           <option name="timeStamp" value="135" />
         </line-breakpoint>
       </breakpoints>
