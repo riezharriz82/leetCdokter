@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00176" summary="Update problem statement in ZigZagTraversal">
-      <created>1596370366836</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1596370366836</updated>
-    </task>
     <task id="LOCAL-00177" summary="Add logic to solve GFG Assembly line scheduling problem via DP">
       <created>1596373195408</created>
       <option name="number" value="00177" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597926993675</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier">
+      <created>1597928213948</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1597928213948</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update logic behind finding offset" />
     <MESSAGE value="Solve medium can a string be converted to another string in k moves by shifting characters&#10;&#10;Learning -- Handling circular distance was too time consuming for me, got TLE in the first submission because I was looping through the mulipliers for each diff and was checking if that iteration is available and within bounds. Availability was handled by a hashset. &#10;Similar to MakingFileNamesUnique" />
     <MESSAGE value="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray" />
     <MESSAGE value="Solve medium make parantheses valid by adding missing brackets by stack or keeping track of balances&#10;&#10;Learning -- In case of making things balanced, instead of using stack, just tracking counter of balance is fast and more effective" />
@@ -609,7 +608,8 @@
     <MESSAGE value="Solve medium find all numbers with same consecutive difference using recursion. Fix one digit and recur for next digit until we get N digits. Keep track of the current number.&#10;&#10;Learnings -- Use recursion for questions dealing with generating all combinations of specific problem" />
     <MESSAGE value="Solve easy town judge problem by finding the node with in-degree - out-degree = N-1&#10;&#10;My initial approach utilized hashmap but it took a long time so converted into array for them sweet gains." />
     <MESSAGE value="Solve medium reorder linked list by rearranging it to first, last, second, second-last, third, third-last...&#10;&#10;Learning -- Whenever asked to deal with traversing linked list from last, just reverse the linked list for in place solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium reorder linked list by rearranging it to first, last, second, second-last, third, third-last...&#10;&#10;Learning -- Whenever asked to deal with traversing linked list from last, just reverse the linked list for in place solution" />
+    <MESSAGE value="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597926992760">
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597928213416">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597926992760" />
+    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597928213416" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1597783005316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,22 +703,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1597872368289">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom" timestamp="1597929293375">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597872368289" />
-    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1597872368289">
+    <state width="1877" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597929293375" />
+    <state width="1877" height="325" key="GridCell.Tab.0.center" timestamp="1597929293375">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597872368289" />
-    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1597872368289">
+    <state width="1877" height="325" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597929293375" />
+    <state width="1877" height="325" key="GridCell.Tab.0.left" timestamp="1597929293375">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597872368289" />
-    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1597872368289">
+    <state width="1877" height="325" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597929293375" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right" timestamp="1597929293375">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597872368289" />
+    <state width="1877" height="325" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597929293375" />
     <state width="1877" height="269" key="GridCell.Tab.1.bottom" timestamp="1597872301946">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -759,10 +759,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597926994608">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597928214942">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597926994608" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597928214942" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -799,18 +799,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1597861714703" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1597870349596">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1597929249486">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597870349596" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597929249486" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1597618331226">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597618331226" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597861451259">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597929221399">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597861451259" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597929221399" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1047,12 +1047,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java</url>
-          <line>41</line>
+          <line>47</line>
           <option name="timeStamp" value="140" />
         </line-breakpoint>
       </breakpoints>
