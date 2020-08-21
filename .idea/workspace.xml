@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KClosestPointToOrigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KClosestPointToOrigin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00180" summary="Solve hard Get maximum score by using two pointer algorithm to merge two sorted arrays&#10;&#10;Learnings -- Had difficulty in traversing both the arrays. DO NOT USE MODULO OPERATOR ON VARIABLES ON WHICH YOU ARE DOING COMPARISON">
-      <created>1596396151576</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1596396151576</updated>
     </task>
     <task id="LOCAL-00181" summary="Solve easy convert sorted array to height balanced BST by fixing middle element as the root">
       <created>1596397156467</created>
@@ -521,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598029174110</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <task id="LOCAL-00229" summary="Update medium find K closest point to origin using priority queue.&#10;&#10;Learnings -- Whenever asked to find top k elements, think about priority queue. Quick select can also be used.">
+      <created>1598032186853</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1598032186854</updated>
+    </task>
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard max path sum of binary tree between any two nodes with positive and negative values&#10;&#10;Learnings -- Was able to do it on my own but the code had lots of if and else's. In case of negative answer from subtree it's better not to consider that subtree at all to simplify code" />
     <MESSAGE value="Solve medium time needed to inform all employees using DFS and tracking max time from all the reportees" />
     <MESSAGE value="Solve easy convert excel sheet column title to column number by treating it similar to binary number." />
     <MESSAGE value="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1" />
@@ -610,7 +608,8 @@
     <MESSAGE value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
     <MESSAGE value="Solve easy Happy number based on detecting cycle in a finite set of transformations by using set to detect cycle&#10;&#10;Learnings -- Floyds cycle finding algorithm can detect cycle in constant space. It's not limited to linked list." />
     <MESSAGE value="Update medium find top k frequent elements using bucket sort. Similar problem HIndex&#10;&#10;Learnings -- Whenever asked to deal with problems related to finding count of elements in array, think of bucket sort." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update medium find top k frequent elements using bucket sort. Similar problem HIndex&#10;&#10;Learnings -- Whenever asked to deal with problems related to finding count of elements in array, think of bucket sort." />
+    <MESSAGE value="Update medium find K closest point to origin using priority queue.&#10;&#10;Learnings -- Whenever asked to find top k elements, think about priority queue. Quick select can also be used." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update medium find K closest point to origin using priority queue.&#10;&#10;Learnings -- Whenever asked to find top k elements, think about priority queue. Quick select can also be used." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -692,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="22" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598029173525">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598032186173">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="22" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598029173525" />
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598032186173" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598026577543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -760,10 +759,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598029175378">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598032188098">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598029175378" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598032188098" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -808,10 +807,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597618331226" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598030727574">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598034575905">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598030727574" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598034575905" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
