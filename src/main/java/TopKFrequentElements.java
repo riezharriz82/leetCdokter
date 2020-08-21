@@ -1,7 +1,4 @@
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/top-k-frequent-elements/
@@ -23,6 +20,39 @@ public class TopKFrequentElements {
     public int[] topKFrequentUsingQuickSelect(int[] nums, int k) {
         //TODO
         return new int[10];
+    }
+
+    /**
+     * {@link HIndex} for bucket sort related problem
+     * Whenever you are asked to deal with count of number, think about bucket sort
+     */
+    public int[] topKFrequentUsingBucketSort(int[] nums, int k) {
+        HashMap<Integer, Integer> map = new HashMap<>(); //nums as key and their count as value
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        //buckets here signify how many times a number has been repeated, if a number has been repeated 6 times, it falls in 6th bucket
+        //iterate from last bucket ie. most frequent bucket, check if it's not empty
+        //and keep on adding elements present in that bucket to the result array.
+        //keep in mind that we need only k top elements
+        List<List<Integer>> buckets = new ArrayList<>(nums.length + 1);
+        for (int i = 0; i <= nums.length; i++) {
+            buckets.add(new ArrayList<>());
+        }
+        map.forEach((num, count) -> {
+            buckets.get(count).add(num); //add num to appropriate bucket
+        });
+        int[] res = new int[k];
+        int index = 0;
+        for (int i = nums.length; i >= 0; i--) { //iterate from most frequent bucket
+            if (!buckets.get(i).isEmpty()) {
+                Iterator<Integer> iter = buckets.get(i).iterator();
+                while (index < k && iter.hasNext()) { //add elements keeping in mind the constraint k
+                    res[index++] = iter.next();
+                }
+            }
+        }
+        return res;
     }
 
     public int[] topKFrequent(int[] nums, int k) {

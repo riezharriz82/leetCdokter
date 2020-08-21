@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TopKFrequentElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00178" summary="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange.">
-      <created>1596382046533</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1596382046533</updated>
     </task>
     <task id="LOCAL-00179" summary="Solve medium find maximum number possible after performing at most one swap in a number&#10;&#10;Learning -- Remember to take care of duplicate digits present in a number">
       <created>1596386116863</created>
@@ -520,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597931042370</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="Solve easy Happy number based on detecting cycle in a finite set of transformations by using set to detect cycle&#10;&#10;Learnings -- Floyds cycle finding algorithm can detect cycle in constant space. It's not limited to linked list.">
+      <created>1598026639388</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1598026639388</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +585,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray" />
     <MESSAGE value="Solve medium make parantheses valid by adding missing brackets by stack or keeping track of balances&#10;&#10;Learning -- In case of making things balanced, instead of using stack, just tracking counter of balance is fast and more effective" />
     <MESSAGE value="Solve hard max path sum of binary tree between any two nodes with positive and negative values&#10;&#10;Learnings -- Was able to do it on my own but the code had lots of if and else's. In case of negative answer from subtree it's better not to consider that subtree at all to simplify code" />
     <MESSAGE value="Solve medium time needed to inform all employees using DFS and tracking max time from all the reportees" />
@@ -609,7 +609,8 @@
     <MESSAGE value="Solve medium reorder linked list by rearranging it to first, last, second, second-last, third, third-last...&#10;&#10;Learning -- Whenever asked to deal with traversing linked list from last, just reverse the linked list for in place solution" />
     <MESSAGE value="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier" />
     <MESSAGE value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
+    <MESSAGE value="Solve easy Happy number based on detecting cycle in a finite set of transformations by using set to detect cycle&#10;&#10;Learnings -- Floyds cycle finding algorithm can detect cycle in constant space. It's not limited to linked list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy Happy number based on detecting cycle in a finite set of transformations by using set to detect cycle&#10;&#10;Learnings -- Floyds cycle finding algorithm can detect cycle in constant space. It's not limited to linked list." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,14 +692,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="75" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1597931041741">
+    <state x="335" y="75" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598026638629">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="75" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597931041741" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1597931171686">
+    <state x="335" y="75" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598026638629" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598026577543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597931171686" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598026577543" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -747,10 +748,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1595875138058" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1596982647599">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1598028283359">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1596982647599" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1598028283359" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1597860654580">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -759,10 +760,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597931146549">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598026640528">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597931146549" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598026640528" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -807,10 +808,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597618331226" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1597929221399">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598027792031">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597929221399" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598027792031" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
