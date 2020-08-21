@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00177" summary="Add logic to solve GFG Assembly line scheduling problem via DP">
-      <created>1596373195408</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1596373195408</updated>
-    </task>
     <task id="LOCAL-00178" summary="Solve medium Minimum number of adjacent swaps to arrange binary grid by applying swaps from the required row till the first row that satisfies this row count&#10;&#10;Learning -- I started trying to solve this problem by applying inversion count and got lost. This does not require inversion count as any row can have more than the number of zeroes required to arrange.">
       <created>1596382046533</created>
       <option name="number" value="00178" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597928213948</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);">
+      <created>1597931042370</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1597931042370</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium can a string be converted to another string in k moves by shifting characters&#10;&#10;Learning -- Handling circular distance was too time consuming for me, got TLE in the first submission because I was looping through the mulipliers for each diff and was checking if that iteration is available and within bounds. Availability was handled by a hashset. &#10;Similar to MakingFileNamesUnique" />
     <MESSAGE value="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray" />
     <MESSAGE value="Solve medium make parantheses valid by adding missing brackets by stack or keeping track of balances&#10;&#10;Learning -- In case of making things balanced, instead of using stack, just tracking counter of balance is fast and more effective" />
     <MESSAGE value="Solve hard max path sum of binary tree between any two nodes with positive and negative values&#10;&#10;Learnings -- Was able to do it on my own but the code had lots of if and else's. In case of negative answer from subtree it's better not to consider that subtree at all to simplify code" />
@@ -609,7 +608,8 @@
     <MESSAGE value="Solve easy town judge problem by finding the node with in-degree - out-degree = N-1&#10;&#10;My initial approach utilized hashmap but it took a long time so converted into array for them sweet gains." />
     <MESSAGE value="Solve medium reorder linked list by rearranging it to first, last, second, second-last, third, third-last...&#10;&#10;Learning -- Whenever asked to deal with traversing linked list from last, just reverse the linked list for in place solution" />
     <MESSAGE value="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier" />
+    <MESSAGE value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,14 +691,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2" timestamp="1597928213416">
+    <state x="335" y="75" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1597931041741">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="0" width="1585" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597928213416" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1597783005316">
+    <state x="335" y="75" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1597931041741" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1597931171686">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597783005316" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597931171686" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -759,10 +759,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597928214942">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1597931146549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597928214942" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597931146549" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="624" key="find.popup" timestamp="1597351241956">
+    <state x="667" y="258" width="585" height="624" key="find.popup" timestamp="1597944097722">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597351241956" />
+    <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597944097722" />
     <state width="735" height="247" key="javadoc.popup.new" timestamp="1597861714703">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
