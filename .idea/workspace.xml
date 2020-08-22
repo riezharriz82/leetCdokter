@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00182" summary="Solve easy find first bad commit version by binary search">
-      <created>1596398395579</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1596398395579</updated>
-    </task>
     <task id="LOCAL-00183" summary="Solve easy best time to buy and sell stock with only one transaction allowed by keeping track of the largest number on the right">
       <created>1596401366863</created>
       <option name="number" value="00183" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598035560298</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="Solve hard detect cycles in 2D Grid using DFS -- BiWeekly Contest&#10;&#10;Made some stupid mistakes during finding next nodes from current node, but was able to solve it in contest.">
+      <created>1598119396821</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1598119396822</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy convert excel sheet column title to column number by treating it similar to binary number." />
     <MESSAGE value="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1" />
     <MESSAGE value="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort" />
     <MESSAGE value="Solve medium length of longest substring without repeating characters by sliding window&#10;&#10;Learning -- always use a char array of 256 characters to represent ascii character range" />
@@ -609,7 +608,8 @@
     <MESSAGE value="Update medium find top k frequent elements using bucket sort. Similar problem HIndex&#10;&#10;Learnings -- Whenever asked to deal with problems related to finding count of elements in array, think of bucket sort." />
     <MESSAGE value="Update medium find K closest point to origin using priority queue.&#10;&#10;Learnings -- Whenever asked to find top k elements, think about priority queue. Quick select can also be used." />
     <MESSAGE value="Solve medium find length of longest commons subsequence using bottom up DP&#10;&#10;Learnings -- In case of problems dealing with two different string, try to start from end of each string and recurse accordingly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find length of longest commons subsequence using bottom up DP&#10;&#10;Learnings -- In case of problems dealing with two different string, try to start from end of each string and recurse accordingly" />
+    <MESSAGE value="Solve hard detect cycles in 2D Grid using DFS -- BiWeekly Contest&#10;&#10;Made some stupid mistakes during finding next nodes from current node, but was able to solve it in contest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard detect cycles in 2D Grid using DFS -- BiWeekly Contest&#10;&#10;Made some stupid mistakes during finding next nodes from current node, but was able to solve it in contest." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598035559664">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598119396146">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598035559664" />
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598119396146" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598036789869">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -759,10 +759,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598035561351">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598119397747">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598035561351" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598119397747" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1052,12 +1052,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java</url>
-          <line>39</line>
+          <line>7</line>
           <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java</url>
-          <line>20</line>
+          <line>4</line>
           <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
