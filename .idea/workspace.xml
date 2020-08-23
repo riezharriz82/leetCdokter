@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00184" summary="Update gotcha in ReverseBits">
-      <created>1596402874246</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1596402874246</updated>
-    </task>
     <task id="LOCAL-00185" summary="Solve medium Best to time buy and sell stock in multiple transactions">
       <created>1596461726636</created>
       <option name="number" value="00185" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598120177734</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="Solve easy check if given points make a straight line using maths&#10;&#10;Learnings -- y - y1 = m * (x - x1). m here is the slope which is (y2 - y1) / (x2 - x1)">
+      <created>1598180717131</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1598180717132</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort" />
     <MESSAGE value="Solve medium length of longest substring without repeating characters by sliding window&#10;&#10;Learning -- always use a char array of 256 characters to represent ascii character range" />
     <MESSAGE value="Solve medium divide two integers using bitwise operators in logarithmic order. Initially I did it with repeated subtraction but that was very slow.&#10;&#10;Learning -- In case when we want to check for presence of opposing things, use XOR" />
     <MESSAGE value="Solve medium rearrange words in a sentence by word length. Tricky thing was to handle it in stable order i.e strings with same length should be returned in original order. Arrays.sort provides stable sorting, hence need not worry about storing the indices as a pair in another array and then sort it by providing a custom comparator.&#10;Google sure is tricky :)" />
@@ -609,7 +608,8 @@
     <MESSAGE value="Solve medium find length of longest commons subsequence using bottom up DP&#10;&#10;Learnings -- In case of problems dealing with two different string, try to start from end of each string and recurse accordingly" />
     <MESSAGE value="Solve hard detect cycles in 2D Grid using DFS -- BiWeekly Contest&#10;&#10;Made some stupid mistakes during finding next nodes from current node, but was able to solve it in contest." />
     <MESSAGE value="Solve medium find min set of vertices required to reach all nodes in a DAG by finding the nodes with 0 indegree.&#10;&#10;It was part of biweekly contest. Solved it by reading a stack overflow answer." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find min set of vertices required to reach all nodes in a DAG by finding the nodes with 0 indegree.&#10;&#10;It was part of biweekly contest. Solved it by reading a stack overflow answer." />
+    <MESSAGE value="Solve easy check if given points make a straight line using maths&#10;&#10;Learnings -- y - y1 = m * (x - x1). m here is the slope which is (y2 - y1) / (x2 - x1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy check if given points make a straight line using maths&#10;&#10;Learnings -- y - y1 = m * (x - x1). m here is the slope which is (y2 - y1) / (x2 - x1)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598120177222">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598180716489">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598120177222" />
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598180716489" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598036789869">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -759,10 +759,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598120178829">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598180718920">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598120178829" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598180718920" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,22 +795,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598109878075" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598154483950">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598180577393">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598154483950" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1597929249486">
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598180577393" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1598182122661">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597929249486" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598182122661" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1597618331226">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597618331226" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598121041999">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598181857498">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598121041999" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598181857498" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
