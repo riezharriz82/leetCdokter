@@ -93,7 +93,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch (1)">
+  <component name="RunManager" selected="JUnit.FindGroupWithSizeMTest.test">
     <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,10 +114,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EraseNonOverlappingIntervalsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindGroupWithSizeMTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EraseNonOverlappingIntervalsTest" />
+      <option name="MAIN_CLASS_NAME" value="FindGroupWithSizeMTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -153,18 +153,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.EraseNonOverlappingIntervalsTest.test" />
       <item itemvalue="JUnit.DivisorGameTest.test" />
       <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
       <item itemvalue="JUnit.LongestCommonSubarrayTest" />
+      <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.LongestCommonSubarrayTest" />
         <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
         <item itemvalue="JUnit.DivisorGameTest.test" />
-        <item itemvalue="JUnit.EraseNonOverlappingIntervalsTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -176,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00187" summary="Solve easy find whether number is power of 2, 3 or 4 by checking the location of the set bit">
-      <created>1596566935822</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1596566935822</updated>
     </task>
     <task id="LOCAL-00188" summary="Solve hard find best time to buy and sell stock if allowed to perform at most 2 transactions&#10;&#10;Learning -- Did my initial code in n^2 time, similar to longest increasing subsequence.">
       <created>1596574833477</created>
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598191468098</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="Solve hard find whether valid word in stream of characters by using trie and storing the words in trie in reverse order as trie does not support reverse search.&#10;&#10;Learnings -- Whenever provided with a dictionary think of trie / bfs. Here the trick was to reverse the word and store in trie.">
+      <created>1598198290336</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1598198290336</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium rearrange words in a sentence by word length. Tricky thing was to handle it in stable order i.e strings with same length should be returned in original order. Arrays.sort provides stable sorting, hence need not worry about storing the indices as a pair in another array and then sort it by providing a custom comparator.&#10;Google sure is tricky :)" />
     <MESSAGE value="Solve hard largest rectangle in histogram by utilizing monotonic stack to find the index of the element smaller than current element on left / right side&#10;&#10;Learnings -- Utilize monotonic stack wherever first smaller/greater element than current element is required." />
     <MESSAGE value="Solve medium Generate all possible combinations of a string that are of a specific length by recursion&#10;&#10;Learnings -- Identified very late that it can be solved using recursion, spent a lot in solving it via converting an integer to a different radix approach told by Deepak." />
     <MESSAGE value="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick." />
@@ -609,7 +608,8 @@
     <MESSAGE value="Solve easy check if given points make a straight line using maths&#10;&#10;Learnings -- y - y1 = m * (x - x1). m here is the slope which is (y2 - y1) / (x2 - x1)" />
     <MESSAGE value="Solve medium generate unique power sets when duplicates present&#10;&#10;Learnings -- In case of duplicates don't forget to sort the input. &#10;To handle duplicates you can either&#10;1. Skip the duplicates (Move the pointer to non duplicate) after generating the result&#10;2. Check if the current candidate's value was handled in the previous iteration. (Do this only when the duplicates number are competing for the same place in the result)" />
     <MESSAGE value="Solve easy find most visited sectors in circular array by simulating the movements&#10;&#10;Learning -- Handle wrapping around in circular array by performing modulo size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find most visited sectors in circular array by simulating the movements&#10;&#10;Learning -- Handle wrapping around in circular array by performing modulo size" />
+    <MESSAGE value="Solve hard find whether valid word in stream of characters by using trie and storing the words in trie in reverse order as trie does not support reverse search.&#10;&#10;Learnings -- Whenever provided with a dictionary think of trie / bfs. Here the trick was to reverse the word and store in trie." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find whether valid word in stream of characters by using trie and storing the words in trie in reverse order as trie does not support reverse search.&#10;&#10;Learnings -- Whenever provided with a dictionary think of trie / bfs. Here the trick was to reverse the word and store in trie." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598191467615">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598198289813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598191467615" />
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598198289813" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598036789869">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,38 +703,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1598180403217">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598260328233">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598180403217" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1598180403217">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598260328233" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598260328233">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598180403217" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1598180403216">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598260328233" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598260328233">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598180403216" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1598180403217">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598260328233" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598260328233">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598180403217" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598180403217">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598260328233" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598206679770">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598180403217" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1598180403217">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598206679770" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1598206679770">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598180403217" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1598180403217">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598206679770" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1598206679770">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598180403217" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1598180403217">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598206679770" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1598206679770">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598180403217" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598206679770" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -755,18 +755,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1598121068364" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1597860654580">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1598206408920">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1597860654580" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1598206408920" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1594452772075">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598191473766">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598198293141">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598191473766" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598198293141" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1053,6 +1053,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java</url>
           <line>47</line>
           <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/FindGroupWithSizeM.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="145" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
