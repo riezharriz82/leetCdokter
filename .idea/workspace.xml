@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00188" summary="Solve hard find best time to buy and sell stock if allowed to perform at most 2 transactions&#10;&#10;Learning -- Did my initial code in n^2 time, similar to longest increasing subsequence.">
-      <created>1596574833477</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1596574833477</updated>
-    </task>
     <task id="LOCAL-00189" summary="Solve medium Generate unique bst. Follow up problem to Count unique BST. &#10;&#10;Learning -- Was able to figure out the recursion but was not able to figure out how to create new roots. Idea was to create new root for every possible combination of left and right subroots.">
       <created>1596640765175</created>
       <option name="number" value="00189" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598198290336</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="Solve medium reorganize strings by placing different characters in adjacent position in first attempt. &#10;&#10;Similar to Task Scheduler problem. Use Heap and place one character and check if a different character is available to be placed.">
+      <created>1598302458772</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1598302458772</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard largest rectangle in histogram by utilizing monotonic stack to find the index of the element smaller than current element on left / right side&#10;&#10;Learnings -- Utilize monotonic stack wherever first smaller/greater element than current element is required." />
     <MESSAGE value="Solve medium Generate all possible combinations of a string that are of a specific length by recursion&#10;&#10;Learnings -- Identified very late that it can be solved using recursion, spent a lot in solving it via converting an integer to a different radix approach told by Deepak." />
     <MESSAGE value="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick." />
     <MESSAGE value="Solve hard NQueen problem using recursion and backtracking.&#10;&#10;Learning -- Generate diagonal path for an element in a matrix and whenever problems like generate all path/combinations is seen in the question, try to use recursion first then think of optimizing it." />
@@ -609,16 +608,17 @@
     <MESSAGE value="Solve medium generate unique power sets when duplicates present&#10;&#10;Learnings -- In case of duplicates don't forget to sort the input. &#10;To handle duplicates you can either&#10;1. Skip the duplicates (Move the pointer to non duplicate) after generating the result&#10;2. Check if the current candidate's value was handled in the previous iteration. (Do this only when the duplicates number are competing for the same place in the result)" />
     <MESSAGE value="Solve easy find most visited sectors in circular array by simulating the movements&#10;&#10;Learning -- Handle wrapping around in circular array by performing modulo size" />
     <MESSAGE value="Solve hard find whether valid word in stream of characters by using trie and storing the words in trie in reverse order as trie does not support reverse search.&#10;&#10;Learnings -- Whenever provided with a dictionary think of trie / bfs. Here the trick was to reverse the word and store in trie." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find whether valid word in stream of characters by using trie and storing the words in trie in reverse order as trie does not support reverse search.&#10;&#10;Learnings -- Whenever provided with a dictionary think of trie / bfs. Here the trick was to reverse the word and store in trie." />
+    <MESSAGE value="Solve medium reorganize strings by placing different characters in adjacent position in first attempt. &#10;&#10;Similar to Task Scheduler problem. Use Heap and place one character and check if a different character is available to be placed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium reorganize strings by placing different characters in adjacent position in first attempt. &#10;&#10;Similar to Task Scheduler problem. Use Heap and place one character and check if a different character is available to be placed." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="726" y="229" key="#Auto_Import" timestamp="1595963541170">
+    <state x="726" y="229" key="#Auto_Import" timestamp="1598303679686">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1595963541170" />
+    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1598303679686" />
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1592860555493">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -691,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598198289813">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598302457960">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598198289813" />
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598302457960" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598036789869">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598198293141">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598302460211">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598198293141" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598302460211" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -779,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1594451868089" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596889034553">
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598366109548">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1596889034553" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598366109548" />
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594592599434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -799,10 +799,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598109878075" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598180577393">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598366756776">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598180577393" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598366756776" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1598182122661">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -811,10 +811,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597618331226" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598181857498">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598365492130">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598181857498" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598365492130" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1056,7 +1056,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FindGroupWithSizeM.java</url>
-          <line>50</line>
+          <line>51</line>
           <option name="timeStamp" value="145" />
         </line-breakpoint>
       </breakpoints>
