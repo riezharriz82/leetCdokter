@@ -174,13 +174,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00195" summary="Solve easy but tricky isomorphic strings &#10;&#10;Learning -- Read the problem statement carefully you dumb fuck. Initially I completely ignored about the fact that no two characters can have same mapping">
-      <created>1596833603880</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1596833603880</updated>
-    </task>
     <task id="LOCAL-00196" summary="Solve medium find smallest string starting from leaf in binary tree by appending current path in a linked list to avoid reversing the path&#10;&#10;Learning -- Use linked list wherever we need to reverse the input and index specific access is not required">
       <created>1596842640219</created>
       <option name="number" value="00196" />
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598710104258</updated>
     </task>
-    <option name="localTasksCounter" value="244" />
+    <task id="LOCAL-00244" summary="Solve medium find longest subarray where min and max number lies within a limit in linear time using deque and in nlogn time using treeMap&#10;&#10;Learning -- Nlogn implementation was easy to implement. Maintain a sliding window and add elements to treeMap. Keep checking the constraints by getting the min and max of window using firstKey() and lastKey()&#10;&#10;Linear time implementation was tricky as it requires two deque to track sliding min and max element of the window. If the min and max diff does not satisy constraint, shorten the window by comparing whether the num at begin index is present, then pollFirst(). Can't directly pollFirst() because we won't be able to identify the new window length by doing so. Hence need to iteratively check the begin element and shorten by 1 repeatedly.">
+      <created>1598716248569</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1598716248569</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find sum of nodes whose grand parents have even values. My initial approach was bottom up where each node returns the child sum and grandchild sum to its parent and parent updates the result. Although I solved it in first attempt, code could have been simplified if we followed top down approach in which we let each node make aware of their grandparents so they can update result directly." />
     <MESSAGE value="Solve easy Distribute N candies to K people by just simulating the distribution process. Give 1 candy first, then 2, 3, 4, 5.. until we run out of it. &#10;&#10;Learnings -- In case of distribution problem, sometimes its simple to just simulate the distribution itself. My initial approach was similar but the implementation was crude. Check leetcode submission history to find my initial approach." />
     <MESSAGE value="Solve easy Divisor Game theory problem, was not able to solve it on my own, eventually solved it by recursion and top down memoization. &#10;&#10;Learnings -- In case of game theory problems, first try all the combinations and check if we can win/fail." />
     <MESSAGE value="Solve medium find all numbers with same consecutive difference using recursion. Fix one digit and recur for next digit until we get N digits. Keep track of the current number.&#10;&#10;Learnings -- Use recursion for questions dealing with generating all combinations of specific problem" />
@@ -606,7 +605,8 @@
     <MESSAGE value="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically" />
     <MESSAGE value="Solve medium find next right interval given a set of intervals using binary search and sorting&#10;&#10;Leanings -- Implementation details of binary search. When the key is greater than the largest value prsent in the array, it returns - (size of array) - 1&#10;Care must be taken to handle this, because converting this to positive number will return an index out of bounds.&#10;&#10;Also if there are multiple occurrences of the key present in the array, any one of them can be returned. So need to manually traverse back and find the first occurrence." />
     <MESSAGE value="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform." />
+    <MESSAGE value="Solve medium find longest subarray where min and max number lies within a limit in linear time using deque and in nlogn time using treeMap&#10;&#10;Learning -- Nlogn implementation was easy to implement. Maintain a sliding window and add elements to treeMap. Keep checking the constraints by getting the min and max of window using firstKey() and lastKey()&#10;&#10;Linear time implementation was tricky as it requires two deque to track sliding min and max element of the window. If the min and max diff does not satisy constraint, shorten the window by comparing whether the num at begin index is present, then pollFirst(). Can't directly pollFirst() because we won't be able to identify the new window length by doing so. Hence need to iteratively check the begin element and shorten by 1 repeatedly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find longest subarray where min and max number lies within a limit in linear time using deque and in nlogn time using treeMap&#10;&#10;Learning -- Nlogn implementation was easy to implement. Maintain a sliding window and add elements to treeMap. Keep checking the constraints by getting the min and max of window using firstKey() and lastKey()&#10;&#10;Linear time implementation was tricky as it requires two deque to track sliding min and max element of the window. If the min and max diff does not satisy constraint, shorten the window by comparing whether the num at begin index is present, then pollFirst(). Can't directly pollFirst() because we won't be able to identify the new window length by doing so. Hence need to iteratively check the begin element and shorten by 1 repeatedly." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -688,10 +688,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598710103665">
+    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598716248051">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598710103665" />
+    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598716248051" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598557040680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -760,10 +760,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598710105502">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598716249798">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598710105502" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598716249798" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
