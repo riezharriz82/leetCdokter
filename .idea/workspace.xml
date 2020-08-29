@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00192" summary="Solve medium Vertical order traversal of binary tree using treemap and priority queue to match the desired output">
-      <created>1596826069354</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1596826069354</updated>
-    </task>
     <task id="LOCAL-00193" summary="Solve medium generate all root leaf paths in binary tree">
       <created>1596827925704</created>
       <option name="number" value="00193" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598373228525</updated>
     </task>
-    <option name="localTasksCounter" value="241" />
+    <task id="LOCAL-00241" summary="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically">
+      <created>1598707434673</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1598707434674</updated>
+    </task>
+    <option name="localTasksCounter" value="242" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update NQueen problem by not iterating over the diagonal path to check for queen, instead leverage property that all diagonal elements have value = row + col and value = row - col, use hashset to store this" />
     <MESSAGE value="Solve medium remove minimum no of non-overlapping intervals by picking the interval that finishes first and then moving on to pick the next non overlapping interval&#10;&#10;Learnings -- Problem can be reworded by finding maximum no of non-overlapping intervals and result can be total elements - maximum no." />
     <MESSAGE value="Solve medium minimum arrows required to burst balloons by sorting the input by end diameter, resulting in to track non overlapping balloons" />
     <MESSAGE value="Solve medium find sum of nodes whose grand parents have even values. My initial approach was bottom up where each node returns the child sum and grandchild sum to its parent and parent updates the result. Although I solved it in first attempt, code could have been simplified if we followed top down approach in which we let each node make aware of their grandparents so they can update result directly." />
@@ -609,7 +608,8 @@
     <MESSAGE value="Solve medium min cost to buy tickets if three choices available, you can buy 1 day, 7 day, 30 days pass using bottom up DP&#10;&#10;Find the first day outside of the 7 day or 30 day window, find the min cost at that day and add the cost to buy respective pass." />
     <MESSAGE value="Solve medium string transformation question -- find and replace in string. Given multiple sources substrings, you have to replace them with corresponding target substring.&#10;&#10;Learnings -- Logic was simple but implementation had some gotchas, like to skip all the characters of source substring once a match is found" />
     <MESSAGE value="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs" />
+    <MESSAGE value="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598373227789">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598707433974">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598373227789" />
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598707433974" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598557040680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598373229947">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598707458974">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598373229947" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598707458974" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
