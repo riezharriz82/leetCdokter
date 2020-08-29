@@ -174,13 +174,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00196" summary="Solve medium find smallest string starting from leaf in binary tree by appending current path in a linked list to avoid reversing the path&#10;&#10;Learning -- Use linked list wherever we need to reverse the input and index specific access is not required">
-      <created>1596842640219</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1596842640219</updated>
-    </task>
     <task id="LOCAL-00197" summary="Solve medium find all root to leaf path sum in binary tree&#10;&#10;Learning -- In tree related problems, sometimes we can avoid global variable by relying on results of left and right subtree">
       <created>1596843238294</created>
       <option name="number" value="00197" />
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598716248569</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="Solve hard find the maximum number for all sliding windows in linear time using deque. Related to find max length of subarray whose diff of min and max element lies within a limit&#10;&#10;Learning -- Sliding window implementation using deque.">
+      <created>1598718325500</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1598718325500</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy Distribute N candies to K people by just simulating the distribution process. Give 1 candy first, then 2, 3, 4, 5.. until we run out of it. &#10;&#10;Learnings -- In case of distribution problem, sometimes its simple to just simulate the distribution itself. My initial approach was similar but the implementation was crude. Check leetcode submission history to find my initial approach." />
     <MESSAGE value="Solve easy Divisor Game theory problem, was not able to solve it on my own, eventually solved it by recursion and top down memoization. &#10;&#10;Learnings -- In case of game theory problems, first try all the combinations and check if we can win/fail." />
     <MESSAGE value="Solve medium find all numbers with same consecutive difference using recursion. Fix one digit and recur for next digit until we get N digits. Keep track of the current number.&#10;&#10;Learnings -- Use recursion for questions dealing with generating all combinations of specific problem" />
     <MESSAGE value="Solve easy town judge problem by finding the node with in-degree - out-degree = N-1&#10;&#10;My initial approach utilized hashmap but it took a long time so converted into array for them sweet gains." />
@@ -606,7 +605,8 @@
     <MESSAGE value="Solve medium find next right interval given a set of intervals using binary search and sorting&#10;&#10;Leanings -- Implementation details of binary search. When the key is greater than the largest value prsent in the array, it returns - (size of array) - 1&#10;Care must be taken to handle this, because converting this to positive number will return an index out of bounds.&#10;&#10;Also if there are multiple occurrences of the key present in the array, any one of them can be returned. So need to manually traverse back and find the first occurrence." />
     <MESSAGE value="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform." />
     <MESSAGE value="Solve medium find longest subarray where min and max number lies within a limit in linear time using deque and in nlogn time using treeMap&#10;&#10;Learning -- Nlogn implementation was easy to implement. Maintain a sliding window and add elements to treeMap. Keep checking the constraints by getting the min and max of window using firstKey() and lastKey()&#10;&#10;Linear time implementation was tricky as it requires two deque to track sliding min and max element of the window. If the min and max diff does not satisy constraint, shorten the window by comparing whether the num at begin index is present, then pollFirst(). Can't directly pollFirst() because we won't be able to identify the new window length by doing so. Hence need to iteratively check the begin element and shorten by 1 repeatedly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find longest subarray where min and max number lies within a limit in linear time using deque and in nlogn time using treeMap&#10;&#10;Learning -- Nlogn implementation was easy to implement. Maintain a sliding window and add elements to treeMap. Keep checking the constraints by getting the min and max of window using firstKey() and lastKey()&#10;&#10;Linear time implementation was tricky as it requires two deque to track sliding min and max element of the window. If the min and max diff does not satisy constraint, shorten the window by comparing whether the num at begin index is present, then pollFirst(). Can't directly pollFirst() because we won't be able to identify the new window length by doing so. Hence need to iteratively check the begin element and shorten by 1 repeatedly." />
+    <MESSAGE value="Solve hard find the maximum number for all sliding windows in linear time using deque. Related to find max length of subarray whose diff of min and max element lies within a limit&#10;&#10;Learning -- Sliding window implementation using deque." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find the maximum number for all sliding windows in linear time using deque. Related to find max length of subarray whose diff of min and max element lies within a limit&#10;&#10;Learning -- Sliding window implementation using deque." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -688,10 +688,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598716248051">
+    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598718324989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598716248051" />
+    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598718324989" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598557040680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -760,10 +760,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598716249798">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598718326898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598716249798" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598718326898" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -796,10 +796,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598709164284" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598709274349">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598722869149">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598709274349" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598722869149" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1598182122661">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -808,10 +808,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597618331226" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598707012879">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598722768837">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598707012879" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598722768837" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
