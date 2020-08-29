@@ -93,21 +93,18 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch (1)">
-    <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.LongestContiguousSubarrayWithValidDiff">
+    <configuration name="LongestContiguousSubarrayWithValidDiff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LongestContiguousSubarrayWithValidDiff" />
       <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CheapestFlightWithinKStopTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DivisorGameTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DivisorGameTest" />
+      <option name="MAIN_CLASS_NAME" value="CheapestFlightWithinKStopTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -153,18 +150,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.DivisorGameTest.test" />
       <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
       <item itemvalue="JUnit.LongestCommonSubarrayTest" />
       <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
+      <item itemvalue="Application.LongestContiguousSubarrayWithValidDiff" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestContiguousSubarrayWithValidDiff" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
         <item itemvalue="JUnit.LongestCommonSubarrayTest" />
         <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
-        <item itemvalue="JUnit.DivisorGameTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -176,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00194" summary="Solve medium find all root to leaf path that matches the target sum by backtracking and keeping track of current path">
-      <created>1596829172503</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1596829172503</updated>
     </task>
     <task id="LOCAL-00195" summary="Solve easy but tricky isomorphic strings &#10;&#10;Learning -- Read the problem statement carefully you dumb fuck. Initially I completely ignored about the fact that no two characters can have same mapping">
       <created>1596833603880</created>
@@ -520,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598709005864</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform.">
+      <created>1598710104258</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1598710104258</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium minimum arrows required to burst balloons by sorting the input by end diameter, resulting in to track non overlapping balloons" />
     <MESSAGE value="Solve medium find sum of nodes whose grand parents have even values. My initial approach was bottom up where each node returns the child sum and grandchild sum to its parent and parent updates the result. Although I solved it in first attempt, code could have been simplified if we followed top down approach in which we let each node make aware of their grandparents so they can update result directly." />
     <MESSAGE value="Solve easy Distribute N candies to K people by just simulating the distribution process. Give 1 candy first, then 2, 3, 4, 5.. until we run out of it. &#10;&#10;Learnings -- In case of distribution problem, sometimes its simple to just simulate the distribution itself. My initial approach was similar but the implementation was crude. Check leetcode submission history to find my initial approach." />
     <MESSAGE value="Solve easy Divisor Game theory problem, was not able to solve it on my own, eventually solved it by recursion and top down memoization. &#10;&#10;Learnings -- In case of game theory problems, first try all the combinations and check if we can win/fail." />
@@ -609,7 +605,8 @@
     <MESSAGE value="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs" />
     <MESSAGE value="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically" />
     <MESSAGE value="Solve medium find next right interval given a set of intervals using binary search and sorting&#10;&#10;Leanings -- Implementation details of binary search. When the key is greater than the largest value prsent in the array, it returns - (size of array) - 1&#10;Care must be taken to handle this, because converting this to positive number will return an index out of bounds.&#10;&#10;Also if there are multiple occurrences of the key present in the array, any one of them can be returned. So need to manually traverse back and find the first occurrence." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find next right interval given a set of intervals using binary search and sorting&#10;&#10;Leanings -- Implementation details of binary search. When the key is greater than the largest value prsent in the array, it returns - (size of array) - 1&#10;Care must be taken to handle this, because converting this to positive number will return an index out of bounds.&#10;&#10;Also if there are multiple occurrences of the key present in the array, any one of them can be returned. So need to manually traverse back and find the first occurrence." />
+    <MESSAGE value="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +688,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598709005279">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598710103665">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598709005279" />
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598710103665" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598557040680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,38 +700,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1598568170736">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598715115861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1598568170736">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598715115861" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598715115861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1598568170736">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598715115861" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598715115861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1598568170736">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598715115861" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598715115861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598568170736">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598715115861" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598714639431">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1598568170736">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598714639431" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1598714639431">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1598568170736">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598714639431" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1598714639431">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1598568170736">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598714639431" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1598714639431">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598714639431" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +760,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598709007118">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598710105502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598709007118" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598710105502" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
