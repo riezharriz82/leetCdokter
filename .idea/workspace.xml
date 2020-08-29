@@ -93,7 +93,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindGroupWithSizeMTest.test">
+  <component name="RunManager" selected="Java Scratch.Scratch (1)">
     <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -160,8 +160,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
+        <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
         <item itemvalue="JUnit.LongestCommonSubarrayTest" />
         <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
         <item itemvalue="JUnit.DivisorGameTest.test" />
@@ -176,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00191" summary="Solve easy length of the longest palindrome that can be formed from the existing characters by counting characters with even pairs and single count">
-      <created>1596753688695</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1596753688695</updated>
     </task>
     <task id="LOCAL-00192" summary="Solve medium Vertical order traversal of binary tree using treemap and priority queue to match the desired output">
       <created>1596826069354</created>
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598370496628</updated>
     </task>
-    <option name="localTasksCounter" value="240" />
+    <task id="LOCAL-00240" summary="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs">
+      <created>1598373228525</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1598373228525</updated>
+    </task>
+    <option name="localTasksCounter" value="241" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard NQueen problem using recursion and backtracking.&#10;&#10;Learning -- Generate diagonal path for an element in a matrix and whenever problems like generate all path/combinations is seen in the question, try to use recursion first then think of optimizing it." />
     <MESSAGE value="Update NQueen problem by not iterating over the diagonal path to check for queen, instead leverage property that all diagonal elements have value = row + col and value = row - col, use hashset to store this" />
     <MESSAGE value="Solve medium remove minimum no of non-overlapping intervals by picking the interval that finishes first and then moving on to pick the next non overlapping interval&#10;&#10;Learnings -- Problem can be reworded by finding maximum no of non-overlapping intervals and result can be total elements - maximum no." />
     <MESSAGE value="Solve medium minimum arrows required to burst balloons by sorting the input by end diameter, resulting in to track non overlapping balloons" />
@@ -609,7 +608,8 @@
     <MESSAGE value="Solve medium reorganize strings by placing different characters in adjacent position in first attempt. &#10;&#10;Similar to Task Scheduler problem. Use Heap and place one character and check if a different character is available to be placed." />
     <MESSAGE value="Solve medium min cost to buy tickets if three choices available, you can buy 1 day, 7 day, 30 days pass using bottom up DP&#10;&#10;Find the first day outside of the 7 day or 30 day window, find the min cost at that day and add the cost to buy respective pass." />
     <MESSAGE value="Solve medium string transformation question -- find and replace in string. Given multiple sources substrings, you have to replace them with corresponding target substring.&#10;&#10;Learnings -- Logic was simple but implementation had some gotchas, like to skip all the characters of source substring once a match is found" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium string transformation question -- find and replace in string. Given multiple sources substrings, you have to replace them with corresponding target substring.&#10;&#10;Learnings -- Logic was simple but implementation had some gotchas, like to skip all the characters of source substring once a match is found" />
+    <MESSAGE value="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -639,10 +639,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1596223759748">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1598555419973">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1596223759748" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598555419973" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -659,10 +659,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451490581" />
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596270193315">
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598568130695">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596270193315" />
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598568130695" />
     <state x="820" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597609083441">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -691,50 +691,50 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598370496088">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598373227789">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598370496088" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598036789869">
+    <state x="296" y="0" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598373227789" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598557040680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598036789869" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598557040680" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598260328233">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1598568170736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598260328233" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598260328233">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1598568170736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598260328233" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598260328233">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1598568170736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598260328233" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598260328233">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1598568170736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598260328233" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598206679770">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598568170736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598206679770" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1598206679770">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1598568170736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598206679770" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1598206679770">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1598568170736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598206679770" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1598206679770">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1598568170736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598206679770" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598568170736" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -755,18 +755,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1598121068364" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1598206408920">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1598557005721">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1598206408920" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1598557005721" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1594452772075">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598370497965">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598373229947">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598370497965" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598373229947" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,14 +795,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="585" height="624" key="find.popup" timestamp="1598109878075">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1598602326885">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="585" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598109878075" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598366756776">
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598602326885" />
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598556940595">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598366756776" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598556940595" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1598182122661">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -811,10 +811,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597618331226" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598365492130">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598707012879">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598365492130" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598707012879" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
