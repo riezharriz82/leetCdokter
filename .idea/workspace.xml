@@ -10,8 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PerfectSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PerfectSquares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PerfectSquaresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PerfectSquaresTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00200" summary="Update logic behind finding offset">
-      <created>1596976818714</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1596976818714</updated>
     </task>
     <task id="LOCAL-00201" summary="Solve medium can a string be converted to another string in k moves by shifting characters&#10;&#10;Learning -- Handling circular distance was too time consuming for me, got TLE in the first submission because I was looping through the mulipliers for each diff and was checking if that iteration is available and within bounds. Availability was handled by a hashset. &#10;Similar to MakingFileNamesUnique">
       <created>1596983827366</created>
@@ -520,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598793993489</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS.">
+      <created>1598794544823</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1598794544823</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium reorder linked list by rearranging it to first, last, second, second-last, third, third-last...&#10;&#10;Learning -- Whenever asked to deal with traversing linked list from last, just reverse the linked list for in place solution" />
     <MESSAGE value="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier" />
     <MESSAGE value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
     <MESSAGE value="Solve easy Happy number based on detecting cycle in a finite set of transformations by using set to detect cycle&#10;&#10;Learnings -- Floyds cycle finding algorithm can detect cycle in constant space. It's not limited to linked list." />
@@ -609,16 +606,17 @@
     <MESSAGE value="Solve hard find the max subsequence sum such that any two indices in the subsequences are max k distance apart using brute force, treemap and monotonic deque&#10;&#10;Learnings -- When there are k options to choose from at each state, DP or recursion is always the answer. Here I have optimized the N*K dp solution using TreeMap and Deque to reduce time complexity" />
     <MESSAGE value="Solve medium yet another subarray problem by sliding window. Maximise the sum by either picking the first or the last number&#10;&#10;Learning -- Google loves sliding window problem. This problem can be converted to a min sliding window sum problem." />
     <MESSAGE value="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution." />
+    <MESSAGE value="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="726" y="229" key="#Auto_Import" timestamp="1598303679686">
+    <state x="726" y="229" key="#Auto_Import" timestamp="1598797096298">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1598303679686" />
+    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1598797096298" />
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1592860555493">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -691,10 +689,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598793992671">
+    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598794544231">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598793992671" />
+    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598794544231" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598557040680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,22 +701,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598794312499">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598797728284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598794312499" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598794312499">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598797728284" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598797728284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598794312499" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598794312499">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598797728284" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598797728284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598794312499" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598794312499">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598797728284" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598797728284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598794312499" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598797728284" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598792316983">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +761,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598793995530">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598794546070">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598793995530" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598794546070" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1056,7 +1054,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/MinimumNumberOfFibonacciRequiredToReachSumK.java</url>
-          <line>90</line>
+          <line>91</line>
           <option name="timeStamp" value="141" />
         </line-breakpoint>
       </breakpoints>
