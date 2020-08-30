@@ -8,7 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MakeParenthesesValid2.java" beforeDir="false" />
     </list>
@@ -94,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PerfectSquaresTest.test">
+  <component name="RunManager" selected="Java Scratch.Scratch (1)">
     <configuration name="LongestContiguousSubarrayWithValidDiff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LongestContiguousSubarrayWithValidDiff" />
       <module name="leetcode-practice" />
@@ -159,10 +159,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.PerfectSquaresTest.test" />
         <item itemvalue="JUnit.MinimumNumberOfFibonacciRequiredToReachSumKTest.test" />
         <item itemvalue="Application.LongestContiguousSubarrayWithValidDiff" />
-        <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
       </list>
     </recent_temporary>
@@ -175,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00202" summary="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray">
-      <created>1596983936840</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1596983936840</updated>
     </task>
     <task id="LOCAL-00203" summary="Solve medium make parantheses valid by adding missing brackets by stack or keeping track of balances&#10;&#10;Learning -- In case of making things balanced, instead of using stack, just tracking counter of balance is fast and more effective">
       <created>1596986348161</created>
@@ -519,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598798173277</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="Amend previous commit -- Add the actual file">
+      <created>1598800003929</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1598800003929</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
     <MESSAGE value="Solve easy Happy number based on detecting cycle in a finite set of transformations by using set to detect cycle&#10;&#10;Learnings -- Floyds cycle finding algorithm can detect cycle in constant space. It's not limited to linked list." />
     <MESSAGE value="Update medium find top k frequent elements using bucket sort. Similar problem HIndex&#10;&#10;Learnings -- Whenever asked to deal with problems related to finding count of elements in array, think of bucket sort." />
     <MESSAGE value="Update medium find K closest point to origin using priority queue.&#10;&#10;Learnings -- Whenever asked to find top k elements, think about priority queue. Quick select can also be used." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution." />
     <MESSAGE value="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS." />
     <MESSAGE value="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set." />
+    <MESSAGE value="Amend previous commit -- Add the actual file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amend previous commit -- Add the actual file" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -690,10 +690,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598798172591">
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598800036378">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598798172591" />
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598800036378" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598799735877">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -702,22 +702,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598797728284">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598811906304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598797728284" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598797728284">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598811906304" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598811906304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598797728284" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598797728284">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598811906304" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598811906304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598797728284" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598797728284">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598811906304" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598811906304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598797728284" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598811906304" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598792316983">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -754,18 +754,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1598121068364" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1598790107660">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1598811661756">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1598790107660" />
-    <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799730039">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1598811661756" />
+    <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799730039" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598798174522">
+    <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598800005806">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598798174522" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598800005806" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -798,10 +798,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598709164284" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598793077439">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598811901078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598793077439" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598811901078" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1598730618694">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -810,10 +810,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598794293877" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598799735520">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598811669927">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598799735520" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598811669927" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
