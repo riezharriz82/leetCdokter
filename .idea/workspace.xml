@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MakeParenthesesValid2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00201" summary="Solve medium can a string be converted to another string in k moves by shifting characters&#10;&#10;Learning -- Handling circular distance was too time consuming for me, got TLE in the first submission because I was looping through the mulipliers for each diff and was checking if that iteration is available and within bounds. Availability was handled by a hashset. &#10;Similar to MakingFileNamesUnique">
-      <created>1596983827366</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1596983827366</updated>
     </task>
     <task id="LOCAL-00202" summary="Solve medium find all non overlapping subarray with target sum by keeping track of the last index of the previous valid subarray and making sure that next valid subarray starts &gt;= last index of previous subarray">
       <created>1596983936840</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598794544823</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set.">
+      <created>1598798173277</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1598798173277</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier" />
     <MESSAGE value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
     <MESSAGE value="Solve easy Happy number based on detecting cycle in a finite set of transformations by using set to detect cycle&#10;&#10;Learnings -- Floyds cycle finding algorithm can detect cycle in constant space. It's not limited to linked list." />
     <MESSAGE value="Update medium find top k frequent elements using bucket sort. Similar problem HIndex&#10;&#10;Learnings -- Whenever asked to deal with problems related to finding count of elements in array, think of bucket sort." />
@@ -607,7 +607,8 @@
     <MESSAGE value="Solve medium yet another subarray problem by sliding window. Maximise the sum by either picking the first or the last number&#10;&#10;Learning -- Google loves sliding window problem. This problem can be converted to a min sliding window sum problem." />
     <MESSAGE value="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution." />
     <MESSAGE value="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS." />
+    <MESSAGE value="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -689,14 +690,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598794544231">
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598798172591">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598794544231" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598557040680">
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598798172591" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598799735877">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598557040680" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598799735877" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -757,14 +758,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1598790107660" />
-    <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1594452772075">
+    <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799730039">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598794546070">
+    <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799730039" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598798174522">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598794546070" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598798174522" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -809,10 +810,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598794293877" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598794297118">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598799735520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598794297118" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598799735520" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
