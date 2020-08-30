@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PerfectSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PerfectSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PerfectSquaresTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PerfectSquaresTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MinimumNumberOfFibonacciRequiredToReachSumKTest.test">
+  <component name="RunManager" selected="JUnit.PerfectSquaresTest.test">
     <configuration name="LongestContiguousSubarrayWithValidDiff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LongestContiguousSubarrayWithValidDiff" />
       <module name="leetcode-practice" />
@@ -111,19 +113,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestCommonSubarrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LongestCommonSubarrayTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MinimumNumberOfFibonacciRequiredToReachSumKTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MinimumNumberOfFibonacciRequiredToReachSumKTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerfectSquaresTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PerfectSquaresTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -150,18 +153,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.LongestCommonSubarrayTest" />
       <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
       <item itemvalue="Application.LongestContiguousSubarrayWithValidDiff" />
       <item itemvalue="JUnit.MinimumNumberOfFibonacciRequiredToReachSumKTest.test" />
+      <item itemvalue="JUnit.PerfectSquaresTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PerfectSquaresTest.test" />
         <item itemvalue="JUnit.MinimumNumberOfFibonacciRequiredToReachSumKTest.test" />
         <item itemvalue="Application.LongestContiguousSubarrayWithValidDiff" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
-        <item itemvalue="JUnit.LongestCommonSubarrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00199" summary="Solve medium Find Kth Bit in Nth String using brute force in contest. Was not able to solve the logic behind offset">
-      <created>1596976523482</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1596976523482</updated>
     </task>
     <task id="LOCAL-00200" summary="Update logic behind finding offset">
       <created>1596976818714</created>
@@ -517,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598742004639</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution.">
+      <created>1598793993489</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1598793993489</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy town judge problem by finding the node with in-degree - out-degree = N-1&#10;&#10;My initial approach utilized hashmap but it took a long time so converted into array for them sweet gains." />
     <MESSAGE value="Solve medium reorder linked list by rearranging it to first, last, second, second-last, third, third-last...&#10;&#10;Learning -- Whenever asked to deal with traversing linked list from last, just reverse the linked list for in place solution" />
     <MESSAGE value="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier" />
     <MESSAGE value="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);" />
@@ -606,7 +608,8 @@
     <MESSAGE value="Solve hard find the maximum number for all sliding windows in linear time using deque. Related to find max length of subarray whose diff of min and max element lies within a limit&#10;&#10;Learning -- Sliding window implementation using deque." />
     <MESSAGE value="Solve hard find the max subsequence sum such that any two indices in the subsequences are max k distance apart using brute force, treemap and monotonic deque&#10;&#10;Learnings -- When there are k options to choose from at each state, DP or recursion is always the answer. Here I have optimized the N*K dp solution using TreeMap and Deque to reduce time complexity" />
     <MESSAGE value="Solve medium yet another subarray problem by sliding window. Maximise the sum by either picking the first or the last number&#10;&#10;Learning -- Google loves sliding window problem. This problem can be converted to a min sliding window sum problem." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium yet another subarray problem by sliding window. Maximise the sum by either picking the first or the last number&#10;&#10;Learning -- Google loves sliding window problem. This problem can be converted to a min sliding window sum problem." />
+    <MESSAGE value="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -688,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598742004013">
+    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598793992671">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598742004013" />
+    <state x="114" y="17" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598793992671" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598557040680">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -700,22 +703,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598793291201">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598794312499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598793291201" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598793291201">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598794312499" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598794312499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598793291201" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598793291201">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598794312499" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598794312499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598793291201" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598793291201">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598794312499" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598794312499">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598793291201" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598794312499" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598792316983">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -760,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1594452772075" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598742006223">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598793995530">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598742006223" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598793995530" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,14 +807,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598730618694" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1598792884957">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1598794293877">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598792884957" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598790815259">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598794293877" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598794297118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598790815259" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598794297118" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1053,7 +1056,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/MinimumNumberOfFibonacciRequiredToReachSumK.java</url>
-          <line>89</line>
+          <line>90</line>
           <option name="timeStamp" value="141" />
         </line-breakpoint>
       </breakpoints>

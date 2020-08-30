@@ -21,6 +21,7 @@ public class MinimumNumberOfFibonacciRequiredToReachSumK {
     /**
      * Greedy approach: Find the biggest fibonacci number <= k, reduce k by that number and repeat the process
      * Use treeSet to find the floor of n
+     * Greedy solution only works for fibonacci case, not for perfect squares.
      */
     public int findMinimumNumberOfFibonacciGreedy(int k) {
         List<Integer> fibonacci = generateFibonacci(k);
