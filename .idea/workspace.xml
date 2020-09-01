@@ -176,13 +176,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00205" summary="Solve medium time needed to inform all employees using DFS and tracking max time from all the reportees">
-      <created>1596999387684</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
-      <option name="project" value="LOCAL" />
-      <updated>1596999387684</updated>
-    </task>
     <task id="LOCAL-00206" summary="Solve easy convert excel sheet column title to column number by treating it similar to binary number.">
       <created>1597060091504</created>
       <option name="number" value="00206" />
@@ -519,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598821969495</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <task id="LOCAL-00254" summary="Solve easy check whether a string is palindrome or not after deleting at most one character &#10;&#10;Learning -- Recursion is fun. Tried both options, in case of mismatch, ignore the begin character and check if remaining string is palindrome OR ignore the end character">
+      <created>1598890790961</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1598890790962</updated>
+    </task>
+    <option name="localTasksCounter" value="255" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update medium find K closest point to origin using priority queue.&#10;&#10;Learnings -- Whenever asked to find top k elements, think about priority queue. Quick select can also be used." />
     <MESSAGE value="Solve medium find length of longest commons subsequence using bottom up DP&#10;&#10;Learnings -- In case of problems dealing with two different string, try to start from end of each string and recurse accordingly" />
     <MESSAGE value="Solve hard detect cycles in 2D Grid using DFS -- BiWeekly Contest&#10;&#10;Made some stupid mistakes during finding next nodes from current node, but was able to solve it in contest." />
     <MESSAGE value="Solve medium find min set of vertices required to reach all nodes in a DAG by finding the nodes with 0 indegree.&#10;&#10;It was part of biweekly contest. Solved it by reading a stack overflow answer." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Amend previous commit -- Add the actual file" />
     <MESSAGE value="Solve medium remove sub folders from a list of folder hierarchy by representing folders as trie and discarding the subfolders under a common folder&#10;&#10;Learnings -- Folder hierarchy can be represented as trie." />
     <MESSAGE value="Solve medium find minimum no of steps required to transform one word to another provided we can only replace one character in the word and the transformation should be valid ie. the transformed word should exist in the dictionary&#10;&#10;Learning -- During my original implementation, I chickened out thinking that the implementation is too complex for this medium level of problem and I might be going in the wrong direction but I was wrong. Although it was a bit slow than pre-processing all the dictionary, it was still a valid solution.&#10;&#10;If you are transforming a string by replacing some characters, instead of using substring to concatenate left and right part, get the charArray() and then replace the characters at the required indices directly. Cleaner to implement." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find minimum no of steps required to transform one word to another provided we can only replace one character in the word and the transformation should be valid ie. the transformed word should exist in the dictionary&#10;&#10;Learning -- During my original implementation, I chickened out thinking that the implementation is too complex for this medium level of problem and I might be going in the wrong direction but I was wrong. Although it was a bit slow than pre-processing all the dictionary, it was still a valid solution.&#10;&#10;If you are transforming a string by replacing some characters, instead of using substring to concatenate left and right part, get the charArray() and then replace the characters at the required indices directly. Cleaner to implement." />
+    <MESSAGE value="Solve easy check whether a string is palindrome or not after deleting at most one character &#10;&#10;Learning -- Recursion is fun. Tried both options, in case of mismatch, ignore the begin character and check if remaining string is palindrome OR ignore the end character" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy check whether a string is palindrome or not after deleting at most one character &#10;&#10;Learning -- Recursion is fun. Tried both options, in case of mismatch, ignore the begin character and check if remaining string is palindrome OR ignore the end character" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -700,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598821968361">
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598890789974">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598821968361" />
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598890789974" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598823176897">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -772,10 +772,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598821971888">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598890792390">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598821971888" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598890792390" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +804,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1598818016504">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1598944166940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598818016504" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598944166940" />
     <state width="735" height="247" key="javadoc.popup.new" timestamp="1598890131159">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -820,10 +820,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598794293877" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598823602010">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598950963484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598823602010" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598950963484" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
