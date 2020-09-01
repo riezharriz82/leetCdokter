@@ -8,10 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set.">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium KnightDialler problem,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MakeParenthesesValid2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SymmetricTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SymmetricTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,20 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00207" summary="Update logic to convert excel column number to column title&#10;&#10;Learning -- Care must be taken since 0 is not a valid digit, every digit is off by 1">
-      <created>1597062471350</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1597062471350</updated>
-    </task>
-    <task id="LOCAL-00208" summary="Solve medium HIndex Problem -- Very tricky problem&#10;&#10;Learning -- Bucket sort">
-      <created>1597174791164</created>
-      <option name="number" value="00208" />
-      <option name="presentableId" value="LOCAL-00208" />
-      <option name="project" value="LOCAL" />
-      <updated>1597174791164</updated>
     </task>
     <task id="LOCAL-00209" summary="Solve medium length of longest substring without repeating characters by sliding window&#10;&#10;Learning -- always use a char array of 256 characters to represent ascii character range">
       <created>1597178065097</created>
@@ -520,7 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598951670608</updated>
     </task>
-    <option name="localTasksCounter" value="256" />
+    <task id="LOCAL-00256" summary="Solve medium find whether two binary trees are flip equivalents i.e. if they can be made equivalent by flipping any node (swapping left and right pointer)&#10;&#10;Learnings -- Got confused during implementation, still made it ! Every non null node has two options, either the children are flipped or not. Compare the children accordingly.">
+      <created>1598970581541</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1598970581541</updated>
+    </task>
+    <task id="LOCAL-00257" summary="Update SymmetricTree with problem statement and simplify if/else">
+      <created>1598970642239</created>
+      <option name="number" value="00257" />
+      <option name="presentableId" value="LOCAL-00257" />
+      <option name="project" value="LOCAL" />
+      <updated>1598970642239</updated>
+    </task>
+    <option name="localTasksCounter" value="258" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,8 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard detect cycles in 2D Grid using DFS -- BiWeekly Contest&#10;&#10;Made some stupid mistakes during finding next nodes from current node, but was able to solve it in contest." />
-    <MESSAGE value="Solve medium find min set of vertices required to reach all nodes in a DAG by finding the nodes with 0 indegree.&#10;&#10;It was part of biweekly contest. Solved it by reading a stack overflow answer." />
     <MESSAGE value="Solve easy check if given points make a straight line using maths&#10;&#10;Learnings -- y - y1 = m * (x - x1). m here is the slope which is (y2 - y1) / (x2 - x1)" />
     <MESSAGE value="Solve medium generate unique power sets when duplicates present&#10;&#10;Learnings -- In case of duplicates don't forget to sort the input. &#10;To handle duplicates you can either&#10;1. Skip the duplicates (Move the pointer to non duplicate) after generating the result&#10;2. Check if the current candidate's value was handled in the previous iteration. (Do this only when the duplicates number are competing for the same place in the result)" />
     <MESSAGE value="Solve easy find most visited sectors in circular array by simulating the movements&#10;&#10;Learning -- Handle wrapping around in circular array by performing modulo size" />
@@ -615,7 +612,9 @@
     <MESSAGE value="Solve medium find minimum no of steps required to transform one word to another provided we can only replace one character in the word and the transformation should be valid ie. the transformed word should exist in the dictionary&#10;&#10;Learning -- During my original implementation, I chickened out thinking that the implementation is too complex for this medium level of problem and I might be going in the wrong direction but I was wrong. Although it was a bit slow than pre-processing all the dictionary, it was still a valid solution.&#10;&#10;If you are transforming a string by replacing some characters, instead of using substring to concatenate left and right part, get the charArray() and then replace the characters at the required indices directly. Cleaner to implement." />
     <MESSAGE value="Solve easy check whether a string is palindrome or not after deleting at most one character &#10;&#10;Learning -- Recursion is fun. Tried both options, in case of mismatch, ignore the begin character and check if remaining string is palindrome OR ignore the end character" />
     <MESSAGE value="Solve easy generate largest time possible from given digits using recursion with backtracking&#10;&#10;Learning -- Initially I implemented greedy solution in which I tried to place the largest possible candidate at first digit and so on, which failed for {2,0,6,6}&#10;Then I moved on to recursion + backtracking. Generally all problems in which we have to generate some valid combinations are solved via recursion + backtracking." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy generate largest time possible from given digits using recursion with backtracking&#10;&#10;Learning -- Initially I implemented greedy solution in which I tried to place the largest possible candidate at first digit and so on, which failed for {2,0,6,6}&#10;Then I moved on to recursion + backtracking. Generally all problems in which we have to generate some valid combinations are solved via recursion + backtracking." />
+    <MESSAGE value="Solve medium find whether two binary trees are flip equivalents i.e. if they can be made equivalent by flipping any node (swapping left and right pointer)&#10;&#10;Learnings -- Got confused during implementation, still made it ! Every non null node has two options, either the children are flipped or not. Compare the children accordingly." />
+    <MESSAGE value="Update SymmetricTree with problem statement and simplify if/else" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update SymmetricTree with problem statement and simplify if/else" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -701,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598951669634">
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598976163608">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598951669634" />
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598976163608" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598823176897">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -773,10 +772,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598951671992">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598970643059">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598951671992" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598970643059" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -813,18 +812,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598890131159" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1598730618694">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1598972762979">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598730618694" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598972762979" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1598970173042">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598970173042" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598955402435">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598976168011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598955402435" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598976168011" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
