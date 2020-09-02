@@ -11,7 +11,7 @@ import java.util.TreeSet;
  */
 public class ContainsDuplicate3 {
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
-        TreeSet<Long> set = new TreeSet<>();
+        TreeSet<Long> set = new TreeSet<>(); //using long because of stupid test cases involving INT_MIN and INT_MAX
         for (int i = 0; i < nums.length; i++) {
             if (i > k) { //need to remove the element fallen outside of window
                 set.remove((long) nums[i - k - 1]);
@@ -20,6 +20,10 @@ public class ContainsDuplicate3 {
             // instead use TreeSet to find the lowest possible number greater than or equal to nums[i]-t
             // if such number exists, check if the difference is valid as it can also be a greater number
             Long ceiling = set.ceiling((long) nums[i] - t);
+            //using nums[i] - t here is key because we are using treeset and it can't have duplicate values whereas the input can
+            //using ceiling here is important too.. why cant we use floor because if the current element is 10, and the maxDiff is 3
+            //we need to find whether any no >= 7 is in the current window of treeSet
+            //ceiling provides >= whereas floor provides <=
             if (ceiling != null && Math.abs(ceiling - nums[i]) <= t) {
                 return true;
             }

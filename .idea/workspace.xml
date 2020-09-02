@@ -8,8 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium KnightDialler problem,">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Update comment in ContainsDuplicate3, very tricky problem&#10;&#10;Tried checking the diff between the smallest and second smallest element, whether the diff lies within maxDiff but it does not work because maybe second smallest and third smallest elements diff were within range.&#10;&#10;Hence the best thing would be to just iterate over all the input elements and check whether any element is present with value">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ContainsDuplicate3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ContainsDuplicate3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MakeParenthesesValid2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch (1)">
+  <component name="RunManager" selected="JUnit.ContainsDuplicate3Test.test">
     <configuration name="LongestContiguousSubarrayWithValidDiff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LongestContiguousSubarrayWithValidDiff" />
       <module name="leetcode-practice" />
@@ -102,10 +103,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindGroupWithSizeMTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContainsDuplicate3Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FindGroupWithSizeMTest" />
+      <option name="MAIN_CLASS_NAME" value="ContainsDuplicate3Test" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -153,17 +154,17 @@
       <item itemvalue="Application.LongestContiguousSubarrayWithValidDiff" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
       <item itemvalue="JUnit.MinimumNumberOfFibonacciRequiredToReachSumKTest.test" />
       <item itemvalue="JUnit.PerfectSquaresTest.test" />
+      <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.PerfectSquaresTest.test" />
         <item itemvalue="JUnit.MinimumNumberOfFibonacciRequiredToReachSumKTest.test" />
         <item itemvalue="Application.LongestContiguousSubarrayWithValidDiff" />
-        <item itemvalue="JUnit.FindGroupWithSizeMTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -175,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00209" summary="Solve medium length of longest substring without repeating characters by sliding window&#10;&#10;Learning -- always use a char array of 256 characters to represent ascii character range">
-      <created>1597178065097</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1597178065097</updated>
     </task>
     <task id="LOCAL-00210" summary="Solve medium divide two integers using bitwise operators in logarithmic order. Initially I did it with repeated subtraction but that was very slow.&#10;&#10;Learning -- In case when we want to check for presence of opposing things, use XOR">
       <created>1597267090935</created>
@@ -519,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598970642239</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary="Solve medium KnightDialler problem, find total no of valid moves possible of required length in a dial pad&#10;&#10;Learning -- As this problem asked for total no of moves, recursion was the way to go. Added memoization to fasten it up.&#10;&#10;Thought of time complexity of the recursion problem with and without memoization, disadvantages of top down recursion.">
+      <created>1598976358392</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1598976358392</updated>
+    </task>
+    <option name="localTasksCounter" value="259" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy check if given points make a straight line using maths&#10;&#10;Learnings -- y - y1 = m * (x - x1). m here is the slope which is (y2 - y1) / (x2 - x1)" />
     <MESSAGE value="Solve medium generate unique power sets when duplicates present&#10;&#10;Learnings -- In case of duplicates don't forget to sort the input. &#10;To handle duplicates you can either&#10;1. Skip the duplicates (Move the pointer to non duplicate) after generating the result&#10;2. Check if the current candidate's value was handled in the previous iteration. (Do this only when the duplicates number are competing for the same place in the result)" />
     <MESSAGE value="Solve easy find most visited sectors in circular array by simulating the movements&#10;&#10;Learning -- Handle wrapping around in circular array by performing modulo size" />
     <MESSAGE value="Solve hard find whether valid word in stream of characters by using trie and storing the words in trie in reverse order as trie does not support reverse search.&#10;&#10;Learnings -- Whenever provided with a dictionary think of trie / bfs. Here the trick was to reverse the word and store in trie." />
@@ -614,7 +614,8 @@
     <MESSAGE value="Solve easy generate largest time possible from given digits using recursion with backtracking&#10;&#10;Learning -- Initially I implemented greedy solution in which I tried to place the largest possible candidate at first digit and so on, which failed for {2,0,6,6}&#10;Then I moved on to recursion + backtracking. Generally all problems in which we have to generate some valid combinations are solved via recursion + backtracking." />
     <MESSAGE value="Solve medium find whether two binary trees are flip equivalents i.e. if they can be made equivalent by flipping any node (swapping left and right pointer)&#10;&#10;Learnings -- Got confused during implementation, still made it ! Every non null node has two options, either the children are flipped or not. Compare the children accordingly." />
     <MESSAGE value="Update SymmetricTree with problem statement and simplify if/else" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update SymmetricTree with problem statement and simplify if/else" />
+    <MESSAGE value="Solve medium KnightDialler problem, find total no of valid moves possible of required length in a dial pad&#10;&#10;Learning -- As this problem asked for total no of moves, recursion was the way to go. Added memoization to fasten it up.&#10;&#10;Thought of time complexity of the recursion problem with and without memoization, disadvantages of top down recursion." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium KnightDialler problem, find total no of valid moves possible of required length in a dial pad&#10;&#10;Learning -- As this problem asked for total no of moves, recursion was the way to go. Added memoization to fasten it up.&#10;&#10;Thought of time complexity of the recursion problem with and without memoization, disadvantages of top down recursion." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -696,14 +697,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595271326137" />
-    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1596223706651">
+    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1599053535463">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1596223706651" />
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1598976163608">
+    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1599055468548">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1598976163608" />
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599055468548" />
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1598823176897">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -712,38 +713,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1598814007528">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599053880716">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598814007528" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1598814007528">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599053880716" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599053880715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598814007528" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1598814007528">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599053880715" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599053880715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598814007528" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1598814007528">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599053880715" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599053880715">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598814007528" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1598814007524">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599053880715" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1599053698652">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1598814007524" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1598814007524">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599053698652" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1599053698652">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1598814007524" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1598814007524">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599053698652" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1599053698652">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1598814007524" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1598814007524">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599053698652" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1599053698652">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1598814007524" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599053698652" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -760,10 +761,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1598814154610" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1598121068364">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1599055538726">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1598121068364" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1599055538726" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1598811661756">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -772,10 +773,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598970643059">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1598976359247">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598970643059" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598976359247" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,14 +805,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1598944166940">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1598996432110">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598944166940" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1598890131159">
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598996432110" />
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599055606579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1598890131159" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599055606579" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1598972762979">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -820,10 +821,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598970173042" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598976168011">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599053205382">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598976168011" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599053205382" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
