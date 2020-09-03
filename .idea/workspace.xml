@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Update comment in ContainsDuplicate3, very tricky problem&#10;&#10;Tried checking the diff between the smallest and second smallest element, whether the diff lies within maxDiff but it does not work because maybe second smallest and third smallest elements diff were within range.&#10;&#10;Hence the best thing would be to just iterate over all the input elements and check whether any element is present with value">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CoinChange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoinChange2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MakeParenthesesValid2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00214" summary="Update logic in CombinationIteratorRecursive to leverage position and count of set bits to generate combinations without recursion. Pretty cool trick.">
-      <created>1597510294263</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1597510294263</updated>
     </task>
     <task id="LOCAL-00215" summary="Solve hard NQueen problem using recursion and backtracking.&#10;&#10;Learning -- Generate diagonal path for an element in a matrix and whenever problems like generate all path/combinations is seen in the question, try to use recursion first then think of optimizing it.">
       <created>1597517438301</created>
@@ -523,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599078999184</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary="Update problem statement in CoinChange2">
+      <created>1599081624111</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1599081624111</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium min cost to buy tickets if three choices available, you can buy 1 day, 7 day, 30 days pass using bottom up DP&#10;&#10;Find the first day outside of the 7 day or 30 day window, find the min cost at that day and add the cost to buy respective pass." />
     <MESSAGE value="Solve medium string transformation question -- find and replace in string. Given multiple sources substrings, you have to replace them with corresponding target substring.&#10;&#10;Learnings -- Logic was simple but implementation had some gotchas, like to skip all the characters of source substring once a match is found" />
     <MESSAGE value="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs" />
     <MESSAGE value="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically" />
@@ -618,7 +616,8 @@
     <MESSAGE value="Solve easy but tricky remove nodes whose values are outside a given range in the provided BST&#10;&#10;Learnings -- I solved the problem on my own but it took time. In case of removal of nodes, it makes sense to directly recur in the appropriate half of subtree and return the first valid node" />
     <MESSAGE value="Solve medium find total no of ways to make total amount of sum if a coin can be used multiple amount of times using memoization and bottom up DP&#10;&#10;Learnings -- Bottom up DP theory : If my current coin is 10 and I can reach 8 in 5 different ways, this enables me to reach 18 in +5 different ways too." />
     <MESSAGE value="Solve medium change making problem, find min no of coins required to make sum using top-down and bottom up approach&#10;&#10;Learnings -- Be careful when converting recursion to top down memoization and make sure that it's actually top down, during my initial implementation I implemented it wrong. I started from 0 till max amount, which led to incorrect results being stored in intermediate dp.&#10;&#10;Although I solved up the bottom up DP quickly, top down DP became tricky." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium change making problem, find min no of coins required to make sum using top-down and bottom up approach&#10;&#10;Learnings -- Be careful when converting recursion to top down memoization and make sure that it's actually top down, during my initial implementation I implemented it wrong. I started from 0 till max amount, which led to incorrect results being stored in intermediate dp.&#10;&#10;Although I solved up the bottom up DP quickly, top down DP became tricky." />
+    <MESSAGE value="Update problem statement in CoinChange2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update problem statement in CoinChange2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -704,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1599078998326">
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1599081623216">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599078998326" />
+    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599081623216" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -780,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599079000940">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599081625619">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599079000940" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599081625619" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -816,10 +815,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599057887514" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599055606579">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599152175331">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599055606579" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599152175331" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1599065869318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -828,10 +827,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599064413491" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599064861846">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599152096296">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599064861846" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599152096296" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
