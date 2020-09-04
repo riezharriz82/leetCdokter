@@ -94,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CoinChangeTest.test">
+  <component name="RunManager" selected="JUnit.LRUCacheTest.test">
     <configuration name="CoinChange2Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -125,10 +125,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PerfectSquaresTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LRUCacheTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PerfectSquaresTest" />
+      <option name="MAIN_CLASS_NAME" value="LRUCacheTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -155,18 +155,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.PerfectSquaresTest.test" />
       <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
       <item itemvalue="JUnit.CoinChange2Test.test" />
       <item itemvalue="JUnit.CoinChangeTest.test" />
+      <item itemvalue="JUnit.LRUCacheTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LRUCacheTest.test" />
         <item itemvalue="JUnit.CoinChangeTest.test" />
         <item itemvalue="JUnit.CoinChange2Test.test" />
         <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
-        <item itemvalue="JUnit.PerfectSquaresTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -178,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00217" summary="Solve medium remove minimum no of non-overlapping intervals by picking the interval that finishes first and then moving on to pick the next non overlapping interval&#10;&#10;Learnings -- Problem can be reworded by finding maximum no of non-overlapping intervals and result can be total elements - maximum no.">
-      <created>1597611165126</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1597611165126</updated>
     </task>
     <task id="LOCAL-00218" summary="Solve medium minimum arrows required to burst balloons by sorting the input by end diameter, resulting in to track non overlapping balloons">
       <created>1597613302230</created>
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599163631492</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="Solve medium and tricky problem, divide the current string into substrings such that there are no common characters in any substrings by reducing the problem to merge non-overlapping intervals&#10;&#10;Learnings -- Be careful with list.add(index, value) vs list.set(index, value). Former one just adds the value at the index, it does not replace it.">
+      <created>1599235578357</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1599235578357</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically" />
     <MESSAGE value="Solve medium find next right interval given a set of intervals using binary search and sorting&#10;&#10;Leanings -- Implementation details of binary search. When the key is greater than the largest value prsent in the array, it returns - (size of array) - 1&#10;Care must be taken to handle this, because converting this to positive number will return an index out of bounds.&#10;&#10;Also if there are multiple occurrences of the key present in the array, any one of them can be returned. So need to manually traverse back and find the first occurrence." />
     <MESSAGE value="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform." />
     <MESSAGE value="Solve medium find longest subarray where min and max number lies within a limit in linear time using deque and in nlogn time using treeMap&#10;&#10;Learning -- Nlogn implementation was easy to implement. Maintain a sliding window and add elements to treeMap. Keep checking the constraints by getting the min and max of window using firstKey() and lastKey()&#10;&#10;Linear time implementation was tricky as it requires two deque to track sliding min and max element of the window. If the min and max diff does not satisy constraint, shorten the window by comparing whether the num at begin index is present, then pollFirst(). Can't directly pollFirst() because we won't be able to identify the new window length by doing so. Hence need to iteratively check the begin element and shorten by 1 repeatedly." />
@@ -617,7 +616,8 @@
     <MESSAGE value="Update problem statement in CoinChange2" />
     <MESSAGE value="Solve medium find total no of ways to reach end if their are obstacles in grid using bottom up DP&#10;&#10;Learnings -- Trick was to correctly generate the base case of first row and first column and to reset the count if their is an obstacle." />
     <MESSAGE value="Solve easy but tricky find whether a string is composed of repeated substrings by checking all the occurrences of the first character and generating substrings&#10;&#10;Learning -- Initially I was thinking of checking substrings of length 2,3,4... and to see whether the input string length is a multiplier of substring length. If yes multiply the substring and check whether the expected string matches the input string. Then I thought it would be slow, but after solving it and moving on to discuss, realized that that was one of the most upvoted solutions. FML." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy but tricky find whether a string is composed of repeated substrings by checking all the occurrences of the first character and generating substrings&#10;&#10;Learning -- Initially I was thinking of checking substrings of length 2,3,4... and to see whether the input string length is a multiplier of substring length. If yes multiply the substring and check whether the expected string matches the input string. Then I thought it would be slow, but after solving it and moving on to discuss, realized that that was one of the most upvoted solutions. FML." />
+    <MESSAGE value="Solve medium and tricky problem, divide the current string into substrings such that there are no common characters in any substrings by reducing the problem to merge non-overlapping intervals&#10;&#10;Learnings -- Be careful with list.add(index, value) vs list.set(index, value). Former one just adds the value at the index, it does not replace it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem, divide the current string into substrings such that there are no common characters in any substrings by reducing the problem to merge non-overlapping intervals&#10;&#10;Learnings -- Be careful with list.add(index, value) vs list.set(index, value). Former one just adds the value at the index, it does not replace it." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -651,10 +651,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1599232679873">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1599244193353">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1599232679873" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1599244193353" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599163630600">
+    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599253241567">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599163630600" />
+    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599253241567" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -719,38 +719,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1599233523377">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599253269433">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1599233523377">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599253269433" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599253269433">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1599233523376">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599253269433" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599253269433">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523376" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1599233523377">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599253269433" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599253269433">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1599233523377">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599253269433" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1599249754639">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1599233523377">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599249754639" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1599249754639">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1599233523377">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599249754639" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1599249754638">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1599233523377">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599249754638" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1599249754639">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599249754639" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -779,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599163632515">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599235579929">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599163632515" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599235579929" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -823,10 +823,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599064413491" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599235388162">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599247725566">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599235388162" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599247725566" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,6 +1080,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/CoinChange.java</url>
           <line>51</line>
           <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/LRUCacheTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/LRUCacheTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="153" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
