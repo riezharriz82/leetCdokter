@@ -8,7 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Update comment in ContainsDuplicate3, very tricky problem&#10;&#10;Tried checking the diff between the smallest and second smallest element, whether the diff lies within maxDiff but it does not work because maybe second smallest and third smallest elements diff were within range.&#10;&#10;Hence the best thing would be to just iterate over all the input elements and check whether any element is present with value">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve easy but tricky find whether a string is composed of repeated substrings.&#10;&#10;Learning --">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MakeParenthesesValid2.java" beforeDir="false" />
     </list>
@@ -178,20 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00215" summary="Solve hard NQueen problem using recursion and backtracking.&#10;&#10;Learning -- Generate diagonal path for an element in a matrix and whenever problems like generate all path/combinations is seen in the question, try to use recursion first then think of optimizing it.">
-      <created>1597517438301</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1597517438301</updated>
-    </task>
-    <task id="LOCAL-00216" summary="Update NQueen problem by not iterating over the diagonal path to check for queen, instead leverage property that all diagonal elements have value = row + col and value = row - col, use hashset to store this">
-      <created>1597518909722</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
-      <option name="project" value="LOCAL" />
-      <updated>1597518909722</updated>
     </task>
     <task id="LOCAL-00217" summary="Solve medium remove minimum no of non-overlapping intervals by picking the interval that finishes first and then moving on to pick the next non overlapping interval&#10;&#10;Learnings -- Problem can be reworded by finding maximum no of non-overlapping intervals and result can be total elements - maximum no.">
       <created>1597611165126</created>
@@ -522,7 +508,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599081624111</updated>
     </task>
-    <option name="localTasksCounter" value="264" />
+    <task id="LOCAL-00264" summary="Solve medium find total no of ways to reach end if their are obstacles in grid using bottom up DP&#10;&#10;Learnings -- Trick was to correctly generate the base case of first row and first column and to reset the count if their is an obstacle.">
+      <created>1599163353480</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1599163353480</updated>
+    </task>
+    <task id="LOCAL-00265" summary="Solve easy but tricky find whether a string is composed of repeated substrings by checking all the occurrences of the first character and generating substrings&#10;&#10;Learning -- Initially I was thinking of checking substrings of length 2,3,4... and to see whether the input string length is a multiplier of substring length. If yes multiply the substring and check whether the expected string matches the input string. Then I thought it would be slow, but after solving it and moving on to discuss, realized that that was one of the most upvoted solutions. FML.">
+      <created>1599163631492</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1599163631492</updated>
+    </task>
+    <option name="localTasksCounter" value="266" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,8 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium string transformation question -- find and replace in string. Given multiple sources substrings, you have to replace them with corresponding target substring.&#10;&#10;Learnings -- Logic was simple but implementation had some gotchas, like to skip all the characters of source substring once a match is found" />
-    <MESSAGE value="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs" />
     <MESSAGE value="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically" />
     <MESSAGE value="Solve medium find next right interval given a set of intervals using binary search and sorting&#10;&#10;Leanings -- Implementation details of binary search. When the key is greater than the largest value prsent in the array, it returns - (size of array) - 1&#10;Care must be taken to handle this, because converting this to positive number will return an index out of bounds.&#10;&#10;Also if there are multiple occurrences of the key present in the array, any one of them can be returned. So need to manually traverse back and find the first occurrence." />
     <MESSAGE value="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform." />
@@ -617,7 +615,9 @@
     <MESSAGE value="Solve medium find total no of ways to make total amount of sum if a coin can be used multiple amount of times using memoization and bottom up DP&#10;&#10;Learnings -- Bottom up DP theory : If my current coin is 10 and I can reach 8 in 5 different ways, this enables me to reach 18 in +5 different ways too." />
     <MESSAGE value="Solve medium change making problem, find min no of coins required to make sum using top-down and bottom up approach&#10;&#10;Learnings -- Be careful when converting recursion to top down memoization and make sure that it's actually top down, during my initial implementation I implemented it wrong. I started from 0 till max amount, which led to incorrect results being stored in intermediate dp.&#10;&#10;Although I solved up the bottom up DP quickly, top down DP became tricky." />
     <MESSAGE value="Update problem statement in CoinChange2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update problem statement in CoinChange2" />
+    <MESSAGE value="Solve medium find total no of ways to reach end if their are obstacles in grid using bottom up DP&#10;&#10;Learnings -- Trick was to correctly generate the base case of first row and first column and to reset the count if their is an obstacle." />
+    <MESSAGE value="Solve easy but tricky find whether a string is composed of repeated substrings by checking all the occurrences of the first character and generating substrings&#10;&#10;Learning -- Initially I was thinking of checking substrings of length 2,3,4... and to see whether the input string length is a multiplier of substring length. If yes multiply the substring and check whether the expected string matches the input string. Then I thought it would be slow, but after solving it and moving on to discuss, realized that that was one of the most upvoted solutions. FML." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy but tricky find whether a string is composed of repeated substrings by checking all the occurrences of the first character and generating substrings&#10;&#10;Learning -- Initially I was thinking of checking substrings of length 2,3,4... and to see whether the input string length is a multiplier of substring length. If yes multiply the substring and check whether the expected string matches the input string. Then I thought it would be slow, but after solving it and moving on to discuss, realized that that was one of the most upvoted solutions. FML." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -651,10 +651,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1598791123955">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1599232679873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598791123955" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1599232679873" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2" timestamp="1599081623216">
+    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599163630600">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1585" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599081623216" />
+    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599163630600" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -719,38 +719,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599078611588">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1599233523377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599078611588" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599078611588">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1599233523377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599078611588" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599078611588">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1599233523376">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599078611588" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599078611588">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523376" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1599233523377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599078611588" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1599078434567">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1599233523377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599078434567" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1599078434567">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1599233523377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599078434567" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1599078434567">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1599233523377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599078434567" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1599078434567">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1599233523377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599078434567" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599233523377" />
     <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -779,18 +779,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599081625619">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599163632515">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599081625619" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599163632515" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="775" y="303" key="chooseDestDirectoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609092682" />
-    <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1590521839325">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590521839325" />
     <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1594451868089">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -811,14 +807,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1599057887514">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1599168975310">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599057887514" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599152175331">
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599168975310" />
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599234018873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599152175331" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599234018873" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1599065869318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -827,10 +823,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599064413491" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599152096296">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599235388162">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599152096296" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599235388162" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
