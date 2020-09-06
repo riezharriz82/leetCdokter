@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/InvertedSubTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/InvertedSubTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00221" summary="Solve easy Divisor Game theory problem, was not able to solve it on my own, eventually solved it by recursion and top down memoization. &#10;&#10;Learnings -- In case of game theory problems, first try all the combinations and check if we can win/fail.">
-      <created>1597681760088</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1597681760088</updated>
     </task>
     <task id="LOCAL-00222" summary="Solve medium find all numbers with same consecutive difference using recursion. Fix one digit and recur for next digit until we get N digits. Keep track of the current number.&#10;&#10;Learnings -- Use recursion for questions dealing with generating all combinations of specific problem">
       <created>1597775165385</created>
@@ -522,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599426744551</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="Solved medium BinarySearch.io count no of ways to partition a binary tree such that both the partitions contains either 0's or 1's&#10;&#10;Learning -- Partition problems have a pattern. First iterate the entire tree to get total no of 0's and 1's. Then do a postorder traversal and let parent node decide whether to cut edge of left/right subtree. Here the decision is made if the subtree contains all the 1's and no 0's and vice versa.">
+      <created>1599429370530</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1599429370530</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard find the maximum number for all sliding windows in linear time using deque. Related to find max length of subarray whose diff of min and max element lies within a limit&#10;&#10;Learning -- Sliding window implementation using deque." />
     <MESSAGE value="Solve hard find the max subsequence sum such that any two indices in the subsequences are max k distance apart using brute force, treemap and monotonic deque&#10;&#10;Learnings -- When there are k options to choose from at each state, DP or recursion is always the answer. Here I have optimized the N*K dp solution using TreeMap and Deque to reduce time complexity" />
     <MESSAGE value="Solve medium yet another subarray problem by sliding window. Maximise the sum by either picking the first or the last number&#10;&#10;Learning -- Google loves sliding window problem. This problem can be converted to a min sliding window sum problem." />
     <MESSAGE value="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution." />
@@ -617,7 +615,8 @@
     <MESSAGE value="Solve medium but tricky problem to implement LRU cache using HashMap and DoublyLinkedList using dummy head and tail node&#10;&#10;Learnings --&#10;1. Dummy nodes are useful in all cases in which we need to add/remove elements from linked list&#10;2. During my initial implementation I got stuck while implementing my own hashMap, I didn't think of the fact that I could use the inbuilt hashMap" />
     <MESSAGE value="Solve medium find min cost to delete characters to avoid repeating characters &#10;&#10;The trick was to understand that we need to keep only the character with the maximum cost, rest all needs to be deleted." />
     <MESSAGE value="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode." />
+    <MESSAGE value="Solved medium BinarySearch.io count no of ways to partition a binary tree such that both the partitions contains either 0's or 1's&#10;&#10;Learning -- Partition problems have a pattern. First iterate the entire tree to get total no of 0's and 1's. Then do a postorder traversal and let parent node decide whether to cut edge of left/right subtree. Here the decision is made if the subtree contains all the 1's and no 0's and vice versa." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved medium BinarySearch.io count no of ways to partition a binary tree such that both the partitions contains either 0's or 1's&#10;&#10;Learning -- Partition problems have a pattern. First iterate the entire tree to get total no of 0's and 1's. Then do a postorder traversal and let parent node decide whether to cut edge of left/right subtree. Here the decision is made if the subtree contains all the 1's and no 0's and vice versa." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -703,10 +702,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599426743889">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599429369829">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599426743889" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599429369829" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -779,10 +778,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599426751285">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599429371344">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599426751285" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599429371344" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -811,10 +810,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599168975310" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599234018873">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599430410813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599234018873" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599430410813" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1599065869318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
