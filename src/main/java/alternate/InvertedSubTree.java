@@ -49,7 +49,7 @@ public class InvertedSubTree {
         }
     }
 
-    private static class Tree {
+    public static class Tree {
         int val;
         Tree left;
         Tree right;

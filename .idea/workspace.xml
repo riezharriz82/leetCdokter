@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/InvertedSubTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/InvertedSubTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00220" summary="Solve easy Distribute N candies to K people by just simulating the distribution process. Give 1 candy first, then 2, 3, 4, 5.. until we run out of it. &#10;&#10;Learnings -- In case of distribution problem, sometimes its simple to just simulate the distribution itself. My initial approach was similar but the implementation was crude. Check leetcode submission history to find my initial approach.">
-      <created>1597667914430</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1597667914430</updated>
     </task>
     <task id="LOCAL-00221" summary="Solve easy Divisor Game theory problem, was not able to solve it on my own, eventually solved it by recursion and top down memoization. &#10;&#10;Learnings -- In case of game theory problems, first try all the combinations and check if we can win/fail.">
       <created>1597681760088</created>
@@ -521,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599423208650</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode.">
+      <created>1599426744551</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1599426744551</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find longest subarray where min and max number lies within a limit in linear time using deque and in nlogn time using treeMap&#10;&#10;Learning -- Nlogn implementation was easy to implement. Maintain a sliding window and add elements to treeMap. Keep checking the constraints by getting the min and max of window using firstKey() and lastKey()&#10;&#10;Linear time implementation was tricky as it requires two deque to track sliding min and max element of the window. If the min and max diff does not satisy constraint, shorten the window by comparing whether the num at begin index is present, then pollFirst(). Can't directly pollFirst() because we won't be able to identify the new window length by doing so. Hence need to iteratively check the begin element and shorten by 1 repeatedly." />
     <MESSAGE value="Solve hard find the maximum number for all sliding windows in linear time using deque. Related to find max length of subarray whose diff of min and max element lies within a limit&#10;&#10;Learning -- Sliding window implementation using deque." />
     <MESSAGE value="Solve hard find the max subsequence sum such that any two indices in the subsequences are max k distance apart using brute force, treemap and monotonic deque&#10;&#10;Learnings -- When there are k options to choose from at each state, DP or recursion is always the answer. Here I have optimized the N*K dp solution using TreeMap and Deque to reduce time complexity" />
     <MESSAGE value="Solve medium yet another subarray problem by sliding window. Maximise the sum by either picking the first or the last number&#10;&#10;Learning -- Google loves sliding window problem. This problem can be converted to a min sliding window sum problem." />
@@ -616,16 +616,17 @@
     <MESSAGE value="Solve medium and tricky problem, divide the current string into substrings such that there are no common characters in any substrings by reducing the problem to merge non-overlapping intervals&#10;&#10;Learnings -- Be careful with list.add(index, value) vs list.set(index, value). Former one just adds the value at the index, it does not replace it." />
     <MESSAGE value="Solve medium but tricky problem to implement LRU cache using HashMap and DoublyLinkedList using dummy head and tail node&#10;&#10;Learnings --&#10;1. Dummy nodes are useful in all cases in which we need to add/remove elements from linked list&#10;2. During my initial implementation I got stuck while implementing my own hashMap, I didn't think of the fact that I could use the inbuilt hashMap" />
     <MESSAGE value="Solve medium find min cost to delete characters to avoid repeating characters &#10;&#10;The trick was to understand that we need to keep only the character with the maximum cost, rest all needs to be deleted." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find min cost to delete characters to avoid repeating characters &#10;&#10;The trick was to understand that we need to keep only the character with the maximum cost, rest all needs to be deleted." />
+    <MESSAGE value="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="726" y="229" key="#Auto_Import" timestamp="1598797096298">
+    <state x="726" y="229" key="#Auto_Import" timestamp="1599427305776">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1598797096298" />
+    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1599427305776" />
     <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1592860555493">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -702,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599423207765">
+    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599426743889">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599423207765" />
+    <state x="313" y="70" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599426743889" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599423214673">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599426751285">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599423214673" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599426751285" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
