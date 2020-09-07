@@ -154,17 +154,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Java Scratch.Scratch (1)" />
+      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.CoinChange2Test.test" />
       <item itemvalue="JUnit.CoinChangeTest.test" />
       <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
       <item itemvalue="JUnit.LRUCacheTest.test" />
-      <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Java Scratch.Scratch (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LRUCacheTest.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
+        <item itemvalue="JUnit.LRUCacheTest.test" />
         <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
         <item itemvalue="JUnit.CoinChangeTest.test" />
         <item itemvalue="JUnit.CoinChange2Test.test" />
@@ -179,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00225" summary="Solve easy find whether a linked list is palindrome&#10;&#10;Learnings related to linked list -- &#10;1. Whenever asked to traverse linked list from the end, reverse the linked list &#10;2. Whenever asked to return a new linked list by doing something, keep a dummy node to append to, makes life easier">
-      <created>1597928213948</created>
-      <option name="number" value="00225" />
-      <option name="presentableId" value="LOCAL-00225" />
-      <option name="project" value="LOCAL" />
-      <updated>1597928213948</updated>
     </task>
     <task id="LOCAL-00226" summary="Solve medium find longest common subarray between two array -- similar to finding longest common substring.&#10;Classical DP problem. Solved it using bottom up DP. Top Down solution with memoization was difficult to understand but the recursive solution was easy&#10;&#10;f(A, B, m, n, lcsCount)&#10;     if (m &lt; 0 or n &lt; 0) return lcsCount;&#10;     if (A[m] == B[n]) then candidate1 = f (A, B, m-1, n-1, lcsCount + 1)&#10;     candidate2 = f(A, B, m-1, n, lcsCount)&#10;     candidate3 = f(A, B, m, n-1, lcsCount)&#10;     return max(candidate1, candidate2, candidate3);">
       <created>1597931042370</created>
@@ -523,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599494070147</updated>
     </task>
-    <option name="localTasksCounter" value="274" />
+    <task id="LOCAL-00274" summary="Solve medium compare two version numbers of the form 1.213.123.3 by comparing strings numerically. Care must be taken to remove leading zeroes before comparison.&#10;&#10;Learning -- Removal of leading zeroes.">
+      <created>1599499954534</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1599499954535</updated>
+    </task>
+    <option name="localTasksCounter" value="275" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,7 +593,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS." />
     <MESSAGE value="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set." />
     <MESSAGE value="Amend previous commit -- Add the actual file" />
     <MESSAGE value="Solve medium remove sub folders from a list of folder hierarchy by representing folders as trie and discarding the subfolders under a common folder&#10;&#10;Learnings -- Folder hierarchy can be represented as trie." />
@@ -618,7 +617,8 @@
     <MESSAGE value="Solve medium jump game, find whether it's possible to reach the end from start provided we can hop to only specific indices.&#10;&#10;Learning -- Was able to solve the problem in O(n^2) using simple bottom up DP. Linear way of solving would be to keep track of the maximum index reachable. If maximum index &gt;= last index, we got ourselves a winner." />
     <MESSAGE value="Solve easy word pattern, similar to finding whether two strings are isomorphic or not. &#10;&#10;Learnings -- Use two hashmaps to keep track of source to target mapping and vice versa." />
     <MESSAGE value="Solve easy find whether a string is rotated version of another string&#10;&#10;Learnings -- contains() time complexity is not linear." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether a string is rotated version of another string&#10;&#10;Learnings -- contains() time complexity is not linear." />
+    <MESSAGE value="Solve medium compare two version numbers of the form 1.213.123.3 by comparing strings numerically. Care must be taken to remove leading zeroes before comparison.&#10;&#10;Learning -- Removal of leading zeroes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium compare two version numbers of the form 1.213.123.3 by comparing strings numerically. Care must be taken to remove leading zeroes before comparison.&#10;&#10;Learning -- Removal of leading zeroes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -704,10 +704,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599494069515">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599499953829">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599494069515" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599499953829" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -720,22 +720,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599498407463">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599500215292">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599498407463" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599498407463">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599500215292" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599500215292">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599498407463" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599498407463">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599500215292" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599500215291">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599498407463" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599498407463">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599500215291" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599500215292">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599498407463" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599500215292" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1599498407459">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -780,10 +780,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599494071225">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599499955754">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599494071225" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599499955754" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -812,10 +812,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599490283311" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599493734718">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599500612501">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599493734718" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599500612501" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1599065869318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
