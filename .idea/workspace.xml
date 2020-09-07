@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00222" summary="Solve medium find all numbers with same consecutive difference using recursion. Fix one digit and recur for next digit until we get N digits. Keep track of the current number.&#10;&#10;Learnings -- Use recursion for questions dealing with generating all combinations of specific problem">
-      <created>1597775165385</created>
-      <option name="number" value="00222" />
-      <option name="presentableId" value="LOCAL-00222" />
-      <option name="project" value="LOCAL" />
-      <updated>1597775165385</updated>
     </task>
     <task id="LOCAL-00223" summary="Solve easy town judge problem by finding the node with in-degree - out-degree = N-1&#10;&#10;My initial approach utilized hashmap but it took a long time so converted into array for them sweet gains.">
       <created>1597865834234</created>
@@ -521,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599429370530</updated>
     </task>
-    <option name="localTasksCounter" value="271" />
+    <task id="LOCAL-00271" summary="Solve medium jump game, find whether it's possible to reach the end from start provided we can hop to only specific indices.&#10;&#10;Learning -- Was able to solve the problem in O(n^2) using simple bottom up DP. Linear way of solving would be to keep track of the maximum index reachable. If maximum index &gt;= last index, we got ourselves a winner.">
+      <created>1599431090761</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1599431090762</updated>
+    </task>
+    <option name="localTasksCounter" value="272" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard find the max subsequence sum such that any two indices in the subsequences are max k distance apart using brute force, treemap and monotonic deque&#10;&#10;Learnings -- When there are k options to choose from at each state, DP or recursion is always the answer. Here I have optimized the N*K dp solution using TreeMap and Deque to reduce time complexity" />
     <MESSAGE value="Solve medium yet another subarray problem by sliding window. Maximise the sum by either picking the first or the last number&#10;&#10;Learning -- Google loves sliding window problem. This problem can be converted to a min sliding window sum problem." />
     <MESSAGE value="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution." />
     <MESSAGE value="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS." />
@@ -616,7 +616,8 @@
     <MESSAGE value="Solve medium find min cost to delete characters to avoid repeating characters &#10;&#10;The trick was to understand that we need to keep only the character with the maximum cost, rest all needs to be deleted." />
     <MESSAGE value="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode." />
     <MESSAGE value="Solved medium BinarySearch.io count no of ways to partition a binary tree such that both the partitions contains either 0's or 1's&#10;&#10;Learning -- Partition problems have a pattern. First iterate the entire tree to get total no of 0's and 1's. Then do a postorder traversal and let parent node decide whether to cut edge of left/right subtree. Here the decision is made if the subtree contains all the 1's and no 0's and vice versa." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved medium BinarySearch.io count no of ways to partition a binary tree such that both the partitions contains either 0's or 1's&#10;&#10;Learning -- Partition problems have a pattern. First iterate the entire tree to get total no of 0's and 1's. Then do a postorder traversal and let parent node decide whether to cut edge of left/right subtree. Here the decision is made if the subtree contains all the 1's and no 0's and vice versa." />
+    <MESSAGE value="Solve medium jump game, find whether it's possible to reach the end from start provided we can hop to only specific indices.&#10;&#10;Learning -- Was able to solve the problem in O(n^2) using simple bottom up DP. Linear way of solving would be to keep track of the maximum index reachable. If maximum index &gt;= last index, we got ourselves a winner." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium jump game, find whether it's possible to reach the end from start provided we can hop to only specific indices.&#10;&#10;Learning -- Was able to solve the problem in O(n^2) using simple bottom up DP. Linear way of solving would be to keep track of the maximum index reachable. If maximum index &gt;= last index, we got ourselves a winner." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -702,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599429369829">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599431090095">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599429369829" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599431090095" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599429371344">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599431091859">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599429371344" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599431091859" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -806,10 +807,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593792443839" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1599168975310">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1599490283311">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599168975310" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599490283311" />
     <state width="735" height="247" key="javadoc.popup.new" timestamp="1599430410813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -822,10 +823,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599064413491" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599426064173">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599490441940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599426064173" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599490441940" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
