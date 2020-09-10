@@ -9,7 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve easy find sum of all root to leaf binary path by storing the current path as base2 to avoid storing the path in a list.&#10;&#10;Learnings -- Trick to avoid extra space was to directly store the current path as base2.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00232" summary="Solve medium find min set of vertices required to reach all nodes in a DAG by finding the nodes with 0 indegree.&#10;&#10;It was part of biweekly contest. Solved it by reading a stack overflow answer.">
-      <created>1598120177734</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1598120177734</updated>
     </task>
     <task id="LOCAL-00233" summary="Solve easy check if given points make a straight line using maths&#10;&#10;Learnings -- y - y1 = m * (x - x1). m here is the slope which is (y2 - y1) / (x2 - x1)">
       <created>1598180717131</created>
@@ -522,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599758929451</updated>
     </task>
-    <option name="localTasksCounter" value="281" />
+    <task id="LOCAL-00281" summary="Solve easy check whether a matrix is valid toeplitz matrix or not i.e whether all the elements present in all the left diagonals are equal or not.&#10;&#10;In my initial approach I did it by storing the leader of all the left diagonals. All the elements belonging to the same left diagonal has same value of (i-j).&#10;&#10;But we don't need to go all this way, we can just iterate the matrix and compare the top left diagonal element during traversal.">
+      <created>1599765850411</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1599765850411</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether two binary trees are flip equivalents i.e. if they can be made equivalent by flipping any node (swapping left and right pointer)&#10;&#10;Learnings -- Got confused during implementation, still made it ! Every non null node has two options, either the children are flipped or not. Compare the children accordingly." />
     <MESSAGE value="Update SymmetricTree with problem statement and simplify if/else" />
     <MESSAGE value="Solve medium KnightDialler problem, find total no of valid moves possible of required length in a dial pad&#10;&#10;Learning -- As this problem asked for total no of moves, recursion was the way to go. Added memoization to fasten it up.&#10;&#10;Thought of time complexity of the recursion problem with and without memoization, disadvantages of top down recursion." />
     <MESSAGE value="Update comment in ContainsDuplicate3, very tricky problem&#10;&#10;Tried checking the diff between the smallest and second smallest element, whether the diff lies within maxDiff but it does not work because maybe second smallest and third smallest elements diff were within range.&#10;&#10;Hence the best thing would be to just iterate over all the input elements and check whether any element is present in window &gt;= (current element - maxDiff)" />
@@ -617,7 +615,8 @@
     <MESSAGE value="Solve easy decode a run length encoded string by parsing string&#10;&#10;Learnings -- Whenever a string has numbers in it and you are parsing it, remember that a number can have multiple digits.&#10;(During my initial implementation I forgot about it and got WA)&#10;A String can be converted into integer while traversing the string without storing the digits in a list" />
     <MESSAGE value="Add TODO to solve FriendGroups using UnionFind algorithm." />
     <MESSAGE value="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse." />
+    <MESSAGE value="Solve easy check whether a matrix is valid toeplitz matrix or not i.e whether all the elements present in all the left diagonals are equal or not.&#10;&#10;In my initial approach I did it by storing the leader of all the left diagonals. All the elements belonging to the same left diagonal has same value of (i-j).&#10;&#10;But we don't need to go all this way, we can just iterate the matrix and compare the top left diagonal element during traversal." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy check whether a matrix is valid toeplitz matrix or not i.e whether all the elements present in all the left diagonals are equal or not.&#10;&#10;In my initial approach I did it by storing the leader of all the left diagonals. All the elements belonging to the same left diagonal has same value of (i-j).&#10;&#10;But we don't need to go all this way, we can just iterate the matrix and compare the top left diagonal element during traversal." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -703,10 +702,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599758928588">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599765849664">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599758928588" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599765849664" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,10 +794,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599758930951">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599765851723">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599758930951" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599765851723" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
