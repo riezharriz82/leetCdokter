@@ -179,13 +179,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00231" summary="Solve hard detect cycles in 2D Grid using DFS -- BiWeekly Contest&#10;&#10;Made some stupid mistakes during finding next nodes from current node, but was able to solve it in contest.">
-      <created>1598119396821</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1598119396822</updated>
-    </task>
     <task id="LOCAL-00232" summary="Solve medium find min set of vertices required to reach all nodes in a DAG by finding the nodes with 0 indegree.&#10;&#10;It was part of biweekly contest. Solved it by reading a stack overflow answer.">
       <created>1598120177734</created>
       <option name="number" value="00232" />
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599587238651</updated>
     </task>
-    <option name="localTasksCounter" value="280" />
+    <task id="LOCAL-00280" summary="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse.">
+      <created>1599758929451</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1599758929451</updated>
+    </task>
+    <option name="localTasksCounter" value="281" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy generate largest time possible from given digits using recursion with backtracking&#10;&#10;Learning -- Initially I implemented greedy solution in which I tried to place the largest possible candidate at first digit and so on, which failed for {2,0,6,6}&#10;Then I moved on to recursion + backtracking. Generally all problems in which we have to generate some valid combinations are solved via recursion + backtracking." />
     <MESSAGE value="Solve medium find whether two binary trees are flip equivalents i.e. if they can be made equivalent by flipping any node (swapping left and right pointer)&#10;&#10;Learnings -- Got confused during implementation, still made it ! Every non null node has two options, either the children are flipped or not. Compare the children accordingly." />
     <MESSAGE value="Update SymmetricTree with problem statement and simplify if/else" />
     <MESSAGE value="Solve medium KnightDialler problem, find total no of valid moves possible of required length in a dial pad&#10;&#10;Learning -- As this problem asked for total no of moves, recursion was the way to go. Added memoization to fasten it up.&#10;&#10;Thought of time complexity of the recursion problem with and without memoization, disadvantages of top down recursion." />
@@ -617,7 +616,8 @@
     <MESSAGE value="Solve medium check if a 'O' inner node is able to connect with a border 'O'. Trick was to do DFS from the border nodes instead of the inner nodes. &#10;&#10;Learning -- In questions dealing with whether a list of source nodes can reach any target nodes, it's better to do DFS from target nodes and mark all reachable nodes." />
     <MESSAGE value="Solve easy decode a run length encoded string by parsing string&#10;&#10;Learnings -- Whenever a string has numbers in it and you are parsing it, remember that a number can have multiple digits.&#10;(During my initial implementation I forgot about it and got WA)&#10;A String can be converted into integer while traversing the string without storing the digits in a list" />
     <MESSAGE value="Add TODO to solve FriendGroups using UnionFind algorithm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add TODO to solve FriendGroups using UnionFind algorithm." />
+    <MESSAGE value="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -703,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599587237989">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599758928588">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599587237989" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599758928588" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,10 +795,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599587240004">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599758930951">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599587240004" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599758930951" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1109,7 +1109,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/alternate/TargetNumberWithOperations.java</url>
-          <line>41</line>
+          <line>38</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
       </breakpoints>
