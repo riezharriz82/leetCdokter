@@ -29,7 +29,13 @@ public class RectangleOverlap {
      *
      *      x1 < x3 < x2  && x3 < x2 < x4
      *
-     *      Or simplified - x1 < x4 && x3 < x2
+     *      Or simplified - x1 < x4 && x3 < x2 (This is important because in case of below,  x1 < x3 < x2  && x3 < x2 < x4 condition wont work)
+     *
+     *    x3,y2           x4,y2
+     *      |---------------|
+     *              |---------------|
+     *            x1,y1           x2,y1
+     *
      *      For 2D case use 1D conditions for both X and Y axes
      *      x1 < x4 && x3 < x2 && y1 < y4 && y3 < y2
      * </pre>
@@ -40,5 +46,35 @@ public class RectangleOverlap {
         boolean isTop = rec1[1] >= rec2[3];
         boolean isBottom = rec1[3] <= rec2[1];
         return !(isLeft || isBottom || isTop || isRight); // if all these are false, then two rectangles overlap
+    }
+
+    /**
+     * https://binarysearch.io/problems/Rectangular-Overlap/editorials/396113
+     * <p>
+     * Problem deals with finding intersection of two line segment
+     * For 1D Intersection, if one line segment is (a1,a2) and other is (b1, b2), they will intersect if max(a1, b1) < min(a2,b2)
+     */
+    public boolean solve(int[] rect0, int[] rect1) {
+        //check for x coordinates
+        int x0 = rect0[0];
+        int x1 = rect0[2];
+        int x2 = rect1[0];
+        int x3 = rect1[2];
+        int start = Math.max(x0, x2);
+        int end = Math.min(x1, x3);
+
+        if (start >= end) {
+            return false; //x coordinates does not intersect
+        }
+
+        //check for y coordinates
+        int y0 = rect0[1];
+        int y1 = rect0[3];
+        int y2 = rect1[1];
+        int y3 = rect1[3];
+        start = Math.max(y0, y2);
+        end = Math.min(y1, y3);
+
+        return start < end; //y coordinates does not intersect
     }
 }
