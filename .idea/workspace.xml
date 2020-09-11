@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve easy find sum of all root to leaf binary path by storing the current path as base2 to avoid storing the path in a list.&#10;&#10;Learnings -- Trick to avoid extra space was to directly store the current path as base2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RectangleOverlap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RectangleOverlap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00234" summary="Solve medium generate unique power sets when duplicates present&#10;&#10;Learnings -- In case of duplicates don't forget to sort the input. &#10;To handle duplicates you can either&#10;1. Skip the duplicates (Move the pointer to non duplicate) after generating the result&#10;2. Check if the current candidate's value was handled in the previous iteration. (Do this only when the duplicates number are competing for the same place in the result)">
-      <created>1598184049879</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1598184049879</updated>
     </task>
     <task id="LOCAL-00235" summary="Solve easy find most visited sectors in circular array by simulating the movements&#10;&#10;Learning -- Handle wrapping around in circular array by performing modulo size">
       <created>1598191468098</created>
@@ -523,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599766628554</updated>
     </task>
-    <option name="localTasksCounter" value="283" />
+    <task id="LOCAL-00283" summary="Update solution for RectangleOverlap to include awice@ trick to find whether two line segments intersect.&#10;&#10;awice@ is legend.">
+      <created>1599776938066</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1599776938066</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium KnightDialler problem, find total no of valid moves possible of required length in a dial pad&#10;&#10;Learning -- As this problem asked for total no of moves, recursion was the way to go. Added memoization to fasten it up.&#10;&#10;Thought of time complexity of the recursion problem with and without memoization, disadvantages of top down recursion." />
     <MESSAGE value="Update comment in ContainsDuplicate3, very tricky problem&#10;&#10;Tried checking the diff between the smallest and second smallest element, whether the diff lies within maxDiff but it does not work because maybe second smallest and third smallest elements diff were within range.&#10;&#10;Hence the best thing would be to just iterate over all the input elements and check whether any element is present in window &gt;= (current element - maxDiff)" />
     <MESSAGE value="Solve easy but tricky remove nodes whose values are outside a given range in the provided BST&#10;&#10;Learnings -- I solved the problem on my own but it took time. In case of removal of nodes, it makes sense to directly recur in the appropriate half of subtree and return the first valid node" />
     <MESSAGE value="Solve medium find total no of ways to make total amount of sum if a coin can be used multiple amount of times using memoization and bottom up DP&#10;&#10;Learnings -- Bottom up DP theory : If my current coin is 10 and I can reach 8 in 5 different ways, this enables me to reach 18 in +5 different ways too." />
@@ -618,7 +616,8 @@
     <MESSAGE value="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse." />
     <MESSAGE value="Solve easy check whether a matrix is valid toeplitz matrix or not i.e whether all the elements present in all the left diagonals are equal or not.&#10;&#10;In my initial approach I did it by storing the leader of all the left diagonals. All the elements belonging to the same left diagonal has same value of (i-j).&#10;&#10;But we don't need to go all this way, we can just iterate the matrix and compare the top left diagonal element during traversal." />
     <MESSAGE value="Solve easy find all unique rotation groups of a set of strings by keeping track of unique rotation group and checking if current word is part of existing rotation group.&#10;&#10;Learnings -- How to check rotations of a string." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find all unique rotation groups of a set of strings by keeping track of unique rotation group and checking if current word is part of existing rotation group.&#10;&#10;Learnings -- How to check rotations of a string." />
+    <MESSAGE value="Update solution for RectangleOverlap to include awice@ trick to find whether two line segments intersect.&#10;&#10;awice@ is legend." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update solution for RectangleOverlap to include awice@ trick to find whether two line segments intersect.&#10;&#10;awice@ is legend." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -704,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599766627785">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599776937307">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599766627785" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599776937307" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -796,10 +795,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599766630666">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599776939169">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599766630666" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599776939169" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
