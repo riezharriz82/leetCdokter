@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve easy find sum of all root to leaf binary path by storing the current path as base2 to avoid storing the path in a list.&#10;&#10;Learnings -- Trick to avoid extra space was to directly store the current path as base2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindTwoNonOverlappingSubarrayWithTargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindTwoNonOverlappingSubarrayWithTargetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumNumberOfNonOverlappingSubarraysWithTargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumNumberOfNonOverlappingSubarraysWithTargetSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,13 +180,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00236" summary="Solve hard find whether valid word in stream of characters by using trie and storing the words in trie in reverse order as trie does not support reverse search.&#10;&#10;Learnings -- Whenever provided with a dictionary think of trie / bfs. Here the trick was to reverse the word and store in trie.">
-      <created>1598198290336</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1598198290336</updated>
     </task>
     <task id="LOCAL-00237" summary="Solve medium reorganize strings by placing different characters in adjacent position in first attempt. &#10;&#10;Similar to Task Scheduler problem. Use Heap and place one character and check if a different character is available to be placed.">
       <created>1598302458772</created>
@@ -522,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599865641583</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="Solve medium find whether one string can be stretched to form another string, given that you can stretch a character for a min of 3 repetitions.&#10;&#10;Learnings -- Create a Run length encoding of a string by comparing previous character with current character.">
+      <created>1599916379196</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1599916379196</updated>
+    </task>
+    <option name="localTasksCounter" value="286" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy but tricky remove nodes whose values are outside a given range in the provided BST&#10;&#10;Learnings -- I solved the problem on my own but it took time. In case of removal of nodes, it makes sense to directly recur in the appropriate half of subtree and return the first valid node" />
     <MESSAGE value="Solve medium find total no of ways to make total amount of sum if a coin can be used multiple amount of times using memoization and bottom up DP&#10;&#10;Learnings -- Bottom up DP theory : If my current coin is 10 and I can reach 8 in 5 different ways, this enables me to reach 18 in +5 different ways too." />
     <MESSAGE value="Solve medium change making problem, find min no of coins required to make sum using top-down and bottom up approach&#10;&#10;Learnings -- Be careful when converting recursion to top down memoization and make sure that it's actually top down, during my initial implementation I implemented it wrong. I started from 0 till max amount, which led to incorrect results being stored in intermediate dp.&#10;&#10;Although I solved up the bottom up DP quickly, top down DP became tricky." />
     <MESSAGE value="Update problem statement in CoinChange2" />
@@ -617,7 +618,8 @@
     <MESSAGE value="Solve easy find all unique rotation groups of a set of strings by keeping track of unique rotation group and checking if current word is part of existing rotation group.&#10;&#10;Learnings -- How to check rotations of a string." />
     <MESSAGE value="Update solution for RectangleOverlap to include awice@ trick to find whether two line segments intersect.&#10;&#10;awice@ is legend." />
     <MESSAGE value="Solve find max product subarray by keeping track of the max prefix / suffix subarray product.&#10;&#10;Learnings -- During my thought process of solving the problem, I incorrectly calculated that the max product subarray can be a middle subarray, otherwise I would have been on to something :(&#10;Trick was to understand that max product subarray can only start from the front or from the end. Take some examples of array with 1 -ve, 2 -ve and 3 -ve and you will understand why." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve find max product subarray by keeping track of the max prefix / suffix subarray product.&#10;&#10;Learnings -- During my thought process of solving the problem, I incorrectly calculated that the max product subarray can be a middle subarray, otherwise I would have been on to something :(&#10;Trick was to understand that max product subarray can only start from the front or from the end. Take some examples of array with 1 -ve, 2 -ve and 3 -ve and you will understand why." />
+    <MESSAGE value="Solve medium find whether one string can be stretched to form another string, given that you can stretch a character for a min of 3 repetitions.&#10;&#10;Learnings -- Create a Run length encoding of a string by comparing previous character with current character." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether one string can be stretched to form another string, given that you can stretch a character for a min of 3 repetitions.&#10;&#10;Learnings -- Create a Run length encoding of a string by comparing previous character with current character." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -703,10 +705,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599865640810">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599916378477">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599865640810" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599916378477" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,10 +797,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599865642562">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599916380435">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599865642562" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599916380435" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -839,10 +841,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599865352707" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599915630517">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599918595232">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599915630517" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599918595232" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

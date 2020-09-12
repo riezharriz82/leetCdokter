@@ -18,6 +18,10 @@ public class MaximumNumberOfNonOverlappingSubarraysWithTargetSum {
     /**
      * Keep track of the last index where subarray sum equals target, whenever you find a new subarray whose sum equals target
      * check the starting point of that subarray, if it lies after lastIndex, then increment result
+     * <p>
+     * This is a greedy solution, in which we try to pick the first valid subarray and then check if we can add another subarray to the result
+     * <p>
+     * This is similar to {@link EraseNonOverlappingIntervals} wherein we found maximum no of non overlapping intervals
      */
     public int maxNonOverlapping(int[] arr, int target) {
         //key is the prefix sum and value is the starting index of the prefix sum
