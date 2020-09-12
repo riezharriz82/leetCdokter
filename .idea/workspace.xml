@@ -179,13 +179,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00235" summary="Solve easy find most visited sectors in circular array by simulating the movements&#10;&#10;Learning -- Handle wrapping around in circular array by performing modulo size">
-      <created>1598191468098</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1598191468098</updated>
-    </task>
     <task id="LOCAL-00236" summary="Solve hard find whether valid word in stream of characters by using trie and storing the words in trie in reverse order as trie does not support reverse search.&#10;&#10;Learnings -- Whenever provided with a dictionary think of trie / bfs. Here the trick was to reverse the word and store in trie.">
       <created>1598198290336</created>
       <option name="number" value="00236" />
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599776938066</updated>
     </task>
-    <option name="localTasksCounter" value="284" />
+    <task id="LOCAL-00284" summary="Solve find max product subarray by keeping track of the max prefix / suffix subarray product.&#10;&#10;Learnings -- During my thought process of solving the problem, I incorrectly calculated that the max product subarray can be a middle subarray, otherwise I would have been on to something :(&#10;Trick was to understand that max product subarray can only start from the front or from the end. Take some examples of array with 1 -ve, 2 -ve and 3 -ve and you will understand why.">
+      <created>1599865641583</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1599865641583</updated>
+    </task>
+    <option name="localTasksCounter" value="285" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update comment in ContainsDuplicate3, very tricky problem&#10;&#10;Tried checking the diff between the smallest and second smallest element, whether the diff lies within maxDiff but it does not work because maybe second smallest and third smallest elements diff were within range.&#10;&#10;Hence the best thing would be to just iterate over all the input elements and check whether any element is present in window &gt;= (current element - maxDiff)" />
     <MESSAGE value="Solve easy but tricky remove nodes whose values are outside a given range in the provided BST&#10;&#10;Learnings -- I solved the problem on my own but it took time. In case of removal of nodes, it makes sense to directly recur in the appropriate half of subtree and return the first valid node" />
     <MESSAGE value="Solve medium find total no of ways to make total amount of sum if a coin can be used multiple amount of times using memoization and bottom up DP&#10;&#10;Learnings -- Bottom up DP theory : If my current coin is 10 and I can reach 8 in 5 different ways, this enables me to reach 18 in +5 different ways too." />
     <MESSAGE value="Solve medium change making problem, find min no of coins required to make sum using top-down and bottom up approach&#10;&#10;Learnings -- Be careful when converting recursion to top down memoization and make sure that it's actually top down, during my initial implementation I implemented it wrong. I started from 0 till max amount, which led to incorrect results being stored in intermediate dp.&#10;&#10;Although I solved up the bottom up DP quickly, top down DP became tricky." />
@@ -617,7 +616,8 @@
     <MESSAGE value="Solve easy check whether a matrix is valid toeplitz matrix or not i.e whether all the elements present in all the left diagonals are equal or not.&#10;&#10;In my initial approach I did it by storing the leader of all the left diagonals. All the elements belonging to the same left diagonal has same value of (i-j).&#10;&#10;But we don't need to go all this way, we can just iterate the matrix and compare the top left diagonal element during traversal." />
     <MESSAGE value="Solve easy find all unique rotation groups of a set of strings by keeping track of unique rotation group and checking if current word is part of existing rotation group.&#10;&#10;Learnings -- How to check rotations of a string." />
     <MESSAGE value="Update solution for RectangleOverlap to include awice@ trick to find whether two line segments intersect.&#10;&#10;awice@ is legend." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update solution for RectangleOverlap to include awice@ trick to find whether two line segments intersect.&#10;&#10;awice@ is legend." />
+    <MESSAGE value="Solve find max product subarray by keeping track of the max prefix / suffix subarray product.&#10;&#10;Learnings -- During my thought process of solving the problem, I incorrectly calculated that the max product subarray can be a middle subarray, otherwise I would have been on to something :(&#10;Trick was to understand that max product subarray can only start from the front or from the end. Take some examples of array with 1 -ve, 2 -ve and 3 -ve and you will understand why." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve find max product subarray by keeping track of the max prefix / suffix subarray product.&#10;&#10;Learnings -- During my thought process of solving the problem, I incorrectly calculated that the max product subarray can be a middle subarray, otherwise I would have been on to something :(&#10;Trick was to understand that max product subarray can only start from the front or from the end. Take some examples of array with 1 -ve, 2 -ve and 3 -ve and you will understand why." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -703,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599776937307">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599865640810">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599776937307" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599865640810" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,10 +795,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599776939169">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599865642562">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599776939169" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599865642562" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -835,14 +835,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599506537354" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1599587062136">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1599865352707">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599587062136" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599773135437">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599865352707" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599915630517">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599773135437" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599915630517" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
