@@ -8,9 +8,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve easy find sum of all root to leaf binary path by storing the current path as base2 to avoid storing the path in a list.&#10;&#10;Learnings -- Trick to avoid extra space was to directly store the current path as base2.">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestUnsortedContinuousSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,21 +94,18 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TargetNumberWithOperationsTest">
-    <configuration name="ContainsDuplicate3Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test">
+    <configuration name="FindShortestSubarrayToBeRemovedToMakeArraySorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FindShortestSubarrayToBeRemovedToMakeArraySorted" />
       <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContainsDuplicate3Test" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRUCacheTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LRUCacheTest" />
+      <option name="MAIN_CLASS_NAME" value="FindShortestSubarrayToBeRemovedToMakeArraySortedTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -155,18 +151,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
-      <item itemvalue="JUnit.LRUCacheTest.test" />
       <item itemvalue="JUnit.TargetNumberWithOperationsTest.test" />
       <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
+      <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
+      <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
+        <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
         <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.TargetNumberWithOperationsTest.test" />
-        <item itemvalue="JUnit.LRUCacheTest.test" />
-        <item itemvalue="JUnit.ContainsDuplicate3Test.test" />
       </list>
     </recent_temporary>
   </component>
@@ -178,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00239" summary="Solve medium string transformation question -- find and replace in string. Given multiple sources substrings, you have to replace them with corresponding target substring.&#10;&#10;Learnings -- Logic was simple but implementation had some gotchas, like to skip all the characters of source substring once a match is found">
-      <created>1598370496628</created>
-      <option name="number" value="00239" />
-      <option name="presentableId" value="LOCAL-00239" />
-      <option name="project" value="LOCAL" />
-      <updated>1598370496628</updated>
     </task>
     <task id="LOCAL-00240" summary="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs">
       <created>1598373228525</created>
@@ -522,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599923192289</updated>
     </task>
-    <option name="localTasksCounter" value="288" />
+    <task id="LOCAL-00288" summary="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further.">
+      <created>1599924867521</created>
+      <option name="number" value="00288" />
+      <option name="presentableId" value="LOCAL-00288" />
+      <option name="project" value="LOCAL" />
+      <updated>1599924867521</updated>
+    </task>
+    <option name="localTasksCounter" value="289" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update problem statement in CoinChange2" />
     <MESSAGE value="Solve medium find total no of ways to reach end if their are obstacles in grid using bottom up DP&#10;&#10;Learnings -- Trick was to correctly generate the base case of first row and first column and to reset the count if their is an obstacle." />
     <MESSAGE value="Solve easy but tricky find whether a string is composed of repeated substrings by checking all the occurrences of the first character and generating substrings&#10;&#10;Learning -- Initially I was thinking of checking substrings of length 2,3,4... and to see whether the input string length is a multiplier of substring length. If yes multiply the substring and check whether the expected string matches the input string. Then I thought it would be slow, but after solving it and moving on to discuss, realized that that was one of the most upvoted solutions. FML." />
     <MESSAGE value="Solve medium and tricky problem, divide the current string into substrings such that there are no common characters in any substrings by reducing the problem to merge non-overlapping intervals&#10;&#10;Learnings -- Be careful with list.add(index, value) vs list.set(index, value). Former one just adds the value at the index, it does not replace it." />
@@ -617,7 +612,8 @@
     <MESSAGE value="Solve medium find whether one string can be stretched to form another string, given that you can stretch a character for a min of 3 repetitions.&#10;&#10;Learnings -- Create a Run length encoding of a string by comparing previous character with current character." />
     <MESSAGE value="Finding max no of non overlapping subarrays with target sum == Find max no of non overlapping intervals&#10;&#10;Use a greedy approach, fix first and check if another one can be added." />
     <MESSAGE value="Solve find min length of two non overlapping subarray sum that equals target by considering subarrays from start (left) and from end (right). &#10;End result would be the min(left[i], right[i+1] for all 0 &lt;= i &lt; n&#10;&#10;Learnings -- Dealing with non overlapping subarray problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve find min length of two non overlapping subarray sum that equals target by considering subarrays from start (left) and from end (right). &#10;End result would be the min(left[i], right[i+1] for all 0 &lt;= i &lt; n&#10;&#10;Learnings -- Dealing with non overlapping subarray problems" />
+    <MESSAGE value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -703,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599923858198">
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599924883887">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599923858198" />
+    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599924883887" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -719,38 +715,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599758443364">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599937507563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599758443364" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599758443364">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599937507563" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599937507563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599758443364" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599758443364">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599937507563" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599937507563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599758443364" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599758443364">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599937507563" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599937507563">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599758443364" />
-    <state width="1877" height="285" key="GridCell.Tab.1.bottom" timestamp="1599758056922">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599937507563" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1599937282941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599758056922" />
-    <state width="1877" height="285" key="GridCell.Tab.1.center" timestamp="1599758056922">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599937282941" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1599937282941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599758056922" />
-    <state width="1877" height="285" key="GridCell.Tab.1.left" timestamp="1599758056922">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599937282941" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1599937282941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599758056922" />
-    <state width="1877" height="285" key="GridCell.Tab.1.right" timestamp="1599758056922">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599937282941" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1599937282941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599758056922" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599937282941" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599923513389">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599924869185">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599923513389" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599924869185" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -827,10 +823,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599602879601" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599581910229">
+    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599934438853">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599581910229" />
+    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599934438853" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1599506537354">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
