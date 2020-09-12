@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,7 +30,7 @@ public class FindTwoNonOverlappingSubarrayWithTargetSum {
         Map<Integer, Integer> map = new HashMap<>();
         int sum = 0;
         map.put(0, -1); // to take care of the subarray sum which directly equals target
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) { //this traversal is required to directly check if any target subarray exists on the right
             sum += arr[i];
             map.put(sum, i);
         }
@@ -48,6 +49,54 @@ public class FindTwoNonOverlappingSubarrayWithTargetSum {
             //however we still set left size in hope of finding non adjacent subarray which equals target sum
             if (map.containsKey(sum + target) && leftSize != Integer.MAX_VALUE) {
                 result = Math.min(result, leftSize + map.get(sum + target) - i);
+            }
+        }
+        return result == Integer.MAX_VALUE ? -1 : result;
+    }
+
+    /**
+     * Approach: This seems to be the standard way of dealing with non-overlapping subarray problems.
+     * Store the min subarray length for index i, starting from 0 (left) and starting from end (right)
+     * The end result would be left[i] + right[i+1] so that we satisfy the non-overlapping constraint.
+     */
+    public int minSumOfLengthsUsingLeftAndRightArray(int[] arr, int target) {
+        int n = arr.length;
+        int[] left = new int[n]; //min subarray length starting from 0 till index i
+        int[] right = new int[n]; //min subarray length starting from end till index i
+        Arrays.fill(left, Integer.MAX_VALUE);
+        Arrays.fill(right, Integer.MAX_VALUE);
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int curSum = 0;
+        map.put(0, -1); //to handle the case when the arr[i] equals target
+        for (int i = 0; i < n; i++) {
+            curSum += arr[i];
+            if (map.containsKey(curSum - target)) {
+                left[i] = i - map.get(curSum - target);
+            }
+            if (i != 0) {
+                left[i] = Math.min(left[i - 1], left[i]); //carry forward the previous result
+            }
+            map.put(curSum, i);
+        }
+        map.clear();
+        curSum = 0;
+        map.put(0, n); // because of iterating from right
+        for (int i = n - 1; i >= 0; i--) {
+            curSum += arr[i];
+            if (map.containsKey(curSum - target)) {
+                right[i] = map.get(curSum - target) - i;
+            }
+            if (i != n - 1) {
+                right[i] = Math.min(right[i], right[i + 1]); //carry forward
+            }
+            map.put(curSum, i);
+        }
+        int result = Integer.MAX_VALUE;
+        for (int i = 0; i < n - 1; i++) {
+            if (left[i] != Integer.MAX_VALUE && right[i + 1] != Integer.MAX_VALUE) {
+                //handle non-overlapping condition
+                result = Math.min(result, left[i] + right[i + 1]);
             }
         }
         return result == Integer.MAX_VALUE ? -1 : result;
