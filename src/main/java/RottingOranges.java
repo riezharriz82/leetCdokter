@@ -66,7 +66,7 @@ public class RottingOranges {
                         //this is important to do here otherwise same element can be added to the queue twice e.g. {2,2}, {1,1}
                         //Initially I marked it as rotten after popping from queue but by then duplicate element had already been added to the queue
                         //this is only relevant since we are starting to do bfs from multiple rotten oranges
-                        grid[new_row][new_col] = 2; //so that it does not ret picked later, avoid using visited array
+                        grid[new_row][new_col] = 2; //so it does not get picked later, avoid using visited array
                         queue.add(new Pair<>(new_row, new_col));
                     }
                 }

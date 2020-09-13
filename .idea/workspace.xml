@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HouseRobber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RottingOranges.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00243" summary="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform.">
-      <created>1598710104258</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1598710104258</updated>
     </task>
     <task id="LOCAL-00244" summary="Solve medium find longest subarray where min and max number lies within a limit in linear time using deque and in nlogn time using treeMap&#10;&#10;Learning -- Nlogn implementation was easy to implement. Maintain a sliding window and add elements to treeMap. Keep checking the constraints by getting the min and max of window using firstKey() and lastKey()&#10;&#10;Linear time implementation was tricky as it requires two deque to track sliding min and max element of the window. If the min and max diff does not satisy constraint, shorten the window by comparing whether the num at begin index is present, then pollFirst(). Can't directly pollFirst() because we won't be able to identify the new window length by doing so. Hence need to iteratively check the begin element and shorten by 1 repeatedly.">
       <created>1598716248569</created>
@@ -519,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600014628775</updated>
     </task>
-    <option name="localTasksCounter" value="292" />
+    <task id="LOCAL-00292" summary="Solve medium HouseRobber3 where each node in tree has two options, either it can be robbed or can't be.&#10;&#10;Learnings -- In case of inclusion/exclusion question, care needs to be taken for the exclusion part. If a node can be excluded, the result of that would the max of if next node is excluded or next node is included. That's the trick. I forgot to consider that during my first implementation. Got WA. Fixed it quickly.">
+      <created>1600018704498</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1600018704498</updated>
+    </task>
+    <option name="localTasksCounter" value="293" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium but tricky problem to implement LRU cache using HashMap and DoublyLinkedList using dummy head and tail node&#10;&#10;Learnings --&#10;1. Dummy nodes are useful in all cases in which we need to add/remove elements from linked list&#10;2. During my initial implementation I got stuck while implementing my own hashMap, I didn't think of the fact that I could use the inbuilt hashMap" />
     <MESSAGE value="Solve medium find min cost to delete characters to avoid repeating characters &#10;&#10;The trick was to understand that we need to keep only the character with the maximum cost, rest all needs to be deleted." />
     <MESSAGE value="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode." />
     <MESSAGE value="Solved medium BinarySearch.io count no of ways to partition a binary tree such that both the partitions contains either 0's or 1's&#10;&#10;Learning -- Partition problems have a pattern. First iterate the entire tree to get total no of 0's and 1's. Then do a postorder traversal and let parent node decide whether to cut edge of left/right subtree. Here the decision is made if the subtree contains all the 1's and no 0's and vice versa." />
@@ -625,7 +624,8 @@
     <MESSAGE value="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end." />
     <MESSAGE value="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement." />
     <MESSAGE value="Solve medium find longest word in dictionary that can be made from the input string by deleting some characters from input.&#10;&#10;Learnings -- Check whether one string is a subsequence of another string." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find longest word in dictionary that can be made from the input string by deleting some characters from input.&#10;&#10;Learnings -- Check whether one string is a subsequence of another string." />
+    <MESSAGE value="Solve medium HouseRobber3 where each node in tree has two options, either it can be robbed or can't be.&#10;&#10;Learnings -- In case of inclusion/exclusion question, care needs to be taken for the exclusion part. If a node can be excluded, the result of that would the max of if next node is excluded or next node is included. That's the trick. I forgot to consider that during my first implementation. Got WA. Fixed it quickly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium HouseRobber3 where each node in tree has two options, either it can be robbed or can't be.&#10;&#10;Learnings -- In case of inclusion/exclusion question, care needs to be taken for the exclusion part. If a node can be excluded, the result of that would the max of if next node is excluded or next node is included. That's the trick. I forgot to consider that during my first implementation. Got WA. Fixed it quickly." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -711,10 +711,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600014628078">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600018703770">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600014628078" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600018703770" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -803,10 +803,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600014629737">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600018706890">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600014629737" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600018706890" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -847,10 +847,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599865352707" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600011647955">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600021967855">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600011647955" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600021967855" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
