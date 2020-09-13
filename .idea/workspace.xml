@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HouseRobber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00242" summary="Solve medium find next right interval given a set of intervals using binary search and sorting&#10;&#10;Leanings -- Implementation details of binary search. When the key is greater than the largest value prsent in the array, it returns - (size of array) - 1&#10;Care must be taken to handle this, because converting this to positive number will return an index out of bounds.&#10;&#10;Also if there are multiple occurrences of the key present in the array, any one of them can be returned. So need to manually traverse back and find the first occurrence.">
-      <created>1598709005864</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1598709005864</updated>
     </task>
     <task id="LOCAL-00243" summary="Solve medium generate rand10 from rand7 using rejection sampling. Math is hard&#10;&#10;Learning -- Rejection sampling, if your intended result is outside the expected range, reject it and sample it again. If the input is uniform, then the output should also be uniform.">
       <created>1598710104258</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600010794228</updated>
     </task>
-    <option name="localTasksCounter" value="291" />
+    <task id="LOCAL-00291" summary="Solve medium find longest word in dictionary that can be made from the input string by deleting some characters from input.&#10;&#10;Learnings -- Check whether one string is a subsequence of another string.">
+      <created>1600014628775</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1600014628775</updated>
+    </task>
+    <option name="localTasksCounter" value="292" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -599,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky problem, divide the current string into substrings such that there are no common characters in any substrings by reducing the problem to merge non-overlapping intervals&#10;&#10;Learnings -- Be careful with list.add(index, value) vs list.set(index, value). Former one just adds the value at the index, it does not replace it." />
     <MESSAGE value="Solve medium but tricky problem to implement LRU cache using HashMap and DoublyLinkedList using dummy head and tail node&#10;&#10;Learnings --&#10;1. Dummy nodes are useful in all cases in which we need to add/remove elements from linked list&#10;2. During my initial implementation I got stuck while implementing my own hashMap, I didn't think of the fact that I could use the inbuilt hashMap" />
     <MESSAGE value="Solve medium find min cost to delete characters to avoid repeating characters &#10;&#10;The trick was to understand that we need to keep only the character with the maximum cost, rest all needs to be deleted." />
     <MESSAGE value="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode." />
@@ -624,7 +624,8 @@
     <MESSAGE value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
     <MESSAGE value="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end." />
     <MESSAGE value="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement." />
+    <MESSAGE value="Solve medium find longest word in dictionary that can be made from the input string by deleting some characters from input.&#10;&#10;Learnings -- Check whether one string is a subsequence of another string." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find longest word in dictionary that can be made from the input string by deleting some characters from input.&#10;&#10;Learnings -- Check whether one string is a subsequence of another string." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -710,10 +711,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600010793439">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600014628078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600010793439" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600014628078" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -802,10 +803,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600010795154">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600014629737">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600010795154" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600014629737" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -834,14 +835,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599602879601" />
-    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600012420087">
+    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600016972274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600012420087" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1599506537354">
+    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600016972274" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1600016882764">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599506537354" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600016882764" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1599865352707">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

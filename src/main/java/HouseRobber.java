@@ -15,6 +15,11 @@
  * Total amount you can rob = 1 + 3 = 4.
  */
 public class HouseRobber {
+    /**
+     * Approach: Every house has two options, either exclude it or include it.
+     * If included, the previous house has to be excluded
+     * If excluded, the previous house can either be included or excluded.
+     */
     public int rob(int[] nums) {
         if (nums.length == 0) {
             return 0;
