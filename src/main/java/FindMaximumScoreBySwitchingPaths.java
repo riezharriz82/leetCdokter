@@ -24,8 +24,17 @@
  */
 public class FindMaximumScoreBySwitchingPaths {
     /**
-     * Approach: Two pointer algorithm, similar to merging two sorted array
-     * I had the DP solution ready but was unable to traverse both the arrays.
+     * Approach: Two pointer algorithm, similar to merging two sorted array.
+     * Keep accumulating the sum observed in nums1 (sum1) and nums2 (sum2), until they reach a common point.
+     * After reaching the common point, we can check which sum is greater and reset the sum1 and sum2 to the max(sum1, sum2)
+     * End result would be the max(sum1, sum2)
+     * <p>
+     * An alternate and generic way of solving this problem would be to visualize it as a graph problem instead.
+     * Create a graph by considering the int values as key and the next levels as value, since there can be multiple values as next level it should be list
+     * map<int, list<int>> graph
+     * now do a dfs from the first value of nums1 and nums2 and return the max value obtained from both of them
+     * Since there are repeated subproblems, we can memoize it for easy gains.
+     * https://leetcode.com/problems/get-the-maximum-score/discuss/767922/Java-19-lines-dfs%2Bmemo-with-line-by-line-explanation-easy-to-understand
      */
     public int maxSum(int[] nums1, int[] nums2) {
         int pointer1 = 0, pointer2 = 0, mod = 1000000007;
