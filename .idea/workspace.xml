@@ -8,7 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further.">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00240" summary="Solve medium find whether contiguous block of 1 with size m exists, provided we can switch bit from 0 to 1 multiple times using Union Find algorithm&#10;&#10;Learnings -- Learnt a super cool jutsu, union find algorithm. Post that question boiled down to keep track of set sizes along with keeping count of how many set of sizes 1,2,3.. occurs">
-      <created>1598373228525</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
-      <option name="project" value="LOCAL" />
-      <updated>1598373228525</updated>
     </task>
     <task id="LOCAL-00241" summary="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically">
       <created>1598707434673</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599924867521</updated>
     </task>
-    <option name="localTasksCounter" value="289" />
+    <task id="LOCAL-00289" summary="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end.">
+      <created>1599940536456</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1599940536456</updated>
+    </task>
+    <option name="localTasksCounter" value="290" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find total no of ways to reach end if their are obstacles in grid using bottom up DP&#10;&#10;Learnings -- Trick was to correctly generate the base case of first row and first column and to reset the count if their is an obstacle." />
     <MESSAGE value="Solve easy but tricky find whether a string is composed of repeated substrings by checking all the occurrences of the first character and generating substrings&#10;&#10;Learning -- Initially I was thinking of checking substrings of length 2,3,4... and to see whether the input string length is a multiplier of substring length. If yes multiply the substring and check whether the expected string matches the input string. Then I thought it would be slow, but after solving it and moving on to discuss, realized that that was one of the most upvoted solutions. FML." />
     <MESSAGE value="Solve medium and tricky problem, divide the current string into substrings such that there are no common characters in any substrings by reducing the problem to merge non-overlapping intervals&#10;&#10;Learnings -- Be careful with list.add(index, value) vs list.set(index, value). Former one just adds the value at the index, it does not replace it." />
     <MESSAGE value="Solve medium but tricky problem to implement LRU cache using HashMap and DoublyLinkedList using dummy head and tail node&#10;&#10;Learnings --&#10;1. Dummy nodes are useful in all cases in which we need to add/remove elements from linked list&#10;2. During my initial implementation I got stuck while implementing my own hashMap, I didn't think of the fact that I could use the inbuilt hashMap" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Finding max no of non overlapping subarrays with target sum == Find max no of non overlapping intervals&#10;&#10;Use a greedy approach, fix first and check if another one can be added." />
     <MESSAGE value="Solve find min length of two non overlapping subarray sum that equals target by considering subarrays from start (left) and from end (right). &#10;End result would be the min(left[i], right[i+1] for all 0 &lt;= i &lt; n&#10;&#10;Learnings -- Dealing with non overlapping subarray problems" />
     <MESSAGE value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
+    <MESSAGE value="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599924883887">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599940535708">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="419" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599924883887" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599940535708" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599924869185">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599940537449">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599924869185" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599940537449" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
