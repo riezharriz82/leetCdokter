@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00241" summary="Solve easy verifying whether alien words are sorted or not given their alien dictionary.&#10;&#10;Learnings -- Meaning of sorted lexicographically">
-      <created>1598707434673</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1598707434674</updated>
-    </task>
     <task id="LOCAL-00242" summary="Solve medium find next right interval given a set of intervals using binary search and sorting&#10;&#10;Leanings -- Implementation details of binary search. When the key is greater than the largest value prsent in the array, it returns - (size of array) - 1&#10;Care must be taken to handle this, because converting this to positive number will return an index out of bounds.&#10;&#10;Also if there are multiple occurrences of the key present in the array, any one of them can be returned. So need to manually traverse back and find the first occurrence.">
       <created>1598709005864</created>
       <option name="number" value="00242" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599940536456</updated>
     </task>
-    <option name="localTasksCounter" value="290" />
+    <task id="LOCAL-00290" summary="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement.">
+      <created>1600010794228</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1600010794228</updated>
+    </task>
+    <option name="localTasksCounter" value="291" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,6 +568,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="pre" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -588,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy but tricky find whether a string is composed of repeated substrings by checking all the occurrences of the first character and generating substrings&#10;&#10;Learning -- Initially I was thinking of checking substrings of length 2,3,4... and to see whether the input string length is a multiplier of substring length. If yes multiply the substring and check whether the expected string matches the input string. Then I thought it would be slow, but after solving it and moving on to discuss, realized that that was one of the most upvoted solutions. FML." />
     <MESSAGE value="Solve medium and tricky problem, divide the current string into substrings such that there are no common characters in any substrings by reducing the problem to merge non-overlapping intervals&#10;&#10;Learnings -- Be careful with list.add(index, value) vs list.set(index, value). Former one just adds the value at the index, it does not replace it." />
     <MESSAGE value="Solve medium but tricky problem to implement LRU cache using HashMap and DoublyLinkedList using dummy head and tail node&#10;&#10;Learnings --&#10;1. Dummy nodes are useful in all cases in which we need to add/remove elements from linked list&#10;2. During my initial implementation I got stuck while implementing my own hashMap, I didn't think of the fact that I could use the inbuilt hashMap" />
     <MESSAGE value="Solve medium find min cost to delete characters to avoid repeating characters &#10;&#10;The trick was to understand that we need to keep only the character with the maximum cost, rest all needs to be deleted." />
@@ -613,7 +623,8 @@
     <MESSAGE value="Solve find min length of two non overlapping subarray sum that equals target by considering subarrays from start (left) and from end (right). &#10;End result would be the min(left[i], right[i+1] for all 0 &lt;= i &lt; n&#10;&#10;Learnings -- Dealing with non overlapping subarray problems" />
     <MESSAGE value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
     <MESSAGE value="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end." />
+    <MESSAGE value="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,18 +710,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1599940535708">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600010793439">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1599940535708" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600010793439" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1599756478509">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1600011862564">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599756478509" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600011862564" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +802,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1599940537449">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600010795154">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1599940537449" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600010795154" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -823,10 +834,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599602879601" />
-    <state width="735" height="247" key="javadoc.popup.new" timestamp="1599934438853">
+    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600012420087">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="735" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1599934438853" />
+    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600012420087" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1599506537354">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -835,10 +846,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599865352707" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599923861944">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600011647955">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599923861944" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600011647955" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
