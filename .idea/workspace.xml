@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FindMaximumScoreBySwitchingPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindMaximumScoreBySwitchingPaths.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,11 +149,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.TargetNumberWithOperationsTest.test" />
       <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
-      <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
       <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
     </list>
     <recent_temporary>
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00245" summary="Solve hard find the maximum number for all sliding windows in linear time using deque. Related to find max length of subarray whose diff of min and max element lies within a limit&#10;&#10;Learning -- Sliding window implementation using deque.">
-      <created>1598718325500</created>
-      <option name="number" value="00245" />
-      <option name="presentableId" value="LOCAL-00245" />
-      <option name="project" value="LOCAL" />
-      <updated>1598718325500</updated>
     </task>
     <task id="LOCAL-00246" summary="Solve hard find the max subsequence sum such that any two indices in the subsequences are max k distance apart using brute force, treemap and monotonic deque&#10;&#10;Learnings -- When there are k options to choose from at each state, DP or recursion is always the answer. Here I have optimized the N*K dp solution using TreeMap and Deque to reduce time complexity">
       <created>1598726021651</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600023984779</updated>
     </task>
-    <option name="localTasksCounter" value="294" />
+    <task id="LOCAL-00294" summary="Add another way of solving find maximum score after traversing two arrays by visualizing the problem as graph.&#10;&#10;Learnings -- Where there are choices to be made visualize it as graph.">
+      <created>1600027264234</created>
+      <option name="number" value="00294" />
+      <option name="presentableId" value="LOCAL-00294" />
+      <option name="project" value="LOCAL" />
+      <updated>1600027264239</updated>
+    </task>
+    <option name="localTasksCounter" value="295" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -569,17 +568,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="a*" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -600,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode." />
     <MESSAGE value="Solved medium BinarySearch.io count no of ways to partition a binary tree such that both the partitions contains either 0's or 1's&#10;&#10;Learning -- Partition problems have a pattern. First iterate the entire tree to get total no of 0's and 1's. Then do a postorder traversal and let parent node decide whether to cut edge of left/right subtree. Here the decision is made if the subtree contains all the 1's and no 0's and vice versa." />
     <MESSAGE value="Solve medium jump game, find whether it's possible to reach the end from start provided we can hop to only specific indices.&#10;&#10;Learning -- Was able to solve the problem in O(n^2) using simple bottom up DP. Linear way of solving would be to keep track of the maximum index reachable. If maximum index &gt;= last index, we got ourselves a winner." />
     <MESSAGE value="Solve easy word pattern, similar to finding whether two strings are isomorphic or not. &#10;&#10;Learnings -- Use two hashmaps to keep track of source to target mapping and vice versa." />
@@ -625,7 +612,8 @@
     <MESSAGE value="Solve medium find longest word in dictionary that can be made from the input string by deleting some characters from input.&#10;&#10;Learnings -- Check whether one string is a subsequence of another string." />
     <MESSAGE value="Solve medium HouseRobber3 where each node in tree has two options, either it can be robbed or can't be.&#10;&#10;Learnings -- In case of inclusion/exclusion question, care needs to be taken for the exclusion part. If a node can be excluded, the result of that would the max of if next node is excluded or next node is included. That's the trick. I forgot to consider that during my first implementation. Got WA. Fixed it quickly." />
     <MESSAGE value="Solve medium find min no of steps required to reach a target state of the lock given that some states are banned by using BFS&#10;&#10;Learnings -- Better to mark the node as visited before adding to the queue to avoid duplicates in the same level. Got TLE during my first implementation because of this mistake" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find min no of steps required to reach a target state of the lock given that some states are banned by using BFS&#10;&#10;Learnings -- Better to mark the node as visited before adding to the queue to avoid duplicates in the same level. Got TLE during my first implementation because of this mistake" />
+    <MESSAGE value="Add another way of solving find maximum score after traversing two arrays by visualizing the problem as graph.&#10;&#10;Learnings -- Where there are choices to be made visualize it as graph." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add another way of solving find maximum score after traversing two arrays by visualizing the problem as graph.&#10;&#10;Learnings -- Where there are choices to be made visualize it as graph." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -711,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600023984098">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600027263551">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600023984098" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600027263551" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -803,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600023986237">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600027265768">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600023986237" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600027265768" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -831,10 +819,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1599602879601">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1600036746944">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599602879601" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600036746944" />
     <state width="731" height="247" key="javadoc.popup.new" timestamp="1600016972274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -847,10 +835,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600025010576" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600025671452">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600036751319">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600025671452" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600036751319" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
