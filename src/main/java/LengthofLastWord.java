@@ -13,19 +13,35 @@
  * Output: 5
  */
 public class LengthofLastWord {
-
+    /**
+     * Approach: Just iterate from the end to find the index of the first non space character
+     * Once found, iterate until we find a space character. Keep track of the length of the string.
+     */
     public int lengthOfLastWordInSingleLoop(String s) {
-        int lastLen = 0;
+        int lastNonSpaceCharIndex = -1;
         for (int i = s.length() - 1; i >= 0; i--) {
-            if (s.charAt(i) == ' ' && lastLen > 0) {
-                return lastLen;
-            } else if (s.charAt(i) != ' ') {
-                lastLen++;
+            if (!Character.isSpaceChar(s.charAt(i))) {
+                lastNonSpaceCharIndex = i;
+                break;
             }
         }
-        return lastLen;
+        if (lastNonSpaceCharIndex == -1) {
+            return 0;
+        } else {
+            int len = 0;
+            for (int i = lastNonSpaceCharIndex; i >= 0; i--) {
+                if (Character.isSpaceChar(s.charAt(i))) {
+                    break;
+                }
+                len++;
+            }
+            return len;
+        }
     }
 
+    /**
+     * My initial approach: How stupid I was to write this complicated code
+     */
     public int lengthOfLastWord(String s) {
         int last_space_index = -1;
 
