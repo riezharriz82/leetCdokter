@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * https://leetcode.com/problems/longest-palindrome/
  * <p>
@@ -20,20 +17,24 @@ import java.util.Map;
 public class LengthOfLongestPalindrome {
 
     /**
-     * Count the characters with even no of occurrences plus a character with single occurrence that can act as the center of the palindrome
+     * Count the occurrences of each character. Even characters can be used up for palindrome as it is.
+     * For odd characters, we can use the even part as it is. For the remaining 1 character, use it if no other odd character found
+     * Because only one odd character can act as the center of the palindrome.
      */
     public int longestPalindrome(String s) {
-        HashMap<Character, Integer> map = new HashMap<>();
+        int[] cnt = new int[256]; //because input can have capitals
         for (char c : s.toCharArray()) {
-            map.put(c, map.getOrDefault(c, 0) + 1);
+            cnt[c]++;
         }
         int single = 0, pairs = 0;
-        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-            pairs += entry.getValue() / 2;
-            if (single == 0 && entry.getValue() == 1) { //to handle input like ccc
-                single = 1;
+        for (int count : cnt) {
+            if (count != 0) {
+                pairs += ((count / 2) * 2);
+                if (single == 0 && count % 2 == 1) {
+                    single = 1;
+                }
             }
         }
-        return single + 2 * pairs;
+        return single + pairs;
     }
 }
