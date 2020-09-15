@@ -8,7 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,10 +94,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test">
+  <component name="RunManager" selected="JUnit.DecodeWaysTest.test">
     <configuration name="FindShortestSubarrayToBeRemovedToMakeArraySorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FindShortestSubarrayToBeRemovedToMakeArraySorted" />
       <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DecodeWaysTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DecodeWaysTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,16 +127,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TargetNumberWithOperationsTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TargetNumberWithOperationsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TargetNumberWithOperationsTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,17 +152,17 @@
       <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.TargetNumberWithOperationsTest.test" />
       <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
       <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
+      <item itemvalue="JUnit.DecodeWaysTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DecodeWaysTest.test" />
         <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
         <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
         <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
         <item itemvalue="Java Scratch.Scratch (1)" />
-        <item itemvalue="JUnit.TargetNumberWithOperationsTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00249" summary="Add gotcha around using greedy to find min no of numbers required to reach n -- it only works for fibonacci and is not a generic solution. Tried on perfect squares, does not work. Generic solution is BFS.">
-      <created>1598794544823</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
-      <option name="project" value="LOCAL" />
-      <updated>1598794544823</updated>
     </task>
     <task id="LOCAL-00250" summary="Solve medium return string with valid parenthesis after removing min no of unbalanced brackets using stack&#10;&#10;Learnings -- Keep track of unbalanced brackets with their index. Reiterate the input string and add only those characters in the result whose index are not present in the unbalanced indices set.">
       <created>1598798173277</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600168140315</updated>
     </task>
-    <option name="localTasksCounter" value="298" />
+    <task id="LOCAL-00298" summary="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own.">
+      <created>1600175398093</created>
+      <option name="number" value="00298" />
+      <option name="presentableId" value="LOCAL-00298" />
+      <option name="project" value="LOCAL" />
+      <updated>1600175398093</updated>
+    </task>
+    <option name="localTasksCounter" value="299" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium compare two version numbers of the form 1.213.123.3 by comparing strings numerically. Care must be taken to remove leading zeroes before comparison.&#10;&#10;Learning -- Removal of leading zeroes." />
     <MESSAGE value="Solve medium find all disjoint group of friends by performing DFS from each friend and marking all the friends reachable as visited." />
     <MESSAGE value="Solve easy find sum of all root to leaf binary path by storing the current path as base2 to avoid storing the path in a list.&#10;&#10;Learnings -- Trick to avoid extra space was to directly store the current path as base2." />
     <MESSAGE value="Solve medium check if a 'O' inner node is able to connect with a border 'O'. Trick was to do DFS from the border nodes instead of the inner nodes. &#10;&#10;Learning -- In questions dealing with whether a list of source nodes can reach any target nodes, it's better to do DFS from target nodes and mark all reachable nodes." />
@@ -613,7 +612,8 @@
     <MESSAGE value="Update logic in find the length of the last word.&#10;&#10;Learnings -- When problem statement deals with finding the last something, its sometimes better to iterate from the end." />
     <MESSAGE value="Update approach in Generate unique bst that store values from 1 to n" />
     <MESSAGE value="Update approach in Generate unique bst that store values from 1 to n&#10;&#10;Learnings -- In BST problems, try to leverage lower and upper bound during recursion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update approach in Generate unique bst that store values from 1 to n&#10;&#10;Learnings -- In BST problems, try to leverage lower and upper bound during recursion." />
+    <MESSAGE value="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600168139727">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600179196962">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600168139727" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600179196962" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -715,38 +715,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1599937507563">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1600178059107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599937507563" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1599937507563">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1600178059107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599937507563" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1599937507563">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1600178059107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599937507563" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1599937507563">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1600178059107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599937507563" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1599937282941">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600178059107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599937282941" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1599937282941">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1600178059107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599937282941" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1599937282941">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1600178059107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599937282941" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1599937282941">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1600178059107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599937282941" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600168141690">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600175399129">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600168141690" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600175399128" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -827,18 +827,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600156318211" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1600016882764">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1600176299342">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600016882764" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600176299342" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1600025010576">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600025010576" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600169367255">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600179054144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600169367255" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600179054144" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
