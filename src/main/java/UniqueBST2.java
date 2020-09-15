@@ -30,7 +30,12 @@ import java.util.List;
  *    2     1         2                 3
  * </pre>
  */
-public class GenerateUniqueBST {
+public class UniqueBST2 {
+    /**
+     * Approach: Try to iteratively fix each node from 1 to n as root.
+     * Once a node is fixed, the left node can be iteratively fixed from 1 to i-1 and right node can be fixed from i+1 to n
+     * Once we have all the left and right nodes, we can create new nodes with value i and left and right pointer set to each unique combination of left & right nodes
+     */
     public List<TreeNode> generateTrees(int n) {
         if (n == 0) {
             return Arrays.asList();

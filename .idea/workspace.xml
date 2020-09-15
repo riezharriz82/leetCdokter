@@ -8,9 +8,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Update approach in Generate unique bst that store values from 1 to n">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LengthofLastWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LengthofLastWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CountUniqueBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UniqueBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GenerateUniqueBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UniqueBST2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CountUniqueBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CountUniqueBSTTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,11 +153,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
-      <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
-      <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
-      <item itemvalue="JUnit.TargetNumberWithOperationsTest.test" />
-      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Java Scratch.Scratch (1)" />
+      <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.TargetNumberWithOperationsTest.test" />
+      <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
+      <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
     </list>
     <recent_temporary>
       <list>
@@ -175,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00247" summary="Solve medium yet another subarray problem by sliding window. Maximise the sum by either picking the first or the last number&#10;&#10;Learning -- Google loves sliding window problem. This problem can be converted to a min sliding window sum problem.">
-      <created>1598742004638</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
-      <option name="project" value="LOCAL" />
-      <updated>1598742004639</updated>
     </task>
     <task id="LOCAL-00248" summary="Solve medium minimum no of fibonacci numbers required to reach sum k using BFS and greedy. Find the biggest fibonacci &lt;= k&#10;&#10;Learnings -- In case of large input constraints, think of greedy if can't allocate that much memory in DP solution.">
       <created>1598793993489</created>
@@ -519,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600101306428</updated>
     </task>
-    <option name="localTasksCounter" value="296" />
+    <task id="LOCAL-00296" summary="Update logic in find the length of the last word.&#10;&#10;Learnings -- When problem statement deals with finding the last something, its sometimes better to iterate from the end.">
+      <created>1600156902330</created>
+      <option name="number" value="00296" />
+      <option name="presentableId" value="LOCAL-00296" />
+      <option name="project" value="LOCAL" />
+      <updated>1600156902330</updated>
+    </task>
+    <option name="localTasksCounter" value="297" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,8 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium jump game, find whether it's possible to reach the end from start provided we can hop to only specific indices.&#10;&#10;Learning -- Was able to solve the problem in O(n^2) using simple bottom up DP. Linear way of solving would be to keep track of the maximum index reachable. If maximum index &gt;= last index, we got ourselves a winner." />
-    <MESSAGE value="Solve easy word pattern, similar to finding whether two strings are isomorphic or not. &#10;&#10;Learnings -- Use two hashmaps to keep track of source to target mapping and vice versa." />
     <MESSAGE value="Solve easy find whether a string is rotated version of another string&#10;&#10;Learnings -- contains() time complexity is not linear." />
     <MESSAGE value="Solve medium compare two version numbers of the form 1.213.123.3 by comparing strings numerically. Care must be taken to remove leading zeroes before comparison.&#10;&#10;Learning -- Removal of leading zeroes." />
     <MESSAGE value="Solve medium find all disjoint group of friends by performing DFS from each friend and marking all the friends reachable as visited." />
@@ -614,7 +614,9 @@
     <MESSAGE value="Solve medium find min no of steps required to reach a target state of the lock given that some states are banned by using BFS&#10;&#10;Learnings -- Better to mark the node as visited before adding to the queue to avoid duplicates in the same level. Got TLE during my first implementation because of this mistake" />
     <MESSAGE value="Add another way of solving find maximum score after traversing two arrays by visualizing the problem as graph.&#10;&#10;Learnings -- Where there are choices to be made visualize it as graph." />
     <MESSAGE value="Solve medium find maximum sum of two non overlapping subarrays of L or M size, given that L sized subarray can occur before or after the M sized subarray&#10;&#10;Learnings -- Leveraged the fact that the problem is asking for max non-overlapping sum which can be handled by tracking max subarray sum from left and right. Since the problem asked for specific sized subarray sum, need to calculate the sum by sliding window approach." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find maximum sum of two non overlapping subarrays of L or M size, given that L sized subarray can occur before or after the M sized subarray&#10;&#10;Learnings -- Leveraged the fact that the problem is asking for max non-overlapping sum which can be handled by tracking max subarray sum from left and right. Since the problem asked for specific sized subarray sum, need to calculate the sum by sliding window approach." />
+    <MESSAGE value="Update logic in find the length of the last word.&#10;&#10;Learnings -- When problem statement deals with finding the last something, its sometimes better to iterate from the end." />
+    <MESSAGE value="Update approach in Generate unique bst that store values from 1 to n" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update approach in Generate unique bst that store values from 1 to n" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -684,10 +686,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="743" y="369" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609092731" />
-    <state x="504" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597507849061">
+    <state x="504" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600159733361">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="504" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597507849061" />
+    <state x="504" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600159733361" />
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594384167063">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -700,18 +702,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600101305724">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600168069946">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600101305724" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600168069946" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1600101496838">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1600167759683">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600101496838" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600167759683" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +794,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600101307570">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600156904236">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600101307570" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600156904236" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -836,10 +838,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600025010576" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600156545568">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600159723761">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600156545568" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600159723761" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,12 +972,12 @@
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountUniqueBST.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/UniqueBST.java</url>
           <line>35</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CountUniqueBST.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/UniqueBST.java</url>
           <line>37</line>
           <option name="timeStamp" value="84" />
         </line-breakpoint>

@@ -15,7 +15,7 @@
  *    2     1         2                 3
  * </pre>
  */
-public class CountUniqueBST {
+public class UniqueBST {
     //Consider n = 5 {1,2,3,4,5} To build BST, you need to iteratively pick each node as root and check the no of ways you can create bst from left
     //subarray * no of ways to create bst from right subarray
     // if you fix 1, right subarray is {2,3,4,5} which is similar to {1,2,3,4} ie. dp[4]
