@@ -150,11 +150,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
-      <item itemvalue="JUnit.DecodeWaysTest.test" />
-      <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
-      <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
-      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Java Scratch.Scratch (1)" />
+      <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
+      <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
+      <item itemvalue="JUnit.DecodeWaysTest.test" />
     </list>
     <recent_temporary>
       <list>
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00254" summary="Solve easy check whether a string is palindrome or not after deleting at most one character &#10;&#10;Learning -- Recursion is fun. Tried both options, in case of mismatch, ignore the begin character and check if remaining string is palindrome OR ignore the end character">
-      <created>1598890790961</created>
-      <option name="number" value="00254" />
-      <option name="presentableId" value="LOCAL-00254" />
-      <option name="project" value="LOCAL" />
-      <updated>1598890790962</updated>
     </task>
     <task id="LOCAL-00255" summary="Solve easy generate largest time possible from given digits using recursion with backtracking&#10;&#10;Learning -- Initially I implemented greedy solution in which I tried to place the largest possible candidate at first digit and so on, which failed for {2,0,6,6}&#10;Then I moved on to recursion + backtracking. Generally all problems in which we have to generate some valid combinations are solved via recursion + backtracking.">
       <created>1598951670607</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600295103152</updated>
     </task>
-    <option name="localTasksCounter" value="303" />
+    <task id="LOCAL-00303" summary="Solve medium find length of the longest mountain subarray where array is first increasing and then decreasing by solving it similar to a non-overlapping subarray problem&#10;&#10;Learnings -- Mountain problems can be broken down to finding the increasing part and decreasing part separately.">
+      <created>1600329694434</created>
+      <option name="number" value="00303" />
+      <option name="presentableId" value="LOCAL-00303" />
+      <option name="project" value="LOCAL" />
+      <updated>1600329694434</updated>
+    </task>
+    <option name="localTasksCounter" value="304" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add TODO to solve FriendGroups using UnionFind algorithm." />
     <MESSAGE value="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse." />
     <MESSAGE value="Solve easy check whether a matrix is valid toeplitz matrix or not i.e whether all the elements present in all the left diagonals are equal or not.&#10;&#10;In my initial approach I did it by storing the leader of all the left diagonals. All the elements belonging to the same left diagonal has same value of (i-j).&#10;&#10;But we don't need to go all this way, we can just iterate the matrix and compare the top left diagonal element during traversal." />
     <MESSAGE value="Solve easy find all unique rotation groups of a set of strings by keeping track of unique rotation group and checking if current word is part of existing rotation group.&#10;&#10;Learnings -- How to check rotations of a string." />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve medium find max length subarray with equal number of ones and zeroes by converting 0 to -1 and keeping track of prefix sum.&#10;&#10;Learnings -- In case of problems dealing with equal no of partitions and there are only two variants, try to convert one variant into negative of another." />
     <MESSAGE value="Fix code and update logic in find the length of longest palindrome that can be made from the characters present in the input string." />
     <MESSAGE value="Solve medium but poorly worded problem, find total time spent by function during execution of a normal program&#10;&#10;Learnings -- Function execution can be modelled as stack. Need to tread highly disliked problems in leetcode carefully. Don't start coding them as most likely it will be based on wrong assumption." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but poorly worded problem, find total time spent by function during execution of a normal program&#10;&#10;Learnings -- Function execution can be modelled as stack. Need to tread highly disliked problems in leetcode carefully. Don't start coding them as most likely it will be based on wrong assumption." />
+    <MESSAGE value="Solve medium find length of the longest mountain subarray where array is first increasing and then decreasing by solving it similar to a non-overlapping subarray problem&#10;&#10;Learnings -- Mountain problems can be broken down to finding the increasing part and decreasing part separately." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find length of the longest mountain subarray where array is first increasing and then decreasing by solving it similar to a non-overlapping subarray problem&#10;&#10;Learnings -- Mountain problems can be broken down to finding the increasing part and decreasing part separately." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600295102541">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600329693840">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600295102541" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600329693840" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600295464502">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600329695827">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600295464502" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600329695827" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -835,10 +835,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600025010576" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600296169372">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600330431216">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600296169372" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330431216" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
