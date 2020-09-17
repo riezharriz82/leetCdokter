@@ -73,7 +73,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -150,11 +150,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
-      <item itemvalue="Java Scratch.Scratch (1)" />
-      <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
-      <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
       <item itemvalue="JUnit.DecodeWaysTest.test" />
+      <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
+      <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
+      <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="Java Scratch.Scratch (1)" />
     </list>
     <recent_temporary>
       <list>
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00253" summary="Solve medium find minimum no of steps required to transform one word to another provided we can only replace one character in the word and the transformation should be valid ie. the transformed word should exist in the dictionary&#10;&#10;Learning -- During my original implementation, I chickened out thinking that the implementation is too complex for this medium level of problem and I might be going in the wrong direction but I was wrong. Although it was a bit slow than pre-processing all the dictionary, it was still a valid solution.&#10;&#10;If you are transforming a string by replacing some characters, instead of using substring to concatenate left and right part, get the charArray() and then replace the characters at the required indices directly. Cleaner to implement.">
-      <created>1598821969495</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
-      <option name="project" value="LOCAL" />
-      <updated>1598821969495</updated>
     </task>
     <task id="LOCAL-00254" summary="Solve easy check whether a string is palindrome or not after deleting at most one character &#10;&#10;Learning -- Recursion is fun. Tried both options, in case of mismatch, ignore the begin character and check if remaining string is palindrome OR ignore the end character">
       <created>1598890790961</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600183919114</updated>
     </task>
-    <option name="localTasksCounter" value="302" />
+    <task id="LOCAL-00302" summary="Solve medium but poorly worded problem, find total time spent by function during execution of a normal program&#10;&#10;Learnings -- Function execution can be modelled as stack. Need to tread highly disliked problems in leetcode carefully. Don't start coding them as most likely it will be based on wrong assumption.">
+      <created>1600295103152</created>
+      <option name="number" value="00302" />
+      <option name="presentableId" value="LOCAL-00302" />
+      <option name="project" value="LOCAL" />
+      <updated>1600295103152</updated>
+    </task>
+    <option name="localTasksCounter" value="303" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy decode a run length encoded string by parsing string&#10;&#10;Learnings -- Whenever a string has numbers in it and you are parsing it, remember that a number can have multiple digits.&#10;(During my initial implementation I forgot about it and got WA)&#10;A String can be converted into integer while traversing the string without storing the digits in a list" />
     <MESSAGE value="Add TODO to solve FriendGroups using UnionFind algorithm." />
     <MESSAGE value="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse." />
     <MESSAGE value="Solve easy check whether a matrix is valid toeplitz matrix or not i.e whether all the elements present in all the left diagonals are equal or not.&#10;&#10;In my initial approach I did it by storing the leader of all the left diagonals. All the elements belonging to the same left diagonal has same value of (i-j).&#10;&#10;But we don't need to go all this way, we can just iterate the matrix and compare the top left diagonal element during traversal." />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve medium find no of ways to decode a number given the mapping as a-&gt;1, b-&gt;2 ... z-&gt;26&#10;&#10;Learnings -- Was able to figure out the recurrence on my own. The base condition of the recurrence is similar to KnightDialler problem." />
     <MESSAGE value="Solve medium find max length subarray with equal number of ones and zeroes by converting 0 to -1 and keeping track of prefix sum.&#10;&#10;Learnings -- In case of problems dealing with equal no of partitions and there are only two variants, try to convert one variant into negative of another." />
     <MESSAGE value="Fix code and update logic in find the length of longest palindrome that can be made from the characters present in the input string." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix code and update logic in find the length of longest palindrome that can be made from the characters present in the input string." />
+    <MESSAGE value="Solve medium but poorly worded problem, find total time spent by function during execution of a normal program&#10;&#10;Learnings -- Function execution can be modelled as stack. Need to tread highly disliked problems in leetcode carefully. Don't start coding them as most likely it will be based on wrong assumption." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but poorly worded problem, find total time spent by function during execution of a normal program&#10;&#10;Learnings -- Function execution can be modelled as stack. Need to tread highly disliked problems in leetcode carefully. Don't start coding them as most likely it will be based on wrong assumption." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -667,10 +667,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451490581" />
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598568130695">
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600328299277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598568130695" />
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600328299277" />
     <state x="820" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597609083441">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -699,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600183918591">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600295102541">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600183918591" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600295102541" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -715,38 +715,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1600283280649">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1600328304553">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1600283280649" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1600283280649">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304553" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1600328304552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1600283280649" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1600283280649">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304552" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1600328304552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1600283280649" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1600283280649">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304552" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1600328304552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1600283280649" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600178059107">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304552" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1600178059107">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304543" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1600178059107">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304543" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1600178059107">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304543" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1600178059107" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304543" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -775,10 +775,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="695" y="245" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598184917635" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1599061696994">
+    <state x="668" y="259" key="SettingsEditor" timestamp="1600296280548">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1599061696994" />
+    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600296280548" />
     <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1599055538726">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600183920344">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600295464502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600183920344" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600295464502" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -835,10 +835,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600025010576" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600182846012">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600296169372">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600182846012" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600296169372" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
