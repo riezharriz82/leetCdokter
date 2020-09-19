@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00258" summary="Solve medium KnightDialler problem, find total no of valid moves possible of required length in a dial pad&#10;&#10;Learning -- As this problem asked for total no of moves, recursion was the way to go. Added memoization to fasten it up.&#10;&#10;Thought of time complexity of the recursion problem with and without memoization, disadvantages of top down recursion.">
-      <created>1598976358392</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
-      <option name="project" value="LOCAL" />
-      <updated>1598976358392</updated>
-    </task>
     <task id="LOCAL-00259" summary="Update comment in ContainsDuplicate3, very tricky problem&#10;&#10;Tried checking the diff between the smallest and second smallest element, whether the diff lies within maxDiff but it does not work because maybe second smallest and third smallest elements diff were within range.&#10;&#10;Hence the best thing would be to just iterate over all the input elements and check whether any element is present in window &gt;= (current element - maxDiff)">
       <created>1599056242559</created>
       <option name="number" value="00259" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600342710135</updated>
     </task>
-    <option name="localTasksCounter" value="307" />
+    <task id="LOCAL-00307" summary="Solve medium find all numbers whose digits are sequential with difference of 1 and lying within the provided range by using recursion.&#10;&#10;Learnings -- Leveraged two prior learnings, while dealing with integers, we can generate the number by just multiplying by 10 and adding the next digit. It made the code very short.&#10;Second leveraged learning was to use recursion to generate all possible numbers.">
+      <created>1600525027645</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1600525027646</updated>
+    </task>
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update solution for RectangleOverlap to include awice@ trick to find whether two line segments intersect.&#10;&#10;awice@ is legend." />
     <MESSAGE value="Solve find max product subarray by keeping track of the max prefix / suffix subarray product.&#10;&#10;Learnings -- During my thought process of solving the problem, I incorrectly calculated that the max product subarray can be a middle subarray, otherwise I would have been on to something :(&#10;Trick was to understand that max product subarray can only start from the front or from the end. Take some examples of array with 1 -ve, 2 -ve and 3 -ve and you will understand why." />
     <MESSAGE value="Solve medium find whether one string can be stretched to form another string, given that you can stretch a character for a min of 3 repetitions.&#10;&#10;Learnings -- Create a Run length encoding of a string by comparing previous character with current character." />
     <MESSAGE value="Finding max no of non overlapping subarrays with target sum == Find max no of non overlapping intervals&#10;&#10;Use a greedy approach, fix first and check if another one can be added." />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve easy find shortest distance to a target character in a string by keeping track of the distance from the target character from left and right." />
     <MESSAGE value="Solve medium evaluate a postfix notation by using stack.&#10;&#10;Learnings -- Postfix notation does not have any concept of brackets. So when you need to evaluate an infix expression, you can convert into postfix and then evaluate it." />
     <MESSAGE value="Solve easy find the last stone weight if you smash the two largest stones present and reduce it to difference in weight between them using priority queue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the last stone weight if you smash the two largest stones present and reduce it to difference in weight between them using priority queue." />
+    <MESSAGE value="Solve medium find all numbers whose digits are sequential with difference of 1 and lying within the provided range by using recursion.&#10;&#10;Learnings -- Leveraged two prior learnings, while dealing with integers, we can generate the number by just multiplying by 10 and adding the next digit. It made the code very short.&#10;Second leveraged learning was to use recursion to generate all possible numbers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all numbers whose digits are sequential with difference of 1 and lying within the provided range by using recursion.&#10;&#10;Learnings -- Leveraged two prior learnings, while dealing with integers, we can generate the number by just multiplying by 10 and adding the next digit. It made the code very short.&#10;Second leveraged learning was to use recursion to generate all possible numbers." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600342709645">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600525027024">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600342709645" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600525027024" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600342711865">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600525029258">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600342711865" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600525029258" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -835,10 +835,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600511557913">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600540323724">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600511557913" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600540323724" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
