@@ -23,7 +23,7 @@ public class LargestRectangleInHistogram {
                 int curHeight = heights[poppedIndex];
                 //this is the most important part
                 //if stack is empty than height[poppedIndex] is smaller than all the previous indices e.g. {5,4,3,2,6}
-                //so the width should be poppedIndex
+                //so the width should be the currentIndex e.g. {10,8,5}
                 // otherwise width should be the index of smaller element on right side - index of smaller element on left side (which is top of the stack) - 1
                 // -1 is because we need to exclude the index of smaller element on right side as well
                 // index of smaller element on left side is the current top because we are pushing elements to the stack only if they are >= top of the stack
@@ -36,6 +36,7 @@ public class LargestRectangleInHistogram {
             //repeat the same process as above
             int poppedIndex = stack.pop();
             int curHeight = heights[poppedIndex];
+            //here index == length of the array which provides the rightmost boundary
             int curWidth = stack.isEmpty() ? index : index - stack.peek() - 1;
             int curArea = curHeight * curWidth;
             maxArea = Math.max(curArea, maxArea);

@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LargestRectangleInHistogram.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00260" summary="Solve easy but tricky remove nodes whose values are outside a given range in the provided BST&#10;&#10;Learnings -- I solved the problem on my own but it took time. In case of removal of nodes, it makes sense to directly recur in the appropriate half of subtree and return the first valid node">
-      <created>1599057697913</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
-      <option name="project" value="LOCAL" />
-      <updated>1599057697913</updated>
     </task>
     <task id="LOCAL-00261" summary="Solve medium find total no of ways to make total amount of sum if a coin can be used multiple amount of times using memoization and bottom up DP&#10;&#10;Learnings -- Bottom up DP theory : If my current coin is 10 and I can reach 8 in 5 different ways, this enables me to reach 18 in +5 different ways too.">
       <created>1599065074008</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600541188129</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="Solve medium but hard find sum of minimum of all subarray by keeping track of contributions of each index&#10;&#10;Learnings -- As this problem talked about finding minimum in a subarray, monotonic stack should come into mind.">
+      <created>1600543413669</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
+      <option name="project" value="LOCAL" />
+      <updated>1600543413669</updated>
+    </task>
+    <option name="localTasksCounter" value="310" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether one string can be stretched to form another string, given that you can stretch a character for a min of 3 repetitions.&#10;&#10;Learnings -- Create a Run length encoding of a string by comparing previous character with current character." />
     <MESSAGE value="Finding max no of non overlapping subarrays with target sum == Find max no of non overlapping intervals&#10;&#10;Use a greedy approach, fix first and check if another one can be added." />
     <MESSAGE value="Solve find min length of two non overlapping subarray sum that equals target by considering subarrays from start (left) and from end (right). &#10;End result would be the min(left[i], right[i+1] for all 0 &lt;= i &lt; n&#10;&#10;Learnings -- Dealing with non overlapping subarray problems" />
     <MESSAGE value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
@@ -613,7 +613,8 @@
     <MESSAGE value="Solve easy find the last stone weight if you smash the two largest stones present and reduce it to difference in weight between them using priority queue." />
     <MESSAGE value="Solve medium find all numbers whose digits are sequential with difference of 1 and lying within the provided range by using recursion.&#10;&#10;Learnings -- Leveraged two prior learnings, while dealing with integers, we can generate the number by just multiplying by 10 and adding the next digit. It made the code very short.&#10;Second leveraged learning was to use recursion to generate all possible numbers." />
     <MESSAGE value="Solve easy but tricky find sum of all odd length subarray by finding how many times a number occurs in an odd length subarray using maths.&#10;&#10;Learnings -- Maths is hard. Need to find out how many subarrays are possible with ith index by considering some elements from left and right subarray. This is similar to the way we solved count no of subarrays with odd sum." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy but tricky find sum of all odd length subarray by finding how many times a number occurs in an odd length subarray using maths.&#10;&#10;Learnings -- Maths is hard. Need to find out how many subarrays are possible with ith index by considering some elements from left and right subarray. This is similar to the way we solved count no of subarrays with odd sum." />
+    <MESSAGE value="Solve medium but hard find sum of minimum of all subarray by keeping track of contributions of each index&#10;&#10;Learnings -- As this problem talked about finding minimum in a subarray, monotonic stack should come into mind." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but hard find sum of minimum of all subarray by keeping track of contributions of each index&#10;&#10;Learnings -- As this problem talked about finding minimum in a subarray, monotonic stack should come into mind." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600541187592">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600543413178">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600541187592" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600543413178" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +792,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600541189577">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600543414863">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600541189577" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600543414863" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -835,10 +836,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600543114548">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600544680470">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600543114548" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600544680470" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
