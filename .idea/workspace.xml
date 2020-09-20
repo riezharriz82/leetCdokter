@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SubarraySumEqualsK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SubarraySumEqualsK.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00263" summary="Update problem statement in CoinChange2">
-      <created>1599081624111</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
-      <option name="project" value="LOCAL" />
-      <updated>1599081624111</updated>
     </task>
     <task id="LOCAL-00264" summary="Solve medium find total no of ways to reach end if their are obstacles in grid using bottom up DP&#10;&#10;Learnings -- Trick was to correctly generate the base case of first row and first column and to reset the count if their is an obstacle.">
       <created>1599163353480</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600549204635</updated>
     </task>
-    <option name="localTasksCounter" value="312" />
+    <task id="LOCAL-00312" summary="Solve medium but hard find 132 pattern in array i.e find three numbers such that a[i] &lt; a[k] &lt; a[j] and i &lt; j &lt; k using monotonic stack&#10;&#10;Learnings -- I solved this problem on my own, took a couple of hours but went through couple of different approaches and then finalized this. The crux of the problem was to fix i and then look for a valid k for each j. a[i] can be the smallest number on the left of a[j] and a[k] can be the largest number on the right smaller than a[j]. Once we find all three, check if they make 132 pattern.">
+      <created>1600611074192</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
+      <option name="project" value="LOCAL" />
+      <updated>1600611074192</updated>
+    </task>
+    <option name="localTasksCounter" value="313" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
     <MESSAGE value="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end." />
     <MESSAGE value="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement." />
     <MESSAGE value="Solve medium find longest word in dictionary that can be made from the input string by deleting some characters from input.&#10;&#10;Learnings -- Check whether one string is a subsequence of another string." />
@@ -613,7 +613,8 @@
     <MESSAGE value="Solve medium but hard find sum of minimum of all subarray by keeping track of contributions of each index&#10;&#10;Learnings -- As this problem talked about finding minimum in a subarray, monotonic stack should come into mind." />
     <MESSAGE value="Update approach in LargestRectangleInHistogram" />
     <MESSAGE value="Solve medium find the number of consecutive days where current stock price &gt;= previous day's stock price using monotonic stack&#10;&#10;Learnings -- Leveraged previous learnings of using monotonic stack to deal with problems related to finding next greater/smaller element." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the number of consecutive days where current stock price &gt;= previous day's stock price using monotonic stack&#10;&#10;Learnings -- Leveraged previous learnings of using monotonic stack to deal with problems related to finding next greater/smaller element." />
+    <MESSAGE value="Solve medium but hard find 132 pattern in array i.e find three numbers such that a[i] &lt; a[k] &lt; a[j] and i &lt; j &lt; k using monotonic stack&#10;&#10;Learnings -- I solved this problem on my own, took a couple of hours but went through couple of different approaches and then finalized this. The crux of the problem was to fix i and then look for a valid k for each j. a[i] can be the smallest number on the left of a[j] and a[k] can be the largest number on the right smaller than a[j]. Once we find all three, check if they make 132 pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but hard find 132 pattern in array i.e find three numbers such that a[i] &lt; a[k] &lt; a[j] and i &lt; j &lt; k using monotonic stack&#10;&#10;Learnings -- I solved this problem on my own, took a couple of hours but went through couple of different approaches and then finalized this. The crux of the problem was to fix i and then look for a valid k for each j. a[i] can be the smallest number on the left of a[j] and a[k] can be the largest number on the right smaller than a[j]. Once we find all three, check if they make 132 pattern." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600549204135">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600611073545">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600549204135" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600611073545" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +792,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600549207099">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600611075768">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600549207099" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600611075768" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -835,10 +836,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600547470501">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600611512596">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600547470501" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600611512596" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
