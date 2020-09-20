@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00262" summary="Solve medium change making problem, find min no of coins required to make sum using top-down and bottom up approach&#10;&#10;Learnings -- Be careful when converting recursion to top down memoization and make sure that it's actually top down, during my initial implementation I implemented it wrong. I started from 0 till max amount, which led to incorrect results being stored in intermediate dp.&#10;&#10;Although I solved up the bottom up DP quickly, top down DP became tricky.">
-      <created>1599078999184</created>
-      <option name="number" value="00262" />
-      <option name="presentableId" value="LOCAL-00262" />
-      <option name="project" value="LOCAL" />
-      <updated>1599078999184</updated>
-    </task>
     <task id="LOCAL-00263" summary="Update problem statement in CoinChange2">
       <created>1599081624111</created>
       <option name="number" value="00263" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600545009612</updated>
     </task>
-    <option name="localTasksCounter" value="311" />
+    <task id="LOCAL-00311" summary="Solve medium find the number of consecutive days where current stock price &gt;= previous day's stock price using monotonic stack&#10;&#10;Learnings -- Leveraged previous learnings of using monotonic stack to deal with problems related to finding next greater/smaller element.">
+      <created>1600549204635</created>
+      <option name="number" value="00311" />
+      <option name="presentableId" value="LOCAL-00311" />
+      <option name="project" value="LOCAL" />
+      <updated>1600549204635</updated>
+    </task>
+    <option name="localTasksCounter" value="312" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve find min length of two non overlapping subarray sum that equals target by considering subarrays from start (left) and from end (right). &#10;End result would be the min(left[i], right[i+1] for all 0 &lt;= i &lt; n&#10;&#10;Learnings -- Dealing with non overlapping subarray problems" />
     <MESSAGE value="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further." />
     <MESSAGE value="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end." />
     <MESSAGE value="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement." />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve easy but tricky find sum of all odd length subarray by finding how many times a number occurs in an odd length subarray using maths.&#10;&#10;Learnings -- Maths is hard. Need to find out how many subarrays are possible with ith index by considering some elements from left and right subarray. This is similar to the way we solved count no of subarrays with odd sum." />
     <MESSAGE value="Solve medium but hard find sum of minimum of all subarray by keeping track of contributions of each index&#10;&#10;Learnings -- As this problem talked about finding minimum in a subarray, monotonic stack should come into mind." />
     <MESSAGE value="Update approach in LargestRectangleInHistogram" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update approach in LargestRectangleInHistogram" />
+    <MESSAGE value="Solve medium find the number of consecutive days where current stock price &gt;= previous day's stock price using monotonic stack&#10;&#10;Learnings -- Leveraged previous learnings of using monotonic stack to deal with problems related to finding next greater/smaller element." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the number of consecutive days where current stock price &gt;= previous day's stock price using monotonic stack&#10;&#10;Learnings -- Leveraged previous learnings of using monotonic stack to deal with problems related to finding next greater/smaller element." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600545009092">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600549204135">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600545009092" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600549204135" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600545010723">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600549207099">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600545010723" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600549207099" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -823,10 +823,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600036746944" />
-    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600183617169">
+    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600555620013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600183617169" />
+    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600555620013" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1600176299342">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
