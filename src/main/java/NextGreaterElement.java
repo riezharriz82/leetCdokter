@@ -10,33 +10,20 @@ import java.util.Deque;
  * your output should be <pre> [1, 1, 4, 2, 1, 1, 0, 0] </pre>
  */
 public class NextGreaterElement {
-    public int[] dailyTemperaturesUsingCustomStack(int[] T) {
-        int[] stack = new int[T.length];
-        int top = -1;
-        int[] res = new int[T.length];
-        for (int i = 0; i < T.length; i++) {
-            while (top > -1 && T[i] > T[stack[top]]) {
-                res[stack[top]] = i - stack[top];
-                top--;
-            }
-            stack[++top] = i;
-        }
-        return res;
-    }
-
+    /**
+     * Approach: Used monotonic stack
+     */
     public int[] dailyTemperatures(int[] T) {
         int[] res = new int[T.length];
-
         //ArrayDeque should be preferred over the Stack implementation as Stack is thread-safe
-        Deque<Integer> stack = new ArrayDeque<>(); //store the indexes in the stack, not the actual value
+        Deque<Integer> stack = new ArrayDeque<>(); //monotonic decreasing stack of indices
         for (int i = 0; i < T.length; i++) {
-            while (!stack.isEmpty() && T[i] > T[stack.peek()]) {
-                Integer poppedIndex = stack.pop();
+            while (!stack.isEmpty() && T[i] > T[stack.peek()]) { //found a warmer temperature, update the result for all the days with cooler temperature
+                int poppedIndex = stack.pop();
                 res[poppedIndex] = i - poppedIndex;
             }
             stack.push(i);
         }
-
         return res;
     }
 }
