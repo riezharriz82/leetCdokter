@@ -9,7 +9,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MakeSumDivisibleByP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MakeSumDivisibleByP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00267" summary="Solve medium but tricky problem to implement LRU cache using HashMap and DoublyLinkedList using dummy head and tail node&#10;&#10;Learnings --&#10;1. Dummy nodes are useful in all cases in which we need to add/remove elements from linked list&#10;2. During my initial implementation I got stuck while implementing my own hashMap, I didn't think of the fact that I could use the inbuilt hashMap">
-      <created>1599254126941</created>
-      <option name="number" value="00267" />
-      <option name="presentableId" value="LOCAL-00267" />
-      <option name="project" value="LOCAL" />
-      <updated>1599254126941</updated>
     </task>
     <task id="LOCAL-00268" summary="Solve medium find min cost to delete characters to avoid repeating characters &#10;&#10;The trick was to understand that we need to keep only the character with the maximum cost, rest all needs to be deleted.">
       <created>1599423208650</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600616118714</updated>
     </task>
-    <option name="localTasksCounter" value="316" />
+    <task id="LOCAL-00316" summary="Solve medium but tricky problem related to finding all subarray whose sums are divisible by k. Input can contain -ve number.&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go.">
+      <created>1600629658927</created>
+      <option name="number" value="00316" />
+      <option name="presentableId" value="LOCAL-00316" />
+      <option name="project" value="LOCAL" />
+      <updated>1600629658927</updated>
+    </task>
+    <option name="localTasksCounter" value="317" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium HouseRobber3 where each node in tree has two options, either it can be robbed or can't be.&#10;&#10;Learnings -- In case of inclusion/exclusion question, care needs to be taken for the exclusion part. If a node can be excluded, the result of that would the max of if next node is excluded or next node is included. That's the trick. I forgot to consider that during my first implementation. Got WA. Fixed it quickly." />
     <MESSAGE value="Solve medium find min no of steps required to reach a target state of the lock given that some states are banned by using BFS&#10;&#10;Learnings -- Better to mark the node as visited before adding to the queue to avoid duplicates in the same level. Got TLE during my first implementation because of this mistake" />
     <MESSAGE value="Add another way of solving find maximum score after traversing two arrays by visualizing the problem as graph.&#10;&#10;Learnings -- Where there are choices to be made visualize it as graph." />
     <MESSAGE value="Solve medium find maximum sum of two non overlapping subarrays of L or M size, given that L sized subarray can occur before or after the M sized subarray&#10;&#10;Learnings -- Leveraged the fact that the problem is asking for max non-overlapping sum which can be handled by tracking max subarray sum from left and right. Since the problem asked for specific sized subarray sum, need to calculate the sum by sliding window approach." />
@@ -614,7 +612,8 @@
     <MESSAGE value="Simplify code in SubarraySumEqualsK" />
     <MESSAGE value="Add approach in finding NextGreaterElement" />
     <MESSAGE value="Solve medium but tricky problem related to finding the smallest subarray to be removed to make subarray divisible by p&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but tricky problem related to finding the smallest subarray to be removed to make subarray divisible by p&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
+    <MESSAGE value="Solve medium but tricky problem related to finding all subarray whose sums are divisible by k. Input can contain -ve number.&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but tricky problem related to finding all subarray whose sums are divisible by k. Input can contain -ve number.&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -700,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600616118219">
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600629658451">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600616118219" />
+    <state x="292" y="32" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600629658451" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600616119855">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600629690784">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600616119855" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600629690784" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

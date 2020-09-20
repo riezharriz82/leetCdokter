@@ -38,6 +38,8 @@ public class MakeSumDivisibleByP {
      * the highlighted subarray sum is 43 % 26 = 17
      * if we lookup for (10 - 17) we wont find anything
      * so we need to lookup for (10-17+26) = 19
+     * <p>
+     * {@link SubarraySumsDivisibleByK} for related subarray sum + divisibility problem
      */
     public int minSubarray(int[] nums, int p) {
         int target = 0;
@@ -53,7 +55,8 @@ public class MakeSumDivisibleByP {
             for (int i = 0; i < nums.length; i++) {
                 curSum = (curSum + nums[i]) % p; //curSum can only be positive because input array contains only +ve numbers
                 //if it had contained negative numbers, need to make it positive by doing (curSum + p)
-                if (map.containsKey((curSum - target + p) % p)) { //to handle wrapping around due to modulo, look in the comment
+                if (map.containsKey((curSum - target + p) % p)) { //When comparing modulo's negative number should be made +ve
+                    //this is similar to the way we handled mod sum in SubarraySumsDivisibleByK
                     minLength = Math.min(minLength, i - map.get((curSum - target + p) % p));
                 }
                 map.put(curSum, i);
