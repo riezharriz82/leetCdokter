@@ -51,7 +51,8 @@ public class MakeSumDivisibleByP {
             map.put(0, -1);
             int curSum = 0, minLength = Integer.MAX_VALUE;
             for (int i = 0; i < nums.length; i++) {
-                curSum = (curSum + nums[i]) % p;
+                curSum = (curSum + nums[i]) % p; //curSum can only be positive because input array contains only +ve numbers
+                //if it had contained negative numbers, need to make it positive by doing (curSum + p)
                 if (map.containsKey((curSum - target + p) % p)) { //to handle wrapping around due to modulo, look in the comment
                     minLength = Math.min(minLength, i - map.get((curSum - target + p) % p));
                 }
