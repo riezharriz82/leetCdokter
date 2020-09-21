@@ -26,6 +26,8 @@ public class UniquePaths3 {
      * If yes, increment the result.
      * If no, backtrack
      * If no result found, still backtrack
+     * Time Complexity: Each grid has 3 neighbours, (one parent) so 3^n
+     * We can reach each grid from 4 parents, so total 4*(3^n)
      */
     public int uniquePathsIII(int[][] grid) {
         int m = grid.length;
