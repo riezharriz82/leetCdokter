@@ -26,6 +26,9 @@ public class SubarraySumsDivisibleByK {
      * a%k - b%k = 0
      * a%k = b%k
      * prefix sum should get repeated
+     * <p>
+     * if the modsum is repeated, this means the subarray between the repeated modsum has sum = 0, since this is modsum, if modsum is 0 then this
+     * subarray is divisible by k
      */
     public int subarraysDivByK(int[] A, int K) {
         Map<Integer, Integer> map = new HashMap<>();
