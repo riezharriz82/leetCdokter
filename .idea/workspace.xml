@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SubarraySumsDivisibleByK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SubarraySumsDivisibleByK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/MeetingsRoom2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/MeetingsRoom2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,20 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00269" summary="Solve BinarySearch.io google easy find whether a tree is a subtree in another tree. Also any node of that tree can be optionally flipped. Very similar to FlipBinaryTrees of LeetCode.">
-      <created>1599426744551</created>
-      <option name="number" value="00269" />
-      <option name="presentableId" value="LOCAL-00269" />
-      <option name="project" value="LOCAL" />
-      <updated>1599426744551</updated>
-    </task>
-    <task id="LOCAL-00270" summary="Solved medium BinarySearch.io count no of ways to partition a binary tree such that both the partitions contains either 0's or 1's&#10;&#10;Learning -- Partition problems have a pattern. First iterate the entire tree to get total no of 0's and 1's. Then do a postorder traversal and let parent node decide whether to cut edge of left/right subtree. Here the decision is made if the subtree contains all the 1's and no 0's and vice versa.">
-      <created>1599429370530</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
-      <option name="project" value="LOCAL" />
-      <updated>1599429370530</updated>
     </task>
     <task id="LOCAL-00271" summary="Solve medium jump game, find whether it's possible to reach the end from start provided we can hop to only specific indices.&#10;&#10;Learning -- Was able to solve the problem in O(n^2) using simple bottom up DP. Linear way of solving would be to keep track of the maximum index reachable. If maximum index &gt;= last index, we got ourselves a winner.">
       <created>1599431090761</created>
@@ -519,7 +505,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600630245508</updated>
     </task>
-    <option name="localTasksCounter" value="318" />
+    <task id="LOCAL-00318" summary="Update logic behind choosing same modsum in SubarraySumsDivisibleByK">
+      <created>1600700948582</created>
+      <option name="number" value="00318" />
+      <option name="presentableId" value="LOCAL-00318" />
+      <option name="project" value="LOCAL" />
+      <updated>1600700948583</updated>
+    </task>
+    <task id="LOCAL-00319" summary="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP.">
+      <created>1600701103264</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
+      <option name="project" value="LOCAL" />
+      <updated>1600701103264</updated>
+    </task>
+    <option name="localTasksCounter" value="320" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,8 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another way of solving find maximum score after traversing two arrays by visualizing the problem as graph.&#10;&#10;Learnings -- Where there are choices to be made visualize it as graph." />
-    <MESSAGE value="Solve medium find maximum sum of two non overlapping subarrays of L or M size, given that L sized subarray can occur before or after the M sized subarray&#10;&#10;Learnings -- Leveraged the fact that the problem is asking for max non-overlapping sum which can be handled by tracking max subarray sum from left and right. Since the problem asked for specific sized subarray sum, need to calculate the sum by sliding window approach." />
     <MESSAGE value="Update logic in find the length of the last word.&#10;&#10;Learnings -- When problem statement deals with finding the last something, its sometimes better to iterate from the end." />
     <MESSAGE value="Update approach in Generate unique bst that store values from 1 to n" />
     <MESSAGE value="Update approach in Generate unique bst that store values from 1 to n&#10;&#10;Learnings -- In BST problems, try to leverage lower and upper bound during recursion." />
@@ -614,7 +612,9 @@
     <MESSAGE value="Solve medium but tricky problem related to finding the smallest subarray to be removed to make subarray divisible by p&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
     <MESSAGE value="Solve medium but tricky problem related to finding all subarray whose sums are divisible by k. Input can contain -ve number.&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
     <MESSAGE value="Update logic in MakeSumDivisibleByP. While comparing mod's -ve number should be made +ve because they are similar otherwise we would miss out some subarray. This is similar to the way he handled mod sum in SubarraySumsDivisibleByK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update logic in MakeSumDivisibleByP. While comparing mod's -ve number should be made +ve because they are similar otherwise we would miss out some subarray. This is similar to the way he handled mod sum in SubarraySumsDivisibleByK" />
+    <MESSAGE value="Update logic behind choosing same modsum in SubarraySumsDivisibleByK" />
+    <MESSAGE value="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -700,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600630245020">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600701102746">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600630245020" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600701102746" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +792,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600630246731">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600701109536">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600630246731" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600701109536" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -836,10 +836,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600629045304">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600710628804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600629045304" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600710628804" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
