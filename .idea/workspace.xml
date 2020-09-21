@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/MeetingsRoom2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/MeetingsRoom2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00271" summary="Solve medium jump game, find whether it's possible to reach the end from start provided we can hop to only specific indices.&#10;&#10;Learning -- Was able to solve the problem in O(n^2) using simple bottom up DP. Linear way of solving would be to keep track of the maximum index reachable. If maximum index &gt;= last index, we got ourselves a winner.">
-      <created>1599431090761</created>
-      <option name="number" value="00271" />
-      <option name="presentableId" value="LOCAL-00271" />
-      <option name="project" value="LOCAL" />
-      <updated>1599431090762</updated>
     </task>
     <task id="LOCAL-00272" summary="Solve easy word pattern, similar to finding whether two strings are isomorphic or not. &#10;&#10;Learnings -- Use two hashmaps to keep track of source to target mapping and vice versa.">
       <created>1599490597687</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600701103264</updated>
     </task>
-    <option name="localTasksCounter" value="320" />
+    <task id="LOCAL-00320" summary="Solve medium find max capacity required to car pool given start, end time and no of people hopping in by greedy approach. Keep track of people hopping in and out at each time.&#10;&#10;Learnings -- It's very critical to understand that if you copy the solution of other users without understanding why they used a specific DS, you won't be able to solve similar questions in the future. This question is similar to MeetingsRoom2">
+      <created>1600710789507</created>
+      <option name="number" value="00320" />
+      <option name="presentableId" value="LOCAL-00320" />
+      <option name="project" value="LOCAL" />
+      <updated>1600710789507</updated>
+    </task>
+    <option name="localTasksCounter" value="321" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update logic in find the length of the last word.&#10;&#10;Learnings -- When problem statement deals with finding the last something, its sometimes better to iterate from the end." />
     <MESSAGE value="Update approach in Generate unique bst that store values from 1 to n" />
     <MESSAGE value="Update approach in Generate unique bst that store values from 1 to n&#10;&#10;Learnings -- In BST problems, try to leverage lower and upper bound during recursion." />
     <MESSAGE value="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own." />
@@ -614,7 +612,8 @@
     <MESSAGE value="Update logic in MakeSumDivisibleByP. While comparing mod's -ve number should be made +ve because they are similar otherwise we would miss out some subarray. This is similar to the way he handled mod sum in SubarraySumsDivisibleByK" />
     <MESSAGE value="Update logic behind choosing same modsum in SubarraySumsDivisibleByK" />
     <MESSAGE value="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP." />
+    <MESSAGE value="Solve medium find max capacity required to car pool given start, end time and no of people hopping in by greedy approach. Keep track of people hopping in and out at each time.&#10;&#10;Learnings -- It's very critical to understand that if you copy the solution of other users without understanding why they used a specific DS, you won't be able to solve similar questions in the future. This question is similar to MeetingsRoom2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find max capacity required to car pool given start, end time and no of people hopping in by greedy approach. Keep track of people hopping in and out at each time.&#10;&#10;Learnings -- It's very critical to understand that if you copy the solution of other users without understanding why they used a specific DS, you won't be able to solve similar questions in the future. This question is similar to MeetingsRoom2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -700,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600701102746">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600710788961">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600701102746" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600710788961" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600701109536">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600710791149">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600701109536" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600710791149" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
