@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UniquePaths3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UniquePaths3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00273" summary="Solve easy find whether a string is rotated version of another string&#10;&#10;Learnings -- contains() time complexity is not linear.">
-      <created>1599494070147</created>
-      <option name="number" value="00273" />
-      <option name="presentableId" value="LOCAL-00273" />
-      <option name="project" value="LOCAL" />
-      <updated>1599494070147</updated>
     </task>
     <task id="LOCAL-00274" summary="Solve medium compare two version numbers of the form 1.213.123.3 by comparing strings numerically. Care must be taken to remove leading zeroes before comparison.&#10;&#10;Learning -- Removal of leading zeroes.">
       <created>1599499954534</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600715153659</updated>
     </task>
-    <option name="localTasksCounter" value="322" />
+    <task id="LOCAL-00322" summary="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)">
+      <created>1600722211499</created>
+      <option name="number" value="00322" />
+      <option name="presentableId" value="LOCAL-00322" />
+      <option name="project" value="LOCAL" />
+      <updated>1600722211500</updated>
+    </task>
+    <option name="localTasksCounter" value="323" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update approach in Generate unique bst that store values from 1 to n&#10;&#10;Learnings -- In BST problems, try to leverage lower and upper bound during recursion." />
     <MESSAGE value="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own." />
     <MESSAGE value="Solve medium find no of ways to decode a number given the mapping as a-&gt;1, b-&gt;2 ... z-&gt;26&#10;&#10;Learnings -- Was able to figure out the recurrence on my own. The base condition of the recurrence is similar to KnightDialler problem." />
     <MESSAGE value="Solve medium find max length subarray with equal number of ones and zeroes by converting 0 to -1 and keeping track of prefix sum.&#10;&#10;Learnings -- In case of problems dealing with equal no of partitions and there are only two variants, try to convert one variant into negative of another." />
@@ -614,7 +612,8 @@
     <MESSAGE value="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP." />
     <MESSAGE value="Solve medium find max capacity required to car pool given start, end time and no of people hopping in by greedy approach. Keep track of people hopping in and out at each time.&#10;&#10;Learnings -- It's very critical to understand that if you copy the solution of other users without understanding why they used a specific DS, you won't be able to solve similar questions in the future. This question is similar to MeetingsRoom2" />
     <MESSAGE value="Solve easy find longest subsequence with max diff of 1 by considering each element as the smallest and checking if we can find the corresponding max element&#10;&#10;Learning -- Leveraged previous learning of interpreting 'max difference' in a subarray." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find longest subsequence with max diff of 1 by considering each element as the smallest and checking if we can find the corresponding max element&#10;&#10;Learning -- Leveraged previous learning of interpreting 'max difference' in a subarray." />
+    <MESSAGE value="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -700,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600715153142">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600722210917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600715153142" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600722210917" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600715154693">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600722212918">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600715154693" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600722212918" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -824,10 +823,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600036746944" />
-    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600555620013">
+    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600725185614">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600555620013" />
+    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600725185614" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1600176299342">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -836,10 +835,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600721919990">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600777333176">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600721919990" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600777333176" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
