@@ -8,9 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00274" summary="Solve medium compare two version numbers of the form 1.213.123.3 by comparing strings numerically. Care must be taken to remove leading zeroes before comparison.&#10;&#10;Learning -- Removal of leading zeroes.">
-      <created>1599499954534</created>
-      <option name="number" value="00274" />
-      <option name="presentableId" value="LOCAL-00274" />
-      <option name="project" value="LOCAL" />
-      <updated>1599499954535</updated>
     </task>
     <task id="LOCAL-00275" summary="Solve medium find all disjoint group of friends by performing DFS from each friend and marking all the friends reachable as visited.">
       <created>1599502528981</created>
@@ -518,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600722211500</updated>
     </task>
-    <option name="localTasksCounter" value="323" />
+    <task id="LOCAL-00323" summary="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation.">
+      <created>1600777563484</created>
+      <option name="number" value="00323" />
+      <option name="presentableId" value="LOCAL-00323" />
+      <option name="project" value="LOCAL" />
+      <updated>1600777563484</updated>
+    </task>
+    <option name="localTasksCounter" value="324" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own." />
     <MESSAGE value="Solve medium find no of ways to decode a number given the mapping as a-&gt;1, b-&gt;2 ... z-&gt;26&#10;&#10;Learnings -- Was able to figure out the recurrence on my own. The base condition of the recurrence is similar to KnightDialler problem." />
     <MESSAGE value="Solve medium find max length subarray with equal number of ones and zeroes by converting 0 to -1 and keeping track of prefix sum.&#10;&#10;Learnings -- In case of problems dealing with equal no of partitions and there are only two variants, try to convert one variant into negative of another." />
     <MESSAGE value="Fix code and update logic in find the length of longest palindrome that can be made from the characters present in the input string." />
@@ -613,7 +610,8 @@
     <MESSAGE value="Solve medium find max capacity required to car pool given start, end time and no of people hopping in by greedy approach. Keep track of people hopping in and out at each time.&#10;&#10;Learnings -- It's very critical to understand that if you copy the solution of other users without understanding why they used a specific DS, you won't be able to solve similar questions in the future. This question is similar to MeetingsRoom2" />
     <MESSAGE value="Solve easy find longest subsequence with max diff of 1 by considering each element as the smallest and checking if we can find the corresponding max element&#10;&#10;Learning -- Leveraged previous learning of interpreting 'max difference' in a subarray." />
     <MESSAGE value="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)" />
+    <MESSAGE value="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +697,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600722210917">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600777562805">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600722210917" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600777562805" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +789,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600722212918">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600777564939">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600722212918" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600777564939" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
