@@ -31,7 +31,7 @@ public class CourseSchedule2 {
         return stack.stream().mapToInt(i -> i).toArray();
     }
 
-    //return false if cycle found
+    //return true if cycle found
     private boolean topologicalSort(boolean[] visited, boolean[] toDo, List<List<Integer>> graph, int startingCourse, ArrayDeque<Integer> stack) {
         if (visited[startingCourse]) {
             return false;
