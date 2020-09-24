@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CourseSchedule2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseSchedule2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,20 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00277" summary="Solve medium check if a 'O' inner node is able to connect with a border 'O'. Trick was to do DFS from the border nodes instead of the inner nodes. &#10;&#10;Learning -- In questions dealing with whether a list of source nodes can reach any target nodes, it's better to do DFS from target nodes and mark all reachable nodes.">
-      <created>1599583888793</created>
-      <option name="number" value="00277" />
-      <option name="presentableId" value="LOCAL-00277" />
-      <option name="project" value="LOCAL" />
-      <updated>1599583888793</updated>
-    </task>
-    <task id="LOCAL-00278" summary="Solve easy decode a run length encoded string by parsing string&#10;&#10;Learnings -- Whenever a string has numbers in it and you are parsing it, remember that a number can have multiple digits.&#10;(During my initial implementation I forgot about it and got WA)&#10;A String can be converted into integer while traversing the string without storing the digits in a list">
-      <created>1599585277123</created>
-      <option name="number" value="00278" />
-      <option name="presentableId" value="LOCAL-00278" />
-      <option name="project" value="LOCAL" />
-      <updated>1599585277123</updated>
     </task>
     <task id="LOCAL-00279" summary="Add TODO to solve FriendGroups using UnionFind algorithm.">
       <created>1599587238651</created>
@@ -519,7 +504,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600881622891</updated>
     </task>
-    <option name="localTasksCounter" value="326" />
+    <task id="LOCAL-00326" summary="Solve hard but medium find longest increasing path in a matrix by DFS + Memoization">
+      <created>1600952890758</created>
+      <option name="number" value="00326" />
+      <option name="presentableId" value="LOCAL-00326" />
+      <option name="project" value="LOCAL" />
+      <updated>1600952890758</updated>
+    </task>
+    <task id="LOCAL-00327" summary="Fix incorrect comment in CourseSchedule2">
+      <created>1600952946729</created>
+      <option name="number" value="00327" />
+      <option name="presentableId" value="LOCAL-00327" />
+      <option name="project" value="LOCAL" />
+      <updated>1600952946729</updated>
+    </task>
+    <option name="localTasksCounter" value="328" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,8 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fix code and update logic in find the length of longest palindrome that can be made from the characters present in the input string." />
-    <MESSAGE value="Solve medium but poorly worded problem, find total time spent by function during execution of a normal program&#10;&#10;Learnings -- Function execution can be modelled as stack. Need to tread highly disliked problems in leetcode carefully. Don't start coding them as most likely it will be based on wrong assumption." />
     <MESSAGE value="Solve medium find length of the longest mountain subarray where array is first increasing and then decreasing by solving it similar to a non-overlapping subarray problem&#10;&#10;Learnings -- Mountain problems can be broken down to finding the increasing part and decreasing part separately." />
     <MESSAGE value="Solve easy find shortest distance to a target character in a string by keeping track of the distance from the target character from left and right." />
     <MESSAGE value="Solve medium evaluate a postfix notation by using stack.&#10;&#10;Learnings -- Postfix notation does not have any concept of brackets. So when you need to evaluate an infix expression, you can convert into postfix and then evaluate it." />
@@ -614,7 +611,9 @@
     <MESSAGE value="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation." />
     <MESSAGE value="Solve medium but tricky problem find all ways to solve an expression by adding parenthesis at all valid places. An optimization would be to memoize the expressions as we repeatedly solve same expression again and again.&#10;&#10;Learnings -- Sometimes for recursion problems, you have to recursively solve for both left and right." />
     <MESSAGE value="Solved hard find minimum distance to type using two fingers using simple recursion and memoization.&#10;&#10;Learnings -- Google is tricky. Oh lord, give me the strength to continue. Losing strength at this moment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved hard find minimum distance to type using two fingers using simple recursion and memoization.&#10;&#10;Learnings -- Google is tricky. Oh lord, give me the strength to continue. Losing strength at this moment." />
+    <MESSAGE value="Solve hard but medium find longest increasing path in a matrix by DFS + Memoization" />
+    <MESSAGE value="Fix incorrect comment in CourseSchedule2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix incorrect comment in CourseSchedule2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -700,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600881622134">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600952946240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600881622134" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600952946240" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600881624198">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600952947975">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600881624198" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600952947975" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -824,10 +823,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600036746944" />
-    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600725185614">
+    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600954696219">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600725185614" />
+    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600954696219" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1600952194958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
