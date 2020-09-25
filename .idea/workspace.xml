@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00279" summary="Add TODO to solve FriendGroups using UnionFind algorithm.">
-      <created>1599587238651</created>
-      <option name="number" value="00279" />
-      <option name="presentableId" value="LOCAL-00279" />
-      <option name="project" value="LOCAL" />
-      <updated>1599587238651</updated>
-    </task>
     <task id="LOCAL-00280" summary="Solve easy find min steps to reach a target number if you can either double the input or increment it by 1&#10;&#10;Learnings -- In case of problems dealing with find min no of steps to reach start from end, sometimes its prudent to traverse in reverse.">
       <created>1599758929451</created>
       <option name="number" value="00280" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600952946729</updated>
     </task>
-    <option name="localTasksCounter" value="328" />
+    <task id="LOCAL-00328" summary="Solve hard but tricky serialize and deserialize a binary tree. &#10;&#10;Learnings -- I solved the question on my own but wrote a long answer. I could have leveraged a queue to always set the head of the queue to either the left or right of node.">
+      <created>1600968505061</created>
+      <option name="number" value="00328" />
+      <option name="presentableId" value="LOCAL-00328" />
+      <option name="project" value="LOCAL" />
+      <updated>1600968505062</updated>
+    </task>
+    <option name="localTasksCounter" value="329" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find length of the longest mountain subarray where array is first increasing and then decreasing by solving it similar to a non-overlapping subarray problem&#10;&#10;Learnings -- Mountain problems can be broken down to finding the increasing part and decreasing part separately." />
     <MESSAGE value="Solve easy find shortest distance to a target character in a string by keeping track of the distance from the target character from left and right." />
     <MESSAGE value="Solve medium evaluate a postfix notation by using stack.&#10;&#10;Learnings -- Postfix notation does not have any concept of brackets. So when you need to evaluate an infix expression, you can convert into postfix and then evaluate it." />
     <MESSAGE value="Solve easy find the last stone weight if you smash the two largest stones present and reduce it to difference in weight between them using priority queue." />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solved hard find minimum distance to type using two fingers using simple recursion and memoization.&#10;&#10;Learnings -- Google is tricky. Oh lord, give me the strength to continue. Losing strength at this moment." />
     <MESSAGE value="Solve hard but medium find longest increasing path in a matrix by DFS + Memoization" />
     <MESSAGE value="Fix incorrect comment in CourseSchedule2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix incorrect comment in CourseSchedule2" />
+    <MESSAGE value="Solve hard but tricky serialize and deserialize a binary tree. &#10;&#10;Learnings -- I solved the question on my own but wrote a long answer. I could have leveraged a queue to always set the head of the queue to either the left or right of node." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard but tricky serialize and deserialize a binary tree. &#10;&#10;Learnings -- I solved the question on my own but wrote a long answer. I could have leveraged a queue to always set the head of the queue to either the left or right of node." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600952946240">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1600968504554">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600952946240" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1600968504554" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -779,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600296280548" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1599055538726">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1600974993987">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1599055538726" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1600974993987" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1600627433540">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600952947975">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1600968506896">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600952947975" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1600968506896" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -823,10 +823,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600036746944" />
-    <state width="731" height="247" key="javadoc.popup.new" timestamp="1600954696219">
+    <state width="731" height="247" key="javadoc.popup.new" timestamp="1601036011260">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1600954696219" />
+    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601036011260" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1600952194958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -835,10 +835,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600877910437">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601031773350">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600877910437" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601031773350" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
