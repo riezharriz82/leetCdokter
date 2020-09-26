@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NextGreaterElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NextGreaterElementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SubarraySumsEqualKTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubarraySumsEqualKTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,14 +96,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch (1)">
-    <configuration name="FindShortestSubarrayToBeRemovedToMakeArraySorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FindShortestSubarrayToBeRemovedToMakeArraySorted" />
-      <module name="leetcode-practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test">
     <configuration name="DecodeWaysTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -116,6 +111,16 @@
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FindShortestSubarrayToBeRemovedToMakeArraySortedTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LargestNumberWithDigitsThatSumUpToTargetTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LargestNumberWithDigitsThatSumUpToTargetTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -149,20 +154,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.DecodeWaysTest.test" />
       <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
       <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
+      <item itemvalue="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
         <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
         <item itemvalue="JUnit.DecodeWaysTest.test" />
-        <item itemvalue="Application.FindShortestSubarrayToBeRemovedToMakeArraySorted" />
       </list>
     </recent_temporary>
   </component>
@@ -174,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00281" summary="Solve easy check whether a matrix is valid toeplitz matrix or not i.e whether all the elements present in all the left diagonals are equal or not.&#10;&#10;In my initial approach I did it by storing the leader of all the left diagonals. All the elements belonging to the same left diagonal has same value of (i-j).&#10;&#10;But we don't need to go all this way, we can just iterate the matrix and compare the top left diagonal element during traversal.">
-      <created>1599765850411</created>
-      <option name="number" value="00281" />
-      <option name="presentableId" value="LOCAL-00281" />
-      <option name="project" value="LOCAL" />
-      <updated>1599765850411</updated>
     </task>
     <task id="LOCAL-00282" summary="Solve easy find all unique rotation groups of a set of strings by keeping track of unique rotation group and checking if current word is part of existing rotation group.&#10;&#10;Learnings -- How to check rotations of a string.">
       <created>1599766628554</created>
@@ -518,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601061100379</updated>
     </task>
-    <option name="localTasksCounter" value="330" />
+    <task id="LOCAL-00330" summary="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it.">
+      <created>1601116110915</created>
+      <option name="number" value="00330" />
+      <option name="presentableId" value="LOCAL-00330" />
+      <option name="project" value="LOCAL" />
+      <updated>1601116110915</updated>
+    </task>
+    <option name="localTasksCounter" value="331" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +593,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium evaluate a postfix notation by using stack.&#10;&#10;Learnings -- Postfix notation does not have any concept of brackets. So when you need to evaluate an infix expression, you can convert into postfix and then evaluate it." />
     <MESSAGE value="Solve easy find the last stone weight if you smash the two largest stones present and reduce it to difference in weight between them using priority queue." />
     <MESSAGE value="Solve medium find all numbers whose digits are sequential with difference of 1 and lying within the provided range by using recursion.&#10;&#10;Learnings -- Leveraged two prior learnings, while dealing with integers, we can generate the number by just multiplying by 10 and adding the next digit. It made the code very short.&#10;Second leveraged learning was to use recursion to generate all possible numbers." />
     <MESSAGE value="Solve easy but tricky find sum of all odd length subarray by finding how many times a number occurs in an odd length subarray using maths.&#10;&#10;Learnings -- Maths is hard. Need to find out how many subarrays are possible with ith index by considering some elements from left and right subarray. This is similar to the way we solved count no of subarrays with odd sum." />
@@ -613,7 +617,8 @@
     <MESSAGE value="Fix incorrect comment in CourseSchedule2" />
     <MESSAGE value="Solve hard but tricky serialize and deserialize a binary tree. &#10;&#10;Learnings -- I solved the question on my own but wrote a long answer. I could have leveraged a queue to always set the head of the queue to either the left or right of node." />
     <MESSAGE value="Solve medium but tricky problem find the largest number possible by re-arranging a list of numbers&#10;&#10;Learnings -- Try to break down the problems by ericto's method i.e. try to solve the problem by asking if i had the largest number possible at ith index, how can i extend it to i+1. &#10;Take care of stripping leading zeroes when dealing with integers and strings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but tricky problem find the largest number possible by re-arranging a list of numbers&#10;&#10;Learnings -- Try to break down the problems by ericto's method i.e. try to solve the problem by asking if i had the largest number possible at ith index, how can i extend it to i+1. &#10;Take care of stripping leading zeroes when dealing with integers and strings." />
+    <MESSAGE value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +704,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601061099675">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601116110302">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601061099675" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601116110302" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -715,22 +720,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1600628727602">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601137774238">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1600628727602" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1600628727602">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601137774238" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601137774238">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1600628727602" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1600628727601">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601137774238" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601137774238">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1600628727601" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1600628727602">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601137774238" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601137774238">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1600628727602" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601137774238" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -783,18 +788,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1600974993987" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1600627433540">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1601138565791">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1600627433540" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601138565791" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601061101369">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601116111828">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601061101369" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601116111828" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -823,22 +828,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600036746944" />
-    <state width="731" height="247" key="javadoc.popup.new" timestamp="1601036011260">
+    <state width="731" height="247" key="javadoc.popup.new" timestamp="1601133457107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601036011260" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1600952194958">
+    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601133457107" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601135691817">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600952194958" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601135691817" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1600330859199">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601113965865">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601137770933">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601113965865" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601137770933" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
