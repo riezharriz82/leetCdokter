@@ -10,8 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NextGreaterElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NextGreaterElementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SubarraySumsEqualKTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubarraySumsEqualKTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,20 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00282" summary="Solve easy find all unique rotation groups of a set of strings by keeping track of unique rotation group and checking if current word is part of existing rotation group.&#10;&#10;Learnings -- How to check rotations of a string.">
-      <created>1599766628554</created>
-      <option name="number" value="00282" />
-      <option name="presentableId" value="LOCAL-00282" />
-      <option name="project" value="LOCAL" />
-      <updated>1599766628554</updated>
-    </task>
-    <task id="LOCAL-00283" summary="Update solution for RectangleOverlap to include awice@ trick to find whether two line segments intersect.&#10;&#10;awice@ is legend.">
-      <created>1599776938066</created>
-      <option name="number" value="00283" />
-      <option name="presentableId" value="LOCAL-00283" />
-      <option name="project" value="LOCAL" />
-      <updated>1599776938066</updated>
     </task>
     <task id="LOCAL-00284" summary="Solve find max product subarray by keeping track of the max prefix / suffix subarray product.&#10;&#10;Learnings -- During my thought process of solving the problem, I incorrectly calculated that the max product subarray can be a middle subarray, otherwise I would have been on to something :(&#10;Trick was to understand that max product subarray can only start from the front or from the end. Take some examples of array with 1 -ve, 2 -ve and 3 -ve and you will understand why.">
       <created>1599865641583</created>
@@ -523,7 +507,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601116110915</updated>
     </task>
-    <option name="localTasksCounter" value="331" />
+    <task id="LOCAL-00331" summary="Fix broken tests">
+      <created>1601139989344</created>
+      <option name="number" value="00331" />
+      <option name="presentableId" value="LOCAL-00331" />
+      <option name="project" value="LOCAL" />
+      <updated>1601139989344</updated>
+    </task>
+    <task id="LOCAL-00332" summary="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable.">
+      <created>1601140199887</created>
+      <option name="number" value="00332" />
+      <option name="presentableId" value="LOCAL-00332" />
+      <option name="project" value="LOCAL" />
+      <updated>1601140199888</updated>
+    </task>
+    <option name="localTasksCounter" value="333" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,8 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find the last stone weight if you smash the two largest stones present and reduce it to difference in weight between them using priority queue." />
-    <MESSAGE value="Solve medium find all numbers whose digits are sequential with difference of 1 and lying within the provided range by using recursion.&#10;&#10;Learnings -- Leveraged two prior learnings, while dealing with integers, we can generate the number by just multiplying by 10 and adding the next digit. It made the code very short.&#10;Second leveraged learning was to use recursion to generate all possible numbers." />
     <MESSAGE value="Solve easy but tricky find sum of all odd length subarray by finding how many times a number occurs in an odd length subarray using maths.&#10;&#10;Learnings -- Maths is hard. Need to find out how many subarrays are possible with ith index by considering some elements from left and right subarray. This is similar to the way we solved count no of subarrays with odd sum." />
     <MESSAGE value="Solve medium but hard find sum of minimum of all subarray by keeping track of contributions of each index&#10;&#10;Learnings -- As this problem talked about finding minimum in a subarray, monotonic stack should come into mind." />
     <MESSAGE value="Update approach in LargestRectangleInHistogram" />
@@ -618,7 +614,9 @@
     <MESSAGE value="Solve hard but tricky serialize and deserialize a binary tree. &#10;&#10;Learnings -- I solved the question on my own but wrote a long answer. I could have leveraged a queue to always set the head of the queue to either the left or right of node." />
     <MESSAGE value="Solve medium but tricky problem find the largest number possible by re-arranging a list of numbers&#10;&#10;Learnings -- Try to break down the problems by ericto's method i.e. try to solve the problem by asking if i had the largest number possible at ith index, how can i extend it to i+1. &#10;Take care of stripping leading zeroes when dealing with integers and strings." />
     <MESSAGE value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
+    <MESSAGE value="Fix broken tests" />
+    <MESSAGE value="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -704,10 +702,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601116110302">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601140199288">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601116110302" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601140199288" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -720,22 +718,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601137774238">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601150948118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601137774238" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601137774238">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601150948118" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601150948118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601137774238" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601137774238">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601150948118" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601150948118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601137774238" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601137774238">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601150948118" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601150948118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601137774238" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601150948118" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -796,10 +794,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601116111828">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601139990966">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601116111828" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601139990966" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -840,10 +838,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601137770933">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601150950341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601137770933" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601150950341" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
