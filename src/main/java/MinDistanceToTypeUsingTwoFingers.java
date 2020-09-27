@@ -29,9 +29,9 @@ public class MinDistanceToTypeUsingTwoFingers {
      * Approach: Solved using ghetto memoization technique, main issue was to find the recursion solution.
      * Initially I explored warshall floyd algorithm but found it not useful because we have two fingers.
      * <p>
-     * For every character, we have two choices, move the first finger or move the second finger.
+     * For every character, we have four choices, two for the first finger and two for the second finger.
      * The trick to understand that each finger can be in a hover state i.e. unplaced state, so you have to consider two options
-     * either place the finger at that character of if already placed, find the cost after moving that finger to that character
+     * either place the finger at that character or if already placed, find the cost after moving that finger to that character
      */
     public int minimumDistance(String word) {
         HashMap<String, Integer> map = new HashMap<>();

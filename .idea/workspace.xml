@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinDistanceToTypeUsingTwoFingers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinDistanceToTypeUsingTwoFingers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00284" summary="Solve find max product subarray by keeping track of the max prefix / suffix subarray product.&#10;&#10;Learnings -- During my thought process of solving the problem, I incorrectly calculated that the max product subarray can be a middle subarray, otherwise I would have been on to something :(&#10;Trick was to understand that max product subarray can only start from the front or from the end. Take some examples of array with 1 -ve, 2 -ve and 3 -ve and you will understand why.">
-      <created>1599865641583</created>
-      <option name="number" value="00284" />
-      <option name="presentableId" value="LOCAL-00284" />
-      <option name="project" value="LOCAL" />
-      <updated>1599865641583</updated>
     </task>
     <task id="LOCAL-00285" summary="Solve medium find whether one string can be stretched to form another string, given that you can stretch a character for a min of 3 repetitions.&#10;&#10;Learnings -- Create a Run length encoding of a string by comparing previous character with current character.">
       <created>1599916379196</created>
@@ -521,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601140199888</updated>
     </task>
-    <option name="localTasksCounter" value="333" />
+    <task id="LOCAL-00333" summary="Solve hard and tricky problem find largest number where using each digit incurs a specific cost by memoization.&#10;&#10;Learnings -- 1. While comparing strings as integers, compare them via compareTo() only when their lengths match, otherwise the longer string is the greater of them because &quot;12&quot;.compareTo(&quot;3&quot;) &lt; 0&#10;&#10;2. For solving cost related problems, always start from the target and recurse down to 0, this recursion gives a memoization friendly code.">
+      <created>1601154552362</created>
+      <option name="number" value="00333" />
+      <option name="presentableId" value="LOCAL-00333" />
+      <option name="project" value="LOCAL" />
+      <updated>1601154552362</updated>
+    </task>
+    <option name="localTasksCounter" value="334" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy but tricky find sum of all odd length subarray by finding how many times a number occurs in an odd length subarray using maths.&#10;&#10;Learnings -- Maths is hard. Need to find out how many subarrays are possible with ith index by considering some elements from left and right subarray. This is similar to the way we solved count no of subarrays with odd sum." />
     <MESSAGE value="Solve medium but hard find sum of minimum of all subarray by keeping track of contributions of each index&#10;&#10;Learnings -- As this problem talked about finding minimum in a subarray, monotonic stack should come into mind." />
     <MESSAGE value="Update approach in LargestRectangleInHistogram" />
     <MESSAGE value="Solve medium find the number of consecutive days where current stock price &gt;= previous day's stock price using monotonic stack&#10;&#10;Learnings -- Leveraged previous learnings of using monotonic stack to deal with problems related to finding next greater/smaller element." />
@@ -616,7 +616,8 @@
     <MESSAGE value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
     <MESSAGE value="Fix broken tests" />
     <MESSAGE value="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable." />
+    <MESSAGE value="Solve hard and tricky problem find largest number where using each digit incurs a specific cost by memoization.&#10;&#10;Learnings -- 1. While comparing strings as integers, compare them via compareTo() only when their lengths match, otherwise the longer string is the greater of them because &quot;12&quot;.compareTo(&quot;3&quot;) &lt; 0&#10;&#10;2. For solving cost related problems, always start from the target and recurse down to 0, this recursion gives a memoization friendly code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky problem find largest number where using each digit incurs a specific cost by memoization.&#10;&#10;Learnings -- 1. While comparing strings as integers, compare them via compareTo() only when their lengths match, otherwise the longer string is the greater of them because &quot;12&quot;.compareTo(&quot;3&quot;) &lt; 0&#10;&#10;2. For solving cost related problems, always start from the target and recurse down to 0, this recursion gives a memoization friendly code." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -650,10 +651,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1592165013412" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1600879481964">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1601158161926">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600879481964" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601158161926" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -702,38 +703,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601140199288">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601154551804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601140199288" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601154551804" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1600698728298">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1601217054274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600698728298" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601217054274" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601150948118">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601217054032">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601150948118" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601150948118">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601217054032" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601217054032">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601150948118" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601150948118">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601217054032" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601217054032">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601150948118" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601150948118">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601217054032" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601217054032">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601150948118" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601217054032" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -786,18 +787,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1600974993987" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1601138565791">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1601161685105">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601138565791" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601161685105" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601139990966">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601154557116">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601139990966" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601154557116" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -826,10 +827,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600036746944" />
-    <state width="731" height="247" key="javadoc.popup.new" timestamp="1601133457107">
+    <state width="731" height="247" key="javadoc.popup.new" timestamp="1601161873062">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601133457107" />
+    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601161873062" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601135691817">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -838,10 +839,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601150950341">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601154933336">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601150950341" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601154933336" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
