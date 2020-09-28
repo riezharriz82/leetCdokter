@@ -14,24 +14,27 @@
  * Explanation: You can't get a non-decreasing array by modify at most one element.
  */
 public class ChangeOnlyOneElementToSortArray {
+    /**
+     * Greedy approach: When we encounter a mismatched pair i.e. nums[i-1] > nums[i] there are two options to correct it
+     * 1. Change nums[i-1] to nums[i] e.g {7,10,8,9,12} -> {7,8,8,11,12} Why not nums[i] to nums[i-1] because increasing it might cause more conflict for the next range.
+     * 2. But if nums[i-2] > nums[i] previous step won't work e.g {8,10,7} -> {8,7,10} would be invalid, so we need to change nums[i] to nums[i-1] e.g {8,10,10}
+     */
     public boolean checkPossibility(int[] nums) {
         int misMatch = -1;
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] < nums[i - 1]) {
                 if (misMatch == -1) {
                     misMatch = i;
+                    if (i - 2 >= 0 && nums[i - 2] > nums[i]) {
+                        nums[i] = nums[i - 1];
+                    } else {
+                        nums[i - 1] = nums[i];
+                    }
                 } else {
                     return false;
                 }
             }
         }
-        if (misMatch == -1) {
-            return true;
-        } else if (misMatch == 1 || misMatch == nums.length - 1) {
-            return true;
-        } else // [-1,4,2,3]
-            if (nums[misMatch - 2] <= nums[misMatch]) {
-                return true;
-            } else return nums[misMatch - 1] <= nums[misMatch + 1];
+        return true;
     }
 }
