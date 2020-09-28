@@ -10,8 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumWindowSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SubarraySumsDivisibleByK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SubarraySumsDivisibleByK.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,20 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00290" summary="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement.">
-      <created>1600010794228</created>
-      <option name="number" value="00290" />
-      <option name="presentableId" value="LOCAL-00290" />
-      <option name="project" value="LOCAL" />
-      <updated>1600010794228</updated>
-    </task>
-    <task id="LOCAL-00291" summary="Solve medium find longest word in dictionary that can be made from the input string by deleting some characters from input.&#10;&#10;Learnings -- Check whether one string is a subsequence of another string.">
-      <created>1600014628775</created>
-      <option name="number" value="00291" />
-      <option name="presentableId" value="LOCAL-00291" />
-      <option name="project" value="LOCAL" />
-      <updated>1600014628775</updated>
     </task>
     <task id="LOCAL-00292" summary="Solve medium HouseRobber3 where each node in tree has two options, either it can be robbed or can't be.&#10;&#10;Learnings -- In case of inclusion/exclusion question, care needs to be taken for the exclusion part. If a node can be excluded, the result of that would the max of if next node is excluded or next node is included. That's the trick. I forgot to consider that during my first implementation. Got WA. Fixed it quickly.">
       <created>1600018704498</created>
@@ -522,7 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601317140963</updated>
     </task>
-    <option name="localTasksCounter" value="339" />
+    <task id="LOCAL-00339" summary="Add related problems">
+      <created>1601319014770</created>
+      <option name="number" value="00339" />
+      <option name="presentableId" value="LOCAL-00339" />
+      <option name="project" value="LOCAL" />
+      <updated>1601319014770</updated>
+    </task>
+    <task id="LOCAL-00340" summary="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring">
+      <created>1601319140541</created>
+      <option name="number" value="00340" />
+      <option name="presentableId" value="LOCAL-00340" />
+      <option name="project" value="LOCAL" />
+      <updated>1601319140541</updated>
+    </task>
+    <option name="localTasksCounter" value="341" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,8 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add approach in finding NextGreaterElement" />
-    <MESSAGE value="Solve medium but tricky problem related to finding the smallest subarray to be removed to make subarray divisible by p&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
     <MESSAGE value="Solve medium but tricky problem related to finding all subarray whose sums are divisible by k. Input can contain -ve number.&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
     <MESSAGE value="Update logic in MakeSumDivisibleByP. While comparing mod's -ve number should be made +ve because they are similar otherwise we would miss out some subarray. This is similar to the way he handled mod sum in SubarraySumsDivisibleByK" />
     <MESSAGE value="Update logic behind choosing same modsum in SubarraySumsDivisibleByK" />
@@ -617,7 +613,9 @@
     <MESSAGE value="Solve hard and tricky split array into k subarrays such that maximum sum of subarrays is minimized. This kind of partitioning problems are known as painter partition problem. It can be solved via recursion. Make cuts at all indices, keeping track of left subarray sum and then recurse into right subarray which will yield right subarray sum.&#10;Need to minimize the maximum of left and right subarray sum. &#10;&#10;This problem was asked to vinayendra in amazon online assessment test." />
     <MESSAGE value="Simplify code and update approach in sorting an array by changing only one element." />
     <MESSAGE value="Solve hard and tricky find the smallest substring that contains all the characters of the target string by sliding window.&#10;&#10;Learnings -- In sliding window implementation, we are only interested in characters with +ve count. Increase the curCount only if the count of char[end] &gt; 0. Decrease the curCount when count of char[begin] &gt; 0. That's the trick. Incrementing/Decrementing count of characters that are not required wont have any affect because their count will always &lt;= 0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the smallest substring that contains all the characters of the target string by sliding window.&#10;&#10;Learnings -- In sliding window implementation, we are only interested in characters with +ve count. Increase the curCount only if the count of char[end] &gt; 0. Decrease the curCount when count of char[begin] &gt; 0. That's the trick. Incrementing/Decrementing count of characters that are not required wont have any affect because their count will always &lt;= 0" />
+    <MESSAGE value="Add related problems" />
+    <MESSAGE value="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +689,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601317140338">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601319140042">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601317140338" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601319140042" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -783,10 +781,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601317142378">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601319146824">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601317142378" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601319146824" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
