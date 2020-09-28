@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumWindowSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SubarraySumsDivisibleByK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SubarraySumsDivisibleByK.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00289" summary="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end.">
-      <created>1599940536456</created>
-      <option name="number" value="00289" />
-      <option name="presentableId" value="LOCAL-00289" />
-      <option name="project" value="LOCAL" />
-      <updated>1599940536456</updated>
     </task>
     <task id="LOCAL-00290" summary="Solve hard but medium problem insert an interval in an existing set of intervals such that the resultant intervals are non-overlapping&#10;&#10;Learnings -- Reduced the problem to merge non-overlapping intervals by adding the interval to the existing intervals and sorting all of them. Non-optimal code but easy to implement.">
       <created>1600010794228</created>
@@ -520,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601310502268</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="Solve hard and tricky find the smallest substring that contains all the characters of the target string by sliding window.&#10;&#10;Learnings -- In sliding window implementation, we are only interested in characters with +ve count. Increase the curCount only if the count of char[end] &gt; 0. Decrease the curCount when count of char[begin] &gt; 0. That's the trick. Incrementing/Decrementing count of characters that are not required wont have any affect because their count will always &lt;= 0">
+      <created>1601317140963</created>
+      <option name="number" value="00338" />
+      <option name="presentableId" value="LOCAL-00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1601317140963</updated>
+    </task>
+    <option name="localTasksCounter" value="339" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify code in SubarraySumEqualsK" />
     <MESSAGE value="Add approach in finding NextGreaterElement" />
     <MESSAGE value="Solve medium but tricky problem related to finding the smallest subarray to be removed to make subarray divisible by p&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
     <MESSAGE value="Solve medium but tricky problem related to finding all subarray whose sums are divisible by k. Input can contain -ve number.&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
@@ -615,7 +616,8 @@
     <MESSAGE value="Solve hard and tricky find shortest path to reach target node in a grid if blocked nodes can be eliminated by BFS&#10;&#10;Learnings -- As ericto mentioned earlier that try to understand what should be remembered, here it's current path length and no of eliminations performed so far. Since this problem deals with shortest path, use fucking BFS, not DFS !" />
     <MESSAGE value="Solve hard and tricky split array into k subarrays such that maximum sum of subarrays is minimized. This kind of partitioning problems are known as painter partition problem. It can be solved via recursion. Make cuts at all indices, keeping track of left subarray sum and then recurse into right subarray which will yield right subarray sum.&#10;Need to minimize the maximum of left and right subarray sum. &#10;&#10;This problem was asked to vinayendra in amazon online assessment test." />
     <MESSAGE value="Simplify code and update approach in sorting an array by changing only one element." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify code and update approach in sorting an array by changing only one element." />
+    <MESSAGE value="Solve hard and tricky find the smallest substring that contains all the characters of the target string by sliding window.&#10;&#10;Learnings -- In sliding window implementation, we are only interested in characters with +ve count. Increase the curCount only if the count of char[end] &gt; 0. Decrease the curCount when count of char[begin] &gt; 0. That's the trick. Incrementing/Decrementing count of characters that are not required wont have any affect because their count will always &lt;= 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the smallest substring that contains all the characters of the target string by sliding window.&#10;&#10;Learnings -- In sliding window implementation, we are only interested in characters with +ve count. Increase the curCount only if the count of char[end] &gt; 0. Decrease the curCount when count of char[begin] &gt; 0. That's the trick. Incrementing/Decrementing count of characters that are not required wont have any affect because their count will always &lt;= 0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -689,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601310501714">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601317140338">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601310501714" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601317140338" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -781,10 +783,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601310503270">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601317142378">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601310503270" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601317142378" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -821,14 +823,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601240000264" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1600330859199">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601318197026">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601316308415">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601318197026" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601318178093">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601316308415" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601318178093" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

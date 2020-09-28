@@ -19,6 +19,8 @@ public class MinimumWindowSubstring {
      * If that character was required, curCount needs to be increased/decreased accordingly. It complicated the code.
      * <p>
      * Simple thing would have been to only consider character whose count is +ve, then decrement/increment the curCount
+     * <p>
+     * {@link FindAllAnagramInString} {@link MinimumSizeSubarraySum} for related sliding window problem
      */
     public String minWindow(String s, String t) {
         int[] count = new int[256];
