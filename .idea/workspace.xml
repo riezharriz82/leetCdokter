@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ChangeOnlyOneElementToSortArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChangeOnlyOneElementToSortArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,23 +94,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MinimumWindowSubstringTest.test">
-    <configuration name="FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FindShortestSubarrayToBeRemovedToMakeArraySortedTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MinimumWindowSubstringTest">
     <configuration name="LargestNumberWithDigitsThatSumUpToTargetTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LargestNumberWithDigitsThatSumUpToTargetTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinimumWindowSubstringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MinimumWindowSubstringTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,18 +153,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
       <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
       <item itemvalue="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test" />
       <item itemvalue="JUnit.MinimumWindowSubstringTest.test" />
+      <item itemvalue="JUnit.MinimumWindowSubstringTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MinimumWindowSubstringTest" />
         <item itemvalue="JUnit.MinimumWindowSubstringTest.test" />
         <item itemvalue="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
-        <item itemvalue="JUnit.FindShortestSubarrayToBeRemovedToMakeArraySortedTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -178,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00288" summary="Update approach in finding shortest subarray that needs to be sorted to make the resultant array sorted.&#10;&#10;Learnings -- In problems that requires finding a single subarray that does something, start from left and right and mark the initial boundary. Then check whether that boundary needs to be expanded further.">
-      <created>1599924867521</created>
-      <option name="number" value="00288" />
-      <option name="presentableId" value="LOCAL-00288" />
-      <option name="project" value="LOCAL" />
-      <updated>1599924867521</updated>
     </task>
     <task id="LOCAL-00289" summary="Solve medium but tricky/hard problem find shortest subarray that needs to be removed to make array sorted.&#10;&#10;Learnings -- Need to find the longest increasing subarray present in the array by considering subarray that starts from 0 or starts at the end or is a combination of prefix of lis from start + suffix of lis from end.">
       <created>1599940536456</created>
@@ -522,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601298220063</updated>
     </task>
-    <option name="localTasksCounter" value="337" />
+    <task id="LOCAL-00337" summary="Simplify code and update approach in sorting an array by changing only one element.">
+      <created>1601310502268</created>
+      <option name="number" value="00337" />
+      <option name="presentableId" value="LOCAL-00337" />
+      <option name="project" value="LOCAL" />
+      <updated>1601310502268</updated>
+    </task>
+    <option name="localTasksCounter" value="338" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium but hard find 132 pattern in array i.e find three numbers such that a[i] &lt; a[k] &lt; a[j] and i &lt; j &lt; k using monotonic stack&#10;&#10;Learnings -- I solved this problem on my own, took a couple of hours but went through couple of different approaches and then finalized this. The crux of the problem was to fix i and then look for a valid k for each j. a[i] can be the smallest number on the left of a[j] and a[k] can be the largest number on the right smaller than a[j]. Once we find all three, check if they make 132 pattern." />
     <MESSAGE value="Simplify code in SubarraySumEqualsK" />
     <MESSAGE value="Add approach in finding NextGreaterElement" />
     <MESSAGE value="Solve medium but tricky problem related to finding the smallest subarray to be removed to make subarray divisible by p&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
@@ -617,7 +614,8 @@
     <MESSAGE value="Update comment in MinDistanceToTypeUsingTwoFingers" />
     <MESSAGE value="Solve hard and tricky find shortest path to reach target node in a grid if blocked nodes can be eliminated by BFS&#10;&#10;Learnings -- As ericto mentioned earlier that try to understand what should be remembered, here it's current path length and no of eliminations performed so far. Since this problem deals with shortest path, use fucking BFS, not DFS !" />
     <MESSAGE value="Solve hard and tricky split array into k subarrays such that maximum sum of subarrays is minimized. This kind of partitioning problems are known as painter partition problem. It can be solved via recursion. Make cuts at all indices, keeping track of left subarray sum and then recurse into right subarray which will yield right subarray sum.&#10;Need to minimize the maximum of left and right subarray sum. &#10;&#10;This problem was asked to vinayendra in amazon online assessment test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky split array into k subarrays such that maximum sum of subarrays is minimized. This kind of partitioning problems are known as painter partition problem. It can be solved via recursion. Make cuts at all indices, keeping track of left subarray sum and then recurse into right subarray which will yield right subarray sum.&#10;Need to minimize the maximum of left and right subarray sum. &#10;&#10;This problem was asked to vinayendra in amazon online assessment test." />
+    <MESSAGE value="Simplify code and update approach in sorting an array by changing only one element." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify code and update approach in sorting an array by changing only one element." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +689,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601298219152">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601310501714">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601298219152" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601310501714" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -707,22 +705,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601238427836">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601315699950">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601238427836" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601238427834">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601315699950" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601315699950">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601238427834" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601238427830">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601315699950" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601315699949">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601238427830" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601238427834">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601315699949" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601315699950">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601238427834" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601315699950" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -783,10 +781,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601298221575">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601310503270">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601298221575" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601310503270" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -827,10 +825,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600330859199" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601308484475">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601316308415">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601308484475" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601316308415" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
