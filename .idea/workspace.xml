@@ -73,7 +73,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Console" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -94,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MinimumWindowSubstringTest">
+  <component name="RunManager" selected="JUnit.PartitionEqualSubsetSumTest">
     <configuration name="LargestNumberWithDigitsThatSumUpToTargetTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -124,11 +124,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TargetNumberWithOperationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PartitionEqualSubsetSumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TargetNumberWithOperationsTest" />
+      <option name="MAIN_CLASS_NAME" value="PartitionEqualSubsetSumTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PartitionEqualSubsetSumTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PartitionEqualSubsetSumTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,28 +153,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
       <item itemvalue="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test" />
       <item itemvalue="JUnit.MinimumWindowSubstringTest.test" />
       <item itemvalue="JUnit.MinimumWindowSubstringTest" />
+      <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
+      <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
+        <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
         <item itemvalue="JUnit.MinimumWindowSubstringTest" />
         <item itemvalue="JUnit.MinimumWindowSubstringTest.test" />
         <item itemvalue="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test" />
-        <item itemvalue="Java Scratch.Scratch (1)" />
-        <item itemvalue="JUnit.TargetNumberWithOperationsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00292" summary="Solve medium HouseRobber3 where each node in tree has two options, either it can be robbed or can't be.&#10;&#10;Learnings -- In case of inclusion/exclusion question, care needs to be taken for the exclusion part. If a node can be excluded, the result of that would the max of if next node is excluded or next node is included. That's the trick. I forgot to consider that during my first implementation. Got WA. Fixed it quickly.">
-      <created>1600018704498</created>
-      <option name="number" value="00292" />
-      <option name="presentableId" value="LOCAL-00292" />
-      <option name="project" value="LOCAL" />
-      <updated>1600018704498</updated>
     </task>
     <task id="LOCAL-00293" summary="Solve medium find min no of steps required to reach a target state of the lock given that some states are banned by using BFS&#10;&#10;Learnings -- Better to mark the node as visited before adding to the queue to avoid duplicates in the same level. Got TLE during my first implementation because of this mistake">
       <created>1600023984779</created>
@@ -520,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601319140541</updated>
     </task>
-    <option name="localTasksCounter" value="341" />
+    <task id="LOCAL-00341" summary="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start">
+      <created>1601325217508</created>
+      <option name="number" value="00341" />
+      <option name="presentableId" value="LOCAL-00341" />
+      <option name="project" value="LOCAL" />
+      <updated>1601325217509</updated>
+    </task>
+    <option name="localTasksCounter" value="342" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +593,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium but tricky problem related to finding all subarray whose sums are divisible by k. Input can contain -ve number.&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go." />
     <MESSAGE value="Update logic in MakeSumDivisibleByP. While comparing mod's -ve number should be made +ve because they are similar otherwise we would miss out some subarray. This is similar to the way he handled mod sum in SubarraySumsDivisibleByK" />
     <MESSAGE value="Update logic behind choosing same modsum in SubarraySumsDivisibleByK" />
     <MESSAGE value="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP." />
@@ -615,7 +617,8 @@
     <MESSAGE value="Solve hard and tricky find the smallest substring that contains all the characters of the target string by sliding window.&#10;&#10;Learnings -- In sliding window implementation, we are only interested in characters with +ve count. Increase the curCount only if the count of char[end] &gt; 0. Decrease the curCount when count of char[begin] &gt; 0. That's the trick. Incrementing/Decrementing count of characters that are not required wont have any affect because their count will always &lt;= 0" />
     <MESSAGE value="Add related problems" />
     <MESSAGE value="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring" />
+    <MESSAGE value="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -641,10 +644,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594324360886" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1601158161926">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1601328587194">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601158161926" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601328587194" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -689,10 +692,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601319140042">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601325216862">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601319140042" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601325216862" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -705,22 +708,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601315699950">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601395895935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601315699950" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601315699950">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601395895935" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601395895935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601315699950" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601315699949">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601395895935" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601395895935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601315699949" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601315699950">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601395895935" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601395895935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601315699950" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601395895935" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600328304543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -765,10 +768,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="695" y="245" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598184917635" />
-    <state x="668" y="259" key="SettingsEditor" timestamp="1600296280548">
+    <state x="668" y="259" key="SettingsEditor" timestamp="1601329399189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600296280548" />
+    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1601329399189" />
     <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1600974993987">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -781,10 +784,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601319146824">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601325219085">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601319146824" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601325219085" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -817,18 +820,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601161873062" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601240000264">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601328612873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601240000264" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601318197026">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601328612873" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601329628302">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601318197026" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601318178093">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601329628302" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601329360187">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601318178093" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601329360187" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
