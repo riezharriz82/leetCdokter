@@ -94,17 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PartitionEqualSubsetSumTest">
-    <configuration name="LargestNumberWithDigitsThatSumUpToTargetTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LargestNumberWithDigitsThatSumUpToTargetTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PartitionKEqualSumSubsetsTest.test">
     <configuration name="MinimumWindowSubstringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -143,6 +133,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PartitionKEqualSumSubsetsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PartitionKEqualSumSubsetsTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -155,19 +155,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test" />
       <item itemvalue="JUnit.MinimumWindowSubstringTest.test" />
       <item itemvalue="JUnit.MinimumWindowSubstringTest" />
       <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
       <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
+      <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
         <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
         <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
         <item itemvalue="JUnit.MinimumWindowSubstringTest" />
         <item itemvalue="JUnit.MinimumWindowSubstringTest.test" />
-        <item itemvalue="JUnit.LargestNumberWithDigitsThatSumUpToTargetTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -179,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00293" summary="Solve medium find min no of steps required to reach a target state of the lock given that some states are banned by using BFS&#10;&#10;Learnings -- Better to mark the node as visited before adding to the queue to avoid duplicates in the same level. Got TLE during my first implementation because of this mistake">
-      <created>1600023984779</created>
-      <option name="number" value="00293" />
-      <option name="presentableId" value="LOCAL-00293" />
-      <option name="project" value="LOCAL" />
-      <updated>1600023984779</updated>
     </task>
     <task id="LOCAL-00294" summary="Add another way of solving find maximum score after traversing two arrays by visualizing the problem as graph.&#10;&#10;Learnings -- Where there are choices to be made visualize it as graph.">
       <created>1600027264234</created>
@@ -523,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601325217509</updated>
     </task>
-    <option name="localTasksCounter" value="342" />
+    <task id="LOCAL-00342" summary="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly.">
+      <created>1601396426649</created>
+      <option name="number" value="00342" />
+      <option name="presentableId" value="LOCAL-00342" />
+      <option name="project" value="LOCAL" />
+      <updated>1601396426649</updated>
+    </task>
+    <option name="localTasksCounter" value="343" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,6 +573,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="1 to n" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -593,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update logic in MakeSumDivisibleByP. While comparing mod's -ve number should be made +ve because they are similar otherwise we would miss out some subarray. This is similar to the way he handled mod sum in SubarraySumsDivisibleByK" />
     <MESSAGE value="Update logic behind choosing same modsum in SubarraySumsDivisibleByK" />
     <MESSAGE value="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP." />
     <MESSAGE value="Solve medium find max capacity required to car pool given start, end time and no of people hopping in by greedy approach. Keep track of people hopping in and out at each time.&#10;&#10;Learnings -- It's very critical to understand that if you copy the solution of other users without understanding why they used a specific DS, you won't be able to solve similar questions in the future. This question is similar to MeetingsRoom2" />
@@ -618,7 +628,8 @@
     <MESSAGE value="Add related problems" />
     <MESSAGE value="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring" />
     <MESSAGE value="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start" />
+    <MESSAGE value="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -680,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="504" y="227" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600159733361" />
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594384167063">
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601403451266">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594384167063" />
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601403451266" />
     <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1595271326137">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -692,10 +703,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601325216862">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601396425887">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601325216862" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601396425887" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -708,38 +719,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601395895935">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601398949389">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601395895935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601395895935">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601398949389" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601398949389">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601395895935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601395895935">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601398949389" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601398949389">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601395895935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601395895935">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601398949389" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601398949389">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601395895935" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1600328304543">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601398949389" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1601397955464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304543" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1600328304543">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601397955464" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1601397955464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304543" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1600328304543">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601397955464" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1601397955464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304543" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1600328304543">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601397955464" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1601397955464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1600328304543" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601397955464" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -784,10 +795,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601325219085">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601396427727">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601325219085" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601396427727" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -796,10 +807,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1594451868089" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598817571167">
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601403444304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1598817571167" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601403444304" />
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594592599434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -820,10 +831,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601161873062" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601328612873">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601398515429">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601328612873" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601398515429" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601329628302">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
