@@ -31,7 +31,7 @@ public class MinCostToConnectAllPoints {
         int totalCost = 0;
         while (visited.size() < n) {
             Pair<Integer, Integer> head = pq.remove();
-            if (!visited.contains(head.getKey())) {
+            if (!visited.contains(head.getKey())) { //this is also required because it's not always required that the current node that is present at the top is unvisited
                 visited.add(head.getKey());
                 totalCost += head.getValue();
                 for (int i = 0; i < n; i++) {

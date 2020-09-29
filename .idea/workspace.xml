@@ -9,7 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinCostToConnectAllPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinCostToConnectAllPoints.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00296" summary="Update logic in find the length of the last word.&#10;&#10;Learnings -- When problem statement deals with finding the last something, its sometimes better to iterate from the end.">
-      <created>1600156902330</created>
-      <option name="number" value="00296" />
-      <option name="presentableId" value="LOCAL-00296" />
-      <option name="project" value="LOCAL" />
-      <updated>1600156902330</updated>
     </task>
     <task id="LOCAL-00297" summary="Update approach in Generate unique bst that store values from 1 to n&#10;&#10;Learnings -- In BST problems, try to leverage lower and upper bound during recursion.">
       <created>1600168140315</created>
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601411953569</updated>
     </task>
-    <option name="localTasksCounter" value="345" />
+    <task id="LOCAL-00345" summary="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes.">
+      <created>1601416300636</created>
+      <option name="number" value="00345" />
+      <option name="presentableId" value="LOCAL-00345" />
+      <option name="project" value="LOCAL" />
+      <updated>1601416300636</updated>
+    </task>
+    <option name="localTasksCounter" value="346" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find max capacity required to car pool given start, end time and no of people hopping in by greedy approach. Keep track of people hopping in and out at each time.&#10;&#10;Learnings -- It's very critical to understand that if you copy the solution of other users without understanding why they used a specific DS, you won't be able to solve similar questions in the future. This question is similar to MeetingsRoom2" />
     <MESSAGE value="Solve easy find longest subsequence with max diff of 1 by considering each element as the smallest and checking if we can find the corresponding max element&#10;&#10;Learning -- Leveraged previous learning of interpreting 'max difference' in a subarray." />
     <MESSAGE value="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)" />
     <MESSAGE value="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation." />
@@ -626,7 +625,8 @@
     <MESSAGE value="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly." />
     <MESSAGE value="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum." />
     <MESSAGE value="Solve medium find a subarray whose subarray sum is divisible by k -- keep track of running mod sum, if you see a repeating modsum, you got yourself a subarray whose sum is divisible by k, hence modsum is 0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find a subarray whose subarray sum is divisible by k -- keep track of running mod sum, if you see a repeating modsum, you got yourself a subarray whose sum is divisible by k, hence modsum is 0" />
+    <MESSAGE value="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -700,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601411953087">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601416300155">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601411953087" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601416300155" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +792,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601411954668">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601416302777">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601411954668" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601416302777" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
