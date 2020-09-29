@@ -94,22 +94,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PartitionKEqualSumSubsetsTest.test">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="MinimumWindowSubstringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MinimumWindowSubstringTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MinimumWindowSubstringTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MinimumWindowSubstringTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,21 +143,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.MinimumWindowSubstringTest.test" />
       <item itemvalue="JUnit.MinimumWindowSubstringTest" />
       <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
       <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
       <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
+      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
         <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
         <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
         <item itemvalue="JUnit.MinimumWindowSubstringTest" />
-        <item itemvalue="JUnit.MinimumWindowSubstringTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -179,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00294" summary="Add another way of solving find maximum score after traversing two arrays by visualizing the problem as graph.&#10;&#10;Learnings -- Where there are choices to be made visualize it as graph.">
-      <created>1600027264234</created>
-      <option name="number" value="00294" />
-      <option name="presentableId" value="LOCAL-00294" />
-      <option name="project" value="LOCAL" />
-      <updated>1600027264239</updated>
     </task>
     <task id="LOCAL-00295" summary="Solve medium find maximum sum of two non overlapping subarrays of L or M size, given that L sized subarray can occur before or after the M sized subarray&#10;&#10;Learnings -- Leveraged the fact that the problem is asking for max non-overlapping sum which can be handled by tracking max subarray sum from left and right. Since the problem asked for specific sized subarray sum, need to calculate the sum by sliding window approach.">
       <created>1600101306427</created>
@@ -523,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601396426649</updated>
     </task>
-    <option name="localTasksCounter" value="343" />
+    <task id="LOCAL-00343" summary="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum.">
+      <created>1601410027647</created>
+      <option name="number" value="00343" />
+      <option name="presentableId" value="LOCAL-00343" />
+      <option name="project" value="LOCAL" />
+      <updated>1601410027647</updated>
+    </task>
+    <option name="localTasksCounter" value="344" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -604,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update logic behind choosing same modsum in SubarraySumsDivisibleByK" />
     <MESSAGE value="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP." />
     <MESSAGE value="Solve medium find max capacity required to car pool given start, end time and no of people hopping in by greedy approach. Keep track of people hopping in and out at each time.&#10;&#10;Learnings -- It's very critical to understand that if you copy the solution of other users without understanding why they used a specific DS, you won't be able to solve similar questions in the future. This question is similar to MeetingsRoom2" />
     <MESSAGE value="Solve easy find longest subsequence with max diff of 1 by considering each element as the smallest and checking if we can find the corresponding max element&#10;&#10;Learning -- Leveraged previous learning of interpreting 'max difference' in a subarray." />
@@ -629,7 +625,8 @@
     <MESSAGE value="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring" />
     <MESSAGE value="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start" />
     <MESSAGE value="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly." />
+    <MESSAGE value="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -703,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601396425887">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601410027081">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601396425887" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601410027081" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -719,22 +716,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601398949389">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601411675952">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601398949389" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601398949389">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601411675952" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601411675952">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601398949389" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601398949389">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601411675952" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601411675952">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601398949389" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601398949389">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601411675952" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601411675952">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601398949389" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601411675952" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1601397955464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,18 +784,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1600974993987" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1601161685105">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1601411022317">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601161685105" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601411022317" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601396427727">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601410029301">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601396427727" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601410029301" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
