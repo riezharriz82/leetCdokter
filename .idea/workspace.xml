@@ -9,7 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinCostToConnectAllPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinCostToConnectAllPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,12 +151,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.MinimumWindowSubstringTest" />
       <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
       <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
       <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
-      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
@@ -570,17 +570,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="1 to n" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -636,10 +625,6 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1599427305776" />
-    <state x="552" y="183" width="816" height="729" key="#Intentions" timestamp="1592860555493">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="183" width="816" height="729" key="#Intentions/0.0.1920.1050@0.0.1920.1050" timestamp="1592860555493" />
     <state x="727" y="349" key="#Notifications" timestamp="1598814073398">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -824,10 +809,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601276320404" />
-    <state width="731" height="247" key="javadoc.popup.new" timestamp="1601161873062">
+    <state width="720" height="247" key="javadoc.popup.new" timestamp="1601532786662">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="731" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601161873062" />
+    <state width="720" height="247" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601532786662" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601398515429">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
