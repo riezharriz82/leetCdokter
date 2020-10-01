@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00298" summary="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own.">
-      <created>1600175398093</created>
-      <option name="number" value="00298" />
-      <option name="presentableId" value="LOCAL-00298" />
-      <option name="project" value="LOCAL" />
-      <updated>1600175398093</updated>
-    </task>
     <task id="LOCAL-00299" summary="Solve medium find no of ways to decode a number given the mapping as a-&gt;1, b-&gt;2 ... z-&gt;26&#10;&#10;Learnings -- Was able to figure out the recurrence on my own. The base condition of the recurrence is similar to KnightDialler problem.">
       <created>1600179327147</created>
       <option name="number" value="00299" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601533195432</updated>
     </task>
-    <option name="localTasksCounter" value="347" />
+    <task id="LOCAL-00347" summary="Solve hard but medium find length of longest consecutive sequence by DFS + Memoization.&#10;&#10;Learnings -- Leverage prior learning of reusing previously computed results.">
+      <created>1601547616239</created>
+      <option name="number" value="00347" />
+      <option name="presentableId" value="LOCAL-00347" />
+      <option name="project" value="LOCAL" />
+      <updated>1601547616239</updated>
+    </task>
+    <option name="localTasksCounter" value="348" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)" />
     <MESSAGE value="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation." />
     <MESSAGE value="Solve medium but tricky problem find all ways to solve an expression by adding parenthesis at all valid places. An optimization would be to memoize the expressions as we repeatedly solve same expression again and again.&#10;&#10;Learnings -- Sometimes for recursion problems, you have to recursively solve for both left and right." />
     <MESSAGE value="Solved hard find minimum distance to type using two fingers using simple recursion and memoization.&#10;&#10;Learnings -- Google is tricky. Oh lord, give me the strength to continue. Losing strength at this moment." />
@@ -615,7 +614,8 @@
     <MESSAGE value="Solve medium find a subarray whose subarray sum is divisible by k -- keep track of running mod sum, if you see a repeating modsum, you got yourself a subarray whose sum is divisible by k, hence modsum is 0" />
     <MESSAGE value="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes." />
     <MESSAGE value="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque" />
+    <MESSAGE value="Solve hard but medium find length of longest consecutive sequence by DFS + Memoization.&#10;&#10;Learnings -- Leverage prior learning of reusing previously computed results." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard but medium find length of longest consecutive sequence by DFS + Memoization.&#10;&#10;Learnings -- Leverage prior learning of reusing previously computed results." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -685,10 +685,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601533194634">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601547615701">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601533194634" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601547615701" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -777,10 +777,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601533196685">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601547617727">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601533196685" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601547617727" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
