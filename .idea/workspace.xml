@@ -73,7 +73,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -94,12 +94,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
-    <configuration name="MinimumWindowSubstringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BusRoutesTest.test">
+    <configuration name="BusRoutesTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MinimumWindowSubstringTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="BusRoutesTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,18 +154,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.MinimumWindowSubstringTest" />
       <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
       <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
       <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
+      <item itemvalue="JUnit.BusRoutesTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BusRoutesTest.test" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
         <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
         <item itemvalue="JUnit.PartitionEqualSubsetSumTest.test" />
-        <item itemvalue="JUnit.MinimumWindowSubstringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -176,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00299" summary="Solve medium find no of ways to decode a number given the mapping as a-&gt;1, b-&gt;2 ... z-&gt;26&#10;&#10;Learnings -- Was able to figure out the recurrence on my own. The base condition of the recurrence is similar to KnightDialler problem.">
-      <created>1600179327147</created>
-      <option name="number" value="00299" />
-      <option name="presentableId" value="LOCAL-00299" />
-      <option name="project" value="LOCAL" />
-      <updated>1600179327147</updated>
     </task>
     <task id="LOCAL-00300" summary="Solve medium find max length subarray with equal number of ones and zeroes by converting 0 to -1 and keeping track of prefix sum.&#10;&#10;Learnings -- In case of problems dealing with equal no of partitions and there are only two variants, try to convert one variant into negative of another.">
       <created>1600182364276</created>
@@ -520,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601547616239</updated>
     </task>
-    <option name="localTasksCounter" value="348" />
+    <task id="LOCAL-00348" summary="Solve hard and tricky find the first missing positive number by swapping the number to their correct index or by flagging their index.&#10;&#10;Learnings -- Its a tricky question with edge cases around boundary cases. In case of placing the flag by negating the value present at that index, the tricky thing is to take care of -ve numbers already present in the input by setting it to a high positive value outside the working range [1,n]">
+      <created>1601566783907</created>
+      <option name="number" value="00348" />
+      <option name="presentableId" value="LOCAL-00348" />
+      <option name="project" value="LOCAL" />
+      <updated>1601566783907</updated>
+    </task>
+    <option name="localTasksCounter" value="349" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation." />
     <MESSAGE value="Solve medium but tricky problem find all ways to solve an expression by adding parenthesis at all valid places. An optimization would be to memoize the expressions as we repeatedly solve same expression again and again.&#10;&#10;Learnings -- Sometimes for recursion problems, you have to recursively solve for both left and right." />
     <MESSAGE value="Solved hard find minimum distance to type using two fingers using simple recursion and memoization.&#10;&#10;Learnings -- Google is tricky. Oh lord, give me the strength to continue. Losing strength at this moment." />
     <MESSAGE value="Solve hard but medium find longest increasing path in a matrix by DFS + Memoization" />
@@ -615,7 +615,8 @@
     <MESSAGE value="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes." />
     <MESSAGE value="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque" />
     <MESSAGE value="Solve hard but medium find length of longest consecutive sequence by DFS + Memoization.&#10;&#10;Learnings -- Leverage prior learning of reusing previously computed results." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard but medium find length of longest consecutive sequence by DFS + Memoization.&#10;&#10;Learnings -- Leverage prior learning of reusing previously computed results." />
+    <MESSAGE value="Solve hard and tricky find the first missing positive number by swapping the number to their correct index or by flagging their index.&#10;&#10;Learnings -- Its a tricky question with edge cases around boundary cases. In case of placing the flag by negating the value present at that index, the tricky thing is to take care of -ve numbers already present in the input by setting it to a high positive value outside the working range [1,n]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the first missing positive number by swapping the number to their correct index or by flagging their index.&#10;&#10;Learnings -- Its a tricky question with edge cases around boundary cases. In case of placing the flag by negating the value present at that index, the tricky thing is to take care of -ve numbers already present in the input by setting it to a high positive value outside the working range [1,n]" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -637,10 +638,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594324360886" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1601328587194">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1601567541934">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601328587194" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601567541934" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -685,10 +686,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601547615701">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601566783173">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601547615701" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601566783173" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -701,38 +702,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601411675952">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601585420361">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601411675952" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601411675952">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601585420361" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601585420361">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601411675952" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601411675952">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601585420361" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601585420360">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601411675952" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601411675952">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601585420360" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601585420361">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601411675952" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1601397955464">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601585420361" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1601577051696">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601397955464" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1601397955464">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601577051696" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1601577051696">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601397955464" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1601397955464">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601577051696" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1601577051696">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601397955464" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1601397955464">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601577051696" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1601577051696">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601397955464" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601577051696" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -761,14 +762,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="695" y="245" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598184917635" />
-    <state x="668" y="259" key="SettingsEditor" timestamp="1601329399189">
+    <state x="668" y="259" key="SettingsEditor" timestamp="1601568700981">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1601329399189" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1600974993987">
+    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1601568700981" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1601569655917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1600974993987" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1601569655917" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1601411022317">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -777,10 +778,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601547617727">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601566784867">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601547617727" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601566784867" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -821,10 +822,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601547464096" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601329360187">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601575886605">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601329360187" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601575886605" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1093,6 +1094,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/alternate/TargetNumberWithOperations.java</url>
           <line>38</line>
           <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/BusRoutes.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="161" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
