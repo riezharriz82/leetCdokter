@@ -177,13 +177,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00297" summary="Update approach in Generate unique bst that store values from 1 to n&#10;&#10;Learnings -- In BST problems, try to leverage lower and upper bound during recursion.">
-      <created>1600168140315</created>
-      <option name="number" value="00297" />
-      <option name="presentableId" value="LOCAL-00297" />
-      <option name="project" value="LOCAL" />
-      <updated>1600168140315</updated>
-    </task>
     <task id="LOCAL-00298" summary="Solve medium Evaluate division given some queries like a/b=2 and b/c=3, answer a/c=? &#10;&#10;Learnings -- Problems dealing with weird relationships can be modelled as graph. I don't know how I modelled it as graph but I did it on my own.">
       <created>1600175398093</created>
       <option name="number" value="00298" />
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601416300636</updated>
     </task>
-    <option name="localTasksCounter" value="346" />
+    <task id="LOCAL-00346" summary="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque">
+      <created>1601533195432</created>
+      <option name="number" value="00346" />
+      <option name="presentableId" value="LOCAL-00346" />
+      <option name="project" value="LOCAL" />
+      <updated>1601533195432</updated>
+    </task>
+    <option name="localTasksCounter" value="347" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find longest subsequence with max diff of 1 by considering each element as the smallest and checking if we can find the corresponding max element&#10;&#10;Learning -- Leveraged previous learning of interpreting 'max difference' in a subarray." />
     <MESSAGE value="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)" />
     <MESSAGE value="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation." />
     <MESSAGE value="Solve medium but tricky problem find all ways to solve an expression by adding parenthesis at all valid places. An optimization would be to memoize the expressions as we repeatedly solve same expression again and again.&#10;&#10;Learnings -- Sometimes for recursion problems, you have to recursively solve for both left and right." />
@@ -615,7 +614,8 @@
     <MESSAGE value="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum." />
     <MESSAGE value="Solve medium find a subarray whose subarray sum is divisible by k -- keep track of running mod sum, if you see a repeating modsum, you got yourself a subarray whose sum is divisible by k, hence modsum is 0" />
     <MESSAGE value="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes." />
+    <MESSAGE value="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -685,10 +685,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601416300155">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601533194634">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601416300155" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601533194634" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -777,10 +777,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601416302777">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601533196685">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601416302777" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601533196685" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -817,10 +817,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601398515429" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601329628302">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601547464096">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601329628302" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601547464096" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601329360187">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
