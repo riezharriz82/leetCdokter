@@ -178,13 +178,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00302" summary="Solve medium but poorly worded problem, find total time spent by function during execution of a normal program&#10;&#10;Learnings -- Function execution can be modelled as stack. Need to tread highly disliked problems in leetcode carefully. Don't start coding them as most likely it will be based on wrong assumption.">
-      <created>1600295103152</created>
-      <option name="number" value="00302" />
-      <option name="presentableId" value="LOCAL-00302" />
-      <option name="project" value="LOCAL" />
-      <updated>1600295103152</updated>
-    </task>
     <task id="LOCAL-00303" summary="Solve medium find length of the longest mountain subarray where array is first increasing and then decreasing by solving it similar to a non-overlapping subarray problem&#10;&#10;Learnings -- Mountain problems can be broken down to finding the increasing part and decreasing part separately.">
       <created>1600329694434</created>
       <option name="number" value="00303" />
@@ -521,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601658878425</updated>
     </task>
-    <option name="localTasksCounter" value="351" />
+    <task id="LOCAL-00351" summary="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop.">
+      <created>1601661149701</created>
+      <option name="number" value="00351" />
+      <option name="presentableId" value="LOCAL-00351" />
+      <option name="project" value="LOCAL" />
+      <updated>1601661149701</updated>
+    </task>
+    <option name="localTasksCounter" value="352" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard but medium find longest increasing path in a matrix by DFS + Memoization" />
     <MESSAGE value="Fix incorrect comment in CourseSchedule2" />
     <MESSAGE value="Solve hard but tricky serialize and deserialize a binary tree. &#10;&#10;Learnings -- I solved the question on my own but wrote a long answer. I could have leveraged a queue to always set the head of the queue to either the left or right of node." />
     <MESSAGE value="Solve medium but tricky problem find the largest number possible by re-arranging a list of numbers&#10;&#10;Learnings -- Try to break down the problems by ericto's method i.e. try to solve the problem by asking if i had the largest number possible at ith index, how can i extend it to i+1. &#10;Take care of stripping leading zeroes when dealing with integers and strings." />
@@ -616,7 +615,8 @@
     <MESSAGE value="Solve hard and tricky find the first missing positive number by swapping the number to their correct index or by flagging their index.&#10;&#10;Learnings -- Its a tricky question with edge cases around boundary cases. In case of placing the flag by negating the value present at that index, the tricky thing is to take care of -ve numbers already present in the input by setting it to a high positive value outside the working range [1,n]" />
     <MESSAGE value="Solve medium but tricky find xor all subarray elements by leveraging the property that xor is the inverse function of xor&#10;&#10;Learnings: If the xor of a[0...i] is X and the xor of a[0 to k] is Y then xor of a[k+1, i] is X ^ Y" />
     <MESSAGE value="Simplify code in DecodeString by coalescing string when ']' is encountered. This code fits naturally into the stack style of solving things." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify code in DecodeString by coalescing string when ']' is encountered. This code fits naturally into the stack style of solving things." />
+    <MESSAGE value="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -686,10 +686,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601658877646">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601661149026">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601658877646" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601661149026" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,10 +778,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601658882473">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601661150857">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601658882473" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601661150857" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -810,10 +810,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601640426445" />
-    <state width="720" height="232" key="javadoc.popup.new" timestamp="1601657901674">
+    <state width="720" height="232" key="javadoc.popup.new" timestamp="1601666357071">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="720" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601657901674" />
+    <state width="720" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601666357071" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601398515429">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
