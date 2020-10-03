@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExamRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExamRoom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DecodeStringTest.test">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="BusRoutesTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -162,9 +161,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.DecodeStringTest.test" />
         <item itemvalue="JUnit.BusRoutesTest.test" />
-        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
         <item itemvalue="JUnit.PartitionEqualSubsetSumTest" />
       </list>
@@ -178,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00304" summary="Solve easy find shortest distance to a target character in a string by keeping track of the distance from the target character from left and right.">
-      <created>1600331148127</created>
-      <option name="number" value="00304" />
-      <option name="presentableId" value="LOCAL-00304" />
-      <option name="project" value="LOCAL" />
-      <updated>1600331148127</updated>
     </task>
     <task id="LOCAL-00305" summary="Solve medium evaluate a postfix notation by using stack.&#10;&#10;Learnings -- Postfix notation does not have any concept of brackets. So when you need to evaluate an infix expression, you can convert into postfix and then evaluate it.">
       <created>1600341056999</created>
@@ -522,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601716430748</updated>
     </task>
-    <option name="localTasksCounter" value="353" />
+    <task id="LOCAL-00353" summary="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key">
+      <created>1601726380593</created>
+      <option name="number" value="00353" />
+      <option name="presentableId" value="LOCAL-00353" />
+      <option name="project" value="LOCAL" />
+      <updated>1601726380593</updated>
+    </task>
+    <option name="localTasksCounter" value="354" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard but tricky serialize and deserialize a binary tree. &#10;&#10;Learnings -- I solved the question on my own but wrote a long answer. I could have leveraged a queue to always set the head of the queue to either the left or right of node." />
     <MESSAGE value="Solve medium but tricky problem find the largest number possible by re-arranging a list of numbers&#10;&#10;Learnings -- Try to break down the problems by ericto's method i.e. try to solve the problem by asking if i had the largest number possible at ith index, how can i extend it to i+1. &#10;Take care of stripping leading zeroes when dealing with integers and strings." />
     <MESSAGE value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
     <MESSAGE value="Fix broken tests" />
@@ -617,7 +615,8 @@
     <MESSAGE value="Simplify code in DecodeString by coalescing string when ']' is encountered. This code fits naturally into the stack style of solving things." />
     <MESSAGE value="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop." />
     <MESSAGE value="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index." />
+    <MESSAGE value="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -687,10 +686,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601716429971">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601726379997">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601716429971" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601726379997" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -703,22 +702,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601658897808">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601735777172">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601658897808" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601658897807">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601735777172" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601735777172">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601658897807" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601658897807">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601735777172" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601735777172">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601658897807" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601658897807">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601735777172" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601735777172">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601658897807" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601735777172" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1601650370687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -771,18 +770,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1601656990249" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1601719357468">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1601735527656">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601719357468" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601735527656" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601716716695">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601726381597">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601716716695" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601726381597" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -807,10 +806,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1601640426445">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1601756480495">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601640426445" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601756480495" />
     <state width="720" height="232" key="javadoc.popup.new" timestamp="1601666357071">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -823,10 +822,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601716221784" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601724426814">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601757135549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601724426814" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601757135549" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
