@@ -178,13 +178,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00305" summary="Solve medium evaluate a postfix notation by using stack.&#10;&#10;Learnings -- Postfix notation does not have any concept of brackets. So when you need to evaluate an infix expression, you can convert into postfix and then evaluate it.">
-      <created>1600341056999</created>
-      <option name="number" value="00305" />
-      <option name="presentableId" value="LOCAL-00305" />
-      <option name="project" value="LOCAL" />
-      <updated>1600341056999</updated>
-    </task>
     <task id="LOCAL-00306" summary="Solve easy find the last stone weight if you smash the two largest stones present and reduce it to difference in weight between them using priority queue.">
       <created>1600342710135</created>
       <option name="number" value="00306" />
@@ -521,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601726380593</updated>
     </task>
-    <option name="localTasksCounter" value="354" />
+    <task id="LOCAL-00354" summary="Solve medium track count of occurrences in the last hour via sliding window.&#10;&#10;Learnings -- As the problem talks about dealing with elements present in the last hour, sliding window fits perfectly. Thought about using treeSet or queue but they didn't pan out.">
+      <created>1601757379592</created>
+      <option name="number" value="00354" />
+      <option name="presentableId" value="LOCAL-00354" />
+      <option name="project" value="LOCAL" />
+      <updated>1601757379592</updated>
+    </task>
+    <option name="localTasksCounter" value="355" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium but tricky problem find the largest number possible by re-arranging a list of numbers&#10;&#10;Learnings -- Try to break down the problems by ericto's method i.e. try to solve the problem by asking if i had the largest number possible at ith index, how can i extend it to i+1. &#10;Take care of stripping leading zeroes when dealing with integers and strings." />
     <MESSAGE value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
     <MESSAGE value="Fix broken tests" />
     <MESSAGE value="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable." />
@@ -616,7 +615,8 @@
     <MESSAGE value="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop." />
     <MESSAGE value="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index." />
     <MESSAGE value="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key" />
+    <MESSAGE value="Solve medium track count of occurrences in the last hour via sliding window.&#10;&#10;Learnings -- As the problem talks about dealing with elements present in the last hour, sliding window fits perfectly. Thought about using treeSet or queue but they didn't pan out." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium track count of occurrences in the last hour via sliding window.&#10;&#10;Learnings -- As the problem talks about dealing with elements present in the last hour, sliding window fits perfectly. Thought about using treeSet or queue but they didn't pan out." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -686,10 +686,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601726379997">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601757378882">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601726379997" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601757378882" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -702,22 +702,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601735777172">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1601757523202">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601735777172" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601735777172">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601757523202" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1601757523201">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601735777172" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601735777172">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601757523201" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1601757523201">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601735777172" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601735777172">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601757523201" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1601757523202">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601735777172" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601757523202" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1601650370687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,10 +778,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601726381597">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601757380561">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601726381597" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601757380561" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -822,10 +822,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601716221784" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601757135549">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601757650885">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601757135549" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601757650885" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
