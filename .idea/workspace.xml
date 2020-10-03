@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExamRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExamRoom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00303" summary="Solve medium find length of the longest mountain subarray where array is first increasing and then decreasing by solving it similar to a non-overlapping subarray problem&#10;&#10;Learnings -- Mountain problems can be broken down to finding the increasing part and decreasing part separately.">
-      <created>1600329694434</created>
-      <option name="number" value="00303" />
-      <option name="presentableId" value="LOCAL-00303" />
-      <option name="project" value="LOCAL" />
-      <updated>1600329694434</updated>
     </task>
     <task id="LOCAL-00304" summary="Solve easy find shortest distance to a target character in a string by keeping track of the distance from the target character from left and right.">
       <created>1600331148127</created>
@@ -521,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601661149701</updated>
     </task>
-    <option name="localTasksCounter" value="352" />
+    <task id="LOCAL-00352" summary="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index.">
+      <created>1601716430748</created>
+      <option name="number" value="00352" />
+      <option name="presentableId" value="LOCAL-00352" />
+      <option name="project" value="LOCAL" />
+      <updated>1601716430748</updated>
+    </task>
+    <option name="localTasksCounter" value="353" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fix incorrect comment in CourseSchedule2" />
     <MESSAGE value="Solve hard but tricky serialize and deserialize a binary tree. &#10;&#10;Learnings -- I solved the question on my own but wrote a long answer. I could have leveraged a queue to always set the head of the queue to either the left or right of node." />
     <MESSAGE value="Solve medium but tricky problem find the largest number possible by re-arranging a list of numbers&#10;&#10;Learnings -- Try to break down the problems by ericto's method i.e. try to solve the problem by asking if i had the largest number possible at ith index, how can i extend it to i+1. &#10;Take care of stripping leading zeroes when dealing with integers and strings." />
     <MESSAGE value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
@@ -616,7 +616,8 @@
     <MESSAGE value="Solve medium but tricky find xor all subarray elements by leveraging the property that xor is the inverse function of xor&#10;&#10;Learnings: If the xor of a[0...i] is X and the xor of a[0 to k] is Y then xor of a[k+1, i] is X ^ Y" />
     <MESSAGE value="Simplify code in DecodeString by coalescing string when ']' is encountered. This code fits naturally into the stack style of solving things." />
     <MESSAGE value="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop." />
+    <MESSAGE value="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -686,10 +687,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601661149026">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601716429971">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601661149026" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601716429971" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -770,18 +771,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1601656990249" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1601411022317">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1601719357468">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601411022317" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1601719357468" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601661150857">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601716716695">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601661150857" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601716716695" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -818,14 +819,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601398515429" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601547464096">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601716221784">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601547464096" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601658888411">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601716221784" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601724426814">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601658888411" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601724426814" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
