@@ -178,13 +178,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00306" summary="Solve easy find the last stone weight if you smash the two largest stones present and reduce it to difference in weight between them using priority queue.">
-      <created>1600342710135</created>
-      <option name="number" value="00306" />
-      <option name="presentableId" value="LOCAL-00306" />
-      <option name="project" value="LOCAL" />
-      <updated>1600342710135</updated>
-    </task>
     <task id="LOCAL-00307" summary="Solve medium find all numbers whose digits are sequential with difference of 1 and lying within the provided range by using recursion.&#10;&#10;Learnings -- Leveraged two prior learnings, while dealing with integers, we can generate the number by just multiplying by 10 and adding the next digit. It made the code very short.&#10;Second leveraged learning was to use recursion to generate all possible numbers.">
       <created>1600525027645</created>
       <option name="number" value="00307" />
@@ -521,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601757379592</updated>
     </task>
-    <option name="localTasksCounter" value="355" />
+    <task id="LOCAL-00355" summary="Solve medium generate all possible combinations by trying all permissible characters for that index via backtracking.&#10;&#10;Learnings -- Leveraged prior learning of using recursion to generate all possible combinations. Also this question is very similar to GeneratePhoneCombinations">
+      <created>1601758285747</created>
+      <option name="number" value="00355" />
+      <option name="presentableId" value="LOCAL-00355" />
+      <option name="project" value="LOCAL" />
+      <updated>1601758285747</updated>
+    </task>
+    <option name="localTasksCounter" value="356" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -571,6 +571,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="minimize" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -591,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium but tricky problem similar to JumpGame, find whether you can visit all the gas stations, provided you get certain amount of gas at each station and it takes a certain cost to visit next station.&#10;&#10;Learnings -- Yes/No questions can be solved via greedy approach as mentioned by ericto, trick to solve them is to keep track of the max state possible, if current state is invalid, reset it." />
     <MESSAGE value="Fix broken tests" />
     <MESSAGE value="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable." />
     <MESSAGE value="Solve hard and tricky problem find largest number where using each digit incurs a specific cost by memoization.&#10;&#10;Learnings -- 1. While comparing strings as integers, compare them via compareTo() only when their lengths match, otherwise the longer string is the greater of them because &quot;12&quot;.compareTo(&quot;3&quot;) &lt; 0&#10;&#10;2. For solving cost related problems, always start from the target and recurse down to 0, this recursion gives a memoization friendly code." />
@@ -616,7 +626,8 @@
     <MESSAGE value="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index." />
     <MESSAGE value="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key" />
     <MESSAGE value="Solve medium track count of occurrences in the last hour via sliding window.&#10;&#10;Learnings -- As the problem talks about dealing with elements present in the last hour, sliding window fits perfectly. Thought about using treeSet or queue but they didn't pan out." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium track count of occurrences in the last hour via sliding window.&#10;&#10;Learnings -- As the problem talks about dealing with elements present in the last hour, sliding window fits perfectly. Thought about using treeSet or queue but they didn't pan out." />
+    <MESSAGE value="Solve medium generate all possible combinations by trying all permissible characters for that index via backtracking.&#10;&#10;Learnings -- Leveraged prior learning of using recursion to generate all possible combinations. Also this question is very similar to GeneratePhoneCombinations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium generate all possible combinations by trying all permissible characters for that index via backtracking.&#10;&#10;Learnings -- Leveraged prior learning of using recursion to generate all possible combinations. Also this question is very similar to GeneratePhoneCombinations" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -686,18 +697,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601757378882">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601758285195">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601757378882" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601758285195" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1601622904125">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1601810750204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601622904125" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601810750204" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,10 +789,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601757380561">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601758287221">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601757380561" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601758287221" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -814,18 +825,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="720" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601666357071" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601398515429">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601808235171">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601398515429" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601808235171" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601716221784">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601716221784" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601757650885">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601810633701">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601757650885" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601810633701" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
