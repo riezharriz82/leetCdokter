@@ -18,7 +18,7 @@ import java.util.Map;
 public class CarPooling {
 
     /**
-     * {@link alternate.MeetingsRoom2} is similar problem
+     * {@link MeetingsRoom2} is similar problem
      * Approach: Greedy, keep track of the persons hopping in and dropping out at any moment, current capacity should not exceed max capacity
      * <p>
      * Solved it on my own this time, it's very critical to understand that if you copy the solution of other users without understanding why they used
