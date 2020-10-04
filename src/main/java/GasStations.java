@@ -34,6 +34,9 @@ public class GasStations {
      * reset the start to the next index and repeat the process
      * <p>
      * Since the problem statement guarantees that the solution would be unique, greedy works here.
+     *
+     * Awesome explanation video: https://www.youtube.com/watch?v=nTKdYm_5-ZY&list=PLupD_xFct8mETlGFlLVrwbLwcxczbgWRM&index=8
+     * Keep track of surplus and deficit at each index, any node with surplus < deficit can't be starting node.
      */
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int totalGas = 0, totalCost = 0;
