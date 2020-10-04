@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FillingBookCaseShelves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FillingBookCaseShelves.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00307" summary="Solve medium find all numbers whose digits are sequential with difference of 1 and lying within the provided range by using recursion.&#10;&#10;Learnings -- Leveraged two prior learnings, while dealing with integers, we can generate the number by just multiplying by 10 and adding the next digit. It made the code very short.&#10;Second leveraged learning was to use recursion to generate all possible numbers.">
-      <created>1600525027645</created>
-      <option name="number" value="00307" />
-      <option name="presentableId" value="LOCAL-00307" />
-      <option name="project" value="LOCAL" />
-      <updated>1600525027646</updated>
     </task>
     <task id="LOCAL-00308" summary="Solve easy but tricky find sum of all odd length subarray by finding how many times a number occurs in an odd length subarray using maths.&#10;&#10;Learnings -- Maths is hard. Need to find out how many subarrays are possible with ith index by considering some elements from left and right subarray. This is similar to the way we solved count no of subarrays with odd sum.">
       <created>1600541188129</created>
@@ -521,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601758285747</updated>
     </task>
-    <option name="localTasksCounter" value="356" />
+    <task id="LOCAL-00356" summary="Solve medium find minimum height to fill a bookcase where height of a shelf is the max height of the books placed in that shelf.&#10;Solved using recursion + memoization. Part of google mock interviews. Leveraged prior learning of splitting an array into smaller subarrays while minimizing a variable.&#10;&#10;Learnings -- Similar to solved problem SplitArrayLargestSum">
+      <created>1601811387770</created>
+      <option name="number" value="00356" />
+      <option name="presentableId" value="LOCAL-00356" />
+      <option name="project" value="LOCAL" />
+      <updated>1601811387770</updated>
+    </task>
+    <option name="localTasksCounter" value="357" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fix broken tests" />
     <MESSAGE value="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable." />
     <MESSAGE value="Solve hard and tricky problem find largest number where using each digit incurs a specific cost by memoization.&#10;&#10;Learnings -- 1. While comparing strings as integers, compare them via compareTo() only when their lengths match, otherwise the longer string is the greater of them because &quot;12&quot;.compareTo(&quot;3&quot;) &lt; 0&#10;&#10;2. For solving cost related problems, always start from the target and recurse down to 0, this recursion gives a memoization friendly code." />
     <MESSAGE value="Update comment in MinDistanceToTypeUsingTwoFingers" />
@@ -627,7 +627,8 @@
     <MESSAGE value="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key" />
     <MESSAGE value="Solve medium track count of occurrences in the last hour via sliding window.&#10;&#10;Learnings -- As the problem talks about dealing with elements present in the last hour, sliding window fits perfectly. Thought about using treeSet or queue but they didn't pan out." />
     <MESSAGE value="Solve medium generate all possible combinations by trying all permissible characters for that index via backtracking.&#10;&#10;Learnings -- Leveraged prior learning of using recursion to generate all possible combinations. Also this question is very similar to GeneratePhoneCombinations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium generate all possible combinations by trying all permissible characters for that index via backtracking.&#10;&#10;Learnings -- Leveraged prior learning of using recursion to generate all possible combinations. Also this question is very similar to GeneratePhoneCombinations" />
+    <MESSAGE value="Solve medium find minimum height to fill a bookcase where height of a shelf is the max height of the books placed in that shelf.&#10;Solved using recursion + memoization. Part of google mock interviews. Leveraged prior learning of splitting an array into smaller subarrays while minimizing a variable.&#10;&#10;Learnings -- Similar to solved problem SplitArrayLargestSum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find minimum height to fill a bookcase where height of a shelf is the max height of the books placed in that shelf.&#10;Solved using recursion + memoization. Part of google mock interviews. Leveraged prior learning of splitting an array into smaller subarrays while minimizing a variable.&#10;&#10;Learnings -- Similar to solved problem SplitArrayLargestSum" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -697,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601758285195">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601811387234">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601758285195" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601811387234" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -789,10 +790,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601758287221">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601811388714">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601758287221" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601811388714" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

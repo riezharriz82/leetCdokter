@@ -34,6 +34,20 @@ public class FillingBookCaseShelves {
         return recur(books, shelf_width, 0, memoized);
     }
 
+    /**
+     * I struggled a bit to create proper recurrence solution, because of two params, height and width,
+     * Because if i place element in first shelve, height and remaining width needs to be updated
+     * And if I place element in next shelf, they needs to be updated too. I thought that it might not fit properly into memoization.
+     * But I was wrong. If I place element in first shelf, new height to be passed is max(curHeight, curBookHeight),
+     * remainingWidth will be = curWidth - curBookWidth;
+     * <p>
+     * If I place element in next shelf, height will be curBookHeight and remainingWidth will be = maxWidth - curBookWidth
+     * <p>
+     * https://leetcode.com/problems/filling-bookcase-shelves/discuss/374938/DFS.-Explanation.-Try-adding-a-book-to-the-current-shelf-and-next-one
+     * <p>
+     * so I reduced it by placing all the elements
+     * in the same shelf and only recurring for placing elements in next shelf.
+     */
     private int recur(int[][] books, int shelf_width, int index, int[] memoized) {
         if (index == books.length) {
             return 0;
