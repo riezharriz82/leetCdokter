@@ -26,8 +26,8 @@ public class MinimumArrowsToBurstBalloons {
 
     /**
      * Similar to {@link EraseNonOverlappingIntervals}
-     * For each balloon, in order to minimize total no of arrows, it must be shot at the rightmost point possible
-     * Once shot, check how many balloons can be burst by same arrow.
+     * Greedy approach, for each balloon, in order to minimize total no of arrows, it must be shot at the rightmost point possible
+     * Once shot, if the next balloon starts after the last shot point, a new arrow is required
      */
     public int findMinArrowShots(int[][] points) {
         int n = points.length;
@@ -43,6 +43,25 @@ public class MinimumArrowsToBurstBalloons {
                 end = points[i][1]; // don't forget to update the end
             }
             //since the array is sorted by end, for the balloons that lies before the end, same arrow can burst it
+        }
+        return result;
+    }
+
+    public int findMinArrowShotsSortByStart(int[][] points) {
+        int n = points.length;
+        if (n == 0) {
+            return 0;
+        }
+        Arrays.sort(points, Comparator.comparingInt(o -> o[0])); //sort by start
+        int end = points[0][1];
+        int result = 1;
+        for (int i = 1; i < n; i++) {
+            if (points[i][0] > end) { //if this balloon starts after the last one ends, then we need another arrow
+                result++;
+                end = points[i][1];
+            } else if (points[i][1] < end) { //if the next balloon ends before the current balloon, then it will act as a new end point.
+                end = points[i][1];
+            }
         }
         return result;
     }
