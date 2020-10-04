@@ -1,5 +1,3 @@
-import javafx.util.Pair;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -21,6 +19,11 @@ import java.util.List;
  * </pre>
  */
 public class MergeIntervals {
+    /**
+     * Approach: Process intervals one by one
+     * Sort by start time, if the new interval starts before the last processed interval ends, we have an overlap.
+     * The new right boundary will be the max of end time of both the intervals.
+     */
     public int[][] mergeSimplified(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
         List<int[]> res = new ArrayList<>();
@@ -33,41 +36,5 @@ public class MergeIntervals {
             }
         }
         return res.toArray(new int[res.size()][]);
-    }
-
-    public int[][] mergeMyOriginalSolution(int[][] intervals) {
-        Arrays.sort(intervals, (o1, o2) -> {
-            if (o1[0] == o2[0]) {
-                return Integer.compare(o1[o1.length - 1], o2[o2.length - 1]);
-            } else {
-                return Integer.compare(o1[0], o2[0]);
-            }
-        }); //sort input based on the start of the interval
-        ArrayList<Pair<Integer, Integer>> res = new ArrayList<>();
-        for (int i = 0; i < intervals.length; ) {
-            int end = intervals[i][1];
-            int j = i + 1;
-            while (j < intervals.length) {
-                if (end >= intervals[j][0] && end <= intervals[j][1]) {
-                    end = intervals[j][1];
-                    j++;
-                } else if (end >= intervals[j][0] && end >= intervals[j][1]) {
-                    j++;
-                } else {
-                    break;
-                }
-            }
-            //merge everything between i and j
-            res.add(new Pair<>(intervals[i][0], end));
-            i = j;
-        }
-        int[][] resultArray = new int[res.size()][2];
-        int k = 0;
-        for (Pair<Integer, Integer> items : res) {
-            resultArray[k][0] = items.getKey();
-            resultArray[k++][1] = items.getValue();
-        }
-
-        return resultArray;
     }
 }
