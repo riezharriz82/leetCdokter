@@ -178,13 +178,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00317" summary="Update logic in MakeSumDivisibleByP. While comparing mod's -ve number should be made +ve because they are similar otherwise we would miss out some subarray. This is similar to the way he handled mod sum in SubarraySumsDivisibleByK">
-      <created>1600630245508</created>
-      <option name="number" value="00317" />
-      <option name="presentableId" value="LOCAL-00317" />
-      <option name="project" value="LOCAL" />
-      <updated>1600630245508</updated>
-    </task>
     <task id="LOCAL-00318" summary="Update logic behind choosing same modsum in SubarraySumsDivisibleByK">
       <created>1600700948582</created>
       <option name="number" value="00318" />
@@ -521,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601894034871</updated>
     </task>
-    <option name="localTasksCounter" value="366" />
+    <task id="LOCAL-00366" summary="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule">
+      <created>1601927720066</created>
+      <option name="number" value="00366" />
+      <option name="presentableId" value="LOCAL-00366" />
+      <option name="project" value="LOCAL" />
+      <updated>1601927720066</updated>
+    </task>
+    <option name="localTasksCounter" value="367" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start" />
     <MESSAGE value="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly." />
     <MESSAGE value="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum." />
     <MESSAGE value="Solve medium find a subarray whose subarray sum is divisible by k -- keep track of running mod sum, if you see a repeating modsum, you got yourself a subarray whose sum is divisible by k, hence modsum is 0" />
@@ -627,7 +626,8 @@
     <MESSAGE value="Simplify code and add approach in MergeIntervals" />
     <MESSAGE value="Solve easy find the two's complement of a number using bit magic&#10;&#10;Learnings -- Number + 2's complement = Number with all bit's set (3,7,15,31,63....) Find the first number greater than current number that has all bits set and return the diff of that number with current number." />
     <MESSAGE value="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals." />
+    <MESSAGE value="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -697,10 +697,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601894034308">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601927719390">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601894034308" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601927719390" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -789,10 +789,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601894035862">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601927720867">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601894035862" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601927720867" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
