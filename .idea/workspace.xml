@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MergeIntervals.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,13 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00316" summary="Solve medium but tricky problem related to finding all subarray whose sums are divisible by k. Input can contain -ve number.&#10;&#10;Learnings -- Look in the comment for approach. Modulo arithmetic is tricky. For problems related to subarray sum prefix sum is the way to go.">
-      <created>1600629658927</created>
-      <option name="number" value="00316" />
-      <option name="presentableId" value="LOCAL-00316" />
-      <option name="project" value="LOCAL" />
-      <updated>1600629658927</updated>
     </task>
     <task id="LOCAL-00317" summary="Update logic in MakeSumDivisibleByP. While comparing mod's -ve number should be made +ve because they are similar otherwise we would miss out some subarray. This is similar to the way he handled mod sum in SubarraySumsDivisibleByK">
       <created>1600630245508</created>
@@ -522,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601891907955</updated>
     </task>
-    <option name="localTasksCounter" value="365" />
+    <task id="LOCAL-00365" summary="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals.">
+      <created>1601894034870</created>
+      <option name="number" value="00365" />
+      <option name="presentableId" value="LOCAL-00365" />
+      <option name="project" value="LOCAL" />
+      <updated>1601894034871</updated>
+    </task>
+    <option name="localTasksCounter" value="366" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring" />
     <MESSAGE value="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start" />
     <MESSAGE value="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly." />
     <MESSAGE value="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum." />
@@ -628,7 +626,8 @@
     <MESSAGE value="Add another approach by sorting from start point in MinimumArrowsToBurstBalloons" />
     <MESSAGE value="Simplify code and add approach in MergeIntervals" />
     <MESSAGE value="Solve easy find the two's complement of a number using bit magic&#10;&#10;Learnings -- Number + 2's complement = Number with all bit's set (3,7,15,31,63....) Find the first number greater than current number that has all bits set and return the diff of that number with current number." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the two's complement of a number using bit magic&#10;&#10;Learnings -- Number + 2's complement = Number with all bit's set (3,7,15,31,63....) Find the first number greater than current number that has all bits set and return the diff of that number with current number." />
+    <MESSAGE value="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -698,10 +697,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601891907266">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601894034308">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601891907266" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601894034308" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,10 +789,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601891909156">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601894035862">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601891909156" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601894035862" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -822,18 +821,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601756480495" />
-    <state width="676" height="169" key="javadoc.popup.new" timestamp="1601891716783">
+    <state width="676" height="169" key="javadoc.popup.new" timestamp="1601898927530">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601891716783" />
+    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601898927530" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601815715145">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601815715145" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601893747683">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601903124083">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601893747683" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601903124083" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601893491787">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
