@@ -23,6 +23,8 @@ public class MergeIntervals {
      * Approach: Process intervals one by one
      * Sort by start time, if the new interval starts before the last processed interval ends, we have an overlap.
      * The new right boundary will be the max of end time of both the intervals.
+     * <p>
+     * {@link RemoveCoveredIntervals} similar problem
      */
     public int[][] mergeSimplified(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(o -> o[0]));
