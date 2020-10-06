@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CampusBikes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CampusBikes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00318" summary="Update logic behind choosing same modsum in SubarraySumsDivisibleByK">
-      <created>1600700948582</created>
-      <option name="number" value="00318" />
-      <option name="presentableId" value="LOCAL-00318" />
-      <option name="project" value="LOCAL" />
-      <updated>1600700948583</updated>
     </task>
     <task id="LOCAL-00319" summary="Solve hard but medium find all the unique paths from source to destination by visiting all the intermediate nodes exactly once using backtracking.&#10;&#10;Learnings -- In Graph theory, a path which visits all the vertices exactly once is an hamiltonian path. We can solve it using backtracking but there is an optimized way of solving it using DP.">
       <created>1600701103264</created>
@@ -521,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601927720066</updated>
     </task>
-    <option name="localTasksCounter" value="367" />
+    <task id="LOCAL-00367" summary="Solve medium find shortest distance pair between a bike and a worker by calculating all pairs of distances, sort them, and assign greedily. Trick to reduce time complexity was to use counting sort because max manhattan distance can be 2000 based on the input.">
+      <created>1601930711173</created>
+      <option name="number" value="00367" />
+      <option name="presentableId" value="LOCAL-00367" />
+      <option name="project" value="LOCAL" />
+      <updated>1601930711173</updated>
+    </task>
+    <option name="localTasksCounter" value="368" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly." />
     <MESSAGE value="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum." />
     <MESSAGE value="Solve medium find a subarray whose subarray sum is divisible by k -- keep track of running mod sum, if you see a repeating modsum, you got yourself a subarray whose sum is divisible by k, hence modsum is 0" />
     <MESSAGE value="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes." />
@@ -627,7 +627,8 @@
     <MESSAGE value="Solve easy find the two's complement of a number using bit magic&#10;&#10;Learnings -- Number + 2's complement = Number with all bit's set (3,7,15,31,63....) Find the first number greater than current number that has all bits set and return the diff of that number with current number." />
     <MESSAGE value="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals." />
     <MESSAGE value="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule" />
+    <MESSAGE value="Solve medium find shortest distance pair between a bike and a worker by calculating all pairs of distances, sort them, and assign greedily. Trick to reduce time complexity was to use counting sort because max manhattan distance can be 2000 based on the input." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find shortest distance pair between a bike and a worker by calculating all pairs of distances, sort them, and assign greedily. Trick to reduce time complexity was to use counting sort because max manhattan distance can be 2000 based on the input." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -697,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601927719390">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1601930710688">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601927719390" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1601930710688" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -761,10 +762,6 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="285" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599757745387" />
-    <state x="540" y="268" key="IDE.errors.dialog" timestamp="1593289890023">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="540" y="268" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1593289890023" />
     <state x="490" y="180" key="Maven.ArtifactSearchDialog" timestamp="1594451518521">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -789,10 +786,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601927720867">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1601930712647">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601927720867" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601930712647" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -817,26 +814,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1601756480495">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1601981931113">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601756480495" />
-    <state width="676" height="169" key="javadoc.popup.new" timestamp="1601898927530">
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601981931113" />
+    <state width="676" height="169" key="javadoc.popup.new" timestamp="1602009460293">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1601898927530" />
+    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602009460293" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1601815715145">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601815715145" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1601903124083">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602008634133">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601903124083" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601893491787">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602008634133" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602009611257">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601893491787" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602009611257" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

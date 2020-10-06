@@ -37,6 +37,8 @@ public class CampusBikes {
      * Start assigning bikes greedily and skip already assigned workers/bikes
      * <p>
      * Learnings -- Notice the range of the inputs, can use bucket sort if smaller range.
+     * <p>
+     * TODO Apply Simple Stable Marriage problem i.e Gale–Shapley algorithm to optimize
      */
     public int[] assignBikesBucketSort(int[][] workers, int[][] bikes) {
         List<List<Pair<Integer, Integer>>> distances = new ArrayList<>(2001); //worker index, bike index
