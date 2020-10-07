@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/longest-common-subsequence/
  * <p>
@@ -32,35 +34,36 @@ public class LongestCommonSubsequence {
         return max;
     }
 
-    //my initial solution
-    public int longestCommonSubsequenceWithoutExtraRow(String text1, String text2) {
-        int m = text1.length(), n = text2.length();
-        int[][] dp = new int[m][n];
-        int max = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i == 0) {
-                    if (text1.charAt(i) == text2.charAt(j)) {
-                        dp[i][j] = 1;
-                    } else {
-                        dp[i][j] = j > 0 ? dp[i][j - 1] : 0;
-                    }
-                } else if (j == 0) {
-                    if (text1.charAt(i) == text2.charAt(j)) {
-                        dp[i][j] = 1;
-                    } else {
-                        dp[i][j] = dp[i - 1][j];
-                    }
-                } else {
-                    if (text1.charAt(i) == text2.charAt(j)) {
-                        dp[i][j] = 1 + dp[i - 1][j - 1];
-                    } else {
-                        dp[i][j] = Math.max(dp[i - 1][j - 1], dp[i][j - 1]);
-                    }
-                }
-                max = Math.max(max, dp[i][j]);
-            }
+    int ans;
+
+    /**
+     * Top down code is similar to the one used in {@link LongestCommonSubarray}
+     */
+    public int longestCommonSubsequenceTopDown(String A, String B) {
+        int[][] memoized = new int[A.length()][B.length()];
+        for (int[] ints : memoized) {
+            Arrays.fill(ints, -1);
         }
-        return max;
+        recur(A, B, A.length() - 1, B.length() - 1, memoized);
+        return ans;
+    }
+
+    private int recur(String a, String b, int a_index, int b_index, int[][] memoized) {
+        if (a_index < 0 || b_index < 0) {
+            return 0;
+        }
+        if (memoized[a_index][b_index] != -1) {
+            return memoized[a_index][b_index];
+        }
+        if (a.charAt(a_index) == b.charAt(b_index)) {
+            //if characters match, we are guaranteed to include this character in the result
+            //hence, we can safely return from here
+            int len = 1 + recur(a, b, a_index - 1, b_index - 1, memoized);
+            ans = Math.max(ans, len);
+            return memoized[a_index][b_index] = len;
+        }
+        int len1 = recur(a, b, a_index - 1, b_index, memoized);
+        int len2 = recur(a, b, a_index, b_index - 1, memoized);
+        return memoized[a_index][b_index] = Math.max(len1, len2);
     }
 }

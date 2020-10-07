@@ -11,7 +11,7 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LongestCommonSubarrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LongestCommonSubarrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubsequence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,13 +180,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00323" summary="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation.">
-      <created>1600777563484</created>
-      <option name="number" value="00323" />
-      <option name="presentableId" value="LOCAL-00323" />
-      <option name="project" value="LOCAL" />
-      <updated>1600777563484</updated>
     </task>
     <task id="LOCAL-00324" summary="Solve medium but tricky problem find all ways to solve an expression by adding parenthesis at all valid places. An optimization would be to memoize the expressions as we repeatedly solve same expression again and again.&#10;&#10;Learnings -- Sometimes for recursion problems, you have to recursively solve for both left and right.">
       <created>1600778195306</created>
@@ -524,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602092094243</updated>
     </task>
-    <option name="localTasksCounter" value="372" />
+    <task id="LOCAL-00372" summary="Add top down memoization solution in finding longest common subarray. First time seeing that top down is complicated than bottom up.">
+      <created>1602105240843</created>
+      <option name="number" value="00372" />
+      <option name="presentableId" value="LOCAL-00372" />
+      <option name="project" value="LOCAL" />
+      <updated>1602105240843</updated>
+    </task>
+    <option name="localTasksCounter" value="373" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard but medium find length of longest consecutive sequence by DFS + Memoization.&#10;&#10;Learnings -- Leverage prior learning of reusing previously computed results." />
     <MESSAGE value="Solve hard and tricky find the first missing positive number by swapping the number to their correct index or by flagging their index.&#10;&#10;Learnings -- Its a tricky question with edge cases around boundary cases. In case of placing the flag by negating the value present at that index, the tricky thing is to take care of -ve numbers already present in the input by setting it to a high positive value outside the working range [1,n]" />
     <MESSAGE value="Solve medium but tricky find xor all subarray elements by leveraging the property that xor is the inverse function of xor&#10;&#10;Learnings: If the xor of a[0...i] is X and the xor of a[0 to k] is Y then xor of a[k+1, i] is X ^ Y" />
     <MESSAGE value="Simplify code in DecodeString by coalescing string when ']' is encountered. This code fits naturally into the stack style of solving things." />
@@ -630,7 +629,8 @@
     <MESSAGE value="Solve easy print a message only if it was not printed in the last 10 seconds using sliding window. Can optimize it if we create an hashmap of message -&gt; timestamp, for the new message if the timestamp is expired, then print it else exclude it." />
     <MESSAGE value="Add another duplicate problem" />
     <MESSAGE value="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part." />
+    <MESSAGE value="Add top down memoization solution in finding longest common subarray. First time seeing that top down is complicated than bottom up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add top down memoization solution in finding longest common subarray. First time seeing that top down is complicated than bottom up." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -700,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602092093391">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602105240189">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602092093391" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602105240189" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -788,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602092095283">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602105242196">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602092095283" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602105242196" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1072,7 +1072,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

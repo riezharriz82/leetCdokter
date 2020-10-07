@@ -69,9 +69,10 @@ public class LongestCommonSubarray {
             return memoized[a_index][b_index];
         }
         //first recurse all possible combinations
-        recur(a, b, a_index - 1, b_index, memoized);
+        recur(a, b, a_index - 1, b_index, memoized); //return values need not to be considered.
         recur(a, b, a_index, b_index - 1, memoized);
         if (a[a_index] == b[b_index]) { //this check needs to be done after recursing all possible combinations
+            //because even if the characters match, it's not guaranteed that this index will be part of the result e.g {100, 010}
             int len = 1 + recur(a, b, a_index - 1, b_index - 1, memoized);
             ans = Math.max(ans, len);
             return memoized[a_index][b_index] = len; //returning here is important, otherwise length will be cascaded wrong
