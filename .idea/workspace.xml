@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LongestCommonSubarrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LongestCommonSubarrayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StringTransformsIntoAnotherStringTest.test">
+  <component name="RunManager" selected="JUnit.LongestCommonSubarrayTest.test">
     <configuration name="BusRoutesTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,10 +117,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartitionKEqualSumSubsetsTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LongestCommonSubarrayTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PartitionKEqualSumSubsetsTest" />
+      <option name="MAIN_CLASS_NAME" value="LongestCommonSubarrayTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -155,18 +157,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
       <item itemvalue="JUnit.BusRoutesTest.test" />
       <item itemvalue="JUnit.DecodeStringTest.test" />
       <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
+      <item itemvalue="JUnit.LongestCommonSubarrayTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LongestCommonSubarrayTest.test" />
         <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.DecodeStringTest.test" />
         <item itemvalue="JUnit.BusRoutesTest.test" />
-        <item itemvalue="JUnit.PartitionKEqualSumSubsetsTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -178,13 +180,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00322" summary="Add time complexity for DFS solution, very important to understand time complexity of DFS solution. Find number of next states for each node, which can be 3^n (because one is parent) and we can reach this node from 4 different node so total is 4*(3^n)">
-      <created>1600722211499</created>
-      <option name="number" value="00322" />
-      <option name="presentableId" value="LOCAL-00322" />
-      <option name="project" value="LOCAL" />
-      <updated>1600722211500</updated>
     </task>
     <task id="LOCAL-00323" summary="Solve easy find longest path in a tree which has nodes with same value. &#10;&#10;Learnings -- Similar to finding max diameter of a tree, got a little confused during the implementation.">
       <created>1600777563484</created>
@@ -522,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602010902294</updated>
     </task>
-    <option name="localTasksCounter" value="371" />
+    <task id="LOCAL-00371" summary="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part.">
+      <created>1602092094243</created>
+      <option name="number" value="00371" />
+      <option name="presentableId" value="LOCAL-00371" />
+      <option name="project" value="LOCAL" />
+      <updated>1602092094243</updated>
+    </task>
+    <option name="localTasksCounter" value="372" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque" />
     <MESSAGE value="Solve hard but medium find length of longest consecutive sequence by DFS + Memoization.&#10;&#10;Learnings -- Leverage prior learning of reusing previously computed results." />
     <MESSAGE value="Solve hard and tricky find the first missing positive number by swapping the number to their correct index or by flagging their index.&#10;&#10;Learnings -- Its a tricky question with edge cases around boundary cases. In case of placing the flag by negating the value present at that index, the tricky thing is to take care of -ve numbers already present in the input by setting it to a high positive value outside the working range [1,n]" />
     <MESSAGE value="Solve medium but tricky find xor all subarray elements by leveraging the property that xor is the inverse function of xor&#10;&#10;Learnings: If the xor of a[0...i] is X and the xor of a[0 to k] is Y then xor of a[k+1, i] is X ^ Y" />
@@ -628,7 +629,8 @@
     <MESSAGE value="Add TODO to solve using Gale Shapley algorithm, Stable marriage problem" />
     <MESSAGE value="Solve easy print a message only if it was not printed in the last 10 seconds using sliding window. Can optimize it if we create an hashmap of message -&gt; timestamp, for the new message if the timestamp is expired, then print it else exclude it." />
     <MESSAGE value="Add another duplicate problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add another duplicate problem" />
+    <MESSAGE value="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -650,10 +652,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594324360886" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1601567541934">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1602100738408">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1601567541934" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1602100738408" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -698,10 +700,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602010901737">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602092093391">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602010901737" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602092093391" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -714,22 +716,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1602065625970">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1602104694906">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602065625970" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1602065625970">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602104694906" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1602104694906">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602065625970" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1602065625970">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602104694906" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1602104694905">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602065625970" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1602065625970">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602104694905" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1602104694906">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602065625970" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602104694906" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1601650370687">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -786,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602010903683">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602092095283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602010903683" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602092095283" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -826,14 +828,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601815715145" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602008634133">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602103479052">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602008634133" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602010546369">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602103479052" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602103503412">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602010546369" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602103503412" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1070,7 +1072,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java</url>
-          <line>47</line>
+          <line>80</line>
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

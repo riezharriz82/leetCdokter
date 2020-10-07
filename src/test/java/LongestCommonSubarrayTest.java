@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class LongestCommonSubarrayTest {
     @Test
     public void test() {
+        assertEquals(2, new LongestCommonSubarray().findLengthTopDown(new int[]{0, 1, 1, 1, 1}, new int[]{1, 0, 1, 0, 1}));
         assertEquals(2, new LongestCommonSubarray().findLength(new int[]{0, 1, 1, 1, 1}, new int[]{1, 0, 1, 0, 1}));
     }
 }
