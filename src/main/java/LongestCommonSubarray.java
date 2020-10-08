@@ -77,6 +77,7 @@ public class LongestCommonSubarray {
             ans = Math.max(ans, len);
             return memoized[a_index][b_index] = len; //returning here is important, otherwise length will be cascaded wrong
         }
-        return memoized[a_index][b_index] = 0; //returning 0 is important
+        return memoized[a_index][b_index] = 0; //returning 0 is important because substring care about order. If I return
+        //[bxa],[bya] when at index [a, a], we need longest substring possible for [bx, by] which is 0 not 1
     }
 }
