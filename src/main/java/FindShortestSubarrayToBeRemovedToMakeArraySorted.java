@@ -18,6 +18,16 @@ public class FindShortestSubarrayToBeRemovedToMakeArraySorted {
      * Approach: Find longest increasing subarray that starts from left and right.
      * Now we have two options, either cut the subarray from the left or right. This will give the upper bound.
      * We can try to relax the upper bound by then trying to merge two sorted subarrays and see if it gives a longer sorted subarray.
+     * <p>
+     * Consider, for example, if arr = [1,2,3,10,4,2,3,5]
+     * <p>
+     * The monotone non-decreasing prefix is [1,2,3,10]
+     * The monotone non-decreasing suffix is [2,3,5]
+     * We'll consider the following situations in the merge part:
+     * 1. If we take [1] from the prefix, then we can attach [2,3,5] from the suffix to it
+     * 2. If we take [1,2] from the prefix, then we can attach [2,3,5] from the suffix to it
+     * 3. If we take [1,2,3] from the prefix, then we can attach [3,5] from the suffix to it
+     * 4. If we take [1,2,3,10] from the prefix, then we can attach [] from the suffix to it
      */
     public int findLengthOfShortestSubarray(int[] arr) {
         int n = arr.length;
@@ -44,8 +54,7 @@ public class FindShortestSubarrayToBeRemovedToMakeArraySorted {
                 res = Math.min(res, j - i - 1);
                 i++;
             } else {
-                //need to delete everything in between 0 till j
-                res = Math.min(res, j);
+                //skip this element
                 j++;
             }
         }
