@@ -179,13 +179,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00326" summary="Solve hard but medium find longest increasing path in a matrix by DFS + Memoization">
-      <created>1600952890758</created>
-      <option name="number" value="00326" />
-      <option name="presentableId" value="LOCAL-00326" />
-      <option name="project" value="LOCAL" />
-      <updated>1600952890758</updated>
-    </task>
     <task id="LOCAL-00327" summary="Fix incorrect comment in CourseSchedule2">
       <created>1600952946729</created>
       <option name="number" value="00327" />
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602107709815</updated>
     </task>
-    <option name="localTasksCounter" value="375" />
+    <task id="LOCAL-00375" summary="Update logic in FindShortestSubarrayToBeRemovedToMakeArraySorted">
+      <created>1602184688134</created>
+      <option name="number" value="00375" />
+      <option name="presentableId" value="LOCAL-00375" />
+      <option name="project" value="LOCAL" />
+      <updated>1602184688134</updated>
+    </task>
+    <option name="localTasksCounter" value="376" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify code in DecodeString by coalescing string when ']' is encountered. This code fits naturally into the stack style of solving things." />
     <MESSAGE value="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop." />
     <MESSAGE value="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index." />
     <MESSAGE value="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key" />
@@ -628,7 +627,8 @@
     <MESSAGE value="Add top down memoization solution in finding longest common subarray. First time seeing that top down is complicated than bottom up." />
     <MESSAGE value="Add top down memoization solution in finding longest common subsequence.&#10;&#10;Update comment in LongestCommonSubarray" />
     <MESSAGE value="Solve medium and tricky count all palindromic substrings by considering all indexes as the center and expand around the center in both left and right direction considering both even and odd length palindromes`" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky count all palindromic substrings by considering all indexes as the center and expand around the center in both left and right direction considering both even and odd length palindromes`" />
+    <MESSAGE value="Update logic in FindShortestSubarrayToBeRemovedToMakeArraySorted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update logic in FindShortestSubarrayToBeRemovedToMakeArraySorted" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -650,10 +650,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594324360886" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1602100738408">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1602189049147">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1602100738408" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1602189049147" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -698,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602107709294">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602184687406">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602107709294" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602184687406" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -786,10 +786,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602107711354">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602184689158">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602107711354" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602184689158" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -814,10 +814,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602010577742">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602188797748">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602010577742" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602188797748" />
     <state width="676" height="169" key="javadoc.popup.new" timestamp="1602009460293">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -830,10 +830,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602181718204" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602103503412">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602184698246">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602103503412" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602184698246" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
