@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DeleteOperationForTwoString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DeleteOperationForTwoString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00332" summary="Solve medium find total count of permutations to make sum k given n different numbers via memoization&#10;&#10;Learnings -- Very similar to CoinChange2 which asked for total combinations. While writing top down DP it was important to start from target sum and reach down to 0, so that we can reuse intermediate results, if started from 0, intermediate results were not usable.">
-      <created>1601140199887</created>
-      <option name="number" value="00332" />
-      <option name="presentableId" value="LOCAL-00332" />
-      <option name="project" value="LOCAL" />
-      <updated>1601140199888</updated>
     </task>
     <task id="LOCAL-00333" summary="Solve hard and tricky problem find largest number where using each digit incurs a specific cost by memoization.&#10;&#10;Learnings -- 1. While comparing strings as integers, compare them via compareTo() only when their lengths match, otherwise the longer string is the greater of them because &quot;12&quot;.compareTo(&quot;3&quot;) &lt; 0&#10;&#10;2. For solving cost related problems, always start from the target and recurse down to 0, this recursion gives a memoization friendly code.">
       <created>1601154552362</created>
@@ -522,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602251680819</updated>
     </task>
-    <option name="localTasksCounter" value="381" />
+    <task id="LOCAL-00381" summary="Solve medium and a bit tricky find the no of delete operations to make two strings equal by top down memoization. &#10;&#10;If characters at idx1 and idx2 mismatch, then we have two options, either delete one character at idx1 or idx2 or delete both of the characters at idx1 or idx2 &#10;&#10;If characters at idx1 and idx2 matches, do nothing and skip to idx1-1, idx2-1 &#10;&#10;In case we are done with word1 (idx1&lt;0) but word2 isn't done (idx2&gt;0), only option is to delete all the characters remaining in idx2.">
+      <created>1602255952133</created>
+      <option name="number" value="00381" />
+      <option name="presentableId" value="LOCAL-00381" />
+      <option name="project" value="LOCAL" />
+      <updated>1602255952133</updated>
+    </task>
+    <option name="localTasksCounter" value="382" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find minimum height to fill a bookcase where height of a shelf is the max height of the books placed in that shelf.&#10;Solved using recursion + memoization. Part of google mock interviews. Leveraged prior learning of splitting an array into smaller subarrays while minimizing a variable.&#10;&#10;Learnings -- Similar to solved problem SplitArrayLargestSum" />
     <MESSAGE value="Add another approach in FillingBookCaseShelves" />
     <MESSAGE value="Solve medium find the largest sum of values possible by picking only specified number of values with same label.&#10;&#10;Learnings -- Initially I thought it as a knapsack problem but it a greedy problem. Part of google mock interview. Pick the largest values first." />
     <MESSAGE value="Solve medium find max sum after partitioning array into subarrays such that size of each subarray &lt;= k and all elements of the subarray transforms to the largest element present in the subarray.&#10;&#10;Learnings -- Yet another array partitioning problem. Trick is to keep track of max of (putting element in current subarray, putting it in next subarray)" />
@@ -628,7 +628,8 @@
     <MESSAGE value="Solve medium find longest palindromic substring by&#10;1. Expanding around the center by considering each index as the center for even/odd length palindrome.&#10;2. Top down recursion with memoization if s[left] == s[right], recur for [left+1, right-1] and check if it's palindrome.&#10;If it's palindrome, then only update the current candidate length." />
     <MESSAGE value="Simplify the solution in SerializeAndDeserializeBinaryTree by encoding the preorder traversal of tree." />
     <MESSAGE value="Solve medium Serialize and Deserialize BST by encoding it in a compact form by leveraging the bounds property of BST, we can quickly filter out a node from being added to a subtree of BST if we keep track of lower_bound and upper_bound of current subtree. &#10;&#10;While recursing left, update the upper_bound and while recursing right, update the lower_bound." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Serialize and Deserialize BST by encoding it in a compact form by leveraging the bounds property of BST, we can quickly filter out a node from being added to a subtree of BST if we keep track of lower_bound and upper_bound of current subtree. &#10;&#10;While recursing left, update the upper_bound and while recursing right, update the lower_bound." />
+    <MESSAGE value="Solve medium and a bit tricky find the no of delete operations to make two strings equal by top down memoization. &#10;&#10;If characters at idx1 and idx2 mismatch, then we have two options, either delete one character at idx1 or idx2 or delete both of the characters at idx1 or idx2 &#10;&#10;If characters at idx1 and idx2 matches, do nothing and skip to idx1-1, idx2-1 &#10;&#10;In case we are done with word1 (idx1&lt;0) but word2 isn't done (idx2&gt;0), only option is to delete all the characters remaining in idx2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the no of delete operations to make two strings equal by top down memoization. &#10;&#10;If characters at idx1 and idx2 mismatch, then we have two options, either delete one character at idx1 or idx2 or delete both of the characters at idx1 or idx2 &#10;&#10;If characters at idx1 and idx2 matches, do nothing and skip to idx1-1, idx2-1 &#10;&#10;In case we are done with word1 (idx1&lt;0) but word2 isn't done (idx2&gt;0), only option is to delete all the characters remaining in idx2." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -698,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602251680259">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602255951610">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602251680259" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602255951610" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -786,10 +787,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602251682746">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602255953457">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602251682746" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602255953457" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

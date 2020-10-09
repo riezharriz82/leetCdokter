@@ -40,12 +40,13 @@ public class DeleteOperationForTwoString {
             return idx1 + 1;
         } else if (idx1 < 0 && idx2 < 0) { //both words are done
             return 0;
-        } else if (memoized[idx1][idx2] != 0) {
+        } else if (memoized[idx1][idx2] != -1) {
             return memoized[idx1][idx2];
         } else if (word1.charAt(idx1) == word2.charAt(idx2)) { //characters match, do nothing and skip to next character
             return memoized[idx1][idx2] = recur(word1, word2, idx1 - 1, idx2 - 1, memoized);
         } else {
             int deleteOneChar = 1 + Math.min(recur(word1, word2, idx1 - 1, idx2, memoized), recur(word1, word2, idx1, idx2 - 1, memoized));
+            //this step is kinda redundant, because deleteOneChar will take care of this
             int deleteTwoChars = 2 + recur(word1, word2, idx1 - 1, idx2 - 1, memoized);
             return memoized[idx1][idx2] = Math.min(deleteOneChar, deleteTwoChars);
         }
