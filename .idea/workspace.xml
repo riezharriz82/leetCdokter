@@ -179,13 +179,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00335" summary="Solve hard and tricky find shortest path to reach target node in a grid if blocked nodes can be eliminated by BFS&#10;&#10;Learnings -- As ericto mentioned earlier that try to understand what should be remembered, here it's current path length and no of eliminations performed so far. Since this problem deals with shortest path, use fucking BFS, not DFS !">
-      <created>1601218868535</created>
-      <option name="number" value="00335" />
-      <option name="presentableId" value="LOCAL-00335" />
-      <option name="project" value="LOCAL" />
-      <updated>1601218868535</updated>
-    </task>
     <task id="LOCAL-00336" summary="Solve hard and tricky split array into k subarrays such that maximum sum of subarrays is minimized. This kind of partitioning problems are known as painter partition problem. It can be solved via recursion. Make cuts at all indices, keeping track of left subarray sum and then recurse into right subarray which will yield right subarray sum.&#10;Need to minimize the maximum of left and right subarray sum. &#10;&#10;This problem was asked to vinayendra in amazon online assessment test.">
       <created>1601298220061</created>
       <option name="number" value="00336" />
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602258441045</updated>
     </task>
-    <option name="localTasksCounter" value="384" />
+    <task id="LOCAL-00384" summary="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped.">
+      <created>1602260559370</created>
+      <option name="number" value="00384" />
+      <option name="presentableId" value="LOCAL-00384" />
+      <option name="project" value="LOCAL" />
+      <updated>1602260559370</updated>
+    </task>
+    <option name="localTasksCounter" value="385" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find max sum after partitioning array into subarrays such that size of each subarray &lt;= k and all elements of the subarray transforms to the largest element present in the subarray.&#10;&#10;Learnings -- Yet another array partitioning problem. Trick is to keep track of max of (putting element in current subarray, putting it in next subarray)" />
     <MESSAGE value="Add another approach in MeetingsRoom2. Find min no of meeting rooms required to schedule all the meetings" />
     <MESSAGE value="Update greedy logic in GasStations" />
     <MESSAGE value="Add another approach by sorting from start point in MinimumArrowsToBurstBalloons" />
@@ -628,7 +627,8 @@
     <MESSAGE value="Solve medium and a bit tricky find the no of delete operations to make two strings equal by top down memoization. &#10;&#10;If characters at idx1 and idx2 mismatch, then we have two options, either delete one character at idx1 or idx2 or delete both of the characters at idx1 or idx2 &#10;&#10;If characters at idx1 and idx2 matches, do nothing and skip to idx1-1, idx2-1 &#10;&#10;In case we are done with word1 (idx1&lt;0) but word2 isn't done (idx2&gt;0), only option is to delete all the characters remaining in idx2." />
     <MESSAGE value="Add comment for redundant logic and fix incorrect check in Make Two Strings equal by deleting characters." />
     <MESSAGE value="Solve medium find minimum ascii sum of characters to be deleted to make two strings equal. Similar to previously solved DeleteOperationsForTwoString" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find minimum ascii sum of characters to be deleted to make two strings equal. Similar to previously solved DeleteOperationsForTwoString" />
+    <MESSAGE value="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -698,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602258440472">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602260558851">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602258440472" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602260558851" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -786,10 +786,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602258442924">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602260560525">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602258442924" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602260560525" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -818,22 +818,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602243036806" />
-    <state width="676" height="169" key="javadoc.popup.new" timestamp="1602009460293">
+    <state width="676" height="169" key="javadoc.popup.new" timestamp="1602265064062">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602009460293" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602259567233">
+    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602265064062" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602265625548">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602259567233" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602257881574">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602265625548" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602265493044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602257881574" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602257890631">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602264710885">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602257890631" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602264710885" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
