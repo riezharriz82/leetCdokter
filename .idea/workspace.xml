@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DeleteOperationForTwoString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DeleteOperationForTwoString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00333" summary="Solve hard and tricky problem find largest number where using each digit incurs a specific cost by memoization.&#10;&#10;Learnings -- 1. While comparing strings as integers, compare them via compareTo() only when their lengths match, otherwise the longer string is the greater of them because &quot;12&quot;.compareTo(&quot;3&quot;) &lt; 0&#10;&#10;2. For solving cost related problems, always start from the target and recurse down to 0, this recursion gives a memoization friendly code.">
-      <created>1601154552362</created>
-      <option name="number" value="00333" />
-      <option name="presentableId" value="LOCAL-00333" />
-      <option name="project" value="LOCAL" />
-      <updated>1601154552362</updated>
     </task>
     <task id="LOCAL-00334" summary="Update comment in MinDistanceToTypeUsingTwoFingers">
       <created>1601218100237</created>
@@ -523,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602255952133</updated>
     </task>
-    <option name="localTasksCounter" value="382" />
+    <task id="LOCAL-00382" summary="Add comment for redundant logic and fix incorrect check in Make Two Strings equal by deleting characters.">
+      <created>1602256571208</created>
+      <option name="number" value="00382" />
+      <option name="presentableId" value="LOCAL-00382" />
+      <option name="project" value="LOCAL" />
+      <updated>1602256571208</updated>
+    </task>
+    <option name="localTasksCounter" value="383" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -604,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another approach in FillingBookCaseShelves" />
     <MESSAGE value="Solve medium find the largest sum of values possible by picking only specified number of values with same label.&#10;&#10;Learnings -- Initially I thought it as a knapsack problem but it a greedy problem. Part of google mock interview. Pick the largest values first." />
     <MESSAGE value="Solve medium find max sum after partitioning array into subarrays such that size of each subarray &lt;= k and all elements of the subarray transforms to the largest element present in the subarray.&#10;&#10;Learnings -- Yet another array partitioning problem. Trick is to keep track of max of (putting element in current subarray, putting it in next subarray)" />
     <MESSAGE value="Add another approach in MeetingsRoom2. Find min no of meeting rooms required to schedule all the meetings" />
@@ -629,7 +627,8 @@
     <MESSAGE value="Simplify the solution in SerializeAndDeserializeBinaryTree by encoding the preorder traversal of tree." />
     <MESSAGE value="Solve medium Serialize and Deserialize BST by encoding it in a compact form by leveraging the bounds property of BST, we can quickly filter out a node from being added to a subtree of BST if we keep track of lower_bound and upper_bound of current subtree. &#10;&#10;While recursing left, update the upper_bound and while recursing right, update the lower_bound." />
     <MESSAGE value="Solve medium and a bit tricky find the no of delete operations to make two strings equal by top down memoization. &#10;&#10;If characters at idx1 and idx2 mismatch, then we have two options, either delete one character at idx1 or idx2 or delete both of the characters at idx1 or idx2 &#10;&#10;If characters at idx1 and idx2 matches, do nothing and skip to idx1-1, idx2-1 &#10;&#10;In case we are done with word1 (idx1&lt;0) but word2 isn't done (idx2&gt;0), only option is to delete all the characters remaining in idx2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the no of delete operations to make two strings equal by top down memoization. &#10;&#10;If characters at idx1 and idx2 mismatch, then we have two options, either delete one character at idx1 or idx2 or delete both of the characters at idx1 or idx2 &#10;&#10;If characters at idx1 and idx2 matches, do nothing and skip to idx1-1, idx2-1 &#10;&#10;In case we are done with word1 (idx1&lt;0) but word2 isn't done (idx2&gt;0), only option is to delete all the characters remaining in idx2." />
+    <MESSAGE value="Add comment for redundant logic and fix incorrect check in Make Two Strings equal by deleting characters." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comment for redundant logic and fix incorrect check in Make Two Strings equal by deleting characters." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602255951610">
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602256570694">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602255951610" />
+    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602256570694" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,10 +786,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602255953457">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602256572377">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602255953457" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602256572377" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -827,14 +826,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602254705132" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602181718204">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602257881574">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602181718204" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602255701288">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602257881574" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602257890631">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602255701288" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602257890631" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
