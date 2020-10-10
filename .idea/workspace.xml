@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountofSmallerNumbersAfterSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountofSmallerNumbersAfterSelf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,27 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00343" summary="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum.">
-      <created>1601410027647</created>
-      <option name="number" value="00343" />
-      <option name="presentableId" value="LOCAL-00343" />
-      <option name="project" value="LOCAL" />
-      <updated>1601410027647</updated>
-    </task>
-    <task id="LOCAL-00344" summary="Solve medium find a subarray whose subarray sum is divisible by k -- keep track of running mod sum, if you see a repeating modsum, you got yourself a subarray whose sum is divisible by k, hence modsum is 0">
-      <created>1601411953569</created>
-      <option name="number" value="00344" />
-      <option name="presentableId" value="LOCAL-00344" />
-      <option name="project" value="LOCAL" />
-      <updated>1601411953569</updated>
-    </task>
-    <task id="LOCAL-00345" summary="Solve medium find min cost to connect all vertices of a complete graph by creating a minimum spanning tree using prim's algorithm&#10;&#10;Learnings -- Repeat the process until all nodes are visited. Pop the node with the smallest distance and mark it visited. Update the distance of all unvisited adjacent nodes.">
-      <created>1601416300636</created>
-      <option name="number" value="00345" />
-      <option name="presentableId" value="LOCAL-00345" />
-      <option name="project" value="LOCAL" />
-      <updated>1601416300636</updated>
     </task>
     <task id="LOCAL-00346" summary="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque">
       <created>1601533195432</created>
@@ -523,7 +501,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602350555675</updated>
     </task>
-    <option name="localTasksCounter" value="392" />
+    <task id="LOCAL-00392" summary="Add comments in count no of elements smaller than current element on the right using merge sort. Merge portion of mergesort is tricky">
+      <created>1602365257371</created>
+      <option name="number" value="00392" />
+      <option name="presentableId" value="LOCAL-00392" />
+      <option name="project" value="LOCAL" />
+      <updated>1602365257371</updated>
+    </task>
+    <task id="LOCAL-00393" summary="Solve medium find maximum distance between two occupied seats. Similar to ExamRoom">
+      <created>1602365556673</created>
+      <option name="number" value="00393" />
+      <option name="presentableId" value="LOCAL-00393" />
+      <option name="project" value="LOCAL" />
+      <updated>1602365556673</updated>
+    </task>
+    <task id="LOCAL-00394" summary="Solve medium find maximum distance between two occupied seats. Similar to previously solved ExamRoom">
+      <created>1602365590549</created>
+      <option name="number" value="00394" />
+      <option name="presentableId" value="LOCAL-00394" />
+      <option name="project" value="LOCAL" />
+      <updated>1602365590549</updated>
+    </task>
+    <option name="localTasksCounter" value="395" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -604,9 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find shortest distance pair between a bike and a worker by calculating all pairs of distances, sort them, and assign greedily. Trick to reduce time complexity was to use counting sort because max manhattan distance can be 2000 based on the input." />
-    <MESSAGE value="Add TODO to solve using Gale Shapley algorithm, Stable marriage problem" />
-    <MESSAGE value="Solve easy print a message only if it was not printed in the last 10 seconds using sliding window. Can optimize it if we create an hashmap of message -&gt; timestamp, for the new message if the timestamp is expired, then print it else exclude it." />
     <MESSAGE value="Add another duplicate problem" />
     <MESSAGE value="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part." />
     <MESSAGE value="Add top down memoization solution in finding longest common subarray. First time seeing that top down is complicated than bottom up." />
@@ -629,7 +625,10 @@
     <MESSAGE value="Update comment regarding visited check in Djikstra -- visited check is not really required because once a node is done, we can't get  a better path for that node in future because we are using a priority queue" />
     <MESSAGE value="Solve medium and tricky problem find cheapest cost to reach a target node from source node with max k depth allowed by djikstra and bfs (with pruning)&#10;&#10;Learnings -- &#10;1. BFS can be applied to find shortest path between two nodes in a weighted graph but with pruning and entire traversal of the graph.&#10;2. In case of additional constraint in Djikstra make sure to relax the bounds accordingly while skipping addition of nodes in PQ." />
     <MESSAGE value="Solve hard and tricky classical problem find the max area of rectangle in matrix. Finding max square is relatively easy than calculating rectangle because of different length and width. It can be reduced to finding max rectangle in histogram if we visualize histogram for each row and find max area in it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky classical problem find the max area of rectangle in matrix. Finding max square is relatively easy than calculating rectangle because of different length and width. It can be reduced to finding max rectangle in histogram if we visualize histogram for each row and find max area in it." />
+    <MESSAGE value="Add comments in count no of elements smaller than current element on the right using merge sort. Merge portion of mergesort is tricky" />
+    <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to ExamRoom" />
+    <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to previously solved ExamRoom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find maximum distance between two occupied seats. Similar to previously solved ExamRoom" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -699,18 +698,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602350555125">
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602365590049">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602350555125" />
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602365590049" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1602337364518">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1602366420951">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602337364518" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602366420951" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +790,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602350556777">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602365594537">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602350556777" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602365594537" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
