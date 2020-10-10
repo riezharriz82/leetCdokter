@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00341" summary="Solve medium find count of subarrays whose product is &lt; k by sliding window approach.&#10;&#10;Learnings -- Counting no of valid subarrays via sliding window was tricky, use (end-start+1)&#10;Keep increasing the window until current product &lt; k. If not, decrement the window from the start">
-      <created>1601325217508</created>
-      <option name="number" value="00341" />
-      <option name="presentableId" value="LOCAL-00341" />
-      <option name="project" value="LOCAL" />
-      <updated>1601325217509</updated>
     </task>
     <task id="LOCAL-00342" summary="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly.">
       <created>1601396426649</created>
@@ -520,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602337587609</updated>
     </task>
-    <option name="localTasksCounter" value="390" />
+    <task id="LOCAL-00390" summary="Solve medium and tricky problem find cheapest cost to reach a target node from source node with max k depth allowed by djikstra and bfs (with pruning)&#10;&#10;Learnings -- &#10;1. BFS can be applied to find shortest path between two nodes in a weighted graph but with pruning and entire traversal of the graph.&#10;2. In case of additional constraint in Djikstra make sure to relax the bounds accordingly while skipping addition of nodes in PQ.">
+      <created>1602338861050</created>
+      <option name="number" value="00390" />
+      <option name="presentableId" value="LOCAL-00390" />
+      <option name="project" value="LOCAL" />
+      <updated>1602338861050</updated>
+    </task>
+    <option name="localTasksCounter" value="391" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals." />
     <MESSAGE value="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule" />
     <MESSAGE value="Solve medium find shortest distance pair between a bike and a worker by calculating all pairs of distances, sort them, and assign greedily. Trick to reduce time complexity was to use counting sort because max manhattan distance can be 2000 based on the input." />
     <MESSAGE value="Add TODO to solve using Gale Shapley algorithm, Stable marriage problem" />
@@ -626,7 +627,8 @@
     <MESSAGE value="Solve hard and tricky Dungeon Game, find the min health required at the start to reach the target provided the health cant be &lt;= 0 at any state.&#10;&#10;This is similar to BusRoutes where BFS needs to be applied but the condition for BFS has changed. Similarly here, the start is actually our target state, because we need the min health at the start. So at start node, we ask adjacent node on their min health required and update the health at start accordingly." />
     <MESSAGE value="Solve medium and tricky book an event only if it does not create a conflict with existing events. The simplest solution was to keep start and end time together and then find the first event starting before the current event finishes. That event should finish before the current event starts for a successful booking." />
     <MESSAGE value="Update comment regarding visited check in Djikstra -- visited check is not really required because once a node is done, we can't get  a better path for that node in future because we are using a priority queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update comment regarding visited check in Djikstra -- visited check is not really required because once a node is done, we can't get  a better path for that node in future because we are using a priority queue" />
+    <MESSAGE value="Solve medium and tricky problem find cheapest cost to reach a target node from source node with max k depth allowed by djikstra and bfs (with pruning)&#10;&#10;Learnings -- &#10;1. BFS can be applied to find shortest path between two nodes in a weighted graph but with pruning and entire traversal of the graph.&#10;2. In case of additional constraint in Djikstra make sure to relax the bounds accordingly while skipping addition of nodes in PQ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem find cheapest cost to reach a target node from source node with max k depth allowed by djikstra and bfs (with pruning)&#10;&#10;Learnings -- &#10;1. BFS can be applied to find shortest path between two nodes in a weighted graph but with pruning and entire traversal of the graph.&#10;2. In case of additional constraint in Djikstra make sure to relax the bounds accordingly while skipping addition of nodes in PQ." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -696,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602337587018">
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602338860475">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602337587018" />
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602338860475" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -788,10 +790,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602337589318">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602338862729">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602337589318" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602338862729" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -832,10 +834,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602334354192">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602348263895">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602334354192" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602348263895" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1067,7 +1069,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java</url>
-          <line>85</line>
+          <line>73</line>
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1107,7 +1109,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java</url>
-          <line>39</line>
+          <line>27</line>
           <option name="timeStamp" value="158" />
         </line-breakpoint>
       </breakpoints>
