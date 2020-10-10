@@ -179,13 +179,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00336" summary="Solve hard and tricky split array into k subarrays such that maximum sum of subarrays is minimized. This kind of partitioning problems are known as painter partition problem. It can be solved via recursion. Make cuts at all indices, keeping track of left subarray sum and then recurse into right subarray which will yield right subarray sum.&#10;Need to minimize the maximum of left and right subarray sum. &#10;&#10;This problem was asked to vinayendra in amazon online assessment test.">
-      <created>1601298220061</created>
-      <option name="number" value="00336" />
-      <option name="presentableId" value="LOCAL-00336" />
-      <option name="project" value="LOCAL" />
-      <updated>1601298220063</updated>
-    </task>
     <task id="LOCAL-00337" summary="Simplify code and update approach in sorting an array by changing only one element.">
       <created>1601310502268</created>
       <option name="number" value="00337" />
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602260559370</updated>
     </task>
-    <option name="localTasksCounter" value="385" />
+    <task id="LOCAL-00385" summary="Solve classical hard problem EditDistance, find the minimum no of operations (insert, delete, replace) required to convert one string to another using top down memoization. &#10;&#10;Learnings -- Leveraged prior learnings in DeleteOperationForTwoStrings">
+      <created>1602270014260</created>
+      <option name="number" value="00385" />
+      <option name="presentableId" value="LOCAL-00385" />
+      <option name="project" value="LOCAL" />
+      <updated>1602270014260</updated>
+    </task>
+    <option name="localTasksCounter" value="386" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another approach in MeetingsRoom2. Find min no of meeting rooms required to schedule all the meetings" />
     <MESSAGE value="Update greedy logic in GasStations" />
     <MESSAGE value="Add another approach by sorting from start point in MinimumArrowsToBurstBalloons" />
     <MESSAGE value="Simplify code and add approach in MergeIntervals" />
@@ -628,7 +627,8 @@
     <MESSAGE value="Add comment for redundant logic and fix incorrect check in Make Two Strings equal by deleting characters." />
     <MESSAGE value="Solve medium find minimum ascii sum of characters to be deleted to make two strings equal. Similar to previously solved DeleteOperationsForTwoString" />
     <MESSAGE value="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped." />
+    <MESSAGE value="Solve classical hard problem EditDistance, find the minimum no of operations (insert, delete, replace) required to convert one string to another using top down memoization. &#10;&#10;Learnings -- Leveraged prior learnings in DeleteOperationForTwoStrings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve classical hard problem EditDistance, find the minimum no of operations (insert, delete, replace) required to convert one string to another using top down memoization. &#10;&#10;Learnings -- Leveraged prior learnings in DeleteOperationForTwoStrings" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -650,10 +650,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594324360886" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1602189049147">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1602274975502">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1602189049147" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1602274975502" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -698,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602260558851">
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602270013688">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="397" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602260558851" />
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602270013688" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -786,10 +786,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602260560525">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602270015269">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602260560525" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602270015269" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -822,10 +822,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602265064062" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602265625548">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602281366807">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602265625548" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602281366807" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602265493044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
