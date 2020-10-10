@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CountofSmallerNumbersAfterSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountofSmallerNumbersAfterSelf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00342" summary="Solve medium find whether a subarray can be divided into two subsets with equal sum by recursion + memoization.&#10;&#10;Learnings -- yet another partition problem, trick to solve this problem was to find a subset with a sum = totalSum/2. So any element can either be part of left subset or right subset. Try both and recur accordingly.">
-      <created>1601396426649</created>
-      <option name="number" value="00342" />
-      <option name="presentableId" value="LOCAL-00342" />
-      <option name="project" value="LOCAL" />
-      <updated>1601396426649</updated>
     </task>
     <task id="LOCAL-00343" summary="Solve medium but tricky problem find whether a array can be divided into k subsets each with equal sum via recursion + backtracking.&#10;&#10;Learnings -- In case of difficult recursion problems, think about backtracking. I was able to think that we need k subsets each with totalSum/k sum, but was unable to think about backtracking. Once you find a subset with targetSum, reset current sum and recurse again from 0 to k-1 subsets with target sum.">
       <created>1601410027647</created>
@@ -522,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602338861050</updated>
     </task>
-    <option name="localTasksCounter" value="391" />
+    <task id="LOCAL-00391" summary="Solve hard and tricky classical problem find the max area of rectangle in matrix. Finding max square is relatively easy than calculating rectangle because of different length and width. It can be reduced to finding max rectangle in histogram if we visualize histogram for each row and find max area in it.">
+      <created>1602350555675</created>
+      <option name="number" value="00391" />
+      <option name="presentableId" value="LOCAL-00391" />
+      <option name="project" value="LOCAL" />
+      <updated>1602350555675</updated>
+    </task>
+    <option name="localTasksCounter" value="392" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule" />
     <MESSAGE value="Solve medium find shortest distance pair between a bike and a worker by calculating all pairs of distances, sort them, and assign greedily. Trick to reduce time complexity was to use counting sort because max manhattan distance can be 2000 based on the input." />
     <MESSAGE value="Add TODO to solve using Gale Shapley algorithm, Stable marriage problem" />
     <MESSAGE value="Solve easy print a message only if it was not printed in the last 10 seconds using sliding window. Can optimize it if we create an hashmap of message -&gt; timestamp, for the new message if the timestamp is expired, then print it else exclude it." />
@@ -628,7 +628,8 @@
     <MESSAGE value="Solve medium and tricky book an event only if it does not create a conflict with existing events. The simplest solution was to keep start and end time together and then find the first event starting before the current event finishes. That event should finish before the current event starts for a successful booking." />
     <MESSAGE value="Update comment regarding visited check in Djikstra -- visited check is not really required because once a node is done, we can't get  a better path for that node in future because we are using a priority queue" />
     <MESSAGE value="Solve medium and tricky problem find cheapest cost to reach a target node from source node with max k depth allowed by djikstra and bfs (with pruning)&#10;&#10;Learnings -- &#10;1. BFS can be applied to find shortest path between two nodes in a weighted graph but with pruning and entire traversal of the graph.&#10;2. In case of additional constraint in Djikstra make sure to relax the bounds accordingly while skipping addition of nodes in PQ." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem find cheapest cost to reach a target node from source node with max k depth allowed by djikstra and bfs (with pruning)&#10;&#10;Learnings -- &#10;1. BFS can be applied to find shortest path between two nodes in a weighted graph but with pruning and entire traversal of the graph.&#10;2. In case of additional constraint in Djikstra make sure to relax the bounds accordingly while skipping addition of nodes in PQ." />
+    <MESSAGE value="Solve hard and tricky classical problem find the max area of rectangle in matrix. Finding max square is relatively easy than calculating rectangle because of different length and width. It can be reduced to finding max rectangle in histogram if we visualize histogram for each row and find max area in it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky classical problem find the max area of rectangle in matrix. Finding max square is relatively easy than calculating rectangle because of different length and width. It can be reduced to finding max rectangle in histogram if we visualize histogram for each row and find max area in it." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -698,10 +699,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602338860475">
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602350555125">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602338860475" />
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602350555125" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602338862729">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602350556777">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602338862729" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602350556777" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -818,10 +819,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602332689449">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602362148792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602332689449" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602362148792" />
     <state width="676" height="169" key="javadoc.popup.new" timestamp="1602330189475">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -834,10 +835,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602348263895">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602365055087">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602348263895" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602365055087" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

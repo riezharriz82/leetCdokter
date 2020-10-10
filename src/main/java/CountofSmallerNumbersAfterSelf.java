@@ -28,10 +28,14 @@ class Node {
 }
 
 public class CountofSmallerNumbersAfterSelf {
+    /**
+     * Approach: Use merge sort for problems that look for pairs (i,j) such that i < j and nums[i], nums[j] satisfy some constraint
+     * The complicated part is the merge portion of the mergesort
+     */
     public List<Integer> countSmaller(int[] nums) {
         Node[] nodes = new Node[nums.length];
         for (int i = 0; i < nums.length; i++) {
-            nodes[i] = new Node(i, nums[i]);
+            nodes[i] = new Node(i, nums[i]); //need to store the indices as well in order to update the result
         }
         int[] count = new int[nums.length];
         mergeSort(nodes, count, 0, nums.length - 1);
@@ -52,6 +56,9 @@ public class CountofSmallerNumbersAfterSelf {
         }
     }
 
+    //create a copy of the left subarray and right subarray
+    //now task is to merge two sorted arrays using two pointer approach
+    //during merge, update the original array so that original array gets sorted
     private void merge(Node[] nodes, int[] answer, int l, int mid, int r) {
         //copy the left part
         int n1 = mid - l + 1;
@@ -65,16 +72,17 @@ public class CountofSmallerNumbersAfterSelf {
         for (int i = 0; i < n2; i++) {
             right[i] = nodes[mid + i + 1]; //+1 because mid is already included in left
         }
-        int smallerNumber = 0;
-
+        int smallerNumber = 0; //count of smaller number on the right
         int i = 0, j = 0, k = l;
         while (i < n1 && j < n2) {
             if (left[i].val <= right[j].val) {
-                answer[left[i].idx] += smallerNumber;
-                nodes[k++] = left[i];
+                answer[left[i].idx] += smallerNumber; //smaller number will get carry forwarded to the next element in the left subarray
+                //{5,7}, {2,3,8} -> smallerNumber will be 2 for 5, which should be used for 7 as well because anything smaller than 5 would
+                //definitely be smaller than 7
+                nodes[k++] = left[i]; //update the original array, notice k was initialized from l
                 i++;
             } else if (left[i].val > right[j].val) {
-                smallerNumber++;
+                smallerNumber++; //found a smaller number on the right
                 nodes[k++] = right[j];
                 j++;
             }
