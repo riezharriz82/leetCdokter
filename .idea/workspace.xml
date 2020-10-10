@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PathWithMaxProbability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PathWithMaxProbability.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +95,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LongestCommonSubarrayTest.test">
-    <configuration name="BusRoutesTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CheapestFlightWithinKStopTest.test">
+    <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BusRoutesTest" />
+      <option name="MAIN_CLASS_NAME" value="CheapestFlightWithinKStopTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -155,18 +156,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.BusRoutesTest.test" />
       <item itemvalue="JUnit.DecodeStringTest.test" />
       <item itemvalue="JUnit.LongestCommonSubarrayTest.test" />
       <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
+      <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
         <item itemvalue="JUnit.LongestCommonSubarrayTest.test" />
         <item itemvalue="JUnit.DecodeStringTest.test" />
-        <item itemvalue="JUnit.BusRoutesTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -178,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00339" summary="Add related problems">
-      <created>1601319014770</created>
-      <option name="number" value="00339" />
-      <option name="presentableId" value="LOCAL-00339" />
-      <option name="project" value="LOCAL" />
-      <updated>1601319014770</updated>
     </task>
     <task id="LOCAL-00340" summary="Solve medium find minimum size subarray whose sum &gt;= target sum by sliding window. Keep increasing the window until curSum &gt;= targetSum. Once such window is found, keep shortening the window to find a smaller valid window.&#10;&#10;Learnings -- Utilized the learnings from previous solved problem MinimumWindowSubstring">
       <created>1601319140541</created>
@@ -522,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602329269847</updated>
     </task>
-    <option name="localTasksCounter" value="388" />
+    <task id="LOCAL-00388" summary="Solve medium and tricky book an event only if it does not create a conflict with existing events. The simplest solution was to keep start and end time together and then find the first event starting before the current event finishes. That event should finish before the current event starts for a successful booking.">
+      <created>1602331514767</created>
+      <option name="number" value="00388" />
+      <option name="presentableId" value="LOCAL-00388" />
+      <option name="project" value="LOCAL" />
+      <updated>1602331514767</updated>
+    </task>
+    <option name="localTasksCounter" value="389" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify code and add approach in MergeIntervals" />
     <MESSAGE value="Solve easy find the two's complement of a number using bit magic&#10;&#10;Learnings -- Number + 2's complement = Number with all bit's set (3,7,15,31,63....) Find the first number greater than current number that has all bits set and return the diff of that number with current number." />
     <MESSAGE value="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals." />
     <MESSAGE value="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule" />
@@ -628,7 +628,8 @@
     <MESSAGE value="Solve classical hard problem EditDistance, find the minimum no of operations (insert, delete, replace) required to convert one string to another using top down memoization. &#10;&#10;Learnings -- Leveraged prior learnings in DeleteOperationForTwoStrings" />
     <MESSAGE value="Solve medium classical painting problem, no two adjacent house can have same color and we need to paint all the houses with min cost.&#10;&#10;Recursive solution was easy, took me a while to convert into memoized solution because we need the color of the house being painted as a state as well." />
     <MESSAGE value="Solve hard and tricky Dungeon Game, find the min health required at the start to reach the target provided the health cant be &lt;= 0 at any state.&#10;&#10;This is similar to BusRoutes where BFS needs to be applied but the condition for BFS has changed. Similarly here, the start is actually our target state, because we need the min health at the start. So at start node, we ask adjacent node on their min health required and update the health at start accordingly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky Dungeon Game, find the min health required at the start to reach the target provided the health cant be &lt;= 0 at any state.&#10;&#10;This is similar to BusRoutes where BFS needs to be applied but the condition for BFS has changed. Similarly here, the start is actually our target state, because we need the min health at the start. So at start node, we ask adjacent node on their min health required and update the health at start accordingly." />
+    <MESSAGE value="Solve medium and tricky book an event only if it does not create a conflict with existing events. The simplest solution was to keep start and end time together and then find the first event starting before the current event finishes. That event should finish before the current event starts for a successful booking." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky book an event only if it does not create a conflict with existing events. The simplest solution was to keep start and end time together and then find the first event starting before the current event finishes. That event should finish before the current event starts for a successful booking." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -650,10 +651,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594324360886" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1602274975502">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1602333335906">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1602274975502" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1602333335906" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -698,54 +699,54 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602329269278">
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602331514165">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602329269278" />
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602331514165" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1602251493715">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1602337364518">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602251493715" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602337364518" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1602178505875">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1602335963472">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602178505875" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1602178505875">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602335963472" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1602335963472">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602178505875" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1602178505875">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602335963472" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1602335963471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602178505875" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1602178505875">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602335963471" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1602335963472">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602178505875" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1601650370687">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602335963472" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1602334665520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601650370687" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1601650370687">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602334665520" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1602334665520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601650370687" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1601650370687">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602334665520" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1602334665520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601650370687" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1601650370687">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602334665520" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1602334665520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601650370687" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602334665520" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -782,14 +783,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1602011044663" />
+    <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1602337293524">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="669" y="222" key="VCS.ChangeListViewerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602337293524" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602329270797">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602331515744">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602329270797" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602331515744" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -814,10 +819,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602243036806">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602332689449">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602243036806" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602332689449" />
     <state width="676" height="169" key="javadoc.popup.new" timestamp="1602330189475">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -830,10 +835,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602329503757">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602334354192">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602329503757" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602334354192" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1065,7 +1070,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java</url>
-          <line>50</line>
+          <line>81</line>
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1102,6 +1107,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/alternate/TargetNumberWithOperations.java</url>
           <line>38</line>
           <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="158" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -47,6 +47,7 @@ public class PathWithMaxProbability {
                 return; // no need to continue finding max probability for all the nodes
             }
             for (Pair<Integer, Double> adjacentNodes : nodes.get(head.getKey())) {
+                //visited check is not required and distance check is sufficient because once a node is done we can't get a better path
                 if (distance[adjacentNodes.getKey()] < distance[head.getKey()] * adjacentNodes.getValue() && !visited[adjacentNodes.getKey()]) {
                     distance[adjacentNodes.getKey()] = distance[head.getKey()] * adjacentNodes.getValue();
                     minHeap.add(new Pair<>(adjacentNodes.getKey(), distance[adjacentNodes.getKey()]));
