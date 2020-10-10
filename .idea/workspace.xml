@@ -179,13 +179,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00337" summary="Simplify code and update approach in sorting an array by changing only one element.">
-      <created>1601310502268</created>
-      <option name="number" value="00337" />
-      <option name="presentableId" value="LOCAL-00337" />
-      <option name="project" value="LOCAL" />
-      <updated>1601310502268</updated>
-    </task>
     <task id="LOCAL-00338" summary="Solve hard and tricky find the smallest substring that contains all the characters of the target string by sliding window.&#10;&#10;Learnings -- In sliding window implementation, we are only interested in characters with +ve count. Increase the curCount only if the count of char[end] &gt; 0. Decrease the curCount when count of char[begin] &gt; 0. That's the trick. Incrementing/Decrementing count of characters that are not required wont have any affect because their count will always &lt;= 0">
       <created>1601317140963</created>
       <option name="number" value="00338" />
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602270014260</updated>
     </task>
-    <option name="localTasksCounter" value="386" />
+    <task id="LOCAL-00386" summary="Solve medium classical painting problem, no two adjacent house can have same color and we need to paint all the houses with min cost.&#10;&#10;Recursive solution was easy, took me a while to convert into memoized solution because we need the color of the house being painted as a state as well.">
+      <created>1602325530657</created>
+      <option name="number" value="00386" />
+      <option name="presentableId" value="LOCAL-00386" />
+      <option name="project" value="LOCAL" />
+      <updated>1602325530657</updated>
+    </task>
+    <option name="localTasksCounter" value="387" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update greedy logic in GasStations" />
     <MESSAGE value="Add another approach by sorting from start point in MinimumArrowsToBurstBalloons" />
     <MESSAGE value="Simplify code and add approach in MergeIntervals" />
     <MESSAGE value="Solve easy find the two's complement of a number using bit magic&#10;&#10;Learnings -- Number + 2's complement = Number with all bit's set (3,7,15,31,63....) Find the first number greater than current number that has all bits set and return the diff of that number with current number." />
@@ -628,7 +627,8 @@
     <MESSAGE value="Solve medium find minimum ascii sum of characters to be deleted to make two strings equal. Similar to previously solved DeleteOperationsForTwoString" />
     <MESSAGE value="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped." />
     <MESSAGE value="Solve classical hard problem EditDistance, find the minimum no of operations (insert, delete, replace) required to convert one string to another using top down memoization. &#10;&#10;Learnings -- Leveraged prior learnings in DeleteOperationForTwoStrings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve classical hard problem EditDistance, find the minimum no of operations (insert, delete, replace) required to convert one string to another using top down memoization. &#10;&#10;Learnings -- Leveraged prior learnings in DeleteOperationForTwoStrings" />
+    <MESSAGE value="Solve medium classical painting problem, no two adjacent house can have same color and we need to paint all the houses with min cost.&#10;&#10;Recursive solution was easy, took me a while to convert into memoized solution because we need the color of the house being painted as a state as well." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium classical painting problem, no two adjacent house can have same color and we need to paint all the houses with min cost.&#10;&#10;Recursive solution was easy, took me a while to convert into memoized solution because we need the color of the house being painted as a state as well." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -698,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602270013688">
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602325530112">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602270013688" />
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602325530112" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -786,10 +786,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602270015269">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602325531671">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602270015269" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602325531671" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -822,18 +822,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602265064062" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602281366807">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602327995858">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602281366807" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602327995858" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602265493044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602264710885">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602328598294">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602264710885" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602328598294" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
