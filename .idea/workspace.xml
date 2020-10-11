@@ -179,13 +179,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00346" summary="Solve easy find no of elements that lies within a specific range [x, x-3000] using sliding window + deque">
-      <created>1601533195432</created>
-      <option name="number" value="00346" />
-      <option name="presentableId" value="LOCAL-00346" />
-      <option name="project" value="LOCAL" />
-      <updated>1601533195432</updated>
-    </task>
     <task id="LOCAL-00347" summary="Solve hard but medium find length of longest consecutive sequence by DFS + Memoization.&#10;&#10;Learnings -- Leverage prior learning of reusing previously computed results.">
       <created>1601547616239</created>
       <option name="number" value="00347" />
@@ -522,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602365590549</updated>
     </task>
-    <option name="localTasksCounter" value="395" />
+    <task id="LOCAL-00395" summary="Solve hard and tricky count no of submatrices that sum to target sum using 2D prefix sum and reducing the problem to SubarraySumEqualsK. Trick was to generate all submatrices sum in constant time using 2D prefix sum.">
+      <created>1602369687617</created>
+      <option name="number" value="00395" />
+      <option name="presentableId" value="LOCAL-00395" />
+      <option name="project" value="LOCAL" />
+      <updated>1602369687617</updated>
+    </task>
+    <option name="localTasksCounter" value="396" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another duplicate problem" />
     <MESSAGE value="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part." />
     <MESSAGE value="Add top down memoization solution in finding longest common subarray. First time seeing that top down is complicated than bottom up." />
     <MESSAGE value="Add top down memoization solution in finding longest common subsequence.&#10;&#10;Update comment in LongestCommonSubarray" />
@@ -628,7 +627,8 @@
     <MESSAGE value="Add comments in count no of elements smaller than current element on the right using merge sort. Merge portion of mergesort is tricky" />
     <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to ExamRoom" />
     <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to previously solved ExamRoom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find maximum distance between two occupied seats. Similar to previously solved ExamRoom" />
+    <MESSAGE value="Solve hard and tricky count no of submatrices that sum to target sum using 2D prefix sum and reducing the problem to SubarraySumEqualsK. Trick was to generate all submatrices sum in constant time using 2D prefix sum." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky count no of submatrices that sum to target sum using 2D prefix sum and reducing the problem to SubarraySumEqualsK. Trick was to generate all submatrices sum in constant time using 2D prefix sum." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -698,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602365590049">
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602369687044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602365590049" />
+    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602369687044" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,10 +790,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602365594537">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602369688603">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602365594537" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602369688603" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
