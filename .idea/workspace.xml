@@ -94,21 +94,18 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheapestFlightWithinKStopTest.test">
-    <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MinimumWindowSubsequence">
+    <configuration name="MinimumWindowSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MinimumWindowSubsequence" />
       <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CheapestFlightWithinKStopTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DecodeStringTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DecodeStringTest" />
+      <option name="MAIN_CLASS_NAME" value="CheapestFlightWithinKStopTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -155,18 +152,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.DecodeStringTest.test" />
       <item itemvalue="JUnit.LongestCommonSubarrayTest.test" />
       <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
       <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
+      <item itemvalue="Application.MinimumWindowSubsequence" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinimumWindowSubsequence" />
         <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
         <item itemvalue="JUnit.LongestCommonSubarrayTest.test" />
-        <item itemvalue="JUnit.DecodeStringTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -178,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00348" summary="Solve hard and tricky find the first missing positive number by swapping the number to their correct index or by flagging their index.&#10;&#10;Learnings -- Its a tricky question with edge cases around boundary cases. In case of placing the flag by negating the value present at that index, the tricky thing is to take care of -ve numbers already present in the input by setting it to a high positive value outside the working range [1,n]">
-      <created>1601566783907</created>
-      <option name="number" value="00348" />
-      <option name="presentableId" value="LOCAL-00348" />
-      <option name="project" value="LOCAL" />
-      <updated>1601566783907</updated>
     </task>
     <task id="LOCAL-00349" summary="Solve medium but tricky find xor all subarray elements by leveraging the property that xor is the inverse function of xor&#10;&#10;Learnings: If the xor of a[0...i] is X and the xor of a[0 to k] is Y then xor of a[k+1, i] is X ^ Y">
       <created>1601587015396</created>
@@ -522,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602438820916</updated>
     </task>
-    <option name="localTasksCounter" value="397" />
+    <task id="LOCAL-00397" summary="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not.">
+      <created>1602534443724</created>
+      <option name="number" value="00397" />
+      <option name="presentableId" value="LOCAL-00397" />
+      <option name="project" value="LOCAL" />
+      <updated>1602534443724</updated>
+    </task>
+    <option name="localTasksCounter" value="398" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add top down memoization solution in finding longest common subarray. First time seeing that top down is complicated than bottom up." />
     <MESSAGE value="Add top down memoization solution in finding longest common subsequence.&#10;&#10;Update comment in LongestCommonSubarray" />
     <MESSAGE value="Solve medium and tricky count all palindromic substrings by considering all indexes as the center and expand around the center in both left and right direction considering both even and odd length palindromes`" />
     <MESSAGE value="Update logic in FindShortestSubarrayToBeRemovedToMakeArraySorted" />
@@ -628,7 +624,8 @@
     <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to previously solved ExamRoom" />
     <MESSAGE value="Solve hard and tricky count no of submatrices that sum to target sum using 2D prefix sum and reducing the problem to SubarraySumEqualsK. Trick was to generate all submatrices sum in constant time using 2D prefix sum." />
     <MESSAGE value="Solve medium and tricky find smallest subsequence of distinct characters by greedily deleting the characters that are greater than current characters and occurs on the right of current character (duplicate)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find smallest subsequence of distinct characters by greedily deleting the characters that are greater than current characters and occurs on the right of current character (duplicate)" />
+    <MESSAGE value="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -698,10 +695,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602438820237">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602534443027">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="402" y="49" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602438820237" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602534443027" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -714,22 +711,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1602335963472">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1602601184071">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602335963472" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1602335963472">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602601184071" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1602601184070">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602335963472" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1602335963471">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602601184070" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1602601184070">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602335963471" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1602335963472">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602601184070" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1602601184071">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602335963472" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602601184071" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1602334665520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,10 +787,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602438821723">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602534444712">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602438821723" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602534444712" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -822,22 +819,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602362148792" />
-    <state width="676" height="169" key="javadoc.popup.new" timestamp="1602439685361">
+    <state width="676" height="169" key="javadoc.popup.new" timestamp="1602602543657">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602439685361" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602327995858">
+    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602602543657" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602595060035">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602327995858" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602595060035" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602265493044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602486470198">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602603909754">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602486470198" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602603909754" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
