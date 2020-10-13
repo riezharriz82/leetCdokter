@@ -176,13 +176,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00350" summary="Simplify code in DecodeString by coalescing string when ']' is encountered. This code fits naturally into the stack style of solving things.">
-      <created>1601658878424</created>
-      <option name="number" value="00350" />
-      <option name="presentableId" value="LOCAL-00350" />
-      <option name="project" value="LOCAL" />
-      <updated>1601658878425</updated>
-    </task>
     <task id="LOCAL-00351" summary="Solve hard and tricky BusRoutes. Here the BFS is not to find the shortest length between two stop's but to find the shortest no of buses between two stops. Due to this we have to do BFS on buses. How to know whether two buses are connected i.e. share an edge? They will share an edge if they share a stop.">
       <created>1601661149701</created>
       <option name="number" value="00351" />
@@ -519,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602604133834</updated>
     </task>
-    <option name="localTasksCounter" value="399" />
+    <task id="LOCAL-00399" summary="Solve easy find the longest increasing subarray in an array by sliding window. Keep increasing the window if current window is valid, otherwise reset it to after the end of current window.">
+      <created>1602607387087</created>
+      <option name="number" value="00399" />
+      <option name="presentableId" value="LOCAL-00399" />
+      <option name="project" value="LOCAL" />
+      <updated>1602607387087</updated>
+    </task>
+    <option name="localTasksCounter" value="400" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky count all palindromic substrings by considering all indexes as the center and expand around the center in both left and right direction considering both even and odd length palindromes`" />
     <MESSAGE value="Update logic in FindShortestSubarrayToBeRemovedToMakeArraySorted" />
     <MESSAGE value="Solve medium find longest palindromic subsequence using top down memoized recursion &#10;If s[left] == s[right] then candidate length will be 2 + recur(left+1, right-1) Otherwise it will be max(recur(left+1, right), recur(left, right-1))&#10;&#10;Learnings -- Difference between substring and subsequence problem is continuity, substring problem needs the recursion part to be adjacent to the current part, subsequence does not care about it." />
     <MESSAGE value="Update logic in finding longest common substring" />
@@ -625,7 +624,8 @@
     <MESSAGE value="Solve medium and tricky find smallest subsequence of distinct characters by greedily deleting the characters that are greater than current characters and occurs on the right of current character (duplicate)" />
     <MESSAGE value="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not." />
     <MESSAGE value="Solve hard and tricky find minimum window in a string that has target string as a subsequence using sliding window. Similar to previously solved MinWindowSubstring. &#10;&#10;Keep increasing the window until the current window has T as a subsequence. Then trim the window by iterating from the end to find the first window that has T as a subsequence, since we are iterating from the end, the first window would be the shortest window. Set the right pointer just after the start of the current window." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find minimum window in a string that has target string as a subsequence using sliding window. Similar to previously solved MinWindowSubstring. &#10;&#10;Keep increasing the window until the current window has T as a subsequence. Then trim the window by iterating from the end to find the first window that has T as a subsequence, since we are iterating from the end, the first window would be the shortest window. Set the right pointer just after the start of the current window." />
+    <MESSAGE value="Solve easy find the longest increasing subarray in an array by sliding window. Keep increasing the window if current window is valid, otherwise reset it to after the end of current window." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the longest increasing subarray in an array by sliding window. Keep increasing the window if current window is valid, otherwise reset it to after the end of current window." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -695,10 +695,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602604132622">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602607386408">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602604132622" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602607386408" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,10 +787,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602604135246">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602607388013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602604135246" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602607388013" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
