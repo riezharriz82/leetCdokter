@@ -176,13 +176,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00349" summary="Solve medium but tricky find xor all subarray elements by leveraging the property that xor is the inverse function of xor&#10;&#10;Learnings: If the xor of a[0...i] is X and the xor of a[0 to k] is Y then xor of a[k+1, i] is X ^ Y">
-      <created>1601587015396</created>
-      <option name="number" value="00349" />
-      <option name="presentableId" value="LOCAL-00349" />
-      <option name="project" value="LOCAL" />
-      <updated>1601587015396</updated>
-    </task>
     <task id="LOCAL-00350" summary="Simplify code in DecodeString by coalescing string when ']' is encountered. This code fits naturally into the stack style of solving things.">
       <created>1601658878424</created>
       <option name="number" value="00350" />
@@ -519,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602534443724</updated>
     </task>
-    <option name="localTasksCounter" value="398" />
+    <task id="LOCAL-00398" summary="Solve hard and tricky find minimum window in a string that has target string as a subsequence using sliding window. Similar to previously solved MinWindowSubstring. &#10;&#10;Keep increasing the window until the current window has T as a subsequence. Then trim the window by iterating from the end to find the first window that has T as a subsequence, since we are iterating from the end, the first window would be the shortest window. Set the right pointer just after the start of the current window.">
+      <created>1602604133833</created>
+      <option name="number" value="00398" />
+      <option name="presentableId" value="LOCAL-00398" />
+      <option name="project" value="LOCAL" />
+      <updated>1602604133834</updated>
+    </task>
+    <option name="localTasksCounter" value="399" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add top down memoization solution in finding longest common subsequence.&#10;&#10;Update comment in LongestCommonSubarray" />
     <MESSAGE value="Solve medium and tricky count all palindromic substrings by considering all indexes as the center and expand around the center in both left and right direction considering both even and odd length palindromes`" />
     <MESSAGE value="Update logic in FindShortestSubarrayToBeRemovedToMakeArraySorted" />
     <MESSAGE value="Solve medium find longest palindromic subsequence using top down memoized recursion &#10;If s[left] == s[right] then candidate length will be 2 + recur(left+1, right-1) Otherwise it will be max(recur(left+1, right), recur(left, right-1))&#10;&#10;Learnings -- Difference between substring and subsequence problem is continuity, substring problem needs the recursion part to be adjacent to the current part, subsequence does not care about it." />
@@ -625,7 +624,8 @@
     <MESSAGE value="Solve hard and tricky count no of submatrices that sum to target sum using 2D prefix sum and reducing the problem to SubarraySumEqualsK. Trick was to generate all submatrices sum in constant time using 2D prefix sum." />
     <MESSAGE value="Solve medium and tricky find smallest subsequence of distinct characters by greedily deleting the characters that are greater than current characters and occurs on the right of current character (duplicate)" />
     <MESSAGE value="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not." />
+    <MESSAGE value="Solve hard and tricky find minimum window in a string that has target string as a subsequence using sliding window. Similar to previously solved MinWindowSubstring. &#10;&#10;Keep increasing the window until the current window has T as a subsequence. Then trim the window by iterating from the end to find the first window that has T as a subsequence, since we are iterating from the end, the first window would be the shortest window. Set the right pointer just after the start of the current window." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find minimum window in a string that has target string as a subsequence using sliding window. Similar to previously solved MinWindowSubstring. &#10;&#10;Keep increasing the window until the current window has T as a subsequence. Then trim the window by iterating from the end to find the first window that has T as a subsequence, since we are iterating from the end, the first window would be the shortest window. Set the right pointer just after the start of the current window." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -695,10 +695,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602534443027">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602604132622">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602534443027" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602604132622" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -779,18 +779,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1602011044663" />
-    <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1602337293524">
+    <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1602604186144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="669" y="222" key="VCS.ChangeListViewerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602337293524" />
+    <state x="669" y="222" key="VCS.ChangeListViewerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602604186144" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602534444712">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602604135246">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602534444712" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602604135246" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -831,10 +831,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602603909754">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602606288488">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602603909754" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602606288488" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
