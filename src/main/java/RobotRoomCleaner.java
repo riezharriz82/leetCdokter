@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * https://leetcode.com/problems/robot-room-cleaner/
+ * https://leetcode.com/problems/robot-room-cleaner/ Premium
  * <p>
  * Given a robot cleaner in a room modeled as a grid.
  * Each cell in the grid can be empty or blocked.

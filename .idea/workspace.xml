@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RobotRoomCleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RobotRoomCleaner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00352" summary="Solve medium and tricky find the best index which maximises the distance between two occupied indices by keeping track of occupied indices in treeset.&#10;&#10;Learnings -- In problems dealing with holes, leverage treeset to keep track of occupied indices. Use it to find the next best free index.">
-      <created>1601716430748</created>
-      <option name="number" value="00352" />
-      <option name="presentableId" value="LOCAL-00352" />
-      <option name="project" value="LOCAL" />
-      <updated>1601716430748</updated>
     </task>
     <task id="LOCAL-00353" summary="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key">
       <created>1601726380593</created>
@@ -519,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602618762889</updated>
     </task>
-    <option name="localTasksCounter" value="401" />
+    <task id="LOCAL-00401" summary="Solve hard and tricky robot room cleaner problem, given an infinite grid and no sense of coordinates, how will you traverse all the valid coordinates of the grid&#10;&#10;Learnings -- Trick was to rotate 4 times and identify the next index given current direction. Once a cell is done, backtrack by actually moving the robot back to the caller. Backtrack just got real fellas.">
+      <created>1602689618207</created>
+      <option name="number" value="00401" />
+      <option name="presentableId" value="LOCAL-00401" />
+      <option name="project" value="LOCAL" />
+      <updated>1602689618207</updated>
+    </task>
+    <option name="localTasksCounter" value="402" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find longest palindromic subsequence using top down memoized recursion &#10;If s[left] == s[right] then candidate length will be 2 + recur(left+1, right-1) Otherwise it will be max(recur(left+1, right), recur(left, right-1))&#10;&#10;Learnings -- Difference between substring and subsequence problem is continuity, substring problem needs the recursion part to be adjacent to the current part, subsequence does not care about it." />
     <MESSAGE value="Update logic in finding longest common substring" />
     <MESSAGE value="Solve medium find longest palindromic substring by&#10;1. Expanding around the center by considering each index as the center for even/odd length palindrome.&#10;2. Top down recursion with memoization if s[left] == s[right], recur for [left+1, right-1] and check if it's palindrome.&#10;If it's palindrome, then only update the current candidate length." />
     <MESSAGE value="Simplify the solution in SerializeAndDeserializeBinaryTree by encoding the preorder traversal of tree." />
@@ -625,7 +625,8 @@
     <MESSAGE value="Solve hard and tricky find minimum window in a string that has target string as a subsequence using sliding window. Similar to previously solved MinWindowSubstring. &#10;&#10;Keep increasing the window until the current window has T as a subsequence. Then trim the window by iterating from the end to find the first window that has T as a subsequence, since we are iterating from the end, the first window would be the shortest window. Set the right pointer just after the start of the current window." />
     <MESSAGE value="Solve easy find the longest increasing subarray in an array by sliding window. Keep increasing the window if current window is valid, otherwise reset it to after the end of current window." />
     <MESSAGE value="Solve hard classical trapping rain water problem. Was asked this question during my first amazon onsite interview." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard classical trapping rain water problem. Was asked this question during my first amazon onsite interview." />
+    <MESSAGE value="Solve hard and tricky robot room cleaner problem, given an infinite grid and no sense of coordinates, how will you traverse all the valid coordinates of the grid&#10;&#10;Learnings -- Trick was to rotate 4 times and identify the next index given current direction. Once a cell is done, backtrack by actually moving the robot back to the caller. Backtrack just got real fellas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky robot room cleaner problem, given an infinite grid and no sense of coordinates, how will you traverse all the valid coordinates of the grid&#10;&#10;Learnings -- Trick was to rotate 4 times and identify the next index given current direction. Once a cell is done, backtrack by actually moving the robot back to the caller. Backtrack just got real fellas." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -695,10 +696,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602618762265">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602689617553">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602618762265" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602689617553" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602618764034">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602689618980">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602618764034" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602689618980" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -831,10 +832,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602622165074">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602691384449">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602622165074" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602691384449" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
