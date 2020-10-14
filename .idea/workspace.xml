@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RobotRoomCleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RobotRoomCleaner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MinimumWindowSubsequence">
+  <component name="RunManager" selected="Application.HouseRobber2">
+    <configuration name="HouseRobber2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HouseRobber2" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MinimumWindowSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MinimumWindowSubsequence" />
       <module name="leetcode-practice" />
@@ -107,16 +113,6 @@
       <module name="leetcode-practice" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CheapestFlightWithinKStopTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LongestCommonSubarrayTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LongestCommonSubarrayTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -153,18 +149,18 @@
     <list>
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.LongestCommonSubarrayTest.test" />
       <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
       <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
       <item itemvalue="Application.MinimumWindowSubsequence" />
+      <item itemvalue="Application.HouseRobber2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HouseRobber2" />
         <item itemvalue="Application.MinimumWindowSubsequence" />
         <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
-        <item itemvalue="JUnit.LongestCommonSubarrayTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -176,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00353" summary="Solve medium find all strings that part of the same group, here group consists of strings whose each characters are shifted by same diff&#10;&#10;Learnings -- In case of grouping questions, in order to solve in linear time, create the key for each string and add it to the results present for that key">
-      <created>1601726380593</created>
-      <option name="number" value="00353" />
-      <option name="presentableId" value="LOCAL-00353" />
-      <option name="project" value="LOCAL" />
-      <updated>1601726380593</updated>
     </task>
     <task id="LOCAL-00354" summary="Solve medium track count of occurrences in the last hour via sliding window.&#10;&#10;Learnings -- As the problem talks about dealing with elements present in the last hour, sliding window fits perfectly. Thought about using treeSet or queue but they didn't pan out.">
       <created>1601757379592</created>
@@ -520,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602689618207</updated>
     </task>
-    <option name="localTasksCounter" value="402" />
+    <task id="LOCAL-00402" summary="Solve medium Walls and Gates, find the shortest distance between an empty room and a gate, provided there are multiple empty rooms and multiple gates. &#10;&#10;Used standard BFS to find the shortest distance.">
+      <created>1602691965653</created>
+      <option name="number" value="00402" />
+      <option name="presentableId" value="LOCAL-00402" />
+      <option name="project" value="LOCAL" />
+      <updated>1602691965653</updated>
+    </task>
+    <option name="localTasksCounter" value="403" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update logic in finding longest common substring" />
     <MESSAGE value="Solve medium find longest palindromic substring by&#10;1. Expanding around the center by considering each index as the center for even/odd length palindrome.&#10;2. Top down recursion with memoization if s[left] == s[right], recur for [left+1, right-1] and check if it's palindrome.&#10;If it's palindrome, then only update the current candidate length." />
     <MESSAGE value="Simplify the solution in SerializeAndDeserializeBinaryTree by encoding the preorder traversal of tree." />
     <MESSAGE value="Solve medium Serialize and Deserialize BST by encoding it in a compact form by leveraging the bounds property of BST, we can quickly filter out a node from being added to a subtree of BST if we keep track of lower_bound and upper_bound of current subtree. &#10;&#10;While recursing left, update the upper_bound and while recursing right, update the lower_bound." />
@@ -626,7 +621,8 @@
     <MESSAGE value="Solve easy find the longest increasing subarray in an array by sliding window. Keep increasing the window if current window is valid, otherwise reset it to after the end of current window." />
     <MESSAGE value="Solve hard classical trapping rain water problem. Was asked this question during my first amazon onsite interview." />
     <MESSAGE value="Solve hard and tricky robot room cleaner problem, given an infinite grid and no sense of coordinates, how will you traverse all the valid coordinates of the grid&#10;&#10;Learnings -- Trick was to rotate 4 times and identify the next index given current direction. Once a cell is done, backtrack by actually moving the robot back to the caller. Backtrack just got real fellas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky robot room cleaner problem, given an infinite grid and no sense of coordinates, how will you traverse all the valid coordinates of the grid&#10;&#10;Learnings -- Trick was to rotate 4 times and identify the next index given current direction. Once a cell is done, backtrack by actually moving the robot back to the caller. Backtrack just got real fellas." />
+    <MESSAGE value="Solve medium Walls and Gates, find the shortest distance between an empty room and a gate, provided there are multiple empty rooms and multiple gates. &#10;&#10;Used standard BFS to find the shortest distance." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Walls and Gates, find the shortest distance between an empty room and a gate, provided there are multiple empty rooms and multiple gates. &#10;&#10;Used standard BFS to find the shortest distance." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -696,10 +692,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602689617553">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602691965048">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602689617553" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602691965048" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -712,38 +708,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1602601184071">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1602703848514">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602601184071" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1602601184070">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602703848514" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1602703848514">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602601184070" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1602601184070">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602703848514" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1602703848514">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602601184070" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1602601184071">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602703848514" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1602703848514">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602601184071" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1602334665520">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602703848514" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1602703848516">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602334665520" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1602334665520">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602703848516" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1602703848515">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602334665520" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1602334665520">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602703848515" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1602703848515">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602334665520" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1602334665520">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602703848515" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1602703848516">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602334665520" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602703848516" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -788,10 +784,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602689618980">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602691967060">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602689618980" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602691967060" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -824,18 +820,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602602543657" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602595060035">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602701661941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602595060035" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602701661941" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602265493044">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602265493044" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602691384449">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602692103637">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602691384449" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602692103637" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
