@@ -16,51 +16,48 @@ import java.util.HashMap;
 public class NumberOfSubmatricesThatSumsToTarget {
     /**
      * Approach: Harder version of {@link SubarraySumEqualsK}
-     * Need to create a 2D prefix sum to calculate all submatrices sum in constant time
-     * Once we have all the submatrices sum, we can leverage hashmap to find a submatrix with target sum
+     * Need to generate all the submatrix sum by utilizing the already computed submatrix sum
      * e.g for input:
      * [0,1,0]
      * [1,1,1]
      * [0,1,0]
-     * 2d prefix sum is:
-     * [0,1,1]
-     * [1,3,4]
-     * [1,4,5]
+     * we would first try col1= 0 and col2 = 0, this will give current submatrix as
+     * [0]
+     * [1]
+     * [0]
+     * Now apply logic similar to {@link SubarraySumEqualsK} to find subarray with target sum and update the result
+     * Now col1 = 0 and col2 = 1
+     * [1]
+     * [2]
+     * [1]
+     * Again find subarray with target sum and update the result
      * <p>
-     * Now consider submatrices sum if we consider row1 as 2 and row2 as 2 it would be 1-1 = 0 , 4-3=1, 5-4=1
-     * so [0,1,1] would be all submatrices prefix sum that spans across row2
-     * if we have to find submatrices with target sum as 0, we can apply logic similar to 1D prefix sum and find the count of target subarray counts
+     * Trick to visualize this as expanding the matrix by considering a different base (col1) every time
+     * Initially we picked first column as the base
+     * Next we try out second col as the base and so on.
      * <p>
-     * So in short, generate all submatrices sum in constant time using 2d prefix sum and then extend the submatrices fixing the sizes of row
-     * so that it gets reduced to 1d prefix sum and we find target subarray count
+     * Tushar Roy's excellent simple video on the approach: https://www.youtube.com/watch?v=yCQN096CwWM
+     * Related problem: Maximum sum rectangular submatrix in a matrix
+     * {@link MaxSumOfRectangleNoLargerThanK}
      */
     public int numSubmatrixSumTarget(int[][] matrix, int target) {
-        int m = matrix.length;
-        int n = matrix[0].length;
-        int[][] prefixSum2D = new int[m + 1][n]; //rows are incremented by +1 to easily calculate submatrices sum
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                prefixSum2D[i + 1][j] = (j == 0 ? matrix[i][j] : prefixSum2D[i + 1][j - 1] + matrix[i][j]); //row prefix sum
-            }
-        }
-        for (int i = 1; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                prefixSum2D[i + 1][j] += prefixSum2D[i][j]; //column prefix sum
-            }
-        }
-        HashMap<Integer, Integer> map = new HashMap<>();
         int result = 0;
-        for (int row1 = 1; row1 <= m; row1++) { //generate all possible submatrices that starts from row1 and ends at row2
-            for (int row2 = row1; row2 <= m; row2++) {
-                int matrixSum;
-                map.clear();
+        for (int col1 = 0; col1 < matrix[0].length; col1++) {
+            int[] currentSubMatrixSum = new int[matrix.length]; //init the submatrix after considering a new base
+            for (int col2 = col1; col2 < matrix[0].length; col2++) { //expand on the current base
+                for (int row = 0; row < matrix.length; row++) {
+                    currentSubMatrixSum[row] += matrix[row][col2]; //keep on updating to utilize previous results
+                }
+                //process the current submatrix sum similar to SubarraySumEqualsK
+                HashMap<Integer, Integer> map = new HashMap<>();
                 map.put(0, 1);
-                for (int col = 0; col < n; col++) { //extend the current submatrix to include more columns similar to the way we extend 1D prefix sum in right direction
-                    matrixSum = (prefixSum2D[row2][col] - prefixSum2D[row1 - 1][col]);
-                    if (map.containsKey(matrixSum - target)) {
-                        result += map.get(matrixSum - target);
+                int currentPrefixSum = 0;
+                for (int i = 0; i < currentSubMatrixSum.length; i++) {
+                    currentPrefixSum += currentSubMatrixSum[i];
+                    if (map.containsKey(currentPrefixSum - target)) {
+                        result += map.get(currentPrefixSum - target);
                     }
-                    map.put(matrixSum, map.getOrDefault(matrixSum, 0) + 1);
+                    map.put(currentPrefixSum, map.getOrDefault(currentPrefixSum, 0) + 1);
                 }
             }
         }
