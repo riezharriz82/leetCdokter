@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00360" summary="Add another approach in MeetingsRoom2. Find min no of meeting rooms required to schedule all the meetings">
-      <created>1601818628605</created>
-      <option name="number" value="00360" />
-      <option name="presentableId" value="LOCAL-00360" />
-      <option name="project" value="LOCAL" />
-      <updated>1601818628606</updated>
-    </task>
     <task id="LOCAL-00361" summary="Update greedy logic in GasStations">
       <created>1601822162116</created>
       <option name="number" value="00361" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602939901832</updated>
     </task>
-    <option name="localTasksCounter" value="409" />
+    <task id="LOCAL-00409" summary="Solve hard and tricky find min number of taps required to water a range i.e min no of intervals required to cover the entire garden&#10;&#10;Initially I solved it via a very complicated route, i removed the covered intervals {RemoveCoveredIntervals} and then did a brute force dp from the end similar to {JumpGame2} tracking min no of taps required at any index.&#10;&#10;However removing the covered intervals was not required and brute force dp was sufficient. In order to optimize we can do it similar to bfs logic of JumpGame2. Keep track of the end of current level, once reached, update the end of the next level.">
+      <created>1602951518576</created>
+      <option name="number" value="00409" />
+      <option name="presentableId" value="LOCAL-00409" />
+      <option name="project" value="LOCAL" />
+      <updated>1602951518577</updated>
+    </task>
+    <option name="localTasksCounter" value="410" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped." />
     <MESSAGE value="Solve classical hard problem EditDistance, find the minimum no of operations (insert, delete, replace) required to convert one string to another using top down memoization. &#10;&#10;Learnings -- Leveraged prior learnings in DeleteOperationForTwoStrings" />
     <MESSAGE value="Solve medium classical painting problem, no two adjacent house can have same color and we need to paint all the houses with min cost.&#10;&#10;Recursive solution was easy, took me a while to convert into memoized solution because we need the color of the house being painted as a state as well." />
     <MESSAGE value="Solve hard and tricky Dungeon Game, find the min health required at the start to reach the target provided the health cant be &lt;= 0 at any state.&#10;&#10;This is similar to BusRoutes where BFS needs to be applied but the condition for BFS has changed. Similarly here, the start is actually our target state, because we need the min health at the start. So at start node, we ask adjacent node on their min health required and update the health at start accordingly." />
@@ -622,7 +621,8 @@
     <MESSAGE value="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached." />
     <MESSAGE value="Solve medium find repeated substrings using rolling hash. Using rolling hash allows you to compute hash in constant time, which is much better than creating a substring and then checking whether it's a repeated substring or not.&#10;&#10;Learnings -- Robin Karp Rolling Hash" />
     <MESSAGE value="Solve medium JumpGame3, where we can jump left and right and need to check whether we can access an index with value 0.&#10;&#10;Used DFS to simulate jumping, need to use visited array to avoid loops." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium JumpGame3, where we can jump left and right and need to check whether we can access an index with value 0.&#10;&#10;Used DFS to simulate jumping, need to use visited array to avoid loops." />
+    <MESSAGE value="Solve hard and tricky find min number of taps required to water a range i.e min no of intervals required to cover the entire garden&#10;&#10;Initially I solved it via a very complicated route, i removed the covered intervals {RemoveCoveredIntervals} and then did a brute force dp from the end similar to {JumpGame2} tracking min no of taps required at any index.&#10;&#10;However removing the covered intervals was not required and brute force dp was sufficient. In order to optimize we can do it similar to bfs logic of JumpGame2. Keep track of the end of current level, once reached, update the end of the next level." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find min number of taps required to water a range i.e min no of intervals required to cover the entire garden&#10;&#10;Initially I solved it via a very complicated route, i removed the covered intervals {RemoveCoveredIntervals} and then did a brute force dp from the end similar to {JumpGame2} tracking min no of taps required at any index.&#10;&#10;However removing the covered intervals was not required and brute force dp was sufficient. In order to optimize we can do it similar to bfs logic of JumpGame2. Keep track of the end of current level, once reached, update the end of the next level." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -696,10 +696,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602939901286">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602951517898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602939901286" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602951517898" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -788,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602939902724">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602951519634">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602939902724" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602951519634" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
