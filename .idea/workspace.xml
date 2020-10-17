@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JumpGame2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JumpGame2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00357" summary="Add another approach in FillingBookCaseShelves">
-      <created>1601812339730</created>
-      <option name="number" value="00357" />
-      <option name="presentableId" value="LOCAL-00357" />
-      <option name="project" value="LOCAL" />
-      <updated>1601812339730</updated>
     </task>
     <task id="LOCAL-00358" summary="Solve medium find the largest sum of values possible by picking only specified number of values with same label.&#10;&#10;Learnings -- Initially I thought it as a knapsack problem but it a greedy problem. Part of google mock interview. Pick the largest values first.">
       <created>1601812621348</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602774734327</updated>
     </task>
-    <option name="localTasksCounter" value="406" />
+    <task id="LOCAL-00406" summary="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached.">
+      <created>1602869682248</created>
+      <option name="number" value="00406" />
+      <option name="presentableId" value="LOCAL-00406" />
+      <option name="project" value="LOCAL" />
+      <updated>1602869682248</updated>
+    </task>
+    <option name="localTasksCounter" value="407" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find the no of delete operations to make two strings equal by top down memoization. &#10;&#10;If characters at idx1 and idx2 mismatch, then we have two options, either delete one character at idx1 or idx2 or delete both of the characters at idx1 or idx2 &#10;&#10;If characters at idx1 and idx2 matches, do nothing and skip to idx1-1, idx2-1 &#10;&#10;In case we are done with word1 (idx1&lt;0) but word2 isn't done (idx2&gt;0), only option is to delete all the characters remaining in idx2." />
     <MESSAGE value="Add comment for redundant logic and fix incorrect check in Make Two Strings equal by deleting characters." />
     <MESSAGE value="Solve medium find minimum ascii sum of characters to be deleted to make two strings equal. Similar to previously solved DeleteOperationsForTwoString" />
     <MESSAGE value="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped." />
@@ -622,7 +622,8 @@
     <MESSAGE value="Solve medium and tricky HouseRobber2, houses are present in circular array and can't rob adjacent houses.&#10;Trick was to understand that first and last houses can never be robbed together, so if you rob first, then you have to skip last and vice versa.&#10;After this, problem is similar to solving HouseRobber1. Fuck them circular things" />
     <MESSAGE value="Simplify the generation of submatrices after going through Tushar roy's video on finding the max rectangle submatrix sum in a matrix.&#10;&#10;No need to use 2d prefix sum and get the diff's and all, it was very tricky. Now visualize the generation as picking a new base and start expanding on top of the new base" />
     <MESSAGE value="Solve hard find max submatrix sum &lt;= k in a matrix. This question had two parts:&#10;&#10;1. Finding all the submatrix sum (similar to NumberOfSubmatricesThatSumsToTarget)&#10;2. Once submatrix sum is reduced to 1d array, find a subarray with sum &lt;= k, need to use treeset in order to find any subarrays with valid diff." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find max submatrix sum &lt;= k in a matrix. This question had two parts:&#10;&#10;1. Finding all the submatrix sum (similar to NumberOfSubmatricesThatSumsToTarget)&#10;2. Once submatrix sum is reduced to 1d array, find a subarray with sum &lt;= k, need to use treeset in order to find any subarrays with valid diff." />
+    <MESSAGE value="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -696,10 +697,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602774733770">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602869681364">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602774733770" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602869681364" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -788,10 +789,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602774735813">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602869683933">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602774735813" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602869683933" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -816,10 +817,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602362148792">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602935497738">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602362148792" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602935497738" />
     <state width="676" height="169" key="javadoc.popup.new" timestamp="1602602543657">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -832,10 +833,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602865676937" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602866837723">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602923518539">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602866837723" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602923518539" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
