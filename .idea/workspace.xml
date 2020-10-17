@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JumpGame2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JumpGame2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00358" summary="Solve medium find the largest sum of values possible by picking only specified number of values with same label.&#10;&#10;Learnings -- Initially I thought it as a knapsack problem but it a greedy problem. Part of google mock interview. Pick the largest values first.">
-      <created>1601812621348</created>
-      <option name="number" value="00358" />
-      <option name="presentableId" value="LOCAL-00358" />
-      <option name="project" value="LOCAL" />
-      <updated>1601812621348</updated>
     </task>
     <task id="LOCAL-00359" summary="Solve medium find max sum after partitioning array into subarrays such that size of each subarray &lt;= k and all elements of the subarray transforms to the largest element present in the subarray.&#10;&#10;Learnings -- Yet another array partitioning problem. Trick is to keep track of max of (putting element in current subarray, putting it in next subarray)">
       <created>1601816996523</created>
@@ -517,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602869682248</updated>
     </task>
-    <option name="localTasksCounter" value="407" />
+    <task id="LOCAL-00407" summary="Solve medium find repeated substrings using rolling hash. Using rolling hash allows you to compute hash in constant time, which is much better than creating a substring and then checking whether it's a repeated substring or not.&#10;&#10;Learnings -- Robin Karp Rolling Hash">
+      <created>1602938249004</created>
+      <option name="number" value="00407" />
+      <option name="presentableId" value="LOCAL-00407" />
+      <option name="project" value="LOCAL" />
+      <updated>1602938249004</updated>
+    </task>
+    <option name="localTasksCounter" value="408" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -598,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment for redundant logic and fix incorrect check in Make Two Strings equal by deleting characters." />
     <MESSAGE value="Solve medium find minimum ascii sum of characters to be deleted to make two strings equal. Similar to previously solved DeleteOperationsForTwoString" />
     <MESSAGE value="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped." />
     <MESSAGE value="Solve classical hard problem EditDistance, find the minimum no of operations (insert, delete, replace) required to convert one string to another using top down memoization. &#10;&#10;Learnings -- Leveraged prior learnings in DeleteOperationForTwoStrings" />
@@ -623,7 +621,8 @@
     <MESSAGE value="Simplify the generation of submatrices after going through Tushar roy's video on finding the max rectangle submatrix sum in a matrix.&#10;&#10;No need to use 2d prefix sum and get the diff's and all, it was very tricky. Now visualize the generation as picking a new base and start expanding on top of the new base" />
     <MESSAGE value="Solve hard find max submatrix sum &lt;= k in a matrix. This question had two parts:&#10;&#10;1. Finding all the submatrix sum (similar to NumberOfSubmatricesThatSumsToTarget)&#10;2. Once submatrix sum is reduced to 1d array, find a subarray with sum &lt;= k, need to use treeset in order to find any subarrays with valid diff." />
     <MESSAGE value="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached." />
+    <MESSAGE value="Solve medium find repeated substrings using rolling hash. Using rolling hash allows you to compute hash in constant time, which is much better than creating a substring and then checking whether it's a repeated substring or not.&#10;&#10;Learnings -- Robin Karp Rolling Hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find repeated substrings using rolling hash. Using rolling hash allows you to compute hash in constant time, which is much better than creating a substring and then checking whether it's a repeated substring or not.&#10;&#10;Learnings -- Robin Karp Rolling Hash" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -697,10 +696,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602869681364">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602938248198">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602869681364" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602938248198" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -789,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602869683933">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602938249933">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602869683933" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602938249933" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -825,10 +824,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602602543657" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602701661941">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602938867471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602701661941" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602938867471" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602865676937">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
