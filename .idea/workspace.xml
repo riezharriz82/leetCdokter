@@ -94,7 +94,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KickStart">
+  <component name="RunManager" selected="Application.CombinationLock">
+    <configuration name="CombinationLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alternate.CombinationLock" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HouseRobber2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HouseRobber2" />
       <module name="leetcode-practice" />
@@ -123,16 +130,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CheapestFlightWithinKStopTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -147,17 +144,17 @@
       <item itemvalue="Application.MinimumWindowSubsequence" />
       <item itemvalue="Application.HouseRobber2" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
       <item itemvalue="Application.KickStart" />
       <item itemvalue="Application.MaximumCoins" />
+      <item itemvalue="Application.CombinationLock" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CombinationLock" />
         <item itemvalue="Application.KickStart" />
         <item itemvalue="Application.MaximumCoins" />
         <item itemvalue="Application.HouseRobber2" />
         <item itemvalue="Application.MinimumWindowSubsequence" />
-        <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -169,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00364" summary="Solve easy find the two's complement of a number using bit magic&#10;&#10;Learnings -- Number + 2's complement = Number with all bit's set (3,7,15,31,63....) Find the first number greater than current number that has all bits set and return the diff of that number with current number.">
-      <created>1601891907955</created>
-      <option name="number" value="00364" />
-      <option name="presentableId" value="LOCAL-00364" />
-      <option name="project" value="LOCAL" />
-      <updated>1601891907955</updated>
     </task>
     <task id="LOCAL-00365" summary="Solve medium remove intervals that are completely covering other intervals, partial covering is allowed. Similar to previously solved MergeIntervals. Care needs to be taken for edge cases for partial covering intervals.">
       <created>1601894034870</created>
@@ -513,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603035913753</updated>
     </task>
-    <option name="localTasksCounter" value="413" />
+    <task id="LOCAL-00413" summary="Solve Google Kickstart find the total no of substrings starting with KICK and ending with START by simply keeping track of occurrence of KICK and START. KICK must occur before START.&#10;&#10;Made a stupid mistake which cost me successful submission in the contest.">
+      <created>1603039599577</created>
+      <option name="number" value="00413" />
+      <option name="presentableId" value="LOCAL-00413" />
+      <option name="project" value="LOCAL" />
+      <updated>1603039599577</updated>
+    </task>
+    <option name="localTasksCounter" value="414" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -594,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky book an event only if it does not create a conflict with existing events. The simplest solution was to keep start and end time together and then find the first event starting before the current event finishes. That event should finish before the current event starts for a successful booking." />
     <MESSAGE value="Update comment regarding visited check in Djikstra -- visited check is not really required because once a node is done, we can't get  a better path for that node in future because we are using a priority queue" />
     <MESSAGE value="Solve medium and tricky problem find cheapest cost to reach a target node from source node with max k depth allowed by djikstra and bfs (with pruning)&#10;&#10;Learnings -- &#10;1. BFS can be applied to find shortest path between two nodes in a weighted graph but with pruning and entire traversal of the graph.&#10;2. In case of additional constraint in Djikstra make sure to relax the bounds accordingly while skipping addition of nodes in PQ." />
     <MESSAGE value="Solve hard and tricky classical problem find the max area of rectangle in matrix. Finding max square is relatively easy than calculating rectangle because of different length and width. It can be reduced to finding max rectangle in histogram if we visualize histogram for each row and find max area in it." />
@@ -619,7 +615,8 @@
     <MESSAGE value="Solve medium Video Stitching similar to MinTapsRequiredToWaterGarden using BFS. Keep track of the largest timestamp reachable in current level. If end of current level reached, increment the level count." />
     <MESSAGE value="Solve medium and tricky check whether a graph is bipartite by reducing the problem to color assignment problem. Try assigning a random color to first node, which will then try to assign opposite color to it's neighbour and so on. &#10;If all nodes are able to assign it's neighbour an opposite color, the graph is bipartite.&#10;&#10;Took me a while to cleanly implement it. Initially I was trying to assign colors to all the neighbours in a loop and then was trying to validate the assignment which made it difficult to recurse. Then I thought of assigning one neighbour at a time and recurse." />
     <MESSAGE value="Solve Google Kickstart find the maximum left diagonal sum, made such a stupid mistake while solving it during the contest. Damn." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve Google Kickstart find the maximum left diagonal sum, made such a stupid mistake while solving it during the contest. Damn." />
+    <MESSAGE value="Solve Google Kickstart find the total no of substrings starting with KICK and ending with START by simply keeping track of occurrence of KICK and START. KICK must occur before START.&#10;&#10;Made a stupid mistake which cost me successful submission in the contest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve Google Kickstart find the total no of substrings starting with KICK and ending with START by simply keeping track of occurrence of KICK and START. KICK must occur before START.&#10;&#10;Made a stupid mistake which cost me successful submission in the contest." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -693,10 +690,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603035912980">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603039599079">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603035912980" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603039599079" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -709,38 +706,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603038453758">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603043261184">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603038453758" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603038453757">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603043261184" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603043261184">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603038453757" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603038453757">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603043261184" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603043261184">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603038453757" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603038453758">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603043261184" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603043261184">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603038453758" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603037188811">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603043261184" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603042099994">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603037188811" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603037188811">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603042099994" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603042099993">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603037188811" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603037188811">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603042099993" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603042099993">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603037188811" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603037188811">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603042099993" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603042099993">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603037188811" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603042099993" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -785,10 +782,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603035916423">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603039600879">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603035916423" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603039600879" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -829,10 +826,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602955662078" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603038451549">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603051368431">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603038451549" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603051368431" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1109,7 +1106,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/alternate/KickStart.java</url>
-          <line>21</line>
+          <line>39</line>
           <option name="timeStamp" value="163" />
         </line-breakpoint>
       </breakpoints>
