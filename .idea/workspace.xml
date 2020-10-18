@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00367" summary="Solve medium find shortest distance pair between a bike and a worker by calculating all pairs of distances, sort them, and assign greedily. Trick to reduce time complexity was to use counting sort because max manhattan distance can be 2000 based on the input.">
-      <created>1601930711173</created>
-      <option name="number" value="00367" />
-      <option name="presentableId" value="LOCAL-00367" />
-      <option name="project" value="LOCAL" />
-      <updated>1601930711173</updated>
     </task>
     <task id="LOCAL-00368" summary="Add TODO to solve using Gale Shapley algorithm, Stable marriage problem">
       <created>1602009710266</created>
@@ -508,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603052786113</updated>
     </task>
-    <option name="localTasksCounter" value="416" />
+    <task id="LOCAL-00416" summary="Solve hard and tricky create a max frequency data structure that supports popping out most frequent element. In case of tie in frequency, most recently pushed element must be popped first.&#10;&#10;Used priority queue where priority is defined as a list of timestamps, greater the size, higher the priority. In case of same size, last timestamp is used as a tie breaker.">
+      <created>1603053559840</created>
+      <option name="number" value="00416" />
+      <option name="presentableId" value="LOCAL-00416" />
+      <option name="project" value="LOCAL" />
+      <updated>1603053559840</updated>
+    </task>
+    <option name="localTasksCounter" value="417" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky classical problem find the max area of rectangle in matrix. Finding max square is relatively easy than calculating rectangle because of different length and width. It can be reduced to finding max rectangle in histogram if we visualize histogram for each row and find max area in it." />
     <MESSAGE value="Add comments in count no of elements smaller than current element on the right using merge sort. Merge portion of mergesort is tricky" />
     <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to ExamRoom" />
     <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to previously solved ExamRoom" />
@@ -614,7 +615,8 @@
     <MESSAGE value="Solve Google Kickstart find the total no of substrings starting with KICK and ending with START by simply keeping track of occurrence of KICK and START. KICK must occur before START.&#10;&#10;Made a stupid mistake which cost me successful submission in the contest." />
     <MESSAGE value="Solve tricky Google Kickstart find the min turns required to make all the dials of the lock same. The trick was to understand that the end state can be after bringing all the dials to one of the initial state of the dial i.e if the initial state was {3,5,6,8} one of the final state can be {3,3,3,3} or {5,5,5,5}, {6,6,6,6} {8,8,8,8}&#10;&#10;Fix each wheel as the initial state and then calculate the total turns required. Take care of overflow." />
     <MESSAGE value="Solve medium print the given matrix spirally left to right, top to bottom, right to left, bottom to up by leveraging the direction concept learned in RobotRoomCleaner. Try to move in current direction if possible, if not turn right and try to move." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium print the given matrix spirally left to right, top to bottom, right to left, bottom to up by leveraging the direction concept learned in RobotRoomCleaner. Try to move in current direction if possible, if not turn right and try to move." />
+    <MESSAGE value="Solve hard and tricky create a max frequency data structure that supports popping out most frequent element. In case of tie in frequency, most recently pushed element must be popped first.&#10;&#10;Used priority queue where priority is defined as a list of timestamps, greater the size, higher the priority. In case of same size, last timestamp is used as a tie breaker." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky create a max frequency data structure that supports popping out most frequent element. In case of tie in frequency, most recently pushed element must be popped first.&#10;&#10;Used priority queue where priority is defined as a list of timestamps, greater the size, higher the priority. In case of same size, last timestamp is used as a tie breaker." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -688,10 +690,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603052785558">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603053559301">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603052785558" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603053559301" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -780,10 +782,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603052787095">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603053560727">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603052787095" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603053560727" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +794,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1594451868089" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601403444304">
+    <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603055722052">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601403444304" />
+    <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1603055722052" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603055728459">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603055728459" />
     <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594592599434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -812,10 +818,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602935497738" />
-    <state width="632" height="473" key="javadoc.popup.new" timestamp="1603037359701">
+    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603057509941">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="473" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603037359701" />
+    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603057509941" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602968594315">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
