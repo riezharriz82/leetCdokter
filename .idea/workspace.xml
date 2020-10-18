@@ -8,9 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,13 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00366" summary="Solve medium find whether all paths from a source node end in target node or not by performing DFS. Only challenge was to perform cycle detection. Leveraged previous learnings during implementation of topological sort in CourseSchedule">
-      <created>1601927720066</created>
-      <option name="number" value="00366" />
-      <option name="presentableId" value="LOCAL-00366" />
-      <option name="project" value="LOCAL" />
-      <updated>1601927720066</updated>
     </task>
     <task id="LOCAL-00367" summary="Solve medium find shortest distance pair between a bike and a worker by calculating all pairs of distances, sort them, and assign greedily. Trick to reduce time complexity was to use counting sort because max manhattan distance can be 2000 based on the input.">
       <created>1601930711173</created>
@@ -510,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603051816509</updated>
     </task>
-    <option name="localTasksCounter" value="415" />
+    <task id="LOCAL-00415" summary="Solve medium print the given matrix spirally left to right, top to bottom, right to left, bottom to up by leveraging the direction concept learned in RobotRoomCleaner. Try to move in current direction if possible, if not turn right and try to move.">
+      <created>1603052786113</created>
+      <option name="number" value="00415" />
+      <option name="presentableId" value="LOCAL-00415" />
+      <option name="project" value="LOCAL" />
+      <updated>1603052786113</updated>
+    </task>
+    <option name="localTasksCounter" value="416" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky problem find cheapest cost to reach a target node from source node with max k depth allowed by djikstra and bfs (with pruning)&#10;&#10;Learnings -- &#10;1. BFS can be applied to find shortest path between two nodes in a weighted graph but with pruning and entire traversal of the graph.&#10;2. In case of additional constraint in Djikstra make sure to relax the bounds accordingly while skipping addition of nodes in PQ." />
     <MESSAGE value="Solve hard and tricky classical problem find the max area of rectangle in matrix. Finding max square is relatively easy than calculating rectangle because of different length and width. It can be reduced to finding max rectangle in histogram if we visualize histogram for each row and find max area in it." />
     <MESSAGE value="Add comments in count no of elements smaller than current element on the right using merge sort. Merge portion of mergesort is tricky" />
     <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to ExamRoom" />
@@ -616,7 +613,8 @@
     <MESSAGE value="Solve Google Kickstart find the maximum left diagonal sum, made such a stupid mistake while solving it during the contest. Damn." />
     <MESSAGE value="Solve Google Kickstart find the total no of substrings starting with KICK and ending with START by simply keeping track of occurrence of KICK and START. KICK must occur before START.&#10;&#10;Made a stupid mistake which cost me successful submission in the contest." />
     <MESSAGE value="Solve tricky Google Kickstart find the min turns required to make all the dials of the lock same. The trick was to understand that the end state can be after bringing all the dials to one of the initial state of the dial i.e if the initial state was {3,5,6,8} one of the final state can be {3,3,3,3} or {5,5,5,5}, {6,6,6,6} {8,8,8,8}&#10;&#10;Fix each wheel as the initial state and then calculate the total turns required. Take care of overflow." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve tricky Google Kickstart find the min turns required to make all the dials of the lock same. The trick was to understand that the end state can be after bringing all the dials to one of the initial state of the dial i.e if the initial state was {3,5,6,8} one of the final state can be {3,3,3,3} or {5,5,5,5}, {6,6,6,6} {8,8,8,8}&#10;&#10;Fix each wheel as the initial state and then calculate the total turns required. Take care of overflow." />
+    <MESSAGE value="Solve medium print the given matrix spirally left to right, top to bottom, right to left, bottom to up by leveraging the direction concept learned in RobotRoomCleaner. Try to move in current direction if possible, if not turn right and try to move." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium print the given matrix spirally left to right, top to bottom, right to left, bottom to up by leveraging the direction concept learned in RobotRoomCleaner. Try to move in current direction if possible, if not turn right and try to move." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -690,10 +688,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603051816000">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603052785558">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603051816000" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603052785558" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -782,10 +780,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603051817806">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603052787095">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603051817806" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603052787095" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
