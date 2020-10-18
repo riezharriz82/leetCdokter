@@ -8,7 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve GoogleKickstart Maximum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,9 +94,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HouseRobber2">
+  <component name="RunManager" selected="Application.MaximumCoins">
     <configuration name="HouseRobber2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HouseRobber2" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KickStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KickStart" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaximumCoins" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alternate.MaximumCoins" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,16 +133,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringTransformsIntoAnotherStringTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StringTransformsIntoAnotherStringTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -139,28 +143,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.MinimumWindowSubsequence" />
       <item itemvalue="Application.HouseRobber2" />
-      <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
       <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
+      <item itemvalue="Application.KickStart" />
+      <item itemvalue="Application.MaximumCoins" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaximumCoins" />
+        <item itemvalue="Application.KickStart" />
         <item itemvalue="Application.HouseRobber2" />
         <item itemvalue="Application.MinimumWindowSubsequence" />
         <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="JUnit.StringTransformsIntoAnotherStringTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -172,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00362" summary="Add another approach by sorting from start point in MinimumArrowsToBurstBalloons">
-      <created>1601822275930</created>
-      <option name="number" value="00362" />
-      <option name="presentableId" value="LOCAL-00362" />
-      <option name="project" value="LOCAL" />
-      <updated>1601822275930</updated>
     </task>
     <task id="LOCAL-00363" summary="Simplify code and add approach in MergeIntervals">
       <created>1601822472766</created>
@@ -516,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602953093519</updated>
     </task>
-    <option name="localTasksCounter" value="411" />
+    <task id="LOCAL-00411" summary="Solve medium and tricky check whether a graph is bipartite by reducing the problem to color assignment problem. Try assigning a random color to first node, which will then try to assign opposite color to it's neighbour and so on. &#10;If all nodes are able to assign it's neighbour an opposite color, the graph is bipartite.&#10;&#10;Took me a while to cleanly implement it. Initially I was trying to assign colors to all the neighbours in a loop and then was trying to validate the assignment which made it difficult to recurse. Then I thought of assigning one neighbour at a time and recurse.">
+      <created>1602965828996</created>
+      <option name="number" value="00411" />
+      <option name="presentableId" value="LOCAL-00411" />
+      <option name="project" value="LOCAL" />
+      <updated>1602965828997</updated>
+    </task>
+    <option name="localTasksCounter" value="412" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium classical painting problem, no two adjacent house can have same color and we need to paint all the houses with min cost.&#10;&#10;Recursive solution was easy, took me a while to convert into memoized solution because we need the color of the house being painted as a state as well." />
     <MESSAGE value="Solve hard and tricky Dungeon Game, find the min health required at the start to reach the target provided the health cant be &lt;= 0 at any state.&#10;&#10;This is similar to BusRoutes where BFS needs to be applied but the condition for BFS has changed. Similarly here, the start is actually our target state, because we need the min health at the start. So at start node, we ask adjacent node on their min health required and update the health at start accordingly." />
     <MESSAGE value="Solve medium and tricky book an event only if it does not create a conflict with existing events. The simplest solution was to keep start and end time together and then find the first event starting before the current event finishes. That event should finish before the current event starts for a successful booking." />
     <MESSAGE value="Update comment regarding visited check in Djikstra -- visited check is not really required because once a node is done, we can't get  a better path for that node in future because we are using a priority queue" />
@@ -622,7 +618,8 @@
     <MESSAGE value="Solve medium JumpGame3, where we can jump left and right and need to check whether we can access an index with value 0.&#10;&#10;Used DFS to simulate jumping, need to use visited array to avoid loops." />
     <MESSAGE value="Solve hard and tricky find min number of taps required to water a range i.e min no of intervals required to cover the entire garden&#10;&#10;Initially I solved it via a very complicated route, i removed the covered intervals {RemoveCoveredIntervals} and then did a brute force dp from the end similar to {JumpGame2} tracking min no of taps required at any index.&#10;&#10;However removing the covered intervals was not required and brute force dp was sufficient. In order to optimize we can do it similar to bfs logic of JumpGame2. Keep track of the end of current level, once reached, update the end of the next level." />
     <MESSAGE value="Solve medium Video Stitching similar to MinTapsRequiredToWaterGarden using BFS. Keep track of the largest timestamp reachable in current level. If end of current level reached, increment the level count." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium Video Stitching similar to MinTapsRequiredToWaterGarden using BFS. Keep track of the largest timestamp reachable in current level. If end of current level reached, increment the level count." />
+    <MESSAGE value="Solve medium and tricky check whether a graph is bipartite by reducing the problem to color assignment problem. Try assigning a random color to first node, which will then try to assign opposite color to it's neighbour and so on. &#10;If all nodes are able to assign it's neighbour an opposite color, the graph is bipartite.&#10;&#10;Took me a while to cleanly implement it. Initially I was trying to assign colors to all the neighbours in a loop and then was trying to validate the assignment which made it difficult to recurse. Then I thought of assigning one neighbour at a time and recurse." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky check whether a graph is bipartite by reducing the problem to color assignment problem. Try assigning a random color to first node, which will then try to assign opposite color to it's neighbour and so on. &#10;If all nodes are able to assign it's neighbour an opposite color, the graph is bipartite.&#10;&#10;Took me a while to cleanly implement it. Initially I was trying to assign colors to all the neighbours in a loop and then was trying to validate the assignment which made it difficult to recurse. Then I thought of assigning one neighbour at a time and recurse." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +669,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="820" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609083441" />
-    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601817471147">
+    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603035827138">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1601817471147" />
+    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1603035827138" />
     <state x="743" y="369" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1597609092731">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -696,10 +693,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1602953093035">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603035790210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1602953093035" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603035790210" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -712,38 +709,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1602771360458">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603032937884">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602771360458" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1602771360458">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603032937884" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603032937883">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602771360458" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1602771360458">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603032937883" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603032937883">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602771360458" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1602771360458">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603032937883" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603032937884">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602771360458" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1602771360438">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603032937884" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603025336089">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1602771360438" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1602771360438">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603025336089" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603025336089">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1602771360438" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1602771360438">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603025336089" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603025336089">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1602771360438" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1602771360438">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603025336089" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603025336089">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1602771360438" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603025336089" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -772,10 +769,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1601568700981" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1602622184266">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1603033033619">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1602622184266" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603033033619" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1602011044663">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -788,10 +785,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602953094326">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1602965829702">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602953094326" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602965829702" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -820,22 +817,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602935497738" />
-    <state width="676" height="169" key="javadoc.popup.new" timestamp="1602602543657">
+    <state width="676" height="169" key="javadoc.popup.new" timestamp="1603025177739">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1602602543657" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602964692853">
+    <state width="676" height="169" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603025177739" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602968594315">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602964692853" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602968594315" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602955662078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602955662078" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602965202663">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603033023445">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602965202663" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603033023445" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1109,6 +1106,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java</url>
           <line>27</line>
           <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/KickStart.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="161" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
