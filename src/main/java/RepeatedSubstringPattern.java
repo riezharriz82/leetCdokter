@@ -10,6 +10,16 @@
  */
 public class RepeatedSubstringPattern {
     /**
+     * n^2 solution because of contains().
+     * To reduce it to linear time, use rolling hash or kmp
+     * for rolling hash implementation see {@link RepeatedDNASequence}
+     */
+    public boolean repeatedSubstringPatternSimplified(String s) {
+        String concat = (s + s);
+        return concat.substring(1, concat.length() - 1).contains(s);
+    }
+
+    /**
      * Since the string is repeated, this means that the first character needs to occurs > 1 times in the input
      * So we get all the occurrences of the first character and try to repeat the substring from the occurrence of that char till the end
      * This is not the fastest solution but my original solution.
