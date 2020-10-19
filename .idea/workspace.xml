@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RepeatedSubstringPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RepeatedSubstringPattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00370" summary="Add another duplicate problem">
-      <created>1602010902294</created>
-      <option name="number" value="00370" />
-      <option name="presentableId" value="LOCAL-00370" />
-      <option name="project" value="LOCAL" />
-      <updated>1602010902294</updated>
     </task>
     <task id="LOCAL-00371" summary="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part.">
       <created>1602092094243</created>
@@ -511,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603114780615</updated>
     </task>
-    <option name="localTasksCounter" value="419" />
+    <task id="LOCAL-00419" summary="Add another way of finding whether a string is composed of repeated substrings via concatenating the string and trimming the first and last character and then checking whether the string contains the input string or not.">
+      <created>1603122270576</created>
+      <option name="number" value="00419" />
+      <option name="presentableId" value="LOCAL-00419" />
+      <option name="project" value="LOCAL" />
+      <updated>1603122270576</updated>
+    </task>
+    <option name="localTasksCounter" value="420" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find maximum distance between two occupied seats. Similar to previously solved ExamRoom" />
     <MESSAGE value="Solve hard and tricky count no of submatrices that sum to target sum using 2D prefix sum and reducing the problem to SubarraySumEqualsK. Trick was to generate all submatrices sum in constant time using 2D prefix sum." />
     <MESSAGE value="Solve medium and tricky find smallest subsequence of distinct characters by greedily deleting the characters that are greater than current characters and occurs on the right of current character (duplicate)" />
     <MESSAGE value="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not." />
@@ -617,7 +615,8 @@
     <MESSAGE value="Solve hard and tricky create a max frequency data structure that supports popping out most frequent element. In case of tie in frequency, most recently pushed element must be popped first.&#10;&#10;Used priority queue where priority is defined as a list of timestamps, greater the size, higher the priority. In case of same size, last timestamp is used as a tie breaker." />
     <MESSAGE value="Solve MaxFrequencyStack in another simplified way by creating a reverse mapping of frequency -&gt; list of occurrences of integer.&#10;&#10;This reverse mapping helps in accessing the most frequent element in constant time. Once the mapping is retrieved, ties can be broken by checking the last value inserted in the list." />
     <MESSAGE value="Solve medium find min rotations required to make all rows of domino equal i.e all dominoes should show the same value.&#10;&#10;Try each domino as the end state similar to {CombinationLock} and see what's the min rotation required." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find min rotations required to make all rows of domino equal i.e all dominoes should show the same value.&#10;&#10;Try each domino as the end state similar to {CombinationLock} and see what's the min rotation required." />
+    <MESSAGE value="Add another way of finding whether a string is composed of repeated substrings via concatenating the string and trimming the first and last character and then checking whether the string contains the input string or not." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add another way of finding whether a string is composed of repeated substrings via concatenating the string and trimming the first and last character and then checking whether the string contains the input string or not." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +690,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603114779932">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603122270029">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603114779932" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603122270029" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -783,10 +782,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603114781837">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603122272068">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603114781837" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603122272068" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -823,18 +822,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603057509941" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1602968594315">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603123788720">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602968594315" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603123788720" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602955662078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602955662078" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603121539218">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603122133520">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603121539218" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603122133520" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
