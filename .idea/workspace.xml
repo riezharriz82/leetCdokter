@@ -94,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CombinationLock">
+  <component name="RunManager" selected="Application.NumberOfAtoms">
     <configuration name="CombinationLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="alternate.CombinationLock" />
       <module name="leetcode-practice" />
@@ -123,8 +123,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumWindowSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MinimumWindowSubsequence" />
+    <configuration name="NumberOfAtoms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumberOfAtoms" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,20 +141,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MinimumWindowSubsequence" />
       <item itemvalue="Application.HouseRobber2" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Application.KickStart" />
       <item itemvalue="Application.MaximumCoins" />
       <item itemvalue="Application.CombinationLock" />
+      <item itemvalue="Application.NumberOfAtoms" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NumberOfAtoms" />
         <item itemvalue="Application.CombinationLock" />
         <item itemvalue="Application.KickStart" />
         <item itemvalue="Application.MaximumCoins" />
         <item itemvalue="Application.HouseRobber2" />
-        <item itemvalue="Application.MinimumWindowSubsequence" />
       </list>
     </recent_temporary>
   </component>
@@ -166,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00371" summary="Solve medium Rotate a linked list by k units by keeping a dummy pointer and joining the second part with the first part.">
-      <created>1602092094243</created>
-      <option name="number" value="00371" />
-      <option name="presentableId" value="LOCAL-00371" />
-      <option name="project" value="LOCAL" />
-      <updated>1602092094243</updated>
     </task>
     <task id="LOCAL-00372" summary="Add top down memoization solution in finding longest common subarray. First time seeing that top down is complicated than bottom up.">
       <created>1602105240843</created>
@@ -510,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603122270576</updated>
     </task>
-    <option name="localTasksCounter" value="420" />
+    <task id="LOCAL-00420" summary="Solve hard and tricky encode string with shortest length by top down recursion. Need to check whether the string is composed of repeated substrings, if yes, then recur for the pattern that is repeated.&#10;&#10;If no, then make cuts at all places and recur for the prefix and suffix. Check which cut leads to the shortest encoded string.&#10;&#10;Got confused by trying to implement it via stack. It was a very nice problem.">
+      <created>1603124795858</created>
+      <option name="number" value="00420" />
+      <option name="presentableId" value="LOCAL-00420" />
+      <option name="project" value="LOCAL" />
+      <updated>1603124795858</updated>
+    </task>
+    <option name="localTasksCounter" value="421" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky count no of submatrices that sum to target sum using 2D prefix sum and reducing the problem to SubarraySumEqualsK. Trick was to generate all submatrices sum in constant time using 2D prefix sum." />
     <MESSAGE value="Solve medium and tricky find smallest subsequence of distinct characters by greedily deleting the characters that are greater than current characters and occurs on the right of current character (duplicate)" />
     <MESSAGE value="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not." />
     <MESSAGE value="Solve hard and tricky find minimum window in a string that has target string as a subsequence using sliding window. Similar to previously solved MinWindowSubstring. &#10;&#10;Keep increasing the window until the current window has T as a subsequence. Then trim the window by iterating from the end to find the first window that has T as a subsequence, since we are iterating from the end, the first window would be the shortest window. Set the right pointer just after the start of the current window." />
@@ -616,7 +615,8 @@
     <MESSAGE value="Solve MaxFrequencyStack in another simplified way by creating a reverse mapping of frequency -&gt; list of occurrences of integer.&#10;&#10;This reverse mapping helps in accessing the most frequent element in constant time. Once the mapping is retrieved, ties can be broken by checking the last value inserted in the list." />
     <MESSAGE value="Solve medium find min rotations required to make all rows of domino equal i.e all dominoes should show the same value.&#10;&#10;Try each domino as the end state similar to {CombinationLock} and see what's the min rotation required." />
     <MESSAGE value="Add another way of finding whether a string is composed of repeated substrings via concatenating the string and trimming the first and last character and then checking whether the string contains the input string or not." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add another way of finding whether a string is composed of repeated substrings via concatenating the string and trimming the first and last character and then checking whether the string contains the input string or not." />
+    <MESSAGE value="Solve hard and tricky encode string with shortest length by top down recursion. Need to check whether the string is composed of repeated substrings, if yes, then recur for the pattern that is repeated.&#10;&#10;If no, then make cuts at all places and recur for the prefix and suffix. Check which cut leads to the shortest encoded string.&#10;&#10;Got confused by trying to implement it via stack. It was a very nice problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky encode string with shortest length by top down recursion. Need to check whether the string is composed of repeated substrings, if yes, then recur for the pattern that is repeated.&#10;&#10;If no, then make cuts at all places and recur for the prefix and suffix. Check which cut leads to the shortest encoded string.&#10;&#10;Got confused by trying to implement it via stack. It was a very nice problem." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -690,10 +690,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603122270029">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603124795318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603122270029" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603124795317" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,38 +706,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603051860900">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1603141128594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603051860900" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603051860899">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603141128594" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1603141128594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603051860899" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603051860899">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603141128594" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1603141128593">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603051860899" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603051860899">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603141128593" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1603141128594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603051860899" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603042099994">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603141128594" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603141128594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603042099994" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603042099993">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603141128594" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603141128594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603042099993" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603042099993">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603141128594" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603141128594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603042099993" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603042099993">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603141128594" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603141128594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603042099993" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603141128594" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -782,10 +782,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603122272068">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603124796664">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603122272068" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603124796664" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -830,10 +830,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602955662078" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603122133520">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603124822357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603122133520" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603124822357" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1107,6 +1107,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java</url>
           <line>27</line>
           <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NumberOfAtoms.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NumberOfAtoms.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NumberOfAtoms.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="167" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
