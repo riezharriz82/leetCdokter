@@ -8,7 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DecodeString.java" afterDir="false" />
     </list>
@@ -167,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00373" summary="Add top down memoization solution in finding longest common subsequence.&#10;&#10;Update comment in LongestCommonSubarray">
-      <created>1602107411205</created>
-      <option name="number" value="00373" />
-      <option name="presentableId" value="LOCAL-00373" />
-      <option name="project" value="LOCAL" />
-      <updated>1602107411205</updated>
     </task>
     <task id="LOCAL-00374" summary="Solve medium and tricky count all palindromic substrings by considering all indexes as the center and expand around the center in both left and right direction considering both even and odd length palindromes`">
       <created>1602107709815</created>
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603142836072</updated>
     </task>
-    <option name="localTasksCounter" value="422" />
+    <task id="LOCAL-00422" summary="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()">
+      <created>1603197971624</created>
+      <option name="number" value="00422" />
+      <option name="presentableId" value="LOCAL-00422" />
+      <option name="project" value="LOCAL" />
+      <updated>1603197971624</updated>
+    </task>
+    <option name="localTasksCounter" value="423" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -592,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not." />
     <MESSAGE value="Solve hard and tricky find minimum window in a string that has target string as a subsequence using sliding window. Similar to previously solved MinWindowSubstring. &#10;&#10;Keep increasing the window until the current window has T as a subsequence. Then trim the window by iterating from the end to find the first window that has T as a subsequence, since we are iterating from the end, the first window would be the shortest window. Set the right pointer just after the start of the current window." />
     <MESSAGE value="Solve easy find the longest increasing subarray in an array by sliding window. Keep increasing the window if current window is valid, otherwise reset it to after the end of current window." />
     <MESSAGE value="Solve hard classical trapping rain water problem. Was asked this question during my first amazon onsite interview." />
@@ -617,7 +616,8 @@
     <MESSAGE value="Add another way of finding whether a string is composed of repeated substrings via concatenating the string and trimming the first and last character and then checking whether the string contains the input string or not." />
     <MESSAGE value="Solve hard and tricky encode string with shortest length by top down recursion. Need to check whether the string is composed of repeated substrings, if yes, then recur for the pattern that is repeated.&#10;&#10;If no, then make cuts at all places and recur for the prefix and suffix. Check which cut leads to the shortest encoded string.&#10;&#10;Got confused by trying to implement it via stack. It was a very nice problem." />
     <MESSAGE value="Solve easy find shortest distance between two words, similar to kickstart question of Google Kickstart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find shortest distance between two words, similar to kickstart question of Google Kickstart" />
+    <MESSAGE value="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -691,10 +691,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603142835497">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603197970981">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603142835497" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603197970981" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -783,10 +783,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603142837171">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603197976255">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603142837171" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603197976255" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

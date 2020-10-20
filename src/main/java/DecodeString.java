@@ -1,5 +1,6 @@
 import java.util.ArrayDeque;
 import java.util.LinkedList;
+import java.util.Stack;
 
 /**
  * https://leetcode.com/problems/decode-string/
@@ -67,5 +68,56 @@ public class DecodeString {
             result[i] = stack.pop();
         }
         return new String(result);
+    }
+
+    /**
+     * Approach: Initially I thought that this solution of starting a new expression upon seeing a opening bracket is too hacky and I deleted that solution
+     * But after solving {@link NumberOfAtoms} I realized that it's a pretty generic way of parsing nested expressions.
+     * <p>
+     * Keep updating the current expression as long as we are on the current expression. If an opening bracket is reached,
+     * start a new expression and start updating it.
+     * <p>
+     * When closing bracket is reached, evaluate the current expression by multiplying and then merge it with the previous expression.
+     */
+    public String decodeStringAlternate(String s) {
+        Stack<Integer> multiplierStack = new Stack<>();
+        Stack<String> expressionStack = new Stack<>();
+        expressionStack.push("");
+        int index = 0;
+        while (index < s.length()) {
+            char c = s.charAt(index);
+            if (Character.isDigit(c)) {
+                int multiplier = 0;
+                //keep iterating until we get all the digits
+                while (index < s.length() && Character.isDigit(s.charAt(index))) {
+                    multiplier = 10 * multiplier + (s.charAt(index) - '0');
+                    index++;
+                }
+                multiplierStack.push(multiplier);
+            } else if ('(' == c) {
+                //start of a new expression
+                expressionStack.push("");
+                index++;
+            } else if (')' == c) {
+                //evaluate the current expression and merge with previous expression
+                String currentExpression = expressionStack.pop();
+                int currentMultiplier = multiplierStack.pop();
+                String multipled = "";
+                for (int i = 0; i < currentMultiplier; i++) {
+                    multipled += currentExpression;
+                }
+                //merge with previous expression to leverage nested multiplication
+                String previousExpression = expressionStack.pop();
+                expressionStack.push(previousExpression + multipled);
+                index++;
+            } else {
+                //update the current expression
+                String currentExpression = expressionStack.pop();
+                currentExpression += c;
+                expressionStack.push(currentExpression);
+                index++;
+            }
+        }
+        return expressionStack.pop();
     }
 }
