@@ -66,7 +66,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last.edited.regexp" value="1111111111111111111111111." />
+    <property name="last.edited.regexp" value="abc\ntasd\n" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/common" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -94,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumberOfAtoms">
+  <component name="RunManager" selected="Application.LongestAbsoluteFilePath">
     <configuration name="CombinationLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="alternate.CombinationLock" />
       <module name="leetcode-practice" />
@@ -102,15 +102,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HouseRobber2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HouseRobber2" />
+    <configuration name="KickStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alternate.KickStart" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KickStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="alternate.KickStart" />
+    <configuration name="LongestAbsoluteFilePath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LongestAbsoluteFilePath" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,20 +141,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HouseRobber2" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Application.KickStart" />
       <item itemvalue="Application.MaximumCoins" />
       <item itemvalue="Application.CombinationLock" />
       <item itemvalue="Application.NumberOfAtoms" />
+      <item itemvalue="Application.LongestAbsoluteFilePath" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LongestAbsoluteFilePath" />
         <item itemvalue="Application.NumberOfAtoms" />
         <item itemvalue="Application.CombinationLock" />
         <item itemvalue="Application.KickStart" />
         <item itemvalue="Application.MaximumCoins" />
-        <item itemvalue="Application.HouseRobber2" />
       </list>
     </recent_temporary>
   </component>
@@ -166,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00375" summary="Update logic in FindShortestSubarrayToBeRemovedToMakeArraySorted">
-      <created>1602184688134</created>
-      <option name="number" value="00375" />
-      <option name="presentableId" value="LOCAL-00375" />
-      <option name="project" value="LOCAL" />
-      <updated>1602184688134</updated>
     </task>
     <task id="LOCAL-00376" summary="Solve medium find longest palindromic subsequence using top down memoized recursion &#10;If s[left] == s[right] then candidate length will be 2 + recur(left+1, right-1) Otherwise it will be max(recur(left+1, right), recur(left, right-1))&#10;&#10;Learnings -- Difference between substring and subsequence problem is continuity, substring problem needs the recursion part to be adjacent to the current part, subsequence does not care about it.">
       <created>1602189207298</created>
@@ -510,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603199122818</updated>
     </task>
-    <option name="localTasksCounter" value="424" />
+    <task id="LOCAL-00424" summary="Solve easy find all unique email addresses considering special cases around presence of + and . in the username of email id.">
+      <created>1603199919031</created>
+      <option name="number" value="00424" />
+      <option name="presentableId" value="LOCAL-00424" />
+      <option name="project" value="LOCAL" />
+      <updated>1603199919031</updated>
+    </task>
+    <option name="localTasksCounter" value="425" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find the longest increasing subarray in an array by sliding window. Keep increasing the window if current window is valid, otherwise reset it to after the end of current window." />
     <MESSAGE value="Solve hard classical trapping rain water problem. Was asked this question during my first amazon onsite interview." />
     <MESSAGE value="Solve hard and tricky robot room cleaner problem, given an infinite grid and no sense of coordinates, how will you traverse all the valid coordinates of the grid&#10;&#10;Learnings -- Trick was to rotate 4 times and identify the next index given current direction. Once a cell is done, backtrack by actually moving the robot back to the caller. Backtrack just got real fellas." />
     <MESSAGE value="Solve medium Walls and Gates, find the shortest distance between an empty room and a gate, provided there are multiple empty rooms and multiple gates. &#10;&#10;Used standard BFS to find the shortest distance." />
@@ -616,7 +615,8 @@
     <MESSAGE value="Solve easy find shortest distance between two words, similar to kickstart question of Google Kickstart" />
     <MESSAGE value="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()" />
     <MESSAGE value="Add back the stack solution to solve DecodeString. Initially I thought stack solution was not generic enough but I was wrong. Related problem: NumberOfAtoms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add back the stack solution to solve DecodeString. Initially I thought stack solution was not generic enough but I was wrong. Related problem: NumberOfAtoms" />
+    <MESSAGE value="Solve easy find all unique email addresses considering special cases around presence of + and . in the username of email id." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find all unique email addresses considering special cases around presence of + and . in the username of email id." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -686,14 +686,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1595271326137" />
-    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1599053535463">
+    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1603206721809">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1599053535463" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603199122206">
+    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603199918373">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603199122206" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603199918373" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -706,38 +706,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603195767255">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603207709018">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603195767255" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603195767255">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603207709018" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603207709017">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603195767255" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603195767254">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603207709017" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603207709017">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603195767254" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603195767255">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603207709017" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603207709017">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603195767255" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603194132902">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603207709017" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603206724552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603194132902" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603194132902">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603206724552" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603206724551">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603194132902" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603194132902">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603206724551" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603206724551">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603194132902" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603194132902">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603206724551" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603206724552">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603194132902" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603206724552" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -782,10 +782,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603199124022">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603199920120">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603199124022" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603199920120" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -818,10 +818,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602935497738" />
-    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603193391899">
+    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603210971467">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603193391899" />
+    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603210971467" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603123788720">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
