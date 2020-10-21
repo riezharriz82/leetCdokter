@@ -167,13 +167,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00378" summary="Solve medium find longest palindromic substring by&#10;1. Expanding around the center by considering each index as the center for even/odd length palindrome.&#10;2. Top down recursion with memoization if s[left] == s[right], recur for [left+1, right-1] and check if it's palindrome.&#10;If it's palindrome, then only update the current candidate length.">
-      <created>1602189844244</created>
-      <option name="number" value="00378" />
-      <option name="presentableId" value="LOCAL-00378" />
-      <option name="project" value="LOCAL" />
-      <updated>1602189844245</updated>
-    </task>
     <task id="LOCAL-00379" summary="Simplify the solution in SerializeAndDeserializeBinaryTree by encoding the preorder traversal of tree.">
       <created>1602251455855</created>
       <option name="number" value="00379" />
@@ -510,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603283137890</updated>
     </task>
-    <option name="localTasksCounter" value="427" />
+    <task id="LOCAL-00427" summary="Solve medium and tricky delete nodes of a binary tree and return the resulting forest. Trick was to understand two cases, &#10;if the current node is a potential root candidate and needs to be deleted, it's children will become potential root candidates.&#10;otherwise if the current node is a root candidate, add it to the resulting forest.">
+      <created>1603284153164</created>
+      <option name="number" value="00427" />
+      <option name="presentableId" value="LOCAL-00427" />
+      <option name="project" value="LOCAL" />
+      <updated>1603284153164</updated>
+    </task>
+    <option name="localTasksCounter" value="428" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Walls and Gates, find the shortest distance between an empty room and a gate, provided there are multiple empty rooms and multiple gates. &#10;&#10;Used standard BFS to find the shortest distance." />
     <MESSAGE value="Solve medium and tricky HouseRobber2, houses are present in circular array and can't rob adjacent houses.&#10;Trick was to understand that first and last houses can never be robbed together, so if you rob first, then you have to skip last and vice versa.&#10;After this, problem is similar to solving HouseRobber1. Fuck them circular things" />
     <MESSAGE value="Simplify the generation of submatrices after going through Tushar roy's video on finding the max rectangle submatrix sum in a matrix.&#10;&#10;No need to use 2d prefix sum and get the diff's and all, it was very tricky. Now visualize the generation as picking a new base and start expanding on top of the new base" />
     <MESSAGE value="Solve hard find max submatrix sum &lt;= k in a matrix. This question had two parts:&#10;&#10;1. Finding all the submatrix sum (similar to NumberOfSubmatricesThatSumsToTarget)&#10;2. Once submatrix sum is reduced to 1d array, find a subarray with sum &lt;= k, need to use treeset in order to find any subarrays with valid diff." />
@@ -616,7 +615,8 @@
     <MESSAGE value="Solve easy find all unique email addresses considering special cases around presence of + and . in the username of email id." />
     <MESSAGE value="Solve medium and tricky find the longest file path given the entire contents of the filesystem in a string delimited by \n and \t.&#10;&#10;Trick was to leverage stack to keep track of running path length and assign a given directory to the correct parent directory by popping all directories present at higher level than current directory.&#10;&#10;Happy to solve it on my own albeit the initial code was long due to manual parsing of the entire string." />
     <MESSAGE value="Solve medium find out the final state of asteroids after all collision. Collision can happen if previous asteroid was going right and current is going left. If the current asteroid is bigger, keep popping out asteroids smaller than current asteroid.&#10;&#10;Take care of no collision and empty case." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find out the final state of asteroids after all collision. Collision can happen if previous asteroid was going right and current is going left. If the current asteroid is bigger, keep popping out asteroids smaller than current asteroid.&#10;&#10;Take care of no collision and empty case." />
+    <MESSAGE value="Solve medium and tricky delete nodes of a binary tree and return the resulting forest. Trick was to understand two cases, &#10;if the current node is a potential root candidate and needs to be deleted, it's children will become potential root candidates.&#10;otherwise if the current node is a root candidate, add it to the resulting forest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky delete nodes of a binary tree and return the resulting forest. Trick was to understand two cases, &#10;if the current node is a potential root candidate and needs to be deleted, it's children will become potential root candidates.&#10;otherwise if the current node is a root candidate, add it to the resulting forest." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -690,10 +690,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2" timestamp="1603283137285">
+    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2" timestamp="1603284152601">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603283137285" />
+    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603284152601" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -782,10 +782,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603283139122">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603284154095">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603283139122" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603284154095" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -814,10 +814,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1603279226281">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1603284628567">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603279226281" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603284628567" />
     <state width="632" height="314" key="javadoc.popup.new" timestamp="1603210971467">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
