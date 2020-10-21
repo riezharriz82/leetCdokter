@@ -167,13 +167,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00376" summary="Solve medium find longest palindromic subsequence using top down memoized recursion &#10;If s[left] == s[right] then candidate length will be 2 + recur(left+1, right-1) Otherwise it will be max(recur(left+1, right), recur(left, right-1))&#10;&#10;Learnings -- Difference between substring and subsequence problem is continuity, substring problem needs the recursion part to be adjacent to the current part, subsequence does not care about it.">
-      <created>1602189207298</created>
-      <option name="number" value="00376" />
-      <option name="presentableId" value="LOCAL-00376" />
-      <option name="project" value="LOCAL" />
-      <updated>1602189207298</updated>
-    </task>
     <task id="LOCAL-00377" summary="Update logic in finding longest common substring">
       <created>1602189728895</created>
       <option name="number" value="00377" />
@@ -510,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603199919031</updated>
     </task>
-    <option name="localTasksCounter" value="425" />
+    <task id="LOCAL-00425" summary="Solve medium and tricky find the longest file path given the entire contents of the filesystem in a string delimited by \n and \t.&#10;&#10;Trick was to leverage stack to keep track of running path length and assign a given directory to the correct parent directory by popping all directories present at higher level than current directory.&#10;&#10;Happy to solve it on my own albeit the initial code was long due to manual parsing of the entire string.">
+      <created>1603213060745</created>
+      <option name="number" value="00425" />
+      <option name="presentableId" value="LOCAL-00425" />
+      <option name="project" value="LOCAL" />
+      <updated>1603213060745</updated>
+    </task>
+    <option name="localTasksCounter" value="426" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -591,7 +591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard classical trapping rain water problem. Was asked this question during my first amazon onsite interview." />
     <MESSAGE value="Solve hard and tricky robot room cleaner problem, given an infinite grid and no sense of coordinates, how will you traverse all the valid coordinates of the grid&#10;&#10;Learnings -- Trick was to rotate 4 times and identify the next index given current direction. Once a cell is done, backtrack by actually moving the robot back to the caller. Backtrack just got real fellas." />
     <MESSAGE value="Solve medium Walls and Gates, find the shortest distance between an empty room and a gate, provided there are multiple empty rooms and multiple gates. &#10;&#10;Used standard BFS to find the shortest distance." />
     <MESSAGE value="Solve medium and tricky HouseRobber2, houses are present in circular array and can't rob adjacent houses.&#10;Trick was to understand that first and last houses can never be robbed together, so if you rob first, then you have to skip last and vice versa.&#10;After this, problem is similar to solving HouseRobber1. Fuck them circular things" />
@@ -616,7 +615,8 @@
     <MESSAGE value="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()" />
     <MESSAGE value="Add back the stack solution to solve DecodeString. Initially I thought stack solution was not generic enough but I was wrong. Related problem: NumberOfAtoms" />
     <MESSAGE value="Solve easy find all unique email addresses considering special cases around presence of + and . in the username of email id." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find all unique email addresses considering special cases around presence of + and . in the username of email id." />
+    <MESSAGE value="Solve medium and tricky find the longest file path given the entire contents of the filesystem in a string delimited by \n and \t.&#10;&#10;Trick was to leverage stack to keep track of running path length and assign a given directory to the correct parent directory by popping all directories present at higher level than current directory.&#10;&#10;Happy to solve it on my own albeit the initial code was long due to manual parsing of the entire string." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the longest file path given the entire contents of the filesystem in a string delimited by \n and \t.&#10;&#10;Trick was to leverage stack to keep track of running path length and assign a given directory to the correct parent directory by popping all directories present at higher level than current directory.&#10;&#10;Happy to solve it on my own albeit the initial code was long due to manual parsing of the entire string." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -690,10 +690,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603199918373">
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2" timestamp="1603213060075">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603199918373" />
+    <state x="522" y="75" width="1374" height="975" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603213060075" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -782,10 +782,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603199920120">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603213061586">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603199920120" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603213061586" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -814,10 +814,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1602935497738">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1603279226281">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602935497738" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603279226281" />
     <state width="632" height="314" key="javadoc.popup.new" timestamp="1603210971467">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -826,14 +826,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603123788720" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1602955662078">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603282296123">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602955662078" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603194154363">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603282296123" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603282303897">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603194154363" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603282303897" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
