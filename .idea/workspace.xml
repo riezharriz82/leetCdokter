@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00379" summary="Simplify the solution in SerializeAndDeserializeBinaryTree by encoding the preorder traversal of tree.">
-      <created>1602251455855</created>
-      <option name="number" value="00379" />
-      <option name="presentableId" value="LOCAL-00379" />
-      <option name="project" value="LOCAL" />
-      <updated>1602251455856</updated>
     </task>
     <task id="LOCAL-00380" summary="Solve medium Serialize and Deserialize BST by encoding it in a compact form by leveraging the bounds property of BST, we can quickly filter out a node from being added to a subtree of BST if we keep track of lower_bound and upper_bound of current subtree. &#10;&#10;While recursing left, update the upper_bound and while recursing right, update the lower_bound.">
       <created>1602251680819</created>
@@ -510,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603284153164</updated>
     </task>
-    <option name="localTasksCounter" value="428" />
+    <task id="LOCAL-00428" summary="Solve medium recursively reverse substrings present between brackets. Similar to stack solution used in DecodeString and NumberOfAtoms.">
+      <created>1603285516197</created>
+      <option name="number" value="00428" />
+      <option name="presentableId" value="LOCAL-00428" />
+      <option name="project" value="LOCAL" />
+      <updated>1603285516197</updated>
+    </task>
+    <option name="localTasksCounter" value="429" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,6 +543,13 @@
                     <value>
                       <list>
                         <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="hard and tricky" />
                       </list>
                     </value>
                   </entry>
@@ -591,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky HouseRobber2, houses are present in circular array and can't rob adjacent houses.&#10;Trick was to understand that first and last houses can never be robbed together, so if you rob first, then you have to skip last and vice versa.&#10;After this, problem is similar to solving HouseRobber1. Fuck them circular things" />
     <MESSAGE value="Simplify the generation of submatrices after going through Tushar roy's video on finding the max rectangle submatrix sum in a matrix.&#10;&#10;No need to use 2d prefix sum and get the diff's and all, it was very tricky. Now visualize the generation as picking a new base and start expanding on top of the new base" />
     <MESSAGE value="Solve hard find max submatrix sum &lt;= k in a matrix. This question had two parts:&#10;&#10;1. Finding all the submatrix sum (similar to NumberOfSubmatricesThatSumsToTarget)&#10;2. Once submatrix sum is reduced to 1d array, find a subarray with sum &lt;= k, need to use treeset in order to find any subarrays with valid diff." />
     <MESSAGE value="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached." />
@@ -616,7 +623,8 @@
     <MESSAGE value="Solve medium and tricky find the longest file path given the entire contents of the filesystem in a string delimited by \n and \t.&#10;&#10;Trick was to leverage stack to keep track of running path length and assign a given directory to the correct parent directory by popping all directories present at higher level than current directory.&#10;&#10;Happy to solve it on my own albeit the initial code was long due to manual parsing of the entire string." />
     <MESSAGE value="Solve medium find out the final state of asteroids after all collision. Collision can happen if previous asteroid was going right and current is going left. If the current asteroid is bigger, keep popping out asteroids smaller than current asteroid.&#10;&#10;Take care of no collision and empty case." />
     <MESSAGE value="Solve medium and tricky delete nodes of a binary tree and return the resulting forest. Trick was to understand two cases, &#10;if the current node is a potential root candidate and needs to be deleted, it's children will become potential root candidates.&#10;otherwise if the current node is a root candidate, add it to the resulting forest." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky delete nodes of a binary tree and return the resulting forest. Trick was to understand two cases, &#10;if the current node is a potential root candidate and needs to be deleted, it's children will become potential root candidates.&#10;otherwise if the current node is a root candidate, add it to the resulting forest." />
+    <MESSAGE value="Solve medium recursively reverse substrings present between brackets. Similar to stack solution used in DecodeString and NumberOfAtoms." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium recursively reverse substrings present between brackets. Similar to stack solution used in DecodeString and NumberOfAtoms." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -690,18 +698,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2" timestamp="1603284152601">
+    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2" timestamp="1603285515596">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603284152601" />
+    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603285515596" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603191804046">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603289037777">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603191804046" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603289037777" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -770,10 +778,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603033033619" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1603195778512">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603289120542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1603195778512" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1603289120542" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1602604186144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -782,10 +790,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603284154095">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603285516894">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603284154095" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603285516894" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -822,18 +830,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603210971467" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603123788720">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603286943019">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603123788720" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603286943019" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603282296123">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603282296123" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603282303897">
+    <state x="623" y="227" width="672" height="160" key="search.everywhere.popup" timestamp="1603450688097">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603282303897" />
+    <state x="623" y="227" width="672" height="160" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603450688097" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
