@@ -168,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00381" summary="Solve medium and a bit tricky find the no of delete operations to make two strings equal by top down memoization. &#10;&#10;If characters at idx1 and idx2 mismatch, then we have two options, either delete one character at idx1 or idx2 or delete both of the characters at idx1 or idx2 &#10;&#10;If characters at idx1 and idx2 matches, do nothing and skip to idx1-1, idx2-1 &#10;&#10;In case we are done with word1 (idx1&lt;0) but word2 isn't done (idx2&gt;0), only option is to delete all the characters remaining in idx2.">
-      <created>1602255952133</created>
-      <option name="number" value="00381" />
-      <option name="presentableId" value="LOCAL-00381" />
-      <option name="project" value="LOCAL" />
-      <updated>1602255952133</updated>
-    </task>
     <task id="LOCAL-00382" summary="Add comment for redundant logic and fix incorrect check in Make Two Strings equal by deleting characters.">
       <created>1602256571208</created>
       <option name="number" value="00382" />
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603455699864</updated>
     </task>
-    <option name="localTasksCounter" value="430" />
+    <task id="LOCAL-00430" summary="Add greedy approach of solving hard split array into m subarrays such that largest sum is maximized. &#10;Need to perform binary search on the largest sum possible for single sized subarray and largest sum possible if we choose the entire array.&#10;Target subarray sum would be somewhere in between.&#10;If our chosen candidate sum results in split &lt; target split, we have to decrease the candidate sum&#10;else increase the candidate sum">
+      <created>1603463530567</created>
+      <option name="number" value="00430" />
+      <option name="presentableId" value="LOCAL-00430" />
+      <option name="project" value="LOCAL" />
+      <updated>1603463530569</updated>
+    </task>
+    <option name="localTasksCounter" value="431" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -599,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard find max submatrix sum &lt;= k in a matrix. This question had two parts:&#10;&#10;1. Finding all the submatrix sum (similar to NumberOfSubmatricesThatSumsToTarget)&#10;2. Once submatrix sum is reduced to 1d array, find a subarray with sum &lt;= k, need to use treeset in order to find any subarrays with valid diff." />
     <MESSAGE value="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached." />
     <MESSAGE value="Solve medium find repeated substrings using rolling hash. Using rolling hash allows you to compute hash in constant time, which is much better than creating a substring and then checking whether it's a repeated substring or not.&#10;&#10;Learnings -- Robin Karp Rolling Hash" />
     <MESSAGE value="Solve medium JumpGame3, where we can jump left and right and need to check whether we can access an index with value 0.&#10;&#10;Used DFS to simulate jumping, need to use visited array to avoid loops." />
@@ -624,7 +623,8 @@
     <MESSAGE value="Solve medium and tricky delete nodes of a binary tree and return the resulting forest. Trick was to understand two cases, &#10;if the current node is a potential root candidate and needs to be deleted, it's children will become potential root candidates.&#10;otherwise if the current node is a root candidate, add it to the resulting forest." />
     <MESSAGE value="Solve medium recursively reverse substrings present between brackets. Similar to stack solution used in DecodeString and NumberOfAtoms." />
     <MESSAGE value="Solve medium search in sorted array of unknown size, trick is to find the range in which we can perform binary search.&#10;Keep incrementing the candidate upper bound until value at that index &gt; target or is invalid (out of bounds)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium search in sorted array of unknown size, trick is to find the range in which we can perform binary search.&#10;Keep incrementing the candidate upper bound until value at that index &gt; target or is invalid (out of bounds)" />
+    <MESSAGE value="Add greedy approach of solving hard split array into m subarrays such that largest sum is maximized. &#10;Need to perform binary search on the largest sum possible for single sized subarray and largest sum possible if we choose the entire array.&#10;Target subarray sum would be somewhere in between.&#10;If our chosen candidate sum results in split &lt; target split, we have to decrease the candidate sum&#10;else increase the candidate sum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add greedy approach of solving hard split array into m subarrays such that largest sum is maximized. &#10;Need to perform binary search on the largest sum possible for single sized subarray and largest sum possible if we choose the entire array.&#10;Target subarray sum would be somewhere in between.&#10;If our chosen candidate sum results in split &lt; target split, we have to decrease the candidate sum&#10;else increase the candidate sum" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -698,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2" timestamp="1603455698702">
+    <state x="546" y="224" width="1374" height="809" key="CommitChangelistDialog2" timestamp="1603463529873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="522" y="241" width="1374" height="809" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603455698702" />
+    <state x="546" y="224" width="1374" height="809" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603463529873" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,10 +790,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603455700838">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603463575648">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603455700838" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603463575648" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -838,10 +838,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603282296123" />
-    <state x="623" y="227" width="672" height="160" key="search.everywhere.popup" timestamp="1603450688097">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603467598532">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="160" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603450688097" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603467598532" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

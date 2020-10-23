@@ -55,11 +55,17 @@ public class SplitArrayLargestSum {
      * if the target subarray is of size = 1, what can be the maximum subarray sum, it will be the max(array elements)
      * if the target subarray is of size = n, what can be the maximum subarray sum, it wil be sum of all array elements
      * <p>
-     * So we do binary search between those two bounds, and check for each mid, how many splits can be performed on the input array
-     * Consider a target sum that is the largest possible subarray sum and then try to split the array and see how many splits can be performed
+     * So we do binary search between those two bounds, and check for each mid, how many chunks/subarrays can be formed from the input array
+     * Consider a target sum that is the largest possible subarray sum and then try to split the array and see how many chunks can be formed
      * e.g. {1,2,3,4,5,6,7} if target sum is 10, splits are {1,2,3,4} {5} {6} {7} total 4 splits
-     * if we have to split the array into 3 splits, we can increase our target sum because greater the target sum lesser the splits
-     * similarly if required splits is 5, we have to reduce target sum
+     * Our binary search range is [7,28]
+     * Target sum   [7,8,9,10,11,12...................25,26,27,28]
+     * No of chunks [7,5,4,4,3,3.....................2,2,2,1]
+     * chunks <= 2  [F,F,F,F,F,F.....................T,T,T,T]
+     * <p>
+     * As errichto mentioned in his binary search tutorial https://www.youtube.com/watch?v=GU7DpgHINWQ we need to transform our input range into
+     * prefix/suffix of T/F in order to find the required value with first F or last T
+     * Here we need the first T, so if we see any index which returns T, then we try to recur left and save the potential answer
      */
     public int splitArrayGreedy(int[] nums, int m) {
         int sum = 0, maxValue = Integer.MIN_VALUE;
@@ -74,27 +80,27 @@ public class SplitArrayLargestSum {
         int ans = 0; //erichtos' binary search template
         while (low <= high) {
             int mid = low + (high - low) / 2;
-            if (splitArrayPartitions(nums, mid) < m) { //target is high, need to reduce target sum so that we can get more splits
+            if (chunksSplittedInto(nums, mid) <= m) { //target is high, need to reduce target sum so that we can get more splits
                 high = mid - 1;
-                ans = mid; //erichto's template of storing result in ans, avoids pesky conditions
-            } else if (splitArrayPartitions(nums, mid) >= m) {
+                ans = mid;
+            } else {
                 low = mid + 1;
             }
         }
         return ans;
     }
 
-    //return how many splits are required to divide array given target subarray sum i.e. the max subarray sum
-    private int splitArrayPartitions(int[] nums, int target) {
-        int curSplits = 0;
+    //return how many chunks can the array be divided into, given the largest subarray sum permissible
+    private int chunksSplittedInto(int[] nums, int target) {
+        int chunks = 1;
         int curSum = 0;
         for (int num : nums) {
             curSum += num;
             if (curSum > target) { //need to split it
-                curSplits++;
-                curSum = num; //current number can't be part of previous split, needs to be part of new split
+                chunks++;
+                curSum = num; //current number can't be part of previous chunk, needs to be part of new split
             }
         }
-        return curSplits;
+        return chunks;
     }
 }
