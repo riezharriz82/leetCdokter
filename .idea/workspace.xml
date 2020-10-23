@@ -167,13 +167,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00383" summary="Solve medium find minimum ascii sum of characters to be deleted to make two strings equal. Similar to previously solved DeleteOperationsForTwoString">
-      <created>1602258441045</created>
-      <option name="number" value="00383" />
-      <option name="presentableId" value="LOCAL-00383" />
-      <option name="project" value="LOCAL" />
-      <updated>1602258441045</updated>
-    </task>
     <task id="LOCAL-00384" summary="Solve medium find max no of binary strings that can be picked provided we can have max 'm' no of ones and 'n' no of zeroes in the result set by top down memoization. &#10;&#10;Every index has two options, either get picked or be skipped.">
       <created>1602260559370</created>
       <option name="number" value="00384" />
@@ -510,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603484819293</updated>
     </task>
-    <option name="localTasksCounter" value="432" />
+    <task id="LOCAL-00432" summary="Solve hard and tricky divide a array into m subarrays such that minimum sum of all subarrays is maximized. &#10;&#10;It can be solved using DP but due to strict bounds, it times out. Need to use the tricky greedy approach used in SplitArrayLargestSum.&#10;&#10;Pick a target subarray sum that should be the minimum subarray sum, check how many chunks can be formed from the input array. If there are fewer chunks than required, need to reduce target sum otherwise increase target sum.&#10;&#10;Visualize the transformation as prefix of T/F as errichto mentioned in his lecture.">
+      <created>1603485573281</created>
+      <option name="number" value="00432" />
+      <option name="presentableId" value="LOCAL-00432" />
+      <option name="project" value="LOCAL" />
+      <updated>1603485573281</updated>
+    </task>
+    <option name="localTasksCounter" value="433" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -598,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find repeated substrings using rolling hash. Using rolling hash allows you to compute hash in constant time, which is much better than creating a substring and then checking whether it's a repeated substring or not.&#10;&#10;Learnings -- Robin Karp Rolling Hash" />
     <MESSAGE value="Solve medium JumpGame3, where we can jump left and right and need to check whether we can access an index with value 0.&#10;&#10;Used DFS to simulate jumping, need to use visited array to avoid loops." />
     <MESSAGE value="Solve hard and tricky find min number of taps required to water a range i.e min no of intervals required to cover the entire garden&#10;&#10;Initially I solved it via a very complicated route, i removed the covered intervals {RemoveCoveredIntervals} and then did a brute force dp from the end similar to {JumpGame2} tracking min no of taps required at any index.&#10;&#10;However removing the covered intervals was not required and brute force dp was sufficient. In order to optimize we can do it similar to bfs logic of JumpGame2. Keep track of the end of current level, once reached, update the end of the next level." />
     <MESSAGE value="Solve medium Video Stitching similar to MinTapsRequiredToWaterGarden using BFS. Keep track of the largest timestamp reachable in current level. If end of current level reached, increment the level count." />
@@ -623,7 +622,8 @@
     <MESSAGE value="Solve medium search in sorted array of unknown size, trick is to find the range in which we can perform binary search.&#10;Keep incrementing the candidate upper bound until value at that index &gt; target or is invalid (out of bounds)" />
     <MESSAGE value="Add greedy approach of solving hard split array into m subarrays such that largest sum is maximized. &#10;Need to perform binary search on the largest sum possible for single sized subarray and largest sum possible if we choose the entire array.&#10;Target subarray sum would be somewhere in between.&#10;If our chosen candidate sum results in split &lt; target split, we have to decrease the candidate sum&#10;else increase the candidate sum" />
     <MESSAGE value="Update logic of transforming the input range into prefix/suffix of True/False, very critical in solving binary search related problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update logic of transforming the input range into prefix/suffix of True/False, very critical in solving binary search related problems" />
+    <MESSAGE value="Solve hard and tricky divide a array into m subarrays such that minimum sum of all subarrays is maximized. &#10;&#10;It can be solved using DP but due to strict bounds, it times out. Need to use the tricky greedy approach used in SplitArrayLargestSum.&#10;&#10;Pick a target subarray sum that should be the minimum subarray sum, check how many chunks can be formed from the input array. If there are fewer chunks than required, need to reduce target sum otherwise increase target sum.&#10;&#10;Visualize the transformation as prefix of T/F as errichto mentioned in his lecture." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky divide a array into m subarrays such that minimum sum of all subarrays is maximized. &#10;&#10;It can be solved using DP but due to strict bounds, it times out. Need to use the tricky greedy approach used in SplitArrayLargestSum.&#10;&#10;Pick a target subarray sum that should be the minimum subarray sum, check how many chunks can be formed from the input array. If there are fewer chunks than required, need to reduce target sum otherwise increase target sum.&#10;&#10;Visualize the transformation as prefix of T/F as errichto mentioned in his lecture." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -697,10 +697,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="546" y="224" width="1374" height="809" key="CommitChangelistDialog2" timestamp="1603484818435">
+    <state x="546" y="211" width="1374" height="809" key="CommitChangelistDialog2" timestamp="1603485572689">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="546" y="224" width="1374" height="809" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603484818435" />
+    <state x="546" y="211" width="1374" height="809" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603485572689" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -789,10 +789,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603484820354">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603485574227">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603484820354" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603485574227" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
