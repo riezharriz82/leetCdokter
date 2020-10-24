@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourseSchedule2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseSchedule2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00386" summary="Solve medium classical painting problem, no two adjacent house can have same color and we need to paint all the houses with min cost.&#10;&#10;Recursive solution was easy, took me a while to convert into memoized solution because we need the color of the house being painted as a state as well.">
-      <created>1602325530657</created>
-      <option name="number" value="00386" />
-      <option name="presentableId" value="LOCAL-00386" />
-      <option name="project" value="LOCAL" />
-      <updated>1602325530657</updated>
     </task>
     <task id="LOCAL-00387" summary="Solve hard and tricky Dungeon Game, find the min health required at the start to reach the target provided the health cant be &lt;= 0 at any state.&#10;&#10;This is similar to BusRoutes where BFS needs to be applied but the condition for BFS has changed. Similarly here, the start is actually our target state, because we need the min health at the start. So at start node, we ask adjacent node on their min health required and update the health at start accordingly.">
       <created>1602329269846</created>
@@ -510,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603487914119</updated>
     </task>
-    <option name="localTasksCounter" value="435" />
+    <task id="LOCAL-00435" summary="Solve medium but easy find left most column with at least a one given a row sorted binary matrix containing 0 and 1.&#10;&#10;Performed binary search on each row to find the left most index of 1 and keep updating the global minima.&#10;&#10;Can also be done in linear time. Kinda forgot to think about it as I was on a roll doing binary search questions.">
+      <created>1603489585867</created>
+      <option name="number" value="00435" />
+      <option name="presentableId" value="LOCAL-00435" />
+      <option name="project" value="LOCAL" />
+      <updated>1603489585867</updated>
+    </task>
+    <option name="localTasksCounter" value="436" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -567,17 +568,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="tricky" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -598,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium Video Stitching similar to MinTapsRequiredToWaterGarden using BFS. Keep track of the largest timestamp reachable in current level. If end of current level reached, increment the level count." />
     <MESSAGE value="Solve medium and tricky check whether a graph is bipartite by reducing the problem to color assignment problem. Try assigning a random color to first node, which will then try to assign opposite color to it's neighbour and so on. &#10;If all nodes are able to assign it's neighbour an opposite color, the graph is bipartite.&#10;&#10;Took me a while to cleanly implement it. Initially I was trying to assign colors to all the neighbours in a loop and then was trying to validate the assignment which made it difficult to recurse. Then I thought of assigning one neighbour at a time and recurse." />
     <MESSAGE value="Solve Google Kickstart find the maximum left diagonal sum, made such a stupid mistake while solving it during the contest. Damn." />
     <MESSAGE value="Solve Google Kickstart find the total no of substrings starting with KICK and ending with START by simply keeping track of occurrence of KICK and START. KICK must occur before START.&#10;&#10;Made a stupid mistake which cost me successful submission in the contest." />
@@ -623,7 +612,8 @@
     <MESSAGE value="Solve hard and tricky divide a array into m subarrays such that minimum sum of all subarrays is maximized. &#10;&#10;It can be solved using DP but due to strict bounds, it times out. Need to use the tricky greedy approach used in SplitArrayLargestSum.&#10;&#10;Pick a target subarray sum that should be the minimum subarray sum, check how many chunks can be formed from the input array. If there are fewer chunks than required, need to reduce target sum otherwise increase target sum.&#10;&#10;Visualize the transformation as prefix of T/F as errichto mentioned in his lecture." />
     <MESSAGE value="Solve easy find the first index with value &gt;= target value using binary search.&#10;&#10;Used learnings shared by errichto for setting the answer to a value that needs to be returned if no element satisfies the given condition." />
     <MESSAGE value="Solve medium find first and last position of element in sorted array using two binary searches" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find first and last position of element in sorted array using two binary searches" />
+    <MESSAGE value="Solve medium but easy find left most column with at least a one given a row sorted binary matrix containing 0 and 1.&#10;&#10;Performed binary search on each row to find the left most index of 1 and keep updating the global minima.&#10;&#10;Can also be done in linear time. Kinda forgot to think about it as I was on a roll doing binary search questions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but easy find left most column with at least a one given a row sorted binary matrix containing 0 and 1.&#10;&#10;Performed binary search on each row to find the left most index of 1 and keep updating the global minima.&#10;&#10;Can also be done in linear time. Kinda forgot to think about it as I was on a roll doing binary search questions." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -697,18 +687,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603487913561">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603489585148">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603487913561" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603489585148" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603289037777">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603540925341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603289037777" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603540925341" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -789,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603487915078">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603489587406">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603487915078" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603489587406" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -837,10 +827,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603282296123" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603489341127">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603540923070">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603489341127" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603540923070" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
