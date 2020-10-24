@@ -26,9 +26,9 @@ public class ChangeOnlyOneElementToSortArray {
                 if (misMatch == -1) {
                     misMatch = i;
                     if (i - 2 >= 0 && nums[i - 2] > nums[i]) {
-                        nums[i] = nums[i - 1];
+                        nums[i] = nums[i - 1]; //increase the current number only if it can't be decreased
                     } else {
-                        nums[i - 1] = nums[i];
+                        nums[i - 1] = nums[i]; //decrease the previous number
                     }
                 } else {
                     return false;
