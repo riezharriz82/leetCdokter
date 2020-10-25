@@ -13,7 +13,8 @@
  */
 public class MinDeletionCostToAvoidRepeatingLetters {
     /**
-     * Approach: Trick of the problem was to only keep the character with the maximum cost as we need to keep only one characters in the end
+     * Approach: Trick of the problem was to only keep the character with the maximum cost as we need to keep only one characters in the end.
+     * So all the characters with lower cost can be deleted.
      */
     public int minCost(String s, int[] cost) {
         int n = cost.length;
