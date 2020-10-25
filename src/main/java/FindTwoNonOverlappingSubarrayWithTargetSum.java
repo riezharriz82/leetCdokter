@@ -75,7 +75,7 @@ public class FindTwoNonOverlappingSubarrayWithTargetSum {
                 left[i] = i - map.get(curSum - target);
             }
             if (i != 0) {
-                left[i] = Math.min(left[i - 1], left[i]); //carry forward the previous result
+                left[i] = Math.min(left[i - 1], left[i]); //carry forward the previous result, if previous result is smaller
             }
             map.put(curSum, i);
         }
@@ -88,14 +88,15 @@ public class FindTwoNonOverlappingSubarrayWithTargetSum {
                 right[i] = map.get(curSum - target) - i;
             }
             if (i != n - 1) {
-                right[i] = Math.min(right[i], right[i + 1]); //carry forward
+                right[i] = Math.min(right[i], right[i + 1]); //carry forward the previous result, it it's smaller
             }
             map.put(curSum, i);
         }
         int result = Integer.MAX_VALUE;
         for (int i = 0; i < n - 1; i++) {
+            //handle non-overlapping condition
             if (left[i] != Integer.MAX_VALUE && right[i + 1] != Integer.MAX_VALUE) {
-                //handle non-overlapping condition
+                //keep updating the minimum non overlapping length
                 result = Math.min(result, left[i] + right[i + 1]);
             }
         }
