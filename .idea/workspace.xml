@@ -9,8 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DistributeNCandiesToKPeople.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DistributeNCandiesToKPeople.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindKthBitInNthBinaryString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKthBitInNthBinaryString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00396" summary="Solve medium and tricky find smallest subsequence of distinct characters by greedily deleting the characters that are greater than current characters and occurs on the right of current character (duplicate)">
-      <created>1602438820916</created>
-      <option name="number" value="00396" />
-      <option name="presentableId" value="LOCAL-00396" />
-      <option name="project" value="LOCAL" />
-      <updated>1602438820916</updated>
     </task>
     <task id="LOCAL-00397" summary="Solve medium and tricky validate whether the provided stack sequences of push and pop are valid or not using greedy algorithm.&#10;&#10;Greedily check whether the top of the stack can be popped or not. At the end, check if all the characters have been popped or not.">
       <created>1602534443724</created>
@@ -512,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603638617355</updated>
     </task>
-    <option name="localTasksCounter" value="445" />
+    <task id="LOCAL-00445" summary="Simplify logic in DistributeNCandiesToKPeople">
+      <created>1603644571203</created>
+      <option name="number" value="00445" />
+      <option name="presentableId" value="LOCAL-00445" />
+      <option name="project" value="LOCAL" />
+      <updated>1603644571203</updated>
+    </task>
+    <option name="localTasksCounter" value="446" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky encode string with shortest length by top down recursion. Need to check whether the string is composed of repeated substrings, if yes, then recur for the pattern that is repeated.&#10;&#10;If no, then make cuts at all places and recur for the prefix and suffix. Check which cut leads to the shortest encoded string.&#10;&#10;Got confused by trying to implement it via stack. It was a very nice problem." />
     <MESSAGE value="Solve easy find shortest distance between two words, similar to kickstart question of Google Kickstart" />
     <MESSAGE value="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()" />
     <MESSAGE value="Add back the stack solution to solve DecodeString. Initially I thought stack solution was not generic enough but I was wrong. Related problem: NumberOfAtoms" />
@@ -614,7 +612,8 @@
     <MESSAGE value="Update approach in ContainsDuplicate2" />
     <MESSAGE value="Add approach in ContainsDuplicate3" />
     <MESSAGE value="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements" />
+    <MESSAGE value="Simplify logic in DistributeNCandiesToKPeople" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify logic in DistributeNCandiesToKPeople" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -676,18 +675,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603638616706">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603644570485">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603638616706" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603644570485" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603644485450">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603645449062">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603644485450" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603645449062" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603638618616">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603644572022">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603638618616" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603644572022" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -20,11 +20,14 @@
  * Explanation: S3 is "0111001". The first bit is "0".
  */
 public class FindKthBitInNthBinaryString {
+    /**
+     * Approach: Tricky binary search and indices handling because of k being 1 based
+     */
     public char findKthBitRecursive(int n, int k) {
         if (n == 1) {
             return '0';
         }
-        int total = (1 << n) - 1;
+        int total = (1 << n) - 1; //total characters in nth string
         int mid = total / 2;
         if (k - 1 == mid) { // mid is always 1
             return '1';
@@ -40,6 +43,10 @@ public class FindKthBitInNthBinaryString {
         }
     }
 
+    /**
+     * Approach: Generate the current string from previous string by doing transformations as mentioned in the statement.
+     * Need to generate N strings, and return the kth char present at N-1th string
+     */
     public char findKthBitBruteForce(int n, int k) {
         String[] dp = new String[21];
         dp[0] = "0";
