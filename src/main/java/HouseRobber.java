@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/house-robber/
  * You are a professional robber planning to rob houses along a street.
@@ -36,5 +38,25 @@ public class HouseRobber {
             }
             return Math.max(include[nums.length - 1], exclude[nums.length - 1]);
         }
+    }
+
+    /**
+     * Approach: Top down recursion with memoization
+     */
+    public int robTopDown(int[] nums) {
+        int[] dp = new int[nums.length];
+        Arrays.fill(dp, -1);
+        return recur(nums, nums.length - 1, dp);
+    }
+
+    private int recur(int[] nums, int index, int[] dp) {
+        if (index < 0) {
+            return 0;
+        } else if (dp[index] != -1) {
+            return dp[index];
+        }
+        int robIndex = nums[index] + recur(nums, index - 2, dp); //if this index is being robbed, jump to index-2
+        int skipIndex = recur(nums, index - 1, dp); //if this index is being skipped, jump to index-1
+        return dp[index] = Math.max(robIndex, skipIndex);
     }
 }
