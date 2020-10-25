@@ -21,11 +21,15 @@ import common.TreeNode;
 public class MaxPathSum {
     private int maxSum = Integer.MIN_VALUE;
 
+    /**
+     * Approach: Tricky thing is to handle negative number, if a root node has negative children, largest path would never be formed if you chose
+     * negative children. Simply ignore -ve children. It handles a lot of if's and else's.
+     */
     public int maxPathSum(TreeNode root) {
         if (root == null) {
             return 0;
         }
-        DFS(root);
+        helper(root);
         return maxSum;
     }
 
@@ -49,31 +53,5 @@ public class MaxPathSum {
 
         //choose max of one path and add to root to return to parent
         return root.val + Math.max(left, right);
-    }
-
-    //my initial solution
-    private Integer DFS(TreeNode root) {
-        if (root != null) {
-            Integer leftSum = DFS(root.left);
-            Integer rightSum = DFS(root.right);
-            if (leftSum == null && rightSum == null) {
-                maxSum = Math.max(maxSum, root.val);
-                return root.val;
-            } else if (leftSum == null) {
-                //either the left sum or the root or left sum + root
-                maxSum = Math.max(maxSum, Math.max(rightSum, Math.max(root.val, rightSum + root.val)));
-                return Math.max(root.val, rightSum + root.val);
-            } else if (rightSum == null) {
-                maxSum = Math.max(maxSum, Math.max(leftSum, Math.max(root.val, leftSum + root.val)));
-                return Math.max(root.val, leftSum + root.val);
-            } else {
-                //any of leftsum, rightsum or root
-                //any of leftsum + root, rightsum + root, leftsum + rightsum + root
-                maxSum = Math.max(maxSum, Math.max(leftSum, Math.max(rightSum, Math.max(root.val, Math.max(leftSum + root.val,
-                        Math.max(rightSum + root.val, leftSum + rightSum + root.val))))));
-                return Math.max(leftSum + root.val, Math.max(rightSum + root.val, root.val));
-            }
-        }
-        return null;
     }
 }
