@@ -11,6 +11,13 @@ import java.util.HashSet;
  * Output: true
  */
 public class ContainsDuplicate2 {
+    /**
+     * Approach: Since the problem statement restricts the max difference between two indices, sliding window fits perfectly.
+     * Keep expanding the window until size == k, after that pop one element from begin and add one element at the end.
+     * Keep a hashSet to quickly find any repeating element in the window.
+     * <p>
+     * HashSet works here because we care only about the first duplicate element, hence hashMap isn't required.
+     */
     public boolean containsNearbyDuplicateUsingSlidingWindow(int[] nums, int k) {
         HashSet<Integer> set = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
