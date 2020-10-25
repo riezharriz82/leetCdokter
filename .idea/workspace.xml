@@ -10,8 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConstrainedSubsequenceSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstrainedSubsequenceSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SlidingWindowMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SlidingWindowMaximum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DistributeNCandiesToKPeople.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DistributeNCandiesToKPeople.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,7 @@
     <property name="Repository.Attach.Annotations" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
@@ -143,12 +143,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Application.KickStart" />
       <item itemvalue="Application.MaximumCoins" />
       <item itemvalue="Application.CombinationLock" />
       <item itemvalue="Application.NumberOfAtoms" />
       <item itemvalue="Application.LongestAbsoluteFilePath" />
+      <item itemvalue="JUnit.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -168,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00395" summary="Solve hard and tricky count no of submatrices that sum to target sum using 2D prefix sum and reducing the problem to SubarraySumEqualsK. Trick was to generate all submatrices sum in constant time using 2D prefix sum.">
-      <created>1602369687617</created>
-      <option name="number" value="00395" />
-      <option name="presentableId" value="LOCAL-00395" />
-      <option name="project" value="LOCAL" />
-      <updated>1602369687617</updated>
     </task>
     <task id="LOCAL-00396" summary="Solve medium and tricky find smallest subsequence of distinct characters by greedily deleting the characters that are greater than current characters and occurs on the right of current character (duplicate)">
       <created>1602438820916</created>
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603630646071</updated>
     </task>
-    <option name="localTasksCounter" value="444" />
+    <task id="LOCAL-00444" summary="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements">
+      <created>1603638617355</created>
+      <option name="number" value="00444" />
+      <option name="presentableId" value="LOCAL-00444" />
+      <option name="project" value="LOCAL" />
+      <updated>1603638617355</updated>
+    </task>
+    <option name="localTasksCounter" value="445" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another way of finding whether a string is composed of repeated substrings via concatenating the string and trimming the first and last character and then checking whether the string contains the input string or not." />
     <MESSAGE value="Solve hard and tricky encode string with shortest length by top down recursion. Need to check whether the string is composed of repeated substrings, if yes, then recur for the pattern that is repeated.&#10;&#10;If no, then make cuts at all places and recur for the prefix and suffix. Check which cut leads to the shortest encoded string.&#10;&#10;Got confused by trying to implement it via stack. It was a very nice problem." />
     <MESSAGE value="Solve easy find shortest distance between two words, similar to kickstart question of Google Kickstart" />
     <MESSAGE value="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Update comment in MinDeletionCostToAvoidRepeatingLetters" />
     <MESSAGE value="Update approach in ContainsDuplicate2" />
     <MESSAGE value="Add approach in ContainsDuplicate3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add approach in ContainsDuplicate3" />
+    <MESSAGE value="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -636,10 +636,6 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1602243118631" />
-    <state x="552" y="183" key="#Project_Structure" timestamp="1594324360886">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="183" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1594324360886" />
     <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1602625275158">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -648,14 +644,6 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609089094" />
-    <state x="683" y="214" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1594451678382">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="683" y="214" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451678382" />
-    <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1594451490581">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="779" y="216" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451490581" />
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600328299277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -688,54 +676,54 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603630645543">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603638616706">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603630645543" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603638616706" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603637883088">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603644485450">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603637883088" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603644485450" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1603636844661">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603642381280">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603636844661" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1603636844661">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381280" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603642381280">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603636844661" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1603636844661">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381280" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603642381280">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603636844661" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1603636844661">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381280" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603642381280">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603636844661" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603636844661">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381280" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603642381277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603636844661" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603636844661">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381277" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603642381277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603636844661" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603636844661">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381277" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603642381277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603636844661" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603636844661">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381277" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603642381277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603636844661" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381277" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -752,10 +740,6 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="285" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599757745387" />
-    <state x="490" y="180" key="Maven.ArtifactSearchDialog" timestamp="1594451518521">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="490" y="180" key="Maven.ArtifactSearchDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594451518521" />
     <state x="695" y="245" key="RollbackChangesDialog" timestamp="1598184917635">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -780,18 +764,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603630647113">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603638618616">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603630647113" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603638618616" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="775" y="303" key="chooseDestDirectoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609092682" />
-    <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1594451868089">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="664" y="417" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1594451868089" />
     <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603055722052">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -800,10 +780,6 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603192749649" />
-    <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594592599434">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="731" y="335" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1594592599434" />
     <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603636840660">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -828,10 +804,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603550017247" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603637740207">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603644317757">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603637740207" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603644317757" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -28,12 +28,14 @@ public class DistributeNCandiesToKPeople {
     public int[] distributeCandies(int candies, int num_people) {
         int[] res = new int[num_people];
         int index = 0;
+        int candy = 1;
         //try giving 1, 2, 3, 4, 5, 6 ... candies until we run of candies
         while (candies > 0) {
-            int toGive = Math.min(candies, index + 1); //to not give more candies than total candies
-            res[index % num_people] += toGive;
+            int toGive = Math.min(candies, candy); //to not give more candies than total candies
+            res[index] += toGive;
             candies -= toGive;
-            index++;
+            index = (index + 1) % num_people;
+            candy++;
         }
         return res;
     }
