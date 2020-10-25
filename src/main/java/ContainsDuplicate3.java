@@ -10,6 +10,11 @@ import java.util.TreeSet;
  * Output: true
  */
 public class ContainsDuplicate3 {
+    /**
+     * Approach: Two things are being asked in the problem
+     * 1. Absolute difference between two indices <= k, this indicates sliding window
+     * 2. Absolute difference between two numbers in the current window <= t, this indicates treeSet to find a valid number in the current window
+     */
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         TreeSet<Long> set = new TreeSet<>(); //using long because of stupid test cases involving INT_MIN and INT_MAX
         for (int i = 0; i < nums.length; i++) {
