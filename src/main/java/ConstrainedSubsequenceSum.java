@@ -19,6 +19,7 @@ public class ConstrainedSubsequenceSum {
     /**
      * Approach: Extension of treeMap solution. Instead of using treeMap, used a monotonic increasing queue to keep track of sliding maximum
      * TimeComplexity: O(n)
+     *
      */
     public int constrainedSubsetSumUsingDeque(int[] nums, int k) {
         int n = nums.length;
@@ -32,6 +33,8 @@ public class ConstrainedSubsequenceSum {
             }
             queue.add(dp[i]);
             if (i >= k && dp[i - k] == queue.peekFirst()) {
+                //very critical to understand why queue.peekFirst() == dp[i-k] can handle duplicates, because we push into the queue only if current number >= queue.peekLast()
+                //so we push duplicates into the queue.
                 //need to remove the prefix sum falling out of the window, also pollFirst() only if the value equals the prefix sum falling outside the window
                 // because there is a chance that it has already been polled
                 queue.pollFirst();
