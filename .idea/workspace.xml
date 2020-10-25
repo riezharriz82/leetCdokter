@@ -8,8 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment in ChangeOnlyOneElementToSortArray">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumSumOfTwoNonOverlappingSubarraysOfSpecificSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumSumOfTwoNonOverlappingSubarraysOfSpecificSize.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00388" summary="Solve medium and tricky book an event only if it does not create a conflict with existing events. The simplest solution was to keep start and end time together and then find the first event starting before the current event finishes. That event should finish before the current event starts for a successful booking.">
-      <created>1602331514767</created>
-      <option name="number" value="00388" />
-      <option name="presentableId" value="LOCAL-00388" />
-      <option name="project" value="LOCAL" />
-      <updated>1602331514767</updated>
     </task>
     <task id="LOCAL-00389" summary="Update comment regarding visited check in Djikstra -- visited check is not really required because once a node is done, we can't get  a better path for that node in future because we are using a priority queue">
       <created>1602337587609</created>
@@ -510,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603541652155</updated>
     </task>
-    <option name="localTasksCounter" value="437" />
+    <task id="LOCAL-00437" summary="Add comment in ChangeOnlyOneElementToSortArray">
+      <created>1603543518259</created>
+      <option name="number" value="00437" />
+      <option name="presentableId" value="LOCAL-00437" />
+      <option name="project" value="LOCAL" />
+      <updated>1603543518259</updated>
+    </task>
+    <option name="localTasksCounter" value="438" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve Google Kickstart find the maximum left diagonal sum, made such a stupid mistake while solving it during the contest. Damn." />
     <MESSAGE value="Solve Google Kickstart find the total no of substrings starting with KICK and ending with START by simply keeping track of occurrence of KICK and START. KICK must occur before START.&#10;&#10;Made a stupid mistake which cost me successful submission in the contest." />
     <MESSAGE value="Solve tricky Google Kickstart find the min turns required to make all the dials of the lock same. The trick was to understand that the end state can be after bringing all the dials to one of the initial state of the dial i.e if the initial state was {3,5,6,8} one of the final state can be {3,3,3,3} or {5,5,5,5}, {6,6,6,6} {8,8,8,8}&#10;&#10;Fix each wheel as the initial state and then calculate the total turns required. Take care of overflow." />
     <MESSAGE value="Solve medium print the given matrix spirally left to right, top to bottom, right to left, bottom to up by leveraging the direction concept learned in RobotRoomCleaner. Try to move in current direction if possible, if not turn right and try to move." />
@@ -612,7 +612,8 @@
     <MESSAGE value="Solve medium find first and last position of element in sorted array using two binary searches" />
     <MESSAGE value="Solve medium but easy find left most column with at least a one given a row sorted binary matrix containing 0 and 1.&#10;&#10;Performed binary search on each row to find the left most index of 1 and keep updating the global minima.&#10;&#10;Can also be done in linear time. Kinda forgot to think about it as I was on a roll doing binary search questions." />
     <MESSAGE value="Update example input and and gotcha in CourseSchedule2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update example input and and gotcha in CourseSchedule2" />
+    <MESSAGE value="Add comment in ChangeOnlyOneElementToSortArray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comment in ChangeOnlyOneElementToSortArray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -686,18 +687,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603541651366">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603552542119">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603541651366" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603552542119" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603543201760">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603621709797">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603543201760" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603621709797" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,10 +779,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603541653262">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603543519220">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603541653262" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603543519220" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -814,22 +815,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603284628567" />
-    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603210971467">
+    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603547940118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603210971467" />
+    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603547940118" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603286943019">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603286943019" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603542136503">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603550017247">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603542136503" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603543182402">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603550017247" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603621654618">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603543182402" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603621654618" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

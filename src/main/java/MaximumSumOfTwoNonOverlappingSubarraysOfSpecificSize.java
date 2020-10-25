@@ -20,6 +20,8 @@ public class MaximumSumOfTwoNonOverlappingSubarraysOfSpecificSize {
      * first do it when left subarray is of L length and right subarray is of M length
      * then do it when right subarray is of M length and left subarray is of L length
      * keep track of the max result achieved in both of the cases
+     * <p>
+     * So effectively four passes over the input array as L length subarray can occur before/after M length subarray
      */
     public int maxSumTwoNoOverlap(int[] A, int L, int M) {
         return Math.max(calculate(A, L, M), calculate(A, M, L));
