@@ -7,15 +7,18 @@
  * <p>
  * Find the minimum element.
  * <p>
- * You may assume no duplicate exists in the array.
+ * The array may contain duplicates.
  * <p>
  * Input: [3,4,5,1,2]
  * Output: 1
  * <p>
- * Input: [4,5,6,7,0,1,2]
+ * Input: [2,2,2,0,1]
  * Output: 0
  */
 public class FindMinimumInRotatedSortedArray2 {
+    /**
+     * Worst case is O(n), Errichto's method does not work here, consider {3,3,1,3}
+     */
     public int findMinDuplicatesAllowed(int[] nums) {
         int low = 0, high = nums.length - 1;
         while (low <= high) {
@@ -56,38 +59,27 @@ public class FindMinimumInRotatedSortedArray2 {
         return -1;
     }
 
-    //https://leetcode.com/problems/find-minimum-in-rotated-sorted-array
-    public int findMinSimplified(int[] nums) {
-        //Idea is to think of input array as two parts {low, mid} and {mid+1, high}
-        //Only one of them can be sorted, check if left half is sorted, then you need to look into right half in next iteration
-        int low = 0, high = nums.length - 1;
-        while (low < high) {
-            int mid = (low + high) / 2;
-            //need to compare mid and high first instead of low and mid because the array can be not rotated at all, and then we will be go in
-            //incorrect direction i.e. right
-            if (nums[mid] < nums[high]) {
-                high = mid;
-            } else {
-                low = mid + 1; // need to increment by 1 because second part of array is {mid+1, high}
-            }
-        }
-        return nums[low];
-    }
-
-    //PRO TIP: Use <= in binary search when you want to return the actual value from the binary search
-    // Use < if you want to return the index instead
-    public int findMin(int[] nums) {
-        int low = 0, high = nums.length - 1;
+    /**
+     * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array
+     * It's not sufficient to just compare adjacent elements with the mid, need to compare with the last element (comparison with first element also works)
+     * [3,4,5,1,2] -> [F,F,F,T,T]
+     * [1,2,3,4,5] -> [T,T,T,T,T]
+     * [5,4,3,2,1] -> [F,F,F,F,T]
+     * <p>
+     * Need to find the first true index
+     */
+    public int findMinErrichto(int[] nums) {
+        int low = 0, high = nums.length - 1, ans = -1;
+        int last_index = nums.length - 1;
         while (low <= high) {
-            int mid = (low + high) / 2;
-            if (low == high) { // base conditions, single element remaining
-                return nums[low];
-            } else if (nums[mid] < nums[high]) { //right half is sorted, need to look in left half
-                high = mid;
-            } else { //right half unsorted, look in right half
+            int mid = low + (high - low) / 2;
+            if (nums[mid] <= nums[last_index]) { //True found, update the ans, and recur left to find a even smaller True
+                ans = mid;
+                high = mid - 1;
+            } else { //False found, recur right to find True
                 low = mid + 1;
             }
         }
-        return -1;
+        return nums[ans];
     }
 }
