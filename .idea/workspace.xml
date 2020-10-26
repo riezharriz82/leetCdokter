@@ -8,10 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TimeNeededToInformAllEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TimeNeededToInformAllEmployees.java" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,13 +165,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00399" summary="Solve easy find the longest increasing subarray in an array by sliding window. Keep increasing the window if current window is valid, otherwise reset it to after the end of current window.">
-      <created>1602607387087</created>
-      <option name="number" value="00399" />
-      <option name="presentableId" value="LOCAL-00399" />
-      <option name="project" value="LOCAL" />
-      <updated>1602607387087</updated>
     </task>
     <task id="LOCAL-00400" summary="Solve hard classical trapping rain water problem. Was asked this question during my first amazon onsite interview.">
       <created>1602618762889</created>
@@ -512,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603661240783</updated>
     </task>
-    <option name="localTasksCounter" value="448" />
+    <task id="LOCAL-00448" summary="Update variable name in TimeNeededToInformAllEmployees">
+      <created>1603702933296</created>
+      <option name="number" value="00448" />
+      <option name="presentableId" value="LOCAL-00448" />
+      <option name="project" value="LOCAL" />
+      <updated>1603702933296</updated>
+    </task>
+    <option name="localTasksCounter" value="449" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add back the stack solution to solve DecodeString. Initially I thought stack solution was not generic enough but I was wrong. Related problem: NumberOfAtoms" />
     <MESSAGE value="Solve easy find all unique email addresses considering special cases around presence of + and . in the username of email id." />
     <MESSAGE value="Solve medium and tricky find the longest file path given the entire contents of the filesystem in a string delimited by \n and \t.&#10;&#10;Trick was to leverage stack to keep track of running path length and assign a given directory to the correct parent directory by popping all directories present at higher level than current directory.&#10;&#10;Happy to solve it on my own albeit the initial code was long due to manual parsing of the entire string." />
     <MESSAGE value="Solve medium find out the final state of asteroids after all collision. Collision can happen if previous asteroid was going right and current is going left. If the current asteroid is bigger, keep popping out asteroids smaller than current asteroid.&#10;&#10;Take care of no collision and empty case." />
@@ -614,7 +610,8 @@
     <MESSAGE value="Simplify logic in DistributeNCandiesToKPeople" />
     <MESSAGE value="Add approach in FindKthBitInNthBinaryString, tricky binary search and index handling" />
     <MESSAGE value="Remove initial solution and add approach in tricky question MaxPathSum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove initial solution and add approach in tricky question MaxPathSum" />
+    <MESSAGE value="Update variable name in TimeNeededToInformAllEmployees" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update variable name in TimeNeededToInformAllEmployees" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -676,18 +673,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603661240190">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603702932648">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603661240190" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603702932648" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603702922530">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603703322347">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603702922530" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603703322347" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +761,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603661241965">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603702934573">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603661241965" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603702934573" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

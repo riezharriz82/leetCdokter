@@ -17,6 +17,12 @@
  * Input: s = "input", t = "ouput", k = 9
  * Output: true
  * Explanation: In the 6th move, we shift 'i' 6 times to get 'o'. And in the 7th move we shift 'n' to get 'u'.
+ * <p>
+ * Constraints:
+ * <p>
+ * 1 <= s.length, t.length <= 10^5
+ * 0 <= k <= 10^9
+ * s, t contain only lowercase English letters.
  */
 public class CanConvertStringInKMoves {
     /**
