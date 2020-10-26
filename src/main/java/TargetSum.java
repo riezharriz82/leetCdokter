@@ -1,5 +1,6 @@
+import javafx.util.Pair;
+
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * https://leetcode.com/problems/target-sum/
@@ -22,44 +23,31 @@ import java.util.Map;
  * There are 5 ways to assign symbols to make the sum of nums be target 3.
  */
 public class TargetSum {
-    int cnt = 0;
+    /**
+     * Approach: Recursion with memoization, try both adding and subtracting the current number and then recurring for remaining indices
+     * See {@link DecodeWays} for related problem
+     */
+    public int findTargetSumWays(int[] nums, int S) {
+        HashMap<Pair<Integer, Integer>, Integer> map = new HashMap<>();
+        return helper(nums, S, 0, 0, map);
+    }
 
-    public int findTargetSumWaysUsingDP(int[] nums, int S) {
-        Map<Integer, Integer> mapping = new HashMap<>();
-        for (int num : nums) {
-            if (mapping.isEmpty()) {
-                mapping.put(num, 1);
-                // +0 and -0 are two different solutions
-                mapping.put(-num, mapping.getOrDefault(-num, 0) + 1); //this special case is for handling 0
+    private int helper(int[] nums, int targetSum, int currentSum, int index, HashMap<Pair<Integer, Integer>, Integer> map) {
+        //index == nums.length ensures that we have covered all the indices, indicating it's not a partial sum
+        if (index == nums.length) {
+            if (currentSum == targetSum) {
+                return 1;
             } else {
-                HashMap<Integer, Integer> newMapping = new HashMap<>();
-                for (Map.Entry<Integer, Integer> entry : mapping.entrySet()) {
-                    //if previously we could make a sum of x in y ways, now we can make {x+num}, {x-num} in y ways too
-                    newMapping.put(entry.getKey() + num, newMapping.getOrDefault(entry.getKey() + num, 0) + entry.getValue());
-                    newMapping.put(entry.getKey() - num, newMapping.getOrDefault(entry.getKey() - num, 0) + entry.getValue());
-                }
-                //we are only interested in the latest result, not partial result
-                mapping = newMapping;
+                return 0;
             }
         }
-        return mapping.getOrDefault(S, 0);
-    }
-
-    public int findTargetSumWaysUsingBacktracking(int[] nums, int S) {
-        helper(nums, S, 0, 0);
-        return cnt;
-    }
-
-    private void helper(int[] nums, int targetSum, int currentSum, int index) {
-        //index == nums.length ensures that we have covered all the indices, indicating it's not a partial sum
-        if (currentSum == targetSum && index == nums.length) {
-            cnt++;
+        Pair<Integer, Integer> key = new Pair<>(index, currentSum);
+        if (map.containsKey(key)) {
+            return map.get(key);
         }
-        if (index >= nums.length) {
-            return;
-        }
-        int val = nums[index];
-        helper(nums, targetSum, currentSum + val, index + 1);
-        helper(nums, targetSum, currentSum - val, index + 1);
+        int res = helper(nums, targetSum, currentSum + nums[index], index + 1, map);
+        res += helper(nums, targetSum, currentSum - nums[index], index + 1, map);
+        map.put(key, res);
+        return res;
     }
 }

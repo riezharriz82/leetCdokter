@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 public class TargetSumTest {
     @Test
     public void test() {
-        Assertions.assertEquals(4, new TargetSum().findTargetSumWaysUsingDP(new int[]{0, 0, 1}, 1));
-        Assertions.assertEquals(5, new TargetSum().findTargetSumWaysUsingDP(new int[]{1, 1, 1, 1, 1}, 3));
+        Assertions.assertEquals(4, new TargetSum().findTargetSumWays(new int[]{0, 0, 1}, 1));
+        Assertions.assertEquals(5, new TargetSum().findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3));
     }
 }

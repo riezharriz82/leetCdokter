@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FindMinimumInRotatedSortedArray2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindMinimumInRotatedSortedArray2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TargetSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00403" summary="Solve medium and tricky HouseRobber2, houses are present in circular array and can't rob adjacent houses.&#10;Trick was to understand that first and last houses can never be robbed together, so if you rob first, then you have to skip last and vice versa.&#10;After this, problem is similar to solving HouseRobber1. Fuck them circular things">
-      <created>1602707373787</created>
-      <option name="number" value="00403" />
-      <option name="presentableId" value="LOCAL-00403" />
-      <option name="project" value="LOCAL" />
-      <updated>1602707373790</updated>
     </task>
     <task id="LOCAL-00404" summary="Simplify the generation of submatrices after going through Tushar roy's video on finding the max rectangle submatrix sum in a matrix.&#10;&#10;No need to use 2d prefix sum and get the diff's and all, it was very tricky. Now visualize the generation as picking a new base and start expanding on top of the new base">
       <created>1602773851765</created>
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603708186462</updated>
     </task>
-    <option name="localTasksCounter" value="452" />
+    <task id="LOCAL-00452" summary="Add errichto's template of binary search, does not work for finding min element in rotated sorted array containing duplicates.">
+      <created>1603715329342</created>
+      <option name="number" value="00452" />
+      <option name="presentableId" value="LOCAL-00452" />
+      <option name="project" value="LOCAL" />
+      <updated>1603715329342</updated>
+    </task>
+    <option name="localTasksCounter" value="453" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky delete nodes of a binary tree and return the resulting forest. Trick was to understand two cases, &#10;if the current node is a potential root candidate and needs to be deleted, it's children will become potential root candidates.&#10;otherwise if the current node is a root candidate, add it to the resulting forest." />
     <MESSAGE value="Solve medium recursively reverse substrings present between brackets. Similar to stack solution used in DecodeString and NumberOfAtoms." />
     <MESSAGE value="Solve medium search in sorted array of unknown size, trick is to find the range in which we can perform binary search.&#10;Keep incrementing the candidate upper bound until value at that index &gt; target or is invalid (out of bounds)" />
     <MESSAGE value="Add greedy approach of solving hard split array into m subarrays such that largest sum is maximized. &#10;Need to perform binary search on the largest sum possible for single sized subarray and largest sum possible if we choose the entire array.&#10;Target subarray sum would be somewhere in between.&#10;If our chosen candidate sum results in split &lt; target split, we have to decrease the candidate sum&#10;else increase the candidate sum" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Add constraints in problem statement" />
     <MESSAGE value="Add another solution in PathSum3 by extending the path from children and starting a new path from current node before returning to parent.&#10;&#10;Learnings -- Paths in a tree can be visualized as subarray problem." />
     <MESSAGE value="Add problem statement and update approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add problem statement and update approach" />
+    <MESSAGE value="Add errichto's template of binary search, does not work for finding min element in rotated sorted array containing duplicates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add errichto's template of binary search, does not work for finding min element in rotated sorted array containing duplicates." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -676,18 +676,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603708185724">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603715328733">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603708185724" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603715328733" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603712966807">
+    <state width="456" height="442" key="Diff.GoToChangePopup" timestamp="1603722673482">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603712966807" />
+    <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603726574776">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603726574776" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -752,10 +756,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603709365601" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1603289120542">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603731417691">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1603289120542" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1603731417691" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1602604186144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,22 +768,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603708187458">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603715330360">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603708187458" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603715330360" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="775" y="303" key="chooseDestDirectoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609092682" />
-    <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603055722052">
+    <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603744207245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1603055722052" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603192749649">
+    <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1603744207245" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603744238554">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603192749649" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603744238554" />
     <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603636840660">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -796,18 +800,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603547940118" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603704803118">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603744143385">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603704803118" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603744143385" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603706284932">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603706284932" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603712700991">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603730507756">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603712700991" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603730507756" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
