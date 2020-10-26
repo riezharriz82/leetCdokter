@@ -13,8 +13,12 @@
  * Not 7-1 = 6, as selling price needs to be larger than buying price.
  */
 public class BestTimeToBuyAndSellStock {
-    //Approach: Keep track of the largest number from the right since we are allowed to do only one transaction, it must be
-    // done between largest number on the right and the current number
+    /**
+     * Approach: Keep track of the largest number from the right since we are allowed to do only one transaction, it must be
+     * done between largest number on the right and the current number
+     * <p>
+     * Or consider the smallest number from the left and make a transaction today
+     */
     public int maxProfit(int[] prices) {
         if (prices.length == 0 || prices.length == 1) {
             return 0;
