@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TargetSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UglyNumber2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UglyNumber2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00404" summary="Simplify the generation of submatrices after going through Tushar roy's video on finding the max rectangle submatrix sum in a matrix.&#10;&#10;No need to use 2d prefix sum and get the diff's and all, it was very tricky. Now visualize the generation as picking a new base and start expanding on top of the new base">
-      <created>1602773851765</created>
-      <option name="number" value="00404" />
-      <option name="presentableId" value="LOCAL-00404" />
-      <option name="project" value="LOCAL" />
-      <updated>1602773851766</updated>
     </task>
     <task id="LOCAL-00405" summary="Solve hard find max submatrix sum &lt;= k in a matrix. This question had two parts:&#10;&#10;1. Finding all the submatrix sum (similar to NumberOfSubmatricesThatSumsToTarget)&#10;2. Once submatrix sum is reduced to 1d array, find a subarray with sum &lt;= k, need to use treeset in order to find any subarrays with valid diff.">
       <created>1602774734327</created>
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603715329342</updated>
     </task>
-    <option name="localTasksCounter" value="453" />
+    <task id="LOCAL-00453" summary="Simplify code and add approach in find no of ways to achieve target sum">
+      <created>1603744510848</created>
+      <option name="number" value="00453" />
+      <option name="presentableId" value="LOCAL-00453" />
+      <option name="project" value="LOCAL" />
+      <updated>1603744510848</updated>
+    </task>
+    <option name="localTasksCounter" value="454" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium recursively reverse substrings present between brackets. Similar to stack solution used in DecodeString and NumberOfAtoms." />
     <MESSAGE value="Solve medium search in sorted array of unknown size, trick is to find the range in which we can perform binary search.&#10;Keep incrementing the candidate upper bound until value at that index &gt; target or is invalid (out of bounds)" />
     <MESSAGE value="Add greedy approach of solving hard split array into m subarrays such that largest sum is maximized. &#10;Need to perform binary search on the largest sum possible for single sized subarray and largest sum possible if we choose the entire array.&#10;Target subarray sum would be somewhere in between.&#10;If our chosen candidate sum results in split &lt; target split, we have to decrease the candidate sum&#10;else increase the candidate sum" />
     <MESSAGE value="Update logic of transforming the input range into prefix/suffix of True/False, very critical in solving binary search related problems" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Add another solution in PathSum3 by extending the path from children and starting a new path from current node before returning to parent.&#10;&#10;Learnings -- Paths in a tree can be visualized as subarray problem." />
     <MESSAGE value="Add problem statement and update approach" />
     <MESSAGE value="Add errichto's template of binary search, does not work for finding min element in rotated sorted array containing duplicates." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add errichto's template of binary search, does not work for finding min element in rotated sorted array containing duplicates." />
+    <MESSAGE value="Simplify code and add approach in find no of ways to achieve target sum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify code and add approach in find no of ways to achieve target sum" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -676,10 +676,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603715328733">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603744510213">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603715328733" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603744510213" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -768,10 +768,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603715330360">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603744511866">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603715330360" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603744511866" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -808,10 +808,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603706284932" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603730507756">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603744889968">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603730507756" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603744889968" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

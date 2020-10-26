@@ -44,7 +44,10 @@ public class UglyNumber2 {
         int three_index = 0;
         int five_index = 0;
         for (int i = 0; i < n; i++) {
-            int by2 = res[two_index] * 2;
+            int by2 = res[two_index] * 2; //why res[two_index] * 2 and not just two_index * 2
+            //because if we rely on two_index * 2 then we can't guarantee that the result will only contain multiple of 2,3,5
+            //because two_index can be anything e.g. 7, 11, 17..
+            //hence it's required to generate new numbers from previously computed ugly numbers
             int by3 = res[three_index] * 3;
             int by5 = res[five_index] * 5;
             int min = Math.min(by2, Math.min(by3, by5));
