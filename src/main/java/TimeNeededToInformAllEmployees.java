@@ -48,10 +48,10 @@ public class TimeNeededToInformAllEmployees {
     }
 
     private int DFS(List<List<Integer>> tree, int headID, int[] informTime) {
-        int sum = 0;
+        int maxTimeTakenByChild = 0;
         for (int reportee : tree.get(headID)) {
-            sum = Math.max(sum, DFS(tree, reportee, informTime));
+            maxTimeTakenByChild = Math.max(maxTimeTakenByChild, DFS(tree, reportee, informTime));
         }
-        return sum + informTime[headID];
+        return maxTimeTakenByChild + informTime[headID];
     }
 }
