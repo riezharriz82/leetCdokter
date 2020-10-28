@@ -168,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00406" summary="Solve hard classical jump game problem, find the min hops required to reach the last index via greedy and dp.&#10;&#10;DP problem was easy to write, just update all the indexes reachable from current node to current jumps + 1&#10;&#10;Greedy was difficult to visualize because I was not sure on when to update the jumps done so far. Trick was to visualize it as BFS problem instead and update the level count when end of current level is reached.">
-      <created>1602869682248</created>
-      <option name="number" value="00406" />
-      <option name="presentableId" value="LOCAL-00406" />
-      <option name="project" value="LOCAL" />
-      <updated>1602869682248</updated>
-    </task>
     <task id="LOCAL-00407" summary="Solve medium find repeated substrings using rolling hash. Using rolling hash allows you to compute hash in constant time, which is much better than creating a substring and then checking whether it's a repeated substring or not.&#10;&#10;Learnings -- Robin Karp Rolling Hash">
       <created>1602938249004</created>
       <option name="number" value="00407" />
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603746438554</updated>
     </task>
-    <option name="localTasksCounter" value="455" />
+    <task id="LOCAL-00455" summary="Solve medium find the start of the cycle in linked list using warshall floyd algorithm">
+      <created>1603832235130</created>
+      <option name="number" value="00455" />
+      <option name="presentableId" value="LOCAL-00455" />
+      <option name="project" value="LOCAL" />
+      <updated>1603832235130</updated>
+    </task>
+    <option name="localTasksCounter" value="456" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add greedy approach of solving hard split array into m subarrays such that largest sum is maximized. &#10;Need to perform binary search on the largest sum possible for single sized subarray and largest sum possible if we choose the entire array.&#10;Target subarray sum would be somewhere in between.&#10;If our chosen candidate sum results in split &lt; target split, we have to decrease the candidate sum&#10;else increase the candidate sum" />
     <MESSAGE value="Update logic of transforming the input range into prefix/suffix of True/False, very critical in solving binary search related problems" />
     <MESSAGE value="Solve hard and tricky divide a array into m subarrays such that minimum sum of all subarrays is maximized. &#10;&#10;It can be solved using DP but due to strict bounds, it times out. Need to use the tricky greedy approach used in SplitArrayLargestSum.&#10;&#10;Pick a target subarray sum that should be the minimum subarray sum, check how many chunks can be formed from the input array. If there are fewer chunks than required, need to reduce target sum otherwise increase target sum.&#10;&#10;Visualize the transformation as prefix of T/F as errichto mentioned in his lecture." />
     <MESSAGE value="Solve easy find the first index with value &gt;= target value using binary search.&#10;&#10;Used learnings shared by errichto for setting the answer to a value that needs to be returned if no element satisfies the given condition." />
@@ -613,7 +612,8 @@
     <MESSAGE value="Add errichto's template of binary search, does not work for finding min element in rotated sorted array containing duplicates." />
     <MESSAGE value="Simplify code and add approach in find no of ways to achieve target sum" />
     <MESSAGE value="Add clarifications/gotcha in generation of ugly numbers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add clarifications/gotcha in generation of ugly numbers" />
+    <MESSAGE value="Solve medium find the start of the cycle in linked list using warshall floyd algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the start of the cycle in linked list using warshall floyd algorithm" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603746437914">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603832234375">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603746437914" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603832234375" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -751,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1601568700981" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1603709365601">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1603899589357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603709365601" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603899589357" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1603731417691">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -767,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603746440024">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603832237995">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603746440024" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603832237995" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,22 +795,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603284628567" />
-    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603547940118">
+    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603898385050">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603547940118" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603744143385">
+    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603898385050" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603832867321">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603744143385" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603832867321" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603706284932">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603706284932" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603744889968">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603899582328">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603744889968" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603899582328" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
