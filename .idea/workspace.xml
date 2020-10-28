@@ -8,9 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,13 +165,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00408" summary="Solve medium JumpGame3, where we can jump left and right and need to check whether we can access an index with value 0.&#10;&#10;Used DFS to simulate jumping, need to use visited array to avoid loops.">
-      <created>1602939901832</created>
-      <option name="number" value="00408" />
-      <option name="presentableId" value="LOCAL-00408" />
-      <option name="project" value="LOCAL" />
-      <updated>1602939901832</updated>
     </task>
     <task id="LOCAL-00409" summary="Solve hard and tricky find min number of taps required to water a range i.e min no of intervals required to cover the entire garden&#10;&#10;Initially I solved it via a very complicated route, i removed the covered intervals {RemoveCoveredIntervals} and then did a brute force dp from the end similar to {JumpGame2} tracking min no of taps required at any index.&#10;&#10;However removing the covered intervals was not required and brute force dp was sufficient. In order to optimize we can do it similar to bfs logic of JumpGame2. Keep track of the end of current level, once reached, update the end of the next level.">
       <created>1602951518576</created>
@@ -511,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603900278195</updated>
     </task>
-    <option name="localTasksCounter" value="457" />
+    <task id="LOCAL-00457" summary="Solve hard and tricky find the kth sorted permutation of the given input array using greedy + maths.&#10;&#10;Backtracking solution is trivial and requires generating all k permutations of the input array. &#10;&#10;Greedy solution fixes one digit at a time of the result; by figuring out how many permutations does a digit can generate if it's the first digit of the permutation. We recursively fix one digit and are left with n-1 digits.">
+      <created>1603914512266</created>
+      <option name="number" value="00457" />
+      <option name="presentableId" value="LOCAL-00457" />
+      <option name="project" value="LOCAL" />
+      <updated>1603914512266</updated>
+    </task>
+    <option name="localTasksCounter" value="458" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky divide a array into m subarrays such that minimum sum of all subarrays is maximized. &#10;&#10;It can be solved using DP but due to strict bounds, it times out. Need to use the tricky greedy approach used in SplitArrayLargestSum.&#10;&#10;Pick a target subarray sum that should be the minimum subarray sum, check how many chunks can be formed from the input array. If there are fewer chunks than required, need to reduce target sum otherwise increase target sum.&#10;&#10;Visualize the transformation as prefix of T/F as errichto mentioned in his lecture." />
     <MESSAGE value="Solve easy find the first index with value &gt;= target value using binary search.&#10;&#10;Used learnings shared by errichto for setting the answer to a value that needs to be returned if no element satisfies the given condition." />
     <MESSAGE value="Solve medium find first and last position of element in sorted array using two binary searches" />
     <MESSAGE value="Solve medium but easy find left most column with at least a one given a row sorted binary matrix containing 0 and 1.&#10;&#10;Performed binary search on each row to find the left most index of 1 and keep updating the global minima.&#10;&#10;Can also be done in linear time. Kinda forgot to think about it as I was on a roll doing binary search questions." />
@@ -613,7 +610,8 @@
     <MESSAGE value="Add clarifications/gotcha in generation of ugly numbers" />
     <MESSAGE value="Solve medium find the start of the cycle in linked list using warshall floyd algorithm" />
     <MESSAGE value="Solve medium find all possible partitions of a string such that each partition is a palindrome by backtracking. &#10;&#10;Important to understand the time complexity of this solution, there can be maximum n-1 cuts and each cut can either be picked or be skipped, so total is 2^(n-1)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all possible partitions of a string such that each partition is a palindrome by backtracking. &#10;&#10;Important to understand the time complexity of this solution, there can be maximum n-1 cuts and each cut can either be picked or be skipped, so total is 2^(n-1)" />
+    <MESSAGE value="Solve hard and tricky find the kth sorted permutation of the given input array using greedy + maths.&#10;&#10;Backtracking solution is trivial and requires generating all k permutations of the input array. &#10;&#10;Greedy solution fixes one digit at a time of the result; by figuring out how many permutations does a digit can generate if it's the first digit of the permutation. We recursively fix one digit and are left with n-1 digits." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the kth sorted permutation of the given input array using greedy + maths.&#10;&#10;Backtracking solution is trivial and requires generating all k permutations of the input array. &#10;&#10;Greedy solution fixes one digit at a time of the result; by figuring out how many permutations does a digit can generate if it's the first digit of the permutation. We recursively fix one digit and are left with n-1 digits." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +673,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603900277424">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603914511645">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603900277424" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603914511645" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -767,10 +765,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603900280453">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603914513754">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603900280453" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603914513754" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -807,10 +805,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603706284932" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603900766874">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603914798731">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603900766874" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603914798731" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
