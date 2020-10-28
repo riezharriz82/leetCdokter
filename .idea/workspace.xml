@@ -142,20 +142,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.KickStart" />
-      <item itemvalue="Application.MaximumCoins" />
       <item itemvalue="Application.CombinationLock" />
-      <item itemvalue="Application.NumberOfAtoms" />
+      <item itemvalue="Application.KickStart" />
       <item itemvalue="Application.LongestAbsoluteFilePath" />
+      <item itemvalue="Application.MaximumCoins" />
+      <item itemvalue="Application.NumberOfAtoms" />
       <item itemvalue="JUnit.Unnamed" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LongestAbsoluteFilePath" />
         <item itemvalue="Application.NumberOfAtoms" />
-        <item itemvalue="Application.CombinationLock" />
-        <item itemvalue="Application.KickStart" />
         <item itemvalue="Application.MaximumCoins" />
+        <item itemvalue="Application.LongestAbsoluteFilePath" />
+        <item itemvalue="Application.KickStart" />
+        <item itemvalue="Application.CombinationLock" />
       </list>
     </recent_temporary>
   </component>
@@ -167,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00407" summary="Solve medium find repeated substrings using rolling hash. Using rolling hash allows you to compute hash in constant time, which is much better than creating a substring and then checking whether it's a repeated substring or not.&#10;&#10;Learnings -- Robin Karp Rolling Hash">
-      <created>1602938249004</created>
-      <option name="number" value="00407" />
-      <option name="presentableId" value="LOCAL-00407" />
-      <option name="project" value="LOCAL" />
-      <updated>1602938249004</updated>
     </task>
     <task id="LOCAL-00408" summary="Solve medium JumpGame3, where we can jump left and right and need to check whether we can access an index with value 0.&#10;&#10;Used DFS to simulate jumping, need to use visited array to avoid loops.">
       <created>1602939901832</created>
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603832235130</updated>
     </task>
-    <option name="localTasksCounter" value="456" />
+    <task id="LOCAL-00456" summary="Solve medium find all possible partitions of a string such that each partition is a palindrome by backtracking. &#10;&#10;Important to understand the time complexity of this solution, there can be maximum n-1 cuts and each cut can either be picked or be skipped, so total is 2^(n-1)">
+      <created>1603900278195</created>
+      <option name="number" value="00456" />
+      <option name="presentableId" value="LOCAL-00456" />
+      <option name="project" value="LOCAL" />
+      <updated>1603900278195</updated>
+    </task>
+    <option name="localTasksCounter" value="457" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update logic of transforming the input range into prefix/suffix of True/False, very critical in solving binary search related problems" />
     <MESSAGE value="Solve hard and tricky divide a array into m subarrays such that minimum sum of all subarrays is maximized. &#10;&#10;It can be solved using DP but due to strict bounds, it times out. Need to use the tricky greedy approach used in SplitArrayLargestSum.&#10;&#10;Pick a target subarray sum that should be the minimum subarray sum, check how many chunks can be formed from the input array. If there are fewer chunks than required, need to reduce target sum otherwise increase target sum.&#10;&#10;Visualize the transformation as prefix of T/F as errichto mentioned in his lecture." />
     <MESSAGE value="Solve easy find the first index with value &gt;= target value using binary search.&#10;&#10;Used learnings shared by errichto for setting the answer to a value that needs to be returned if no element satisfies the given condition." />
     <MESSAGE value="Solve medium find first and last position of element in sorted array using two binary searches" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Simplify code and add approach in find no of ways to achieve target sum" />
     <MESSAGE value="Add clarifications/gotcha in generation of ugly numbers" />
     <MESSAGE value="Solve medium find the start of the cycle in linked list using warshall floyd algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the start of the cycle in linked list using warshall floyd algorithm" />
+    <MESSAGE value="Solve medium find all possible partitions of a string such that each partition is a palindrome by backtracking. &#10;&#10;Important to understand the time complexity of this solution, there can be maximum n-1 cuts and each cut can either be picked or be skipped, so total is 2^(n-1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all possible partitions of a string such that each partition is a palindrome by backtracking. &#10;&#10;Important to understand the time complexity of this solution, there can be maximum n-1 cuts and each cut can either be picked or be skipped, so total is 2^(n-1)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603832234375">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603900277424">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603832234375" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603900277424" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -767,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603832237995">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603900280453">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603832237995" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603900280453" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -799,18 +799,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603898385050" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603832867321">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603901610242">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603832867321" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603901610242" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603706284932">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603706284932" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603899582328">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603900766874">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603899582328" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603900766874" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
