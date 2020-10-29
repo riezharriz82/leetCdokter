@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,9 +95,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestAbsoluteFilePath">
-    <configuration name="CombinationLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="alternate.CombinationLock" />
+  <component name="RunManager" selected="Application.ConcatenatedWords">
+    <configuration name="ConcatenatedWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConcatenatedWords" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,20 +142,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CombinationLock" />
       <item itemvalue="Application.KickStart" />
       <item itemvalue="Application.LongestAbsoluteFilePath" />
       <item itemvalue="Application.MaximumCoins" />
       <item itemvalue="Application.NumberOfAtoms" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="Application.ConcatenatedWords" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConcatenatedWords" />
         <item itemvalue="Application.NumberOfAtoms" />
         <item itemvalue="Application.MaximumCoins" />
         <item itemvalue="Application.LongestAbsoluteFilePath" />
         <item itemvalue="Application.KickStart" />
-        <item itemvalue="Application.CombinationLock" />
       </list>
     </recent_temporary>
   </component>
@@ -165,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00409" summary="Solve hard and tricky find min number of taps required to water a range i.e min no of intervals required to cover the entire garden&#10;&#10;Initially I solved it via a very complicated route, i removed the covered intervals {RemoveCoveredIntervals} and then did a brute force dp from the end similar to {JumpGame2} tracking min no of taps required at any index.&#10;&#10;However removing the covered intervals was not required and brute force dp was sufficient. In order to optimize we can do it similar to bfs logic of JumpGame2. Keep track of the end of current level, once reached, update the end of the next level.">
-      <created>1602951518576</created>
-      <option name="number" value="00409" />
-      <option name="presentableId" value="LOCAL-00409" />
-      <option name="project" value="LOCAL" />
-      <updated>1602951518577</updated>
     </task>
     <task id="LOCAL-00410" summary="Solve medium Video Stitching similar to MinTapsRequiredToWaterGarden using BFS. Keep track of the largest timestamp reachable in current level. If end of current level reached, increment the level count.">
       <created>1602953093519</created>
@@ -509,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603914512266</updated>
     </task>
-    <option name="localTasksCounter" value="458" />
+    <task id="LOCAL-00458" summary="Solve easy find whether any permutation of the input string can be a palindrome or not by checking the count of characters with odd frequency.">
+      <created>1603915088234</created>
+      <option name="number" value="00458" />
+      <option name="presentableId" value="LOCAL-00458" />
+      <option name="project" value="LOCAL" />
+      <updated>1603915088234</updated>
+    </task>
+    <option name="localTasksCounter" value="459" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -566,6 +568,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="palindrome" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -586,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find the first index with value &gt;= target value using binary search.&#10;&#10;Used learnings shared by errichto for setting the answer to a value that needs to be returned if no element satisfies the given condition." />
     <MESSAGE value="Solve medium find first and last position of element in sorted array using two binary searches" />
     <MESSAGE value="Solve medium but easy find left most column with at least a one given a row sorted binary matrix containing 0 and 1.&#10;&#10;Performed binary search on each row to find the left most index of 1 and keep updating the global minima.&#10;&#10;Can also be done in linear time. Kinda forgot to think about it as I was on a roll doing binary search questions." />
     <MESSAGE value="Update example input and and gotcha in CourseSchedule2" />
@@ -611,7 +623,8 @@
     <MESSAGE value="Solve medium find the start of the cycle in linked list using warshall floyd algorithm" />
     <MESSAGE value="Solve medium find all possible partitions of a string such that each partition is a palindrome by backtracking. &#10;&#10;Important to understand the time complexity of this solution, there can be maximum n-1 cuts and each cut can either be picked or be skipped, so total is 2^(n-1)" />
     <MESSAGE value="Solve hard and tricky find the kth sorted permutation of the given input array using greedy + maths.&#10;&#10;Backtracking solution is trivial and requires generating all k permutations of the input array. &#10;&#10;Greedy solution fixes one digit at a time of the result; by figuring out how many permutations does a digit can generate if it's the first digit of the permutation. We recursively fix one digit and are left with n-1 digits." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the kth sorted permutation of the given input array using greedy + maths.&#10;&#10;Backtracking solution is trivial and requires generating all k permutations of the input array. &#10;&#10;Greedy solution fixes one digit at a time of the result; by figuring out how many permutations does a digit can generate if it's the first digit of the permutation. We recursively fix one digit and are left with n-1 digits." />
+    <MESSAGE value="Solve easy find whether any permutation of the input string can be a palindrome or not by checking the count of characters with odd frequency." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether any permutation of the input string can be a palindrome or not by checking the count of characters with odd frequency." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -673,10 +686,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603914511645">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603915087306">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603914511645" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603915087306" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -685,46 +698,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603726574776">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603915235604">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603726574776" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603915235604" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1603642381280">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603987651012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381280" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1603642381280">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603987651012" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603987651011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381280" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1603642381280">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603987651011" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603987651011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381280" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1603642381280">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603987651011" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603987651012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381280" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603642381277">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603987651011" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603984183183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381277" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603642381277">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603984183183" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1603984183183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381277" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603642381277">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603984183183" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1603984183183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381277" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603642381277">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603984183183" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1603984183183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603642381277" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603984183183" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -765,10 +778,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603914513754">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603915089053">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603914513754" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603915089053" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -781,10 +794,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603744238554" />
-    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603636840660">
+    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603983886792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1603636840660" />
+    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1603983886792" />
     <state x="690" y="275" key="extract.method.dialog" timestamp="1599589184838">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -793,10 +806,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603284628567" />
-    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603898385050">
+    <state width="632" height="314" key="javadoc.popup.new" timestamp="1603987319766">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603898385050" />
+    <state width="632" height="314" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1603987319766" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603901610242">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -805,16 +818,16 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603706284932" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603914798731">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603989539441">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603914798731" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603989539441" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception">
-          <condition expression="this instanceof java.lang.NullPointerException" language="JAVA" />
+          <condition expression="this instanceof StringIndexOutOfBoundsException" language="JAVA" />
           <properties>
             <catch-class-filters>
               <class-filter pattern="java.lang.ArrayIndexOutOfBoundsException" />
