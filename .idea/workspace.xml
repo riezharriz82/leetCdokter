@@ -168,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00410" summary="Solve medium Video Stitching similar to MinTapsRequiredToWaterGarden using BFS. Keep track of the largest timestamp reachable in current level. If end of current level reached, increment the level count.">
-      <created>1602953093519</created>
-      <option name="number" value="00410" />
-      <option name="presentableId" value="LOCAL-00410" />
-      <option name="project" value="LOCAL" />
-      <updated>1602953093519</updated>
-    </task>
     <task id="LOCAL-00411" summary="Solve medium and tricky check whether a graph is bipartite by reducing the problem to color assignment problem. Try assigning a random color to first node, which will then try to assign opposite color to it's neighbour and so on. &#10;If all nodes are able to assign it's neighbour an opposite color, the graph is bipartite.&#10;&#10;Took me a while to cleanly implement it. Initially I was trying to assign colors to all the neighbours in a loop and then was trying to validate the assignment which made it difficult to recurse. Then I thought of assigning one neighbour at a time and recurse.">
       <created>1602965828996</created>
       <option name="number" value="00411" />
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603915088234</updated>
     </task>
-    <option name="localTasksCounter" value="459" />
+    <task id="LOCAL-00459" summary="Solve hard and tricky find whether a word is entirely composed of two or more words from dictionary. Similar to previously solved WordBreak1 but gives TLE for me somehow.&#10;&#10;Solved it using Trie to quickly find whether the current prefix is valid prefix or not. Important to sort the words because a word can only be made from shorter words.">
+      <created>1603990037365</created>
+      <option name="number" value="00459" />
+      <option name="presentableId" value="LOCAL-00459" />
+      <option name="project" value="LOCAL" />
+      <updated>1603990037365</updated>
+    </task>
+    <option name="localTasksCounter" value="460" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -568,17 +568,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="palindrome" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -599,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find first and last position of element in sorted array using two binary searches" />
     <MESSAGE value="Solve medium but easy find left most column with at least a one given a row sorted binary matrix containing 0 and 1.&#10;&#10;Performed binary search on each row to find the left most index of 1 and keep updating the global minima.&#10;&#10;Can also be done in linear time. Kinda forgot to think about it as I was on a roll doing binary search questions." />
     <MESSAGE value="Update example input and and gotcha in CourseSchedule2" />
     <MESSAGE value="Add comment in ChangeOnlyOneElementToSortArray" />
@@ -624,7 +612,8 @@
     <MESSAGE value="Solve medium find all possible partitions of a string such that each partition is a palindrome by backtracking. &#10;&#10;Important to understand the time complexity of this solution, there can be maximum n-1 cuts and each cut can either be picked or be skipped, so total is 2^(n-1)" />
     <MESSAGE value="Solve hard and tricky find the kth sorted permutation of the given input array using greedy + maths.&#10;&#10;Backtracking solution is trivial and requires generating all k permutations of the input array. &#10;&#10;Greedy solution fixes one digit at a time of the result; by figuring out how many permutations does a digit can generate if it's the first digit of the permutation. We recursively fix one digit and are left with n-1 digits." />
     <MESSAGE value="Solve easy find whether any permutation of the input string can be a palindrome or not by checking the count of characters with odd frequency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether any permutation of the input string can be a palindrome or not by checking the count of characters with odd frequency." />
+    <MESSAGE value="Solve hard and tricky find whether a word is entirely composed of two or more words from dictionary. Similar to previously solved WordBreak1 but gives TLE for me somehow.&#10;&#10;Solved it using Trie to quickly find whether the current prefix is valid prefix or not. Important to sort the words because a word can only be made from shorter words." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find whether a word is entirely composed of two or more words from dictionary. Similar to previously solved WordBreak1 but gives TLE for me somehow.&#10;&#10;Solved it using Trie to quickly find whether the current prefix is valid prefix or not. Important to sort the words because a word can only be made from shorter words." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -686,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603915087306">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1603990036463">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603915087306" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1603990036463" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -698,10 +687,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603915235604">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1603990148036">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603915235604" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603990148036" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603915089053">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1603990038367">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603915089053" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603990038367" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -814,14 +803,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1603901610242" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1603706284932">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1604054715131">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603706284932" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1603989539441">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604054715131" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604054400611">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603989539441" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604054400611" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
