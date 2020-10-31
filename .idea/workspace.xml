@@ -95,16 +95,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConcatenatedWords">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="ConcatenatedWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConcatenatedWords" />
-      <module name="leetcode-practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KickStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="alternate.KickStart" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,21 +134,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.KickStart" />
       <item itemvalue="Application.LongestAbsoluteFilePath" />
       <item itemvalue="Application.MaximumCoins" />
       <item itemvalue="Application.NumberOfAtoms" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Application.ConcatenatedWords" />
+      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.ConcatenatedWords" />
         <item itemvalue="Application.NumberOfAtoms" />
         <item itemvalue="Application.MaximumCoins" />
         <item itemvalue="Application.LongestAbsoluteFilePath" />
-        <item itemvalue="Application.KickStart" />
       </list>
     </recent_temporary>
   </component>
@@ -167,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00413" summary="Solve Google Kickstart find the total no of substrings starting with KICK and ending with START by simply keeping track of occurrence of KICK and START. KICK must occur before START.&#10;&#10;Made a stupid mistake which cost me successful submission in the contest.">
-      <created>1603039599577</created>
-      <option name="number" value="00413" />
-      <option name="presentableId" value="LOCAL-00413" />
-      <option name="project" value="LOCAL" />
-      <updated>1603039599577</updated>
     </task>
     <task id="LOCAL-00414" summary="Solve tricky Google Kickstart find the min turns required to make all the dials of the lock same. The trick was to understand that the end state can be after bringing all the dials to one of the initial state of the dial i.e if the initial state was {3,5,6,8} one of the final state can be {3,3,3,3} or {5,5,5,5}, {6,6,6,6} {8,8,8,8}&#10;&#10;Fix each wheel as the initial state and then calculate the total turns required. Take care of overflow.">
       <created>1603051816509</created>
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604070480174</updated>
     </task>
-    <option name="localTasksCounter" value="462" />
+    <task id="LOCAL-00462" summary="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path.">
+      <created>1604091791761</created>
+      <option name="number" value="00462" />
+      <option name="presentableId" value="LOCAL-00462" />
+      <option name="project" value="LOCAL" />
+      <updated>1604091791762</updated>
+    </task>
+    <option name="localTasksCounter" value="463" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment in ChangeOnlyOneElementToSortArray" />
     <MESSAGE value="Update comment in MaximumSumOfTwoNonOverlappingSubarraysOfSpecificSize" />
     <MESSAGE value="Add top down recursion approach in HouseRobber" />
     <MESSAGE value="Add comment in FindTwoNonOverlappingSubarrayWithTargetSum" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve hard and tricky find whether a word is entirely composed of two or more words from dictionary. Similar to previously solved WordBreak1 but gives TLE for me somehow.&#10;&#10;Solved it using Trie to quickly find whether the current prefix is valid prefix or not. Important to sort the words because a word can only be made from shorter words." />
     <MESSAGE value="Solve medium and tricky find number of longest increasing subsequences. Need to store the count of LIS ending at any index, while updating the length of LIS at current index, reset or increment the count depending upon the current length.&#10;&#10;If current length &gt; currently stored length, reset the count, else if current length == currently stored length, increment the count" />
     <MESSAGE value="Solve medium find length of the longest consecutive sequence in a binary tree by passing information to the child.&#10;&#10;Child needs to know what is the length of the consecutive sequence present at parent and decide whether it can extend it or not." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find length of the longest consecutive sequence in a binary tree by passing information to the child.&#10;&#10;Child needs to know what is the length of the consecutive sequence present at parent and decide whether it can extend it or not." />
+    <MESSAGE value="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604070479420">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604091790682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604070479420" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604091790682" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -695,22 +695,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603987651012">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604139513865">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1603987651012" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603987651011">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604139513865" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604139513865">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1603987651011" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603987651011">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604139513865" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604139513864">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1603987651011" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603987651012">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604139513864" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604139513865">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1603987651011" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604139513865" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603984183183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -751,14 +751,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1601568700981" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1603899589357">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1604093348734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603899589357" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1603731417691">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604093348734" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604092829137">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1603731417691" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1604092829137" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1602604186144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -767,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604070481157">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604091792663">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604070481157" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604091792663" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,10 +795,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603284628567" />
-    <state width="632" height="253" key="javadoc.popup.new" timestamp="1604071981508">
+    <state width="632" height="253" key="javadoc.popup.new" timestamp="1604134690144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="253" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604071981508" />
+    <state width="632" height="253" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604134690144" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603901610242">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -807,10 +807,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604054715131" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604091489318">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604092394645">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604091489318" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604092394645" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
