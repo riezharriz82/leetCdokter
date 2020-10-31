@@ -168,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00414" summary="Solve tricky Google Kickstart find the min turns required to make all the dials of the lock same. The trick was to understand that the end state can be after bringing all the dials to one of the initial state of the dial i.e if the initial state was {3,5,6,8} one of the final state can be {3,3,3,3} or {5,5,5,5}, {6,6,6,6} {8,8,8,8}&#10;&#10;Fix each wheel as the initial state and then calculate the total turns required. Take care of overflow.">
-      <created>1603051816509</created>
-      <option name="number" value="00414" />
-      <option name="presentableId" value="LOCAL-00414" />
-      <option name="project" value="LOCAL" />
-      <updated>1603051816509</updated>
-    </task>
     <task id="LOCAL-00415" summary="Solve medium print the given matrix spirally left to right, top to bottom, right to left, bottom to up by leveraging the direction concept learned in RobotRoomCleaner. Try to move in current direction if possible, if not turn right and try to move.">
       <created>1603052786113</created>
       <option name="number" value="00415" />
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604091791762</updated>
     </task>
-    <option name="localTasksCounter" value="463" />
+    <task id="LOCAL-00463" summary="Solve hard and a bit tricky to reduce time complexity, find two nodes whose values are swapped in a bst.&#10;&#10;This is similar to finding two elements in nearly sorted array that have been swapped. It's a classical problem that can be done in linear time without sorting the entire input using two pointers">
+      <created>1604141274330</created>
+      <option name="number" value="00463" />
+      <option name="presentableId" value="LOCAL-00463" />
+      <option name="project" value="LOCAL" />
+      <updated>1604141274330</updated>
+    </task>
+    <option name="localTasksCounter" value="464" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update comment in MaximumSumOfTwoNonOverlappingSubarraysOfSpecificSize" />
     <MESSAGE value="Add top down recursion approach in HouseRobber" />
     <MESSAGE value="Add comment in FindTwoNonOverlappingSubarrayWithTargetSum" />
     <MESSAGE value="Update comment in MinDeletionCostToAvoidRepeatingLetters" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve medium and tricky find number of longest increasing subsequences. Need to store the count of LIS ending at any index, while updating the length of LIS at current index, reset or increment the count depending upon the current length.&#10;&#10;If current length &gt; currently stored length, reset the count, else if current length == currently stored length, increment the count" />
     <MESSAGE value="Solve medium find length of the longest consecutive sequence in a binary tree by passing information to the child.&#10;&#10;Child needs to know what is the length of the consecutive sequence present at parent and decide whether it can extend it or not." />
     <MESSAGE value="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path." />
+    <MESSAGE value="Solve hard and a bit tricky to reduce time complexity, find two nodes whose values are swapped in a bst.&#10;&#10;This is similar to finding two elements in nearly sorted array that have been swapped. It's a classical problem that can be done in linear time without sorting the entire input using two pointers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and a bit tricky to reduce time complexity, find two nodes whose values are swapped in a bst.&#10;&#10;This is similar to finding two elements in nearly sorted array that have been swapped. It's a classical problem that can be done in linear time without sorting the entire input using two pointers" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -675,10 +675,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604091790682">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604141273226">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604091790682" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604141273226" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -695,22 +695,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604139513865">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604142577418">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604139513865" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604139513865">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604142577418" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604142577418">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604139513865" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604139513864">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604142577418" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604142577418">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604139513864" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604139513865">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604142577418" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604142577418">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604139513865" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604142577418" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1603984183183">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -767,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604091792663">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604141275259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604091792663" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604141275259" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
