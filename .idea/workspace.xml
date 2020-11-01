@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumWidthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumWidthOfBinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,20 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00421" summary="Solve easy find shortest distance between two words, similar to kickstart question of Google Kickstart">
-      <created>1603142836071</created>
-      <option name="number" value="00421" />
-      <option name="presentableId" value="LOCAL-00421" />
-      <option name="project" value="LOCAL" />
-      <updated>1603142836072</updated>
-    </task>
-    <task id="LOCAL-00422" summary="Solve hard and tricky evaluate the no of atoms in a chemical formula i.e ((H2)2Mg3)3, H=12, Mg=9&#10;&#10;Trick was to use stack of map, start of each expression will contain the count of atoms of that expression, when a new expression is found '(', push a empty map upon stack. &#10;When ')' is found, find the multiplier and multiply the current atom counts, merge the current atom counts with the previous expression.&#10;&#10;This merge reduces the size of the result stack. Similar to DecodeString &#10;&#10;Recursive solution is also possible but care must be taken to correctly recurse for the subexpression present under ()">
-      <created>1603197971624</created>
-      <option name="number" value="00422" />
-      <option name="presentableId" value="LOCAL-00422" />
-      <option name="project" value="LOCAL" />
-      <updated>1603197971624</updated>
     </task>
     <task id="LOCAL-00423" summary="Add back the stack solution to solve DecodeString. Initially I thought stack solution was not generic enough but I was wrong. Related problem: NumberOfAtoms">
       <created>1603199122818</created>
@@ -512,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604240322070</updated>
     </task>
-    <option name="localTasksCounter" value="470" />
+    <task id="LOCAL-00470" summary="Simplify code by removing complicated initial code and add approach in find maximum width of a binary tree">
+      <created>1604243843120</created>
+      <option name="number" value="00470" />
+      <option name="presentableId" value="LOCAL-00470" />
+      <option name="project" value="LOCAL" />
+      <updated>1604243843120</updated>
+    </task>
+    <task id="LOCAL-00471" summary="Solve classical hard problem merge k sorted linked list using priority queue">
+      <created>1604243949090</created>
+      <option name="number" value="00471" />
+      <option name="presentableId" value="LOCAL-00471" />
+      <option name="project" value="LOCAL" />
+      <updated>1604243949090</updated>
+    </task>
+    <option name="localTasksCounter" value="472" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,8 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements" />
-    <MESSAGE value="Simplify logic in DistributeNCandiesToKPeople" />
     <MESSAGE value="Add approach in FindKthBitInNthBinaryString, tricky binary search and index handling" />
     <MESSAGE value="Remove initial solution and add approach in tricky question MaxPathSum" />
     <MESSAGE value="Update variable name in TimeNeededToInformAllEmployees" />
@@ -614,7 +611,9 @@
     <MESSAGE value="Solve medium but very tricky to optimize sentence screen fitting, fit a sentence into a grid such that a word can't be split across two rows. &#10;&#10;Learnings -- Deal with questions related to finding no of repetitions in a infinitely repeating sequence" />
     <MESSAGE value="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly." />
     <MESSAGE value="Simplify treeMap solution by directly adding element to the map if map is empty." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify treeMap solution by directly adding element to the map if map is empty." />
+    <MESSAGE value="Simplify code by removing complicated initial code and add approach in find maximum width of a binary tree" />
+    <MESSAGE value="Solve classical hard problem merge k sorted linked list using priority queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve classical hard problem merge k sorted linked list using priority queue" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604240321451">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604243948565">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604240321451" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604243948565" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604240323290">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604243954200">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604240323290" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604243954200" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
