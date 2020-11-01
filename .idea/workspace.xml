@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumWidthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumWidthOfBinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00420" summary="Solve hard and tricky encode string with shortest length by top down recursion. Need to check whether the string is composed of repeated substrings, if yes, then recur for the pattern that is repeated.&#10;&#10;If no, then make cuts at all places and recur for the prefix and suffix. Check which cut leads to the shortest encoded string.&#10;&#10;Got confused by trying to implement it via stack. It was a very nice problem.">
-      <created>1603124795858</created>
-      <option name="number" value="00420" />
-      <option name="presentableId" value="LOCAL-00420" />
-      <option name="project" value="LOCAL" />
-      <updated>1603124795858</updated>
     </task>
     <task id="LOCAL-00421" summary="Solve easy find shortest distance between two words, similar to kickstart question of Google Kickstart">
       <created>1603142836071</created>
@@ -511,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604238913765</updated>
     </task>
-    <option name="localTasksCounter" value="469" />
+    <task id="LOCAL-00469" summary="Simplify treeMap solution by directly adding element to the map if map is empty.">
+      <created>1604240322069</created>
+      <option name="number" value="00469" />
+      <option name="presentableId" value="LOCAL-00469" />
+      <option name="project" value="LOCAL" />
+      <updated>1604240322070</updated>
+    </task>
+    <option name="localTasksCounter" value="470" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add approach in ContainsDuplicate3" />
     <MESSAGE value="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements" />
     <MESSAGE value="Simplify logic in DistributeNCandiesToKPeople" />
     <MESSAGE value="Add approach in FindKthBitInNthBinaryString, tricky binary search and index handling" />
@@ -613,7 +613,8 @@
     <MESSAGE value="Solve easy meeting rooms, check whether there is a conflict in the appointment.&#10;&#10;Leveraged prior learnings of MyCalendar1. Can also be done by sorting the entire array and then checking for conflicts." />
     <MESSAGE value="Solve medium but very tricky to optimize sentence screen fitting, fit a sentence into a grid such that a word can't be split across two rows. &#10;&#10;Learnings -- Deal with questions related to finding no of repetitions in a infinitely repeating sequence" />
     <MESSAGE value="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly." />
+    <MESSAGE value="Simplify treeMap solution by directly adding element to the map if map is empty." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify treeMap solution by directly adding element to the map if map is empty." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604238913162">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604240321451">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604238913162" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604240321451" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604238940700">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604240323290">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604238940700" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604240323290" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -803,10 +804,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604236354826" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604240009386">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604243360269">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604240009386" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604243360269" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

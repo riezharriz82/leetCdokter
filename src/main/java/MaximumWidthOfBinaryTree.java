@@ -1,9 +1,7 @@
 import common.TreeNode;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * https://leetcode.com/problems/maximum-width-of-binary-tree/
@@ -18,7 +16,12 @@ import java.util.Map;
  * Width is considered for one level
  */
 public class MaximumWidthOfBinaryTree {
-    public int widthOfBinaryTreeSimplified(TreeNode root) {
+    /**
+     * Approach: Leverage index property of parent/child in a tree. If parent index is i, left child will be at 2*i and right child
+     * will be at 2*i + 1.
+     * In the problem we are asked to find the max difference between indices in any level
+     */
+    public int widthOfBinaryTree(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         return DFS(root, list, 1, 0);
     }
@@ -34,45 +37,5 @@ public class MaximumWidthOfBinaryTree {
         int leftMaxWidth = DFS(root.left, list, 2 * index, level + 1);
         int rightMaxWidth = DFS(root.right, list, 2 * index + 1, level + 1);
         return Math.max(curWidth, Math.max(leftMaxWidth, rightMaxWidth));
-    }
-
-    public int widthOfBinaryTree(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        Map<Integer, MinMax> map = new HashMap<>();
-        DFS(root, 0, map, 1);
-        int maxWidth = 0;
-        for (Map.Entry<Integer, MinMax> entry : map.entrySet()) {
-            MinMax minMax = entry.getValue();
-            maxWidth = Math.max(maxWidth, minMax.max - minMax.min);
-        }
-        return maxWidth;
-    }
-
-    private void DFS(TreeNode root, int level, Map<Integer, MinMax> map, int val) {
-        if (root == null) {
-            return;
-        }
-        if (!map.containsKey(level)) {
-            map.put(level, new MinMax(val, val));
-        } else {
-            //update the min and max indexes by comparing to what is present at the level
-            MinMax minMax = map.get(level);
-            minMax.min = Math.min(minMax.min, val);
-            minMax.max = Math.max(minMax.max, val);
-        }
-        DFS(root.left, level + 1, map, 2 * val); //left index is 2*i
-        DFS(root.right, level + 1, map, 2 * val + 1); //right index is 2*i + 1
-    }
-
-    class MinMax {
-        int min;
-        int max;
-
-        public MinMax(int min, int max) {
-            this.min = min;
-            this.max = max;
-        }
     }
 }
