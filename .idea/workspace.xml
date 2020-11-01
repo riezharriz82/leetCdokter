@@ -168,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00416" summary="Solve hard and tricky create a max frequency data structure that supports popping out most frequent element. In case of tie in frequency, most recently pushed element must be popped first.&#10;&#10;Used priority queue where priority is defined as a list of timestamps, greater the size, higher the priority. In case of same size, last timestamp is used as a tie breaker.">
-      <created>1603053559840</created>
-      <option name="number" value="00416" />
-      <option name="presentableId" value="LOCAL-00416" />
-      <option name="project" value="LOCAL" />
-      <updated>1603053559840</updated>
-    </task>
     <task id="LOCAL-00417" summary="Solve MaxFrequencyStack in another simplified way by creating a reverse mapping of frequency -&gt; list of occurrences of integer.&#10;&#10;This reverse mapping helps in accessing the most frequent element in constant time. Once the mapping is retrieved, ties can be broken by checking the last value inserted in the list.">
       <created>1603057856132</created>
       <option name="number" value="00417" />
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604143784957</updated>
     </task>
-    <option name="localTasksCounter" value="465" />
+    <task id="LOCAL-00465" summary="Solve easy meeting rooms, check whether there is a conflict in the appointment.&#10;&#10;Leveraged prior learnings of MyCalendar1. Can also be done by sorting the entire array and then checking for conflicts.">
+      <created>1604218374711</created>
+      <option name="number" value="00465" />
+      <option name="presentableId" value="LOCAL-00465" />
+      <option name="project" value="LOCAL" />
+      <updated>1604218374712</updated>
+    </task>
+    <option name="localTasksCounter" value="466" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment in FindTwoNonOverlappingSubarrayWithTargetSum" />
     <MESSAGE value="Update comment in MinDeletionCostToAvoidRepeatingLetters" />
     <MESSAGE value="Update approach in ContainsDuplicate2" />
     <MESSAGE value="Add approach in ContainsDuplicate3" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path." />
     <MESSAGE value="Solve hard and a bit tricky to reduce time complexity, find two nodes whose values are swapped in a bst.&#10;&#10;This is similar to finding two elements in nearly sorted array that have been swapped. It's a classical problem that can be done in linear time without sorting the entire input using two pointers" />
     <MESSAGE value="Solve medium and very interesting low level implementation problem, encode a list of strings to a single string that can be decoded to convert into list of strings.&#10;&#10;There are multiple ways to solve this question, use a delimiter outside of input char range, or escape the chosen delimiter if present in the input or use chunked transfer encoding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and very interesting low level implementation problem, encode a list of strings to a single string that can be decoded to convert into list of strings.&#10;&#10;There are multiple ways to solve this question, use a delimiter outside of input char range, or escape the chosen delimiter if present in the input or use chunked transfer encoding" />
+    <MESSAGE value="Solve easy meeting rooms, check whether there is a conflict in the appointment.&#10;&#10;Leveraged prior learnings of MyCalendar1. Can also be done by sorting the entire array and then checking for conflicts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy meeting rooms, check whether there is a conflict in the appointment.&#10;&#10;Leveraged prior learnings of MyCalendar1. Can also be done by sorting the entire array and then checking for conflicts." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604143784188">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604218373775">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604143784188" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604218373775" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604143828105">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604218376338">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604143828105" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604218376338" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603284628567" />
-    <state width="632" height="253" key="javadoc.popup.new" timestamp="1604134690144">
+    <state width="632" height="253" key="javadoc.popup.new" timestamp="1604219558212">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="253" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604134690144" />
+    <state width="632" height="253" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604219558212" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1603901610242">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
