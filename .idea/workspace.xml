@@ -95,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DistinctSubsequences">
+  <component name="RunManager" selected="Application.SudokuSolver">
     <configuration name="ConcatenatedWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConcatenatedWords" />
       <module name="leetcode-practice" />
@@ -110,15 +110,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumCoins" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="alternate.MaximumCoins" />
+    <configuration name="NumberOfAtoms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumberOfAtoms" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfAtoms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NumberOfAtoms" />
+    <configuration name="SudokuSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SudokuSolver" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,20 +142,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MaximumCoins" />
       <item itemvalue="Application.NumberOfAtoms" />
       <item itemvalue="Application.ConcatenatedWords" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Application.DistinctSubsequences" />
+      <item itemvalue="Application.SudokuSolver" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DistinctSubsequences" />
+        <item itemvalue="Application.SudokuSolver" />
         <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.DistinctSubsequences" />
         <item itemvalue="Application.ConcatenatedWords" />
         <item itemvalue="Application.NumberOfAtoms" />
-        <item itemvalue="Application.MaximumCoins" />
       </list>
     </recent_temporary>
   </component>
@@ -167,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00423" summary="Add back the stack solution to solve DecodeString. Initially I thought stack solution was not generic enough but I was wrong. Related problem: NumberOfAtoms">
-      <created>1603199122818</created>
-      <option name="number" value="00423" />
-      <option name="presentableId" value="LOCAL-00423" />
-      <option name="project" value="LOCAL" />
-      <updated>1603199122818</updated>
     </task>
     <task id="LOCAL-00424" summary="Solve easy find all unique email addresses considering special cases around presence of + and . in the username of email id.">
       <created>1603199919031</created>
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604243949090</updated>
     </task>
-    <option name="localTasksCounter" value="472" />
+    <task id="LOCAL-00472" summary="Solve hard problem find the longest substring with balanced '(' and ')' using two pass algorithm.&#10;&#10;First use stack to mark balanced indices, then find the longest subarray with all balanced index.&#10;&#10;Tried to initially solve the question via a lot of approaches, sliding window, prefix sum but it failed.&#10;&#10;This question can also be solved by using DP, care must be taken to carry forward the results which I missed.">
+      <created>1604254094056</created>
+      <option name="number" value="00472" />
+      <option name="presentableId" value="LOCAL-00472" />
+      <option name="project" value="LOCAL" />
+      <updated>1604254094056</updated>
+    </task>
+    <option name="localTasksCounter" value="473" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add approach in FindKthBitInNthBinaryString, tricky binary search and index handling" />
     <MESSAGE value="Remove initial solution and add approach in tricky question MaxPathSum" />
     <MESSAGE value="Update variable name in TimeNeededToInformAllEmployees" />
     <MESSAGE value="Add constraints in problem statement" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Simplify treeMap solution by directly adding element to the map if map is empty." />
     <MESSAGE value="Simplify code by removing complicated initial code and add approach in find maximum width of a binary tree" />
     <MESSAGE value="Solve classical hard problem merge k sorted linked list using priority queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve classical hard problem merge k sorted linked list using priority queue" />
+    <MESSAGE value="Solve hard problem find the longest substring with balanced '(' and ')' using two pass algorithm.&#10;&#10;First use stack to mark balanced indices, then find the longest subarray with all balanced index.&#10;&#10;Tried to initially solve the question via a lot of approaches, sliding window, prefix sum but it failed.&#10;&#10;This question can also be solved by using DP, care must be taken to carry forward the results which I missed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard problem find the longest substring with balanced '(' and ')' using two pass algorithm.&#10;&#10;First use stack to mark balanced indices, then find the longest subarray with all balanced index.&#10;&#10;Tried to initially solve the question via a lot of approaches, sliding window, prefix sum but it failed.&#10;&#10;This question can also be solved by using DP, care must be taken to carry forward the results which I missed." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604243948565">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604254093426">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604243948565" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604254093426" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -691,38 +691,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1604236726716">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604261187284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604236726716" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1604236726716">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604261187284" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604261187284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604236726716" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1604236726716">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604261187284" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604261187284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604236726716" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1604236726716">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604261187284" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604261187284">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604236726716" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1604236726716">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604261187284" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1604256096153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604236726716" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1604236726716">
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604256096153" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1604256096153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604236726716" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1604236726716">
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604256096153" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1604256096153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604236726716" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1604236726716">
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604256096153" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1604256096153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604236726716" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604256096153" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -751,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604093348734" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1604092829137">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604256076360">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1604092829137" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1604256076360" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1602604186144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604243954200">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604254095365">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604243954200" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604254095365" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -775,10 +775,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1603744207245" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603744238554">
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604256234093">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603744238554" />
+    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604256234093" />
     <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603983886792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604239876261" />
-    <state width="632" height="189" key="javadoc.popup.new" timestamp="1604236406915">
+    <state width="632" height="189" key="javadoc.popup.new" timestamp="1604256190858">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="189" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604236406915" />
+    <state width="632" height="189" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604256190858" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1604238243461">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -803,10 +803,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604236354826" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604243360269">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604261554279">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604243360269" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604261554279" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
