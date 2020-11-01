@@ -62,12 +62,7 @@ public class LongestContiguousSubarrayWithValidDiff {
         //Value is the count of the element as duplicate exists
         TreeMap<Integer, Integer> map = new TreeMap<>();
         while (end < nums.length) {
-            if (begin == end) {
-                map.put(nums[begin], map.getOrDefault(nums[begin], 0) + 1);
-                curLength = 1;
-                maxLength = Math.max(curLength, maxLength);
-                end++;
-            } else if (Math.abs(nums[end] - map.firstKey()) <= limit && Math.abs(nums[end] - map.lastKey()) <= limit) { //can increment the end pointer
+            if (map.isEmpty() || Math.abs(nums[end] - map.firstKey()) <= limit && Math.abs(nums[end] - map.lastKey()) <= limit) { //can increment the end pointer
                 map.put(nums[end], map.getOrDefault(nums[end], 0) + 1);
                 curLength++;
                 maxLength = Math.max(curLength, maxLength);

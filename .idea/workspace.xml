@@ -168,20 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00418" summary="Solve medium find min rotations required to make all rows of domino equal i.e all dominoes should show the same value.&#10;&#10;Try each domino as the end state similar to {CombinationLock} and see what's the min rotation required.">
-      <created>1603114780615</created>
-      <option name="number" value="00418" />
-      <option name="presentableId" value="LOCAL-00418" />
-      <option name="project" value="LOCAL" />
-      <updated>1603114780615</updated>
-    </task>
-    <task id="LOCAL-00419" summary="Add another way of finding whether a string is composed of repeated substrings via concatenating the string and trimming the first and last character and then checking whether the string contains the input string or not.">
-      <created>1603122270576</created>
-      <option name="number" value="00419" />
-      <option name="presentableId" value="LOCAL-00419" />
-      <option name="project" value="LOCAL" />
-      <updated>1603122270576</updated>
-    </task>
     <task id="LOCAL-00420" summary="Solve hard and tricky encode string with shortest length by top down recursion. Need to check whether the string is composed of repeated substrings, if yes, then recur for the pattern that is repeated.&#10;&#10;If no, then make cuts at all places and recur for the prefix and suffix. Check which cut leads to the shortest encoded string.&#10;&#10;Got confused by trying to implement it via stack. It was a very nice problem.">
       <created>1603124795858</created>
       <option name="number" value="00420" />
@@ -511,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604219833078</updated>
     </task>
-    <option name="localTasksCounter" value="467" />
+    <task id="LOCAL-00467" summary="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly.">
+      <created>1604238894584</created>
+      <option name="number" value="00467" />
+      <option name="presentableId" value="LOCAL-00467" />
+      <option name="project" value="LOCAL" />
+      <updated>1604238894584</updated>
+    </task>
+    <task id="LOCAL-00468" summary="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly.">
+      <created>1604238913765</created>
+      <option name="number" value="00468" />
+      <option name="presentableId" value="LOCAL-00468" />
+      <option name="project" value="LOCAL" />
+      <updated>1604238913765</updated>
+    </task>
+    <option name="localTasksCounter" value="469" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update approach in ContainsDuplicate2" />
     <MESSAGE value="Add approach in ContainsDuplicate3" />
     <MESSAGE value="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements" />
     <MESSAGE value="Simplify logic in DistributeNCandiesToKPeople" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve medium and very interesting low level implementation problem, encode a list of strings to a single string that can be decoded to convert into list of strings.&#10;&#10;There are multiple ways to solve this question, use a delimiter outside of input char range, or escape the chosen delimiter if present in the input or use chunked transfer encoding" />
     <MESSAGE value="Solve easy meeting rooms, check whether there is a conflict in the appointment.&#10;&#10;Leveraged prior learnings of MyCalendar1. Can also be done by sorting the entire array and then checking for conflicts." />
     <MESSAGE value="Solve medium but very tricky to optimize sentence screen fitting, fit a sentence into a grid such that a word can't be split across two rows. &#10;&#10;Learnings -- Deal with questions related to finding no of repetitions in a infinitely repeating sequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium but very tricky to optimize sentence screen fitting, fit a sentence into a grid such that a word can't be split across two rows. &#10;&#10;Learnings -- Deal with questions related to finding no of repetitions in a infinitely repeating sequence" />
+    <MESSAGE value="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604219832382">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604238913162">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604219832382" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604238913162" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -683,10 +683,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1604144093103">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1604240167961">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604144093103" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604240167961" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604219834341">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604238940700">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604219834341" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604238940700" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -787,10 +787,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1603284628567">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1604239876261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603284628567" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604239876261" />
     <state width="632" height="189" key="javadoc.popup.new" timestamp="1604236406915">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -803,10 +803,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604236354826" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604234842797">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604240009386">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604234842797" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604240009386" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
