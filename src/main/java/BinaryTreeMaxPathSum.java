@@ -18,7 +18,7 @@ import common.TreeNode;
  * </pre>
  * Output: 42
  */
-public class MaxPathSum {
+public class BinaryTreeMaxPathSum {
     private int maxSum = Integer.MIN_VALUE;
 
     /**

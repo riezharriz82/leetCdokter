@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00427" summary="Solve medium and tricky delete nodes of a binary tree and return the resulting forest. Trick was to understand two cases, &#10;if the current node is a potential root candidate and needs to be deleted, it's children will become potential root candidates.&#10;otherwise if the current node is a root candidate, add it to the resulting forest.">
-      <created>1603284153164</created>
-      <option name="number" value="00427" />
-      <option name="presentableId" value="LOCAL-00427" />
-      <option name="project" value="LOCAL" />
-      <updated>1603284153164</updated>
     </task>
     <task id="LOCAL-00428" summary="Solve medium recursively reverse substrings present between brackets. Similar to stack solution used in DecodeString and NumberOfAtoms.">
       <created>1603285516197</created>
@@ -509,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604347780478</updated>
     </task>
-    <option name="localTasksCounter" value="476" />
+    <task id="LOCAL-00476" summary="Solve easy find average of top 5 scores of each student using counting sort.">
+      <created>1604349401280</created>
+      <option name="number" value="00476" />
+      <option name="presentableId" value="LOCAL-00476" />
+      <option name="project" value="LOCAL" />
+      <updated>1604349401280</updated>
+    </task>
+    <option name="localTasksCounter" value="477" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -586,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another solution in PathSum3 by extending the path from children and starting a new path from current node before returning to parent.&#10;&#10;Learnings -- Paths in a tree can be visualized as subarray problem." />
     <MESSAGE value="Add problem statement and update approach" />
     <MESSAGE value="Add errichto's template of binary search, does not work for finding min element in rotated sorted array containing duplicates." />
     <MESSAGE value="Simplify code and add approach in find no of ways to achieve target sum" />
@@ -611,7 +612,8 @@
     <MESSAGE value="Solve medium sudoku solver using classic backtracking algorithm. Try to place candidates on an emptyIndex and recur for the remaining empty indices. If none of the candidates are safe to place, backtrack and unset a previously placed candidate.&#10;&#10;Care must be taken to properly backtrack all the associated datastructures as there are many in this case." />
     <MESSAGE value="Solve medium partition a binary tree into two subtree with equal sum using two pass algorithm. First find the total sum and then for each parent, check if the child subtree has half the total sum. If yes, cut that edge.&#10;&#10;Care must be taken to disambiguate null nodes vs nodes with val 0" />
     <MESSAGE value="Solve medium tricky problem find longest substring with all unique characters repeating &gt;=k times.&#10;&#10;Sliding window technique is really odd and seems hacky. Recursive solution to create splits at invalid characters makes sense." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium tricky problem find longest substring with all unique characters repeating &gt;=k times.&#10;&#10;Sliding window technique is really odd and seems hacky. Recursive solution to create splits at invalid characters makes sense." />
+    <MESSAGE value="Solve easy find average of top 5 scores of each student using counting sort." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find average of top 5 scores of each student using counting sort." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -669,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604347779668">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604349400580">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604347779668" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604349400580" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -761,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604347781368">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604349402114">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604347781368" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604349402114" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -801,10 +803,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604236354826" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604325462006">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604350794590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604325462006" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604350794590" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
