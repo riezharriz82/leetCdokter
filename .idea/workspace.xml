@@ -95,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SudokuSolver">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="ConcatenatedWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ConcatenatedWords" />
       <module name="leetcode-practice" />
@@ -151,8 +151,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SudokuSolver" />
         <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.SudokuSolver" />
         <item itemvalue="Application.DistinctSubsequences" />
         <item itemvalue="Application.ConcatenatedWords" />
         <item itemvalue="Application.NumberOfAtoms" />
@@ -167,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00425" summary="Solve medium and tricky find the longest file path given the entire contents of the filesystem in a string delimited by \n and \t.&#10;&#10;Trick was to leverage stack to keep track of running path length and assign a given directory to the correct parent directory by popping all directories present at higher level than current directory.&#10;&#10;Happy to solve it on my own albeit the initial code was long due to manual parsing of the entire string.">
-      <created>1603213060745</created>
-      <option name="number" value="00425" />
-      <option name="presentableId" value="LOCAL-00425" />
-      <option name="project" value="LOCAL" />
-      <updated>1603213060745</updated>
     </task>
     <task id="LOCAL-00426" summary="Solve medium find out the final state of asteroids after all collision. Collision can happen if previous asteroid was going right and current is going left. If the current asteroid is bigger, keep popping out asteroids smaller than current asteroid.&#10;&#10;Take care of no collision and empty case.">
       <created>1603283137890</created>
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604261801290</updated>
     </task>
-    <option name="localTasksCounter" value="474" />
+    <task id="LOCAL-00474" summary="Solve medium partition a binary tree into two subtree with equal sum using two pass algorithm. First find the total sum and then for each parent, check if the child subtree has half the total sum. If yes, cut that edge.&#10;&#10;Care must be taken to disambiguate null nodes vs nodes with val 0">
+      <created>1604327792973</created>
+      <option name="number" value="00474" />
+      <option name="presentableId" value="LOCAL-00474" />
+      <option name="project" value="LOCAL" />
+      <updated>1604327792973</updated>
+    </task>
+    <option name="localTasksCounter" value="475" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update variable name in TimeNeededToInformAllEmployees" />
     <MESSAGE value="Add constraints in problem statement" />
     <MESSAGE value="Add another solution in PathSum3 by extending the path from children and starting a new path from current node before returning to parent.&#10;&#10;Learnings -- Paths in a tree can be visualized as subarray problem." />
     <MESSAGE value="Add problem statement and update approach" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve classical hard problem merge k sorted linked list using priority queue" />
     <MESSAGE value="Solve hard problem find the longest substring with balanced '(' and ')' using two pass algorithm.&#10;&#10;First use stack to mark balanced indices, then find the longest subarray with all balanced index.&#10;&#10;Tried to initially solve the question via a lot of approaches, sliding window, prefix sum but it failed.&#10;&#10;This question can also be solved by using DP, care must be taken to carry forward the results which I missed." />
     <MESSAGE value="Solve medium sudoku solver using classic backtracking algorithm. Try to place candidates on an emptyIndex and recur for the remaining empty indices. If none of the candidates are safe to place, backtrack and unset a previously placed candidate.&#10;&#10;Care must be taken to properly backtrack all the associated datastructures as there are many in this case." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium sudoku solver using classic backtracking algorithm. Try to place candidates on an emptyIndex and recur for the remaining empty indices. If none of the candidates are safe to place, backtrack and unset a previously placed candidate.&#10;&#10;Care must be taken to properly backtrack all the associated datastructures as there are many in this case." />
+    <MESSAGE value="Solve medium partition a binary tree into two subtree with equal sum using two pass algorithm. First find the total sum and then for each parent, check if the child subtree has half the total sum. If yes, cut that edge.&#10;&#10;Care must be taken to disambiguate null nodes vs nodes with val 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium partition a binary tree into two subtree with equal sum using two pass algorithm. First find the total sum and then for each parent, check if the child subtree has half the total sum. If yes, cut that edge.&#10;&#10;Care must be taken to disambiguate null nodes vs nodes with val 0" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604261800608">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604327792196">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604261800608" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604327792196" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -691,22 +691,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604261187284">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604347055847">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604261187284" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604261187284">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604347055847" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604347055847">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604261187284" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604261187284">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604347055847" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604347055846">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604261187284" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604261187284">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604347055846" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604347055847">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604261187284" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604347055847" />
     <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1604256096153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -751,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604093348734" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1604256076360">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604343879478">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1604256076360" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1604343879478" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1602604186144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604261802451">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604327793747">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604261802451" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604327793747" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -791,10 +791,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604239876261" />
-    <state width="632" height="189" key="javadoc.popup.new" timestamp="1604256190858">
+    <state width="632" height="189" key="javadoc.popup.new" timestamp="1604343275763">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="189" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604256190858" />
+    <state width="632" height="189" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604343275763" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1604238243461">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
