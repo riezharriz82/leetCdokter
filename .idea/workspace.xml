@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountofSmallerNumbersAfterSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountofSmallerNumbersAfterSelf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00429" summary="Solve medium search in sorted array of unknown size, trick is to find the range in which we can perform binary search.&#10;Keep incrementing the candidate upper bound until value at that index &gt; target or is invalid (out of bounds)">
-      <created>1603455699864</created>
-      <option name="number" value="00429" />
-      <option name="presentableId" value="LOCAL-00429" />
-      <option name="project" value="LOCAL" />
-      <updated>1603455699864</updated>
     </task>
     <task id="LOCAL-00430" summary="Add greedy approach of solving hard split array into m subarrays such that largest sum is maximized. &#10;Need to perform binary search on the largest sum possible for single sized subarray and largest sum possible if we choose the entire array.&#10;Target subarray sum would be somewhere in between.&#10;If our chosen candidate sum results in split &lt; target split, we have to decrease the candidate sum&#10;else increase the candidate sum">
       <created>1603463530567</created>
@@ -512,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604351241880</updated>
     </task>
-    <option name="localTasksCounter" value="478" />
+    <task id="LOCAL-00478" summary="Solve easy but tricky to optimize design a stack that supports popMax() along with usual push() and pop().&#10;&#10;To identify largest value in the stack, we need to use treeMap but in order to delete the largest node in o(1) time, we need a way to directly delete a node. Only DLL supports constant time deletion. So need to model the stack as a DLL.">
+      <created>1604420927191</created>
+      <option name="number" value="00478" />
+      <option name="presentableId" value="LOCAL-00478" />
+      <option name="project" value="LOCAL" />
+      <updated>1604420927192</updated>
+    </task>
+    <option name="localTasksCounter" value="479" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add errichto's template of binary search, does not work for finding min element in rotated sorted array containing duplicates." />
     <MESSAGE value="Simplify code and add approach in find no of ways to achieve target sum" />
     <MESSAGE value="Add clarifications/gotcha in generation of ugly numbers" />
     <MESSAGE value="Solve medium find the start of the cycle in linked list using warshall floyd algorithm" />
@@ -614,7 +612,8 @@
     <MESSAGE value="Solve medium tricky problem find longest substring with all unique characters repeating &gt;=k times.&#10;&#10;Sliding window technique is really odd and seems hacky. Recursive solution to create splits at invalid characters makes sense." />
     <MESSAGE value="Solve easy find average of top 5 scores of each student using counting sort." />
     <MESSAGE value="Rename file to match problem statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename file to match problem statement" />
+    <MESSAGE value="Solve easy but tricky to optimize design a stack that supports popMax() along with usual push() and pop().&#10;&#10;To identify largest value in the stack, we need to use treeMap but in order to delete the largest node in o(1) time, we need a way to directly delete a node. Only DLL supports constant time deletion. So need to model the stack as a DLL." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy but tricky to optimize design a stack that supports popMax() along with usual push() and pop().&#10;&#10;To identify largest value in the stack, we need to use treeMap but in order to delete the largest node in o(1) time, we need a way to directly delete a node. Only DLL supports constant time deletion. So need to model the stack as a DLL." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604351241273">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604420926481">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604351241273" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604420926481" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604351243002">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604420929052">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604351243002" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604420929052" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +803,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604417364473" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604420335305">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604427351579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604420335305" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604427351579" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
