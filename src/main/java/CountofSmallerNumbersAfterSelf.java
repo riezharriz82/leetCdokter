@@ -17,17 +17,18 @@ import java.util.List;
  * To the right of 6 there is 1 smaller element (1).
  * To the right of 1 there is 0 smaller element.
  */
-class Node {
-    public int idx;
-    public int val;
-
-    public Node(int idx, int val) {
-        this.idx = idx;
-        this.val = val;
-    }
-}
 
 public class CountofSmallerNumbersAfterSelf {
+    private class Node {
+        public int idx;
+        public int val;
+
+        public Node(int idx, int val) {
+            this.idx = idx;
+            this.val = val;
+        }
+    }
+
     /**
      * Approach: Use merge sort for problems that look for pairs (i,j) such that i < j and nums[i], nums[j] satisfy some constraint
      * The complicated part is the merge portion of the mergesort
