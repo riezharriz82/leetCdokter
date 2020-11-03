@@ -1,8 +1,3 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 /**
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  * <p>
@@ -20,41 +15,24 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
     /**
      * Sliding window problem. Time Complexity O(2*n)
-     * Increase the window size if no repeating character found, decrease the window size if repeating character found
-     * {@link FindAllAnagramInString} for similar problem
-     * <p>
-     * An optimization to the problem would be to set the begin pointer directly after the first occurrence of the duplicate character (if i is behind that index)
-     * eg. abba
-     * so that we don't move the begin pointer one by one
+     * Increase the window size if adding the character at the end does not introduce a repeating character, otherwise keep shrinking the
+     * window until this character can be added
+     * {@link FindAllAnagramInString} {@link LongestSubstringWithAtMostKDistinctCharacters} for related problem
      */
-    public int lengthOfLongestSubstring(String s) {
-        Set<Character> set = new HashSet<>();
-        int begin = 0, end = 0, res = 0;
+    public int lengthOfLongestSubstringSlidingWindow(String s) {
+        int begin = 0, end = 0, result = 0;
+        int[] cnt = new int[256];
         while (end < s.length()) {
-            char windowLastChar = s.charAt(end);
-            if (!set.contains(windowLastChar)) {
-                set.add(windowLastChar);
-                res = Math.max(res, end - begin + 1);
-                end++;
-            } else {
-                char windowFirstChar = s.charAt(begin);
-                set.remove(windowFirstChar);
+            char last = s.charAt(end);
+            cnt[last]++;
+            while (cnt[last] > 1) { //if this character is already present in the window, keep shrinking the window until it's possible to add this character
+                char first = s.charAt(begin);
+                cnt[first]--;
                 begin++;
             }
+            result = Math.max(result, end - begin + 1);
+            end++;
         }
-        return res;
-    }
-
-    public int lengthOfLongestSubstringOptimized(String s) {
-        int n = s.length(), ans = 0;
-        Map<Character, Integer> map = new HashMap<>(); // current index of character
-        for (int j = 0, i = 0; j < n; j++) {
-            if (map.containsKey(s.charAt(j))) {
-                i = Math.max(map.get(s.charAt(j)), i); //max is required so that we don't decrement i to a smaller value
-            }
-            ans = Math.max(ans, j - i + 1);
-            map.put(s.charAt(j), j + 1);
-        }
-        return ans;
+        return result;
     }
 }
