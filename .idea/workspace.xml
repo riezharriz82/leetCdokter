@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TwoCityScheduling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TwoCityScheduling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/NumberOfDistinctIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfDistinctIslands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +82,8 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="alternate" />
       <recent name="" />
+      <recent name="alternate" />
       <recent name="common" />
     </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
@@ -168,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00436" summary="Update example input and and gotcha in CourseSchedule2">
-      <created>1603541652155</created>
-      <option name="number" value="00436" />
-      <option name="presentableId" value="LOCAL-00436" />
-      <option name="project" value="LOCAL" />
-      <updated>1603541652155</updated>
     </task>
     <task id="LOCAL-00437" summary="Add comment in ChangeOnlyOneElementToSortArray">
       <created>1603543518259</created>
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604601809171</updated>
     </task>
-    <option name="localTasksCounter" value="485" />
+    <task id="LOCAL-00485" summary="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier">
+      <created>1604606153392</created>
+      <option name="number" value="00485" />
+      <option name="presentableId" value="LOCAL-00485" />
+      <option name="project" value="LOCAL" />
+      <updated>1604606153392</updated>
+    </task>
+    <option name="localTasksCounter" value="486" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky find whether a word is entirely composed of two or more words from dictionary. Similar to previously solved WordBreak1 but gives TLE for me somehow.&#10;&#10;Solved it using Trie to quickly find whether the current prefix is valid prefix or not. Important to sort the words because a word can only be made from shorter words." />
     <MESSAGE value="Solve medium and tricky find number of longest increasing subsequences. Need to store the count of LIS ending at any index, while updating the length of LIS at current index, reset or increment the count depending upon the current length.&#10;&#10;If current length &gt; currently stored length, reset the count, else if current length == currently stored length, increment the count" />
     <MESSAGE value="Solve medium find length of the longest consecutive sequence in a binary tree by passing information to the child.&#10;&#10;Child needs to know what is the length of the consecutive sequence present at parent and decide whether it can extend it or not." />
     <MESSAGE value="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve hard find longest substring containing at most k distinct characters using sliding window.&#10;&#10;Keep track of the distinct chars in the current window, if it exceeds k, continue to shrink the window from the left, until it becomes valid again." />
     <MESSAGE value="Solve easy but tricky greedy problem, given the initial position of the chips, find the min cost to move them to the same position. &#10;&#10;Min cost can be found if one of the initial state is chosen as the end state, so choose all of the initial position  as the target position and find the total cost to bring remaining chips to it's position.&#10;&#10;This n^2 pattern seems to be pretty common. Can be done in linear time but ...." />
     <MESSAGE value="Solve medium and tricky find nodes that can reach both pacific and atlantic ocean by doing DFS from the oceans and not from the inner nodes.&#10;&#10;Finally I was able to understand why doing DFS in SurroundedRegions from inner nodes resulted in WA -- due to circular dependency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find nodes that can reach both pacific and atlantic ocean by doing DFS from the oceans and not from the inner nodes.&#10;&#10;Finally I was able to understand why doing DFS in SurroundedRegions from inner nodes resulted in WA -- due to circular dependency." />
+    <MESSAGE value="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -652,10 +652,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="820" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609083441" />
-    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603035926121">
+    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604606328118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1603035926121" />
+    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1604606328118" />
     <state x="743" y="369" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1597609092731">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604601808656">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604606152814">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604601808656" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604606152814" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -768,10 +768,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604601810463">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604606155128">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604601810463" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604606155128" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -808,10 +808,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604417364473" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604518031385">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604606314993">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604518031385" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604606314993" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
