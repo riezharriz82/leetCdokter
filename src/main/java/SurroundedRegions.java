@@ -31,7 +31,12 @@ public class SurroundedRegions {
      * In my initial solution, I tried to do DFS from inner nodes and checked whether it can reach a 'O' node present in the border.
      * If that node is surrounded, mark that node and it's adjacent nodes as 'X' in another DFS.
      * However after creating a visited array to avoid checking the nodes again, solution gave WA.
-     * My possible hypothesis is that a valid inner node was not able to reach a border node because it's adjacent nodes were marked as visited and the DFS stopped
+     * It's because of circular dependency i.e. try to solve {@link PacificAtlanticWaterFlow} using this approach for the sample input
+     * You will then find that the if a valid path is from 4 -> 4 so first 4 asks the other 4, can you reach the border
+     * it says no, it marks that the other 4 can't reach border.
+     * However other 4 could have reached border if it had went through the first 4.
+     * But first 4 is already visited so it can't visit it again.
+     * Too much fun !!
      * <p>
      * It can be simplified if we do a DFS from the reverse i.e start from border nodes and mark all the nodes that are connected to it.
      * Theory is same between the two approaches but the implementation is far easier.

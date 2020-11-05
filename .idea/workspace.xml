@@ -10,6 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SurroundedRegions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SurroundedRegions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00434" summary="Solve medium find first and last position of element in sorted array using two binary searches">
-      <created>1603487914119</created>
-      <option name="number" value="00434" />
-      <option name="presentableId" value="LOCAL-00434" />
-      <option name="project" value="LOCAL" />
-      <updated>1603487914119</updated>
     </task>
     <task id="LOCAL-00435" summary="Solve medium but easy find left most column with at least a one given a row sorted binary matrix containing 0 and 1.&#10;&#10;Performed binary search on each row to find the left most index of 1 and keep updating the global minima.&#10;&#10;Can also be done in linear time. Kinda forgot to think about it as I was on a roll doing binary search questions.">
       <created>1603489585867</created>
@@ -511,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604433223632</updated>
     </task>
-    <option name="localTasksCounter" value="483" />
+    <task id="LOCAL-00483" summary="Solve easy but tricky greedy problem, given the initial position of the chips, find the min cost to move them to the same position. &#10;&#10;Min cost can be found if one of the initial state is chosen as the end state, so choose all of the initial position  as the target position and find the total cost to bring remaining chips to it's position.&#10;&#10;This n^2 pattern seems to be pretty common. Can be done in linear time but ....">
+      <created>1604600575534</created>
+      <option name="number" value="00483" />
+      <option name="presentableId" value="LOCAL-00483" />
+      <option name="project" value="LOCAL" />
+      <updated>1604600575534</updated>
+    </task>
+    <option name="localTasksCounter" value="484" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky find the kth sorted permutation of the given input array using greedy + maths.&#10;&#10;Backtracking solution is trivial and requires generating all k permutations of the input array. &#10;&#10;Greedy solution fixes one digit at a time of the result; by figuring out how many permutations does a digit can generate if it's the first digit of the permutation. We recursively fix one digit and are left with n-1 digits." />
     <MESSAGE value="Solve easy find whether any permutation of the input string can be a palindrome or not by checking the count of characters with odd frequency." />
     <MESSAGE value="Solve hard and tricky find whether a word is entirely composed of two or more words from dictionary. Similar to previously solved WordBreak1 but gives TLE for me somehow.&#10;&#10;Solved it using Trie to quickly find whether the current prefix is valid prefix or not. Important to sort the words because a word can only be made from shorter words." />
     <MESSAGE value="Solve medium and tricky find number of longest increasing subsequences. Need to store the count of LIS ending at any index, while updating the length of LIS at current index, reset or increment the count depending upon the current length.&#10;&#10;If current length &gt; currently stored length, reset the count, else if current length == currently stored length, increment the count" />
@@ -613,7 +613,8 @@
     <MESSAGE value="Solve medium find the longest subarray that can be transformed to all 1's in &lt;= k operations (0 can be transformed to 1 in one operation)&#10;&#10;Problem reduces to finding the longest subarray with num zeroes &lt;= k, use the standard sliding window paradigm for implementation." />
     <MESSAGE value="Simplify code by rewriting it to standard sliding window paradigm, keep increasing the window until it becomes invalid, then keep shrinking the window until it becomes valid again." />
     <MESSAGE value="Solve hard find longest substring containing at most k distinct characters using sliding window.&#10;&#10;Keep track of the distinct chars in the current window, if it exceeds k, continue to shrink the window from the left, until it becomes valid again." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find longest substring containing at most k distinct characters using sliding window.&#10;&#10;Keep track of the distinct chars in the current window, if it exceeds k, continue to shrink the window from the left, until it becomes valid again." />
+    <MESSAGE value="Solve easy but tricky greedy problem, given the initial position of the chips, find the min cost to move them to the same position. &#10;&#10;Min cost can be found if one of the initial state is chosen as the end state, so choose all of the initial position  as the target position and find the total cost to bring remaining chips to it's position.&#10;&#10;This n^2 pattern seems to be pretty common. Can be done in linear time but ...." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy but tricky greedy problem, given the initial position of the chips, find the min cost to move them to the same position. &#10;&#10;Min cost can be found if one of the initial state is chosen as the end state, so choose all of the initial position  as the target position and find the total cost to bring remaining chips to it's position.&#10;&#10;This n^2 pattern seems to be pretty common. Can be done in linear time but ...." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604433223078">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604600574856">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604433223078" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604600574856" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -767,10 +768,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604433227547">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604600576529">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604433227547" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604600576529" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
