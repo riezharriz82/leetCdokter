@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,20 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00432" summary="Solve hard and tricky divide a array into m subarrays such that minimum sum of all subarrays is maximized. &#10;&#10;It can be solved using DP but due to strict bounds, it times out. Need to use the tricky greedy approach used in SplitArrayLargestSum.&#10;&#10;Pick a target subarray sum that should be the minimum subarray sum, check how many chunks can be formed from the input array. If there are fewer chunks than required, need to reduce target sum otherwise increase target sum.&#10;&#10;Visualize the transformation as prefix of T/F as errichto mentioned in his lecture.">
-      <created>1603485573281</created>
-      <option name="number" value="00432" />
-      <option name="presentableId" value="LOCAL-00432" />
-      <option name="project" value="LOCAL" />
-      <updated>1603485573281</updated>
-    </task>
-    <task id="LOCAL-00433" summary="Solve easy find the first index with value &gt;= target value using binary search.&#10;&#10;Used learnings shared by errichto for setting the answer to a value that needs to be returned if no element satisfies the given condition.">
-      <created>1603486391073</created>
-      <option name="number" value="00433" />
-      <option name="presentableId" value="LOCAL-00433" />
-      <option name="project" value="LOCAL" />
-      <updated>1603486391073</updated>
     </task>
     <task id="LOCAL-00434" summary="Solve medium find first and last position of element in sorted array using two binary searches">
       <created>1603487914119</created>
@@ -512,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604430244789</updated>
     </task>
-    <option name="localTasksCounter" value="481" />
+    <task id="LOCAL-00481" summary="Simplify code by rewriting it to standard sliding window paradigm, keep increasing the window until it becomes invalid, then keep shrinking the window until it becomes valid again.">
+      <created>1604433084320</created>
+      <option name="number" value="00481" />
+      <option name="presentableId" value="LOCAL-00481" />
+      <option name="project" value="LOCAL" />
+      <updated>1604433084320</updated>
+    </task>
+    <task id="LOCAL-00482" summary="Solve hard find longest substring containing at most k distinct characters using sliding window.&#10;&#10;Keep track of the distinct chars in the current window, if it exceeds k, continue to shrink the window from the left, until it becomes valid again.">
+      <created>1604433223632</created>
+      <option name="number" value="00482" />
+      <option name="presentableId" value="LOCAL-00482" />
+      <option name="project" value="LOCAL" />
+      <updated>1604433223632</updated>
+    </task>
+    <option name="localTasksCounter" value="483" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,8 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the start of the cycle in linked list using warshall floyd algorithm" />
-    <MESSAGE value="Solve medium find all possible partitions of a string such that each partition is a palindrome by backtracking. &#10;&#10;Important to understand the time complexity of this solution, there can be maximum n-1 cuts and each cut can either be picked or be skipped, so total is 2^(n-1)" />
     <MESSAGE value="Solve hard and tricky find the kth sorted permutation of the given input array using greedy + maths.&#10;&#10;Backtracking solution is trivial and requires generating all k permutations of the input array. &#10;&#10;Greedy solution fixes one digit at a time of the result; by figuring out how many permutations does a digit can generate if it's the first digit of the permutation. We recursively fix one digit and are left with n-1 digits." />
     <MESSAGE value="Solve easy find whether any permutation of the input string can be a palindrome or not by checking the count of characters with odd frequency." />
     <MESSAGE value="Solve hard and tricky find whether a word is entirely composed of two or more words from dictionary. Similar to previously solved WordBreak1 but gives TLE for me somehow.&#10;&#10;Solved it using Trie to quickly find whether the current prefix is valid prefix or not. Important to sort the words because a word can only be made from shorter words." />
@@ -614,7 +611,9 @@
     <MESSAGE value="Solve easy but tricky to optimize design a stack that supports popMax() along with usual push() and pop().&#10;&#10;To identify largest value in the stack, we need to use treeMap but in order to delete the largest node in o(1) time, we need a way to directly delete a node. Only DLL supports constant time deletion. So need to model the stack as a DLL." />
     <MESSAGE value="Solve medium and tricky find the longest substring such that the all characters of the substring can be made equal in &lt;= k operations&#10;&#10;First identify whats the min no of operations required to make all characters same, then use sliding window to find longest such window.&#10;&#10;Learnings -- Longest window vs shortest window -- sliding window implementation is different in both the cases. In former, you keep expanding until window becomes invalid, then you start shrinking until it's valid.&#10;In latter, you expand until you find a valid window, then you start shrinking until it becomes invalid." />
     <MESSAGE value="Solve medium find the longest subarray that can be transformed to all 1's in &lt;= k operations (0 can be transformed to 1 in one operation)&#10;&#10;Problem reduces to finding the longest subarray with num zeroes &lt;= k, use the standard sliding window paradigm for implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the longest subarray that can be transformed to all 1's in &lt;= k operations (0 can be transformed to 1 in one operation)&#10;&#10;Problem reduces to finding the longest subarray with num zeroes &lt;= k, use the standard sliding window paradigm for implementation." />
+    <MESSAGE value="Simplify code by rewriting it to standard sliding window paradigm, keep increasing the window until it becomes invalid, then keep shrinking the window until it becomes valid again." />
+    <MESSAGE value="Solve hard find longest substring containing at most k distinct characters using sliding window.&#10;&#10;Keep track of the distinct chars in the current window, if it exceeds k, continue to shrink the window from the left, until it becomes valid again." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find longest substring containing at most k distinct characters using sliding window.&#10;&#10;Keep track of the distinct chars in the current window, if it exceeds k, continue to shrink the window from the left, until it becomes valid again." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604430244267">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604433223078">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604430244267" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604433223078" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -688,26 +687,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604240167961" />
+    <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="969" y="325" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604517634549" />
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604347055847">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604435428512">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604347055847" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604347055847">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604435428512" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604435428511">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604347055847" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604347055846">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604435428511" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604435428511">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604347055846" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604347055847">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604435428511" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604435428511">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604347055847" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604435428511" />
     <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1604256096153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -748,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604217553251" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1604420337760">
+    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1604434978061">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604420337760" />
+    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1604343879478">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604430245722">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604433227547">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604430245722" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604433227547" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -788,26 +791,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599589184838" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1604351184818">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1604517641710">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604351184818" />
-    <state width="632" height="189" key="javadoc.popup.new" timestamp="1604416046239">
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604517641710" />
+    <state width="725" height="456" key="javadoc.popup.new" timestamp="1604435116999">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="632" height="189" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604416046239" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1604238243461">
+    <state width="725" height="456" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604435116999" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1604514241434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604238243461" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604514241434" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1604417364473">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604417364473" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604432085058">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604518031385">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604432085058" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604518031385" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
