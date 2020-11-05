@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * https://leetcode.com/problems/two-city-scheduling/
@@ -22,6 +23,39 @@ import java.util.Arrays;
  * The total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interviewing in each city.
  */
 public class TwoCityScheduling {
+    /**
+     * Approach: Similar to knapsack problem, every person has two options, go to city a or city b
+     * In knapsack the constraint is weight, here the constraint is count of people in either of the city
+     */
+    public int twoCitySchedCostRecursive(int[][] costs) {
+        HashMap<String, Integer> memoized = new HashMap<>();
+        return recur(costs, 0, 0, 0, memoized);
+    }
+
+    private int recur(int[][] costs, int index, int a_count, int b_count, HashMap<String, Integer> memoized) {
+        if (index == costs.length) {
+            return 0;
+        }
+        String key = index + ":" + a_count + ":" + b_count;
+        if (memoized.containsKey(key)) {
+            return memoized.get(key);
+        }
+        int goToCityA = Integer.MAX_VALUE, goToCityB = Integer.MAX_VALUE;
+        if (a_count < costs.length / 2) { //if it's possible to send this person to city a
+            goToCityA = costs[index][0] + recur(costs, index + 1, a_count + 1, b_count, memoized);
+        }
+        if (b_count < costs.length / 2) { //if it's possible to send this person to city b
+            goToCityB = costs[index][1] + recur(costs, index + 1, a_count, b_count + 1, memoized);
+        }
+        int result = Math.min(goToCityA, goToCityB);
+        memoized.put(key, result);
+        return result;
+    }
+
+    /**
+     * Approach: Greedy, first send all of the people to city a, then see which people can get the highest refund if sent to city b
+     * Send top half of the people sorted by refund to city b
+     */
     public int twoCitySchedCost(int[][] costs) {
         //send all the people to city A
         int cost = 0;
