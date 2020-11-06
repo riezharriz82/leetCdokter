@@ -9,7 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraphValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphValidTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00439" summary="Add top down recursion approach in HouseRobber">
-      <created>1603622417147</created>
-      <option name="number" value="00439" />
-      <option name="presentableId" value="LOCAL-00439" />
-      <option name="project" value="LOCAL" />
-      <updated>1603622417147</updated>
     </task>
     <task id="LOCAL-00440" summary="Add comment in FindTwoNonOverlappingSubarrayWithTargetSum">
       <created>1603623471645</created>
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604650147190</updated>
     </task>
-    <option name="localTasksCounter" value="488" />
+    <task id="LOCAL-00488" summary="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation.">
+      <created>1604650298692</created>
+      <option name="number" value="00488" />
+      <option name="presentableId" value="LOCAL-00488" />
+      <option name="project" value="LOCAL" />
+      <updated>1604650298692</updated>
+    </task>
+    <option name="localTasksCounter" value="489" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -671,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604650146596">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604650298109">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604650146596" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604650298109" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -767,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604650150718">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604650303035">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604650150718" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604650303035" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -807,10 +807,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604417364473" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604612623802">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604651607822">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604612623802" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604651607822" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
