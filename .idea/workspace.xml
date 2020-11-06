@@ -9,8 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/NumberOfDistinctIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfDistinctIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphValidTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,20 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00437" summary="Add comment in ChangeOnlyOneElementToSortArray">
-      <created>1603543518259</created>
-      <option name="number" value="00437" />
-      <option name="presentableId" value="LOCAL-00437" />
-      <option name="project" value="LOCAL" />
-      <updated>1603543518259</updated>
-    </task>
-    <task id="LOCAL-00438" summary="Update comment in MaximumSumOfTwoNonOverlappingSubarraysOfSpecificSize">
-      <created>1603621722614</created>
-      <option name="number" value="00438" />
-      <option name="presentableId" value="LOCAL-00438" />
-      <option name="project" value="LOCAL" />
-      <updated>1603621722615</updated>
     </task>
     <task id="LOCAL-00439" summary="Add top down recursion approach in HouseRobber">
       <created>1603622417147</created>
@@ -512,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604606153392</updated>
     </task>
-    <option name="localTasksCounter" value="486" />
+    <task id="LOCAL-00486" summary="Actually solve find the number of distinct islands shapes by storing the relative indices of current island path i.e. when doing a DFS add the relative index of the current node to curPath (relative from starting point of the DFS)&#10;&#10;Using relative index will help in finding similar shapes">
+      <created>1604608031859</created>
+      <option name="number" value="00486" />
+      <option name="presentableId" value="LOCAL-00486" />
+      <option name="project" value="LOCAL" />
+      <updated>1604608031859</updated>
+    </task>
+    <task id="LOCAL-00487" summary="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation.">
+      <created>1604650147190</created>
+      <option name="number" value="00487" />
+      <option name="presentableId" value="LOCAL-00487" />
+      <option name="project" value="LOCAL" />
+      <updated>1604650147190</updated>
+    </task>
+    <option name="localTasksCounter" value="488" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,8 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky find number of longest increasing subsequences. Need to store the count of LIS ending at any index, while updating the length of LIS at current index, reset or increment the count depending upon the current length.&#10;&#10;If current length &gt; currently stored length, reset the count, else if current length == currently stored length, increment the count" />
-    <MESSAGE value="Solve medium find length of the longest consecutive sequence in a binary tree by passing information to the child.&#10;&#10;Child needs to know what is the length of the consecutive sequence present at parent and decide whether it can extend it or not." />
     <MESSAGE value="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path." />
     <MESSAGE value="Solve hard and a bit tricky to reduce time complexity, find two nodes whose values are swapped in a bst.&#10;&#10;This is similar to finding two elements in nearly sorted array that have been swapped. It's a classical problem that can be done in linear time without sorting the entire input using two pointers" />
     <MESSAGE value="Solve medium and very interesting low level implementation problem, encode a list of strings to a single string that can be decoded to convert into list of strings.&#10;&#10;There are multiple ways to solve this question, use a delimiter outside of input char range, or escape the chosen delimiter if present in the input or use chunked transfer encoding" />
@@ -614,7 +611,9 @@
     <MESSAGE value="Solve easy but tricky greedy problem, given the initial position of the chips, find the min cost to move them to the same position. &#10;&#10;Min cost can be found if one of the initial state is chosen as the end state, so choose all of the initial position  as the target position and find the total cost to bring remaining chips to it's position.&#10;&#10;This n^2 pattern seems to be pretty common. Can be done in linear time but ...." />
     <MESSAGE value="Solve medium and tricky find nodes that can reach both pacific and atlantic ocean by doing DFS from the oceans and not from the inner nodes.&#10;&#10;Finally I was able to understand why doing DFS in SurroundedRegions from inner nodes resulted in WA -- due to circular dependency." />
     <MESSAGE value="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier" />
+    <MESSAGE value="Actually solve find the number of distinct islands shapes by storing the relative indices of current island path i.e. when doing a DFS add the relative index of the current node to curPath (relative from starting point of the DFS)&#10;&#10;Using relative index will help in finding similar shapes" />
+    <MESSAGE value="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604606152814">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604650146596">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604606152814" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604650146596" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -696,22 +695,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604435428512">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604609397206">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604435428512" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604435428511">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604609397206" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604609397206">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604435428511" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604435428511">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604609397206" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604609397206">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604435428511" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604435428511">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604609397206" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604609397206">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604435428511" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604609397206" />
     <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1604256096153">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -768,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604606155128">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604650150718">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604606155128" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604650150718" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -796,10 +795,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604517641710" />
-    <state width="725" height="64" key="javadoc.popup.new" timestamp="1604605656200">
+    <state width="750" height="373" key="javadoc.popup.new" timestamp="1604609243505">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="725" height="64" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604605656200" />
+    <state width="750" height="373" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604609243505" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1604605606481">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -808,10 +807,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604417364473" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604606314993">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604612623802">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604606314993" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604612623802" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
