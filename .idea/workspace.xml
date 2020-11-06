@@ -168,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00441" summary="Update comment in MinDeletionCostToAvoidRepeatingLetters">
-      <created>1603628676043</created>
-      <option name="number" value="00441" />
-      <option name="presentableId" value="LOCAL-00441" />
-      <option name="project" value="LOCAL" />
-      <updated>1603628676043</updated>
-    </task>
     <task id="LOCAL-00442" summary="Update approach in ContainsDuplicate2">
       <created>1603630446436</created>
       <option name="number" value="00442" />
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604651747551</updated>
     </task>
-    <option name="localTasksCounter" value="490" />
+    <task id="LOCAL-00490" summary="Solve medium clone a graph by DFS + keeping a mapping of source node to cloned node, in order to resolve cycles.">
+      <created>1604658411110</created>
+      <option name="number" value="00490" />
+      <option name="presentableId" value="LOCAL-00490" />
+      <option name="project" value="LOCAL" />
+      <updated>1604658411111</updated>
+    </task>
+    <option name="localTasksCounter" value="491" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and a bit tricky to reduce time complexity, find two nodes whose values are swapped in a bst.&#10;&#10;This is similar to finding two elements in nearly sorted array that have been swapped. It's a classical problem that can be done in linear time without sorting the entire input using two pointers" />
     <MESSAGE value="Solve medium and very interesting low level implementation problem, encode a list of strings to a single string that can be decoded to convert into list of strings.&#10;&#10;There are multiple ways to solve this question, use a delimiter outside of input char range, or escape the chosen delimiter if present in the input or use chunked transfer encoding" />
     <MESSAGE value="Solve easy meeting rooms, check whether there is a conflict in the appointment.&#10;&#10;Leveraged prior learnings of MyCalendar1. Can also be done by sorting the entire array and then checking for conflicts." />
     <MESSAGE value="Solve medium but very tricky to optimize sentence screen fitting, fit a sentence into a grid such that a word can't be split across two rows. &#10;&#10;Learnings -- Deal with questions related to finding no of repetitions in a infinitely repeating sequence" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Actually solve find the number of distinct islands shapes by storing the relative indices of current island path i.e. when doing a DFS add the relative index of the current node to curPath (relative from starting point of the DFS)&#10;&#10;Using relative index will help in finding similar shapes" />
     <MESSAGE value="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation." />
     <MESSAGE value="Solve medium find number of connected connected in a graph using union find algorithm.&#10;Similar to previously solved NumberOfIslands, can also be done using DFS." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find number of connected connected in a graph using union find algorithm.&#10;Similar to previously solved NumberOfIslands, can also be done using DFS." />
+    <MESSAGE value="Solve medium clone a graph by DFS + keeping a mapping of source node to cloned node, in order to resolve cycles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium clone a graph by DFS + keeping a mapping of source node to cloned node, in order to resolve cycles." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604651747002">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604658410603">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604651747002" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604658410603" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -807,10 +807,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604417364473" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604657993574">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604671930947">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604657993574" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604671930947" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
