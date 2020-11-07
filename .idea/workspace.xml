@@ -168,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00444" summary="Add alternate approach of pushing numbers instead of indices in SlidingWindowMaximum and add comment on how does it handles duplicate elements">
-      <created>1603638617355</created>
-      <option name="number" value="00444" />
-      <option name="presentableId" value="LOCAL-00444" />
-      <option name="project" value="LOCAL" />
-      <updated>1603638617355</updated>
-    </task>
     <task id="LOCAL-00445" summary="Simplify logic in DistributeNCandiesToKPeople">
       <created>1603644571203</created>
       <option name="number" value="00445" />
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604754810431</updated>
     </task>
-    <option name="localTasksCounter" value="493" />
+    <task id="LOCAL-00493" summary="Solve hard find the max cherries two robots can pick if one starts at top left and another starts at top right. Target state is the last row.&#10;&#10;Similar to CherryPickup. Move both the robots simultaneously. There are 9 possible next states. Take care of the double counting if both of them are at the same cell.">
+      <created>1604757878419</created>
+      <option name="number" value="00493" />
+      <option name="presentableId" value="LOCAL-00493" />
+      <option name="project" value="LOCAL" />
+      <updated>1604757878419</updated>
+    </task>
+    <option name="localTasksCounter" value="494" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium but very tricky to optimize sentence screen fitting, fit a sentence into a grid such that a word can't be split across two rows. &#10;&#10;Learnings -- Deal with questions related to finding no of repetitions in a infinitely repeating sequence" />
     <MESSAGE value="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly." />
     <MESSAGE value="Simplify treeMap solution by directly adding element to the map if map is empty." />
     <MESSAGE value="Simplify code by removing complicated initial code and add approach in find maximum width of a binary tree" />
@@ -613,7 +612,8 @@
     <MESSAGE value="Solve medium clone a graph by DFS + keeping a mapping of source node to cloned node, in order to resolve cycles." />
     <MESSAGE value="Solve hard find a possible ordering of words given a lexicographically sorted alien dictionary by creating a graph and performing topological sort to detect cycles and ordering among words&#10;&#10;Care must be taken to handle characters that are present but whose ordering cant be determined {&quot;abc&quot;, &quot;abcd&quot;}&#10;&#10;Learnings -- Took me a while to understand that letters in a word are not sorted only the words are sorted. Then there were ambiguity related to handling words that are present but have no specific ordering. Should have thought about that case." />
     <MESSAGE value="Solve hard and extremely tricky pick max no of cherries in a grid from start to end and back from end to start.&#10;&#10;I started this problem with DP approach of finding the max cherries that can be picked up in the first cycle and then repeat the process in next cycle. However I found out that it gave WA for certain cases because DP in the first cycle acts as a greedy solution and provides local maxima and not the global maxima.&#10;&#10;The trick to solve the problem is to perform recursion, i.e. consider two persons walking from start to end simultaneously and get the max result from 4 states. (right, right), (right, down), (down, right), (down, down)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky pick max no of cherries in a grid from start to end and back from end to start.&#10;&#10;I started this problem with DP approach of finding the max cherries that can be picked up in the first cycle and then repeat the process in next cycle. However I found out that it gave WA for certain cases because DP in the first cycle acts as a greedy solution and provides local maxima and not the global maxima.&#10;&#10;The trick to solve the problem is to perform recursion, i.e. consider two persons walking from start to end simultaneously and get the max result from 4 states. (right, right), (right, down), (down, right), (down, down)" />
+    <MESSAGE value="Solve hard find the max cherries two robots can pick if one starts at top left and another starts at top right. Target state is the last row.&#10;&#10;Similar to CherryPickup. Move both the robots simultaneously. There are 9 possible next states. Take care of the double counting if both of them are at the same cell." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find the max cherries two robots can pick if one starts at top left and another starts at top right. Target state is the last row.&#10;&#10;Similar to CherryPickup. Move both the robots simultaneously. There are 9 possible next states. Take care of the double counting if both of them are at the same cell." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604754809782">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604757877876">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604754809782" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604757877876" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -767,10 +767,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604754811373">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604757879521">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604754811373" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604757879521" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -795,10 +795,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604517641710" />
-    <state width="750" height="373" key="javadoc.popup.new" timestamp="1604609243505">
+    <state width="750" height="250" key="javadoc.popup.new" timestamp="1604767283623">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="373" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604609243505" />
+    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604767283623" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1604756951351">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
