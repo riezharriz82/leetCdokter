@@ -11,7 +11,6 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PowerSet2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Subsets2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Subsets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00450" summary="Add another solution in PathSum3 by extending the path from children and starting a new path from current node before returning to parent.&#10;&#10;Learnings -- Paths in a tree can be visualized as subarray problem.">
-      <created>1603706019107</created>
-      <option name="number" value="00450" />
-      <option name="presentableId" value="LOCAL-00450" />
-      <option name="project" value="LOCAL" />
-      <updated>1603706019107</updated>
     </task>
     <task id="LOCAL-00451" summary="Add problem statement and update approach">
       <created>1603708186462</created>
@@ -513,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604842346903</updated>
     </task>
-    <option name="localTasksCounter" value="499" />
+    <task id="LOCAL-00499" summary="Add comment regarding another way of generating all the subsets by leveraging binary numbers">
+      <created>1604843955492</created>
+      <option name="number" value="00499" />
+      <option name="presentableId" value="LOCAL-00499" />
+      <option name="project" value="LOCAL" />
+      <updated>1604843955492</updated>
+    </task>
+    <option name="localTasksCounter" value="500" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium sudoku solver using classic backtracking algorithm. Try to place candidates on an emptyIndex and recur for the remaining empty indices. If none of the candidates are safe to place, backtrack and unset a previously placed candidate.&#10;&#10;Care must be taken to properly backtrack all the associated datastructures as there are many in this case." />
     <MESSAGE value="Solve medium partition a binary tree into two subtree with equal sum using two pass algorithm. First find the total sum and then for each parent, check if the child subtree has half the total sum. If yes, cut that edge.&#10;&#10;Care must be taken to disambiguate null nodes vs nodes with val 0" />
     <MESSAGE value="Solve medium tricky problem find longest substring with all unique characters repeating &gt;=k times.&#10;&#10;Sliding window technique is really odd and seems hacky. Recursive solution to create splits at invalid characters makes sense." />
     <MESSAGE value="Solve easy find average of top 5 scores of each student using counting sort." />
@@ -615,7 +613,8 @@
     <MESSAGE value="Solve medium flipGame2, game theory problem, need to return whether the current player can win or lose. &#10;&#10;Learnings -- Simulating a game is creating a tree, generate next states possible from current state, those are the children of tree. &#10;Take care of the return value to signal victory/loss of current player." />
     <MESSAGE value="Solve easy find sum of two numbers &lt; k in an unsorted array by sorting and applying two pointer algorithm.&#10;&#10;Interesting thing to note here was that problem mentioned that find two indices such that i &lt; j. But since sum is commutative, sorting the array might swap the indices but still the resultant sum would be the same" />
     <MESSAGE value="Update solution in Subsets to accommodate the logical choice present for each index in the result. Each index can either be present or be absent in the result. So just simulate the choices for all indices." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update solution in Subsets to accommodate the logical choice present for each index in the result. Each index can either be present or be absent in the result. So just simulate the choices for all indices." />
+    <MESSAGE value="Add comment regarding another way of generating all the subsets by leveraging binary numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comment regarding another way of generating all the subsets by leveraging binary numbers" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -673,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604842346322">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604843954759">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604842346322" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604843954759" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -757,10 +756,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1604343879478">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1604843767129">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1604343879478" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1604843767129" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1604602218235">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -769,10 +768,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604842348046">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604843956486">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604842348046" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604843956486" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -809,10 +808,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604842120692" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604842751913">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604843884367">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604842751913" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604843884367" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
