@@ -15,6 +15,16 @@ import java.util.List;
  * Output: [7,4,1]
  */
 public class AllNodesDistanceKInBinaryTree {
+    /**
+     * Approach: Finding nodes that are at a distance K downwards is trivial.
+     * Difficulty is to find nodes that are at a distance K upwards.
+     * So parent needs to know whether the target node was at left subtree or at right subtree, because it needs to look up nodes accordingly
+     * in the opposite subtree.
+     * What will be the distance of the new nodes that needs to be looked up in the opposite subtree?
+     * <p>
+     * If the target node is at distance 2 from the current node and target distance is 6, we need to look for nodes present at distance 3 (0 based)
+     * in the opposite subtree
+     */
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
         List<Integer> list = new ArrayList<>();
         TravelTillTarget(root, target, K, list);
