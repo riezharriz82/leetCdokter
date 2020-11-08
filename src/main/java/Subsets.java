@@ -31,6 +31,13 @@ public class Subsets {
      * Where there are choices, there is recursion to simulate all the choices
      * So first we try skipping the current number and check what results we can get
      * Then we try to add the current number and check what results we can get
+     * <p>
+     * Another approach would be to leverage alternate approach of leveraging bitset similar to {@link CombinationIteratorRecursive}
+     * e.g consider abc, generate all binary numbers of fixed size 3 i.e. 000, 001, 010, 011.... 111
+     * For each binary number, add the number present at the set index to the result list
+     * <p>
+     * For generating fixed size binary number we can loop from 2^3 (1000) till 2^4 (10000) and remove the first 1 using substring.
+     * Use Integer.toBinaryString() to convert int quickly to binary string
      */
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
