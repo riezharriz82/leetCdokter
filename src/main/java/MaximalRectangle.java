@@ -35,6 +35,9 @@ public class MaximalRectangle {
                     histogram[j]++;
                 } else {
                     histogram[j] = 0;
+                    //PS: This is not prefix sum, we are interested only in length of continuous 1's. If this col can't extend 1's, need to reset it to 0
+                    //if we don't reset and the column value is {1,1,0,1}, then the prefix sum would be {1,2,2,3}
+                    //3 will indicate the height of the histogram as 3, which will give wrong results.
                 }
             }
             result = Math.max(result, maximumRectangleInHistogram(histogram));

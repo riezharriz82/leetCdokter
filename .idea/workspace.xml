@@ -9,7 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/AllNodesDistanceKInBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AllNodesDistanceKInBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximalRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximalRectangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,13 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00454" summary="Add clarifications/gotcha in generation of ugly numbers">
-      <created>1603746438554</created>
-      <option name="number" value="00454" />
-      <option name="presentableId" value="LOCAL-00454" />
-      <option name="project" value="LOCAL" />
-      <updated>1603746438554</updated>
     </task>
     <task id="LOCAL-00455" summary="Solve medium find the start of the cycle in linked list using warshall floyd algorithm">
       <created>1603832235130</created>
@@ -511,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604848532167</updated>
     </task>
-    <option name="localTasksCounter" value="503" />
+    <task id="LOCAL-00503" summary="Add approach in find all nodes present at k distance in binary tree">
+      <created>1604849239156</created>
+      <option name="number" value="00503" />
+      <option name="presentableId" value="LOCAL-00503" />
+      <option name="project" value="LOCAL" />
+      <updated>1604849239156</updated>
+    </task>
+    <option name="localTasksCounter" value="504" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -599,7 +599,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Rename file to match problem statement" />
     <MESSAGE value="Solve easy but tricky to optimize design a stack that supports popMax() along with usual push() and pop().&#10;&#10;To identify largest value in the stack, we need to use treeMap but in order to delete the largest node in o(1) time, we need a way to directly delete a node. Only DLL supports constant time deletion. So need to model the stack as a DLL." />
     <MESSAGE value="Solve medium and tricky find the longest substring such that the all characters of the substring can be made equal in &lt;= k operations&#10;&#10;First identify whats the min no of operations required to make all characters same, then use sliding window to find longest such window.&#10;&#10;Learnings -- Longest window vs shortest window -- sliding window implementation is different in both the cases. In former, you keep expanding until window becomes invalid, then you start shrinking until it's valid.&#10;In latter, you expand until you find a valid window, then you start shrinking until it becomes invalid." />
     <MESSAGE value="Solve medium find the longest subarray that can be transformed to all 1's in &lt;= k operations (0 can be transformed to 1 in one operation)&#10;&#10;Problem reduces to finding the longest subarray with num zeroes &lt;= k, use the standard sliding window paradigm for implementation." />
@@ -624,7 +623,8 @@
     <MESSAGE value="Add another way of solving Subsets with duplicates, in which we add a duplicate number to the result only if the previous duplicate is also added, otherwise we just skip this duplicate number." />
     <MESSAGE value="Add clarification in output of the problem, need to return the no of edges in the longest univalue path, not the no of elements present" />
     <MESSAGE value="Solve medium and tricky problem, find no of moves required to make all the nodes in the tree with 1 coin.&#10;&#10;Try to think about what info is required from the children, and update result and return value accordingly.&#10;Here we need the surplus/deficit from left/right subtree. Once we know that, we can calculate the total surplus/deficit of current subtree.&#10;Moves required at each node is the absolute value of surplus/deficit at that node e.g. if a node has surplus 3, it needs 3 moves to transfer the surplus because that node can have value = 1 in the end state." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem, find no of moves required to make all the nodes in the tree with 1 coin.&#10;&#10;Try to think about what info is required from the children, and update result and return value accordingly.&#10;Here we need the surplus/deficit from left/right subtree. Once we know that, we can calculate the total surplus/deficit of current subtree.&#10;Moves required at each node is the absolute value of surplus/deficit at that node e.g. if a node has surplus 3, it needs 3 moves to transfer the surplus because that node can have value = 1 in the end state." />
+    <MESSAGE value="Add approach in find all nodes present at k distance in binary tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add approach in find all nodes present at k distance in binary tree" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -682,10 +682,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604848531685">
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604849238618">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604848531685" />
+    <state x="340" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604849238618" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,10 +778,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604848535671">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604849239921">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604848535671" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604849239921" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
