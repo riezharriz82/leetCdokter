@@ -13,7 +13,7 @@ import common.TreeNode;
  *            / \   \
  *           4   4   5
  * </pre>
- * Output: 2
+ * Output: 2, {4-4-4}, need to return no of edges, so 2
  */
 public class LongestUnivaluePath {
     int maxPath = 0;
