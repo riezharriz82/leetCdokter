@@ -100,7 +100,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CanIWin">
+  <component name="RunManager" selected="Application.PredictTheWinner">
     <configuration name="CanIWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CanIWin" />
       <module name="leetcode-practice" />
@@ -108,15 +108,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConcatenatedWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ConcatenatedWords" />
+    <configuration name="DistinctSubsequences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DistinctSubsequences" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DistinctSubsequences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DistinctSubsequences" />
+    <configuration name="PredictTheWinner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PredictTheWinner" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,20 +147,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ConcatenatedWords" />
       <item itemvalue="Application.DistinctSubsequences" />
       <item itemvalue="Application.SudokuSolver" />
+      <item itemvalue="Application.CanIWin" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Application.CanIWin" />
+      <item itemvalue="Application.PredictTheWinner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PredictTheWinner" />
         <item itemvalue="Application.CanIWin" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.SudokuSolver" />
         <item itemvalue="Application.DistinctSubsequences" />
-        <item itemvalue="Application.ConcatenatedWords" />
       </list>
     </recent_temporary>
   </component>
@@ -172,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00459" summary="Solve hard and tricky find whether a word is entirely composed of two or more words from dictionary. Similar to previously solved WordBreak1 but gives TLE for me somehow.&#10;&#10;Solved it using Trie to quickly find whether the current prefix is valid prefix or not. Important to sort the words because a word can only be made from shorter words.">
-      <created>1603990037365</created>
-      <option name="number" value="00459" />
-      <option name="presentableId" value="LOCAL-00459" />
-      <option name="project" value="LOCAL" />
-      <updated>1603990037365</updated>
     </task>
     <task id="LOCAL-00460" summary="Solve medium and tricky find number of longest increasing subsequences. Need to store the count of LIS ending at any index, while updating the length of LIS at current index, reset or increment the count depending upon the current length.&#10;&#10;If current length &gt; currently stored length, reset the count, else if current length == currently stored length, increment the count">
       <created>1604067768731</created>
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604940499610</updated>
     </task>
-    <option name="localTasksCounter" value="508" />
+    <task id="LOCAL-00508" summary="Solve medium and tricky game theory problem. &#10;&#10;Multiple gotchas in game theory:&#10;1. Filter out invalid/unreachable inputs prior to starting recursion.&#10;&#10;2. When there is state to memoize, memoize the input state at the current recursion, not the choices performed after the input state.&#10;&#10;3. When a player wins after making a choice, that's not the end of the game. Other player will still continue performing the backtracking. So reset all the choices made before returning true to the next player.">
+      <created>1604952696502</created>
+      <option name="number" value="00508" />
+      <option name="presentableId" value="LOCAL-00508" />
+      <option name="project" value="LOCAL" />
+      <updated>1604952696502</updated>
+    </task>
+    <option name="localTasksCounter" value="509" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,17 +573,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="difference" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -598,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard find longest substring containing at most k distinct characters using sliding window.&#10;&#10;Keep track of the distinct chars in the current window, if it exceeds k, continue to shrink the window from the left, until it becomes valid again." />
     <MESSAGE value="Solve easy but tricky greedy problem, given the initial position of the chips, find the min cost to move them to the same position. &#10;&#10;Min cost can be found if one of the initial state is chosen as the end state, so choose all of the initial position  as the target position and find the total cost to bring remaining chips to it's position.&#10;&#10;This n^2 pattern seems to be pretty common. Can be done in linear time but ...." />
     <MESSAGE value="Solve medium and tricky find nodes that can reach both pacific and atlantic ocean by doing DFS from the oceans and not from the inner nodes.&#10;&#10;Finally I was able to understand why doing DFS in SurroundedRegions from inner nodes resulted in WA -- due to circular dependency." />
     <MESSAGE value="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier" />
@@ -623,7 +611,8 @@
     <MESSAGE value="Solve easy find moving average of last k elements from stream using fixed size deque and circular array.&#10;&#10;Learnings -- Circular array can be used to solve question of fixed window size. Circular array can be implemented by fixed size array by keeping two pointers, head/tail and using modular arithmetic while incrementing head/tail" />
     <MESSAGE value="Solve medium find max difference between a node and its ancestor in binary tree by keeping track of min and max val found so far during recursion.&#10;&#10;Little bit tricky but was able to solve it quickly." />
     <MESSAGE value="Solve hard and tricky find min no of cameras to place to cover a binary tree. This is similar to vertex cover but is very tricky.&#10;&#10;Trick is to consider it as a greedy problem rather than recursion problem, think about not placing a camera at the edge but at the center. So lead node should not have a camera, and instead it's parent should have a camera.&#10;&#10;Sequence of covering would be covered (null pointers of leaf) -&gt; uncovered -&gt; place camera -&gt; covered -&gt; uncovered -&gt; place camera .." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find min no of cameras to place to cover a binary tree. This is similar to vertex cover but is very tricky.&#10;&#10;Trick is to consider it as a greedy problem rather than recursion problem, think about not placing a camera at the edge but at the center. So lead node should not have a camera, and instead it's parent should have a camera.&#10;&#10;Sequence of covering would be covered (null pointers of leaf) -&gt; uncovered -&gt; place camera -&gt; covered -&gt; uncovered -&gt; place camera .." />
+    <MESSAGE value="Solve medium and tricky game theory problem. &#10;&#10;Multiple gotchas in game theory:&#10;1. Filter out invalid/unreachable inputs prior to starting recursion.&#10;&#10;2. When there is state to memoize, memoize the input state at the current recursion, not the choices performed after the input state.&#10;&#10;3. When a player wins after making a choice, that's not the end of the game. Other player will still continue performing the backtracking. So reset all the choices made before returning true to the next player." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky game theory problem. &#10;&#10;Multiple gotchas in game theory:&#10;1. Filter out invalid/unreachable inputs prior to starting recursion.&#10;&#10;2. When there is state to memoize, memoize the input state at the current recursion, not the choices performed after the input state.&#10;&#10;3. When a player wins after making a choice, that's not the end of the game. Other player will still continue performing the backtracking. So reset all the choices made before returning true to the next player." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -641,10 +630,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="727" y="349" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1598814073398" />
-    <state x="552" y="166" key="#Plugins" timestamp="1602243118631">
+    <state x="552" y="166" key="#Plugins" timestamp="1605009261465">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1602243118631" />
+    <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1605009261465" />
     <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1604417536568">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -681,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604940499110">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1604952695993">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604940499110" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1604952695993" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -693,10 +682,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1604847901716">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1604952963975">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604847901716" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604952963975" />
     <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -705,38 +694,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604949208226">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1605014130330">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604949208226" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604949208226">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130330" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1605014130330">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604949208226" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604949208226">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130330" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1605014130330">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604949208226" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604949208226">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130330" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1605014130330">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604949208226" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1604948091206">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130330" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605014130332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604948091206" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1604948091206">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130332" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1605014130332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604948091206" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1604948091205">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130332" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1605014130331">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604948091205" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1604948091206">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130331" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1605014130332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604948091206" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130332" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -757,10 +746,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="695" y="245" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598184917635" />
-    <state x="668" y="259" key="SettingsEditor" timestamp="1604217553251">
+    <state x="668" y="259" key="SettingsEditor" timestamp="1605009275315">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604217553251" />
+    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605009275315" />
     <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1604434978061">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -777,10 +766,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604940500482">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1604952855929">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604940500482" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604952855929" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -809,18 +798,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604767283623" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1604852440285">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605021316631">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604852440285" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605021316631" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1604866424004">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604866424004" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1604934677403">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605017515229">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604934677403" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605017515229" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
