@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00463" summary="Solve hard and a bit tricky to reduce time complexity, find two nodes whose values are swapped in a bst.&#10;&#10;This is similar to finding two elements in nearly sorted array that have been swapped. It's a classical problem that can be done in linear time without sorting the entire input using two pointers">
-      <created>1604141274330</created>
-      <option name="number" value="00463" />
-      <option name="presentableId" value="LOCAL-00463" />
-      <option name="project" value="LOCAL" />
-      <updated>1604141274330</updated>
-    </task>
     <task id="LOCAL-00464" summary="Solve medium and very interesting low level implementation problem, encode a list of strings to a single string that can be decoded to convert into list of strings.&#10;&#10;There are multiple ways to solve this question, use a delimiter outside of input char range, or escape the chosen delimiter if present in the input or use chunked transfer encoding">
       <created>1604143784957</created>
       <option name="number" value="00464" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605029448230</updated>
     </task>
-    <option name="localTasksCounter" value="512" />
+    <task id="LOCAL-00512" summary="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right">
+      <created>1605104226145</created>
+      <option name="number" value="00512" />
+      <option name="presentableId" value="LOCAL-00512" />
+      <option name="project" value="LOCAL" />
+      <updated>1605104226145</updated>
+    </task>
+    <option name="localTasksCounter" value="513" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Actually solve find the number of distinct islands shapes by storing the relative indices of current island path i.e. when doing a DFS add the relative index of the current node to curPath (relative from starting point of the DFS)&#10;&#10;Using relative index will help in finding similar shapes" />
     <MESSAGE value="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation." />
     <MESSAGE value="Solve medium find number of connected connected in a graph using union find algorithm.&#10;Similar to previously solved NumberOfIslands, can also be done using DFS." />
     <MESSAGE value="Solve medium clone a graph by DFS + keeping a mapping of source node to cloned node, in order to resolve cycles." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve medium and tricky game theory problem predictTheWinner, need to find the max score of the first player if each player picks either from the left or from the right.&#10;&#10;Since we need to maximise the score, we need to use MaxiMin algorithm. There are two ways of implementing maximin algo. Either use flag to denote who is playing or directly skip to the player1 state without considering player2 state at all.&#10;&#10;Former one needs to carefully handle return value for both the players assuming that we are interested only in score of player1" />
     <MESSAGE value="Solve medium game theory problem, stone game problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm." />
     <MESSAGE value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
+    <MESSAGE value="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -670,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605029447737">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605104225417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605029447737" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605104225417" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -766,10 +766,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605029449836">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605104227461">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605029449836" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605104227461" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -798,10 +798,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604767283623" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605025787856">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605109258598">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605025787856" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605109258598" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1604866424004">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
