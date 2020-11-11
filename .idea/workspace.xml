@@ -79,7 +79,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -172,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00462" summary="Solve medium and a bit tricky find length of the longest increasing/decreasing consecutive sequence in a binary tree&#10;&#10;Since both increasing/decreasing sequence needs to be considered, parent node must be aware of the longest sequence ending/beginning at child node. This will ensure parent has the information to choose either of the path.">
-      <created>1604091791761</created>
-      <option name="number" value="00462" />
-      <option name="presentableId" value="LOCAL-00462" />
-      <option name="project" value="LOCAL" />
-      <updated>1604091791762</updated>
     </task>
     <task id="LOCAL-00463" summary="Solve hard and a bit tricky to reduce time complexity, find two nodes whose values are swapped in a bst.&#10;&#10;This is similar to finding two elements in nearly sorted array that have been swapped. It's a classical problem that can be done in linear time without sorting the entire input using two pointers">
       <created>1604141274330</created>
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605024037167</updated>
     </task>
-    <option name="localTasksCounter" value="511" />
+    <task id="LOCAL-00511" summary="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state">
+      <created>1605029448230</created>
+      <option name="number" value="00511" />
+      <option name="presentableId" value="LOCAL-00511" />
+      <option name="project" value="LOCAL" />
+      <updated>1605029448230</updated>
+    </task>
+    <option name="localTasksCounter" value="512" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier" />
     <MESSAGE value="Actually solve find the number of distinct islands shapes by storing the relative indices of current island path i.e. when doing a DFS add the relative index of the current node to curPath (relative from starting point of the DFS)&#10;&#10;Using relative index will help in finding similar shapes" />
     <MESSAGE value="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation." />
     <MESSAGE value="Solve medium find number of connected connected in a graph using union find algorithm.&#10;Similar to previously solved NumberOfIslands, can also be done using DFS." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve medium and tricky game theory problem. &#10;&#10;Multiple gotchas in game theory:&#10;1. Filter out invalid/unreachable inputs prior to starting recursion.&#10;&#10;2. When there is state to memoize, memoize the input state at the current recursion, not the choices performed after the input state.&#10;&#10;3. When a player wins after making a choice, that's not the end of the game. Other player will still continue performing the backtracking. So reset all the choices made before returning true to the next player." />
     <MESSAGE value="Solve medium and tricky game theory problem predictTheWinner, need to find the max score of the first player if each player picks either from the left or from the right.&#10;&#10;Since we need to maximise the score, we need to use MaxiMin algorithm. There are two ways of implementing maximin algo. Either use flag to denote who is playing or directly skip to the player1 state without considering player2 state at all.&#10;&#10;Former one needs to carefully handle return value for both the players assuming that we are interested only in score of player1" />
     <MESSAGE value="Solve medium game theory problem, stone game problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium game theory problem, stone game problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm." />
+    <MESSAGE value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -670,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605024036631">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605029447737">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605024036631" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605029447737" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -746,10 +746,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="695" y="245" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598184917635" />
-    <state x="668" y="259" key="SettingsEditor" timestamp="1605009275315">
+    <state x="668" y="259" key="SettingsEditor" timestamp="1605103947405">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605009275315" />
+    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605103947405" />
     <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1604434978061">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -766,10 +766,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605024039192">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605029449836">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605024039192" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605029449836" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -806,10 +806,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604866424004" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605029198188">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605103934209">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605029198188" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605103934209" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
