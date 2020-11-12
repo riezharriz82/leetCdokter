@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00464" summary="Solve medium and very interesting low level implementation problem, encode a list of strings to a single string that can be decoded to convert into list of strings.&#10;&#10;There are multiple ways to solve this question, use a delimiter outside of input char range, or escape the chosen delimiter if present in the input or use chunked transfer encoding">
-      <created>1604143784957</created>
-      <option name="number" value="00464" />
-      <option name="presentableId" value="LOCAL-00464" />
-      <option name="project" value="LOCAL" />
-      <updated>1604143784957</updated>
-    </task>
     <task id="LOCAL-00465" summary="Solve easy meeting rooms, check whether there is a conflict in the appointment.&#10;&#10;Leveraged prior learnings of MyCalendar1. Can also be done by sorting the entire array and then checking for conflicts.">
       <created>1604218374711</created>
       <option name="number" value="00465" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605104226145</updated>
     </task>
-    <option name="localTasksCounter" value="513" />
+    <task id="LOCAL-00513" summary="Solve hard and tricky find the path in a graph with the smallest edit distance from a target path by generating all the paths and comparing their edit distance&#10;&#10;Need to return the shortest path instead of just the smallest edit distance, returning the path was a bit tricky and new learning for me. Instead of storing the path with min distance and returning it in recursion, create a 2d array which stores the next node in the chain. 2d array will take care of finding the next node if the current node is at index 0 or 1 or 2 in the result path.">
+      <created>1605112875257</created>
+      <option name="number" value="00513" />
+      <option name="presentableId" value="LOCAL-00513" />
+      <option name="project" value="LOCAL" />
+      <updated>1605112875257</updated>
+    </task>
+    <option name="localTasksCounter" value="514" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation." />
     <MESSAGE value="Solve medium find number of connected connected in a graph using union find algorithm.&#10;Similar to previously solved NumberOfIslands, can also be done using DFS." />
     <MESSAGE value="Solve medium clone a graph by DFS + keeping a mapping of source node to cloned node, in order to resolve cycles." />
     <MESSAGE value="Solve hard find a possible ordering of words given a lexicographically sorted alien dictionary by creating a graph and performing topological sort to detect cycles and ordering among words&#10;&#10;Care must be taken to handle characters that are present but whose ordering cant be determined {&quot;abc&quot;, &quot;abcd&quot;}&#10;&#10;Learnings -- Took me a while to understand that letters in a word are not sorted only the words are sorted. Then there were ambiguity related to handling words that are present but have no specific ordering. Should have thought about that case." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve medium game theory problem, stone game problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm." />
     <MESSAGE value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
     <MESSAGE value="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right" />
+    <MESSAGE value="Solve hard and tricky find the path in a graph with the smallest edit distance from a target path by generating all the paths and comparing their edit distance&#10;&#10;Need to return the shortest path instead of just the smallest edit distance, returning the path was a bit tricky and new learning for me. Instead of storing the path with min distance and returning it in recursion, create a 2d array which stores the next node in the chain. 2d array will take care of finding the next node if the current node is at index 0 or 1 or 2 in the result path." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the path in a graph with the smallest edit distance from a target path by generating all the paths and comparing their edit distance&#10;&#10;Need to return the shortest path instead of just the smallest edit distance, returning the path was a bit tricky and new learning for me. Instead of storing the path with min distance and returning it in recursion, create a 2d array which stores the next node in the chain. 2d array will take care of finding the next node if the current node is at index 0 or 1 or 2 in the result path." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -670,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605104225417">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605112874732">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605104225417" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605112874732" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -766,10 +766,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605104227461">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605112876282">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605104227461" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605112876282" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -794,10 +794,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604517641710" />
-    <state width="750" height="250" key="javadoc.popup.new" timestamp="1604767283623">
+    <state width="750" height="250" key="javadoc.popup.new" timestamp="1605210364235">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1604767283623" />
+    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605210364235" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605109258598">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
