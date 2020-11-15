@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ValidateBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidateBSTTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00470" summary="Simplify code by removing complicated initial code and add approach in find maximum width of a binary tree">
-      <created>1604243843120</created>
-      <option name="number" value="00470" />
-      <option name="presentableId" value="LOCAL-00470" />
-      <option name="project" value="LOCAL" />
-      <updated>1604243843120</updated>
     </task>
     <task id="LOCAL-00471" summary="Solve classical hard problem merge k sorted linked list using priority queue">
       <created>1604243949090</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605461173694</updated>
     </task>
-    <option name="localTasksCounter" value="519" />
+    <task id="LOCAL-00519" summary="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient.">
+      <created>1605474873614</created>
+      <option name="number" value="00519" />
+      <option name="presentableId" value="LOCAL-00519" />
+      <option name="project" value="LOCAL" />
+      <updated>1605474873614</updated>
+    </task>
+    <option name="localTasksCounter" value="520" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky guess the secret word provided a list of candidate words in min no of attempts using brute force + minimax algo&#10;&#10;Learnings -- Finally able to understand minimax algo a bit, need to solve some more problems. Learnt union find a couple of days back and now this. Feeling a bit confident. Lets hope for the best during the interviews :)&#10;&#10;Look in the code for comments around minimax." />
     <MESSAGE value="Solve easy FlipGame, if two consecutive + is present in the string, it can be replaced by --, need to find all the possible strings that can be generated." />
     <MESSAGE value="Solve medium flipGame2, game theory problem, need to return whether the current player can win or lose. &#10;&#10;Learnings -- Simulating a game is creating a tree, generate next states possible from current state, those are the children of tree. &#10;Take care of the return value to signal victory/loss of current player." />
     <MESSAGE value="Solve easy find sum of two numbers &lt; k in an unsorted array by sorting and applying two pointer algorithm.&#10;&#10;Interesting thing to note here was that problem mentioned that find two indices such that i &lt; j. But since sum is commutative, sorting the array might swap the indices but still the resultant sum would be the same" />
@@ -615,7 +613,8 @@
     <MESSAGE value="Update approach in finding the duplicate number using warshall/floyd cycle finding algorithm&#10;&#10;Learnings -- Use warshall floyd cycle finding algo to detect cycles inplace&#10;Whenever dealing with input array consisting of 1 to n, use swap or the numbers as indices or xor" />
     <MESSAGE value="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's" />
     <MESSAGE value="Add another approach of validating a BST using range bound property" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add another approach of validating a BST using range bound property" />
+    <MESSAGE value="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -673,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605461173144">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605474873059">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605461173144" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605474873059" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -765,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605461174808">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605474875100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605461174808" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605474875100" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -825,7 +824,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/GeneralizedAbbreviations.java</url>
-          <line>31</line>
+          <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
