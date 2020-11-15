@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ValidateBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ValidateBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ValidateBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidateBSTTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +101,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SortColors">
-    <configuration name="CanIWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CanIWin" />
+  <component name="RunManager" selected="Application.GeneralizedAbbreviations">
+    <configuration name="GeneralizedAbbreviations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GeneralizedAbbreviations" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,19 +123,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SudokuSolver" />
-      <module name="leetcode-practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidateBSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ValidateBSTTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,20 +150,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SudokuSolver" />
-      <item itemvalue="Application.CanIWin" />
       <item itemvalue="Application.PredictTheWinner" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Application.SortColors" />
+      <item itemvalue="Application.GeneralizedAbbreviations" />
+      <item itemvalue="JUnit.ValidateBSTTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GeneralizedAbbreviations" />
+        <item itemvalue="JUnit.ValidateBSTTest" />
         <item itemvalue="Application.SortColors" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.PredictTheWinner" />
-        <item itemvalue="Application.CanIWin" />
-        <item itemvalue="Application.SudokuSolver" />
       </list>
     </recent_temporary>
   </component>
@@ -173,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00469" summary="Simplify treeMap solution by directly adding element to the map if map is empty.">
-      <created>1604240322069</created>
-      <option name="number" value="00469" />
-      <option name="presentableId" value="LOCAL-00469" />
-      <option name="project" value="LOCAL" />
-      <updated>1604240322070</updated>
     </task>
     <task id="LOCAL-00470" summary="Simplify code by removing complicated initial code and add approach in find maximum width of a binary tree">
       <created>1604243843120</created>
@@ -517,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605459765188</updated>
     </task>
-    <option name="localTasksCounter" value="518" />
+    <task id="LOCAL-00518" summary="Add another approach of validating a BST using range bound property">
+      <created>1605461173694</created>
+      <option name="number" value="00518" />
+      <option name="presentableId" value="LOCAL-00518" />
+      <option name="project" value="LOCAL" />
+      <updated>1605461173694</updated>
+    </task>
+    <option name="localTasksCounter" value="519" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -588,7 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard find the max cherries two robots can pick if one starts at top left and another starts at top right. Target state is the last row.&#10;&#10;Similar to CherryPickup. Move both the robots simultaneously. There are 9 possible next states. Take care of the double counting if both of them are at the same cell." />
     <MESSAGE value="Solve hard and tricky guess the secret word provided a list of candidate words in min no of attempts using brute force + minimax algo&#10;&#10;Learnings -- Finally able to understand minimax algo a bit, need to solve some more problems. Learnt union find a couple of days back and now this. Feeling a bit confident. Lets hope for the best during the interviews :)&#10;&#10;Look in the code for comments around minimax." />
     <MESSAGE value="Solve easy FlipGame, if two consecutive + is present in the string, it can be replaced by --, need to find all the possible strings that can be generated." />
     <MESSAGE value="Solve medium flipGame2, game theory problem, need to return whether the current player can win or lose. &#10;&#10;Learnings -- Simulating a game is creating a tree, generate next states possible from current state, those are the children of tree. &#10;Take care of the return value to signal victory/loss of current player." />
@@ -613,7 +614,8 @@
     <MESSAGE value="Solve easy but kinda medium if we have to optimize it to linear time complexity using trie, find longest word whose recursive prefixes are present in dictionary.&#10;&#10;I did it by sorting the input and keeping track of valid prefixes. Could have used trie to optimize it. &#10;&#10;Learnings -- Whenever dealing with prefixes in a dictionary use freaking TRIE !" />
     <MESSAGE value="Update approach in finding the duplicate number using warshall/floyd cycle finding algorithm&#10;&#10;Learnings -- Use warshall floyd cycle finding algo to detect cycles inplace&#10;Whenever dealing with input array consisting of 1 to n, use swap or the numbers as indices or xor" />
     <MESSAGE value="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's" />
+    <MESSAGE value="Add another approach of validating a BST using range bound property" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add another approach of validating a BST using range bound property" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -671,10 +673,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605459764675">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605461173144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605459764675" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605461173144" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -691,38 +693,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="969" y="325" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604517634549" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1605458645482">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605474211390">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605458645482" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1605458645482">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605474211390" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1605474211390">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605458645482" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1605458645482">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605474211390" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1605474211390">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605458645482" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1605458645482">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605474211390" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1605474211390">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605458645482" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605458645483">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605474211390" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605471454107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605458645483" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1605458645483">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605471454107" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1605471454106">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605458645483" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1605458645483">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605471454106" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1605471454106">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605458645483" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1605458645483">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605471454106" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1605471454107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605458645483" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605471454107" />
     <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -751,10 +753,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1605395565591">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1605471232615">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1605395565591" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1605471232615" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1604602218235">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -763,10 +765,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605459766278">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605461174808">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605459766278" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605461174808" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -803,10 +805,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604866424004" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605460962184">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605474276423">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605460962184" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605474276423" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -820,6 +822,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/SortColors.java</url>
           <line>29</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GeneralizedAbbreviations.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

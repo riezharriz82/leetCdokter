@@ -10,7 +10,7 @@ public class ValidateBSTTest {
         TreeNode root = new TreeNode(2);
         root.right = new TreeNode(3);
         root.left = new TreeNode(1);
-        assertTrue(new ValidateBST().isValidBST(root));
+        assertTrue(new ValidateBST().isValidBSTInorder(root));
     }
 
     @Test
@@ -20,6 +20,6 @@ public class ValidateBSTTest {
         root.right = new TreeNode(4);
         root.right.left = new TreeNode(3);
         root.right.right = new TreeNode(6);
-        assertFalse(new ValidateBST().isValidBST(root));
+        assertFalse(new ValidateBST().isValidBSTInorder(root));
     }
 }
