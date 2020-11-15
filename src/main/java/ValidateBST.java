@@ -23,7 +23,7 @@ import common.TreeNode;
 public class ValidateBST {
     TreeNode previous; //A noob way would be to store previousValue in int or long i.e. long previousValue = Long.MIN_VALUE;
 
-    public boolean isValidBST(TreeNode root) {
+    public boolean isValidBSTInorder(TreeNode root) {
         return helper(root);
     }
 
@@ -41,6 +41,25 @@ public class ValidateBST {
             }
         } else {
             return false;
+        }
+    }
+
+    /**
+     * Approach: Leverage range bound property of BST
+     * <p>
+     * Take care to avoid duplicates.
+     */
+    public boolean isValidBSTRangeBound(TreeNode root) {
+        return recur(root, Long.MIN_VALUE, Long.MAX_VALUE); //Use long because input test cases contains Integer.MIN_VALUE as root.val
+    }
+
+    private boolean recur(TreeNode root, long minValue, long maxValue) {
+        if (root == null) {
+            return true;
+        } else if (root.val <= minValue || root.val >= maxValue) { // use <= instead of < because bst doesn't contains duplicates
+            return false;
+        } else {
+            return recur(root.left, minValue, root.val) && recur(root.right, root.val, maxValue);
         }
     }
 }

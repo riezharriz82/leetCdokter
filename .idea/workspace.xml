@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ValidateBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ValidateBST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00468" summary="Solve hard find all possible subsequences of a target string in the source string by recursion.&#10;&#10;Initially I thought to implement it by storing indices of all target characters and look for a greater index than previous chosen index but sadly it timed out. (Similar to MinWindowSubsequence)&#10;&#10;Later I thought to implement it the classic way of solving problems related to two string, compare characters at two indices and update indices accordingly.">
-      <created>1604238913765</created>
-      <option name="number" value="00468" />
-      <option name="presentableId" value="LOCAL-00468" />
-      <option name="project" value="LOCAL" />
-      <updated>1604238913765</updated>
     </task>
     <task id="LOCAL-00469" summary="Simplify treeMap solution by directly adding element to the map if map is empty.">
       <created>1604240322069</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605454432198</updated>
     </task>
-    <option name="localTasksCounter" value="517" />
+    <task id="LOCAL-00517" summary="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's">
+      <created>1605459765188</created>
+      <option name="number" value="00517" />
+      <option name="presentableId" value="LOCAL-00517" />
+      <option name="project" value="LOCAL" />
+      <updated>1605459765188</updated>
+    </task>
+    <option name="localTasksCounter" value="518" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky pick max no of cherries in a grid from start to end and back from end to start.&#10;&#10;I started this problem with DP approach of finding the max cherries that can be picked up in the first cycle and then repeat the process in next cycle. However I found out that it gave WA for certain cases because DP in the first cycle acts as a greedy solution and provides local maxima and not the global maxima.&#10;&#10;The trick to solve the problem is to perform recursion, i.e. consider two persons walking from start to end simultaneously and get the max result from 4 states. (right, right), (right, down), (down, right), (down, down)" />
     <MESSAGE value="Solve hard find the max cherries two robots can pick if one starts at top left and another starts at top right. Target state is the last row.&#10;&#10;Similar to CherryPickup. Move both the robots simultaneously. There are 9 possible next states. Take care of the double counting if both of them are at the same cell." />
     <MESSAGE value="Solve hard and tricky guess the secret word provided a list of candidate words in min no of attempts using brute force + minimax algo&#10;&#10;Learnings -- Finally able to understand minimax algo a bit, need to solve some more problems. Learnt union find a couple of days back and now this. Feeling a bit confident. Lets hope for the best during the interviews :)&#10;&#10;Look in the code for comments around minimax." />
     <MESSAGE value="Solve easy FlipGame, if two consecutive + is present in the string, it can be replaced by --, need to find all the possible strings that can be generated." />
@@ -612,7 +612,8 @@
     <MESSAGE value="Solve medium and a bit tricky remove intervals that overlaps with a target interval. &#10;&#10;Got confused during implementation trying to solve the question in log(n) using binary search as the input array is sorted. Checked the hint and realized that it can't be done in linear time because we have to create a new list and copy all the intervals in worst case.&#10;&#10;So the simple solution is to check each interval and see if it overlaps with the target interval. If it does, split it." />
     <MESSAGE value="Solve easy but kinda medium if we have to optimize it to linear time complexity using trie, find longest word whose recursive prefixes are present in dictionary.&#10;&#10;I did it by sorting the input and keeping track of valid prefixes. Could have used trie to optimize it. &#10;&#10;Learnings -- Whenever dealing with prefixes in a dictionary use freaking TRIE !" />
     <MESSAGE value="Update approach in finding the duplicate number using warshall/floyd cycle finding algorithm&#10;&#10;Learnings -- Use warshall floyd cycle finding algo to detect cycles inplace&#10;Whenever dealing with input array consisting of 1 to n, use swap or the numbers as indices or xor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update approach in finding the duplicate number using warshall/floyd cycle finding algorithm&#10;&#10;Learnings -- Use warshall floyd cycle finding algo to detect cycles inplace&#10;Whenever dealing with input array consisting of 1 to n, use swap or the numbers as indices or xor" />
+    <MESSAGE value="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -670,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605454431669">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605459764675">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605454431669" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605459764675" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -762,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605454433148">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605459766278">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605454433148" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605459766278" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -802,10 +803,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604866424004" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605454652645">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605460962184">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605454652645" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605460962184" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -817,7 +818,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/SortColors.java</url>
-          <line>25</line>
+          <line>29</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
