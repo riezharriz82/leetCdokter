@@ -100,7 +100,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PredictTheWinner">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="CanIWin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CanIWin" />
       <module name="leetcode-practice" />
@@ -150,15 +150,15 @@
       <item itemvalue="Application.DistinctSubsequences" />
       <item itemvalue="Application.SudokuSolver" />
       <item itemvalue="Application.CanIWin" />
+      <item itemvalue="Application.PredictTheWinner" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Application.PredictTheWinner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.PredictTheWinner" />
         <item itemvalue="Application.CanIWin" />
-        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.SudokuSolver" />
         <item itemvalue="Application.DistinctSubsequences" />
       </list>
@@ -682,34 +682,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1604952963975">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1605338840619">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604952963975" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605338840619" />
     <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="969" y="325" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604517634549" />
-    <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1596567099935">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605395840713">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="550" y="425" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596567099935" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1605014130330">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605395840713" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1605395840713">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130330" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1605014130330">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605395840713" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1605395840713">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130330" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1605014130330">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605395840713" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1605395840713">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130330" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1605014130330">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605014130330" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605395840713" />
     <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605014130332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -754,10 +750,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1604865768156">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1605395565591">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1604865768156" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1605395565591" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1604602218235">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,14 +786,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604653793268" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1604517641710">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1605272834053">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604517641710" />
-    <state width="750" height="250" key="javadoc.popup.new" timestamp="1605210364235">
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605272834053" />
+    <state width="750" height="250" key="javadoc.popup.new" timestamp="1605395400428">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605210364235" />
+    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605395400428" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605109258598">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -806,10 +802,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604866424004" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605103934209">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605442304271">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605103934209" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605442304271" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
