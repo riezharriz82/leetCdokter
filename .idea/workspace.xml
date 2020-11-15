@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00465" summary="Solve easy meeting rooms, check whether there is a conflict in the appointment.&#10;&#10;Leveraged prior learnings of MyCalendar1. Can also be done by sorting the entire array and then checking for conflicts.">
-      <created>1604218374711</created>
-      <option name="number" value="00465" />
-      <option name="presentableId" value="LOCAL-00465" />
-      <option name="project" value="LOCAL" />
-      <updated>1604218374712</updated>
-    </task>
     <task id="LOCAL-00466" summary="Solve medium but very tricky to optimize sentence screen fitting, fit a sentence into a grid such that a word can't be split across two rows. &#10;&#10;Learnings -- Deal with questions related to finding no of repetitions in a infinitely repeating sequence">
       <created>1604219833078</created>
       <option name="number" value="00466" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605112875257</updated>
     </task>
-    <option name="localTasksCounter" value="514" />
+    <task id="LOCAL-00514" summary="Solve medium and a bit tricky remove intervals that overlaps with a target interval. &#10;&#10;Got confused during implementation trying to solve the question in log(n) using binary search as the input array is sorted. Checked the hint and realized that it can't be done in linear time because we have to create a new list and copy all the intervals in worst case.&#10;&#10;So the simple solution is to check each interval and see if it overlaps with the target interval. If it does, split it.">
+      <created>1605452094059</created>
+      <option name="number" value="00514" />
+      <option name="presentableId" value="LOCAL-00514" />
+      <option name="project" value="LOCAL" />
+      <updated>1605452094060</updated>
+    </task>
+    <option name="localTasksCounter" value="515" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find number of connected connected in a graph using union find algorithm.&#10;Similar to previously solved NumberOfIslands, can also be done using DFS." />
     <MESSAGE value="Solve medium clone a graph by DFS + keeping a mapping of source node to cloned node, in order to resolve cycles." />
     <MESSAGE value="Solve hard find a possible ordering of words given a lexicographically sorted alien dictionary by creating a graph and performing topological sort to detect cycles and ordering among words&#10;&#10;Care must be taken to handle characters that are present but whose ordering cant be determined {&quot;abc&quot;, &quot;abcd&quot;}&#10;&#10;Learnings -- Took me a while to understand that letters in a word are not sorted only the words are sorted. Then there were ambiguity related to handling words that are present but have no specific ordering. Should have thought about that case." />
     <MESSAGE value="Solve hard and extremely tricky pick max no of cherries in a grid from start to end and back from end to start.&#10;&#10;I started this problem with DP approach of finding the max cherries that can be picked up in the first cycle and then repeat the process in next cycle. However I found out that it gave WA for certain cases because DP in the first cycle acts as a greedy solution and provides local maxima and not the global maxima.&#10;&#10;The trick to solve the problem is to perform recursion, i.e. consider two persons walking from start to end simultaneously and get the max result from 4 states. (right, right), (right, down), (down, right), (down, down)" />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
     <MESSAGE value="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right" />
     <MESSAGE value="Solve hard and tricky find the path in a graph with the smallest edit distance from a target path by generating all the paths and comparing their edit distance&#10;&#10;Need to return the shortest path instead of just the smallest edit distance, returning the path was a bit tricky and new learning for me. Instead of storing the path with min distance and returning it in recursion, create a 2d array which stores the next node in the chain. 2d array will take care of finding the next node if the current node is at index 0 or 1 or 2 in the result path." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the path in a graph with the smallest edit distance from a target path by generating all the paths and comparing their edit distance&#10;&#10;Need to return the shortest path instead of just the smallest edit distance, returning the path was a bit tricky and new learning for me. Instead of storing the path with min distance and returning it in recursion, create a 2d array which stores the next node in the chain. 2d array will take care of finding the next node if the current node is at index 0 or 1 or 2 in the result path." />
+    <MESSAGE value="Solve medium and a bit tricky remove intervals that overlaps with a target interval. &#10;&#10;Got confused during implementation trying to solve the question in log(n) using binary search as the input array is sorted. Checked the hint and realized that it can't be done in linear time because we have to create a new list and copy all the intervals in worst case.&#10;&#10;So the simple solution is to check each interval and see if it overlaps with the target interval. If it does, split it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky remove intervals that overlaps with a target interval. &#10;&#10;Got confused during implementation trying to solve the question in log(n) using binary search as the input array is sorted. Checked the hint and realized that it can't be done in linear time because we have to create a new list and copy all the intervals in worst case.&#10;&#10;So the simple solution is to check each interval and see if it overlaps with the target interval. If it does, split it." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -670,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605112874732">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605452093398">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605112874732" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605452093398" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -762,10 +762,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605112876282">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605452095012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605112876282" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605452095012" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
