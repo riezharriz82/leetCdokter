@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00471" summary="Solve classical hard problem merge k sorted linked list using priority queue">
-      <created>1604243949090</created>
-      <option name="number" value="00471" />
-      <option name="presentableId" value="LOCAL-00471" />
-      <option name="project" value="LOCAL" />
-      <updated>1604243949090</updated>
-    </task>
     <task id="LOCAL-00472" summary="Solve hard problem find the longest substring with balanced '(' and ')' using two pass algorithm.&#10;&#10;First use stack to mark balanced indices, then find the longest subarray with all balanced index.&#10;&#10;Tried to initially solve the question via a lot of approaches, sliding window, prefix sum but it failed.&#10;&#10;This question can also be solved by using DP, care must be taken to carry forward the results which I missed.">
       <created>1604254094056</created>
       <option name="number" value="00472" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605474873614</updated>
     </task>
-    <option name="localTasksCounter" value="520" />
+    <task id="LOCAL-00520" summary="Solve medium generate all permutations of given string if each char can either be capitalized or converted to lower case by recursion.&#10;&#10;Leveraged prior learnings of processing each char independently.">
+      <created>1605475417498</created>
+      <option name="number" value="00520" />
+      <option name="presentableId" value="LOCAL-00520" />
+      <option name="project" value="LOCAL" />
+      <updated>1605475417498</updated>
+    </task>
+    <option name="localTasksCounter" value="521" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy FlipGame, if two consecutive + is present in the string, it can be replaced by --, need to find all the possible strings that can be generated." />
     <MESSAGE value="Solve medium flipGame2, game theory problem, need to return whether the current player can win or lose. &#10;&#10;Learnings -- Simulating a game is creating a tree, generate next states possible from current state, those are the children of tree. &#10;Take care of the return value to signal victory/loss of current player." />
     <MESSAGE value="Solve easy find sum of two numbers &lt; k in an unsorted array by sorting and applying two pointer algorithm.&#10;&#10;Interesting thing to note here was that problem mentioned that find two indices such that i &lt; j. But since sum is commutative, sorting the array might swap the indices but still the resultant sum would be the same" />
     <MESSAGE value="Update solution in Subsets to accommodate the logical choice present for each index in the result. Each index can either be present or be absent in the result. So just simulate the choices for all indices." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's" />
     <MESSAGE value="Add another approach of validating a BST using range bound property" />
     <MESSAGE value="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient." />
+    <MESSAGE value="Solve medium generate all permutations of given string if each char can either be capitalized or converted to lower case by recursion.&#10;&#10;Leveraged prior learnings of processing each char independently." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium generate all permutations of given string if each char can either be capitalized or converted to lower case by recursion.&#10;&#10;Leveraged prior learnings of processing each char independently." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605474873059">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605475416947">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605474873059" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605475416947" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -744,10 +744,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="695" y="245" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598184917635" />
-    <state x="668" y="259" key="SettingsEditor" timestamp="1605103947405">
+    <state x="668" y="259" key="SettingsEditor" timestamp="1605479761668">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605103947405" />
+    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605479761668" />
     <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1604434978061">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605474875100">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605475418210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605474875100" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605475418210" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +804,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604866424004" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605474276423">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605536570827">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605474276423" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605536570827" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
