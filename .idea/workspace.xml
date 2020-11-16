@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmployeeFreeTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmployeeFreeTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00473" summary="Solve medium sudoku solver using classic backtracking algorithm. Try to place candidates on an emptyIndex and recur for the remaining empty indices. If none of the candidates are safe to place, backtrack and unset a previously placed candidate.&#10;&#10;Care must be taken to properly backtrack all the associated datastructures as there are many in this case.">
-      <created>1604261801290</created>
-      <option name="number" value="00473" />
-      <option name="presentableId" value="LOCAL-00473" />
-      <option name="project" value="LOCAL" />
-      <updated>1604261801290</updated>
     </task>
     <task id="LOCAL-00474" summary="Solve medium partition a binary tree into two subtree with equal sum using two pass algorithm. First find the total sum and then for each parent, check if the child subtree has half the total sum. If yes, cut that edge.&#10;&#10;Care must be taken to disambiguate null nodes vs nodes with val 0">
       <created>1604327792973</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605539671513</updated>
     </task>
-    <option name="localTasksCounter" value="522" />
+    <task id="LOCAL-00522" summary="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap">
+      <created>1605543789843</created>
+      <option name="number" value="00522" />
+      <option name="presentableId" value="LOCAL-00522" />
+      <option name="project" value="LOCAL" />
+      <updated>1605543789843</updated>
+    </task>
+    <option name="localTasksCounter" value="523" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find sum of two numbers &lt; k in an unsorted array by sorting and applying two pointer algorithm.&#10;&#10;Interesting thing to note here was that problem mentioned that find two indices such that i &lt; j. But since sum is commutative, sorting the array might swap the indices but still the resultant sum would be the same" />
     <MESSAGE value="Update solution in Subsets to accommodate the logical choice present for each index in the result. Each index can either be present or be absent in the result. So just simulate the choices for all indices." />
     <MESSAGE value="Add comment regarding another way of generating all the subsets by leveraging binary numbers" />
     <MESSAGE value="Add another way of solving Subsets with duplicates, in which we add a duplicate number to the result only if the previous duplicate is also added, otherwise we just skip this duplicate number." />
@@ -615,7 +613,8 @@
     <MESSAGE value="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient." />
     <MESSAGE value="Solve medium generate all permutations of given string if each char can either be capitalized or converted to lower case by recursion.&#10;&#10;Leveraged prior learnings of processing each char independently." />
     <MESSAGE value="Solve hard and tricky interval problem -- find free time common to all employees using line sweep algo similar to meeting rooms 2&#10;&#10;Learnings -- For problems related to interval, pattern for solving them is&#10;1. Line sweep using counter +1, -1&#10;2. Line sweep using start time as key, end time as value&#10;3. Given a target interval and a set of input intervals, compare each interval to the target interval&#10;4. Greedy approach by sorting by start or sorting by end" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky interval problem -- find free time common to all employees using line sweep algo similar to meeting rooms 2&#10;&#10;Learnings -- For problems related to interval, pattern for solving them is&#10;1. Line sweep using counter +1, -1&#10;2. Line sweep using start time as key, end time as value&#10;3. Given a target interval and a set of input intervals, compare each interval to the target interval&#10;4. Greedy approach by sorting by start or sorting by end" />
+    <MESSAGE value="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -673,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605539670767">
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605543789295">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605539670767" />
+    <state x="435" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605543789295" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -765,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605539672366">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605543790990">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605539672366" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605543790990" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -789,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604653793268" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1605272834053">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1605549144035">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605272834053" />
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605549144035" />
     <state width="750" height="250" key="javadoc.popup.new" timestamp="1605395400428">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
