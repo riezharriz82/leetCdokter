@@ -38,6 +38,7 @@ public class EmployeeFreeTime {
      * <p>
      * RunTime can be reduced if you use priority queue and push all the intervals to pq, and merge overlapping intervals.
      * Check if the previous interval and current interval are disjoint, if yes, the gap is the free interval
+     * Refer to the priority queue solution in {@link IntervalListIntersections}
      */
     public List<Interval> employeeFreeTimeUsingLineSweep(List<List<Interval>> schedule) {
         TreeMap<Integer, Integer> map = new TreeMap<>(); //mapping of time -> counter (+1, -1)
@@ -51,11 +52,14 @@ public class EmployeeFreeTime {
         int start = -1, runningCounter = 0;
         for (Map.Entry<Integer, Integer> entrySet : map.entrySet()) {
             if (start != -1) {
+                //if start of free time has been identified, this represent the end of common free time
+                //all good things must come to an end
                 result.add(new Interval(start, entrySet.getKey()));
                 start = -1;
             }
             runningCounter += entrySet.getValue();
             if (runningCounter == 0) {
+                //running counter of 0 indicates that no one is working at this time, so everyone is free, need to mark the start of the free time
                 start = entrySet.getKey();
             }
         }
