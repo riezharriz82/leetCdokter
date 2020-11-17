@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OneThreeTwoPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OneThreeTwoPattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00477" summary="Rename file to match problem statement">
-      <created>1604351241880</created>
-      <option name="number" value="00477" />
-      <option name="presentableId" value="LOCAL-00477" />
-      <option name="project" value="LOCAL" />
-      <updated>1604351241880</updated>
     </task>
     <task id="LOCAL-00478" summary="Solve easy but tricky to optimize design a stack that supports popMax() along with usual push() and pop().&#10;&#10;To identify largest value in the stack, we need to use treeMap but in order to delete the largest node in o(1) time, we need a way to directly delete a node. Only DLL supports constant time deletion. So need to model the stack as a DLL.">
       <created>1604420927191</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605593300432</updated>
     </task>
-    <option name="localTasksCounter" value="526" />
+    <task id="LOCAL-00526" summary="Add the way to solve this question in a simplified way using TreeMap + ceilingEntry() instead of manually fiddling with return value of Arrays.binarySearch()">
+      <created>1605631065314</created>
+      <option name="number" value="00526" />
+      <option name="presentableId" value="LOCAL-00526" />
+      <option name="project" value="LOCAL" />
+      <updated>1605631065314</updated>
+    </task>
+    <option name="localTasksCounter" value="527" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add clarification in output of the problem, need to return the no of edges in the longest univalue path, not the no of elements present" />
     <MESSAGE value="Solve medium and tricky problem, find no of moves required to make all the nodes in the tree with 1 coin.&#10;&#10;Try to think about what info is required from the children, and update result and return value accordingly.&#10;Here we need the surplus/deficit from left/right subtree. Once we know that, we can calculate the total surplus/deficit of current subtree.&#10;Moves required at each node is the absolute value of surplus/deficit at that node e.g. if a node has surplus 3, it needs 3 moves to transfer the surplus because that node can have value = 1 in the end state." />
     <MESSAGE value="Add approach in find all nodes present at k distance in binary tree" />
     <MESSAGE value="Add gotcha around resetting prefix sum of histogram if the current column value is 0, because we are only interested in longest histogram height of 1's ending at current col" />
@@ -614,7 +614,8 @@
     <MESSAGE value="Solve medium and tricky find combinations of three triplets such that their sum &lt; target sum using multiple approaches&#10;&#10;1. n^2 using two pointers&#10;2. n^2log(n) using binary search&#10;&#10;Learnings -- Using Arrays.binarySearch() to find num &lt; target does not work if input contains duplicates." />
     <MESSAGE value="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller" />
     <MESSAGE value="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString" />
+    <MESSAGE value="Add the way to solve this question in a simplified way using TreeMap + ceilingEntry() instead of manually fiddling with return value of Arrays.binarySearch()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the way to solve this question in a simplified way using TreeMap + ceilingEntry() instead of manually fiddling with return value of Arrays.binarySearch()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +673,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605593299759">
+    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605631064621">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605593299759" />
+    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605631064621" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +765,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605593301386">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605631066639">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605593301386" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605631066639" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +805,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604866424004" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605600809947">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605632925965">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605600809947" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605632925965" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
