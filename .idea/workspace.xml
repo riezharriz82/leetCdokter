@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00475" summary="Solve medium tricky problem find longest substring with all unique characters repeating &gt;=k times.&#10;&#10;Sliding window technique is really odd and seems hacky. Recursive solution to create splits at invalid characters makes sense.">
-      <created>1604347780478</created>
-      <option name="number" value="00475" />
-      <option name="presentableId" value="LOCAL-00475" />
-      <option name="project" value="LOCAL" />
-      <updated>1604347780478</updated>
-    </task>
     <task id="LOCAL-00476" summary="Solve easy find average of top 5 scores of each student using counting sort.">
       <created>1604349401280</created>
       <option name="number" value="00476" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605551449350</updated>
     </task>
-    <option name="localTasksCounter" value="524" />
+    <task id="LOCAL-00524" summary="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller">
+      <created>1605557492993</created>
+      <option name="number" value="00524" />
+      <option name="presentableId" value="LOCAL-00524" />
+      <option name="project" value="LOCAL" />
+      <updated>1605557492993</updated>
+    </task>
+    <option name="localTasksCounter" value="525" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment regarding another way of generating all the subsets by leveraging binary numbers" />
     <MESSAGE value="Add another way of solving Subsets with duplicates, in which we add a duplicate number to the result only if the previous duplicate is also added, otherwise we just skip this duplicate number." />
     <MESSAGE value="Add clarification in output of the problem, need to return the no of edges in the longest univalue path, not the no of elements present" />
     <MESSAGE value="Solve medium and tricky problem, find no of moves required to make all the nodes in the tree with 1 coin.&#10;&#10;Try to think about what info is required from the children, and update result and return value accordingly.&#10;Here we need the surplus/deficit from left/right subtree. Once we know that, we can calculate the total surplus/deficit of current subtree.&#10;Moves required at each node is the absolute value of surplus/deficit at that node e.g. if a node has surplus 3, it needs 3 moves to transfer the surplus because that node can have value = 1 in the end state." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve hard and tricky interval problem -- find free time common to all employees using line sweep algo similar to meeting rooms 2&#10;&#10;Learnings -- For problems related to interval, pattern for solving them is&#10;1. Line sweep using counter +1, -1&#10;2. Line sweep using start time as key, end time as value&#10;3. Given a target interval and a set of input intervals, compare each interval to the target interval&#10;4. Greedy approach by sorting by start or sorting by end" />
     <MESSAGE value="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap" />
     <MESSAGE value="Solve medium and tricky find combinations of three triplets such that their sum &lt; target sum using multiple approaches&#10;&#10;1. n^2 using two pointers&#10;2. n^2log(n) using binary search&#10;&#10;Learnings -- Using Arrays.binarySearch() to find num &lt; target does not work if input contains duplicates." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find combinations of three triplets such that their sum &lt; target sum using multiple approaches&#10;&#10;1. n^2 using two pointers&#10;2. n^2log(n) using binary search&#10;&#10;Learnings -- Using Arrays.binarySearch() to find num &lt; target does not work if input contains duplicates." />
+    <MESSAGE value="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605551448771">
+    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605557492475">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605551448771" />
+    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605557492475" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605551450710">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605557494052">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605551450710" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605557494052" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

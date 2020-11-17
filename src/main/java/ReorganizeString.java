@@ -42,9 +42,9 @@ public class ReorganizeString {
             }
             if (head.getValue() - 1 > 0) { //add back to heap if still remaining
                 pq.add(new Pair<>(head.getKey(), head.getValue() - 1));
-                if (next.getValue() - 1 > 0) {
-                    pq.add(new Pair<>(next.getKey(), next.getValue() - 1));
-                }
+            }
+            if (next.getValue() - 1 > 0) {
+                pq.add(new Pair<>(next.getKey(), next.getValue() - 1));
             }
         }
         //check if the length matches, if yes, then we have placed all the characters
