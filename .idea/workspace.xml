@@ -149,11 +149,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GeneralizedAbbreviations" />
       <item itemvalue="Application.PredictTheWinner" />
+      <item itemvalue="Application.SortColors" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Application.SortColors" />
-      <item itemvalue="Application.GeneralizedAbbreviations" />
       <item itemvalue="JUnit.ValidateBSTTest" />
     </list>
     <recent_temporary>
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00476" summary="Solve easy find average of top 5 scores of each student using counting sort.">
-      <created>1604349401280</created>
-      <option name="number" value="00476" />
-      <option name="presentableId" value="LOCAL-00476" />
-      <option name="project" value="LOCAL" />
-      <updated>1604349401280</updated>
     </task>
     <task id="LOCAL-00477" summary="Rename file to match problem statement">
       <created>1604351241880</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605557492993</updated>
     </task>
-    <option name="localTasksCounter" value="525" />
+    <task id="LOCAL-00525" summary="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString">
+      <created>1605593300432</created>
+      <option name="number" value="00525" />
+      <option name="presentableId" value="LOCAL-00525" />
+      <option name="project" value="LOCAL" />
+      <updated>1605593300432</updated>
+    </task>
+    <option name="localTasksCounter" value="526" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another way of solving Subsets with duplicates, in which we add a duplicate number to the result only if the previous duplicate is also added, otherwise we just skip this duplicate number." />
     <MESSAGE value="Add clarification in output of the problem, need to return the no of edges in the longest univalue path, not the no of elements present" />
     <MESSAGE value="Solve medium and tricky problem, find no of moves required to make all the nodes in the tree with 1 coin.&#10;&#10;Try to think about what info is required from the children, and update result and return value accordingly.&#10;Here we need the surplus/deficit from left/right subtree. Once we know that, we can calculate the total surplus/deficit of current subtree.&#10;Moves required at each node is the absolute value of surplus/deficit at that node e.g. if a node has surplus 3, it needs 3 moves to transfer the surplus because that node can have value = 1 in the end state." />
     <MESSAGE value="Add approach in find all nodes present at k distance in binary tree" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap" />
     <MESSAGE value="Solve medium and tricky find combinations of three triplets such that their sum &lt; target sum using multiple approaches&#10;&#10;1. n^2 using two pointers&#10;2. n^2log(n) using binary search&#10;&#10;Learnings -- Using Arrays.binarySearch() to find num &lt; target does not work if input contains duplicates." />
     <MESSAGE value="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller" />
+    <MESSAGE value="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605557492475">
+    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605593299759">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605557492475" />
+    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605593299759" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -684,10 +684,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1605338840619">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1605630483450">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605338840619" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605630483450" />
     <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605557494052">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605593301386">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605557494052" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605593301386" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +804,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1604866424004" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605557079054">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605600809947">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605557079054" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605600809947" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

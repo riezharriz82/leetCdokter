@@ -28,6 +28,8 @@ public class FindRightInterval {
     /**
      * Approach, since we are interested in the index of the next right interval, sorting comes into mind.
      * But sorting will change the original indexes, so we need to store the original indices somewhere
+     * <p>
+     * Another simplified way of solving this would be to leverage TreeMap to find the interval >= current interval using ceilingEntry()
      */
     public int[] findRightInterval(int[][] intervals) {
         Point[] points = new Point[intervals.length];
