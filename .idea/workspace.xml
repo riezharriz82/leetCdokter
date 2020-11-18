@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00480" summary="Solve medium find the longest subarray that can be transformed to all 1's in &lt;= k operations (0 can be transformed to 1 in one operation)&#10;&#10;Problem reduces to finding the longest subarray with num zeroes &lt;= k, use the standard sliding window paradigm for implementation.">
-      <created>1604430244789</created>
-      <option name="number" value="00480" />
-      <option name="presentableId" value="LOCAL-00480" />
-      <option name="project" value="LOCAL" />
-      <updated>1604430244789</updated>
-    </task>
     <task id="LOCAL-00481" summary="Simplify code by rewriting it to standard sliding window paradigm, keep increasing the window until it becomes invalid, then keep shrinking the window until it becomes valid again.">
       <created>1604433084320</created>
       <option name="number" value="00481" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605706673461</updated>
     </task>
-    <option name="localTasksCounter" value="529" />
+    <task id="LOCAL-00529" summary="Solve hard and tricky to optimize find words that starts with provided prefix and ends with provided suffix using two tries.&#10;&#10;Maintaining two tries was straight forward but then searching is a bit slow because now you will have to search in two tries and then filter out common indices. A fast solution is to directly insert all suffixes + delimiter + word in trie &#10;&#10;i.e for &quot;apple&quot;, store words like &quot;e{apple&quot;, &quot;le{apple&quot;, &quot;ple{apple&quot;, &quot;pple{apple&quot;, &quot;apple{apple&quot; in trie">
+      <created>1605712414155</created>
+      <option name="number" value="00529" />
+      <option name="presentableId" value="LOCAL-00529" />
+      <option name="project" value="LOCAL" />
+      <updated>1605712414155</updated>
+    </task>
+    <option name="localTasksCounter" value="530" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha around resetting prefix sum of histogram if the current column value is 0, because we are only interested in longest histogram height of 1's ending at current col" />
     <MESSAGE value="Solve easy find moving average of last k elements from stream using fixed size deque and circular array.&#10;&#10;Learnings -- Circular array can be used to solve question of fixed window size. Circular array can be implemented by fixed size array by keeping two pointers, head/tail and using modular arithmetic while incrementing head/tail" />
     <MESSAGE value="Solve medium find max difference between a node and its ancestor in binary tree by keeping track of min and max val found so far during recursion.&#10;&#10;Little bit tricky but was able to solve it quickly." />
     <MESSAGE value="Solve hard and tricky find min no of cameras to place to cover a binary tree. This is similar to vertex cover but is very tricky.&#10;&#10;Trick is to consider it as a greedy problem rather than recursion problem, think about not placing a camera at the edge but at the center. So lead node should not have a camera, and instead it's parent should have a camera.&#10;&#10;Sequence of covering would be covered (null pointers of leaf) -&gt; uncovered -&gt; place camera -&gt; covered -&gt; uncovered -&gt; place camera .." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Add the way to solve this question in a simplified way using TreeMap + ceilingEntry() instead of manually fiddling with return value of Arrays.binarySearch()" />
     <MESSAGE value="Add problem statement in 132 pattern -- still surprised to see that I was able to solve that question in linear time on my own :D" />
     <MESSAGE value="Solve hard and tricky to optimize design search autocomplete system that provides top 3 sentences by hotness for current prefix.&#10;&#10;Learnings -- As the problem explicitly asked for finding all valid sentences that starts with a prefix, trie is the way to go. &#10;In my initial implementation I performed DFS at the last trie node and extracted out all valid sentences and then ranked them.&#10;Instead of performing DFS, a better way is to store the useful information directly at each node i.e store all the valid sentences directly at each trie node." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky to optimize design search autocomplete system that provides top 3 sentences by hotness for current prefix.&#10;&#10;Learnings -- As the problem explicitly asked for finding all valid sentences that starts with a prefix, trie is the way to go. &#10;In my initial implementation I performed DFS at the last trie node and extracted out all valid sentences and then ranked them.&#10;Instead of performing DFS, a better way is to store the useful information directly at each node i.e store all the valid sentences directly at each trie node." />
+    <MESSAGE value="Solve hard and tricky to optimize find words that starts with provided prefix and ends with provided suffix using two tries.&#10;&#10;Maintaining two tries was straight forward but then searching is a bit slow because now you will have to search in two tries and then filter out common indices. A fast solution is to directly insert all suffixes + delimiter + word in trie &#10;&#10;i.e for &quot;apple&quot;, store words like &quot;e{apple&quot;, &quot;le{apple&quot;, &quot;ple{apple&quot;, &quot;pple{apple&quot;, &quot;apple{apple&quot; in trie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky to optimize find words that starts with provided prefix and ends with provided suffix using two tries.&#10;&#10;Maintaining two tries was straight forward but then searching is a bit slow because now you will have to search in two tries and then filter out common indices. A fast solution is to directly insert all suffixes + delimiter + word in trie &#10;&#10;i.e for &quot;apple&quot;, store words like &quot;e{apple&quot;, &quot;le{apple&quot;, &quot;ple{apple&quot;, &quot;pple{apple&quot;, &quot;apple{apple&quot; in trie" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605706672905">
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605712413632">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605706672905" />
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605712413632" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605706674785">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605712415246">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605706674785" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605712415246" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +804,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605634192119" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605636168826">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605713894707">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605636168826" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605713894707" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
