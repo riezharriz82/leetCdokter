@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00479" summary="Solve medium and tricky find the longest substring such that the all characters of the substring can be made equal in &lt;= k operations&#10;&#10;First identify whats the min no of operations required to make all characters same, then use sliding window to find longest such window.&#10;&#10;Learnings -- Longest window vs shortest window -- sliding window implementation is different in both the cases. In former, you keep expanding until window becomes invalid, then you start shrinking until it's valid.&#10;In latter, you expand until you find a valid window, then you start shrinking until it becomes invalid.">
-      <created>1604429179220</created>
-      <option name="number" value="00479" />
-      <option name="presentableId" value="LOCAL-00479" />
-      <option name="project" value="LOCAL" />
-      <updated>1604429179220</updated>
-    </task>
     <task id="LOCAL-00480" summary="Solve medium find the longest subarray that can be transformed to all 1's in &lt;= k operations (0 can be transformed to 1 in one operation)&#10;&#10;Problem reduces to finding the longest subarray with num zeroes &lt;= k, use the standard sliding window paradigm for implementation.">
       <created>1604430244789</created>
       <option name="number" value="00480" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605633518368</updated>
     </task>
-    <option name="localTasksCounter" value="528" />
+    <task id="LOCAL-00528" summary="Solve hard and tricky to optimize design search autocomplete system that provides top 3 sentences by hotness for current prefix.&#10;&#10;Learnings -- As the problem explicitly asked for finding all valid sentences that starts with a prefix, trie is the way to go. &#10;In my initial implementation I performed DFS at the last trie node and extracted out all valid sentences and then ranked them.&#10;Instead of performing DFS, a better way is to store the useful information directly at each node i.e store all the valid sentences directly at each trie node.">
+      <created>1605706673461</created>
+      <option name="number" value="00528" />
+      <option name="presentableId" value="LOCAL-00528" />
+      <option name="project" value="LOCAL" />
+      <updated>1605706673461</updated>
+    </task>
+    <option name="localTasksCounter" value="529" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add approach in find all nodes present at k distance in binary tree" />
     <MESSAGE value="Add gotcha around resetting prefix sum of histogram if the current column value is 0, because we are only interested in longest histogram height of 1's ending at current col" />
     <MESSAGE value="Solve easy find moving average of last k elements from stream using fixed size deque and circular array.&#10;&#10;Learnings -- Circular array can be used to solve question of fixed window size. Circular array can be implemented by fixed size array by keeping two pointers, head/tail and using modular arithmetic while incrementing head/tail" />
     <MESSAGE value="Solve medium find max difference between a node and its ancestor in binary tree by keeping track of min and max val found so far during recursion.&#10;&#10;Little bit tricky but was able to solve it quickly." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString" />
     <MESSAGE value="Add the way to solve this question in a simplified way using TreeMap + ceilingEntry() instead of manually fiddling with return value of Arrays.binarySearch()" />
     <MESSAGE value="Add problem statement in 132 pattern -- still surprised to see that I was able to solve that question in linear time on my own :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add problem statement in 132 pattern -- still surprised to see that I was able to solve that question in linear time on my own :D" />
+    <MESSAGE value="Solve hard and tricky to optimize design search autocomplete system that provides top 3 sentences by hotness for current prefix.&#10;&#10;Learnings -- As the problem explicitly asked for finding all valid sentences that starts with a prefix, trie is the way to go. &#10;In my initial implementation I performed DFS at the last trie node and extracted out all valid sentences and then ranked them.&#10;Instead of performing DFS, a better way is to store the useful information directly at each node i.e store all the valid sentences directly at each trie node." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky to optimize design search autocomplete system that provides top 3 sentences by hotness for current prefix.&#10;&#10;Learnings -- As the problem explicitly asked for finding all valid sentences that starts with a prefix, trie is the way to go. &#10;In my initial implementation I performed DFS at the last trie node and extracted out all valid sentences and then ranked them.&#10;Instead of performing DFS, a better way is to store the useful information directly at each node i.e store all the valid sentences directly at each trie node." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605633517788">
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605706672905">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="433" y="47" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605633517788" />
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605706672905" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605633519491">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605706674785">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605633519491" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605706674785" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +792,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605549144035" />
-    <state width="750" height="250" key="javadoc.popup.new" timestamp="1605395400428">
+    <state width="750" height="250" key="javadoc.popup.new" timestamp="1605709030464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605395400428" />
+    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605709030464" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605109258598">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
