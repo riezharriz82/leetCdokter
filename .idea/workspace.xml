@@ -14,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PermutationInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PermutationInString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00484" summary="Solve medium and tricky find nodes that can reach both pacific and atlantic ocean by doing DFS from the oceans and not from the inner nodes.&#10;&#10;Finally I was able to understand why doing DFS in SurroundedRegions from inner nodes resulted in WA -- due to circular dependency.">
-      <created>1604601809171</created>
-      <option name="number" value="00484" />
-      <option name="presentableId" value="LOCAL-00484" />
-      <option name="project" value="LOCAL" />
-      <updated>1604601809171</updated>
     </task>
     <task id="LOCAL-00485" summary="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier">
       <created>1604606153392</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605791804392</updated>
     </task>
-    <option name="localTasksCounter" value="533" />
+    <task id="LOCAL-00533" summary="Add more problems related to sliding window">
+      <created>1605792129708</created>
+      <option name="number" value="00533" />
+      <option name="presentableId" value="LOCAL-00533" />
+      <option name="project" value="LOCAL" />
+      <updated>1605792129708</updated>
+    </task>
+    <option name="localTasksCounter" value="534" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky game theory problem. &#10;&#10;Multiple gotchas in game theory:&#10;1. Filter out invalid/unreachable inputs prior to starting recursion.&#10;&#10;2. When there is state to memoize, memoize the input state at the current recursion, not the choices performed after the input state.&#10;&#10;3. When a player wins after making a choice, that's not the end of the game. Other player will still continue performing the backtracking. So reset all the choices made before returning true to the next player." />
     <MESSAGE value="Solve medium and tricky game theory problem predictTheWinner, need to find the max score of the first player if each player picks either from the left or from the right.&#10;&#10;Since we need to maximise the score, we need to use MaxiMin algorithm. There are two ways of implementing maximin algo. Either use flag to denote who is playing or directly skip to the player1 state without considering player2 state at all.&#10;&#10;Former one needs to carefully handle return value for both the players assuming that we are interested only in score of player1" />
     <MESSAGE value="Solve medium game theory problem, stone game problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm." />
     <MESSAGE value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve medium find whether the current string contains a permutation of a target string as a substring using sliding window template.&#10;&#10;Leveraged prior learnings of sliding window template. Here we are required to find the smallest valid window that is an anagram of target string. Keep expanding the window until the window has all the required chars of the target string. Then try to shrink the window to see if the window length can be reduced to target string length." />
     <MESSAGE value="Solve medium find all diagonal traversal of binary tree by keeping a key as the identifier of the diagonal. When going left, increment the key to signify start of a new diagonal, when going right, pass in the same key as current node.&#10;&#10;Keep a map to store all occurrences of nodes in every diagonal." />
     <MESSAGE value="Update code in FindAllAnagramInString to match the sliding window template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update code in FindAllAnagramInString to match the sliding window template" />
+    <MESSAGE value="Add more problems related to sliding window" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more problems related to sliding window" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605791803850">
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605792129182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605791803850" />
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605792129182" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605791805359">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605792131011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605791805359" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605792131011" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
