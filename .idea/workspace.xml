@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00485" summary="Add recursive solution similar to knapsack for TwoCityScheduling problem. Every person has two option, go to city A or city B. &#10;&#10;Constraint is that only half of the people can be in any city, couldn't think of recursive solution earlier">
-      <created>1604606153392</created>
-      <option name="number" value="00485" />
-      <option name="presentableId" value="LOCAL-00485" />
-      <option name="project" value="LOCAL" />
-      <updated>1604606153392</updated>
-    </task>
     <task id="LOCAL-00486" summary="Actually solve find the number of distinct islands shapes by storing the relative indices of current island path i.e. when doing a DFS add the relative index of the current node to curPath (relative from starting point of the DFS)&#10;&#10;Using relative index will help in finding similar shapes">
       <created>1604608031859</created>
       <option name="number" value="00486" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605792129708</updated>
     </task>
-    <option name="localTasksCounter" value="534" />
+    <task id="LOCAL-00534" summary="Solve medium and tricky find k closest elements by value to a target value in a sorted array using binary search + two pointers&#10;&#10;Learnings -- Erichto's binary search template is awesome. Best investment of my time to watch and understand that video. All binary search questions are now a breeze.&#10;&#10;In my initial solution I misinterpreted the problem and picked the k closest indices but the problem is asking for k closest elements by value, so need to use two pointer technique to pick elements accordingly.">
+      <created>1605797457291</created>
+      <option name="number" value="00534" />
+      <option name="presentableId" value="LOCAL-00534" />
+      <option name="project" value="LOCAL" />
+      <updated>1605797457292</updated>
+    </task>
+    <option name="localTasksCounter" value="535" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky game theory problem predictTheWinner, need to find the max score of the first player if each player picks either from the left or from the right.&#10;&#10;Since we need to maximise the score, we need to use MaxiMin algorithm. There are two ways of implementing maximin algo. Either use flag to denote who is playing or directly skip to the player1 state without considering player2 state at all.&#10;&#10;Former one needs to carefully handle return value for both the players assuming that we are interested only in score of player1" />
     <MESSAGE value="Solve medium game theory problem, stone game problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm." />
     <MESSAGE value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
     <MESSAGE value="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve medium find all diagonal traversal of binary tree by keeping a key as the identifier of the diagonal. When going left, increment the key to signify start of a new diagonal, when going right, pass in the same key as current node.&#10;&#10;Keep a map to store all occurrences of nodes in every diagonal." />
     <MESSAGE value="Update code in FindAllAnagramInString to match the sliding window template" />
     <MESSAGE value="Add more problems related to sliding window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add more problems related to sliding window" />
+    <MESSAGE value="Solve medium and tricky find k closest elements by value to a target value in a sorted array using binary search + two pointers&#10;&#10;Learnings -- Erichto's binary search template is awesome. Best investment of my time to watch and understand that video. All binary search questions are now a breeze.&#10;&#10;In my initial solution I misinterpreted the problem and picked the k closest indices but the problem is asking for k closest elements by value, so need to use two pointer technique to pick elements accordingly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find k closest elements by value to a target value in a sorted array using binary search + two pointers&#10;&#10;Learnings -- Erichto's binary search template is awesome. Best investment of my time to watch and understand that video. All binary search questions are now a breeze.&#10;&#10;In my initial solution I misinterpreted the problem and picked the k closest indices but the problem is asking for k closest elements by value, so need to use two pointer technique to pick elements accordingly." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605792129182">
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605797456777">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605792129182" />
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605797456777" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605792131011">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605797458609">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605792131011" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605797458609" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +792,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605549144035" />
-    <state width="750" height="250" key="javadoc.popup.new" timestamp="1605709030464">
+    <state width="750" height="250" key="javadoc.popup.new" timestamp="1605799973777">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605709030464" />
+    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605799973777" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605109258598">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
