@@ -21,29 +21,39 @@ import java.util.List;
  * The substring with start index = 6 is "bac", which is an anagram of "abc".
  */
 public class FindAllAnagramInString {
+    /**
+     * Approach: Sliding Window, keep increasing the window until the current window contains all the required chars
+     * Once done, keep shrinking the window to see if the window size can be reduced to match the target string length
+     * If yes, we found ourselves an anagram
+     * <p>
+     * {@link PermutationInString} {@link MinimumWindowSubstring} for related problem
+     */
     public List<Integer> findAnagrams(String s, String p) {
         if (s.length() < p.length()) {
             return Arrays.asList();
         }
-        int window = p.length();
         //count of characters for the key
-        int[] keyCount = buildKeyCharCountMap(p);
+        int[] count = buildKeyCharCountMap(p);
         List<Integer> res = new ArrayList<>();
-        int begin = 0, end = 0;
+        int begin = 0, end = 0, requiredChars = 0;
         while (end < s.length()) {
-            if (keyCount[s.charAt(end) - 'a'] > 0) {
-                keyCount[s.charAt(end) - 'a']--;
-                if (end - begin + 1 == window) { //window of size equals key length found
+            char last = s.charAt(end);
+            if (count[last - 'a'] > 0) {
+                requiredChars++;
+            }
+            count[last - 'a']--;
+            while (requiredChars == p.length()) {
+                if (end - begin + 1 == p.length()) { //if the window size equals the target size
                     res.add(begin);
                 }
-                end++; //increase the window size if part of the anagram
-            } else if (begin == end) { //single character which is not part of the key
-                begin++;
-                end++;
-            } else { //decrease the window size
-                keyCount[s.charAt(begin) - 'a']++;
+                char first = s.charAt(begin);
+                if (count[first - 'a'] == 0) {
+                    requiredChars--;
+                }
+                count[first - 'a']++;
                 begin++;
             }
+            end++;
         }
         return res;
     }
