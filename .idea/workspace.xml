@@ -14,8 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FindAllAnagramInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindAllAnagramInString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PermutationInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PermutationInString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00483" summary="Solve easy but tricky greedy problem, given the initial position of the chips, find the min cost to move them to the same position. &#10;&#10;Min cost can be found if one of the initial state is chosen as the end state, so choose all of the initial position  as the target position and find the total cost to bring remaining chips to it's position.&#10;&#10;This n^2 pattern seems to be pretty common. Can be done in linear time but ....">
-      <created>1604600575534</created>
-      <option name="number" value="00483" />
-      <option name="presentableId" value="LOCAL-00483" />
-      <option name="project" value="LOCAL" />
-      <updated>1604600575534</updated>
     </task>
     <task id="LOCAL-00484" summary="Solve medium and tricky find nodes that can reach both pacific and atlantic ocean by doing DFS from the oceans and not from the inner nodes.&#10;&#10;Finally I was able to understand why doing DFS in SurroundedRegions from inner nodes resulted in WA -- due to circular dependency.">
       <created>1604601809171</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605720652295</updated>
     </task>
-    <option name="localTasksCounter" value="532" />
+    <task id="LOCAL-00532" summary="Update code in FindAllAnagramInString to match the sliding window template">
+      <created>1605791804391</created>
+      <option name="number" value="00532" />
+      <option name="presentableId" value="LOCAL-00532" />
+      <option name="project" value="LOCAL" />
+      <updated>1605791804392</updated>
+    </task>
+    <option name="localTasksCounter" value="533" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky find min no of cameras to place to cover a binary tree. This is similar to vertex cover but is very tricky.&#10;&#10;Trick is to consider it as a greedy problem rather than recursion problem, think about not placing a camera at the edge but at the center. So lead node should not have a camera, and instead it's parent should have a camera.&#10;&#10;Sequence of covering would be covered (null pointers of leaf) -&gt; uncovered -&gt; place camera -&gt; covered -&gt; uncovered -&gt; place camera .." />
     <MESSAGE value="Solve medium and tricky game theory problem. &#10;&#10;Multiple gotchas in game theory:&#10;1. Filter out invalid/unreachable inputs prior to starting recursion.&#10;&#10;2. When there is state to memoize, memoize the input state at the current recursion, not the choices performed after the input state.&#10;&#10;3. When a player wins after making a choice, that's not the end of the game. Other player will still continue performing the backtracking. So reset all the choices made before returning true to the next player." />
     <MESSAGE value="Solve medium and tricky game theory problem predictTheWinner, need to find the max score of the first player if each player picks either from the left or from the right.&#10;&#10;Since we need to maximise the score, we need to use MaxiMin algorithm. There are two ways of implementing maximin algo. Either use flag to denote who is playing or directly skip to the player1 state without considering player2 state at all.&#10;&#10;Former one needs to carefully handle return value for both the players assuming that we are interested only in score of player1" />
     <MESSAGE value="Solve medium game theory problem, stone game problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm." />
@@ -615,7 +613,8 @@
     <MESSAGE value="Solve hard and tricky to optimize find words that starts with provided prefix and ends with provided suffix using two tries.&#10;&#10;Maintaining two tries was straight forward but then searching is a bit slow because now you will have to search in two tries and then filter out common indices. A fast solution is to directly insert all suffixes + delimiter + word in trie &#10;&#10;i.e for &quot;apple&quot;, store words like &quot;e{apple&quot;, &quot;le{apple&quot;, &quot;ple{apple&quot;, &quot;pple{apple&quot;, &quot;apple{apple&quot; in trie" />
     <MESSAGE value="Solve medium find whether the current string contains a permutation of a target string as a substring using sliding window template.&#10;&#10;Leveraged prior learnings of sliding window template. Here we are required to find the smallest valid window that is an anagram of target string. Keep expanding the window until the window has all the required chars of the target string. Then try to shrink the window to see if the window length can be reduced to target string length." />
     <MESSAGE value="Solve medium find all diagonal traversal of binary tree by keeping a key as the identifier of the diagonal. When going left, increment the key to signify start of a new diagonal, when going right, pass in the same key as current node.&#10;&#10;Keep a map to store all occurrences of nodes in every diagonal." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all diagonal traversal of binary tree by keeping a key as the identifier of the diagonal. When going left, increment the key to signify start of a new diagonal, when going right, pass in the same key as current node.&#10;&#10;Keep a map to store all occurrences of nodes in every diagonal." />
+    <MESSAGE value="Update code in FindAllAnagramInString to match the sliding window template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update code in FindAllAnagramInString to match the sliding window template" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -673,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605720651784">
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605791803850">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605720651784" />
+    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605791803850" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -765,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605720653066">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605791805359">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605720653066" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605791805359" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

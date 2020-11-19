@@ -20,7 +20,8 @@ public class PermutationInString {
      * If yes, we have found ourselves a valid anagram
      * If no, continue shrinking the window until window becomes invalid ie. valid chars != s1.length
      * <p>
-     * {@link MinimumWindowSubstring} {@link FindAllAnagramInString} related problems
+     * {@link MinimumWindowSubstring} {@link FindAllAnagramInString} {@link LongestRepeatingCharacterReplacement} {@link LongestSubstringWithAtMostKDistinctCharacters}
+     * {@link LongestSubstringWithAtLeastKRepeatingCharacters}
      */
     public boolean checkInclusion(String s1, String s2) {
         int[] cnt = new int[26];
