@@ -13,6 +13,7 @@ public class PartitionKEqualSumSubsets {
      * Need to find k subsets each with sum = totalSum/k
      * Keep a visited set and try adding elements to a set in order to reach target sum.
      * If target sum is reached, we need to find k-1 such subsets.
+     * Every number has two choices either be a part of the current set or don't
      * <p>
      * Trick was to use visited set to perform backtracking.
      * <p>
@@ -40,15 +41,19 @@ public class PartitionKEqualSumSubsets {
         } else if (currentSum > targetSum) {
             return false;
         } else {
-            for (int i = index; i < nums.length; i++) {
-                if (!visited[i]) { //only consider unvisited elements to avoid duplicate counts
-                    visited[i] = true;
-                    if (recur(nums, visited, i + 1, targetSum, currentSum + nums[i], count)) {
-                        return true;
-                    }
-                    visited[i] = false;
-                }
+            //try to not add the current number to the current set and see if we can find the result
+            if (recur(nums, visited, index + 1, targetSum, currentSum, count)) {
+                return true;
             }
+            //try to add the current number to the current set and see if we can find the result
+            if (!visited[index]) { //only consider unvisited elements to avoid duplicate counts
+                visited[index] = true;
+                if (recur(nums, visited, index + 1, targetSum, currentSum + nums[index], count)) {
+                    return true;
+                }
+                visited[index] = false;
+            }
+            //both options tried, result can't be found
             return false;
         }
     }
