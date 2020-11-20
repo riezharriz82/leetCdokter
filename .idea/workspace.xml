@@ -14,7 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindMinimumInRotatedSortedArray2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindMinimumInRotatedSortedArray2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00487" summary="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation.">
-      <created>1604650147190</created>
-      <option name="number" value="00487" />
-      <option name="presentableId" value="LOCAL-00487" />
-      <option name="project" value="LOCAL" />
-      <updated>1604650147190</updated>
     </task>
     <task id="LOCAL-00488" summary="Solve medium find whether a graph is a valid tree or not using&#10;&#10;1. DFS + Cycle Detection (Care must be taken to exclude parents as its an undirected graph)&#10;2. Using union find. Thanks to the well explained solution, was able to understand motivation behind path compression with rank in union find operations. Path compression directly connects the descendants to the parent in find_set() operation.&#10;Rank is used to merge smaller set to the larger set during union() operation. This allows smaller updates in the tree during find_set() operation.">
       <created>1604650298692</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605800624665</updated>
     </task>
-    <option name="localTasksCounter" value="536" />
+    <task id="LOCAL-00536" summary="Solve medium find an element in rotated and sorted array using binary search&#10;&#10;Leveraged prior learnings to first find the minimum in sorted rotated array by comparing mid with the last element. Once found, array is partitioned into two sorted halves, check whether target lies in first or second half and perform binary search accordingly">
+      <created>1605885557884</created>
+      <option name="number" value="00536" />
+      <option name="presentableId" value="LOCAL-00536" />
+      <option name="project" value="LOCAL" />
+      <updated>1605885557884</updated>
+    </task>
+    <option name="localTasksCounter" value="537" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -590,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium game theory problem, StoneGame2 problem similar to PredictTheWinner. Need to find the max score so use minimax algorithm.&#10;&#10;It's a bit difficult because the choices are not straightforward. Instead of just picking from left/right, player can choose contiguous X elements, so need to carefully keep track of score of player1 and player2.&#10;&#10;Remove that when dealing with player2 we are interested only in player1 score, so do not add the choices taken by player2 in the return value. Instead return the min score of player1 returned from the remaining state" />
     <MESSAGE value="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right" />
     <MESSAGE value="Solve hard and tricky find the path in a graph with the smallest edit distance from a target path by generating all the paths and comparing their edit distance&#10;&#10;Need to return the shortest path instead of just the smallest edit distance, returning the path was a bit tricky and new learning for me. Instead of storing the path with min distance and returning it in recursion, create a 2d array which stores the next node in the chain. 2d array will take care of finding the next node if the current node is at index 0 or 1 or 2 in the result path." />
     <MESSAGE value="Solve medium and a bit tricky remove intervals that overlaps with a target interval. &#10;&#10;Got confused during implementation trying to solve the question in log(n) using binary search as the input array is sorted. Checked the hint and realized that it can't be done in linear time because we have to create a new list and copy all the intervals in worst case.&#10;&#10;So the simple solution is to check each interval and see if it overlaps with the target interval. If it does, split it." />
@@ -615,7 +613,8 @@
     <MESSAGE value="Add more problems related to sliding window" />
     <MESSAGE value="Solve medium and tricky find k closest elements by value to a target value in a sorted array using binary search + two pointers&#10;&#10;Learnings -- Erichto's binary search template is awesome. Best investment of my time to watch and understand that video. All binary search questions are now a breeze.&#10;&#10;In my initial solution I misinterpreted the problem and picked the k closest indices but the problem is asking for k closest elements by value, so need to use two pointer technique to pick elements accordingly." />
     <MESSAGE value="Solve medium and tricky to understand that the problem is asking for longest subarray with at most 2 distinct type of fruits&#10;&#10;Very happy to quickly solve this question on my own. Initially I was thinking of using recursion but after checking the bounds it seemed a bit difficult to get AC using recursion.&#10;&#10;Leveraged prior sliding window template." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky to understand that the problem is asking for longest subarray with at most 2 distinct type of fruits&#10;&#10;Very happy to quickly solve this question on my own. Initially I was thinking of using recursion but after checking the bounds it seemed a bit difficult to get AC using recursion.&#10;&#10;Leveraged prior sliding window template." />
+    <MESSAGE value="Solve medium find an element in rotated and sorted array using binary search&#10;&#10;Leveraged prior learnings to first find the minimum in sorted rotated array by comparing mid with the last element. Once found, array is partitioned into two sorted halves, check whether target lies in first or second half and perform binary search accordingly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find an element in rotated and sorted array using binary search&#10;&#10;Leveraged prior learnings to first find the minimum in sorted rotated array by comparing mid with the last element. Once found, array is partitioned into two sorted halves, check whether target lies in first or second half and perform binary search accordingly" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -673,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605800624175">
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605885557287">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="493" y="7" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605800624175" />
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605885557287" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -17,50 +17,33 @@
  */
 public class FindMinimumInRotatedSortedArray2 {
     /**
-     * Worst case is O(n), Errichto's method does not work here, consider {3,3,1,3}
+     * Worst case is O(n), Errichto's method will work here only after removing the overlapping part, consider {3,3,1,3}
+     * second half {1,3} overlaps with first half {3,3} if you remove 3 from second half it will fall into the standard pattern
+     * as solving without duplicates
      */
     public int findMinDuplicatesAllowed(int[] nums) {
-        int low = 0, high = nums.length - 1;
+        int low = 0, high = nums.length - 1, smallest_idx = -1;
+        //remove the overlapping part i.e. [3,3,1,3] becomes [3,3,1]
+        //second half should be smaller than first half
+        while (nums[high] == nums[low] && high > low) {
+            high--;
+        }
+        int last_idx = high; //last element is now high
         while (low <= high) {
-            int mid = (low + high) / 2;
-            if (low == high) { // base conditions, single element remaining
-                return nums[low];
-            } else if (low + 1 == high) { //base condition, two elements remaining
-                return Math.min(nums[low], nums[high]);
-            } else if (nums[mid] > nums[high]) { //second half not sorted
-                low = mid;
-            } else if (nums[low] > nums[mid]) { //first half not sorted
-                high = mid;
-            } else { //both halves are sorted
-                //tricky inputs are {1,2,3}, {3,0,1,1,2,3,3,3,3,3,3}, {3,3,3,3,3,3,3,0,1,2,3}
-                //from the mid you need to find smaller indices in the left or right part
-                //whichever direction you find smaller value, need to continue in that part in next iteration
-                int rightTemp = mid;
-                while (rightTemp < high) {
-                    if (nums[rightTemp] != nums[mid]) {
-                        break;
-                    }
-                    rightTemp++;
-                }
-                int leftTemp = mid;
-                while (leftTemp > low) {
-                    if (nums[leftTemp] != nums[mid]) {
-                        break;
-                    }
-                    leftTemp--;
-                }
-                if (nums[leftTemp] < nums[rightTemp]) {
-                    high = leftTemp; //need to go in left part
-                } else {
-                    low = rightTemp;
-                }
+            int mid = low + (high - low) / 2;
+            if (nums[mid] <= nums[last_idx]) {
+                smallest_idx = mid;
+                high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
-        return -1;
+        return nums[smallest_idx];
     }
 
     /**
      * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array
+     * No duplicates present, much simpler logic
      * It's not sufficient to just compare adjacent elements with the mid, need to compare with the last element (comparison with first element also works)
      * [3,4,5,1,2] -> [F,F,F,T,T]
      * [1,2,3,4,5] -> [T,T,T,T,T]
