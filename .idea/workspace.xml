@@ -100,7 +100,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
+  <component name="RunManager" selected="Application.LastStoneWeight2">
     <configuration name="GeneralizedAbbreviations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GeneralizedAbbreviations" />
       <module name="leetcode-practice" />
@@ -108,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PredictTheWinner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PredictTheWinner" />
+    <configuration name="LastStoneWeight2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LastStoneWeight2" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,19 +150,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.GeneralizedAbbreviations" />
-      <item itemvalue="Application.PredictTheWinner" />
       <item itemvalue="Application.SortColors" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.ValidateBSTTest" />
+      <item itemvalue="Application.LastStoneWeight2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LastStoneWeight2" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.GeneralizedAbbreviations" />
         <item itemvalue="JUnit.ValidateBSTTest" />
         <item itemvalue="Application.SortColors" />
-        <item itemvalue="Application.PredictTheWinner" />
       </list>
     </recent_temporary>
   </component>
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00492" summary="Solve hard and extremely tricky pick max no of cherries in a grid from start to end and back from end to start.&#10;&#10;I started this problem with DP approach of finding the max cherries that can be picked up in the first cycle and then repeat the process in next cycle. However I found out that it gave WA for certain cases because DP in the first cycle acts as a greedy solution and provides local maxima and not the global maxima.&#10;&#10;The trick to solve the problem is to perform recursion, i.e. consider two persons walking from start to end simultaneously and get the max result from 4 states. (right, right), (right, down), (down, right), (down, down)">
-      <created>1604754810431</created>
-      <option name="number" value="00492" />
-      <option name="presentableId" value="LOCAL-00492" />
-      <option name="project" value="LOCAL" />
-      <updated>1604754810431</updated>
     </task>
     <task id="LOCAL-00493" summary="Solve hard find the max cherries two robots can pick if one starts at top left and another starts at top right. Target state is the last row.&#10;&#10;Similar to CherryPickup. Move both the robots simultaneously. There are 9 possible next states. Take care of the double counting if both of them are at the same cell.">
       <created>1604757878419</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605896722766</updated>
     </task>
-    <option name="localTasksCounter" value="541" />
+    <task id="LOCAL-00541" summary="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string.">
+      <created>1605906741331</created>
+      <option name="number" value="00541" />
+      <option name="presentableId" value="LOCAL-00541" />
+      <option name="project" value="LOCAL" />
+      <updated>1605906741331</updated>
+    </task>
+    <option name="localTasksCounter" value="542" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update approach in finding the duplicate number using warshall/floyd cycle finding algorithm&#10;&#10;Learnings -- Use warshall floyd cycle finding algo to detect cycles inplace&#10;Whenever dealing with input array consisting of 1 to n, use swap or the numbers as indices or xor" />
     <MESSAGE value="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's" />
     <MESSAGE value="Add another approach of validating a BST using range bound property" />
     <MESSAGE value="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve medium and tricky problem search in rotated sorted array when duplicates are present by removing the overlapping elements in second half &#10;&#10;[1,1,3,1] =&gt; [1,1,3] &#10;&#10;Perform binary search accordingly in first half or second half depending upon which partition the target element lies in" />
     <MESSAGE value="Solve medium find a peak element in 1D array using errichto's binary search template.&#10;&#10;&#10;Finding a peak element in 2D array is trickier and uses divide and conquer algorithm" />
     <MESSAGE value="Rewrite the code by considering each element's choice; either be added to the current set or be skipped. &#10;&#10;Instead of trying all elements in a loop. I feel this is logically more clear to visualize rather than the loop solution." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rewrite the code by considering each element's choice; either be added to the current set or be skipped. &#10;&#10;Instead of trying all elements in a loop. I feel this is logically more clear to visualize rather than the loop solution." />
+    <MESSAGE value="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605896722259">
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605906740833">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605896722259" />
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605906740833" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -692,54 +692,54 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="969" y="325" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604517634549" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605638455368">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1605974529283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605638455368" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1605638455367">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605974529283" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1605974529282">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605638455367" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1605638455367">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605974529282" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1605974529282">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605638455367" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1605638455367">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605974529282" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1605974529283">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605638455367" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1605471454107">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605974529283" />
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1605972477498">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605471454107" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1605471454106">
+    <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605972477498" />
+    <state width="1877" height="282" key="GridCell.Tab.1.center" timestamp="1605972477498">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605471454106" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1605471454106">
+    <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605972477498" />
+    <state width="1877" height="282" key="GridCell.Tab.1.left" timestamp="1605972477498">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605471454106" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1605471454107">
+    <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605972477498" />
+    <state width="1877" height="282" key="GridCell.Tab.1.right" timestamp="1605972477498">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605471454107" />
-    <state width="1877" height="285" key="GridCell.Tab.2.bottom" timestamp="1599757745387">
+    <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605972477498" />
+    <state width="1877" height="282" key="GridCell.Tab.2.bottom" timestamp="1605972491813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1599757745387" />
-    <state width="1877" height="285" key="GridCell.Tab.2.center" timestamp="1599757745387">
+    <state width="1877" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605972491813" />
+    <state width="1877" height="282" key="GridCell.Tab.2.center" timestamp="1605972491813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1599757745387" />
-    <state width="1877" height="285" key="GridCell.Tab.2.left" timestamp="1599757745387">
+    <state width="1877" height="282" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605972491813" />
+    <state width="1877" height="282" key="GridCell.Tab.2.left" timestamp="1605972491813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1599757745387" />
-    <state width="1877" height="285" key="GridCell.Tab.2.right" timestamp="1599757745387">
+    <state width="1877" height="282" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605972491813" />
+    <state width="1877" height="282" key="GridCell.Tab.2.right" timestamp="1605972491813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1599757745387" />
+    <state width="1877" height="282" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605972491813" />
     <state x="695" y="245" key="RollbackChangesDialog" timestamp="1598184917635">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605896723891">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605906742672">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605896723891" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605906742672" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,22 +792,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605549144035" />
-    <state width="750" height="250" key="javadoc.popup.new" timestamp="1605799973777">
+    <state width="750" height="232" key="javadoc.popup.new" timestamp="1605971036669">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="250" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605799973777" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605109258598">
+    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1605971036669" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605974591167">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605109258598" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605974591167" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1605634192119">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605634192119" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605902401849">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605978814129">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605902401849" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605978814129" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
