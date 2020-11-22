@@ -21,6 +21,8 @@ public class MaximalRectangle {
      * Histogram for third row  {0,3,0}
      * <p>
      * We can calculate max rectangle in histogram after generating histogram for each row.
+     *
+     * Can be also solved using the "compression" technique used in other submatrices related problem but the time complexity would be n^3
      */
     public int maximalRectangle(char[][] matrix) {
         if (matrix.length == 0) {

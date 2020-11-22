@@ -13,8 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium print a linkedlist in reverse using sqrt(n) extra space by working on blocks of size sqrt. Create blocks containing sqrt(num) elements and reverse each block at a time.&#10;&#10;Learnings -- Introduction to sqrt decomposition in the most trivial question. Life works in mysterious ways.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximalRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximalRectangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00494" summary="Solve hard and tricky guess the secret word provided a list of candidate words in min no of attempts using brute force + minimax algo&#10;&#10;Learnings -- Finally able to understand minimax algo a bit, need to solve some more problems. Learnt union find a couple of days back and now this. Feeling a bit confident. Lets hope for the best during the interviews :)&#10;&#10;Look in the code for comments around minimax.">
-      <created>1604768316284</created>
-      <option name="number" value="00494" />
-      <option name="presentableId" value="LOCAL-00494" />
-      <option name="project" value="LOCAL" />
-      <updated>1604768316284</updated>
     </task>
     <task id="LOCAL-00495" summary="Solve easy FlipGame, if two consecutive + is present in the string, it can be replaced by --, need to find all the possible strings that can be generated.">
       <created>1604770406885</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605987631521</updated>
     </task>
-    <option name="localTasksCounter" value="543" />
+    <task id="LOCAL-00543" summary="Solve medium print a linkedlist in reverse using sqrt(n) extra space by working on blocks of size sqrt. Create blocks containing sqrt(num) elements and reverse each block at a time.&#10;&#10;Learnings -- Introduction to sqrt decomposition in the most trivial question. Life works in mysterious ways.">
+      <created>1606037667509</created>
+      <option name="number" value="00543" />
+      <option name="presentableId" value="LOCAL-00543" />
+      <option name="project" value="LOCAL" />
+      <updated>1606037667509</updated>
+    </task>
+    <option name="localTasksCounter" value="544" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another approach of validating a BST using range bound property" />
     <MESSAGE value="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient." />
     <MESSAGE value="Solve medium generate all permutations of given string if each char can either be capitalized or converted to lower case by recursion.&#10;&#10;Leveraged prior learnings of processing each char independently." />
     <MESSAGE value="Solve hard and tricky interval problem -- find free time common to all employees using line sweep algo similar to meeting rooms 2&#10;&#10;Learnings -- For problems related to interval, pattern for solving them is&#10;1. Line sweep using counter +1, -1&#10;2. Line sweep using start time as key, end time as value&#10;3. Given a target interval and a set of input intervals, compare each interval to the target interval&#10;4. Greedy approach by sorting by start or sorting by end" />
@@ -614,7 +614,8 @@
     <MESSAGE value="Rewrite the code by considering each element's choice; either be added to the current set or be skipped. &#10;&#10;Instead of trying all elements in a loop. I feel this is logically more clear to visualize rather than the loop solution." />
     <MESSAGE value="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string." />
     <MESSAGE value="Solve medium and extremely tricky to deduce the crux of the problem -- find the min stone possible after smashing all the stones&#10;&#10;Learnings -- Initially I went with greedy which was against all judgement because the max input range was [1,30] hinting at exponential complexity based solution but my greedy was nlogn&#10;&#10;Problem reduces to finding the min diff between two subsets in an array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky to deduce the crux of the problem -- find the min stone possible after smashing all the stones&#10;&#10;Learnings -- Initially I went with greedy which was against all judgement because the max input range was [1,30] hinting at exponential complexity based solution but my greedy was nlogn&#10;&#10;Problem reduces to finding the min diff between two subsets in an array" />
+    <MESSAGE value="Solve medium print a linkedlist in reverse using sqrt(n) extra space by working on blocks of size sqrt. Create blocks containing sqrt(num) elements and reverse each block at a time.&#10;&#10;Learnings -- Introduction to sqrt decomposition in the most trivial question. Life works in mysterious ways." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium print a linkedlist in reverse using sqrt(n) extra space by working on blocks of size sqrt. Create blocks containing sqrt(num) elements and reverse each block at a time.&#10;&#10;Learnings -- Introduction to sqrt decomposition in the most trivial question. Life works in mysterious ways." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +673,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605987630721">
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606048948163">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605987630721" />
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606048948163" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -684,10 +685,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1605630483450">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1606041426528">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605630483450" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606041426528" />
     <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -752,22 +753,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1605636162826">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606041555815">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1605636162826" />
-    <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1604602218235">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1606041555815" />
+    <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1606041356204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="669" y="222" key="VCS.ChangeListViewerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604602218235" />
+    <state x="669" y="222" key="VCS.ChangeListViewerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606041356204" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605987632416">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606037668955">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605987632416" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606037668955" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +805,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605634192119" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605992566903">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606041515974">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605992566903" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606041515974" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
