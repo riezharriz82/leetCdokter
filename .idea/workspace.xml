@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00493" summary="Solve hard find the max cherries two robots can pick if one starts at top left and another starts at top right. Target state is the last row.&#10;&#10;Similar to CherryPickup. Move both the robots simultaneously. There are 9 possible next states. Take care of the double counting if both of them are at the same cell.">
-      <created>1604757878419</created>
-      <option name="number" value="00493" />
-      <option name="presentableId" value="LOCAL-00493" />
-      <option name="project" value="LOCAL" />
-      <updated>1604757878419</updated>
-    </task>
     <task id="LOCAL-00494" summary="Solve hard and tricky guess the secret word provided a list of candidate words in min no of attempts using brute force + minimax algo&#10;&#10;Learnings -- Finally able to understand minimax algo a bit, need to solve some more problems. Learnt union find a couple of days back and now this. Feeling a bit confident. Lets hope for the best during the interviews :)&#10;&#10;Look in the code for comments around minimax.">
       <created>1604768316284</created>
       <option name="number" value="00494" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605906741331</updated>
     </task>
-    <option name="localTasksCounter" value="542" />
+    <task id="LOCAL-00542" summary="Solve medium and extremely tricky to deduce the crux of the problem -- find the min stone possible after smashing all the stones&#10;&#10;Learnings -- Initially I went with greedy which was against all judgement because the max input range was [1,30] hinting at exponential complexity based solution but my greedy was nlogn&#10;&#10;Problem reduces to finding the min diff between two subsets in an array">
+      <created>1605987631521</created>
+      <option name="number" value="00542" />
+      <option name="presentableId" value="LOCAL-00542" />
+      <option name="project" value="LOCAL" />
+      <updated>1605987631521</updated>
+    </task>
+    <option name="localTasksCounter" value="543" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's" />
     <MESSAGE value="Add another approach of validating a BST using range bound property" />
     <MESSAGE value="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient." />
     <MESSAGE value="Solve medium generate all permutations of given string if each char can either be capitalized or converted to lower case by recursion.&#10;&#10;Leveraged prior learnings of processing each char independently." />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve medium find a peak element in 1D array using errichto's binary search template.&#10;&#10;&#10;Finding a peak element in 2D array is trickier and uses divide and conquer algorithm" />
     <MESSAGE value="Rewrite the code by considering each element's choice; either be added to the current set or be skipped. &#10;&#10;Instead of trying all elements in a loop. I feel this is logically more clear to visualize rather than the loop solution." />
     <MESSAGE value="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string." />
+    <MESSAGE value="Solve medium and extremely tricky to deduce the crux of the problem -- find the min stone possible after smashing all the stones&#10;&#10;Learnings -- Initially I went with greedy which was against all judgement because the max input range was [1,30] hinting at exponential complexity based solution but my greedy was nlogn&#10;&#10;Problem reduces to finding the min diff between two subsets in an array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky to deduce the crux of the problem -- find the min stone possible after smashing all the stones&#10;&#10;Learnings -- Initially I went with greedy which was against all judgement because the max input range was [1,30] hinting at exponential complexity based solution but my greedy was nlogn&#10;&#10;Problem reduces to finding the min diff between two subsets in an array" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605906740833">
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1605987630721">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605906740833" />
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1605987630721" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605906742672">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1605987632416">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605906742672" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605987632416" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +804,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605634192119" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605978814129">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1605992566903">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605978814129" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605992566903" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
