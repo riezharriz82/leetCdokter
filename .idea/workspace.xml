@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00498" summary="Update solution in Subsets to accommodate the logical choice present for each index in the result. Each index can either be present or be absent in the result. So just simulate the choices for all indices.">
-      <created>1604842346903</created>
-      <option name="number" value="00498" />
-      <option name="presentableId" value="LOCAL-00498" />
-      <option name="project" value="LOCAL" />
-      <updated>1604842346903</updated>
-    </task>
     <task id="LOCAL-00499" summary="Add comment regarding another way of generating all the subsets by leveraging binary numbers">
       <created>1604843955492</created>
       <option name="number" value="00499" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606063863171</updated>
     </task>
-    <option name="localTasksCounter" value="547" />
+    <task id="LOCAL-00547" summary="Solve medium and tricky find the min distance between two sets of islands using multi source bfs&#10;&#10;Learnings -- I could not initially think about the multi source bfs, &#10;&#10;Initially, I went ahead with normal bfs + keeping track of min distance. Then I got WA when a cell is reachable from multiple cells of first island. Then I thought instead of visited cell, I would need BFS with pruning i.e proceed ahead if I can reach a cell with min distance. Which got me AC at ~22ms&#10;&#10;Then I thought of multi source bfs by checking the implementation of RottingOranges, and it got me AC at ~9 ms&#10;&#10;Bidirectional BFS can reduce the runtime even lower">
+      <created>1606133931408</created>
+      <option name="number" value="00547" />
+      <option name="presentableId" value="LOCAL-00547" />
+      <option name="project" value="LOCAL" />
+      <updated>1606133931408</updated>
+    </task>
+    <option name="localTasksCounter" value="548" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap" />
     <MESSAGE value="Solve medium and tricky find combinations of three triplets such that their sum &lt; target sum using multiple approaches&#10;&#10;1. n^2 using two pointers&#10;2. n^2log(n) using binary search&#10;&#10;Learnings -- Using Arrays.binarySearch() to find num &lt; target does not work if input contains duplicates." />
     <MESSAGE value="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller" />
     <MESSAGE value="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve medium count submatrices with all ones using 2D &quot;compression&quot; technique. Reduce the 2D problem to 1D. If there are n consecutive non zero element, no of subarrays would be n*(n+1)/2.&#10;&#10;Can be optimized to n^2 using monotonic stack but I don't fully understand this solution at the moment." />
     <MESSAGE value="Solve easy find the total weight of nested list by performing DFS and keeping track of current depth." />
     <MESSAGE value="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree" />
+    <MESSAGE value="Solve medium and tricky find the min distance between two sets of islands using multi source bfs&#10;&#10;Learnings -- I could not initially think about the multi source bfs, &#10;&#10;Initially, I went ahead with normal bfs + keeping track of min distance. Then I got WA when a cell is reachable from multiple cells of first island. Then I thought instead of visited cell, I would need BFS with pruning i.e proceed ahead if I can reach a cell with min distance. Which got me AC at ~22ms&#10;&#10;Then I thought of multi source bfs by checking the implementation of RottingOranges, and it got me AC at ~9 ms&#10;&#10;Bidirectional BFS can reduce the runtime even lower" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the min distance between two sets of islands using multi source bfs&#10;&#10;Learnings -- I could not initially think about the multi source bfs, &#10;&#10;Initially, I went ahead with normal bfs + keeping track of min distance. Then I got WA when a cell is reachable from multiple cells of first island. Then I thought instead of visited cell, I would need BFS with pruning i.e proceed ahead if I can reach a cell with min distance. Which got me AC at ~22ms&#10;&#10;Then I thought of multi source bfs by checking the implementation of RottingOranges, and it got me AC at ~9 ms&#10;&#10;Bidirectional BFS can reduce the runtime even lower" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606063862534">
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606133930756">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606063862534" />
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606133930756" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606063864023">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606133932862">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606063864023" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606133932862" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
