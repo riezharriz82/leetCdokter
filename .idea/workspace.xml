@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00497" summary="Solve easy find sum of two numbers &lt; k in an unsorted array by sorting and applying two pointer algorithm.&#10;&#10;Interesting thing to note here was that problem mentioned that find two indices such that i &lt; j. But since sum is commutative, sorting the array might swap the indices but still the resultant sum would be the same">
-      <created>1604840679623</created>
-      <option name="number" value="00497" />
-      <option name="presentableId" value="LOCAL-00497" />
-      <option name="project" value="LOCAL" />
-      <updated>1604840679623</updated>
-    </task>
     <task id="LOCAL-00498" summary="Update solution in Subsets to accommodate the logical choice present for each index in the result. Each index can either be present or be absent in the result. So just simulate the choices for all indices.">
       <created>1604842346903</created>
       <option name="number" value="00498" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606059156121</updated>
     </task>
-    <option name="localTasksCounter" value="546" />
+    <task id="LOCAL-00546" summary="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree">
+      <created>1606063863171</created>
+      <option name="number" value="00546" />
+      <option name="presentableId" value="LOCAL-00546" />
+      <option name="project" value="LOCAL" />
+      <updated>1606063863171</updated>
+    </task>
+    <option name="localTasksCounter" value="547" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky interval problem -- find free time common to all employees using line sweep algo similar to meeting rooms 2&#10;&#10;Learnings -- For problems related to interval, pattern for solving them is&#10;1. Line sweep using counter +1, -1&#10;2. Line sweep using start time as key, end time as value&#10;3. Given a target interval and a set of input intervals, compare each interval to the target interval&#10;4. Greedy approach by sorting by start or sorting by end" />
     <MESSAGE value="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap" />
     <MESSAGE value="Solve medium and tricky find combinations of three triplets such that their sum &lt; target sum using multiple approaches&#10;&#10;1. n^2 using two pointers&#10;2. n^2log(n) using binary search&#10;&#10;Learnings -- Using Arrays.binarySearch() to find num &lt; target does not work if input contains duplicates." />
     <MESSAGE value="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller" />
@@ -614,7 +613,8 @@
     <MESSAGE value="Solve medium print a linkedlist in reverse using sqrt(n) extra space by working on blocks of size sqrt. Create blocks containing sqrt(num) elements and reverse each block at a time.&#10;&#10;Learnings -- Introduction to sqrt decomposition in the most trivial question. Life works in mysterious ways." />
     <MESSAGE value="Solve medium count submatrices with all ones using 2D &quot;compression&quot; technique. Reduce the 2D problem to 1D. If there are n consecutive non zero element, no of subarrays would be n*(n+1)/2.&#10;&#10;Can be optimized to n^2 using monotonic stack but I don't fully understand this solution at the moment." />
     <MESSAGE value="Solve easy find the total weight of nested list by performing DFS and keeping track of current depth." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the total weight of nested list by performing DFS and keeping track of current depth." />
+    <MESSAGE value="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -636,10 +636,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1605009261465" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1604417536568">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1606124245484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1604417536568" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1606124245484" />
     <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606059155520">
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606063862534">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606059155520" />
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606063862534" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -752,10 +752,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606063419057">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606123571096">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1606063419057" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1606123571096" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1606041356204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +764,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606059157178">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606063864023">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606059157178" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606063864023" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -800,14 +800,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605974591167" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1605634192119">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1606124609224">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605634192119" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606063431270">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606124609224" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606127090896">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606063431270" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606127090896" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
