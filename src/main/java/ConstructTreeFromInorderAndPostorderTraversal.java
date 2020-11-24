@@ -47,6 +47,10 @@ public class ConstructTreeFromInorderAndPostorderTraversal {
         } else {
             TreeNode root = new TreeNode(postorder[postOrderIndex]);
             int rootInorderIndex = map.get(postorder[postOrderIndex--]);
+            //notice that we are fixing the right subtree first because we are provided postorder traversal
+            //also do note that bounds of subtree must obey the bounds of parent
+            //ie. if the parent bounds were [2,5] and root was present at 4, right subtree would be present between [5,5], not between [5, lastIndex]
+            //similar constraints for left subtree, left subtree would be present at [2,3]
             root.right = buildTree(postorder, map, rootInorderIndex + 1, inorderEnd);
             root.left = buildTree(postorder, map, inorderStart, rootInorderIndex - 1);
             return root;

@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromInorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromInorderAndPostorderTraversal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,21 +116,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeforces.Main" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidateBSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode-practice" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ValidateBSTTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,17 +151,17 @@
       <item itemvalue="Application.GeneralizedAbbreviations" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.ValidateBSTTest" />
       <item itemvalue="Application.LastStoneWeight2" />
       <item itemvalue="Java Scratch.Scratch (1)" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Java Scratch.Scratch (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.LastStoneWeight2" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.GeneralizedAbbreviations" />
-        <item itemvalue="JUnit.ValidateBSTTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00500" summary="Add another way of solving Subsets with duplicates, in which we add a duplicate number to the result only if the previous duplicate is also added, otherwise we just skip this duplicate number.">
-      <created>1604844924069</created>
-      <option name="number" value="00500" />
-      <option name="presentableId" value="LOCAL-00500" />
-      <option name="project" value="LOCAL" />
-      <updated>1604844924069</updated>
     </task>
     <task id="LOCAL-00501" summary="Add clarification in output of the problem, need to return the no of edges in the longest univalue path, not the no of elements present">
       <created>1604848273885</created>
@@ -518,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606142593079</updated>
     </task>
-    <option name="localTasksCounter" value="549" />
+    <task id="LOCAL-00549" summary="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1.">
+      <created>1606159637274</created>
+      <option name="number" value="00549" />
+      <option name="presentableId" value="LOCAL-00549" />
+      <option name="project" value="LOCAL" />
+      <updated>1606159637275</updated>
+    </task>
+    <option name="localTasksCounter" value="550" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller" />
     <MESSAGE value="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString" />
     <MESSAGE value="Add the way to solve this question in a simplified way using TreeMap + ceilingEntry() instead of manually fiddling with return value of Arrays.binarySearch()" />
     <MESSAGE value="Add problem statement in 132 pattern -- still surprised to see that I was able to solve that question in linear time on my own :D" />
@@ -614,7 +612,8 @@
     <MESSAGE value="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree" />
     <MESSAGE value="Solve medium and tricky find the min distance between two sets of islands using multi source bfs&#10;&#10;Learnings -- I could not initially think about the multi source bfs, &#10;&#10;Initially, I went ahead with normal bfs + keeping track of min distance. Then I got WA when a cell is reachable from multiple cells of first island. Then I thought instead of visited cell, I would need BFS with pruning i.e proceed ahead if I can reach a cell with min distance. Which got me AC at ~22ms&#10;&#10;Then I thought of multi source bfs by checking the implementation of RottingOranges, and it got me AC at ~9 ms&#10;&#10;Bidirectional BFS can reduce the runtime even lower" />
     <MESSAGE value="Solve hard find a number in mountain array using 3 binary searches, first find the peak element and then apply binary search in either of the partitions.&#10;&#10;Learnings -- For finding a number in modified sorted array always find the pivot element first. Then apply binary search in the partitions to find the target number." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find a number in mountain array using 3 binary searches, first find the peak element and then apply binary search in either of the partitions.&#10;&#10;Learnings -- For finding a number in modified sorted array always find the pivot element first. Then apply binary search in the partitions to find the target number." />
+    <MESSAGE value="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -672,10 +671,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606142592511">
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606159636732">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606142592511" />
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606159636732" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -692,22 +691,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="969" y="325" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604517634549" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606152241846">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606221065544">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606152241846" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606152241846">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606221065544" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606221065544">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606152241846" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606152241846">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606221065544" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606221065544">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606152241846" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606152241846">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606221065544" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606221065544">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606152241846" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606221065544" />
     <state width="1877" height="282" key="GridCell.Tab.1.bottom" timestamp="1605972477498">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -764,10 +763,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606142594540">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606159638432">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606142594540" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606159638432" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -792,10 +791,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606062861866" />
-    <state width="750" height="232" key="javadoc.popup.new" timestamp="1606154407997">
+    <state width="750" height="232" key="javadoc.popup.new" timestamp="1606219810279">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1606154407997" />
+    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1606219810279" />
+    <state x="551" y="145" key="new project wizard" timestamp="1606165512459">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="551" y="145" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1606165512459" />
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1605974591167">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -804,10 +807,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606124609224" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606127090896">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606220535740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606127090896" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606220535740" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
