@@ -96,7 +96,7 @@ public class SlidingWindowMedian {
             }
             if (i >= k - 1) { //update the medians list
                 if (k % 2 == 0) {
-                    medians.add((left.firstKey() / 2.0) + (right.firstKey() / 2.0));
+                    medians.add((left.firstKey() / 2.0) + (right.firstKey() / 2.0)); //not (a+b)/2 because a + b can overflow :(
                 } else {
                     medians.add((double) left.firstKey());
                 }
