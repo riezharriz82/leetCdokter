@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00503" summary="Add approach in find all nodes present at k distance in binary tree">
-      <created>1604849239156</created>
-      <option name="number" value="00503" />
-      <option name="presentableId" value="LOCAL-00503" />
-      <option name="project" value="LOCAL" />
-      <updated>1604849239156</updated>
-    </task>
     <task id="LOCAL-00504" summary="Add gotcha around resetting prefix sum of histogram if the current column value is 0, because we are only interested in longest histogram height of 1's ending at current col">
       <created>1604850172740</created>
       <option name="number" value="00504" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606312065267</updated>
     </task>
-    <option name="localTasksCounter" value="552" />
+    <task id="LOCAL-00552" summary="Solve hard and tricky nested string problem -- evaluate nested expression containing + and - i.e. 2-(3+5) using stack of stack&#10;&#10;Leveraged prior learnings of solving nested questions like NumberOfAtoms, DecodeString. First identify what is required to solve a single expression, then try to create stack of whatever was required. &#10;&#10;Gotchas: Take care of prefix/suffix of nested expression. Don't forget to freaking reset the variables upon start/end of expression.">
+      <created>1606324615049</created>
+      <option name="number" value="00552" />
+      <option name="presentableId" value="LOCAL-00552" />
+      <option name="project" value="LOCAL" />
+      <updated>1606324615049</updated>
+    </task>
+    <option name="localTasksCounter" value="553" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add problem statement in 132 pattern -- still surprised to see that I was able to solve that question in linear time on my own :D" />
     <MESSAGE value="Solve hard and tricky to optimize design search autocomplete system that provides top 3 sentences by hotness for current prefix.&#10;&#10;Learnings -- As the problem explicitly asked for finding all valid sentences that starts with a prefix, trie is the way to go. &#10;In my initial implementation I performed DFS at the last trie node and extracted out all valid sentences and then ranked them.&#10;Instead of performing DFS, a better way is to store the useful information directly at each node i.e store all the valid sentences directly at each trie node." />
     <MESSAGE value="Solve hard and tricky to optimize find words that starts with provided prefix and ends with provided suffix using two tries.&#10;&#10;Maintaining two tries was straight forward but then searching is a bit slow because now you will have to search in two tries and then filter out common indices. A fast solution is to directly insert all suffixes + delimiter + word in trie &#10;&#10;i.e for &quot;apple&quot;, store words like &quot;e{apple&quot;, &quot;le{apple&quot;, &quot;ple{apple&quot;, &quot;pple{apple&quot;, &quot;apple{apple&quot; in trie" />
     <MESSAGE value="Solve medium find whether the current string contains a permutation of a target string as a substring using sliding window template.&#10;&#10;Leveraged prior learnings of sliding window template. Here we are required to find the smallest valid window that is an anagram of target string. Keep expanding the window until the window has all the required chars of the target string. Then try to shrink the window to see if the window length can be reduced to target string length." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1." />
     <MESSAGE value="Add clarifications in the logic behind setting the bounds in recursion. Do note that the parent bounds must be obeyed" />
     <MESSAGE value="Solve medium and tricky math problem find length of smallest integer with repeated 1's i.e 1, 11, 111, 1111, 11111, 111111.. that divides k&#10;&#10;We are required to return only the length as the actual no can be very huge. Since we can't store the number itself, we have to rely on current remainder to generate the remainder of the next no in series. That was a pretty cool math trick.&#10;&#10;Another trick is to realize that we can have only a finite set of remainders so sometimes remainders can repeat. When they do, we got ourselves an infinite loop. We have to use a set to keep track of seen remainders." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky math problem find length of smallest integer with repeated 1's i.e 1, 11, 111, 1111, 11111, 111111.. that divides k&#10;&#10;We are required to return only the length as the actual no can be very huge. Since we can't store the number itself, we have to rely on current remainder to generate the remainder of the next no in series. That was a pretty cool math trick.&#10;&#10;Another trick is to realize that we can have only a finite set of remainders so sometimes remainders can repeat. When they do, we got ourselves an infinite loop. We have to use a set to keep track of seen remainders." />
+    <MESSAGE value="Solve hard and tricky nested string problem -- evaluate nested expression containing + and - i.e. 2-(3+5) using stack of stack&#10;&#10;Leveraged prior learnings of solving nested questions like NumberOfAtoms, DecodeString. First identify what is required to solve a single expression, then try to create stack of whatever was required. &#10;&#10;Gotchas: Take care of prefix/suffix of nested expression. Don't forget to freaking reset the variables upon start/end of expression." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky nested string problem -- evaluate nested expression containing + and - i.e. 2-(3+5) using stack of stack&#10;&#10;Leveraged prior learnings of solving nested questions like NumberOfAtoms, DecodeString. First identify what is required to solve a single expression, then try to create stack of whatever was required. &#10;&#10;Gotchas: Take care of prefix/suffix of nested expression. Don't forget to freaking reset the variables upon start/end of expression." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -670,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606312064610">
+    <state x="533" y="21" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606324614547">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606312064610" />
+    <state x="533" y="21" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606324614547" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -742,6 +742,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="540" y="268" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606224673327" />
+    <state x="775" y="459" key="ReplaceDuplicatesPrompt" timestamp="1606327918587">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="775" y="459" key="ReplaceDuplicatesPrompt/0.0.1920.1050@0.0.1920.1050" timestamp="1606327918587" />
     <state x="695" y="245" key="RollbackChangesDialog" timestamp="1598184917635">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -766,10 +770,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606312066273">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606324616381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606312066273" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606324616381" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -786,10 +790,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1603983886792" />
-    <state x="690" y="275" key="extract.method.dialog" timestamp="1604653793268">
+    <state x="690" y="275" key="extract.method.dialog" timestamp="1606327916014">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604653793268" />
+    <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606327916014" />
     <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1606062861866">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -806,14 +810,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605974591167" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1606124609224">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1606328236740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606124609224" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606324319074">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606328236740" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606327942883">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606324319074" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606327942883" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
