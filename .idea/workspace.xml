@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00502" summary="Solve medium and tricky problem, find no of moves required to make all the nodes in the tree with 1 coin.&#10;&#10;Try to think about what info is required from the children, and update result and return value accordingly.&#10;Here we need the surplus/deficit from left/right subtree. Once we know that, we can calculate the total surplus/deficit of current subtree.&#10;Moves required at each node is the absolute value of surplus/deficit at that node e.g. if a node has surplus 3, it needs 3 moves to transfer the surplus because that node can have value = 1 in the end state.">
-      <created>1604848532167</created>
-      <option name="number" value="00502" />
-      <option name="presentableId" value="LOCAL-00502" />
-      <option name="project" value="LOCAL" />
-      <updated>1604848532167</updated>
-    </task>
     <task id="LOCAL-00503" summary="Add approach in find all nodes present at k distance in binary tree">
       <created>1604849239156</created>
       <option name="number" value="00503" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606222649518</updated>
     </task>
-    <option name="localTasksCounter" value="551" />
+    <task id="LOCAL-00551" summary="Solve medium and tricky math problem find length of smallest integer with repeated 1's i.e 1, 11, 111, 1111, 11111, 111111.. that divides k&#10;&#10;We are required to return only the length as the actual no can be very huge. Since we can't store the number itself, we have to rely on current remainder to generate the remainder of the next no in series. That was a pretty cool math trick.&#10;&#10;Another trick is to realize that we can have only a finite set of remainders so sometimes remainders can repeat. When they do, we got ourselves an infinite loop. We have to use a set to keep track of seen remainders.">
+      <created>1606312065267</created>
+      <option name="number" value="00551" />
+      <option name="presentableId" value="LOCAL-00551" />
+      <option name="project" value="LOCAL" />
+      <updated>1606312065267</updated>
+    </task>
+    <option name="localTasksCounter" value="552" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add the way to solve this question in a simplified way using TreeMap + ceilingEntry() instead of manually fiddling with return value of Arrays.binarySearch()" />
     <MESSAGE value="Add problem statement in 132 pattern -- still surprised to see that I was able to solve that question in linear time on my own :D" />
     <MESSAGE value="Solve hard and tricky to optimize design search autocomplete system that provides top 3 sentences by hotness for current prefix.&#10;&#10;Learnings -- As the problem explicitly asked for finding all valid sentences that starts with a prefix, trie is the way to go. &#10;In my initial implementation I performed DFS at the last trie node and extracted out all valid sentences and then ranked them.&#10;Instead of performing DFS, a better way is to store the useful information directly at each node i.e store all the valid sentences directly at each trie node." />
     <MESSAGE value="Solve hard and tricky to optimize find words that starts with provided prefix and ends with provided suffix using two tries.&#10;&#10;Maintaining two tries was straight forward but then searching is a bit slow because now you will have to search in two tries and then filter out common indices. A fast solution is to directly insert all suffixes + delimiter + word in trie &#10;&#10;i.e for &quot;apple&quot;, store words like &quot;e{apple&quot;, &quot;le{apple&quot;, &quot;ple{apple&quot;, &quot;pple{apple&quot;, &quot;apple{apple&quot; in trie" />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve hard find a number in mountain array using 3 binary searches, first find the peak element and then apply binary search in either of the partitions.&#10;&#10;Learnings -- For finding a number in modified sorted array always find the pivot element first. Then apply binary search in the partitions to find the target number." />
     <MESSAGE value="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1." />
     <MESSAGE value="Add clarifications in the logic behind setting the bounds in recursion. Do note that the parent bounds must be obeyed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add clarifications in the logic behind setting the bounds in recursion. Do note that the parent bounds must be obeyed" />
+    <MESSAGE value="Solve medium and tricky math problem find length of smallest integer with repeated 1's i.e 1, 11, 111, 1111, 11111, 111111.. that divides k&#10;&#10;We are required to return only the length as the actual no can be very huge. Since we can't store the number itself, we have to rely on current remainder to generate the remainder of the next no in series. That was a pretty cool math trick.&#10;&#10;Another trick is to realize that we can have only a finite set of remainders so sometimes remainders can repeat. When they do, we got ourselves an infinite loop. We have to use a set to keep track of seen remainders." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky math problem find length of smallest integer with repeated 1's i.e 1, 11, 111, 1111, 11111, 111111.. that divides k&#10;&#10;We are required to return only the length as the actual no can be very huge. Since we can't store the number itself, we have to rely on current remainder to generate the remainder of the next no in series. That was a pretty cool math trick.&#10;&#10;Another trick is to realize that we can have only a finite set of remainders so sometimes remainders can repeat. When they do, we got ourselves an infinite loop. We have to use a set to keep track of seen remainders." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -670,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606222648850">
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606312064610">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606222648850" />
+    <state x="491" y="29" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606312064610" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -766,10 +766,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606222650276">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606312066273">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606222650276" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606312066273" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -794,10 +794,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606062861866" />
-    <state width="750" height="232" key="javadoc.popup.new" timestamp="1606311309073">
+    <state width="750" height="232" key="javadoc.popup.new" timestamp="1606316687517">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1606311309073" />
+    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1606316687517" />
     <state x="551" y="145" key="new project wizard" timestamp="1606165512459">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -810,10 +810,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606124609224" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606310850402">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606324319074">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606310850402" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606324319074" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
