@@ -13,7 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00507" summary="Solve hard and tricky find min no of cameras to place to cover a binary tree. This is similar to vertex cover but is very tricky.&#10;&#10;Trick is to consider it as a greedy problem rather than recursion problem, think about not placing a camera at the edge but at the center. So lead node should not have a camera, and instead it's parent should have a camera.&#10;&#10;Sequence of covering would be covered (null pointers of leaf) -&gt; uncovered -&gt; place camera -&gt; covered -&gt; uncovered -&gt; place camera ..">
-      <created>1604940499610</created>
-      <option name="number" value="00507" />
-      <option name="presentableId" value="LOCAL-00507" />
-      <option name="project" value="LOCAL" />
-      <updated>1604940499610</updated>
     </task>
     <task id="LOCAL-00508" summary="Solve medium and tricky game theory problem. &#10;&#10;Multiple gotchas in game theory:&#10;1. Filter out invalid/unreachable inputs prior to starting recursion.&#10;&#10;2. When there is state to memoize, memoize the input state at the current recursion, not the choices performed after the input state.&#10;&#10;3. When a player wins after making a choice, that's not the end of the game. Other player will still continue performing the backtracking. So reset all the choices made before returning true to the next player.">
       <created>1604952696502</created>
@@ -514,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606583352615</updated>
     </task>
-    <option name="localTasksCounter" value="556" />
+    <task id="LOCAL-00556" summary="Solve medium and a bit tricky find whether the current set of dislikes relationships are bipartite by trying to assign the opposite color to the neighbour. In my initial implementation I wrote a recursive backtracking code, it was pretty unique TBH :D&#10;&#10;Learnings -- 1. Model the relationship as fucking graph&#10;2. If two nodes can't be &quot;together&quot;, this means they can't be connected. Solve this by trying to assign opposite colors to the neighbour.">
+      <created>1606584924893</created>
+      <option name="number" value="00556" />
+      <option name="presentableId" value="LOCAL-00556" />
+      <option name="project" value="LOCAL" />
+      <updated>1606584924893</updated>
+    </task>
+    <option name="localTasksCounter" value="557" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find all diagonal traversal of binary tree by keeping a key as the identifier of the diagonal. When going left, increment the key to signify start of a new diagonal, when going right, pass in the same key as current node.&#10;&#10;Keep a map to store all occurrences of nodes in every diagonal." />
     <MESSAGE value="Update code in FindAllAnagramInString to match the sliding window template" />
     <MESSAGE value="Add more problems related to sliding window" />
     <MESSAGE value="Solve medium and tricky find k closest elements by value to a target value in a sorted array using binary search + two pointers&#10;&#10;Learnings -- Erichto's binary search template is awesome. Best investment of my time to watch and understand that video. All binary search questions are now a breeze.&#10;&#10;In my initial solution I misinterpreted the problem and picked the k closest indices but the problem is asking for k closest elements by value, so need to use two pointer technique to pick elements accordingly." />
@@ -610,7 +611,8 @@
     <MESSAGE value="Solve medium and tricky evaluate an expression containing + - / % using stack&#10;&#10;Initially I implemented it with 2 stacks but that's an overkill if we look closely. We always have to evaluate * and / first because they are the highest rank operators.&#10;&#10;Also for handling -, assign - to the operand instead of the operator to handle 0's" />
     <MESSAGE value="Solve hard find running median from data stream using 2 Priority queues&#10;&#10;Leveraged prior learnings of solving SlidingWindowMedian" />
     <MESSAGE value="Solve medium and a bit tricky find all duplicate subtrees in a tree by creating hashes of subtrees as we iterate the tree using preorder traversal.&#10;&#10;Took me some time but was able to write it on my own. Leveraged prior learnings of Serialize&amp;DeserializeBinaryTree by representing the tree using preorder traversal." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find all duplicate subtrees in a tree by creating hashes of subtrees as we iterate the tree using preorder traversal.&#10;&#10;Took me some time but was able to write it on my own. Leveraged prior learnings of Serialize&amp;DeserializeBinaryTree by representing the tree using preorder traversal." />
+    <MESSAGE value="Solve medium and a bit tricky find whether the current set of dislikes relationships are bipartite by trying to assign the opposite color to the neighbour. In my initial implementation I wrote a recursive backtracking code, it was pretty unique TBH :D&#10;&#10;Learnings -- 1. Model the relationship as fucking graph&#10;2. If two nodes can't be &quot;together&quot;, this means they can't be connected. Solve this by trying to assign opposite colors to the neighbour." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find whether the current set of dislikes relationships are bipartite by trying to assign the opposite color to the neighbour. In my initial implementation I wrote a recursive backtracking code, it was pretty unique TBH :D&#10;&#10;Learnings -- 1. Model the relationship as fucking graph&#10;2. If two nodes can't be &quot;together&quot;, this means they can't be connected. Solve this by trying to assign opposite colors to the neighbour." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -668,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606583351853">
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606584924374">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606583351853" />
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606584924374" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -768,10 +770,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606583354506">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606584927902">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606583354506" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606584927902" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -796,10 +798,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606062861866" />
-    <state width="750" height="232" key="javadoc.popup.new" timestamp="1606426229916">
+    <state width="750" height="232" key="javadoc.popup.new" timestamp="1606585182221">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1606426229916" />
+    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1606585182221" />
     <state x="551" y="145" key="new project wizard" timestamp="1606165512459">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -812,10 +814,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606328236740" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606506811213">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606585294508">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606506811213" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606585294508" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
