@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00508" summary="Solve medium and tricky game theory problem. &#10;&#10;Multiple gotchas in game theory:&#10;1. Filter out invalid/unreachable inputs prior to starting recursion.&#10;&#10;2. When there is state to memoize, memoize the input state at the current recursion, not the choices performed after the input state.&#10;&#10;3. When a player wins after making a choice, that's not the end of the game. Other player will still continue performing the backtracking. So reset all the choices made before returning true to the next player.">
-      <created>1604952696502</created>
-      <option name="number" value="00508" />
-      <option name="presentableId" value="LOCAL-00508" />
-      <option name="project" value="LOCAL" />
-      <updated>1604952696502</updated>
-    </task>
     <task id="LOCAL-00509" summary="Solve medium and tricky game theory problem predictTheWinner, need to find the max score of the first player if each player picks either from the left or from the right.&#10;&#10;Since we need to maximise the score, we need to use MaxiMin algorithm. There are two ways of implementing maximin algo. Either use flag to denote who is playing or directly skip to the player1 state without considering player2 state at all.&#10;&#10;Former one needs to carefully handle return value for both the players assuming that we are interested only in score of player1">
       <created>1605022894332</created>
       <option name="number" value="00509" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606584924893</updated>
     </task>
-    <option name="localTasksCounter" value="557" />
+    <task id="LOCAL-00557" summary="Solve medium problem whose indirect ask was to find the max distance of each node from the leaf and return it sorted by distance.&#10;&#10;In my initial solution I did a 2 pass code, first pass for finding the height of the tree and second pass to add the node to correct bucket but those can be combined in one pass by comparing the size of the current result and the current bucket">
+      <created>1606587310268</created>
+      <option name="number" value="00557" />
+      <option name="presentableId" value="LOCAL-00557" />
+      <option name="project" value="LOCAL" />
+      <updated>1606587310268</updated>
+    </task>
+    <option name="localTasksCounter" value="558" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update code in FindAllAnagramInString to match the sliding window template" />
     <MESSAGE value="Add more problems related to sliding window" />
     <MESSAGE value="Solve medium and tricky find k closest elements by value to a target value in a sorted array using binary search + two pointers&#10;&#10;Learnings -- Erichto's binary search template is awesome. Best investment of my time to watch and understand that video. All binary search questions are now a breeze.&#10;&#10;In my initial solution I misinterpreted the problem and picked the k closest indices but the problem is asking for k closest elements by value, so need to use two pointer technique to pick elements accordingly." />
     <MESSAGE value="Solve medium and tricky to understand that the problem is asking for longest subarray with at most 2 distinct type of fruits&#10;&#10;Very happy to quickly solve this question on my own. Initially I was thinking of using recursion but after checking the bounds it seemed a bit difficult to get AC using recursion.&#10;&#10;Leveraged prior sliding window template." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve hard find running median from data stream using 2 Priority queues&#10;&#10;Leveraged prior learnings of solving SlidingWindowMedian" />
     <MESSAGE value="Solve medium and a bit tricky find all duplicate subtrees in a tree by creating hashes of subtrees as we iterate the tree using preorder traversal.&#10;&#10;Took me some time but was able to write it on my own. Leveraged prior learnings of Serialize&amp;DeserializeBinaryTree by representing the tree using preorder traversal." />
     <MESSAGE value="Solve medium and a bit tricky find whether the current set of dislikes relationships are bipartite by trying to assign the opposite color to the neighbour. In my initial implementation I wrote a recursive backtracking code, it was pretty unique TBH :D&#10;&#10;Learnings -- 1. Model the relationship as fucking graph&#10;2. If two nodes can't be &quot;together&quot;, this means they can't be connected. Solve this by trying to assign opposite colors to the neighbour." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find whether the current set of dislikes relationships are bipartite by trying to assign the opposite color to the neighbour. In my initial implementation I wrote a recursive backtracking code, it was pretty unique TBH :D&#10;&#10;Learnings -- 1. Model the relationship as fucking graph&#10;2. If two nodes can't be &quot;together&quot;, this means they can't be connected. Solve this by trying to assign opposite colors to the neighbour." />
+    <MESSAGE value="Solve medium problem whose indirect ask was to find the max distance of each node from the leaf and return it sorted by distance.&#10;&#10;In my initial solution I did a 2 pass code, first pass for finding the height of the tree and second pass to add the node to correct bucket but those can be combined in one pass by comparing the size of the current result and the current bucket" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem whose indirect ask was to find the max distance of each node from the leaf and return it sorted by distance.&#10;&#10;In my initial solution I did a 2 pass code, first pass for finding the height of the tree and second pass to add the node to correct bucket but those can be combined in one pass by comparing the size of the current result and the current bucket" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -670,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606584924374">
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606587309752">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606584924374" />
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606587309752" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -770,10 +770,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606584927902">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606587311331">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606584927902" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606587311331" />
     <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -790,10 +790,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1603983886792" />
-    <state x="690" y="275" key="extract.method.dialog" timestamp="1606327916014">
+    <state x="690" y="275" key="extract.method.dialog" timestamp="1606593496927">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606327916014" />
+    <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606593496927" />
     <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1606062861866">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -806,18 +806,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="551" y="145" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1606165512459" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1606505937283">
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1606594316649">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606505937283" />
+    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606594316649" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1606328236740">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606328236740" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606585294508">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606656287316">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606585294508" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606656287316" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
