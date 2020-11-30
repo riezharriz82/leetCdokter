@@ -151,8 +151,8 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="Java Scratch.Scratch (1)" />
-      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Java Scratch.SegmentTree" />
+      <item itemvalue="JUnit.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -172,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00512" summary="Solve medium partition array into non overlapping intervals such that every number in left &lt;= every number in right.&#10;&#10;Leverage prior learnings of solving non-overlapping subarray problems via two pass algo, one pass for finding max element in left subarray and another pass for finding min element in right subarray. &#10;&#10;Need to find a partition such that max element of left &lt;= min element of right">
-      <created>1605104226145</created>
-      <option name="number" value="00512" />
-      <option name="presentableId" value="LOCAL-00512" />
-      <option name="project" value="LOCAL" />
-      <updated>1605104226145</updated>
     </task>
     <task id="LOCAL-00513" summary="Solve hard and tricky find the path in a graph with the smallest edit distance from a target path by generating all the paths and comparing their edit distance&#10;&#10;Need to return the shortest path instead of just the smallest edit distance, returning the path was a bit tricky and new learning for me. Instead of storing the path with min distance and returning it in recursion, create a 2d array which stores the next node in the chain. 2d array will take care of finding the next node if the current node is at index 0 or 1 or 2 in the result path.">
       <created>1605112875257</created>
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606676136175</updated>
     </task>
-    <option name="localTasksCounter" value="561" />
+    <task id="LOCAL-00561" summary="Solve medium and extremely tricky problem find whether an array can be split into subsequences containing consecutive numbers by greedy algo&#10;&#10;Learnings -- Greedy algos show no pattern man ! Damn ! Each greedy algo is kinda unique ! Here the trick is to check whether the current no can be used to extend some existing subsequence or it should start its own subsequence.">
+      <created>1606687812426</created>
+      <option name="number" value="00561" />
+      <option name="presentableId" value="LOCAL-00561" />
+      <option name="project" value="LOCAL" />
+      <updated>1606687812426</updated>
+    </task>
+    <option name="localTasksCounter" value="562" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find an element in rotated and sorted array using binary search&#10;&#10;Leveraged prior learnings to first find the minimum in sorted rotated array by comparing mid with the last element. Once found, array is partitioned into two sorted halves, check whether target lies in first or second half and perform binary search accordingly" />
     <MESSAGE value="Simplify code in find minimum in rotated and sorted array when duplicates present. &#10;&#10;Trick is to make sure the second half is smaller than first half ie. remove the elements in second half that overlaps with first half&#10;e.g. [3,3,1,3] =&gt; [3,3,1]&#10;&#10;Once done reduce the problem to solving it without duplicates and compare mid with the new last_idx" />
     <MESSAGE value="Solve medium and tricky problem search in rotated sorted array when duplicates are present by removing the overlapping elements in second half &#10;&#10;[1,1,3,1] =&gt; [1,1,3] &#10;&#10;Perform binary search accordingly in first half or second half depending upon which partition the target element lies in" />
     <MESSAGE value="Solve medium find a peak element in 1D array using errichto's binary search template.&#10;&#10;&#10;Finding a peak element in 2D array is trickier and uses divide and conquer algorithm" />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve medium and tricky problem, find whether a ball can stop at the target cell, the ball once moved in a certain direction can only change direction if it can't move ahead in the current direction.&#10;&#10;This is a similar problem to RobotRoomCleaner but differs in the part when the ball can change direction. Initially I implemented it all wrong and changed direction at each cell. The simpler thing to do would be to find the last cell in which the ball stops in the current direction and do DFS recursively in the next 4 directions." />
     <MESSAGE value="Solve medium and followup to the previous problem, find the shortest distance between source and target cells, given the ball can change direction only if its stopped.&#10;&#10;Since the task is to find shortest length and the edge weights are variable, need to either use bfs with pruning where we traverse the entire graph or use djikstra that returns the shortest path to reach a given cell." />
     <MESSAGE value="Solve medium find whether two expression trees are equivalent expressions, if they have only + as an operator by verifying whether they contain the same operands or not.&#10;&#10;Feeling frustrated as I went down the wrong path by checking whether the trees are flip equivalent or not" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether two expression trees are equivalent expressions, if they have only + as an operator by verifying whether they contain the same operands or not.&#10;&#10;Feeling frustrated as I went down the wrong path by checking whether the trees are flip equivalent or not" />
+    <MESSAGE value="Solve medium and extremely tricky problem find whether an array can be split into subsequences containing consecutive numbers by greedy algo&#10;&#10;Learnings -- Greedy algos show no pattern man ! Damn ! Each greedy algo is kinda unique ! Here the trick is to check whether the current no can be used to extend some existing subsequence or it should start its own subsequence." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky problem find whether an array can be split into subsequences containing consecutive numbers by greedy algo&#10;&#10;Learnings -- Greedy algos show no pattern man ! Damn ! Each greedy algo is kinda unique ! Here the trick is to check whether the current no can be used to extend some existing subsequence or it should start its own subsequence." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -638,26 +638,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1606661067354" />
-    <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597609089094">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="703" y="304" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609089094" />
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600328299277">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600328299277" />
-    <state x="820" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597609083441">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="820" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609083441" />
     <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604606328118">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1604606328118" />
-    <state x="743" y="369" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog" timestamp="1597609092731">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="743" y="369" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609092731" />
     <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604840703273">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -670,10 +658,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606676135564">
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606687811871">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606676135564" />
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606687811871" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -682,46 +670,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1606423940260">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1606722735791">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606423940260" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606722735791" />
     <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="969" y="325" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604517634549" />
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1606659990441">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1606752287744">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606659990441" />
-    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1606659990441">
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606752287744" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1606752287743">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606659990441" />
-    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1606659990441">
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606752287743" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1606752287742">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606659990441" />
-    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1606659990441">
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606752287742" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1606752287743">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606659990441" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1606659990442">
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606752287743" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1606752287746">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606659990442" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1606659990442">
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606752287746" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1606752287745">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606659990442" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1606659990442">
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606752287745" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1606752287745">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606659990442" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1606659990442">
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606752287745" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1606752287745">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606659990442" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606752287745" />
     <state width="1877" height="282" key="GridCell.Tab.2.bottom" timestamp="1605972491813">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -770,14 +758,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606676137485">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606687813658">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606676137485" />
-    <state x="775" y="303" key="chooseDestDirectoryDialog" timestamp="1597609092682">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="775" y="303" key="chooseDestDirectoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597609092682" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606687813658" />
     <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603744207245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -814,10 +798,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606328236740" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606685846846">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606752396856">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606685846846" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606752396856" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
