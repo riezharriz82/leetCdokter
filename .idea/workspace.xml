@@ -13,7 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00517" summary="Solve medium and tricky 3 way sorting problem using 3 pointers. &#10;&#10;Trick is to know which pointer to increment/decrement and when? i partitions all the 0's, j points to the unclassified and k points to the partition containing 2's">
-      <created>1605459765188</created>
-      <option name="number" value="00517" />
-      <option name="presentableId" value="LOCAL-00517" />
-      <option name="project" value="LOCAL" />
-      <updated>1605459765188</updated>
     </task>
     <task id="LOCAL-00518" summary="Add another approach of validating a BST using range bound property">
       <created>1605461173694</created>
@@ -514,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606858613370</updated>
     </task>
-    <option name="localTasksCounter" value="566" />
+    <task id="LOCAL-00566" summary="Solve hard and tricky find the longest repeated substring in string using binary search + rolling hash&#10;&#10;Binary search was not that difficult to identify but rolling hash took a lot of time due to modulo arithmetic in handling negative hashes. Also care must be taken to properly calculate new hash. Take care of indices and the multiplication factor.&#10;&#10;LCS can also be used to find the answer but it would have been n^2 and would have timed out due to higher input bound">
+      <created>1606859023097</created>
+      <option name="number" value="00566" />
+      <option name="presentableId" value="LOCAL-00566" />
+      <option name="project" value="LOCAL" />
+      <updated>1606859023097</updated>
+    </task>
+    <option name="localTasksCounter" value="567" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -585,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string." />
     <MESSAGE value="Solve medium and extremely tricky to deduce the crux of the problem -- find the min stone possible after smashing all the stones&#10;&#10;Learnings -- Initially I went with greedy which was against all judgement because the max input range was [1,30] hinting at exponential complexity based solution but my greedy was nlogn&#10;&#10;Problem reduces to finding the min diff between two subsets in an array" />
     <MESSAGE value="Solve medium print a linkedlist in reverse using sqrt(n) extra space by working on blocks of size sqrt. Create blocks containing sqrt(num) elements and reverse each block at a time.&#10;&#10;Learnings -- Introduction to sqrt decomposition in the most trivial question. Life works in mysterious ways." />
     <MESSAGE value="Solve medium count submatrices with all ones using 2D &quot;compression&quot; technique. Reduce the 2D problem to 1D. If there are n consecutive non zero element, no of subarrays would be n*(n+1)/2.&#10;&#10;Can be optimized to n^2 using monotonic stack but I don't fully understand this solution at the moment." />
@@ -610,7 +611,8 @@
     <MESSAGE value="Solve medium and tricky problem, find the maximum of minimum distance between two balls given that we have to place m balls using binary search.&#10;&#10;Leveraged prior learnings of solving DivideChocolates to code up the binary search solution. Possible pattern is to use binary search when the output can be 1,2,3.... n and verifying whether a certain value satisfy the constraint takes linear or constant time, we can use binary search" />
     <MESSAGE value="Solve medium and tricky problem, find the minimum speed to eat all the bananas in &lt;= h hours using binary search&#10;&#10;Learnings -- If the output can be either 1,2,3...n and verifying whether the target satisfies the input constraint takes linear time, we can apply binary search." />
     <MESSAGE value="Add gotcha in finding the min subarray that needs to be removed to make the remaining subarray sum divisible by p" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha in finding the min subarray that needs to be removed to make the remaining subarray sum divisible by p" />
+    <MESSAGE value="Solve hard and tricky find the longest repeated substring in string using binary search + rolling hash&#10;&#10;Binary search was not that difficult to identify but rolling hash took a lot of time due to modulo arithmetic in handling negative hashes. Also care must be taken to properly calculate new hash. Take care of indices and the multiplication factor.&#10;&#10;LCS can also be used to find the answer but it would have been n^2 and would have timed out due to higher input bound" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the longest repeated substring in string using binary search + rolling hash&#10;&#10;Binary search was not that difficult to identify but rolling hash took a lot of time due to modulo arithmetic in handling negative hashes. Also care must be taken to properly calculate new hash. Take care of indices and the multiplication factor.&#10;&#10;LCS can also be used to find the answer but it would have been n^2 and would have timed out due to higher input bound" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -656,10 +658,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606858612846">
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606859022535">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606858612846" />
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606859022535" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -744,10 +746,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606856772482">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606859191223">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1606856772482" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1606859191223" />
     <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1606041356204">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -756,10 +758,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606858614295">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606859023909">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606858614295" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606859023909" />
     <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603744207245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
