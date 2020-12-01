@@ -42,6 +42,9 @@ public class MakeSumDivisibleByP {
      * {@link SubarraySumsDivisibleByK} for related subarray sum + divisibility problem
      */
     public int minSubarray(int[] nums, int p) {
+        //tried another way of solving the problem by finding the target and then looking for a subarray that is divisible by target
+        //finding such subarray does not necessarily means that removing that will make the remaining subarray divisible by p
+        //eg. [4,4,2], 7 here even if remove [4,2], remaining subarray does not become divisible by 7
         int target = 0;
         for (int num : nums) {
             target = (target + num) % p; //perform modulo because totalSum may overflow
