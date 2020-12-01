@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00514" summary="Solve medium and a bit tricky remove intervals that overlaps with a target interval. &#10;&#10;Got confused during implementation trying to solve the question in log(n) using binary search as the input array is sorted. Checked the hint and realized that it can't be done in linear time because we have to create a new list and copy all the intervals in worst case.&#10;&#10;So the simple solution is to check each interval and see if it overlaps with the target interval. If it does, split it.">
-      <created>1605452094059</created>
-      <option name="number" value="00514" />
-      <option name="presentableId" value="LOCAL-00514" />
-      <option name="project" value="LOCAL" />
-      <updated>1605452094060</updated>
-    </task>
     <task id="LOCAL-00515" summary="Solve easy but kinda medium if we have to optimize it to linear time complexity using trie, find longest word whose recursive prefixes are present in dictionary.&#10;&#10;I did it by sorting the input and keeping track of valid prefixes. Could have used trie to optimize it. &#10;&#10;Learnings -- Whenever dealing with prefixes in a dictionary use freaking TRIE !">
       <created>1605452930024</created>
       <option name="number" value="00515" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606755241272</updated>
     </task>
-    <option name="localTasksCounter" value="563" />
+    <task id="LOCAL-00563" summary="Solve medium and tricky problem, find the maximum of minimum distance between two balls given that we have to place m balls using binary search.&#10;&#10;Leveraged prior learnings of solving DivideChocolates to code up the binary search solution. Possible pattern is to use binary search when the output can be 1,2,3.... n and verifying whether a certain value satisfy the constraint takes linear or constant time, we can use binary search">
+      <created>1606771037310</created>
+      <option name="number" value="00563" />
+      <option name="presentableId" value="LOCAL-00563" />
+      <option name="project" value="LOCAL" />
+      <updated>1606771037310</updated>
+    </task>
+    <option name="localTasksCounter" value="564" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky problem search in rotated sorted array when duplicates are present by removing the overlapping elements in second half &#10;&#10;[1,1,3,1] =&gt; [1,1,3] &#10;&#10;Perform binary search accordingly in first half or second half depending upon which partition the target element lies in" />
     <MESSAGE value="Solve medium find a peak element in 1D array using errichto's binary search template.&#10;&#10;&#10;Finding a peak element in 2D array is trickier and uses divide and conquer algorithm" />
     <MESSAGE value="Rewrite the code by considering each element's choice; either be added to the current set or be skipped. &#10;&#10;Instead of trying all elements in a loop. I feel this is logically more clear to visualize rather than the loop solution." />
     <MESSAGE value="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve medium find whether two expression trees are equivalent expressions, if they have only + as an operator by verifying whether they contain the same operands or not.&#10;&#10;Feeling frustrated as I went down the wrong path by checking whether the trees are flip equivalent or not" />
     <MESSAGE value="Solve medium and extremely tricky problem find whether an array can be split into subsequences containing consecutive numbers by greedy algo&#10;&#10;Learnings -- Greedy algos show no pattern man ! Damn ! Each greedy algo is kinda unique ! Here the trick is to check whether the current no can be used to extend some existing subsequence or it should start its own subsequence." />
     <MESSAGE value="Solve medium and tricky problem, find the kth missing element in sorted array using binary search and linear search by finding count of elements missing till a specific index.&#10;&#10;I should have at least solved the problem using linear search, feeling a bit disappointed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem, find the kth missing element in sorted array using binary search and linear search by finding count of elements missing till a specific index.&#10;&#10;I should have at least solved the problem using linear search, feeling a bit disappointed." />
+    <MESSAGE value="Solve medium and tricky problem, find the maximum of minimum distance between two balls given that we have to place m balls using binary search.&#10;&#10;Leveraged prior learnings of solving DivideChocolates to code up the binary search solution. Possible pattern is to use binary search when the output can be 1,2,3.... n and verifying whether a certain value satisfy the constraint takes linear or constant time, we can use binary search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem, find the maximum of minimum distance between two balls given that we have to place m balls using binary search.&#10;&#10;Leveraged prior learnings of solving DivideChocolates to code up the binary search solution. Possible pattern is to use binary search when the output can be 1,2,3.... n and verifying whether a certain value satisfy the constraint takes linear or constant time, we can use binary search" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -658,10 +658,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606755240227">
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606771036723">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606755240227" />
+    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606771036723" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -758,10 +758,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606755243031">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606771038388">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606755243031" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606771038388" />
     <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603744207245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -794,10 +794,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606594316649" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1606328236740">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1606837797926">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606328236740" />
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606837797926" />
     <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606756268514">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
