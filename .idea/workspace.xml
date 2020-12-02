@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00518" summary="Add another approach of validating a BST using range bound property">
-      <created>1605461173694</created>
-      <option name="number" value="00518" />
-      <option name="presentableId" value="LOCAL-00518" />
-      <option name="project" value="LOCAL" />
-      <updated>1605461173694</updated>
-    </task>
     <task id="LOCAL-00519" summary="Solve medium and tricky find all possible abbreviations of given string by noticing that each char has two choices, either get abbreviated or not. Similar to Subsets&#10;&#10;Learnings -- In case of problems where each char has some choices and there is no mention of subarray, take decision at each char independently i.e don't run a loop. Running a loop can give duplicates and will not be efficient.">
       <created>1605474873614</created>
       <option name="number" value="00519" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606859023097</updated>
     </task>
-    <option name="localTasksCounter" value="567" />
+    <task id="LOCAL-00567" summary="Solve medium find longest subarray that sums to a target value using prefix sum + hashmap&#10;&#10;Leveraged prior learnings of using prefix sum to deal with subarray sum problems. Only trick here was not updating the prefixsum in case an index with same prefix sum already exists -- this will help in finding the longest subarray">
+      <created>1606861369842</created>
+      <option name="number" value="00567" />
+      <option name="presentableId" value="LOCAL-00567" />
+      <option name="project" value="LOCAL" />
+      <updated>1606861369842</updated>
+    </task>
+    <option name="localTasksCounter" value="568" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky to deduce the crux of the problem -- find the min stone possible after smashing all the stones&#10;&#10;Learnings -- Initially I went with greedy which was against all judgement because the max input range was [1,30] hinting at exponential complexity based solution but my greedy was nlogn&#10;&#10;Problem reduces to finding the min diff between two subsets in an array" />
     <MESSAGE value="Solve medium print a linkedlist in reverse using sqrt(n) extra space by working on blocks of size sqrt. Create blocks containing sqrt(num) elements and reverse each block at a time.&#10;&#10;Learnings -- Introduction to sqrt decomposition in the most trivial question. Life works in mysterious ways." />
     <MESSAGE value="Solve medium count submatrices with all ones using 2D &quot;compression&quot; technique. Reduce the 2D problem to 1D. If there are n consecutive non zero element, no of subarrays would be n*(n+1)/2.&#10;&#10;Can be optimized to n^2 using monotonic stack but I don't fully understand this solution at the moment." />
     <MESSAGE value="Solve easy find the total weight of nested list by performing DFS and keeping track of current depth." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve medium and tricky problem, find the minimum speed to eat all the bananas in &lt;= h hours using binary search&#10;&#10;Learnings -- If the output can be either 1,2,3...n and verifying whether the target satisfies the input constraint takes linear time, we can apply binary search." />
     <MESSAGE value="Add gotcha in finding the min subarray that needs to be removed to make the remaining subarray sum divisible by p" />
     <MESSAGE value="Solve hard and tricky find the longest repeated substring in string using binary search + rolling hash&#10;&#10;Binary search was not that difficult to identify but rolling hash took a lot of time due to modulo arithmetic in handling negative hashes. Also care must be taken to properly calculate new hash. Take care of indices and the multiplication factor.&#10;&#10;LCS can also be used to find the answer but it would have been n^2 and would have timed out due to higher input bound" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the longest repeated substring in string using binary search + rolling hash&#10;&#10;Binary search was not that difficult to identify but rolling hash took a lot of time due to modulo arithmetic in handling negative hashes. Also care must be taken to properly calculate new hash. Take care of indices and the multiplication factor.&#10;&#10;LCS can also be used to find the answer but it would have been n^2 and would have timed out due to higher input bound" />
+    <MESSAGE value="Solve medium find longest subarray that sums to a target value using prefix sum + hashmap&#10;&#10;Leveraged prior learnings of using prefix sum to deal with subarray sum problems. Only trick here was not updating the prefixsum in case an index with same prefix sum already exists -- this will help in finding the longest subarray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find longest subarray that sums to a target value using prefix sum + hashmap&#10;&#10;Leveraged prior learnings of using prefix sum to deal with subarray sum problems. Only trick here was not updating the prefixsum in case an index with same prefix sum already exists -- this will help in finding the longest subarray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -658,10 +658,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606859022535">
+    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606861369343">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="546" y="18" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606859022535" />
+    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606861369343" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -670,10 +670,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1606722735791">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1606895946437">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606722735791" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606895946437" />
     <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -746,22 +746,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606859191223">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1606897000259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1606859191223" />
-    <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1606041356204">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1606897000259" />
+    <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1606863137716">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="669" y="222" key="VCS.ChangeListViewerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606041356204" />
+    <state x="669" y="222" key="VCS.ChangeListViewerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606863137716" />
     <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606859023909">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606861370712">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606859023909" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606861370712" />
     <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603744207245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -778,14 +778,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606593496927" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1606858305806">
+    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1606897283672">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606858305806" />
-    <state width="750" height="232" key="javadoc.popup.new" timestamp="1606839162130">
+    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606897283672" />
+    <state width="750" height="232" key="javadoc.popup.new" timestamp="1606897013531">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1606839162130" />
+    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1606897013531" />
     <state x="551" y="145" key="new project wizard" timestamp="1606165512459">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -798,10 +798,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606837797926" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606858302353">
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606919512686">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606858302353" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606919512686" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -823,17 +823,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java</url>
-          <line>16</line>
+          <line>18</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java</url>
-          <line>98</line>
+          <line>100</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java</url>
-          <line>36</line>
+          <line>38</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
