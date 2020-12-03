@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00521" summary="Solve hard and tricky interval problem -- find free time common to all employees using line sweep algo similar to meeting rooms 2&#10;&#10;Learnings -- For problems related to interval, pattern for solving them is&#10;1. Line sweep using counter +1, -1&#10;2. Line sweep using start time as key, end time as value&#10;3. Given a target interval and a set of input intervals, compare each interval to the target interval&#10;4. Greedy approach by sorting by start or sorting by end">
-      <created>1605539671513</created>
-      <option name="number" value="00521" />
-      <option name="presentableId" value="LOCAL-00521" />
-      <option name="project" value="LOCAL" />
-      <updated>1605539671513</updated>
-    </task>
     <task id="LOCAL-00522" summary="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap">
       <created>1605543789843</created>
       <option name="number" value="00522" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606925195595</updated>
     </task>
-    <option name="localTasksCounter" value="570" />
+    <task id="LOCAL-00570" summary="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster">
+      <created>1607008230899</created>
+      <option name="number" value="00570" />
+      <option name="presentableId" value="LOCAL-00570" />
+      <option name="project" value="LOCAL" />
+      <updated>1607008230900</updated>
+    </task>
+    <option name="localTasksCounter" value="571" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find the total weight of nested list by performing DFS and keeping track of current depth." />
     <MESSAGE value="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree" />
     <MESSAGE value="Solve medium and tricky find the min distance between two sets of islands using multi source bfs&#10;&#10;Learnings -- I could not initially think about the multi source bfs, &#10;&#10;Initially, I went ahead with normal bfs + keeping track of min distance. Then I got WA when a cell is reachable from multiple cells of first island. Then I thought instead of visited cell, I would need BFS with pruning i.e proceed ahead if I can reach a cell with min distance. Which got me AC at ~22ms&#10;&#10;Then I thought of multi source bfs by checking the implementation of RottingOranges, and it got me AC at ~9 ms&#10;&#10;Bidirectional BFS can reduce the runtime even lower" />
     <MESSAGE value="Solve hard find a number in mountain array using 3 binary searches, first find the peak element and then apply binary search in either of the partitions.&#10;&#10;Learnings -- For finding a number in modified sorted array always find the pivot element first. Then apply binary search in the partitions to find the target number." />
@@ -612,7 +611,8 @@
     <MESSAGE value="Solve medium find longest subarray that sums to a target value using prefix sum + hashmap&#10;&#10;Leveraged prior learnings of using prefix sum to deal with subarray sum problems. Only trick here was not updating the prefixsum in case an index with same prefix sum already exists -- this will help in finding the longest subarray" />
     <MESSAGE value="Solve medium pick a random node from an infinitely long list using reservoir sampling. Fix the first kth element in the reservoir, then for the next element, put it in the reservoir only if the randomIndex is &lt; k. RandomIndex is [0, currentIndex)" />
     <MESSAGE value="Solve medium design search suggestion system where given a search word, list all the products that start with each prefix of the search word using trie&#10;&#10;Leveraged prior learnings of storing useful information directly in trie node to avoid DFS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design search suggestion system where given a search word, list all the products that start with each prefix of the search word using trie&#10;&#10;Leveraged prior learnings of storing useful information directly in trie node to avoid DFS" />
+    <MESSAGE value="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -658,10 +658,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1606925194990">
+    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1607008229912">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1606925194990" />
+    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1607008229912" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -758,10 +758,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1606925196388">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1607008232190">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606925196388" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1607008232190" />
     <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603744207245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
