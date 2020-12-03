@@ -13,7 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00522" summary="Solve medium interval problem -- find the intersection of two lists of intervals using multiple approaches, line sweep using counter method, priority queue (overkill but is generic approach of finding intersection for k lists of intervals)&#10;&#10;A simpler approach would be to just use two pointers to compare two sorted intervals one at a time and find the overlap">
-      <created>1605543789843</created>
-      <option name="number" value="00522" />
-      <option name="presentableId" value="LOCAL-00522" />
-      <option name="project" value="LOCAL" />
-      <updated>1605543789843</updated>
     </task>
     <task id="LOCAL-00523" summary="Solve medium and tricky find combinations of three triplets such that their sum &lt; target sum using multiple approaches&#10;&#10;1. n^2 using two pointers&#10;2. n^2log(n) using binary search&#10;&#10;Learnings -- Using Arrays.binarySearch() to find num &lt; target does not work if input contains duplicates.">
       <created>1605551449350</created>
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607008230900</updated>
     </task>
-    <option name="localTasksCounter" value="571" />
+    <task id="LOCAL-00571" summary="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down.">
+      <created>1607009894579</created>
+      <option name="number" value="00571" />
+      <option name="presentableId" value="LOCAL-00571" />
+      <option name="project" value="LOCAL" />
+      <updated>1607009894579</updated>
+    </task>
+    <option name="localTasksCounter" value="572" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,6 +573,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="11" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="82" />
@@ -587,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree" />
     <MESSAGE value="Solve medium and tricky find the min distance between two sets of islands using multi source bfs&#10;&#10;Learnings -- I could not initially think about the multi source bfs, &#10;&#10;Initially, I went ahead with normal bfs + keeping track of min distance. Then I got WA when a cell is reachable from multiple cells of first island. Then I thought instead of visited cell, I would need BFS with pruning i.e proceed ahead if I can reach a cell with min distance. Which got me AC at ~22ms&#10;&#10;Then I thought of multi source bfs by checking the implementation of RottingOranges, and it got me AC at ~9 ms&#10;&#10;Bidirectional BFS can reduce the runtime even lower" />
     <MESSAGE value="Solve hard find a number in mountain array using 3 binary searches, first find the peak element and then apply binary search in either of the partitions.&#10;&#10;Learnings -- For finding a number in modified sorted array always find the pivot element first. Then apply binary search in the partitions to find the target number." />
     <MESSAGE value="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1." />
@@ -612,7 +622,8 @@
     <MESSAGE value="Solve medium pick a random node from an infinitely long list using reservoir sampling. Fix the first kth element in the reservoir, then for the next element, put it in the reservoir only if the randomIndex is &lt; k. RandomIndex is [0, currentIndex)" />
     <MESSAGE value="Solve medium design search suggestion system where given a search word, list all the products that start with each prefix of the search word using trie&#10;&#10;Leveraged prior learnings of storing useful information directly in trie node to avoid DFS" />
     <MESSAGE value="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster" />
+    <MESSAGE value="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -658,10 +669,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1607008229912">
+    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1607011288915">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1607008229912" />
+    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1607011288915" />
     <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -670,10 +681,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1606895946437">
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1607010678594">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606895946437" />
+    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1607010678594" />
     <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -758,10 +769,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1607008232190">
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1607009895381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1607008232190" />
+    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1607009895381" />
     <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603744207245">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -794,14 +805,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606594316649" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1606837797926">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1607011199477">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606837797926" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1606921203216">
+    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1607011199477" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1607011307887">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606921203216" />
+    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1607011307887" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
