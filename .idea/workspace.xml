@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00524" summary="Solve medium find triplets such that their sum is closest to target sum using two pointers algorithm.&#10;&#10;Reduce the problem to finding tuples such that their sum is closest to target sum.&#10;&#10;Leveraged prior learnings of ThreeSumSmaller">
-      <created>1605557492993</created>
-      <option name="number" value="00524" />
-      <option name="presentableId" value="LOCAL-00524" />
-      <option name="project" value="LOCAL" />
-      <updated>1605557492993</updated>
-    </task>
     <task id="LOCAL-00525" summary="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString">
       <created>1605593300432</created>
       <option name="number" value="00525" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607011464342</updated>
     </task>
-    <option name="localTasksCounter" value="573" />
+    <task id="LOCAL-00573" summary="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo.">
+      <created>1607014680713</created>
+      <option name="number" value="00573" />
+      <option name="presentableId" value="LOCAL-00573" />
+      <option name="project" value="LOCAL" />
+      <updated>1607014680713</updated>
+    </task>
+    <option name="localTasksCounter" value="574" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -578,7 +578,7 @@
                   <entry key="text">
                     <value>
                       <list>
-                        <option value="11" />
+                        <option value="binary search" />
                       </list>
                     </value>
                   </entry>
@@ -598,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard find a number in mountain array using 3 binary searches, first find the peak element and then apply binary search in either of the partitions.&#10;&#10;Learnings -- For finding a number in modified sorted array always find the pivot element first. Then apply binary search in the partitions to find the target number." />
     <MESSAGE value="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1." />
     <MESSAGE value="Add clarifications in the logic behind setting the bounds in recursion. Do note that the parent bounds must be obeyed" />
     <MESSAGE value="Solve medium and tricky math problem find length of smallest integer with repeated 1's i.e 1, 11, 111, 1111, 11111, 111111.. that divides k&#10;&#10;We are required to return only the length as the actual no can be very huge. Since we can't store the number itself, we have to rely on current remainder to generate the remainder of the next no in series. That was a pretty cool math trick.&#10;&#10;Another trick is to realize that we can have only a finite set of remainders so sometimes remainders can repeat. When they do, we got ourselves an infinite loop. We have to use a set to keep track of seen remainders." />
@@ -623,196 +622,11 @@
     <MESSAGE value="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster" />
     <MESSAGE value="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down." />
     <MESSAGE value="Solve medium and math related divisibility problem, find count of pairs of numbers that are divisible by 60 by finding pairs of numbers whose mod sum = 60, This is similar to 2Sum Problem where we have to find two numbers such that a + b = k&#10;&#10;Take care of duplicates. Either use binary search or hashmap to count pairs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and math related divisibility problem, find count of pairs of numbers that are divisible by 60 by finding pairs of numbers whose mod sum = 60, This is similar to 2Sum Problem where we have to find two numbers such that a + b = k&#10;&#10;Take care of duplicates. Either use binary search or hashmap to count pairs." />
+    <MESSAGE value="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="726" y="229" key="#Auto_Import" timestamp="1599427305776">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="726" y="229" key="#Auto_Import/0.0.1920.1050@0.0.1920.1050" timestamp="1599427305776" />
-    <state x="586" y="203" key="#Inspections" timestamp="1602866625843">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="586" y="203" key="#Inspections/0.0.1920.1050@0.0.1920.1050" timestamp="1602866625843" />
-    <state x="727" y="349" key="#Notifications" timestamp="1598814073398">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="727" y="349" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1598814073398" />
-    <state x="552" y="166" key="#Plugins" timestamp="1605009261465">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="166" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1605009261465" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1606661067354">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1606661067354" />
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600328299277">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600328299277" />
-    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604606328118">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="756" y="384" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1604606328118" />
-    <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604840703273">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604840703273" />
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601403451266">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1601403451266" />
-    <state x="1378" y="422" key="#xdebugger.evaluate" timestamp="1603206721809">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="1378" y="422" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1603206721809" />
-    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2" timestamp="1607011463740">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="542" y="72" width="1374" height="978" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1607011463740" />
-    <state width="412" height="466" key="DebuggerActiveHint" timestamp="1599062046773">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="412" height="466" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1599062046773" />
-    <state width="456" height="442" key="Diff.GoToChangePopup" timestamp="1603722673482">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="456" height="442" key="Diff.GoToChangePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1603722673482" />
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog" timestamp="1607010678594">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="368" y="174" width="1536" height="867" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1607010678594" />
-    <state x="969" y="325" key="FileChooserDialogImpl" timestamp="1604517634549">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="969" y="325" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604517634549" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606927267554">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606927267554" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606927267554">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606927267554" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606927267554">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606927267554" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606927267554">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606927267554" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1606927257494">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606927257494" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1606927257494">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606927257494" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1606927257494">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606927257494" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1606927257494">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606927257494" />
-    <state width="1877" height="282" key="GridCell.Tab.2.bottom" timestamp="1605972491813">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605972491813" />
-    <state width="1877" height="282" key="GridCell.Tab.2.center" timestamp="1605972491813">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605972491813" />
-    <state width="1877" height="282" key="GridCell.Tab.2.left" timestamp="1605972491813">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605972491813" />
-    <state width="1877" height="282" key="GridCell.Tab.2.right" timestamp="1605972491813">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605972491813" />
-    <state x="540" y="268" key="IDE.errors.dialog" timestamp="1606660079021">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="540" y="268" key="IDE.errors.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606660079021" />
-    <state x="775" y="459" key="ReplaceDuplicatesPrompt" timestamp="1606327918587">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="775" y="459" key="ReplaceDuplicatesPrompt/0.0.1920.1050@0.0.1920.1050" timestamp="1606327918587" />
-    <state x="695" y="245" key="RollbackChangesDialog" timestamp="1598184917635">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="695" y="245" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598184917635" />
-    <state x="668" y="259" key="SettingsEditor" timestamp="1605479761668">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="668" y="259" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605479761668" />
-    <state x="681" y="266" width="570" height="524" key="StructurePopup" timestamp="1604434978061">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="681" y="266" width="570" height="524" key="StructurePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1604434978061" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606927203354">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1606927203354" />
-    <state x="669" y="222" key="VCS.ChangeListViewerDialog" timestamp="1606863137716">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="669" y="222" key="VCS.ChangeListViewerDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606863137716" />
-    <state x="807" y="439" key="VCS.ChangelistChooser" timestamp="1598799850245">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="807" y="439" key="VCS.ChangelistChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1598799850245" />
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2" timestamp="1607011465347">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="870" y="99" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1607011465347" />
-    <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603744207245">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="562" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1603744207245" />
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606152657211">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="769" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606152657211" />
-    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603983886792">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="489" y="261" width="941" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1603983886792" />
-    <state x="690" y="275" key="extract.method.dialog" timestamp="1606593496927">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="690" y="275" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606593496927" />
-    <state x="667" y="258" width="1045" height="624" key="find.popup" timestamp="1606897283672">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="667" y="258" width="1045" height="624" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606897283672" />
-    <state width="750" height="232" key="javadoc.popup.new" timestamp="1607006041340">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="750" height="232" key="javadoc.popup.new/0.0.1920.1050@0.0.1920.1050" timestamp="1607006041340" />
-    <state x="551" y="145" key="new project wizard" timestamp="1606165512459">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="551" y="145" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1606165512459" />
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog" timestamp="1606594316649">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="666" y="282" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606594316649" />
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1607011199477">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1607011199477" />
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup" timestamp="1607011307887">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="623" y="227" width="766" height="650" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1607011307887" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
