@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KnightProbabilityInChessboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KnightProbabilityInChessboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00528" summary="Solve hard and tricky to optimize design search autocomplete system that provides top 3 sentences by hotness for current prefix.&#10;&#10;Learnings -- As the problem explicitly asked for finding all valid sentences that starts with a prefix, trie is the way to go. &#10;In my initial implementation I performed DFS at the last trie node and extracted out all valid sentences and then ranked them.&#10;Instead of performing DFS, a better way is to store the useful information directly at each node i.e store all the valid sentences directly at each trie node.">
-      <created>1605706673461</created>
-      <option name="number" value="00528" />
-      <option name="presentableId" value="LOCAL-00528" />
-      <option name="project" value="LOCAL" />
-      <updated>1605706673461</updated>
     </task>
     <task id="LOCAL-00529" summary="Solve hard and tricky to optimize find words that starts with provided prefix and ends with provided suffix using two tries.&#10;&#10;Maintaining two tries was straight forward but then searching is a bit slow because now you will have to search in two tries and then filter out common indices. A fast solution is to directly insert all suffixes + delimiter + word in trie &#10;&#10;i.e for &quot;apple&quot;, store words like &quot;e{apple&quot;, &quot;le{apple&quot;, &quot;ple{apple&quot;, &quot;pple{apple&quot;, &quot;apple{apple&quot; in trie">
       <created>1605712414155</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607173223412</updated>
     </task>
-    <option name="localTasksCounter" value="577" />
+    <task id="LOCAL-00577" summary="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it">
+      <created>1607176110831</created>
+      <option name="number" value="00577" />
+      <option name="presentableId" value="LOCAL-00577" />
+      <option name="project" value="LOCAL" />
+      <updated>1607176110832</updated>
+    </task>
+    <option name="localTasksCounter" value="578" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky nested string problem -- evaluate nested expression containing + and - i.e. 2-(3+5) using stack of stack&#10;&#10;Leveraged prior learnings of solving nested questions like NumberOfAtoms, DecodeString. First identify what is required to solve a single expression, then try to create stack of whatever was required. &#10;&#10;Gotchas: Take care of prefix/suffix of nested expression. Don't forget to freaking reset the variables upon start/end of expression." />
     <MESSAGE value="Solve medium and tricky evaluate an expression containing + - / % using stack&#10;&#10;Initially I implemented it with 2 stacks but that's an overkill if we look closely. We always have to evaluate * and / first because they are the highest rank operators.&#10;&#10;Also for handling -, assign - to the operand instead of the operator to handle 0's" />
     <MESSAGE value="Solve hard find running median from data stream using 2 Priority queues&#10;&#10;Leveraged prior learnings of solving SlidingWindowMedian" />
     <MESSAGE value="Solve medium and a bit tricky find all duplicate subtrees in a tree by creating hashes of subtrees as we iterate the tree using preorder traversal.&#10;&#10;Took me some time but was able to write it on my own. Leveraged prior learnings of Serialize&amp;DeserializeBinaryTree by representing the tree using preorder traversal." />
@@ -606,7 +606,8 @@
     <MESSAGE value="Solve medium and tricky graph theory problem, find a way to visit each edge exactly once such the path is lexicographically smallest by greedy backtracking and using hierholzer algorithm to find the eulerian path of the graph&#10;&#10;Learnings -- Visiting each edge exactly once is well known graph theory problem known as eulerian path/cycle. It can be found by doing a postorder traversal of the graph, similar to the way we perform topological sorting using stack.&#10;&#10;Make sure to account for parallel edges/duplicate edges in graph problems unless specified. If there is duplicate edges, solve them by creating a key for each edge (src-&gt;target) and tracking their count. Decrement the count, when we visit a edge." />
     <MESSAGE value="Solve hard and extremely tricky divide and conquer problem, find the max profit after bursting balloons. Was asked this question in Zeta onsite back in 2019. &#10;&#10;Atleast this time I was able to solve using backtracking :P&#10;&#10;Learnings -- Divide and conquer and greedy are tough sons of bitches." />
     <MESSAGE value="Solve medium find the longest arithmetic subsequence in an array using the same concept as LIS. Was able to think about the n^2 solution instantaneously :P Sometimes I feel like a genius" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the longest arithmetic subsequence in an array using the same concept as LIS. Was able to think about the n^2 solution instantaneously :P Sometimes I feel like a genius" />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

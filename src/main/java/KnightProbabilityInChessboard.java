@@ -31,7 +31,7 @@ public class KnightProbabilityInChessboard {
      * <p>
      * Now if the knight makes another move from one of the valid moves, its probability would be 1/8 * (n'/8)
      * <p>
-     * {@link KnightDialer} related knight recursive problems
+     * {@link KnightDialer} {@link OutOfBoundaryPaths} related recursive problems
      */
     public double knightProbability(int N, int K, int r, int c) {
         double[][][] memoized = new double[N][N][K];
@@ -40,25 +40,26 @@ public class KnightProbabilityInChessboard {
                 Arrays.fill(aDouble, -1);
             }
         }
+        //visited array isn't required because even if knight comes back to its original position, steps are finite and it can't go on infinitely
         return DFS(N, K, r, c, memoized);
     }
 
-    private double DFS(int n, int k, int row, int column, double[][][] memoized) {
+    private double DFS(int n, int steps, int row, int column, double[][][] memoized) {
         if (row < 0 || row >= n || column < 0 || column >= n) { //if knight has fallen out of the grid
             return 0;
-        } else if (k == 0) { //if knight is inside but there are no further moves to make
+        } else if (steps == 0) { //if knight is inside but there are no further moves to make
             return 1;
-        } else if (memoized[row][column][k] != -1) {
-            return memoized[row][column][k];
+        } else if (memoized[row][column][steps] != -1) {
+            return memoized[row][column][steps];
         } else {
             double totalProbability = 0;
             for (int i = 0; i < 8; i++) {
                 int new_row = row + x_offsets[i];
                 int new_col = column + y_offsets[i];
                 //each step has probability of 1/8 * probability of remaining steps
-                totalProbability += 0.125D * DFS(n, k - 1, new_row, new_col, memoized);
+                totalProbability += 0.125D * DFS(n, steps - 1, new_row, new_col, memoized);
             }
-            return memoized[row][column][k] = totalProbability;
+            return memoized[row][column][steps] = totalProbability;
         }
     }
 }
