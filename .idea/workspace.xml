@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReconstructItinerary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReconstructItinerary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00530" summary="Solve medium find whether the current string contains a permutation of a target string as a substring using sliding window template.&#10;&#10;Leveraged prior learnings of sliding window template. Here we are required to find the smallest valid window that is an anagram of target string. Keep expanding the window until the window has all the required chars of the target string. Then try to shrink the window to see if the window length can be reduced to target string length.">
-      <created>1605715670799</created>
-      <option name="number" value="00530" />
-      <option name="presentableId" value="LOCAL-00530" />
-      <option name="project" value="LOCAL" />
-      <updated>1605715670799</updated>
     </task>
     <task id="LOCAL-00531" summary="Solve medium find all diagonal traversal of binary tree by keeping a key as the identifier of the diagonal. When going left, increment the key to signify start of a new diagonal, when going right, pass in the same key as current node.&#10;&#10;Keep a map to store all occurrences of nodes in every diagonal.">
       <created>1605720652295</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607181527763</updated>
     </task>
-    <option name="localTasksCounter" value="579" />
+    <task id="LOCAL-00579" summary="Solve medium find the total no of ways of reaching outside the grid given we can only traverse finite number of steps using DFS + Memoization.&#10;&#10;Leveraged prior learnings of solving problems related to finding total no of ways of doing something by returning 1 only at the end state and keeping track of total no of ways at each step.">
+      <created>1607182032394</created>
+      <option name="number" value="00579" />
+      <option name="presentableId" value="LOCAL-00579" />
+      <option name="project" value="LOCAL" />
+      <updated>1607182032394</updated>
+    </task>
+    <option name="localTasksCounter" value="580" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard find running median from data stream using 2 Priority queues&#10;&#10;Leveraged prior learnings of solving SlidingWindowMedian" />
     <MESSAGE value="Solve medium and a bit tricky find all duplicate subtrees in a tree by creating hashes of subtrees as we iterate the tree using preorder traversal.&#10;&#10;Took me some time but was able to write it on my own. Leveraged prior learnings of Serialize&amp;DeserializeBinaryTree by representing the tree using preorder traversal." />
     <MESSAGE value="Solve medium and a bit tricky find whether the current set of dislikes relationships are bipartite by trying to assign the opposite color to the neighbour. In my initial implementation I wrote a recursive backtracking code, it was pretty unique TBH :D&#10;&#10;Learnings -- 1. Model the relationship as fucking graph&#10;2. If two nodes can't be &quot;together&quot;, this means they can't be connected. Solve this by trying to assign opposite colors to the neighbour." />
     <MESSAGE value="Solve medium problem whose indirect ask was to find the max distance of each node from the leaf and return it sorted by distance.&#10;&#10;In my initial solution I did a 2 pass code, first pass for finding the height of the tree and second pass to add the node to correct bucket but those can be combined in one pass by comparing the size of the current result and the current bucket" />
@@ -606,7 +606,8 @@
     <MESSAGE value="Solve medium find the longest arithmetic subsequence in an array using the same concept as LIS. Was able to think about the n^2 solution instantaneously :P Sometimes I feel like a genius" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it" />
     <MESSAGE value="Add clarification on why visited array isn't required in problems with max steps/length permissible" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add clarification on why visited array isn't required in problems with max steps/length permissible" />
+    <MESSAGE value="Solve medium find the total no of ways of reaching outside the grid given we can only traverse finite number of steps using DFS + Memoization.&#10;&#10;Leveraged prior learnings of solving problems related to finding total no of ways of doing something by returning 1 only at the end state and keeping track of total no of ways at each step." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the total no of ways of reaching outside the grid given we can only traverse finite number of steps using DFS + Memoization.&#10;&#10;Leveraged prior learnings of solving problems related to finding total no of ways of doing something by returning 1 only at the end state and keeping track of total no of ways at each step." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

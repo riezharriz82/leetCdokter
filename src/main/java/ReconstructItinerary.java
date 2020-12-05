@@ -52,7 +52,9 @@ public class ReconstructItinerary {
         while (!neighbours.isEmpty()) {
             DFS(map, stack, neighbours.poll());
         }
-        stack.push(airport);
+        stack.push(airport); //this is the key difference, in backtracking solution, we added the airport to the path before doing DFS
+        //and then used to discard the result generated so far, if DFS could not use all tickets
+        //here we don't discard the result, instead keep the result generated so far even though we could not use all the tickets
     }
 
     /**
