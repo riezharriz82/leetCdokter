@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KnightProbabilityInChessboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KnightProbabilityInChessboard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00529" summary="Solve hard and tricky to optimize find words that starts with provided prefix and ends with provided suffix using two tries.&#10;&#10;Maintaining two tries was straight forward but then searching is a bit slow because now you will have to search in two tries and then filter out common indices. A fast solution is to directly insert all suffixes + delimiter + word in trie &#10;&#10;i.e for &quot;apple&quot;, store words like &quot;e{apple&quot;, &quot;le{apple&quot;, &quot;ple{apple&quot;, &quot;pple{apple&quot;, &quot;apple{apple&quot; in trie">
-      <created>1605712414155</created>
-      <option name="number" value="00529" />
-      <option name="presentableId" value="LOCAL-00529" />
-      <option name="project" value="LOCAL" />
-      <updated>1605712414155</updated>
     </task>
     <task id="LOCAL-00530" summary="Solve medium find whether the current string contains a permutation of a target string as a substring using sliding window template.&#10;&#10;Leveraged prior learnings of sliding window template. Here we are required to find the smallest valid window that is an anagram of target string. Keep expanding the window until the window has all the required chars of the target string. Then try to shrink the window to see if the window length can be reduced to target string length.">
       <created>1605715670799</created>
@@ -517,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607176110832</updated>
     </task>
-    <option name="localTasksCounter" value="578" />
+    <task id="LOCAL-00578" summary="Add clarification on why visited array isn't required in problems with max steps/length permissible">
+      <created>1607181527763</created>
+      <option name="number" value="00578" />
+      <option name="presentableId" value="LOCAL-00578" />
+      <option name="project" value="LOCAL" />
+      <updated>1607181527763</updated>
+    </task>
+    <option name="localTasksCounter" value="579" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky evaluate an expression containing + - / % using stack&#10;&#10;Initially I implemented it with 2 stacks but that's an overkill if we look closely. We always have to evaluate * and / first because they are the highest rank operators.&#10;&#10;Also for handling -, assign - to the operand instead of the operator to handle 0's" />
     <MESSAGE value="Solve hard find running median from data stream using 2 Priority queues&#10;&#10;Leveraged prior learnings of solving SlidingWindowMedian" />
     <MESSAGE value="Solve medium and a bit tricky find all duplicate subtrees in a tree by creating hashes of subtrees as we iterate the tree using preorder traversal.&#10;&#10;Took me some time but was able to write it on my own. Leveraged prior learnings of Serialize&amp;DeserializeBinaryTree by representing the tree using preorder traversal." />
     <MESSAGE value="Solve medium and a bit tricky find whether the current set of dislikes relationships are bipartite by trying to assign the opposite color to the neighbour. In my initial implementation I wrote a recursive backtracking code, it was pretty unique TBH :D&#10;&#10;Learnings -- 1. Model the relationship as fucking graph&#10;2. If two nodes can't be &quot;together&quot;, this means they can't be connected. Solve this by trying to assign opposite colors to the neighbour." />
@@ -607,7 +605,8 @@
     <MESSAGE value="Solve hard and extremely tricky divide and conquer problem, find the max profit after bursting balloons. Was asked this question in Zeta onsite back in 2019. &#10;&#10;Atleast this time I was able to solve using backtracking :P&#10;&#10;Learnings -- Divide and conquer and greedy are tough sons of bitches." />
     <MESSAGE value="Solve medium find the longest arithmetic subsequence in an array using the same concept as LIS. Was able to think about the n^2 solution instantaneously :P Sometimes I feel like a genius" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it" />
+    <MESSAGE value="Add clarification on why visited array isn't required in problems with max steps/length permissible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add clarification on why visited array isn't required in problems with max steps/length permissible" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
