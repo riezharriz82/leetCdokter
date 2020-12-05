@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00525" summary="Fix incorrect if/else logic while placing back the polled next character in ReorganizeString">
-      <created>1605593300432</created>
-      <option name="number" value="00525" />
-      <option name="presentableId" value="LOCAL-00525" />
-      <option name="project" value="LOCAL" />
-      <updated>1605593300432</updated>
-    </task>
     <task id="LOCAL-00526" summary="Add the way to solve this question in a simplified way using TreeMap + ceilingEntry() instead of manually fiddling with return value of Arrays.binarySearch()">
       <created>1605631065314</created>
       <option name="number" value="00526" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607014680713</updated>
     </task>
-    <option name="localTasksCounter" value="574" />
+    <task id="LOCAL-00574" summary="Solve medium and tricky graph theory problem, find a way to visit each edge exactly once such the path is lexicographically smallest by greedy backtracking and using hierholzer algorithm to find the eulerian path of the graph&#10;&#10;Learnings -- Visiting each edge exactly once is well known graph theory problem known as eulerian path/cycle. It can be found by doing a postorder traversal of the graph, similar to the way we perform topological sorting using stack.&#10;&#10;Make sure to account for parallel edges/duplicate edges in graph problems unless specified. If there is duplicate edges, solve them by creating a key for each edge (src-&gt;target) and tracking their count. Decrement the count, when we visit a edge.">
+      <created>1607112348672</created>
+      <option name="number" value="00574" />
+      <option name="presentableId" value="LOCAL-00574" />
+      <option name="project" value="LOCAL" />
+      <updated>1607112348672</updated>
+    </task>
+    <option name="localTasksCounter" value="575" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -572,24 +572,7 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="binary search" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="COLUMN_WIDTH">
-                <map>
-                  <entry key="2" value="82" />
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -598,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1." />
     <MESSAGE value="Add clarifications in the logic behind setting the bounds in recursion. Do note that the parent bounds must be obeyed" />
     <MESSAGE value="Solve medium and tricky math problem find length of smallest integer with repeated 1's i.e 1, 11, 111, 1111, 11111, 111111.. that divides k&#10;&#10;We are required to return only the length as the actual no can be very huge. Since we can't store the number itself, we have to rely on current remainder to generate the remainder of the next no in series. That was a pretty cool math trick.&#10;&#10;Another trick is to realize that we can have only a finite set of remainders so sometimes remainders can repeat. When they do, we got ourselves an infinite loop. We have to use a set to keep track of seen remainders." />
     <MESSAGE value="Solve hard and tricky nested string problem -- evaluate nested expression containing + and - i.e. 2-(3+5) using stack of stack&#10;&#10;Leveraged prior learnings of solving nested questions like NumberOfAtoms, DecodeString. First identify what is required to solve a single expression, then try to create stack of whatever was required. &#10;&#10;Gotchas: Take care of prefix/suffix of nested expression. Don't forget to freaking reset the variables upon start/end of expression." />
@@ -623,7 +605,8 @@
     <MESSAGE value="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down." />
     <MESSAGE value="Solve medium and math related divisibility problem, find count of pairs of numbers that are divisible by 60 by finding pairs of numbers whose mod sum = 60, This is similar to 2Sum Problem where we have to find two numbers such that a + b = k&#10;&#10;Take care of duplicates. Either use binary search or hashmap to count pairs." />
     <MESSAGE value="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo." />
+    <MESSAGE value="Solve medium and tricky graph theory problem, find a way to visit each edge exactly once such the path is lexicographically smallest by greedy backtracking and using hierholzer algorithm to find the eulerian path of the graph&#10;&#10;Learnings -- Visiting each edge exactly once is well known graph theory problem known as eulerian path/cycle. It can be found by doing a postorder traversal of the graph, similar to the way we perform topological sorting using stack.&#10;&#10;Make sure to account for parallel edges/duplicate edges in graph problems unless specified. If there is duplicate edges, solve them by creating a key for each edge (src-&gt;target) and tracking their count. Decrement the count, when we visit a edge." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky graph theory problem, find a way to visit each edge exactly once such the path is lexicographically smallest by greedy backtracking and using hierholzer algorithm to find the eulerian path of the graph&#10;&#10;Learnings -- Visiting each edge exactly once is well known graph theory problem known as eulerian path/cycle. It can be found by doing a postorder traversal of the graph, similar to the way we perform topological sorting using stack.&#10;&#10;Make sure to account for parallel edges/duplicate edges in graph problems unless specified. If there is duplicate edges, solve them by creating a key for each edge (src-&gt;target) and tracking their count. Decrement the count, when we visit a edge." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
