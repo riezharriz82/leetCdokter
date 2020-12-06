@@ -21,6 +21,11 @@ public class LongestIncreasingPathInMatrix {
      * Approach: Need to perform DFS by considering each point as the starting point of the path i.e the minimum point.
      * Once recursion is done, cache the results, as you will visit the same element again and again so we can reuse the
      * max length computed during the previous iterations.
+     * <p>
+     * As the problem asks for strictly increasing path in a matrix, we get a DAG, but we change the problem statement to
+     * non decreasing path, we can get cycles. That would mean we would have to visit all paths to find the result and it won't be
+     * memoizable
+     * https://leetcode.com/problems/longest-increasing-path-in-a-matrix/discuss/78376/If-we-change-%22increasing%22-to-%22non-decreasing%22...
      */
     int[] x_offset = new int[]{0, 1, 0, -1};
     int[] y_offset = new int[]{1, 0, -1, 0};

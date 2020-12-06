@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrackingTheSafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrackingTheSafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LongestIncreasingPathInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestIncreasingPathInMatrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00533" summary="Add more problems related to sliding window">
-      <created>1605792129708</created>
-      <option name="number" value="00533" />
-      <option name="presentableId" value="LOCAL-00533" />
-      <option name="project" value="LOCAL" />
-      <updated>1605792129708</updated>
     </task>
     <task id="LOCAL-00534" summary="Solve medium and tricky find k closest elements by value to a target value in a sorted array using binary search + two pointers&#10;&#10;Learnings -- Erichto's binary search template is awesome. Best investment of my time to watch and understand that video. All binary search questions are now a breeze.&#10;&#10;In my initial solution I misinterpreted the problem and picked the k closest indices but the problem is asking for k closest elements by value, so need to use two pointer technique to pick elements accordingly.">
       <created>1605797457291</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607197150070</updated>
     </task>
-    <option name="localTasksCounter" value="582" />
+    <task id="LOCAL-00582" summary="Fix grammatical mistake">
+      <created>1607270051315</created>
+      <option name="number" value="00582" />
+      <option name="presentableId" value="LOCAL-00582" />
+      <option name="project" value="LOCAL" />
+      <updated>1607270051315</updated>
+    </task>
+    <option name="localTasksCounter" value="583" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium problem whose indirect ask was to find the max distance of each node from the leaf and return it sorted by distance.&#10;&#10;In my initial solution I did a 2 pass code, first pass for finding the height of the tree and second pass to add the node to correct bucket but those can be combined in one pass by comparing the size of the current result and the current bucket" />
     <MESSAGE value="Solve medium and tricky problem, find whether a ball can stop at the target cell, the ball once moved in a certain direction can only change direction if it can't move ahead in the current direction.&#10;&#10;This is a similar problem to RobotRoomCleaner but differs in the part when the ball can change direction. Initially I implemented it all wrong and changed direction at each cell. The simpler thing to do would be to find the last cell in which the ball stops in the current direction and do DFS recursively in the next 4 directions." />
     <MESSAGE value="Solve medium and followup to the previous problem, find the shortest distance between source and target cells, given the ball can change direction only if its stopped.&#10;&#10;Since the task is to find shortest length and the edge weights are variable, need to either use bfs with pruning where we traverse the entire graph or use djikstra that returns the shortest path to reach a given cell." />
     <MESSAGE value="Solve medium find whether two expression trees are equivalent expressions, if they have only + as an operator by verifying whether they contain the same operands or not.&#10;&#10;Feeling frustrated as I went down the wrong path by checking whether the trees are flip equivalent or not" />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve medium find the total no of ways of reaching outside the grid given we can only traverse finite number of steps using DFS + Memoization.&#10;&#10;Leveraged prior learnings of solving problems related to finding total no of ways of doing something by returning 1 only at the end state and keeping track of total no of ways at each step." />
     <MESSAGE value="Add a bit of clarification regarding greedy way of generating euler path over backtracking approach" />
     <MESSAGE value="Solve hard and extremely trick problem, find the shortest string that contains all permutation of n digits of numbers containing k digits by modelling it as a fucking graph and doing backtracking to generate euler path that visits all edges exactly once.&#10;&#10;I could not think of modelling it as a graph during the thought process, I started to solve it using Trie as it involves prefixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely trick problem, find the shortest string that contains all permutation of n digits of numbers containing k digits by modelling it as a fucking graph and doing backtracking to generate euler path that visits all edges exactly once.&#10;&#10;I could not think of modelling it as a graph during the thought process, I started to solve it using Trie as it involves prefixes." />
+    <MESSAGE value="Fix grammatical mistake" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix grammatical mistake" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
