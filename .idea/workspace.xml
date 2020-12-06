@@ -13,7 +13,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CrackingTheSafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrackingTheSafe.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +80,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -170,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00532" summary="Update code in FindAllAnagramInString to match the sliding window template">
-      <created>1605791804391</created>
-      <option name="number" value="00532" />
-      <option name="presentableId" value="LOCAL-00532" />
-      <option name="project" value="LOCAL" />
-      <updated>1605791804392</updated>
     </task>
     <task id="LOCAL-00533" summary="Add more problems related to sliding window">
       <created>1605792129708</created>
@@ -514,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607196989700</updated>
     </task>
-    <option name="localTasksCounter" value="581" />
+    <task id="LOCAL-00581" summary="Solve hard and extremely trick problem, find the shortest string that contains all permutation of n digits of numbers containing k digits by modelling it as a fucking graph and doing backtracking to generate euler path that visits all edges exactly once.&#10;&#10;I could not think of modelling it as a graph during the thought process, I started to solve it using Trie as it involves prefixes.">
+      <created>1607197150070</created>
+      <option name="number" value="00581" />
+      <option name="presentableId" value="LOCAL-00581" />
+      <option name="project" value="LOCAL" />
+      <updated>1607197150070</updated>
+    </task>
+    <option name="localTasksCounter" value="582" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find whether the current set of dislikes relationships are bipartite by trying to assign the opposite color to the neighbour. In my initial implementation I wrote a recursive backtracking code, it was pretty unique TBH :D&#10;&#10;Learnings -- 1. Model the relationship as fucking graph&#10;2. If two nodes can't be &quot;together&quot;, this means they can't be connected. Solve this by trying to assign opposite colors to the neighbour." />
     <MESSAGE value="Solve medium problem whose indirect ask was to find the max distance of each node from the leaf and return it sorted by distance.&#10;&#10;In my initial solution I did a 2 pass code, first pass for finding the height of the tree and second pass to add the node to correct bucket but those can be combined in one pass by comparing the size of the current result and the current bucket" />
     <MESSAGE value="Solve medium and tricky problem, find whether a ball can stop at the target cell, the ball once moved in a certain direction can only change direction if it can't move ahead in the current direction.&#10;&#10;This is a similar problem to RobotRoomCleaner but differs in the part when the ball can change direction. Initially I implemented it all wrong and changed direction at each cell. The simpler thing to do would be to find the last cell in which the ball stops in the current direction and do DFS recursively in the next 4 directions." />
     <MESSAGE value="Solve medium and followup to the previous problem, find the shortest distance between source and target cells, given the ball can change direction only if its stopped.&#10;&#10;Since the task is to find shortest length and the edge weights are variable, need to either use bfs with pruning where we traverse the entire graph or use djikstra that returns the shortest path to reach a given cell." />
@@ -604,7 +606,8 @@
     <MESSAGE value="Add clarification on why visited array isn't required in problems with max steps/length permissible" />
     <MESSAGE value="Solve medium find the total no of ways of reaching outside the grid given we can only traverse finite number of steps using DFS + Memoization.&#10;&#10;Leveraged prior learnings of solving problems related to finding total no of ways of doing something by returning 1 only at the end state and keeping track of total no of ways at each step." />
     <MESSAGE value="Add a bit of clarification regarding greedy way of generating euler path over backtracking approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a bit of clarification regarding greedy way of generating euler path over backtracking approach" />
+    <MESSAGE value="Solve hard and extremely trick problem, find the shortest string that contains all permutation of n digits of numbers containing k digits by modelling it as a fucking graph and doing backtracking to generate euler path that visits all edges exactly once.&#10;&#10;I could not think of modelling it as a graph during the thought process, I started to solve it using Trie as it involves prefixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely trick problem, find the shortest string that contains all permutation of n digits of numbers containing k digits by modelling it as a fucking graph and doing backtracking to generate euler path that visits all edges exactly once.&#10;&#10;I could not think of modelling it as a graph during the thought process, I started to solve it using Trie as it involves prefixes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

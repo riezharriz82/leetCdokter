@@ -30,8 +30,8 @@ public class CrackingTheSafe {
      * Approach: This is a well known mathematical problem known as De Bruijn Sequence. There are multiple ways of doing it by
      * constructing euler path or hamiltonian path
      * <p>
-     * Here I am going to code the euler path. This can be modelled as graph problem, where each two nodes are connected
-     * e.g 0123 -> 1234 ie for the next node in the graph, first k-1 chars is a substring of the last k-1 chars of previous node
+     * Here I am going to code the euler path. This can be modelled as graph problem, where two nodes are connected 0123 -> 1234
+     * if first k-1 chars is a substring of the last k-1 chars of previous node
      * So previous node and current node differs just by two character, one less at the front and one new char at the end
      * So if we start traversing from any node and greedily walk the graph, we can traverse the entire graph
      * <p>
@@ -57,7 +57,7 @@ public class CrackingTheSafe {
             String candidate = current + i;
             if (!visited.contains(candidate)) {
                 visited.add(candidate);
-                DFS(candidate.substring(1), k, visited, sb); //pass after removing the first char, so that the string length always remains n-1
+                DFS(candidate.substring(1), k, visited, sb); //pass a new string after removing the first char, so that the string length always remains n-1
                 sb.append(i); //append after all the children are visited (postorder traversal)
             }
         }
