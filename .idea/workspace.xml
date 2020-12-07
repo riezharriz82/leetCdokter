@@ -173,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00537" summary="Simplify code in find minimum in rotated and sorted array when duplicates present. &#10;&#10;Trick is to make sure the second half is smaller than first half ie. remove the elements in second half that overlaps with first half&#10;e.g. [3,3,1,3] =&gt; [3,3,1]&#10;&#10;Once done reduce the problem to solving it without duplicates and compare mid with the new last_idx">
-      <created>1605886003103</created>
-      <option name="number" value="00537" />
-      <option name="presentableId" value="LOCAL-00537" />
-      <option name="project" value="LOCAL" />
-      <updated>1605886003103</updated>
-    </task>
     <task id="LOCAL-00538" summary="Solve medium and tricky problem search in rotated sorted array when duplicates are present by removing the overlapping elements in second half &#10;&#10;[1,1,3,1] =&gt; [1,1,3] &#10;&#10;Perform binary search accordingly in first half or second half depending upon which partition the target element lies in">
       <created>1605886387152</created>
       <option name="number" value="00538" />
@@ -516,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607360079377</updated>
     </task>
-    <option name="localTasksCounter" value="586" />
+    <task id="LOCAL-00586" summary="Solve medium and extremely tricky problem, find the lexicographically smallest string that is possible by swapping pairs of provided indices any number of times by reducing the problem to connected components. Characters in every component can be sorted individually to get the result.&#10;&#10;I tried solving using greedy but couldn't make it work.">
+      <created>1607365896921</created>
+      <option name="number" value="00586" />
+      <option name="presentableId" value="LOCAL-00586" />
+      <option name="project" value="LOCAL" />
+      <updated>1607365896921</updated>
+    </task>
+    <option name="localTasksCounter" value="587" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky problem find whether an array can be split into subsequences containing consecutive numbers by greedy algo&#10;&#10;Learnings -- Greedy algos show no pattern man ! Damn ! Each greedy algo is kinda unique ! Here the trick is to check whether the current no can be used to extend some existing subsequence or it should start its own subsequence." />
     <MESSAGE value="Solve medium and tricky problem, find the kth missing element in sorted array using binary search and linear search by finding count of elements missing till a specific index.&#10;&#10;I should have at least solved the problem using linear search, feeling a bit disappointed." />
     <MESSAGE value="Solve medium and tricky problem, find the maximum of minimum distance between two balls given that we have to place m balls using binary search.&#10;&#10;Leveraged prior learnings of solving DivideChocolates to code up the binary search solution. Possible pattern is to use binary search when the output can be 1,2,3.... n and verifying whether a certain value satisfy the constraint takes linear or constant time, we can use binary search" />
     <MESSAGE value="Solve medium and tricky problem, find the minimum speed to eat all the bananas in &lt;= h hours using binary search&#10;&#10;Learnings -- If the output can be either 1,2,3...n and verifying whether the target satisfies the input constraint takes linear time, we can apply binary search." />
@@ -606,7 +605,8 @@
     <MESSAGE value="Add clarification around why changing the problem statement to &quot;non-decreasing&quot; can introduce cycles in the graph, possibly increasing the time complexity" />
     <MESSAGE value="Solve medium and extremely tricky problem, find the path with maximum minimum value possible from source to target in a grid using &#10; 3 approaches: binary search or priority queue or union find&#10; &#10;Learnings -- In case of grid problems where traversal in 4 direction is permissible make sure to handle cycles. If you are memoizing the solution, make sure the memoized value does not depend upon the initial path that was taken to visit that cell. &#10;&#10;Binary search is to go to approach for dealing with maximum minimum problems" />
     <MESSAGE value="Solve medium and extremely tricky problem, find the path with minimum effort. Effort here is the max diff between two adjacent elements. Multiple ways of solving this problem, Djikstra, Binary Search or Union Find." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky problem, find the path with minimum effort. Effort here is the max diff between two adjacent elements. Multiple ways of solving this problem, Djikstra, Binary Search or Union Find." />
+    <MESSAGE value="Solve medium and extremely tricky problem, find the lexicographically smallest string that is possible by swapping pairs of provided indices any number of times by reducing the problem to connected components. Characters in every component can be sorted individually to get the result.&#10;&#10;I tried solving using greedy but couldn't make it work." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky problem, find the lexicographically smallest string that is possible by swapping pairs of provided indices any number of times by reducing the problem to connected components. Characters in every component can be sorted individually to get the result.&#10;&#10;I tried solving using greedy but couldn't make it work." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
