@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LongestRepeatingCharacterReplacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestRepeatingCharacterReplacement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PossibleBipartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PossibleBipartition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00541" summary="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string.">
-      <created>1605906741331</created>
-      <option name="number" value="00541" />
-      <option name="presentableId" value="LOCAL-00541" />
-      <option name="project" value="LOCAL" />
-      <updated>1605906741331</updated>
     </task>
     <task id="LOCAL-00542" summary="Solve medium and extremely tricky to deduce the crux of the problem -- find the min stone possible after smashing all the stones&#10;&#10;Learnings -- Initially I went with greedy which was against all judgement because the max input range was [1,30] hinting at exponential complexity based solution but my greedy was nlogn&#10;&#10;Problem reduces to finding the min diff between two subsets in an array">
       <created>1605987631521</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607434806472</updated>
     </task>
-    <option name="localTasksCounter" value="590" />
+    <task id="LOCAL-00590" summary="Add hint of using binary search as an alternate way of solving this problem">
+      <created>1607437187778</created>
+      <option name="number" value="00590" />
+      <option name="presentableId" value="LOCAL-00590" />
+      <option name="project" value="LOCAL" />
+      <updated>1607437187779</updated>
+    </task>
+    <option name="localTasksCounter" value="591" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +573,19 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="minimax" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -582,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha in finding the min subarray that needs to be removed to make the remaining subarray sum divisible by p" />
     <MESSAGE value="Solve hard and tricky find the longest repeated substring in string using binary search + rolling hash&#10;&#10;Binary search was not that difficult to identify but rolling hash took a lot of time due to modulo arithmetic in handling negative hashes. Also care must be taken to properly calculate new hash. Take care of indices and the multiplication factor.&#10;&#10;LCS can also be used to find the answer but it would have been n^2 and would have timed out due to higher input bound" />
     <MESSAGE value="Solve medium find longest subarray that sums to a target value using prefix sum + hashmap&#10;&#10;Leveraged prior learnings of using prefix sum to deal with subarray sum problems. Only trick here was not updating the prefixsum in case an index with same prefix sum already exists -- this will help in finding the longest subarray" />
     <MESSAGE value="Solve medium pick a random node from an infinitely long list using reservoir sampling. Fix the first kth element in the reservoir, then for the next element, put it in the reservoir only if the randomIndex is &lt; k. RandomIndex is [0, currentIndex)" />
@@ -607,7 +618,8 @@
     <MESSAGE value="Solve medium find the number of 1s that does not have 1 in the same row and same column by keeping track of 1's encountered in each row and each column" />
     <MESSAGE value="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm" />
     <MESSAGE value="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm" />
+    <MESSAGE value="Add hint of using binary search as an alternate way of solving this problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add hint of using binary search as an alternate way of solving this problem" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
