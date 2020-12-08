@@ -13,9 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,13 +170,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00539" summary="Solve medium find a peak element in 1D array using errichto's binary search template.&#10;&#10;&#10;Finding a peak element in 2D array is trickier and uses divide and conquer algorithm">
-      <created>1605894946875</created>
-      <option name="number" value="00539" />
-      <option name="presentableId" value="LOCAL-00539" />
-      <option name="project" value="LOCAL" />
-      <updated>1605894946875</updated>
     </task>
     <task id="LOCAL-00540" summary="Rewrite the code by considering each element's choice; either be added to the current set or be skipped. &#10;&#10;Instead of trying all elements in a loop. I feel this is logically more clear to visualize rather than the loop solution.">
       <created>1605896722766</created>
@@ -516,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607366692107</updated>
     </task>
-    <option name="localTasksCounter" value="588" />
+    <task id="LOCAL-00588" summary="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm">
+      <created>1607434287449</created>
+      <option name="number" value="00588" />
+      <option name="presentableId" value="LOCAL-00588" />
+      <option name="project" value="LOCAL" />
+      <updated>1607434287449</updated>
+    </task>
+    <option name="localTasksCounter" value="589" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky problem, find the maximum of minimum distance between two balls given that we have to place m balls using binary search.&#10;&#10;Leveraged prior learnings of solving DivideChocolates to code up the binary search solution. Possible pattern is to use binary search when the output can be 1,2,3.... n and verifying whether a certain value satisfy the constraint takes linear or constant time, we can use binary search" />
     <MESSAGE value="Solve medium and tricky problem, find the minimum speed to eat all the bananas in &lt;= h hours using binary search&#10;&#10;Learnings -- If the output can be either 1,2,3...n and verifying whether the target satisfies the input constraint takes linear time, we can apply binary search." />
     <MESSAGE value="Add gotcha in finding the min subarray that needs to be removed to make the remaining subarray sum divisible by p" />
     <MESSAGE value="Solve hard and tricky find the longest repeated substring in string using binary search + rolling hash&#10;&#10;Binary search was not that difficult to identify but rolling hash took a lot of time due to modulo arithmetic in handling negative hashes. Also care must be taken to properly calculate new hash. Take care of indices and the multiplication factor.&#10;&#10;LCS can also be used to find the answer but it would have been n^2 and would have timed out due to higher input bound" />
@@ -606,7 +603,8 @@
     <MESSAGE value="Solve medium and extremely tricky problem, find the path with minimum effort. Effort here is the max diff between two adjacent elements. Multiple ways of solving this problem, Djikstra, Binary Search or Union Find." />
     <MESSAGE value="Solve medium and extremely tricky problem, find the lexicographically smallest string that is possible by swapping pairs of provided indices any number of times by reducing the problem to connected components. Characters in every component can be sorted individually to get the result.&#10;&#10;I tried solving using greedy but couldn't make it work." />
     <MESSAGE value="Solve medium find the number of 1s that does not have 1 in the same row and same column by keeping track of 1's encountered in each row and each column" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the number of 1s that does not have 1 in the same row and same column by keeping track of 1's encountered in each row and each column" />
+    <MESSAGE value="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
