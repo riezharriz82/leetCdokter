@@ -96,7 +96,10 @@ public class PredictTheWinner {
             } else {
                 return 0;
             }
-        } else if (memoized[left][right] != -1) {
+        } else if (memoized[left][right] != -1) { //IMPORTANT TO NOTE HERE THAT WE ARE NOT MEMOIZING THE findMax because
+            //a combination of (left, right) is unique to each player and it can't happen that two players have the same state
+            //In StoneGame2 we have to memoize the boolean flag as well, because two players can share the same state, hence flag was
+            //necessary to disambiguate
             return memoized[left][right];
         } else {
             if (findMax) {
