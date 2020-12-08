@@ -13,7 +13,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LongestRepeatingCharacterReplacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestRepeatingCharacterReplacement.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00540" summary="Rewrite the code by considering each element's choice; either be added to the current set or be skipped. &#10;&#10;Instead of trying all elements in a loop. I feel this is logically more clear to visualize rather than the loop solution.">
-      <created>1605896722766</created>
-      <option name="number" value="00540" />
-      <option name="presentableId" value="LOCAL-00540" />
-      <option name="project" value="LOCAL" />
-      <updated>1605896722766</updated>
     </task>
     <task id="LOCAL-00541" summary="Solve hard and tricky count unique characters of all substrings possible of a given string in first attempt !&#10;&#10;Leveraged prior learnings of identifying the contribution of each character and then repeating the process for all characters to get the final result. Trick is to understand that each character is bounded by it's previous and next occurrence in the string.">
       <created>1605906741331</created>
@@ -514,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607434287449</updated>
     </task>
-    <option name="localTasksCounter" value="589" />
+    <task id="LOCAL-00589" summary="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm">
+      <created>1607434806472</created>
+      <option name="number" value="00589" />
+      <option name="presentableId" value="LOCAL-00589" />
+      <option name="project" value="LOCAL" />
+      <updated>1607434806472</updated>
+    </task>
+    <option name="localTasksCounter" value="590" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky problem, find the minimum speed to eat all the bananas in &lt;= h hours using binary search&#10;&#10;Learnings -- If the output can be either 1,2,3...n and verifying whether the target satisfies the input constraint takes linear time, we can apply binary search." />
     <MESSAGE value="Add gotcha in finding the min subarray that needs to be removed to make the remaining subarray sum divisible by p" />
     <MESSAGE value="Solve hard and tricky find the longest repeated substring in string using binary search + rolling hash&#10;&#10;Binary search was not that difficult to identify but rolling hash took a lot of time due to modulo arithmetic in handling negative hashes. Also care must be taken to properly calculate new hash. Take care of indices and the multiplication factor.&#10;&#10;LCS can also be used to find the answer but it would have been n^2 and would have timed out due to higher input bound" />
     <MESSAGE value="Solve medium find longest subarray that sums to a target value using prefix sum + hashmap&#10;&#10;Leveraged prior learnings of using prefix sum to deal with subarray sum problems. Only trick here was not updating the prefixsum in case an index with same prefix sum already exists -- this will help in finding the longest subarray" />
@@ -604,7 +606,8 @@
     <MESSAGE value="Solve medium and extremely tricky problem, find the lexicographically smallest string that is possible by swapping pairs of provided indices any number of times by reducing the problem to connected components. Characters in every component can be sorted individually to get the result.&#10;&#10;I tried solving using greedy but couldn't make it work." />
     <MESSAGE value="Solve medium find the number of 1s that does not have 1 in the same row and same column by keeping track of 1's encountered in each row and each column" />
     <MESSAGE value="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm" />
+    <MESSAGE value="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

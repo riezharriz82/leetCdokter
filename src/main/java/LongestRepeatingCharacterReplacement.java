@@ -41,6 +41,9 @@ public class LongestRepeatingCharacterReplacement {
      * Now if required operations <= k, then window is valid otherwise its invalid and we need to shrink window until it becomes valid again
      * <p>
      * I was able to solve this question on my own but got confused a bit during implementation of sliding window
+     *
+     * Another way of solving this problem would be to leverage binary search to find the answer between 1 and length of string
+     * but that would be quasilinear solution. Binary search can be used to solve optimization problems, if you can't think of linear solution
      */
     public int characterReplacement(String s, int k) {
         int begin = 0, end = 0;
