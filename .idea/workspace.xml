@@ -16,6 +16,7 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MountainArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MountainArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00544" summary="Solve medium count submatrices with all ones using 2D &quot;compression&quot; technique. Reduce the 2D problem to 1D. If there are n consecutive non zero element, no of subarrays would be n*(n+1)/2.&#10;&#10;Can be optimized to n^2 using monotonic stack but I don't fully understand this solution at the moment.">
-      <created>1606055259100</created>
-      <option name="number" value="00544" />
-      <option name="presentableId" value="LOCAL-00544" />
-      <option name="project" value="LOCAL" />
-      <updated>1606055259100</updated>
     </task>
     <task id="LOCAL-00545" summary="Solve easy find the total weight of nested list by performing DFS and keeping track of current depth.">
       <created>1606059156121</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607452230099</updated>
     </task>
-    <option name="localTasksCounter" value="593" />
+    <task id="LOCAL-00593" summary="Solve medium swap nodes in linked list in pair, a bit tricky as it needed multiple pointers to keep track of first and second node of current block and start of next block.&#10;&#10;As usual keep a dummy pointer to make your life easier while manipulating linked list">
+      <created>1607612473932</created>
+      <option name="number" value="00593" />
+      <option name="presentableId" value="LOCAL-00593" />
+      <option name="project" value="LOCAL" />
+      <updated>1607612473932</updated>
+    </task>
+    <option name="localTasksCounter" value="594" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium pick a random node from an infinitely long list using reservoir sampling. Fix the first kth element in the reservoir, then for the next element, put it in the reservoir only if the randomIndex is &lt; k. RandomIndex is [0, currentIndex)" />
     <MESSAGE value="Solve medium design search suggestion system where given a search word, list all the products that start with each prefix of the search word using trie&#10;&#10;Leveraged prior learnings of storing useful information directly in trie node to avoid DFS" />
     <MESSAGE value="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster" />
     <MESSAGE value="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down." />
@@ -607,7 +607,8 @@
     <MESSAGE value="Add hint of using binary search as an alternate way of solving this problem" />
     <MESSAGE value="Add missing sample input to the problem statement" />
     <MESSAGE value="Add clarification around why boolean flag was not memoized, because two players can't have the same state ever." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add clarification around why boolean flag was not memoized, because two players can't have the same state ever." />
+    <MESSAGE value="Solve medium swap nodes in linked list in pair, a bit tricky as it needed multiple pointers to keep track of first and second node of current block and start of next block.&#10;&#10;As usual keep a dummy pointer to make your life easier while manipulating linked list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium swap nodes in linked list in pair, a bit tricky as it needed multiple pointers to keep track of first and second node of current block and start of next block.&#10;&#10;As usual keep a dummy pointer to make your life easier while manipulating linked list" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
