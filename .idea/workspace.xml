@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PredictTheWinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PredictTheWinner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.SegmentTree">
+  <component name="RunManager" selected="Application.DivideChocolates">
+    <configuration name="DivideChocolates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DivideChocolates" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LastStoneWeight2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LastStoneWeight2" />
       <module name="leetcode-practice" />
@@ -133,13 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SegmentTree" type="Java Scratch" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SegmentTree" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
@@ -150,18 +150,18 @@
     <list>
       <item itemvalue="Application.LastStoneWeight2" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="Java Scratch.SegmentTree" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="Application.DivideChocolates" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DivideChocolates" />
         <item itemvalue="Java Scratch.SegmentTree" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.LastStoneWeight2" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00543" summary="Solve medium print a linkedlist in reverse using sqrt(n) extra space by working on blocks of size sqrt. Create blocks containing sqrt(num) elements and reverse each block at a time.&#10;&#10;Learnings -- Introduction to sqrt decomposition in the most trivial question. Life works in mysterious ways.">
-      <created>1606037667509</created>
-      <option name="number" value="00543" />
-      <option name="presentableId" value="LOCAL-00543" />
-      <option name="project" value="LOCAL" />
-      <updated>1606037667509</updated>
     </task>
     <task id="LOCAL-00544" summary="Solve medium count submatrices with all ones using 2D &quot;compression&quot; technique. Reduce the 2D problem to 1D. If there are n consecutive non zero element, no of subarrays would be n*(n+1)/2.&#10;&#10;Can be optimized to n^2 using monotonic stack but I don't fully understand this solution at the moment.">
       <created>1606055259100</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607441323391</updated>
     </task>
-    <option name="localTasksCounter" value="592" />
+    <task id="LOCAL-00592" summary="Add clarification around why boolean flag was not memoized, because two players can't have the same state ever.">
+      <created>1607452230099</created>
+      <option name="number" value="00592" />
+      <option name="presentableId" value="LOCAL-00592" />
+      <option name="project" value="LOCAL" />
+      <updated>1607452230099</updated>
+    </task>
+    <option name="localTasksCounter" value="593" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find longest subarray that sums to a target value using prefix sum + hashmap&#10;&#10;Leveraged prior learnings of using prefix sum to deal with subarray sum problems. Only trick here was not updating the prefixsum in case an index with same prefix sum already exists -- this will help in finding the longest subarray" />
     <MESSAGE value="Solve medium pick a random node from an infinitely long list using reservoir sampling. Fix the first kth element in the reservoir, then for the next element, put it in the reservoir only if the randomIndex is &lt; k. RandomIndex is [0, currentIndex)" />
     <MESSAGE value="Solve medium design search suggestion system where given a search word, list all the products that start with each prefix of the search word using trie&#10;&#10;Leveraged prior learnings of storing useful information directly in trie node to avoid DFS" />
     <MESSAGE value="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster" />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm" />
     <MESSAGE value="Add hint of using binary search as an alternate way of solving this problem" />
     <MESSAGE value="Add missing sample input to the problem statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add missing sample input to the problem statement" />
+    <MESSAGE value="Add clarification around why boolean flag was not memoized, because two players can't have the same state ever." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add clarification around why boolean flag was not memoized, because two players can't have the same state ever." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
