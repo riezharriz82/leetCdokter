@@ -174,13 +174,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00546" summary="Solve hard find the new max size of island after converting a 0 to 1 by using union find&#10;&#10;Learnings -- Was able to write union find code on my own by leveraging previous learnings. Thanks to the wonderful intro to Union Find in GraphValidTree">
-      <created>1606063863171</created>
-      <option name="number" value="00546" />
-      <option name="presentableId" value="LOCAL-00546" />
-      <option name="project" value="LOCAL" />
-      <updated>1606063863171</updated>
-    </task>
     <task id="LOCAL-00547" summary="Solve medium and tricky find the min distance between two sets of islands using multi source bfs&#10;&#10;Learnings -- I could not initially think about the multi source bfs, &#10;&#10;Initially, I went ahead with normal bfs + keeping track of min distance. Then I got WA when a cell is reachable from multiple cells of first island. Then I thought instead of visited cell, I would need BFS with pruning i.e proceed ahead if I can reach a cell with min distance. Which got me AC at ~22ms&#10;&#10;Then I thought of multi source bfs by checking the implementation of RottingOranges, and it got me AC at ~9 ms&#10;&#10;Bidirectional BFS can reduce the runtime even lower">
       <created>1606133931408</created>
       <option name="number" value="00547" />
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607613521190</updated>
     </task>
-    <option name="localTasksCounter" value="595" />
+    <task id="LOCAL-00595" summary="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal.">
+      <created>1607614940109</created>
+      <option name="number" value="00595" />
+      <option name="presentableId" value="LOCAL-00595" />
+      <option name="project" value="LOCAL" />
+      <updated>1607614940109</updated>
+    </task>
+    <option name="localTasksCounter" value="596" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster" />
     <MESSAGE value="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down." />
     <MESSAGE value="Solve medium and math related divisibility problem, find count of pairs of numbers that are divisible by 60 by finding pairs of numbers whose mod sum = 60, This is similar to 2Sum Problem where we have to find two numbers such that a + b = k&#10;&#10;Take care of duplicates. Either use binary search or hashmap to count pairs." />
     <MESSAGE value="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo." />
@@ -607,7 +606,8 @@
     <MESSAGE value="Add clarification around why boolean flag was not memoized, because two players can't have the same state ever." />
     <MESSAGE value="Solve medium swap nodes in linked list in pair, a bit tricky as it needed multiple pointers to keep track of first and second node of current block and start of next block.&#10;&#10;As usual keep a dummy pointer to make your life easier while manipulating linked list" />
     <MESSAGE value="Simplify finding whether an array is a mountain array or not by reducing the problem to finding length of longest increasing subarray from left and right" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify finding whether an array is a mountain array or not by reducing the problem to finding length of longest increasing subarray from left and right" />
+    <MESSAGE value="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
