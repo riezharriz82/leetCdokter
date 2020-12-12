@@ -174,13 +174,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00547" summary="Solve medium and tricky find the min distance between two sets of islands using multi source bfs&#10;&#10;Learnings -- I could not initially think about the multi source bfs, &#10;&#10;Initially, I went ahead with normal bfs + keeping track of min distance. Then I got WA when a cell is reachable from multiple cells of first island. Then I thought instead of visited cell, I would need BFS with pruning i.e proceed ahead if I can reach a cell with min distance. Which got me AC at ~22ms&#10;&#10;Then I thought of multi source bfs by checking the implementation of RottingOranges, and it got me AC at ~9 ms&#10;&#10;Bidirectional BFS can reduce the runtime even lower">
-      <created>1606133931408</created>
-      <option name="number" value="00547" />
-      <option name="presentableId" value="LOCAL-00547" />
-      <option name="project" value="LOCAL" />
-      <updated>1606133931408</updated>
-    </task>
     <task id="LOCAL-00548" summary="Solve hard find a number in mountain array using 3 binary searches, first find the peak element and then apply binary search in either of the partitions.&#10;&#10;Learnings -- For finding a number in modified sorted array always find the pivot element first. Then apply binary search in the partitions to find the target number.">
       <created>1606142593079</created>
       <option name="number" value="00548" />
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607614940109</updated>
     </task>
-    <option name="localTasksCounter" value="596" />
+    <task id="LOCAL-00596" summary="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end.">
+      <created>1607717198153</created>
+      <option name="number" value="00596" />
+      <option name="presentableId" value="LOCAL-00596" />
+      <option name="project" value="LOCAL" />
+      <updated>1607717198153</updated>
+    </task>
+    <option name="localTasksCounter" value="597" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find the shortest path of moving from one letter to another provided a string and a board of letters.&#10;&#10;Initially I thought of using BFS from prev letter to current letter, but then thought that comparing previous location with current location would suffice. Only thing that caused trouble was Z as from Z we have to move up first, then right.&#10;If we have to reach Z, we have to move left first, then down." />
     <MESSAGE value="Solve medium and math related divisibility problem, find count of pairs of numbers that are divisible by 60 by finding pairs of numbers whose mod sum = 60, This is similar to 2Sum Problem where we have to find two numbers such that a + b = k&#10;&#10;Take care of duplicates. Either use binary search or hashmap to count pairs." />
     <MESSAGE value="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo." />
     <MESSAGE value="Solve medium and tricky graph theory problem, find a way to visit each edge exactly once such the path is lexicographically smallest by greedy backtracking and using hierholzer algorithm to find the eulerian path of the graph&#10;&#10;Learnings -- Visiting each edge exactly once is well known graph theory problem known as eulerian path/cycle. It can be found by doing a postorder traversal of the graph, similar to the way we perform topological sorting using stack.&#10;&#10;Make sure to account for parallel edges/duplicate edges in graph problems unless specified. If there is duplicate edges, solve them by creating a key for each edge (src-&gt;target) and tracking their count. Decrement the count, when we visit a edge." />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve medium swap nodes in linked list in pair, a bit tricky as it needed multiple pointers to keep track of first and second node of current block and start of next block.&#10;&#10;As usual keep a dummy pointer to make your life easier while manipulating linked list" />
     <MESSAGE value="Simplify finding whether an array is a mountain array or not by reducing the problem to finding length of longest increasing subarray from left and right" />
     <MESSAGE value="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal." />
+    <MESSAGE value="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
