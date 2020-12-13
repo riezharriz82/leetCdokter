@@ -14,6 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and tricky find the sum of absolute differences">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00554" summary="Solve hard find running median from data stream using 2 Priority queues&#10;&#10;Leveraged prior learnings of solving SlidingWindowMedian">
-      <created>1606332513861</created>
-      <option name="number" value="00554" />
-      <option name="presentableId" value="LOCAL-00554" />
-      <option name="project" value="LOCAL" />
-      <updated>1606332513861</updated>
     </task>
     <task id="LOCAL-00555" summary="Solve medium and a bit tricky find all duplicate subtrees in a tree by creating hashes of subtrees as we iterate the tree using preorder traversal.&#10;&#10;Took me some time but was able to write it on my own. Leveraged prior learnings of Serialize&amp;DeserializeBinaryTree by representing the tree using preorder traversal.">
       <created>1606583352615</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607876545023</updated>
     </task>
-    <option name="localTasksCounter" value="603" />
+    <task id="LOCAL-00603" summary="Solve easy find the node with the value that is closest to the target in BST by recursion and keeping track of the minDiff found so far">
+      <created>1607876836364</created>
+      <option name="number" value="00603" />
+      <option name="presentableId" value="LOCAL-00603" />
+      <option name="project" value="LOCAL" />
+      <updated>1607876836364</updated>
+    </task>
+    <option name="localTasksCounter" value="604" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add clarification on why visited array isn't required in problems with max steps/length permissible" />
     <MESSAGE value="Solve medium find the total no of ways of reaching outside the grid given we can only traverse finite number of steps using DFS + Memoization.&#10;&#10;Leveraged prior learnings of solving problems related to finding total no of ways of doing something by returning 1 only at the end state and keeping track of total no of ways at each step." />
     <MESSAGE value="Add a bit of clarification regarding greedy way of generating euler path over backtracking approach" />
     <MESSAGE value="Solve hard and extremely trick problem, find the shortest string that contains all permutation of n digits of numbers containing k digits by modelling it as a fucking graph and doing backtracking to generate euler path that visits all edges exactly once.&#10;&#10;I could not think of modelling it as a graph during the thought process, I started to solve it using Trie as it involves prefixes." />
@@ -606,7 +606,8 @@
     <MESSAGE value="Solve medium and tricky find the path with the largest total cost. In my initial implementation, I used Djikstra where I greedily pick the largest node but realized that it gave WA for some test cases. &#10;&#10;Learnings -- Use greedy as an optimization for backtracking w/o pruning only if the input constraints are high. In this case, there are only 25 cells with gold, so backtracking was an hint. &#10;Also Djikstra can't be used to find path with the largest total distance." />
     <MESSAGE value="Solve medium and tricky find the sum of absolute differences of an index with all other indexes in an array by considering the contribution of each index separately. Find the contribution by summing up contribution of left and right subarray." />
     <MESSAGE value="Solve hard and extremely trick problem find the smallest no of squares to completely fill a rectangle by backtracking with pruning.&#10;&#10;Learnings -- 1. Backtracking solution was a bit difficult to visualize initially.&#10;2. During pruning, it's efficient to take the possible biggest steps first to prune a lot of branches faster." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely trick problem find the smallest no of squares to completely fill a rectangle by backtracking with pruning.&#10;&#10;Learnings -- 1. Backtracking solution was a bit difficult to visualize initially.&#10;2. During pruning, it's efficient to take the possible biggest steps first to prune a lot of branches faster." />
+    <MESSAGE value="Solve easy find the node with the value that is closest to the target in BST by recursion and keeping track of the minDiff found so far" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the node with the value that is closest to the target in BST by recursion and keeping track of the minDiff found so far" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
