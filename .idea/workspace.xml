@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DifferentWaysToAddParanthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DifferentWaysToAddParanthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00548" summary="Solve hard find a number in mountain array using 3 binary searches, first find the peak element and then apply binary search in either of the partitions.&#10;&#10;Learnings -- For finding a number in modified sorted array always find the pivot element first. Then apply binary search in the partitions to find the target number.">
-      <created>1606142593079</created>
-      <option name="number" value="00548" />
-      <option name="presentableId" value="LOCAL-00548" />
-      <option name="project" value="LOCAL" />
-      <updated>1606142593079</updated>
     </task>
     <task id="LOCAL-00549" summary="Solve hard and tricky find the median of a sliding window using two treeMap's &#10;&#10;Learnings -- 1. TreeMap can be used in place of priority queue in situations where removal is required as treeMap supports logn for removal&#10;2. firstKey() returns the first key of map, so in case of normal treeMap it returns the smallest key else in case of descending treeMap, it returns the largest key&#10;3. Take care while counting the elements in treeMap when used as priority queue because a no can occur more than 1.">
       <created>1606159637274</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607717198153</updated>
     </task>
-    <option name="localTasksCounter" value="597" />
+    <task id="LOCAL-00597" summary="Solve medium and tricky tree problem, find the lca of all nodes present at the last level using 2 pass approach. &#10;1st pass to find the max depth. 2nd pass to find whether the left/right subtree of current node are at the max depth, if yes, current node is a candidate lca.">
+      <created>1607771807171</created>
+      <option name="number" value="00597" />
+      <option name="presentableId" value="LOCAL-00597" />
+      <option name="project" value="LOCAL" />
+      <updated>1607771807171</updated>
+    </task>
+    <option name="localTasksCounter" value="598" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and math related divisibility problem, find count of pairs of numbers that are divisible by 60 by finding pairs of numbers whose mod sum = 60, This is similar to 2Sum Problem where we have to find two numbers such that a + b = k&#10;&#10;Take care of duplicates. Either use binary search or hashmap to count pairs." />
     <MESSAGE value="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo." />
     <MESSAGE value="Solve medium and tricky graph theory problem, find a way to visit each edge exactly once such the path is lexicographically smallest by greedy backtracking and using hierholzer algorithm to find the eulerian path of the graph&#10;&#10;Learnings -- Visiting each edge exactly once is well known graph theory problem known as eulerian path/cycle. It can be found by doing a postorder traversal of the graph, similar to the way we perform topological sorting using stack.&#10;&#10;Make sure to account for parallel edges/duplicate edges in graph problems unless specified. If there is duplicate edges, solve them by creating a key for each edge (src-&gt;target) and tracking their count. Decrement the count, when we visit a edge." />
     <MESSAGE value="Solve hard and extremely tricky divide and conquer problem, find the max profit after bursting balloons. Was asked this question in Zeta onsite back in 2019. &#10;&#10;Atleast this time I was able to solve using backtracking :P&#10;&#10;Learnings -- Divide and conquer and greedy are tough sons of bitches." />
@@ -607,7 +607,8 @@
     <MESSAGE value="Simplify finding whether an array is a mountain array or not by reducing the problem to finding length of longest increasing subarray from left and right" />
     <MESSAGE value="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal." />
     <MESSAGE value="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end." />
+    <MESSAGE value="Solve medium and tricky tree problem, find the lca of all nodes present at the last level using 2 pass approach. &#10;1st pass to find the max depth. 2nd pass to find whether the left/right subtree of current node are at the max depth, if yes, current node is a candidate lca." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky tree problem, find the lca of all nodes present at the last level using 2 pass approach. &#10;1st pass to find the max depth. 2nd pass to find whether the left/right subtree of current node are at the max depth, if yes, current node is a candidate lca." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

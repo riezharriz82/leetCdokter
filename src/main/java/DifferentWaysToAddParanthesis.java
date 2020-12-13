@@ -28,6 +28,22 @@ public class DifferentWaysToAddParanthesis {
      * 3. Consider left as a*b*c and right as d
      * <p>
      * Base condition is when there is no operator present in the string.
+     * <p>
+     * Another related question in discuss is minimum operations to flip an expression.
+     * https://leetcode.com/discuss/interview-question/965025/google-on-site-find-minimum-operations-to-flip-an-expression/784941
+     * <p>
+     * Given a string expression, which only contains the following characters: '1', '0', '&', '|', '(', ')'.
+     * For example, "1&(0|1)", the value of this expression is 1.
+     * you can change '1 to '0'，0 -> 1, & -> |， | -> &.
+     * find the minimum operations to flip the value of the expression.
+     * For example, "1&(0|1)", you can change the first '1' to '0', then the expression becomes "0&(0|1)" and the value of this expression is 0.
+     * <p>
+     * It can be solved in linear time using divide and conquer
+     * Solve each expression individually, and for each expression store what is required to convert it to 0 or 1 and the value of current expression
+     * <p>
+     * So there can be 8 possibilities 2 (0/1) * 2 operators (| &) * 2 operators (0/1)
+     * Consider 0 & 0, if you have to flip it, either you can flip to 1 & 1 or (0 | 1) or (1 | 0)
+     * You already have answer required to flip an expression to either 0 or 1 stored. Use it to recursively compute the min flips required
      */
     public List<Integer> diffWaysToCompute(String input) {
         List<Integer> operatorIndices = new ArrayList<>(); //store the indices of the operator, can solve the question without it too
