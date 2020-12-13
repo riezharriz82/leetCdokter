@@ -40,13 +40,15 @@ public class InsertDeleteRandomConstantTime {
         } else {
             int index = valueToIndexMapping.get(val);
             valueToIndexMapping.remove(val);
-
+            //please note that deletion of any index other than last index in an arraylist takes linear time, hence we swap the
+            //non-last index with the last index and always delete only the last index
+            //this ensures o(1) time deletion
             if (index != values.size() - 1) { //if it's not the last element to be deleted
                 //swap the last value and update its index in the mapping
                 values.set(index, values.get(values.size() - 1));
                 valueToIndexMapping.put(values.get(values.size() - 1), index);
             }
-            values.remove(values.size() - 1); //remove the last value as it has already been swapped
+            values.remove(values.size() - 1); //remove the last value as it has already been swapped, allows o(1) time deletion
             return true;
         }
     }
