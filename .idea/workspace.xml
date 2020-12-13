@@ -13,7 +13,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and tricky find the path with">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00551" summary="Solve medium and tricky math problem find length of smallest integer with repeated 1's i.e 1, 11, 111, 1111, 11111, 111111.. that divides k&#10;&#10;We are required to return only the length as the actual no can be very huge. Since we can't store the number itself, we have to rely on current remainder to generate the remainder of the next no in series. That was a pretty cool math trick.&#10;&#10;Another trick is to realize that we can have only a finite set of remainders so sometimes remainders can repeat. When they do, we got ourselves an infinite loop. We have to use a set to keep track of seen remainders.">
-      <created>1606312065267</created>
-      <option name="number" value="00551" />
-      <option name="presentableId" value="LOCAL-00551" />
-      <option name="project" value="LOCAL" />
-      <updated>1606312065267</updated>
     </task>
     <task id="LOCAL-00552" summary="Solve hard and tricky nested string problem -- evaluate nested expression containing + and - i.e. 2-(3+5) using stack of stack&#10;&#10;Leveraged prior learnings of solving nested questions like NumberOfAtoms, DecodeString. First identify what is required to solve a single expression, then try to create stack of whatever was required. &#10;&#10;Gotchas: Take care of prefix/suffix of nested expression. Don't forget to freaking reset the variables upon start/end of expression.">
       <created>1606324615049</created>
@@ -516,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607861774774</updated>
     </task>
-    <option name="localTasksCounter" value="600" />
+    <task id="LOCAL-00600" summary="Solve medium and tricky find the path with the largest total cost. In my initial implementation, I used Djikstra where I greedily pick the largest node but realized that it gave WA for some test cases. &#10;&#10;Learnings -- Use greedy as an optimization for backtracking w/o pruning only if the input constraints are high. In this case, there are only 25 cells with gold, so backtracking was an hint. &#10;Also Djikstra can't be used to find path with the largest total distance.">
+      <created>1607862237434</created>
+      <option name="number" value="00600" />
+      <option name="presentableId" value="LOCAL-00600" />
+      <option name="project" value="LOCAL" />
+      <updated>1607862237435</updated>
+    </task>
+    <option name="localTasksCounter" value="601" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky divide and conquer problem, find the max profit after bursting balloons. Was asked this question in Zeta onsite back in 2019. &#10;&#10;Atleast this time I was able to solve using backtracking :P&#10;&#10;Learnings -- Divide and conquer and greedy are tough sons of bitches." />
     <MESSAGE value="Solve medium find the longest arithmetic subsequence in an array using the same concept as LIS. Was able to think about the n^2 solution instantaneously :P Sometimes I feel like a genius" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it" />
     <MESSAGE value="Add clarification on why visited array isn't required in problems with max steps/length permissible" />
@@ -606,7 +606,8 @@
     <MESSAGE value="Solve medium and tricky tree problem, find the lca of all nodes present at the last level using 2 pass approach. &#10;1st pass to find the max depth. 2nd pass to find whether the left/right subtree of current node are at the max depth, if yes, current node is a candidate lca." />
     <MESSAGE value="Add reference of another question discussed on discuss related to finding min operations required to flip an boolean expression by divide and conquer strategy.&#10;&#10;Learnings -- In case of problems related with expression, divide and conquer seems to be the optimal strategy as it divides the problem into independent subproblem" />
     <MESSAGE value="Solve hard and tricky find the minimum time required to reach target node given you can traverse a cell only if current time &gt;= cell value. We need to minimize the total time required. So we need to minimize the largest value in the path.&#10;&#10;Leveraged prior learnings of solving this problems using Greedy/Djikstra. Reminder to myself to not use Djikstra to solve path with maximum total cost / PathWithMaximumGold" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the minimum time required to reach target node given you can traverse a cell only if current time &gt;= cell value. We need to minimize the total time required. So we need to minimize the largest value in the path.&#10;&#10;Leveraged prior learnings of solving this problems using Greedy/Djikstra. Reminder to myself to not use Djikstra to solve path with maximum total cost / PathWithMaximumGold" />
+    <MESSAGE value="Solve medium and tricky find the path with the largest total cost. In my initial implementation, I used Djikstra where I greedily pick the largest node but realized that it gave WA for some test cases. &#10;&#10;Learnings -- Use greedy as an optimization for backtracking w/o pruning only if the input constraints are high. In this case, there are only 25 cells with gold, so backtracking was an hint. &#10;Also Djikstra can't be used to find path with the largest total distance." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the path with the largest total cost. In my initial implementation, I used Djikstra where I greedily pick the largest node but realized that it gave WA for some test cases. &#10;&#10;Learnings -- Use greedy as an optimization for backtracking w/o pruning only if the input constraints are high. In this case, there are only 25 cells with gold, so backtracking was an hint. &#10;Also Djikstra can't be used to find path with the largest total distance." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
