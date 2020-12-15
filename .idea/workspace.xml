@@ -101,16 +101,9 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DivideChocolates">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="DivideChocolates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DivideChocolates" />
-      <module name="leetcode-practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LastStoneWeight2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LastStoneWeight2" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,6 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SegmentTree" type="Java Scratch" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SegmentTree" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
@@ -148,20 +148,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LastStoneWeight2" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="Java Scratch.SegmentTree" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Application.DivideChocolates" />
+      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.DivideChocolates" />
         <item itemvalue="Java Scratch.SegmentTree" />
         <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.LastStoneWeight2" />
       </list>
     </recent_temporary>
   </component>
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00558" summary="Solve medium and tricky problem, find whether a ball can stop at the target cell, the ball once moved in a certain direction can only change direction if it can't move ahead in the current direction.&#10;&#10;This is a similar problem to RobotRoomCleaner but differs in the part when the ball can change direction. Initially I implemented it all wrong and changed direction at each cell. The simpler thing to do would be to find the last cell in which the ball stops in the current direction and do DFS recursively in the next 4 directions.">
-      <created>1606659873975</created>
-      <option name="number" value="00558" />
-      <option name="presentableId" value="LOCAL-00558" />
-      <option name="project" value="LOCAL" />
-      <updated>1606659873975</updated>
     </task>
     <task id="LOCAL-00559" summary="Solve medium and followup to the previous problem, find the shortest distance between source and target cells, given the ball can change direction only if its stopped.&#10;&#10;Since the task is to find shortest length and the edge weights are variable, need to either use bfs with pruning where we traverse the entire graph or use djikstra that returns the shortest path to reach a given cell.">
       <created>1606664088585</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607956372269</updated>
     </task>
-    <option name="localTasksCounter" value="607" />
+    <task id="LOCAL-00607" summary="Solve hard find the no of envelopes that can fit inside one another -- variant of finding LIS for 2D array">
+      <created>1607957933101</created>
+      <option name="number" value="00607" />
+      <option name="presentableId" value="LOCAL-00607" />
+      <option name="project" value="LOCAL" />
+      <updated>1607957933101</updated>
+    </task>
+    <option name="localTasksCounter" value="608" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fix grammatical mistake" />
     <MESSAGE value="Add clarification around why changing the problem statement to &quot;non-decreasing&quot; can introduce cycles in the graph, possibly increasing the time complexity" />
     <MESSAGE value="Solve medium and extremely tricky problem, find the path with maximum minimum value possible from source to target in a grid using &#10; 3 approaches: binary search or priority queue or union find&#10; &#10;Learnings -- In case of grid problems where traversal in 4 direction is permissible make sure to handle cycles. If you are memoizing the solution, make sure the memoized value does not depend upon the initial path that was taken to visit that cell. &#10;&#10;Binary search is to go to approach for dealing with maximum minimum problems" />
     <MESSAGE value="Solve medium and extremely tricky problem, find the path with minimum effort. Effort here is the max diff between two adjacent elements. Multiple ways of solving this problem, Djikstra, Binary Search or Union Find." />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve hard problem which reduces to split the array into d subarrays such that sum of maximum of each subarray is minimized by recursion + memoization.&#10;&#10;Leveraged prior learnings of solving such problems by making cuts at all possible places and keeping track of min sum so far." />
     <MESSAGE value="Add gotcha during deletion of index from list as deletion of any index other that last index takes linear time, so first swap the value to the last index and then always delete the last index." />
     <MESSAGE value="Solve hard and tricky design data structure which supports insert delete getRandom in O(1) time. List already supports insert and getRandom() in constant time but to delete elements, we need to know the index at which it occurs. We can keep a map to lookup the required index. In order to keep constant time for deletion, need to make sure we delete only from the last to avoid o(n) penalty for deletion in between. Hence swap out the element at last index with value to be removed during deletion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky design data structure which supports insert delete getRandom in O(1) time. List already supports insert and getRandom() in constant time but to delete elements, we need to know the index at which it occurs. We can keep a map to lookup the required index. In order to keep constant time for deletion, need to make sure we delete only from the last to avoid o(n) penalty for deletion in between. Hence swap out the element at last index with value to be removed during deletion." />
+    <MESSAGE value="Solve hard find the no of envelopes that can fit inside one another -- variant of finding LIS for 2D array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find the no of envelopes that can fit inside one another -- variant of finding LIS for 2D array" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
