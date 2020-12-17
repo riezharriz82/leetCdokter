@@ -174,13 +174,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00561" summary="Solve medium and extremely tricky problem find whether an array can be split into subsequences containing consecutive numbers by greedy algo&#10;&#10;Learnings -- Greedy algos show no pattern man ! Damn ! Each greedy algo is kinda unique ! Here the trick is to check whether the current no can be used to extend some existing subsequence or it should start its own subsequence.">
-      <created>1606687812426</created>
-      <option name="number" value="00561" />
-      <option name="presentableId" value="LOCAL-00561" />
-      <option name="project" value="LOCAL" />
-      <updated>1606687812426</updated>
-    </task>
     <task id="LOCAL-00562" summary="Solve medium and tricky problem, find the kth missing element in sorted array using binary search and linear search by finding count of elements missing till a specific index.&#10;&#10;I should have at least solved the problem using linear search, feeling a bit disappointed.">
       <created>1606755241271</created>
       <option name="number" value="00562" />
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608044680373</updated>
     </task>
-    <option name="localTasksCounter" value="610" />
+    <task id="LOCAL-00610" summary="Solve medium and tricky find the largest subset in which each pair of elements divide each other by sorting + checking whether current number can extend result stored in previous index&#10;&#10;Learnings -- In case of subset problems, order isn't important, so check if sorting helps! I was on the right track but didn't sort, hence got WA and then became confused.">
+      <created>1608051958267</created>
+      <option name="number" value="00610" />
+      <option name="presentableId" value="LOCAL-00610" />
+      <option name="project" value="LOCAL" />
+      <updated>1608051958268</updated>
+    </task>
+    <option name="localTasksCounter" value="611" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky problem, find the path with minimum effort. Effort here is the max diff between two adjacent elements. Multiple ways of solving this problem, Djikstra, Binary Search or Union Find." />
     <MESSAGE value="Solve medium and extremely tricky problem, find the lexicographically smallest string that is possible by swapping pairs of provided indices any number of times by reducing the problem to connected components. Characters in every component can be sorted individually to get the result.&#10;&#10;I tried solving using greedy but couldn't make it work." />
     <MESSAGE value="Solve medium find the number of 1s that does not have 1 in the same row and same column by keeping track of 1's encountered in each row and each column" />
     <MESSAGE value="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm" />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve hard find the no of envelopes that can fit inside one another -- variant of finding LIS for 2D array" />
     <MESSAGE value="Solve medium add one to linked list by using recursion as the implicit stack to pass carry digit to the previous node." />
     <MESSAGE value="Solve hard and extremely trick problem of finding shortest path that visits all nodes such that a node can be visited multiple times using BFS + Bitmasking&#10;&#10;First saw this problem in september, couldn't understand it a bit. Saw a similar problem recently PathWithMaximumGold in which one guy solved it similar to solving this problem. Revisited this problem and could now make sense of the provided solution. Practice makes a man perfect !&#10;&#10;Key thing to note is use BFS for finding shortest path and use set of visited nodes (bitmask) + current node as the key for determining already visited paths." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely trick problem of finding shortest path that visits all nodes such that a node can be visited multiple times using BFS + Bitmasking&#10;&#10;First saw this problem in september, couldn't understand it a bit. Saw a similar problem recently PathWithMaximumGold in which one guy solved it similar to solving this problem. Revisited this problem and could now make sense of the provided solution. Practice makes a man perfect !&#10;&#10;Key thing to note is use BFS for finding shortest path and use set of visited nodes (bitmask) + current node as the key for determining already visited paths." />
+    <MESSAGE value="Solve medium and tricky find the largest subset in which each pair of elements divide each other by sorting + checking whether current number can extend result stored in previous index&#10;&#10;Learnings -- In case of subset problems, order isn't important, so check if sorting helps! I was on the right track but didn't sort, hence got WA and then became confused." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the largest subset in which each pair of elements divide each other by sorting + checking whether current number can extend result stored in previous index&#10;&#10;Learnings -- In case of subset problems, order isn't important, so check if sorting helps! I was on the right track but didn't sort, hence got WA and then became confused." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
