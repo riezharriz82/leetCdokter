@@ -174,13 +174,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00563" summary="Solve medium and tricky problem, find the maximum of minimum distance between two balls given that we have to place m balls using binary search.&#10;&#10;Leveraged prior learnings of solving DivideChocolates to code up the binary search solution. Possible pattern is to use binary search when the output can be 1,2,3.... n and verifying whether a certain value satisfy the constraint takes linear or constant time, we can use binary search">
-      <created>1606771037310</created>
-      <option name="number" value="00563" />
-      <option name="presentableId" value="LOCAL-00563" />
-      <option name="project" value="LOCAL" />
-      <updated>1606771037310</updated>
-    </task>
     <task id="LOCAL-00564" summary="Solve medium and tricky problem, find the minimum speed to eat all the bananas in &lt;= h hours using binary search&#10;&#10;Learnings -- If the output can be either 1,2,3...n and verifying whether the target satisfies the input constraint takes linear time, we can apply binary search.">
       <created>1606838585386</created>
       <option name="number" value="00564" />
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608221116162</updated>
     </task>
-    <option name="localTasksCounter" value="612" />
+    <task id="LOCAL-00612" summary="Solve medium find the earliest moment when everyone becomes friend i.e. when there is only one unique component left using Union Find&#10;&#10;Learnings -- We can stop when uniqueComponents == 1 (init it with N and decrement everytime you perform a union) or when size[root] == N (the last union performed had all the elements in the subtree)">
+      <created>1608224202639</created>
+      <option name="number" value="00612" />
+      <option name="presentableId" value="LOCAL-00612" />
+      <option name="project" value="LOCAL" />
+      <updated>1608224202639</updated>
+    </task>
+    <option name="localTasksCounter" value="613" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the number of 1s that does not have 1 in the same row and same column by keeping track of 1's encountered in each row and each column" />
     <MESSAGE value="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm" />
     <MESSAGE value="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm" />
     <MESSAGE value="Add hint of using binary search as an alternate way of solving this problem" />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve hard and extremely trick problem of finding shortest path that visits all nodes such that a node can be visited multiple times using BFS + Bitmasking&#10;&#10;First saw this problem in september, couldn't understand it a bit. Saw a similar problem recently PathWithMaximumGold in which one guy solved it similar to solving this problem. Revisited this problem and could now make sense of the provided solution. Practice makes a man perfect !&#10;&#10;Key thing to note is use BFS for finding shortest path and use set of visited nodes (bitmask) + current node as the key for determining already visited paths." />
     <MESSAGE value="Solve medium and tricky find the largest subset in which each pair of elements divide each other by sorting + checking whether current number can extend result stored in previous index&#10;&#10;Learnings -- In case of subset problems, order isn't important, so check if sorting helps! I was on the right track but didn't sort, hence got WA and then became confused." />
     <MESSAGE value="Solve medium find the no of tuples A,B,C,D in 4 arrays such that sum of tuples is 0 by storing pair wise sum of A+B in one hashmap and pair wise sum of C+D in another hashmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the no of tuples A,B,C,D in 4 arrays such that sum of tuples is 0 by storing pair wise sum of A+B in one hashmap and pair wise sum of C+D in another hashmap" />
+    <MESSAGE value="Solve medium find the earliest moment when everyone becomes friend i.e. when there is only one unique component left using Union Find&#10;&#10;Learnings -- We can stop when uniqueComponents == 1 (init it with N and decrement everytime you perform a union) or when size[root] == N (the last union performed had all the elements in the subtree)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the earliest moment when everyone becomes friend i.e. when there is only one unique component left using Union Find&#10;&#10;Learnings -- We can stop when uniqueComponents == 1 (init it with N and decrement everytime you perform a union) or when size[root] == N (the last union performed had all the elements in the subtree)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
