@@ -13,9 +13,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and tricky find the sum of absolute differences">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DivideChocolates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00567" summary="Solve medium find longest subarray that sums to a target value using prefix sum + hashmap&#10;&#10;Leveraged prior learnings of using prefix sum to deal with subarray sum problems. Only trick here was not updating the prefixsum in case an index with same prefix sum already exists -- this will help in finding the longest subarray">
-      <created>1606861369842</created>
-      <option name="number" value="00567" />
-      <option name="presentableId" value="LOCAL-00567" />
-      <option name="project" value="LOCAL" />
-      <updated>1606861369842</updated>
     </task>
     <task id="LOCAL-00568" summary="Solve medium pick a random node from an infinitely long list using reservoir sampling. Fix the first kth element in the reservoir, then for the next element, put it in the reservoir only if the randomIndex is &lt; k. RandomIndex is [0, currentIndex)">
       <created>1606920086508</created>
@@ -518,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608382843551</updated>
     </task>
-    <option name="localTasksCounter" value="616" />
+    <task id="LOCAL-00616" summary="Update hard and extremely trick find the maximum of minimum sweetness that can satisfy k+1 persons using binary search &#10;&#10;I was not able to understand the logic of finding how many persons can be satisfied by choosing a specific min sweetness. The trick was to increase the persons satisfied count only if curSweetness &gt;= target sweetness. This way if there is some trailing subarray that can't satisfy a person won't get included in the overall count.">
+      <created>1608388955434</created>
+      <option name="number" value="00616" />
+      <option name="presentableId" value="LOCAL-00616" />
+      <option name="project" value="LOCAL" />
+      <updated>1608388955434</updated>
+    </task>
+    <option name="localTasksCounter" value="617" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -574,19 +573,7 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="sum of maximum" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -595,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add missing sample input to the problem statement" />
     <MESSAGE value="Add clarification around why boolean flag was not memoized, because two players can't have the same state ever." />
     <MESSAGE value="Solve medium swap nodes in linked list in pair, a bit tricky as it needed multiple pointers to keep track of first and second node of current block and start of next block.&#10;&#10;As usual keep a dummy pointer to make your life easier while manipulating linked list" />
     <MESSAGE value="Simplify finding whether an array is a mountain array or not by reducing the problem to finding length of longest increasing subarray from left and right" />
@@ -620,7 +606,8 @@
     <MESSAGE value="Solve medium find whether there is a increasing subsequence of size 3 in linear time and constant space. &#10;&#10;In order to solve it using linear space, I kept track of smallest number on the left and largest number on the right and compared each number.&#10;In order to solve in constant space, just keep track of two smallest numbers. If you find a number greater than second largest number, we got a valid triplet." />
     <MESSAGE value="Solve medium and tricky find the largest distance from land to water in a matrix by performing multi source BFS&#10;&#10;Leveraged prior learnings of using multi source BFS when asked to find distance between two sets of points" />
     <MESSAGE value="Solve medium and tricky find the smallest weight that can allow us to ship all packages in &lt;= D days using binary search&#10;&#10;Leveraged prior learnings of using Binary search to solve optimization problems where the answer lies in a bound and verifying the result takes linear time." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the smallest weight that can allow us to ship all packages in &lt;= D days using binary search&#10;&#10;Leveraged prior learnings of using Binary search to solve optimization problems where the answer lies in a bound and verifying the result takes linear time." />
+    <MESSAGE value="Update hard and extremely trick find the maximum of minimum sweetness that can satisfy k+1 persons using binary search &#10;&#10;I was not able to understand the logic of finding how many persons can be satisfied by choosing a specific min sweetness. The trick was to increase the persons satisfied count only if curSweetness &gt;= target sweetness. This way if there is some trailing subarray that can't satisfy a person won't get included in the overall count." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update hard and extremely trick find the maximum of minimum sweetness that can satisfy k+1 persons using binary search &#10;&#10;I was not able to understand the logic of finding how many persons can be satisfied by choosing a specific min sweetness. The trick was to increase the persons satisfied count only if curSweetness &gt;= target sweetness. This way if there is some trailing subarray that can't satisfy a person won't get included in the overall count." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
