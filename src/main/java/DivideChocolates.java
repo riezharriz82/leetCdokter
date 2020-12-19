@@ -55,44 +55,46 @@ public class DivideChocolates {
 
     /**
      * Approach: Greedy + Binary Search
-     * For detailed explanation see {@link SplitArrayLargestSum}
+     * Answer lies between the smallest piece available to the largest piece possible
+     * Pick a number = mid and try to satisfy as many friends possible by allocating minimum sweetness == mid
+     * If we can satisfy less friends than required, we have to reduce the minimum sweetness possible
+     * otherwise we can try increasing the minimum sweetness
      */
     public int maximizeSweetnessGreedy(int[] sweetness, int K) {
-        int largestBiggestPiece = 0, smallestSinglePiece = Integer.MAX_VALUE;
-        for (int sweet : sweetness) {
-            largestBiggestPiece += sweet;
-            smallestSinglePiece = Math.min(smallestSinglePiece, sweet);
+        int smallestPiece = Integer.MAX_VALUE, largestPiece = 0;
+        for (int val : sweetness) {
+            largestPiece += val;
+            smallestPiece = Math.min(smallestPiece, val);
         }
         if (K == 0) {
-            return largestBiggestPiece;
+            return largestPiece;
         }
-        int low = smallestSinglePiece, high = largestBiggestPiece;
-        int ans = 0;
+        int low = smallestPiece, high = largestPiece, ans = -1;
+        int requiredPersons = K + 1; // +1 due to including the current person
         while (low <= high) {
             int mid = low + (high - low) / 2;
-            int currentSplits = chunksSplittedInto(sweetness, mid);
-            if (currentSplits <= K + 1) {
+            if (personsSatisfied(mid, sweetness) < requiredPersons) { //we can't satisfy required person, need to try with a lower value
                 high = mid - 1;
+            } else { //try a larger value to see if it can satisfy as well
                 ans = mid;
-            } else if (currentSplits > K + 1) {
                 low = mid + 1;
             }
         }
         return ans;
     }
 
-    //find how many chunks can be formed from the input array given each friend must receive a minimum amount of sweetness
-    //i.e. subarray sum should be minimum equal to target sum
-    private int chunksSplittedInto(int[] sweetness, int minimumSweetness) {
-        int chunks = 1, curSum = 0;
-        for (int sweet : sweetness) {
-            curSum += sweet;
-            if (curSum > minimumSweetness) { //not >= {1,2,3} {target = 6} should give chunk = 1 not 2
-                chunks++;
-                curSum = 0; //the only thing different from SplitArrayLargestSum
-                //this is because we need to assign num to the previous chunk because each chunk should have minimum amount of sweetness
+    //task is to see how many persons can be satisfied by trying to give a minimumSweetness to each person
+    //this takes care of multiple use cases [1,2,3], 6 -> should return 1
+    //[1,2,3,4], 6 should return 1 because last piece 4 can't satisfy another person, this was my mistake during my initial thought process
+    private int personsSatisfied(int minimumSweetness, int[] sweetness) {
+        int splits = 0, curSweetness = 0;
+        for (int val : sweetness) {
+            curSweetness += val;
+            if (curSweetness >= minimumSweetness) {
+                curSweetness = 0;
+                splits++;
             }
         }
-        return chunks;
+        return splits;
     }
 }
