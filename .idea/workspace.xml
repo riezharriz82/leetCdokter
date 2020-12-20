@@ -80,7 +80,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00569" summary="Solve medium design search suggestion system where given a search word, list all the products that start with each prefix of the search word using trie&#10;&#10;Leveraged prior learnings of storing useful information directly in trie node to avoid DFS">
-      <created>1606925195595</created>
-      <option name="number" value="00569" />
-      <option name="presentableId" value="LOCAL-00569" />
-      <option name="project" value="LOCAL" />
-      <updated>1606925195595</updated>
     </task>
     <task id="LOCAL-00570" summary="Solve medium and a bit tricky find the longest chain of words that extend previous word by adding one character anywhere in previous word by either looking for next words in chain or previous words in chain.&#10;&#10;Looking for next words takes time because we have to generate all combinations to see whether such word exists or not, Looking for previous words is much faster">
       <created>1607008230899</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608407670431</updated>
     </task>
-    <option name="localTasksCounter" value="618" />
+    <task id="LOCAL-00618" summary="Solve medium and tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number.&#10;&#10;Learnings -- 1. Median minimizes the sum of absolute differences and mean minimizes the sum of squared differences.&#10;2. Median can be calculated without sorting by using quick select in linear time (use median of median as a further optimization step)">
+      <created>1608451581199</created>
+      <option name="number" value="00618" />
+      <option name="presentableId" value="LOCAL-00618" />
+      <option name="project" value="LOCAL" />
+      <updated>1608451581199</updated>
+    </task>
+    <option name="localTasksCounter" value="619" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium swap nodes in linked list in pair, a bit tricky as it needed multiple pointers to keep track of first and second node of current block and start of next block.&#10;&#10;As usual keep a dummy pointer to make your life easier while manipulating linked list" />
     <MESSAGE value="Simplify finding whether an array is a mountain array or not by reducing the problem to finding length of longest increasing subarray from left and right" />
     <MESSAGE value="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal." />
     <MESSAGE value="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end." />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve medium and tricky find the smallest weight that can allow us to ship all packages in &lt;= D days using binary search&#10;&#10;Leveraged prior learnings of using Binary search to solve optimization problems where the answer lies in a bound and verifying the result takes linear time." />
     <MESSAGE value="Update hard and extremely trick find the maximum of minimum sweetness that can satisfy k+1 persons using binary search &#10;&#10;I was not able to understand the logic of finding how many persons can be satisfied by choosing a specific min sweetness. The trick was to increase the persons satisfied count only if curSweetness &gt;= target sweetness. This way if there is some trailing subarray that can't satisfy a person won't get included in the overall count." />
     <MESSAGE value="Solve hard and tricky find the shortest distance of 0 (land) from all the 1 (building) by iteratively performing BFS from each 1 and updating the min distance to reach 0.&#10;&#10;Leveraged prior learnings of always performing BFS from outside nodes (1) rather than inside nodes (0). &#10;Also thought that probably multi bfs would have been faster but it's not, because we have to keep track of distances from all 1's rather than finding the distance from nearest 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and tricky find the shortest distance of 0 (land) from all the 1 (building) by iteratively performing BFS from each 1 and updating the min distance to reach 0.&#10;&#10;Leveraged prior learnings of always performing BFS from outside nodes (1) rather than inside nodes (0). &#10;Also thought that probably multi bfs would have been faster but it's not, because we have to keep track of distances from all 1's rather than finding the distance from nearest 1." />
+    <MESSAGE value="Solve medium and tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number.&#10;&#10;Learnings -- 1. Median minimizes the sum of absolute differences and mean minimizes the sum of squared differences.&#10;2. Median can be calculated without sorting by using quick select in linear time (use median of median as a further optimization step)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number.&#10;&#10;Learnings -- 1. Median minimizes the sum of absolute differences and mean minimizes the sum of squared differences.&#10;2. Median can be calculated without sorting by using quick select in linear time (use median of median as a further optimization step)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
