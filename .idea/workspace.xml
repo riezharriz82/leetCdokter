@@ -13,7 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00572" summary="Solve medium and math related divisibility problem, find count of pairs of numbers that are divisible by 60 by finding pairs of numbers whose mod sum = 60, This is similar to 2Sum Problem where we have to find two numbers such that a + b = k&#10;&#10;Take care of duplicates. Either use binary search or hashmap to count pairs.">
-      <created>1607011464342</created>
-      <option name="number" value="00572" />
-      <option name="presentableId" value="LOCAL-00572" />
-      <option name="project" value="LOCAL" />
-      <updated>1607011464342</updated>
     </task>
     <task id="LOCAL-00573" summary="Solve medium and math related tricky 2D matrix problem, find the sum of all elements from (r1, c1) till (r2, c2) using 2D prefix sum&#10;&#10;Really happy to solve this question in first attempt, took me some time to visualize the prefix sum logic and conditions. Verified it manually on paper, only after that started coding. Woooohooo.">
       <created>1607014680713</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608486419654</updated>
     </task>
-    <option name="localTasksCounter" value="621" />
+    <task id="LOCAL-00621" summary="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes.">
+      <created>1608490203572</created>
+      <option name="number" value="00621" />
+      <option name="presentableId" value="LOCAL-00621" />
+      <option name="project" value="LOCAL" />
+      <updated>1608490203572</updated>
+    </task>
+    <option name="localTasksCounter" value="622" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end." />
     <MESSAGE value="Solve medium and tricky tree problem, find the lca of all nodes present at the last level using 2 pass approach. &#10;1st pass to find the max depth. 2nd pass to find whether the left/right subtree of current node are at the max depth, if yes, current node is a candidate lca." />
     <MESSAGE value="Add reference of another question discussed on discuss related to finding min operations required to flip an boolean expression by divide and conquer strategy.&#10;&#10;Learnings -- In case of problems related with expression, divide and conquer seems to be the optimal strategy as it divides the problem into independent subproblem" />
     <MESSAGE value="Solve hard and tricky find the minimum time required to reach target node given you can traverse a cell only if current time &gt;= cell value. We need to minimize the total time required. So we need to minimize the largest value in the path.&#10;&#10;Leveraged prior learnings of solving this problems using Greedy/Djikstra. Reminder to myself to not use Djikstra to solve path with maximum total cost / PathWithMaximumGold" />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve medium and tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number.&#10;&#10;Learnings -- 1. Median minimizes the sum of absolute differences and mean minimizes the sum of squared differences.&#10;2. Median can be calculated without sorting by using quick select in linear time (use median of median as a further optimization step)" />
     <MESSAGE value="Solve medium and extremely tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number in a 2D array.&#10;&#10;Learnings -- Since we need to minimize manhattan distance, median of 2D array can be calculated by separately calculating median of x and y indices." />
     <MESSAGE value="Solve medium and extremely tricky find the max no of moves required to make sure no two stones share the same row or same column by DFS and union find &#10;&#10;Trick to solve the problem was to find no of connected components and just keep only one stone of each component. So answer would be total stones - no of components&#10;&#10;Learnings -- 1. Sometimes 2D points can be visualized as 0,1 in a 2D grid, which can be expanded to a graph problem if we can visualize the edges correctly. Here two points are connected if they are on the same row or same column. &#10;2. Union find on 2D points is a bit tricky to visualize. Here we need to union row and col of current index so that in future if we get a new index with the same row and different col, we can still make it part of the same component." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find the max no of moves required to make sure no two stones share the same row or same column by DFS and union find &#10;&#10;Trick to solve the problem was to find no of connected components and just keep only one stone of each component. So answer would be total stones - no of components&#10;&#10;Learnings -- 1. Sometimes 2D points can be visualized as 0,1 in a 2D grid, which can be expanded to a graph problem if we can visualize the edges correctly. Here two points are connected if they are on the same row or same column. &#10;2. Union find on 2D points is a bit tricky to visualize. Here we need to union row and col of current index so that in future if we get a new index with the same row and different col, we can still make it part of the same component." />
+    <MESSAGE value="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
