@@ -14,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QueueReconstructionByHeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueueReconstructionByHeight.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00574" summary="Solve medium and tricky graph theory problem, find a way to visit each edge exactly once such the path is lexicographically smallest by greedy backtracking and using hierholzer algorithm to find the eulerian path of the graph&#10;&#10;Learnings -- Visiting each edge exactly once is well known graph theory problem known as eulerian path/cycle. It can be found by doing a postorder traversal of the graph, similar to the way we perform topological sorting using stack.&#10;&#10;Make sure to account for parallel edges/duplicate edges in graph problems unless specified. If there is duplicate edges, solve them by creating a key for each edge (src-&gt;target) and tracking their count. Decrement the count, when we visit a edge.">
-      <created>1607112348672</created>
-      <option name="number" value="00574" />
-      <option name="presentableId" value="LOCAL-00574" />
-      <option name="project" value="LOCAL" />
-      <updated>1607112348672</updated>
     </task>
     <task id="LOCAL-00575" summary="Solve hard and extremely tricky divide and conquer problem, find the max profit after bursting balloons. Was asked this question in Zeta onsite back in 2019. &#10;&#10;Atleast this time I was able to solve using backtracking :P&#10;&#10;Learnings -- Divide and conquer and greedy are tough sons of bitches.">
       <created>1607172855612</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608502975855</updated>
     </task>
-    <option name="localTasksCounter" value="623" />
+    <task id="LOCAL-00623" summary="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it.">
+      <created>1608579350095</created>
+      <option name="number" value="00623" />
+      <option name="presentableId" value="LOCAL-00623" />
+      <option name="project" value="LOCAL" />
+      <updated>1608579350095</updated>
+    </task>
+    <option name="localTasksCounter" value="624" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add reference of another question discussed on discuss related to finding min operations required to flip an boolean expression by divide and conquer strategy.&#10;&#10;Learnings -- In case of problems related with expression, divide and conquer seems to be the optimal strategy as it divides the problem into independent subproblem" />
     <MESSAGE value="Solve hard and tricky find the minimum time required to reach target node given you can traverse a cell only if current time &gt;= cell value. We need to minimize the total time required. So we need to minimize the largest value in the path.&#10;&#10;Leveraged prior learnings of solving this problems using Greedy/Djikstra. Reminder to myself to not use Djikstra to solve path with maximum total cost / PathWithMaximumGold" />
     <MESSAGE value="Solve medium and tricky find the path with the largest total cost. In my initial implementation, I used Djikstra where I greedily pick the largest node but realized that it gave WA for some test cases. &#10;&#10;Learnings -- Use greedy as an optimization for backtracking w/o pruning only if the input constraints are high. In this case, there are only 25 cells with gold, so backtracking was an hint. &#10;Also Djikstra can't be used to find path with the largest total distance." />
     <MESSAGE value="Solve medium and tricky find the sum of absolute differences of an index with all other indexes in an array by considering the contribution of each index separately. Find the contribution by summing up contribution of left and right subarray." />
@@ -607,7 +606,8 @@
     <MESSAGE value="Solve medium and extremely tricky find the max no of moves required to make sure no two stones share the same row or same column by DFS and union find &#10;&#10;Trick to solve the problem was to find no of connected components and just keep only one stone of each component. So answer would be total stones - no of components&#10;&#10;Learnings -- 1. Sometimes 2D points can be visualized as 0,1 in a 2D grid, which can be expanded to a graph problem if we can visualize the edges correctly. Here two points are connected if they are on the same row or same column. &#10;2. Union find on 2D points is a bit tricky to visualize. Here we need to union row and col of current index so that in future if we get a new index with the same row and different col, we can still make it part of the same component." />
     <MESSAGE value="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes." />
     <MESSAGE value="Solve medium find the minimum cost to merge all the sticks into a single stick in minimum cost by using greedy&#10;&#10;Leveraged prior learning of reading about optimal merge algorithm greedy pattern in topcoder." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the minimum cost to merge all the sticks into a single stick in minimum cost by using greedy&#10;&#10;Leveraged prior learning of reading about optimal merge algorithm greedy pattern in topcoder." />
+    <MESSAGE value="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

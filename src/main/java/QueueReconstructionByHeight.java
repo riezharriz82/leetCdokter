@@ -41,6 +41,10 @@ public class QueueReconstructionByHeight {
      * In case of multiple people with same height, first fix the people that have fewer taller people in front of them, because duh !
      * While adding a smaller height people, if you see some people on that index, shift everything to the right
      * <p>
+     * The reason I can think of why this works is we always try to fix the first index that can be fixed e.g [7,0] is obviously the first
+     * index that needs to be fixed because that's the tallest person and no taller person stands in front of him
+     * Similarly in permutation we know that 5 was deleted last and it's index would definitely be 1, so fix 5 first.
+     * <p>
      * There is another approach in which we first fix the smallest height person
      * https://leetcode.com/problems/queue-reconstruction-by-height/discuss/427157/Three-different-C%2B%2B-solutions.-from-O(n2)-to-O(nlogn).-faster-than-99.
      */
