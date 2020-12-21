@@ -44,8 +44,7 @@ public class CrackingTheSafe {
         for (int i = 0; i < n - 1; i++) { //initial string length of n-1
             initial += "0";
         }
-        HashSet<String> visited = new HashSet<>();
-        visited.add(initial);
+        HashSet<String> visited = new HashSet<>(); //visited contains unique n letter words
         StringBuilder sb = new StringBuilder();
         DFS(initial, k, visited, sb);
         sb.append(initial); //append it after the traversal is finished
