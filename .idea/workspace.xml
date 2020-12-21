@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RectangleOverlap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RectangleOverlap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00579" summary="Solve medium find the total no of ways of reaching outside the grid given we can only traverse finite number of steps using DFS + Memoization.&#10;&#10;Leveraged prior learnings of solving problems related to finding total no of ways of doing something by returning 1 only at the end state and keeping track of total no of ways at each step.">
-      <created>1607182032394</created>
-      <option name="number" value="00579" />
-      <option name="presentableId" value="LOCAL-00579" />
-      <option name="project" value="LOCAL" />
-      <updated>1607182032394</updated>
     </task>
     <task id="LOCAL-00580" summary="Add a bit of clarification regarding greedy way of generating euler path over backtracking approach">
       <created>1607196989700</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608584050985</updated>
     </task>
-    <option name="localTasksCounter" value="628" />
+    <task id="LOCAL-00628" summary="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length">
+      <created>1608586357047</created>
+      <option name="number" value="00628" />
+      <option name="presentableId" value="LOCAL-00628" />
+      <option name="project" value="LOCAL" />
+      <updated>1608586357047</updated>
+    </task>
+    <option name="localTasksCounter" value="629" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find the node with the value that is closest to the target in BST by recursion and keeping track of the minDiff found so far" />
     <MESSAGE value="Solve hard problem which reduces to split the array into d subarrays such that sum of maximum of each subarray is minimized by recursion + memoization.&#10;&#10;Leveraged prior learnings of solving such problems by making cuts at all possible places and keeping track of min sum so far." />
     <MESSAGE value="Add gotcha during deletion of index from list as deletion of any index other that last index takes linear time, so first swap the value to the last index and then always delete the last index." />
     <MESSAGE value="Solve hard and tricky design data structure which supports insert delete getRandom in O(1) time. List already supports insert and getRandom() in constant time but to delete elements, we need to know the index at which it occurs. We can keep a map to lookup the required index. In order to keep constant time for deletion, need to make sure we delete only from the last to avoid o(n) penalty for deletion in between. Hence swap out the element at last index with value to be removed during deletion." />
@@ -607,7 +607,8 @@
     <MESSAGE value="Simplify code by removing complicated bottom up code and add comment in existing top down code" />
     <MESSAGE value="Simplify the code by relying on no of splits performed rather than number of chunks created." />
     <MESSAGE value="Add gotcha in adding extra whitespace at the end of the current sentence as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha in adding extra whitespace at the end of the current sentence as well." />
+    <MESSAGE value="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

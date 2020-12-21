@@ -15,44 +15,12 @@
  * Output: false
  */
 public class RectangleOverlap {
-    //two rectangles will not overlap if rec1 is either left or right or top or bottom of rec2
-
-    /**
-     * <pre>
-     *      Consider a 1D overlap (Interval problem).
-     *      For an overlap to occur necessary condition is
-     *
-     *              x3,y2          x4,y2
-     *                |--------------|
-     *      |--------------|
-     *      x1,y1         x2,y1
-     *
-     *      x1 < x3 < x2  && x3 < x2 < x4
-     *
-     *      Or simplified - x1 < x4 && x3 < x2 (This is important because in case of below,  x1 < x3 < x2  && x3 < x2 < x4 condition wont work)
-     *
-     *    x3,y2           x4,y2
-     *      |---------------|
-     *              |---------------|
-     *            x1,y1           x2,y1
-     *
-     *      For 2D case use 1D conditions for both X and Y axes
-     *      x1 < x4 && x3 < x2 && y1 < y4 && y3 < y2
-     * </pre>
-     */
-    public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
-        boolean isLeft = rec1[2] <= rec2[0];
-        boolean isRight = rec2[2] <= rec1[0];
-        boolean isTop = rec1[1] >= rec2[3];
-        boolean isBottom = rec1[3] <= rec2[1];
-        return !(isLeft || isBottom || isTop || isRight); // if all these are false, then two rectangles overlap
-    }
-
     /**
      * https://binarysearch.io/problems/Rectangular-Overlap/editorials/396113
      * <p>
      * Problem deals with finding intersection of two line segment
      * For 1D Intersection, if one line segment is (a1,a2) and other is (b1, b2), they will intersect if max(a1, b1) < min(a2,b2)
+     * This is the first time awice made the editorial easier to understand
      */
     public boolean solve(int[] rect0, int[] rect1) {
         //check for x coordinates
