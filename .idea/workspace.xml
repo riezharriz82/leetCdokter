@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SentenceScreenFitting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SentenceScreenFitting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00577" summary="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it">
-      <created>1607176110831</created>
-      <option name="number" value="00577" />
-      <option name="presentableId" value="LOCAL-00577" />
-      <option name="project" value="LOCAL" />
-      <updated>1607176110832</updated>
     </task>
     <task id="LOCAL-00578" summary="Add clarification on why visited array isn't required in problems with max steps/length permissible">
       <created>1607181527763</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608581476879</updated>
     </task>
-    <option name="localTasksCounter" value="626" />
+    <task id="LOCAL-00626" summary="Simplify the code by relying on no of splits performed rather than number of chunks created.">
+      <created>1608583275540</created>
+      <option name="number" value="00626" />
+      <option name="presentableId" value="LOCAL-00626" />
+      <option name="project" value="LOCAL" />
+      <updated>1608583275540</updated>
+    </task>
+    <option name="localTasksCounter" value="627" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky find the sum of absolute differences of an index with all other indexes in an array by considering the contribution of each index separately. Find the contribution by summing up contribution of left and right subarray." />
     <MESSAGE value="Solve hard and extremely trick problem find the smallest no of squares to completely fill a rectangle by backtracking with pruning.&#10;&#10;Learnings -- 1. Backtracking solution was a bit difficult to visualize initially.&#10;2. During pruning, it's efficient to take the possible biggest steps first to prune a lot of branches faster." />
     <MESSAGE value="Solve easy find the node with the value that is closest to the target in BST by recursion and keeping track of the minDiff found so far" />
     <MESSAGE value="Solve hard problem which reduces to split the array into d subarrays such that sum of maximum of each subarray is minimized by recursion + memoization.&#10;&#10;Leveraged prior learnings of solving such problems by making cuts at all possible places and keeping track of min sum so far." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it." />
     <MESSAGE value="Add possible hint on why we need to fix the index whose location is known correctly. Either the tallest person with no person standing in front of him or the index that was popped most recently." />
     <MESSAGE value="Simplify code by removing complicated bottom up code and add comment in existing top down code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify code by removing complicated bottom up code and add comment in existing top down code" />
+    <MESSAGE value="Simplify the code by relying on no of splits performed rather than number of chunks created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify the code by relying on no of splits performed rather than number of chunks created." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

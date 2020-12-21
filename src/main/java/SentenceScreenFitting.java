@@ -59,7 +59,7 @@ public class SentenceScreenFitting {
             }
         }
         String concat = String.join(" ", sentence); //infinite sentence
-        concat += " ";
+        concat += " "; //adding space to the end of the last character is also important because new sentence also needs a space
         int current_index = 0; //current_index can wrap around
         int length_of_sentence = concat.length();
         for (int i = 0; i < rows; i++) {
@@ -79,7 +79,7 @@ public class SentenceScreenFitting {
     }
 
     /**
-     * Approach: Greedy, First check if all the words can be safely placed in any row by checking word length
+     * Approach: Greedy brute force, First check if all the words can be safely placed in any row by checking word length
      * Then try to place current word in the current row. If yes increment the current valid column.
      * If no, try placing the word in the next row.
      * Keep track of how many times we can completely place all the words.
