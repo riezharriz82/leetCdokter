@@ -91,16 +91,18 @@ public class SplitArrayLargestSum {
     }
 
     //return how many chunks can the array be divided into, given the largest subarray sum permissible
+    //[1,2,3,4], 6 -> returns 2
+    //[1,2,3], 6 returns 1
     private int chunksSplittedInto(int[] nums, int target) {
-        int chunks = 1;
+        int splits = 0;
         int curSum = 0;
         for (int num : nums) {
             curSum += num;
             if (curSum > target) { //need to split it
-                chunks++;
+                splits++;
                 curSum = num; //current number can't be part of previous chunk, needs to be part of new split
             }
         }
-        return chunks;
+        return splits + 1;
     }
 }

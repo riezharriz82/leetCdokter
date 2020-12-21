@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00576" summary="Solve medium find the longest arithmetic subsequence in an array using the same concept as LIS. Was able to think about the n^2 solution instantaneously :P Sometimes I feel like a genius">
-      <created>1607173223412</created>
-      <option name="number" value="00576" />
-      <option name="presentableId" value="LOCAL-00576" />
-      <option name="project" value="LOCAL" />
-      <updated>1607173223412</updated>
     </task>
     <task id="LOCAL-00577" summary="Solve medium and a bit tricky problem, find the total probability of knight remaining on the chessboard after making k moves. &#10;&#10;I am a bit surprised to do this in first attempt. Think I am getting a little good :P &#10;&#10;A gotcha to make the solution memoizable is to return results of each subproblem independently of another. Initially I was thinking of passing in the current prob as a prefix multiplier but then discarded it">
       <created>1607176110831</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608580551872</updated>
     </task>
-    <option name="localTasksCounter" value="625" />
+    <task id="LOCAL-00625" summary="Simplify code by removing complicated bottom up code and add comment in existing top down code">
+      <created>1608581476879</created>
+      <option name="number" value="00625" />
+      <option name="presentableId" value="LOCAL-00625" />
+      <option name="project" value="LOCAL" />
+      <updated>1608581476879</updated>
+    </task>
+    <option name="localTasksCounter" value="626" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -582,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky find the path with the largest total cost. In my initial implementation, I used Djikstra where I greedily pick the largest node but realized that it gave WA for some test cases. &#10;&#10;Learnings -- Use greedy as an optimization for backtracking w/o pruning only if the input constraints are high. In this case, there are only 25 cells with gold, so backtracking was an hint. &#10;Also Djikstra can't be used to find path with the largest total distance." />
     <MESSAGE value="Solve medium and tricky find the sum of absolute differences of an index with all other indexes in an array by considering the contribution of each index separately. Find the contribution by summing up contribution of left and right subarray." />
     <MESSAGE value="Solve hard and extremely trick problem find the smallest no of squares to completely fill a rectangle by backtracking with pruning.&#10;&#10;Learnings -- 1. Backtracking solution was a bit difficult to visualize initially.&#10;2. During pruning, it's efficient to take the possible biggest steps first to prune a lot of branches faster." />
     <MESSAGE value="Solve easy find the node with the value that is closest to the target in BST by recursion and keeping track of the minDiff found so far" />
@@ -607,7 +607,8 @@
     <MESSAGE value="Solve medium find the minimum cost to merge all the sticks into a single stick in minimum cost by using greedy&#10;&#10;Leveraged prior learning of reading about optimal merge algorithm greedy pattern in topcoder." />
     <MESSAGE value="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it." />
     <MESSAGE value="Add possible hint on why we need to fix the index whose location is known correctly. Either the tallest person with no person standing in front of him or the index that was popped most recently." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add possible hint on why we need to fix the index whose location is known correctly. Either the tallest person with no person standing in front of him or the index that was popped most recently." />
+    <MESSAGE value="Simplify code by removing complicated bottom up code and add comment in existing top down code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify code by removing complicated bottom up code and add comment in existing top down code" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
