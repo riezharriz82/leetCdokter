@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00581" summary="Solve hard and extremely trick problem, find the shortest string that contains all permutation of n digits of numbers containing k digits by modelling it as a fucking graph and doing backtracking to generate euler path that visits all edges exactly once.&#10;&#10;I could not think of modelling it as a graph during the thought process, I started to solve it using Trie as it involves prefixes.">
-      <created>1607197150070</created>
-      <option name="number" value="00581" />
-      <option name="presentableId" value="LOCAL-00581" />
-      <option name="project" value="LOCAL" />
-      <updated>1607197150070</updated>
-    </task>
     <task id="LOCAL-00582" summary="Fix grammatical mistake">
       <created>1607270051315</created>
       <option name="number" value="00582" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608588218767</updated>
     </task>
-    <option name="localTasksCounter" value="630" />
+    <task id="LOCAL-00630" summary="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column">
+      <created>1608658750163</created>
+      <option name="number" value="00630" />
+      <option name="presentableId" value="LOCAL-00630" />
+      <option name="project" value="LOCAL" />
+      <updated>1608658750163</updated>
+    </task>
+    <option name="localTasksCounter" value="631" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha during deletion of index from list as deletion of any index other that last index takes linear time, so first swap the value to the last index and then always delete the last index." />
     <MESSAGE value="Solve hard and tricky design data structure which supports insert delete getRandom in O(1) time. List already supports insert and getRandom() in constant time but to delete elements, we need to know the index at which it occurs. We can keep a map to lookup the required index. In order to keep constant time for deletion, need to make sure we delete only from the last to avoid o(n) penalty for deletion in between. Hence swap out the element at last index with value to be removed during deletion." />
     <MESSAGE value="Solve hard find the no of envelopes that can fit inside one another -- variant of finding LIS for 2D array" />
     <MESSAGE value="Solve medium add one to linked list by using recursion as the implicit stack to pass carry digit to the previous node." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Add gotcha in adding extra whitespace at the end of the current sentence as well." />
     <MESSAGE value="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length" />
     <MESSAGE value="Remove complicated code for detecting whether two line segments intersect or not" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove complicated code for detecting whether two line segments intersect or not" />
+    <MESSAGE value="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

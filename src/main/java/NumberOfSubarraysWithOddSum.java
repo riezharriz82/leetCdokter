@@ -27,6 +27,8 @@ public class NumberOfSubarraysWithOddSum {
      * a. If you pick any two odd indices. If there are x odd indices, result will be x C 2 ie x * (x - 1) / 2
      * <p>
      * b. If you pick any two even indices. If there are y even indices, result will be y C 2 ie. y * (y - 1)/ 2
+     * <p>
+     * {@link SumOfAllOddLengthSubarrays} {@link FindNoOfSubarraysWithKOddNumbers} related subarray and math related problems
      */
     public int numOfSubarrays(int[] arr) {
         long even = 1, odd = 0, sum = 0; //even has been initialized with 1 because cumulative sum starts with 0 which is even
