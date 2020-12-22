@@ -14,7 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00582" summary="Fix grammatical mistake">
-      <created>1607270051315</created>
-      <option name="number" value="00582" />
-      <option name="presentableId" value="LOCAL-00582" />
-      <option name="project" value="LOCAL" />
-      <updated>1607270051315</updated>
     </task>
     <task id="LOCAL-00583" summary="Add clarification around why changing the problem statement to &quot;non-decreasing&quot; can introduce cycles in the graph, possibly increasing the time complexity">
       <created>1607288914813</created>
@@ -518,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608658750163</updated>
     </task>
-    <option name="localTasksCounter" value="631" />
+    <task id="LOCAL-00631" summary="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes">
+      <created>1608659386448</created>
+      <option name="number" value="00631" />
+      <option name="presentableId" value="LOCAL-00631" />
+      <option name="project" value="LOCAL" />
+      <updated>1608659386448</updated>
+    </task>
+    <option name="localTasksCounter" value="632" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and tricky design data structure which supports insert delete getRandom in O(1) time. List already supports insert and getRandom() in constant time but to delete elements, we need to know the index at which it occurs. We can keep a map to lookup the required index. In order to keep constant time for deletion, need to make sure we delete only from the last to avoid o(n) penalty for deletion in between. Hence swap out the element at last index with value to be removed during deletion." />
     <MESSAGE value="Solve hard find the no of envelopes that can fit inside one another -- variant of finding LIS for 2D array" />
     <MESSAGE value="Solve medium add one to linked list by using recursion as the implicit stack to pass carry digit to the previous node." />
     <MESSAGE value="Solve hard and extremely trick problem of finding shortest path that visits all nodes such that a node can be visited multiple times using BFS + Bitmasking&#10;&#10;First saw this problem in september, couldn't understand it a bit. Saw a similar problem recently PathWithMaximumGold in which one guy solved it similar to solving this problem. Revisited this problem and could now make sense of the provided solution. Practice makes a man perfect !&#10;&#10;Key thing to note is use BFS for finding shortest path and use set of visited nodes (bitmask) + current node as the key for determining already visited paths." />
@@ -608,7 +606,8 @@
     <MESSAGE value="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length" />
     <MESSAGE value="Remove complicated code for detecting whether two line segments intersect or not" />
     <MESSAGE value="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column" />
+    <MESSAGE value="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
