@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubsequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00585" summary="Solve medium and extremely tricky problem, find the path with minimum effort. Effort here is the max diff between two adjacent elements. Multiple ways of solving this problem, Djikstra, Binary Search or Union Find.">
-      <created>1607360079377</created>
-      <option name="number" value="00585" />
-      <option name="presentableId" value="LOCAL-00585" />
-      <option name="project" value="LOCAL" />
-      <updated>1607360079377</updated>
     </task>
     <task id="LOCAL-00586" summary="Solve medium and extremely tricky problem, find the lexicographically smallest string that is possible by swapping pairs of provided indices any number of times by reducing the problem to connected components. Characters in every component can be sorted individually to get the result.&#10;&#10;I tried solving using greedy but couldn't make it work.">
       <created>1607365896921</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608667952483</updated>
     </task>
-    <option name="localTasksCounter" value="634" />
+    <task id="LOCAL-00634" summary="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS.">
+      <created>1608726181836</created>
+      <option name="number" value="00634" />
+      <option name="presentableId" value="LOCAL-00634" />
+      <option name="project" value="LOCAL" />
+      <updated>1608726181836</updated>
+    </task>
+    <option name="localTasksCounter" value="635" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely trick problem of finding shortest path that visits all nodes such that a node can be visited multiple times using BFS + Bitmasking&#10;&#10;First saw this problem in september, couldn't understand it a bit. Saw a similar problem recently PathWithMaximumGold in which one guy solved it similar to solving this problem. Revisited this problem and could now make sense of the provided solution. Practice makes a man perfect !&#10;&#10;Key thing to note is use BFS for finding shortest path and use set of visited nodes (bitmask) + current node as the key for determining already visited paths." />
     <MESSAGE value="Solve medium and tricky find the largest subset in which each pair of elements divide each other by sorting + checking whether current number can extend result stored in previous index&#10;&#10;Learnings -- In case of subset problems, order isn't important, so check if sorting helps! I was on the right track but didn't sort, hence got WA and then became confused." />
     <MESSAGE value="Solve medium find the no of tuples A,B,C,D in 4 arrays such that sum of tuples is 0 by storing pair wise sum of A+B in one hashmap and pair wise sum of C+D in another hashmap" />
     <MESSAGE value="Solve medium find the earliest moment when everyone becomes friend i.e. when there is only one unique component left using Union Find&#10;&#10;Learnings -- We can stop when uniqueComponents == 1 (init it with N and decrement everytime you perform a union) or when size[root] == N (the last union performed had all the elements in the subtree)" />
@@ -609,7 +607,8 @@
     <MESSAGE value="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes" />
     <MESSAGE value="Solve medium find the nearest right node in binary tree using DFS and keeping track of the current level." />
     <MESSAGE value="Solve medium find all the processes that needs to be killed if we kill a parent process by creating a directed graph of parent -&gt; child processes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find all the processes that needs to be killed if we kill a parent process by creating a directed graph of parent -&gt; child processes." />
+    <MESSAGE value="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
