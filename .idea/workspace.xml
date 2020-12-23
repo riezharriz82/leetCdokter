@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00588" summary="Solve medium find the only edge that is introducing cycles in the tree by using union find algorithm">
-      <created>1607434287449</created>
-      <option name="number" value="00588" />
-      <option name="presentableId" value="LOCAL-00588" />
-      <option name="project" value="LOCAL" />
-      <updated>1607434287449</updated>
-    </task>
     <task id="LOCAL-00589" summary="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm">
       <created>1607434806472</created>
       <option name="number" value="00589" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608729764219</updated>
     </task>
-    <option name="localTasksCounter" value="637" />
+    <task id="LOCAL-00637" summary="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot.">
+      <created>1608735764642</created>
+      <option name="number" value="00637" />
+      <option name="presentableId" value="LOCAL-00637" />
+      <option name="project" value="LOCAL" />
+      <updated>1608735764642</updated>
+    </task>
+    <option name="localTasksCounter" value="638" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the earliest moment when everyone becomes friend i.e. when there is only one unique component left using Union Find&#10;&#10;Learnings -- We can stop when uniqueComponents == 1 (init it with N and decrement everytime you perform a union) or when size[root] == N (the last union performed had all the elements in the subtree)" />
     <MESSAGE value="Solve medium find whether there is a increasing subsequence of size 3 in linear time and constant space. &#10;&#10;In order to solve it using linear space, I kept track of smallest number on the left and largest number on the right and compared each number.&#10;In order to solve in constant space, just keep track of two smallest numbers. If you find a number greater than second largest number, we got a valid triplet." />
     <MESSAGE value="Solve medium and tricky find the largest distance from land to water in a matrix by performing multi source BFS&#10;&#10;Leveraged prior learnings of using multi source BFS when asked to find distance between two sets of points" />
     <MESSAGE value="Solve medium and tricky find the smallest weight that can allow us to ship all packages in &lt;= D days using binary search&#10;&#10;Leveraged prior learnings of using Binary search to solve optimization problems where the answer lies in a bound and verifying the result takes linear time." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS." />
     <MESSAGE value="Solve hard and extremely trick problem find the min cost to connect all the villages, provided you can dig a well at each village independently.&#10;&#10;Trick was to create a hidden node and connect it with all the villages with edge cost as wells[i]. Then proceed with creating a MST from the graph until all nodes including the hidden nodes are visited." />
     <MESSAGE value="Solve medium connect all cities with min cost using Kruskal algorithm to create MST. Kruskal is based on union find algorithm in which we sort all the edges and start performing union operation on sorted edges." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium connect all cities with min cost using Kruskal algorithm to create MST. Kruskal is based on union find algorithm in which we sort all the edges and start performing union operation on sorted edges." />
+    <MESSAGE value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
