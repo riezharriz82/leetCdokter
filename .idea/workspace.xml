@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OptimizeWaterDistributionInAVillage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OptimizeWaterDistributionInAVillage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00586" summary="Solve medium and extremely tricky problem, find the lexicographically smallest string that is possible by swapping pairs of provided indices any number of times by reducing the problem to connected components. Characters in every component can be sorted individually to get the result.&#10;&#10;I tried solving using greedy but couldn't make it work.">
-      <created>1607365896921</created>
-      <option name="number" value="00586" />
-      <option name="presentableId" value="LOCAL-00586" />
-      <option name="project" value="LOCAL" />
-      <updated>1607365896921</updated>
     </task>
     <task id="LOCAL-00587" summary="Solve medium find the number of 1s that does not have 1 in the same row and same column by keeping track of 1's encountered in each row and each column">
       <created>1607366692107</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608726181836</updated>
     </task>
-    <option name="localTasksCounter" value="635" />
+    <task id="LOCAL-00635" summary="Solve hard and extremely trick problem find the min cost to connect all the villages, provided you can dig a well at each village independently.&#10;&#10;Trick was to create a hidden node and connect it with all the villages with edge cost as wells[i]. Then proceed with creating a MST from the graph until all nodes including the hidden nodes are visited.">
+      <created>1608728550156</created>
+      <option name="number" value="00635" />
+      <option name="presentableId" value="LOCAL-00635" />
+      <option name="project" value="LOCAL" />
+      <updated>1608728550157</updated>
+    </task>
+    <option name="localTasksCounter" value="636" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky find the largest subset in which each pair of elements divide each other by sorting + checking whether current number can extend result stored in previous index&#10;&#10;Learnings -- In case of subset problems, order isn't important, so check if sorting helps! I was on the right track but didn't sort, hence got WA and then became confused." />
     <MESSAGE value="Solve medium find the no of tuples A,B,C,D in 4 arrays such that sum of tuples is 0 by storing pair wise sum of A+B in one hashmap and pair wise sum of C+D in another hashmap" />
     <MESSAGE value="Solve medium find the earliest moment when everyone becomes friend i.e. when there is only one unique component left using Union Find&#10;&#10;Learnings -- We can stop when uniqueComponents == 1 (init it with N and decrement everytime you perform a union) or when size[root] == N (the last union performed had all the elements in the subtree)" />
     <MESSAGE value="Solve medium find whether there is a increasing subsequence of size 3 in linear time and constant space. &#10;&#10;In order to solve it using linear space, I kept track of smallest number on the left and largest number on the right and compared each number.&#10;In order to solve in constant space, just keep track of two smallest numbers. If you find a number greater than second largest number, we got a valid triplet." />
@@ -608,7 +608,8 @@
     <MESSAGE value="Solve medium find the nearest right node in binary tree using DFS and keeping track of the current level." />
     <MESSAGE value="Solve medium find all the processes that needs to be killed if we kill a parent process by creating a directed graph of parent -&gt; child processes." />
     <MESSAGE value="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS." />
+    <MESSAGE value="Solve hard and extremely trick problem find the min cost to connect all the villages, provided you can dig a well at each village independently.&#10;&#10;Trick was to create a hidden node and connect it with all the villages with edge cost as wells[i]. Then proceed with creating a MST from the graph until all nodes including the hidden nodes are visited." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely trick problem find the min cost to connect all the villages, provided you can dig a well at each village independently.&#10;&#10;Trick was to create a hidden node and connect it with all the villages with edge cost as wells[i]. Then proceed with creating a MST from the graph until all nodes including the hidden nodes are visited." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

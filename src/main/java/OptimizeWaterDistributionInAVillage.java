@@ -39,7 +39,7 @@ public class OptimizeWaterDistributionInAVillage {
      * the well with lowest cost and then tried to create MST until the cost to connect pipe > placing a well
      * My plan was to try to create MST from each unvisited well, I don't know whether it will work or not !
      * <p>
-     * TODO use krushkal based on union find algorithm to solve this question as well
+     * To see kruskal implementation for MST which is based on union find algorithm, refer to {@link ConnectingCitiesWithMinCost}
      * {@link MinimumCostToConnectSticks} related minimum spanning tree problem
      */
     public int minCostToSupplyWater(int n, int[] wells, int[][] pipes) {
