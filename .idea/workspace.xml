@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00589" summary="Solve medium find the max time required to send message from a node to all other nodes using djikstra algorithm">
-      <created>1607434806472</created>
-      <option name="number" value="00589" />
-      <option name="presentableId" value="LOCAL-00589" />
-      <option name="project" value="LOCAL" />
-      <updated>1607434806472</updated>
-    </task>
     <task id="LOCAL-00590" summary="Add hint of using binary search as an alternate way of solving this problem">
       <created>1607437187778</created>
       <option name="number" value="00590" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608735764642</updated>
     </task>
-    <option name="localTasksCounter" value="638" />
+    <task id="LOCAL-00638" summary="Solve medium and extremely tricky problem find the number of free regions cut up slashes in empty grid by considering the grid as an image and upscaling the provided grid to 3 times the input size. This makes identifying the border easy.&#10;Once upscaling is done, perform DFS to identify no of islands.">
+      <created>1608755758960</created>
+      <option name="number" value="00638" />
+      <option name="presentableId" value="LOCAL-00638" />
+      <option name="project" value="LOCAL" />
+      <updated>1608755758960</updated>
+    </task>
+    <option name="localTasksCounter" value="639" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether there is a increasing subsequence of size 3 in linear time and constant space. &#10;&#10;In order to solve it using linear space, I kept track of smallest number on the left and largest number on the right and compared each number.&#10;In order to solve in constant space, just keep track of two smallest numbers. If you find a number greater than second largest number, we got a valid triplet." />
     <MESSAGE value="Solve medium and tricky find the largest distance from land to water in a matrix by performing multi source BFS&#10;&#10;Leveraged prior learnings of using multi source BFS when asked to find distance between two sets of points" />
     <MESSAGE value="Solve medium and tricky find the smallest weight that can allow us to ship all packages in &lt;= D days using binary search&#10;&#10;Leveraged prior learnings of using Binary search to solve optimization problems where the answer lies in a bound and verifying the result takes linear time." />
     <MESSAGE value="Update hard and extremely trick find the maximum of minimum sweetness that can satisfy k+1 persons using binary search &#10;&#10;I was not able to understand the logic of finding how many persons can be satisfied by choosing a specific min sweetness. The trick was to increase the persons satisfied count only if curSweetness &gt;= target sweetness. This way if there is some trailing subarray that can't satisfy a person won't get included in the overall count." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve hard and extremely trick problem find the min cost to connect all the villages, provided you can dig a well at each village independently.&#10;&#10;Trick was to create a hidden node and connect it with all the villages with edge cost as wells[i]. Then proceed with creating a MST from the graph until all nodes including the hidden nodes are visited." />
     <MESSAGE value="Solve medium connect all cities with min cost using Kruskal algorithm to create MST. Kruskal is based on union find algorithm in which we sort all the edges and start performing union operation on sorted edges." />
     <MESSAGE value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
+    <MESSAGE value="Solve medium and extremely tricky problem find the number of free regions cut up slashes in empty grid by considering the grid as an image and upscaling the provided grid to 3 times the input size. This makes identifying the border easy.&#10;Once upscaling is done, perform DFS to identify no of islands." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky problem find the number of free regions cut up slashes in empty grid by considering the grid as an image and upscaling the provided grid to 3 times the input size. This makes identifying the border easy.&#10;Once upscaling is done, perform DFS to identify no of islands." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
