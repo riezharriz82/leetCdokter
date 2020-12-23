@@ -14,8 +14,35 @@ import java.util.Arrays;
  * Input: text1 = "abcde", text2 = "ace"
  * Output: 3
  * Explanation: The longest common subsequence is "ace" and its length is 3.
+ * <p>
+ * Another question that indirectly uses LCS
+ * https://leetcode.com/discuss/interview-question/981597/rubrik-oa-question-minimum-operations-to-transform-array
+ * <p>
+ * Given two arrays of size N each containing the elements 1 to N, find the minimum number of operations needed to transform the second array into the first.
+ * <p>
+ * An operation is defined as:
+ * Taking any current value in an array and moving it to the beginning or end.
+ * <p>
+ * Example:
+ * Turn Array2 into Array1
+ * <p>
+ * Array1 = [4,2,3,1,5,6]
+ * Array2 = [3,1,4,6,5,2]
+ * <p>
+ * Returns 3:
+ * <p>
+ * Operation 1: Move 2 to beginning.
+ * Array2 = [2,3,1,4,6,5]
+ * <p>
+ * Operation 2: Move 4 to beginning.
+ * Array2 = [4,2,3,1,6,5]
+ * <p>
+ * Operation 3: Move 6 to end:
+ * Array2 = [4,2,3,1,5,6]
  */
 public class LongestCommonSubsequence {
+    int ans;
+
     public int longestCommonSubsequenceSimplified(String text1, String text2) {
         int m = text1.length(), n = text2.length();
         int[][] dp = new int[m + 1][n + 1];
@@ -33,8 +60,6 @@ public class LongestCommonSubsequence {
         }
         return max;
     }
-
-    int ans;
 
     /**
      * Top down code is similar to the one used in {@link LongestCommonSubarray}
