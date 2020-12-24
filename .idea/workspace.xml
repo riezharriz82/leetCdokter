@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00594" summary="Simplify finding whether an array is a mountain array or not by reducing the problem to finding length of longest increasing subarray from left and right">
-      <created>1607613521190</created>
-      <option name="number" value="00594" />
-      <option name="presentableId" value="LOCAL-00594" />
-      <option name="project" value="LOCAL" />
-      <updated>1607613521190</updated>
-    </task>
     <task id="LOCAL-00595" summary="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal.">
       <created>1607614940109</created>
       <option name="number" value="00595" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608829992351</updated>
     </task>
-    <option name="localTasksCounter" value="643" />
+    <task id="LOCAL-00643" summary="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back.">
+      <created>1608844278127</created>
+      <option name="number" value="00643" />
+      <option name="presentableId" value="LOCAL-00643" />
+      <option name="project" value="LOCAL" />
+      <updated>1608844278127</updated>
+    </task>
+    <option name="localTasksCounter" value="644" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number.&#10;&#10;Learnings -- 1. Median minimizes the sum of absolute differences and mean minimizes the sum of squared differences.&#10;2. Median can be calculated without sorting by using quick select in linear time (use median of median as a further optimization step)" />
     <MESSAGE value="Solve medium and extremely tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number in a 2D array.&#10;&#10;Learnings -- Since we need to minimize manhattan distance, median of 2D array can be calculated by separately calculating median of x and y indices." />
     <MESSAGE value="Solve medium and extremely tricky find the max no of moves required to make sure no two stones share the same row or same column by DFS and union find &#10;&#10;Trick to solve the problem was to find no of connected components and just keep only one stone of each component. So answer would be total stones - no of components&#10;&#10;Learnings -- 1. Sometimes 2D points can be visualized as 0,1 in a 2D grid, which can be expanded to a graph problem if we can visualize the edges correctly. Here two points are connected if they are on the same row or same column. &#10;2. Union find on 2D points is a bit tricky to visualize. Here we need to union row and col of current index so that in future if we get a new index with the same row and different col, we can still make it part of the same component." />
     <MESSAGE value="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve hard find whether the frog can reach the end by jumping k, k-1 or k+1 steps (k here is the last jump performed, initially k = 1) by using recursion + memoization&#10;&#10;Thought this would be a tough problem but was pleasantly surprised." />
     <MESSAGE value="Solve medium find the maximum length of increasing pairs by solving it similar to LIS or by considering it as an interval scheduling problem&#10;&#10;Learnings -- When provided a set of points, sometimes it's simpler to solve if we visualize it as an interval scheduling problem." />
     <MESSAGE value="Solve medium and tricky find all the strobogrammatic numbers of a specific length using recursion&#10;&#10;Leveraged prior learnings of solving ConfusingNumber that only digits 0,1,6,8,9 can contribute to a valid number." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find all the strobogrammatic numbers of a specific length using recursion&#10;&#10;Leveraged prior learnings of solving ConfusingNumber that only digits 0,1,6,8,9 can contribute to a valid number." />
+    <MESSAGE value="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
