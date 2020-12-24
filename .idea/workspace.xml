@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00591" summary="Add missing sample input to the problem statement">
-      <created>1607441323391</created>
-      <option name="number" value="00591" />
-      <option name="presentableId" value="LOCAL-00591" />
-      <option name="project" value="LOCAL" />
-      <updated>1607441323391</updated>
-    </task>
     <task id="LOCAL-00592" summary="Add clarification around why boolean flag was not memoized, because two players can't have the same state ever.">
       <created>1607452230099</created>
       <option name="number" value="00592" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608758037051</updated>
     </task>
-    <option name="localTasksCounter" value="640" />
+    <task id="LOCAL-00640" summary="Solve hard find whether the frog can reach the end by jumping k, k-1 or k+1 steps (k here is the last jump performed, initially k = 1) by using recursion + memoization&#10;&#10;Thought this would be a tough problem but was pleasantly surprised.">
+      <created>1608814542128</created>
+      <option name="number" value="00640" />
+      <option name="presentableId" value="LOCAL-00640" />
+      <option name="project" value="LOCAL" />
+      <updated>1608814542128</updated>
+    </task>
+    <option name="localTasksCounter" value="641" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky find the smallest weight that can allow us to ship all packages in &lt;= D days using binary search&#10;&#10;Leveraged prior learnings of using Binary search to solve optimization problems where the answer lies in a bound and verifying the result takes linear time." />
     <MESSAGE value="Update hard and extremely trick find the maximum of minimum sweetness that can satisfy k+1 persons using binary search &#10;&#10;I was not able to understand the logic of finding how many persons can be satisfied by choosing a specific min sweetness. The trick was to increase the persons satisfied count only if curSweetness &gt;= target sweetness. This way if there is some trailing subarray that can't satisfy a person won't get included in the overall count." />
     <MESSAGE value="Solve hard and tricky find the shortest distance of 0 (land) from all the 1 (building) by iteratively performing BFS from each 1 and updating the min distance to reach 0.&#10;&#10;Leveraged prior learnings of always performing BFS from outside nodes (1) rather than inside nodes (0). &#10;Also thought that probably multi bfs would have been faster but it's not, because we have to keep track of distances from all 1's rather than finding the distance from nearest 1." />
     <MESSAGE value="Solve medium and tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number.&#10;&#10;Learnings -- 1. Median minimizes the sum of absolute differences and mean minimizes the sum of squared differences.&#10;2. Median can be calculated without sorting by using quick select in linear time (use median of median as a further optimization step)" />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
     <MESSAGE value="Solve medium and extremely tricky problem find the number of free regions cut up slashes in empty grid by considering the grid as an image and upscaling the provided grid to 3 times the input size. This makes identifying the border easy.&#10;Once upscaling is done, perform DFS to identify no of islands." />
     <MESSAGE value="Solve medium and tricky problem (if using DSU as an optimization) find whether two sentences are similar or not if each word in a sentence can be transformed to corresponding word in another sentence if the words are connected&#10;&#10;DFS or Union Find can be used to find whether two words are connected, DSU performs better!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem (if using DSU as an optimization) find whether two sentences are similar or not if each word in a sentence can be transformed to corresponding word in another sentence if the words are connected&#10;&#10;DFS or Union Find can be used to find whether two words are connected, DSU performs better!" />
+    <MESSAGE value="Solve hard find whether the frog can reach the end by jumping k, k-1 or k+1 steps (k here is the last jump performed, initially k = 1) by using recursion + memoization&#10;&#10;Thought this would be a tough problem but was pleasantly surprised." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard find whether the frog can reach the end by jumping k, k-1 or k+1 steps (k here is the last jump performed, initially k = 1) by using recursion + memoization&#10;&#10;Thought this would be a tough problem but was pleasantly surprised." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
