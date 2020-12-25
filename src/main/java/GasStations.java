@@ -34,7 +34,7 @@ public class GasStations {
      * reset the start to the next index and repeat the process
      * <p>
      * Since the problem statement guarantees that the solution would be unique, greedy works here.
-     *
+     * <p>
      * Awesome explanation video: https://www.youtube.com/watch?v=nTKdYm_5-ZY&list=PLupD_xFct8mETlGFlLVrwbLwcxczbgWRM&index=8
      * Keep track of surplus and deficit at each index, any node with surplus < deficit can't be starting node.
      */
@@ -52,7 +52,7 @@ public class GasStations {
         for (int i = 0; i < n; i++) {
             tank += (gas[i] - cost[i]);
             if (tank < 0) {
-                tank = 0;
+                tank = 0; //very important to reset the tank back to 0
                 start = i + 1;
             }
         }

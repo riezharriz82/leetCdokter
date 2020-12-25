@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium find the maximum length of pairs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GasStations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GasStations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00597" summary="Solve medium and tricky tree problem, find the lca of all nodes present at the last level using 2 pass approach. &#10;1st pass to find the max depth. 2nd pass to find whether the left/right subtree of current node are at the max depth, if yes, current node is a candidate lca.">
-      <created>1607771807171</created>
-      <option name="number" value="00597" />
-      <option name="presentableId" value="LOCAL-00597" />
-      <option name="project" value="LOCAL" />
-      <updated>1607771807171</updated>
     </task>
     <task id="LOCAL-00598" summary="Add reference of another question discussed on discuss related to finding min operations required to flip an boolean expression by divide and conquer strategy.&#10;&#10;Learnings -- In case of problems related with expression, divide and conquer seems to be the optimal strategy as it divides the problem into independent subproblem">
       <created>1607858015064</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608904076492</updated>
     </task>
-    <option name="localTasksCounter" value="646" />
+    <task id="LOCAL-00646" summary="Solve medium and tricky find single element in sorted array such that all other elements repeat twice using binary search.&#10;&#10;Trick was to note that numbers on the left side of the target have even and odd indices with same value whereas on the right, odd and even indices have the same value. Use this fact to reduce this to T,T,T,F,F,F,F along with handling edge cases when target is the first or last element of the array.">
+      <created>1608917839574</created>
+      <option name="number" value="00646" />
+      <option name="presentableId" value="LOCAL-00646" />
+      <option name="project" value="LOCAL" />
+      <updated>1608917839575</updated>
+    </task>
+    <option name="localTasksCounter" value="647" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes." />
     <MESSAGE value="Solve medium find the minimum cost to merge all the sticks into a single stick in minimum cost by using greedy&#10;&#10;Leveraged prior learning of reading about optimal merge algorithm greedy pattern in topcoder." />
     <MESSAGE value="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it." />
     <MESSAGE value="Add possible hint on why we need to fix the index whose location is known correctly. Either the tallest person with no person standing in front of him or the index that was popped most recently." />
@@ -608,7 +608,8 @@
     <MESSAGE value="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back." />
     <MESSAGE value="Solve medium and tricky digit dp problem, find the count of numbers with unique digit &lt; 10^x. &#10;It was more of a math related problem rather than DP. Initially we have 10 choices and as we fix numbers, we are left with one less choice. Special case for first digit as it can't have 0." />
     <MESSAGE value="Solve medium find the zig-zag diagonal traversal of a matrix by leveraging all elements of same diagonals have same identifier, either row+col or row-col." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the zig-zag diagonal traversal of a matrix by leveraging all elements of same diagonals have same identifier, either row+col or row-col." />
+    <MESSAGE value="Solve medium and tricky find single element in sorted array such that all other elements repeat twice using binary search.&#10;&#10;Trick was to note that numbers on the left side of the target have even and odd indices with same value whereas on the right, odd and even indices have the same value. Use this fact to reduce this to T,T,T,F,F,F,F along with handling edge cases when target is the first or last element of the array.&#10;While solving binary search cases, consider each index as mid and try to solve it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find single element in sorted array such that all other elements repeat twice using binary search.&#10;&#10;Trick was to note that numbers on the left side of the target have even and odd indices with same value whereas on the right, odd and even indices have the same value. Use this fact to reduce this to T,T,T,F,F,F,F along with handling edge cases when target is the first or last element of the array.&#10;While solving binary search cases, consider each index as mid and try to solve it." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
