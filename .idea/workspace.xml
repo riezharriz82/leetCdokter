@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00596" summary="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end.">
-      <created>1607717198153</created>
-      <option name="number" value="00596" />
-      <option name="presentableId" value="LOCAL-00596" />
-      <option name="project" value="LOCAL" />
-      <updated>1607717198153</updated>
-    </task>
     <task id="LOCAL-00597" summary="Solve medium and tricky tree problem, find the lca of all nodes present at the last level using 2 pass approach. &#10;1st pass to find the max depth. 2nd pass to find whether the left/right subtree of current node are at the max depth, if yes, current node is a candidate lca.">
       <created>1607771807171</created>
       <option name="number" value="00597" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608848942495</updated>
     </task>
-    <option name="localTasksCounter" value="645" />
+    <task id="LOCAL-00645" summary="Solve medium find the zig-zag diagonal traversal of a matrix by leveraging all elements of same diagonals have same identifier, either row+col or row-col.">
+      <created>1608904076492</created>
+      <option name="number" value="00645" />
+      <option name="presentableId" value="LOCAL-00645" />
+      <option name="project" value="LOCAL" />
+      <updated>1608904076492</updated>
+    </task>
+    <option name="localTasksCounter" value="646" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky find the max no of moves required to make sure no two stones share the same row or same column by DFS and union find &#10;&#10;Trick to solve the problem was to find no of connected components and just keep only one stone of each component. So answer would be total stones - no of components&#10;&#10;Learnings -- 1. Sometimes 2D points can be visualized as 0,1 in a 2D grid, which can be expanded to a graph problem if we can visualize the edges correctly. Here two points are connected if they are on the same row or same column. &#10;2. Union find on 2D points is a bit tricky to visualize. Here we need to union row and col of current index so that in future if we get a new index with the same row and different col, we can still make it part of the same component." />
     <MESSAGE value="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes." />
     <MESSAGE value="Solve medium find the minimum cost to merge all the sticks into a single stick in minimum cost by using greedy&#10;&#10;Leveraged prior learning of reading about optimal merge algorithm greedy pattern in topcoder." />
     <MESSAGE value="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve medium and tricky find all the strobogrammatic numbers of a specific length using recursion&#10;&#10;Leveraged prior learnings of solving ConfusingNumber that only digits 0,1,6,8,9 can contribute to a valid number." />
     <MESSAGE value="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back." />
     <MESSAGE value="Solve medium and tricky digit dp problem, find the count of numbers with unique digit &lt; 10^x. &#10;It was more of a math related problem rather than DP. Initially we have 10 choices and as we fix numbers, we are left with one less choice. Special case for first digit as it can't have 0." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky digit dp problem, find the count of numbers with unique digit &lt; 10^x. &#10;It was more of a math related problem rather than DP. Initially we have 10 choices and as we fix numbers, we are left with one less choice. Special case for first digit as it can't have 0." />
+    <MESSAGE value="Solve medium find the zig-zag diagonal traversal of a matrix by leveraging all elements of same diagonals have same identifier, either row+col or row-col." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the zig-zag diagonal traversal of a matrix by leveraging all elements of same diagonals have same identifier, either row+col or row-col." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
