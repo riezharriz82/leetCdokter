@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00595" summary="Solve medium implement an iterator for iterating BST in inorder traversal. My implementation took o(n) space as I dumped all the contents of BST in a linked list but it can be optimized to o(h) space by doing iterative inorder traversal.">
-      <created>1607614940109</created>
-      <option name="number" value="00595" />
-      <option name="presentableId" value="LOCAL-00595" />
-      <option name="project" value="LOCAL" />
-      <updated>1607614940109</updated>
-    </task>
     <task id="LOCAL-00596" summary="Solve medium remove duplicates from a sorted array in place by overwriting the duplicate values with INFINITY in first pass. In second pass, we overwrite the index only if current value is not INFINITY&#10;&#10;In my initial solution after overwriting to INFINITY, I directly sorted the array to make the larger values go at the end.">
       <created>1607717198153</created>
       <option name="number" value="00596" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608844278127</updated>
     </task>
-    <option name="localTasksCounter" value="644" />
+    <task id="LOCAL-00644" summary="Solve medium and tricky digit dp problem, find the count of numbers with unique digit &lt; 10^x. &#10;It was more of a math related problem rather than DP. Initially we have 10 choices and as we fix numbers, we are left with one less choice. Special case for first digit as it can't have 0.">
+      <created>1608848942495</created>
+      <option name="number" value="00644" />
+      <option name="presentableId" value="LOCAL-00644" />
+      <option name="project" value="LOCAL" />
+      <updated>1608848942495</updated>
+    </task>
+    <option name="localTasksCounter" value="645" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number in a 2D array.&#10;&#10;Learnings -- Since we need to minimize manhattan distance, median of 2D array can be calculated by separately calculating median of x and y indices." />
     <MESSAGE value="Solve medium and extremely tricky find the max no of moves required to make sure no two stones share the same row or same column by DFS and union find &#10;&#10;Trick to solve the problem was to find no of connected components and just keep only one stone of each component. So answer would be total stones - no of components&#10;&#10;Learnings -- 1. Sometimes 2D points can be visualized as 0,1 in a 2D grid, which can be expanded to a graph problem if we can visualize the edges correctly. Here two points are connected if they are on the same row or same column. &#10;2. Union find on 2D points is a bit tricky to visualize. Here we need to union row and col of current index so that in future if we get a new index with the same row and different col, we can still make it part of the same component." />
     <MESSAGE value="Solve medium and tricky problem find the no of edges required to make entire network connected by finding no of connected components using union find. If there are 5 components, you will need 4 extra edges to connect them.&#10;&#10;Leveraged prior learning that a graph has exactly n-1 edges, so at least we need n-1 connections to connect all the nodes." />
     <MESSAGE value="Solve medium find the minimum cost to merge all the sticks into a single stick in minimum cost by using greedy&#10;&#10;Leveraged prior learning of reading about optimal merge algorithm greedy pattern in topcoder." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve medium find the maximum length of increasing pairs by solving it similar to LIS or by considering it as an interval scheduling problem&#10;&#10;Learnings -- When provided a set of points, sometimes it's simpler to solve if we visualize it as an interval scheduling problem." />
     <MESSAGE value="Solve medium and tricky find all the strobogrammatic numbers of a specific length using recursion&#10;&#10;Leveraged prior learnings of solving ConfusingNumber that only digits 0,1,6,8,9 can contribute to a valid number." />
     <MESSAGE value="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back." />
+    <MESSAGE value="Solve medium and tricky digit dp problem, find the count of numbers with unique digit &lt; 10^x. &#10;It was more of a math related problem rather than DP. Initially we have 10 choices and as we fix numbers, we are left with one less choice. Special case for first digit as it can't have 0." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky digit dp problem, find the count of numbers with unique digit &lt; 10^x. &#10;It was more of a math related problem rather than DP. Initially we have 10 choices and as we fix numbers, we are left with one less choice. Special case for first digit as it can't have 0." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
