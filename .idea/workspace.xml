@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium find the maximum length of pairs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GasStations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GasStations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00598" summary="Add reference of another question discussed on discuss related to finding min operations required to flip an boolean expression by divide and conquer strategy.&#10;&#10;Learnings -- In case of problems related with expression, divide and conquer seems to be the optimal strategy as it divides the problem into independent subproblem">
-      <created>1607858015064</created>
-      <option name="number" value="00598" />
-      <option name="presentableId" value="LOCAL-00598" />
-      <option name="project" value="LOCAL" />
-      <updated>1607858015065</updated>
     </task>
     <task id="LOCAL-00599" summary="Solve hard and tricky find the minimum time required to reach target node given you can traverse a cell only if current time &gt;= cell value. We need to minimize the total time required. So we need to minimize the largest value in the path.&#10;&#10;Leveraged prior learnings of solving this problems using Greedy/Djikstra. Reminder to myself to not use Djikstra to solve path with maximum total cost / PathWithMaximumGold">
       <created>1607861774773</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608917839575</updated>
     </task>
-    <option name="localTasksCounter" value="647" />
+    <task id="LOCAL-00647" summary="Add gotcha around resetting the tank to 0, if current station has negative tank at current index i.e gas[i] - cost[i] is negative">
+      <created>1608925041503</created>
+      <option name="number" value="00647" />
+      <option name="presentableId" value="LOCAL-00647" />
+      <option name="project" value="LOCAL" />
+      <updated>1608925041503</updated>
+    </task>
+    <option name="localTasksCounter" value="648" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the minimum cost to merge all the sticks into a single stick in minimum cost by using greedy&#10;&#10;Leveraged prior learning of reading about optimal merge algorithm greedy pattern in topcoder." />
     <MESSAGE value="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it." />
     <MESSAGE value="Add possible hint on why we need to fix the index whose location is known correctly. Either the tallest person with no person standing in front of him or the index that was popped most recently." />
     <MESSAGE value="Simplify code by removing complicated bottom up code and add comment in existing top down code" />
@@ -609,7 +607,8 @@
     <MESSAGE value="Solve medium and tricky digit dp problem, find the count of numbers with unique digit &lt; 10^x. &#10;It was more of a math related problem rather than DP. Initially we have 10 choices and as we fix numbers, we are left with one less choice. Special case for first digit as it can't have 0." />
     <MESSAGE value="Solve medium find the zig-zag diagonal traversal of a matrix by leveraging all elements of same diagonals have same identifier, either row+col or row-col." />
     <MESSAGE value="Solve medium and tricky find single element in sorted array such that all other elements repeat twice using binary search.&#10;&#10;Trick was to note that numbers on the left side of the target have even and odd indices with same value whereas on the right, odd and even indices have the same value. Use this fact to reduce this to T,T,T,F,F,F,F along with handling edge cases when target is the first or last element of the array.&#10;While solving binary search cases, consider each index as mid and try to solve it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find single element in sorted array such that all other elements repeat twice using binary search.&#10;&#10;Trick was to note that numbers on the left side of the target have even and odd indices with same value whereas on the right, odd and even indices have the same value. Use this fact to reduce this to T,T,T,F,F,F,F along with handling edge cases when target is the first or last element of the array.&#10;While solving binary search cases, consider each index as mid and try to solve it." />
+    <MESSAGE value="Add gotcha around resetting the tank to 0, if current station has negative tank at current index i.e gas[i] - cost[i] is negative" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha around resetting the tank to 0, if current station has negative tank at current index i.e gas[i] - cost[i] is negative" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
