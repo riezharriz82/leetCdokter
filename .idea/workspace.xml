@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00599" summary="Solve hard and tricky find the minimum time required to reach target node given you can traverse a cell only if current time &gt;= cell value. We need to minimize the total time required. So we need to minimize the largest value in the path.&#10;&#10;Leveraged prior learnings of solving this problems using Greedy/Djikstra. Reminder to myself to not use Djikstra to solve path with maximum total cost / PathWithMaximumGold">
-      <created>1607861774773</created>
-      <option name="number" value="00599" />
-      <option name="presentableId" value="LOCAL-00599" />
-      <option name="project" value="LOCAL" />
-      <updated>1607861774774</updated>
-    </task>
     <task id="LOCAL-00600" summary="Solve medium and tricky find the path with the largest total cost. In my initial implementation, I used Djikstra where I greedily pick the largest node but realized that it gave WA for some test cases. &#10;&#10;Learnings -- Use greedy as an optimization for backtracking w/o pruning only if the input constraints are high. In this case, there are only 25 cells with gold, so backtracking was an hint. &#10;Also Djikstra can't be used to find path with the largest total distance.">
       <created>1607862237434</created>
       <option name="number" value="00600" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608925041503</updated>
     </task>
-    <option name="localTasksCounter" value="648" />
+    <task id="LOCAL-00648" summary="Solve medium and extremely tricky find the maximum index you can reach provided a set of bricks and ladders. Given constraint screams of greedy. Trick was to use ladders at the current place or at some previous place, whichever gives the most amount of bricks back.&#10;This travel back in time and correct the mistake is a new pattern which I am seeing today.">
+      <created>1608926456682</created>
+      <option name="number" value="00648" />
+      <option name="presentableId" value="LOCAL-00648" />
+      <option name="project" value="LOCAL" />
+      <updated>1608926456682</updated>
+    </task>
+    <option name="localTasksCounter" value="649" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it." />
     <MESSAGE value="Add possible hint on why we need to fix the index whose location is known correctly. Either the tallest person with no person standing in front of him or the index that was popped most recently." />
     <MESSAGE value="Simplify code by removing complicated bottom up code and add comment in existing top down code" />
     <MESSAGE value="Simplify the code by relying on no of splits performed rather than number of chunks created." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve medium find the zig-zag diagonal traversal of a matrix by leveraging all elements of same diagonals have same identifier, either row+col or row-col." />
     <MESSAGE value="Solve medium and tricky find single element in sorted array such that all other elements repeat twice using binary search.&#10;&#10;Trick was to note that numbers on the left side of the target have even and odd indices with same value whereas on the right, odd and even indices have the same value. Use this fact to reduce this to T,T,T,F,F,F,F along with handling edge cases when target is the first or last element of the array.&#10;While solving binary search cases, consider each index as mid and try to solve it." />
     <MESSAGE value="Add gotcha around resetting the tank to 0, if current station has negative tank at current index i.e gas[i] - cost[i] is negative" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha around resetting the tank to 0, if current station has negative tank at current index i.e gas[i] - cost[i] is negative" />
+    <MESSAGE value="Solve medium and extremely tricky find the maximum index you can reach provided a set of bricks and ladders. Given constraint screams of greedy. Trick was to use ladders at the current place or at some previous place, whichever gives the most amount of bricks back.&#10;This travel back in time and correct the mistake is a new pattern which I am seeing today." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find the maximum index you can reach provided a set of bricks and ladders. Given constraint screams of greedy. Trick was to use ladders at the current place or at some previous place, whichever gives the most amount of bricks back.&#10;This travel back in time and correct the mistake is a new pattern which I am seeing today." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
