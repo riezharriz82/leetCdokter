@@ -102,7 +102,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
+  <component name="RunManager" selected="Application.JumpGame4">
     <configuration name="DivideChocolates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DivideChocolates" />
       <module name="leetcode-practice" />
@@ -110,8 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforces.Main" />
+    <configuration name="JumpGame4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JumpGame4" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,20 +149,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.DivideChocolates" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="Java Scratch.SegmentTree" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="Application.JumpGame4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JumpGame4" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.DivideChocolates" />
         <item itemvalue="Java Scratch.SegmentTree" />
         <item itemvalue="Java Scratch.Scratch (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
