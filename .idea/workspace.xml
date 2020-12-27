@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00605" summary="Add gotcha during deletion of index from list as deletion of any index other that last index takes linear time, so first swap the value to the last index and then always delete the last index.">
-      <created>1607883182482</created>
-      <option name="number" value="00605" />
-      <option name="presentableId" value="LOCAL-00605" />
-      <option name="project" value="LOCAL" />
-      <updated>1607883182482</updated>
-    </task>
     <task id="LOCAL-00606" summary="Solve hard and tricky design data structure which supports insert delete getRandom in O(1) time. List already supports insert and getRandom() in constant time but to delete elements, we need to know the index at which it occurs. We can keep a map to lookup the required index. In order to keep constant time for deletion, need to make sure we delete only from the last to avoid o(n) penalty for deletion in between. Hence swap out the element at last index with value to be removed during deletion.">
       <created>1607956372268</created>
       <option name="number" value="00606" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609078933642</updated>
     </task>
-    <option name="localTasksCounter" value="654" />
+    <task id="LOCAL-00654" summary="Solve hard and extremely tricky find count of confusing numbers &lt;= n, a number is said to be confusing, if it's rotated 180 deg it's still valid but it should be different than input number &#10;&#10;Initially I solved it with backtracking by fixing digits one at a time using [0,1,6,8,9]. Took ~600 ms.&#10;Then found all the valid numbers with digit [0,1,6,8,9] &lt;= n. Then found strobogrammatic numbers &lt;= n. Result is a - b.&#10;This hard problem is combination of two hard problems. EPIC !">
+      <created>1609104431967</created>
+      <option name="number" value="00654" />
+      <option name="presentableId" value="LOCAL-00654" />
+      <option name="project" value="LOCAL" />
+      <updated>1609104431967</updated>
+    </task>
+    <option name="localTasksCounter" value="655" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Remove complicated code for detecting whether two line segments intersect or not" />
     <MESSAGE value="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column" />
     <MESSAGE value="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes" />
     <MESSAGE value="Solve medium find the nearest right node in binary tree using DFS and keeping track of the current level." />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve medium and tricky find the min no of moves required by knight to reach a target cell using bidirectional bfs. Normal BFS times out. Can be solved in O(1) using maths :D but that's too tough to solve in interview.&#10;&#10;Leveraged prior learnings of using bidirectional BFS." />
     <MESSAGE value="Add clarification around why sorting is required because we need to pick a set of valid envelopes, rather than a subsequence" />
     <MESSAGE value="Solve easy find whether a number is strobogrammatic or not using two pointers. Remember that only 0,1,6,8,9 can contribute to a number being valid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether a number is strobogrammatic or not using two pointers. Remember that only 0,1,6,8,9 can contribute to a number being valid" />
+    <MESSAGE value="Solve hard and extremely tricky find count of confusing numbers &lt;= n, a number is said to be confusing, if it's rotated 180 deg it's still valid but it should be different than input number &#10;&#10;Initially I solved it with backtracking by fixing digits one at a time using [0,1,6,8,9]. Took ~600 ms.&#10;Then found all the valid numbers with digit [0,1,6,8,9] &lt;= n. Then found strobogrammatic numbers &lt;= n. Result is a - b.&#10;This hard problem is combination of two hard problems. EPIC !" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky find count of confusing numbers &lt;= n, a number is said to be confusing, if it's rotated 180 deg it's still valid but it should be different than input number &#10;&#10;Initially I solved it with backtracking by fixing digits one at a time using [0,1,6,8,9]. Took ~600 ms.&#10;Then found all the valid numbers with digit [0,1,6,8,9] &lt;= n. Then found strobogrammatic numbers &lt;= n. Result is a - b.&#10;This hard problem is combination of two hard problems. EPIC !" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
