@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00604" summary="Solve hard problem which reduces to split the array into d subarrays such that sum of maximum of each subarray is minimized by recursion + memoization.&#10;&#10;Leveraged prior learnings of solving such problems by making cuts at all possible places and keeping track of min sum so far.">
-      <created>1607881661086</created>
-      <option name="number" value="00604" />
-      <option name="presentableId" value="LOCAL-00604" />
-      <option name="project" value="LOCAL" />
-      <updated>1607881661086</updated>
-    </task>
     <task id="LOCAL-00605" summary="Add gotcha during deletion of index from list as deletion of any index other that last index takes linear time, so first swap the value to the last index and then always delete the last index.">
       <created>1607883182482</created>
       <option name="number" value="00605" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609074328537</updated>
     </task>
-    <option name="localTasksCounter" value="653" />
+    <task id="LOCAL-00653" summary="Solve easy find whether a number is strobogrammatic or not using two pointers. Remember that only 0,1,6,8,9 can contribute to a number being valid">
+      <created>1609078933642</created>
+      <option name="number" value="00653" />
+      <option name="presentableId" value="LOCAL-00653" />
+      <option name="project" value="LOCAL" />
+      <updated>1609078933642</updated>
+    </task>
+    <option name="localTasksCounter" value="654" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length" />
     <MESSAGE value="Remove complicated code for detecting whether two line segments intersect or not" />
     <MESSAGE value="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column" />
     <MESSAGE value="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes" />
@@ -608,7 +607,8 @@
     <MESSAGE value="Solve hard and a bit tricky find the min jumps required to reach the last index given that you can jump to i-1, i+1 or any other index with the same value using BFS and biDirectional BFS&#10;&#10;Learnings -- Finally implemented Bidirectional BFS after keeping it in my todo, keep alternating between forward queue and backward queue by performing size check and remember to check whether any neighbour of current node exists in other queue or not." />
     <MESSAGE value="Solve medium and tricky find the min no of moves required by knight to reach a target cell using bidirectional bfs. Normal BFS times out. Can be solved in O(1) using maths :D but that's too tough to solve in interview.&#10;&#10;Leveraged prior learnings of using bidirectional BFS." />
     <MESSAGE value="Add clarification around why sorting is required because we need to pick a set of valid envelopes, rather than a subsequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add clarification around why sorting is required because we need to pick a set of valid envelopes, rather than a subsequence" />
+    <MESSAGE value="Solve easy find whether a number is strobogrammatic or not using two pointers. Remember that only 0,1,6,8,9 can contribute to a number being valid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether a number is strobogrammatic or not using two pointers. Remember that only 0,1,6,8,9 can contribute to a number being valid" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
