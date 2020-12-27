@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium find the maximum length of pairs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RussianDollEnvelopes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RussianDollEnvelopes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00603" summary="Solve easy find the node with the value that is closest to the target in BST by recursion and keeping track of the minDiff found so far">
-      <created>1607876836364</created>
-      <option name="number" value="00603" />
-      <option name="presentableId" value="LOCAL-00603" />
-      <option name="project" value="LOCAL" />
-      <updated>1607876836364</updated>
     </task>
     <task id="LOCAL-00604" summary="Solve hard problem which reduces to split the array into d subarrays such that sum of maximum of each subarray is minimized by recursion + memoization.&#10;&#10;Leveraged prior learnings of solving such problems by making cuts at all possible places and keeping track of min sum so far.">
       <created>1607881661086</created>
@@ -519,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609072219479</updated>
     </task>
-    <option name="localTasksCounter" value="652" />
+    <task id="LOCAL-00652" summary="Add clarification around why sorting is required because we need to pick a set of valid envelopes, rather than a subsequence">
+      <created>1609074328537</created>
+      <option name="number" value="00652" />
+      <option name="presentableId" value="LOCAL-00652" />
+      <option name="project" value="LOCAL" />
+      <updated>1609074328537</updated>
+    </task>
+    <option name="localTasksCounter" value="653" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha in adding extra whitespace at the end of the current sentence as well." />
     <MESSAGE value="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length" />
     <MESSAGE value="Remove complicated code for detecting whether two line segments intersect or not" />
     <MESSAGE value="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column" />
@@ -609,7 +607,8 @@
     <MESSAGE value="Solve easy find the count of substrings with only one distinct letter by counting the length of the longest substring with only one distinct letter and then breaking it down into smaller substrings." />
     <MESSAGE value="Solve hard and a bit tricky find the min jumps required to reach the last index given that you can jump to i-1, i+1 or any other index with the same value using BFS and biDirectional BFS&#10;&#10;Learnings -- Finally implemented Bidirectional BFS after keeping it in my todo, keep alternating between forward queue and backward queue by performing size check and remember to check whether any neighbour of current node exists in other queue or not." />
     <MESSAGE value="Solve medium and tricky find the min no of moves required by knight to reach a target cell using bidirectional bfs. Normal BFS times out. Can be solved in O(1) using maths :D but that's too tough to solve in interview.&#10;&#10;Leveraged prior learnings of using bidirectional BFS." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the min no of moves required by knight to reach a target cell using bidirectional bfs. Normal BFS times out. Can be solved in O(1) using maths :D but that's too tough to solve in interview.&#10;&#10;Leveraged prior learnings of using bidirectional BFS." />
+    <MESSAGE value="Add clarification around why sorting is required because we need to pick a set of valid envelopes, rather than a subsequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add clarification around why sorting is required because we need to pick a set of valid envelopes, rather than a subsequence" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
