@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium find the maximum length of pairs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RussianDollEnvelopes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RussianDollEnvelopes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TheMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TheMaze.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00602" summary="Solve hard and extremely trick problem find the smallest no of squares to completely fill a rectangle by backtracking with pruning.&#10;&#10;Learnings -- 1. Backtracking solution was a bit difficult to visualize initially.&#10;2. During pruning, it's efficient to take the possible biggest steps first to prune a lot of branches faster.">
-      <created>1607876545023</created>
-      <option name="number" value="00602" />
-      <option name="presentableId" value="LOCAL-00602" />
-      <option name="project" value="LOCAL" />
-      <updated>1607876545023</updated>
     </task>
     <task id="LOCAL-00603" summary="Solve easy find the node with the value that is closest to the target in BST by recursion and keeping track of the minDiff found so far">
       <created>1607876836364</created>
@@ -518,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609069499293</updated>
     </task>
-    <option name="localTasksCounter" value="651" />
+    <task id="LOCAL-00651" summary="Solve medium and tricky find the min no of moves required by knight to reach a target cell using bidirectional bfs. Normal BFS times out. Can be solved in O(1) using maths :D but that's too tough to solve in interview.&#10;&#10;Leveraged prior learnings of using bidirectional BFS.">
+      <created>1609072219479</created>
+      <option name="number" value="00651" />
+      <option name="presentableId" value="LOCAL-00651" />
+      <option name="project" value="LOCAL" />
+      <updated>1609072219479</updated>
+    </task>
+    <option name="localTasksCounter" value="652" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify the code by relying on no of splits performed rather than number of chunks created." />
     <MESSAGE value="Add gotcha in adding extra whitespace at the end of the current sentence as well." />
     <MESSAGE value="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length" />
     <MESSAGE value="Remove complicated code for detecting whether two line segments intersect or not" />
@@ -608,7 +608,8 @@
     <MESSAGE value="Solve medium and extremely tricky find the maximum index you can reach provided a set of bricks and ladders. Given constraint screams of greedy. Trick was to use ladders at the current place or at some previous place, whichever gives the most amount of bricks back.&#10;This travel back in time and correct the mistake is a new pattern which I am seeing today." />
     <MESSAGE value="Solve easy find the count of substrings with only one distinct letter by counting the length of the longest substring with only one distinct letter and then breaking it down into smaller substrings." />
     <MESSAGE value="Solve hard and a bit tricky find the min jumps required to reach the last index given that you can jump to i-1, i+1 or any other index with the same value using BFS and biDirectional BFS&#10;&#10;Learnings -- Finally implemented Bidirectional BFS after keeping it in my todo, keep alternating between forward queue and backward queue by performing size check and remember to check whether any neighbour of current node exists in other queue or not." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and a bit tricky find the min jumps required to reach the last index given that you can jump to i-1, i+1 or any other index with the same value using BFS and biDirectional BFS&#10;&#10;Learnings -- Finally implemented Bidirectional BFS after keeping it in my todo, keep alternating between forward queue and backward queue by performing size check and remember to check whether any neighbour of current node exists in other queue or not." />
+    <MESSAGE value="Solve medium and tricky find the min no of moves required by knight to reach a target cell using bidirectional bfs. Normal BFS times out. Can be solved in O(1) using maths :D but that's too tough to solve in interview.&#10;&#10;Leveraged prior learnings of using bidirectional BFS." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky find the min no of moves required by knight to reach a target cell using bidirectional bfs. Normal BFS times out. Can be solved in O(1) using maths :D but that's too tough to solve in interview.&#10;&#10;Leveraged prior learnings of using bidirectional BFS." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
