@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00601" summary="Solve medium and tricky find the sum of absolute differences of an index with all other indexes in an array by considering the contribution of each index separately. Find the contribution by summing up contribution of left and right subarray.">
-      <created>1607870150243</created>
-      <option name="number" value="00601" />
-      <option name="presentableId" value="LOCAL-00601" />
-      <option name="project" value="LOCAL" />
-      <updated>1607870150243</updated>
-    </task>
     <task id="LOCAL-00602" summary="Solve hard and extremely trick problem find the smallest no of squares to completely fill a rectangle by backtracking with pruning.&#10;&#10;Learnings -- 1. Backtracking solution was a bit difficult to visualize initially.&#10;2. During pruning, it's efficient to take the possible biggest steps first to prune a lot of branches faster.">
       <created>1607876545023</created>
       <option name="number" value="00602" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609008952270</updated>
     </task>
-    <option name="localTasksCounter" value="650" />
+    <task id="LOCAL-00650" summary="Solve hard and a bit tricky find the min jumps required to reach the last index given that you can jump to i-1, i+1 or any other index with the same value using BFS and biDirectional BFS&#10;&#10;Learnings -- Finally implemented Bidirectional BFS after keeping it in my todo, keep alternating between forward queue and backward queue by performing size check and remember to check whether any neighbour of current node exists in other queue or not.">
+      <created>1609069499293</created>
+      <option name="number" value="00650" />
+      <option name="presentableId" value="LOCAL-00650" />
+      <option name="project" value="LOCAL" />
+      <updated>1609069499293</updated>
+    </task>
+    <option name="localTasksCounter" value="651" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify code by removing complicated bottom up code and add comment in existing top down code" />
     <MESSAGE value="Simplify the code by relying on no of splits performed rather than number of chunks created." />
     <MESSAGE value="Add gotcha in adding extra whitespace at the end of the current sentence as well." />
     <MESSAGE value="Remove redundant addition to visited set during euler cycle and add clarification that visited string contains only words of n length" />
@@ -608,7 +607,8 @@
     <MESSAGE value="Add gotcha around resetting the tank to 0, if current station has negative tank at current index i.e gas[i] - cost[i] is negative" />
     <MESSAGE value="Solve medium and extremely tricky find the maximum index you can reach provided a set of bricks and ladders. Given constraint screams of greedy. Trick was to use ladders at the current place or at some previous place, whichever gives the most amount of bricks back.&#10;This travel back in time and correct the mistake is a new pattern which I am seeing today." />
     <MESSAGE value="Solve easy find the count of substrings with only one distinct letter by counting the length of the longest substring with only one distinct letter and then breaking it down into smaller substrings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the count of substrings with only one distinct letter by counting the length of the longest substring with only one distinct letter and then breaking it down into smaller substrings." />
+    <MESSAGE value="Solve hard and a bit tricky find the min jumps required to reach the last index given that you can jump to i-1, i+1 or any other index with the same value using BFS and biDirectional BFS&#10;&#10;Learnings -- Finally implemented Bidirectional BFS after keeping it in my todo, keep alternating between forward queue and backward queue by performing size check and remember to check whether any neighbour of current node exists in other queue or not." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and a bit tricky find the min jumps required to reach the last index given that you can jump to i-1, i+1 or any other index with the same value using BFS and biDirectional BFS&#10;&#10;Learnings -- Finally implemented Bidirectional BFS after keeping it in my todo, keep alternating between forward queue and backward queue by performing size check and remember to check whether any neighbour of current node exists in other queue or not." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
