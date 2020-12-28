@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00607" summary="Solve hard find the no of envelopes that can fit inside one another -- variant of finding LIS for 2D array">
-      <created>1607957933101</created>
-      <option name="number" value="00607" />
-      <option name="presentableId" value="LOCAL-00607" />
-      <option name="project" value="LOCAL" />
-      <updated>1607957933101</updated>
-    </task>
     <task id="LOCAL-00608" summary="Solve medium add one to linked list by using recursion as the implicit stack to pass carry digit to the previous node.">
       <created>1608038346241</created>
       <option name="number" value="00608" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609105309449</updated>
     </task>
-    <option name="localTasksCounter" value="656" />
+    <task id="LOCAL-00656" summary="Solve hard and extremely tricky find whether it's possible to reach the last index from current index, if we can jump to some specific indices during odd/even numbered jumps. Trickiest part was to compute those indices. After that, it was just regular DFS.&#10;&#10;Learnings -- When asked to find valid indices on the right such that it is not restricted to finding the first valid number on the right, it might be better to traverse from the right instead. I was trying to iterate from the left using monotonic stack but couldn't make it work.">
+      <created>1609187665288</created>
+      <option name="number" value="00656" />
+      <option name="presentableId" value="LOCAL-00656" />
+      <option name="project" value="LOCAL" />
+      <updated>1609187665288</updated>
+    </task>
+    <option name="localTasksCounter" value="657" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -574,7 +574,24 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="backtracking" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="119" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -583,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes" />
     <MESSAGE value="Solve medium find the nearest right node in binary tree using DFS and keeping track of the current level." />
     <MESSAGE value="Solve medium find all the processes that needs to be killed if we kill a parent process by creating a directed graph of parent -&gt; child processes." />
     <MESSAGE value="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS." />
@@ -608,7 +624,8 @@
     <MESSAGE value="Solve easy find whether a number is strobogrammatic or not using two pointers. Remember that only 0,1,6,8,9 can contribute to a number being valid" />
     <MESSAGE value="Solve hard and extremely tricky find count of confusing numbers &lt;= n, a number is said to be confusing, if it's rotated 180 deg it's still valid but it should be different than input number &#10;&#10;Initially I solved it with backtracking by fixing digits one at a time using [0,1,6,8,9]. Took ~600 ms.&#10;Then found all the valid numbers with digit [0,1,6,8,9] &lt;= n. Then found strobogrammatic numbers &lt;= n. Result is a - b.&#10;This hard problem is combination of two hard problems. EPIC !" />
     <MESSAGE value="Solve hard and extremely tricky find all strobogrammatic numbers that lies within a range low &lt;= x &lt;= high by fixing pairwise digits and checking whether the string generated at the end is within bounds. &#10;&#10;I honestly thought it would take a lot of time but I was pleasantly surprised. Digit DP is a bit tough to understand but it's surprisingly fast." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky find all strobogrammatic numbers that lies within a range low &lt;= x &lt;= high by fixing pairwise digits and checking whether the string generated at the end is within bounds. &#10;&#10;I honestly thought it would take a lot of time but I was pleasantly surprised. Digit DP is a bit tough to understand but it's surprisingly fast." />
+    <MESSAGE value="Solve hard and extremely tricky find whether it's possible to reach the last index from current index, if we can jump to some specific indices during odd/even numbered jumps. Trickiest part was to compute those indices. After that, it was just regular DFS.&#10;&#10;Learnings -- When asked to find valid indices on the right such that it is not restricted to finding the first valid number on the right, it might be better to traverse from the right instead. I was trying to iterate from the left using monotonic stack but couldn't make it work." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky find whether it's possible to reach the last index from current index, if we can jump to some specific indices during odd/even numbered jumps. Trickiest part was to compute those indices. After that, it was just regular DFS.&#10;&#10;Learnings -- When asked to find valid indices on the right such that it is not restricted to finding the first valid number on the right, it might be better to traverse from the right instead. I was trying to iterate from the left using monotonic stack but couldn't make it work." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
