@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00611" summary="Solve medium find the no of tuples A,B,C,D in 4 arrays such that sum of tuples is 0 by storing pair wise sum of A+B in one hashmap and pair wise sum of C+D in another hashmap">
-      <created>1608221116162</created>
-      <option name="number" value="00611" />
-      <option name="presentableId" value="LOCAL-00611" />
-      <option name="project" value="LOCAL" />
-      <updated>1608221116162</updated>
-    </task>
     <task id="LOCAL-00612" summary="Solve medium find the earliest moment when everyone becomes friend i.e. when there is only one unique component left using Union Find&#10;&#10;Learnings -- We can stop when uniqueComponents == 1 (init it with N and decrement everytime you perform a union) or when size[root] == N (the last union performed had all the elements in the subtree)">
       <created>1608224202639</created>
       <option name="number" value="00612" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609250665946</updated>
     </task>
-    <option name="localTasksCounter" value="660" />
+    <task id="LOCAL-00660" summary="Solve medium and a bit tricky create a quad tree from the given grid using recursion. Tricky thing was to divide the grid into 4 parts. Initially I divided it by tracking x,y of topleft and bottomright cell of current grid. New locations were calculated using low + (high-low)/2">
+      <created>1609413542822</created>
+      <option name="number" value="00660" />
+      <option name="presentableId" value="LOCAL-00660" />
+      <option name="project" value="LOCAL" />
+      <updated>1609413542822</updated>
+    </task>
+    <option name="localTasksCounter" value="661" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely trick problem find the min cost to connect all the villages, provided you can dig a well at each village independently.&#10;&#10;Trick was to create a hidden node and connect it with all the villages with edge cost as wells[i]. Then proceed with creating a MST from the graph until all nodes including the hidden nodes are visited." />
     <MESSAGE value="Solve medium connect all cities with min cost using Kruskal algorithm to create MST. Kruskal is based on union find algorithm in which we sort all the edges and start performing union operation on sorted edges." />
     <MESSAGE value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
     <MESSAGE value="Solve medium and extremely tricky problem find the number of free regions cut up slashes in empty grid by considering the grid as an image and upscaling the provided grid to 3 times the input size. This makes identifying the border easy.&#10;Once upscaling is done, perform DFS to identify no of islands." />
@@ -625,7 +624,8 @@
     <MESSAGE value="Solve hard and extremely tricky find the least numbers of transactions required to settle debts among friends by using backtracking !&#10;&#10;Learnings -- Although GFG solutions proposes Greedy solution for this but Leetcode articles prove that it's a NP Problem in which we have to check all combinations by trying to settle one person at a time by transferring one's debt/credit to another with credit/debt (opposing credit) and recurring." />
     <MESSAGE value="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency." />
     <MESSAGE value="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head" />
+    <MESSAGE value="Solve medium and a bit tricky create a quad tree from the given grid using recursion. Tricky thing was to divide the grid into 4 parts. Initially I divided it by tracking x,y of topleft and bottomright cell of current grid. New locations were calculated using low + (high-low)/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky create a quad tree from the given grid using recursion. Tricky thing was to divide the grid into 4 parts. Initially I divided it by tracking x,y of topleft and bottomright cell of current grid. New locations were calculated using low + (high-low)/2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
