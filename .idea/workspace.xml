@@ -150,11 +150,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.DivideChocolates" />
+      <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="Java Scratch.SegmentTree" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Application.JumpGame4" />
     </list>
     <recent_temporary>
       <list>
@@ -174,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00610" summary="Solve medium and tricky find the largest subset in which each pair of elements divide each other by sorting + checking whether current number can extend result stored in previous index&#10;&#10;Learnings -- In case of subset problems, order isn't important, so check if sorting helps! I was on the right track but didn't sort, hence got WA and then became confused.">
-      <created>1608051958267</created>
-      <option name="number" value="00610" />
-      <option name="presentableId" value="LOCAL-00610" />
-      <option name="project" value="LOCAL" />
-      <updated>1608051958268</updated>
     </task>
     <task id="LOCAL-00611" summary="Solve medium find the no of tuples A,B,C,D in 4 arrays such that sum of tuples is 0 by storing pair wise sum of A+B in one hashmap and pair wise sum of C+D in another hashmap">
       <created>1608221116162</created>
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609244731894</updated>
     </task>
-    <option name="localTasksCounter" value="659" />
+    <task id="LOCAL-00659" summary="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head">
+      <created>1609250665946</created>
+      <option name="number" value="00659" />
+      <option name="presentableId" value="LOCAL-00659" />
+      <option name="project" value="LOCAL" />
+      <updated>1609250665946</updated>
+    </task>
+    <option name="localTasksCounter" value="660" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS." />
     <MESSAGE value="Solve hard and extremely trick problem find the min cost to connect all the villages, provided you can dig a well at each village independently.&#10;&#10;Trick was to create a hidden node and connect it with all the villages with edge cost as wells[i]. Then proceed with creating a MST from the graph until all nodes including the hidden nodes are visited." />
     <MESSAGE value="Solve medium connect all cities with min cost using Kruskal algorithm to create MST. Kruskal is based on union find algorithm in which we sort all the edges and start performing union operation on sorted edges." />
     <MESSAGE value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
@@ -625,7 +624,8 @@
     <MESSAGE value="Solve hard and extremely tricky find whether it's possible to reach the last index from current index, if we can jump to some specific indices during odd/even numbered jumps. Trickiest part was to compute those indices. After that, it was just regular DFS.&#10;&#10;Learnings -- When asked to find valid indices on the right such that it is not restricted to finding the first valid number on the right, it might be better to traverse from the right instead. I was trying to iterate from the left using monotonic stack but couldn't make it work." />
     <MESSAGE value="Solve hard and extremely tricky find the least numbers of transactions required to settle debts among friends by using backtracking !&#10;&#10;Learnings -- Although GFG solutions proposes Greedy solution for this but Leetcode articles prove that it's a NP Problem in which we have to check all combinations by trying to settle one person at a time by transferring one's debt/credit to another with credit/debt (opposing credit) and recurring." />
     <MESSAGE value="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency." />
+    <MESSAGE value="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
