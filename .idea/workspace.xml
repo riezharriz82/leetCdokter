@@ -39,6 +39,14 @@
       <GitPushTagMode />
     </option>
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
       <set>
@@ -174,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00613" summary="Solve medium find whether there is a increasing subsequence of size 3 in linear time and constant space. &#10;&#10;In order to solve it using linear space, I kept track of smallest number on the left and largest number on the right and compared each number.&#10;In order to solve in constant space, just keep track of two smallest numbers. If you find a number greater than second largest number, we got a valid triplet.">
-      <created>1608317807875</created>
-      <option name="number" value="00613" />
-      <option name="presentableId" value="LOCAL-00613" />
-      <option name="project" value="LOCAL" />
-      <updated>1608317807875</updated>
     </task>
     <task id="LOCAL-00614" summary="Solve medium and tricky find the largest distance from land to water in a matrix by performing multi source BFS&#10;&#10;Leveraged prior learnings of using multi source BFS when asked to find distance between two sets of points">
       <created>1608380884331</created>
@@ -518,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609416555007</updated>
     </task>
-    <option name="localTasksCounter" value="662" />
+    <task id="LOCAL-00662" summary="Solve medium support a snapshot array that returns the value of any index at a specific snap using multiple approaches&#10;&#10;1. get() in o(total_snaps) by storing (index, snap_id) -&gt; value directly in map and then iterating down to find a valid snap_id&#10;2. get() in o(log(total_snaps)) and set() in o(log(total_snaps)) by storing a treemap of snap_id -&gt; value for each index and then finding a snap_id &lt;= provided snap_id in the map of the given index.">
+      <created>1609419103958</created>
+      <option name="number" value="00662" />
+      <option name="presentableId" value="LOCAL-00662" />
+      <option name="project" value="LOCAL" />
+      <updated>1609419103959</updated>
+    </task>
+    <option name="localTasksCounter" value="663" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -575,17 +583,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="backtracking" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
               <option name="COLUMN_ID_WIDTH">
                 <map>
                   <entry key="Table.Default.Date.ColumnIdWidth" value="119" />
@@ -600,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
     <MESSAGE value="Solve medium and extremely tricky problem find the number of free regions cut up slashes in empty grid by considering the grid as an image and upscaling the provided grid to 3 times the input size. This makes identifying the border easy.&#10;Once upscaling is done, perform DFS to identify no of islands." />
     <MESSAGE value="Solve medium and tricky problem (if using DSU as an optimization) find whether two sentences are similar or not if each word in a sentence can be transformed to corresponding word in another sentence if the words are connected&#10;&#10;DFS or Union Find can be used to find whether two words are connected, DSU performs better!" />
     <MESSAGE value="Solve hard find whether the frog can reach the end by jumping k, k-1 or k+1 steps (k here is the last jump performed, initially k = 1) by using recursion + memoization&#10;&#10;Thought this would be a tough problem but was pleasantly surprised." />
@@ -625,7 +621,8 @@
     <MESSAGE value="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head" />
     <MESSAGE value="Solve medium and a bit tricky create a quad tree from the given grid using recursion. Tricky thing was to divide the grid into 4 parts. Initially I divided it by tracking x,y of topleft and bottomright cell of current grid. New locations were calculated using low + (high-low)/2" />
     <MESSAGE value="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required." />
+    <MESSAGE value="Solve medium support a snapshot array that returns the value of any index at a specific snap using multiple approaches&#10;&#10;1. get() in o(total_snaps) by storing (index, snap_id) -&gt; value directly in map and then iterating down to find a valid snap_id&#10;2. get() in o(log(total_snaps)) and set() in o(log(total_snaps)) by storing a treemap of snap_id -&gt; value for each index and then finding a snap_id &lt;= provided snap_id in the map of the given index." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium support a snapshot array that returns the value of any index at a specific snap using multiple approaches&#10;&#10;1. get() in o(total_snaps) by storing (index, snap_id) -&gt; value directly in map and then iterating down to find a valid snap_id&#10;2. get() in o(log(total_snaps)) and set() in o(log(total_snaps)) by storing a treemap of snap_id -&gt; value for each index and then finding a snap_id &lt;= provided snap_id in the map of the given index." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

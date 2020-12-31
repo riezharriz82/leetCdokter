@@ -28,7 +28,7 @@ public class TheMaze {
      * After a couple of attempts, I did understood what I did wrong and fixed the implementation.
      * <p>
      * A simpler thing to do would be to instead doing a DFS from each cell, just find the last cell in which the ball will stop, given the initial
-     * direction, the ball is rolling in. That would also give the min distance between source and target using BFS
+     * direction, the ball is rolling in. That would also give the min distance between source and target using BFS with pruning or by using Dijkstra
      * <p>
      * {@link RobotRoomCleaner} {@link SpiralMatrix} {@link TheMaze2} related problem
      */
