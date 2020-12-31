@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00612" summary="Solve medium find the earliest moment when everyone becomes friend i.e. when there is only one unique component left using Union Find&#10;&#10;Learnings -- We can stop when uniqueComponents == 1 (init it with N and decrement everytime you perform a union) or when size[root] == N (the last union performed had all the elements in the subtree)">
-      <created>1608224202639</created>
-      <option name="number" value="00612" />
-      <option name="presentableId" value="LOCAL-00612" />
-      <option name="project" value="LOCAL" />
-      <updated>1608224202639</updated>
-    </task>
     <task id="LOCAL-00613" summary="Solve medium find whether there is a increasing subsequence of size 3 in linear time and constant space. &#10;&#10;In order to solve it using linear space, I kept track of smallest number on the left and largest number on the right and compared each number.&#10;In order to solve in constant space, just keep track of two smallest numbers. If you find a number greater than second largest number, we got a valid triplet.">
       <created>1608317807875</created>
       <option name="number" value="00613" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609413542822</updated>
     </task>
-    <option name="localTasksCounter" value="661" />
+    <task id="LOCAL-00661" summary="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required.">
+      <created>1609416555007</created>
+      <option name="number" value="00661" />
+      <option name="presentableId" value="LOCAL-00661" />
+      <option name="project" value="LOCAL" />
+      <updated>1609416555007</updated>
+    </task>
+    <option name="localTasksCounter" value="662" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium connect all cities with min cost using Kruskal algorithm to create MST. Kruskal is based on union find algorithm in which we sort all the edges and start performing union operation on sorted edges." />
     <MESSAGE value="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot." />
     <MESSAGE value="Solve medium and extremely tricky problem find the number of free regions cut up slashes in empty grid by considering the grid as an image and upscaling the provided grid to 3 times the input size. This makes identifying the border easy.&#10;Once upscaling is done, perform DFS to identify no of islands." />
     <MESSAGE value="Solve medium and tricky problem (if using DSU as an optimization) find whether two sentences are similar or not if each word in a sentence can be transformed to corresponding word in another sentence if the words are connected&#10;&#10;DFS or Union Find can be used to find whether two words are connected, DSU performs better!" />
@@ -625,7 +624,8 @@
     <MESSAGE value="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency." />
     <MESSAGE value="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head" />
     <MESSAGE value="Solve medium and a bit tricky create a quad tree from the given grid using recursion. Tricky thing was to divide the grid into 4 parts. Initially I divided it by tracking x,y of topleft and bottomright cell of current grid. New locations were calculated using low + (high-low)/2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky create a quad tree from the given grid using recursion. Tricky thing was to divide the grid into 4 parts. Initially I divided it by tracking x,y of topleft and bottomright cell of current grid. New locations were calculated using low + (high-low)/2" />
+    <MESSAGE value="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
