@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00619" summary="Solve medium and extremely tricky find a number that minimizes the sum of absolute differences from all the numbers by choosing median as the target number in a 2D array.&#10;&#10;Learnings -- Since we need to minimize manhattan distance, median of 2D array can be calculated by separately calculating median of x and y indices.">
-      <created>1608464253711</created>
-      <option name="number" value="00619" />
-      <option name="presentableId" value="LOCAL-00619" />
-      <option name="project" value="LOCAL" />
-      <updated>1608464253711</updated>
-    </task>
     <task id="LOCAL-00620" summary="Solve medium and extremely tricky find the max no of moves required to make sure no two stones share the same row or same column by DFS and union find &#10;&#10;Trick to solve the problem was to find no of connected components and just keep only one stone of each component. So answer would be total stones - no of components&#10;&#10;Learnings -- 1. Sometimes 2D points can be visualized as 0,1 in a 2D grid, which can be expanded to a graph problem if we can visualize the edges correctly. Here two points are connected if they are on the same row or same column. &#10;2. Union find on 2D points is a bit tricky to visualize. Here we need to union row and col of current index so that in future if we get a new index with the same row and different col, we can still make it part of the same component.">
       <created>1608486419654</created>
       <option name="number" value="00620" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609511707028</updated>
     </task>
-    <option name="localTasksCounter" value="668" />
+    <task id="LOCAL-00668" summary="Solve hard and extremely tricky count no of distinct subsequences in a string, that can contain duplicate characters using o(n^2) and o(n) DP. Please read the comments inside the source for better understanding.">
+      <created>1609522643849</created>
+      <option name="number" value="00668" />
+      <option name="presentableId" value="LOCAL-00668" />
+      <option name="project" value="LOCAL" />
+      <updated>1609522643849</updated>
+    </task>
+    <option name="localTasksCounter" value="669" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back." />
     <MESSAGE value="Solve medium and tricky digit dp problem, find the count of numbers with unique digit &lt; 10^x. &#10;It was more of a math related problem rather than DP. Initially we have 10 choices and as we fix numbers, we are left with one less choice. Special case for first digit as it can't have 0." />
     <MESSAGE value="Solve medium find the zig-zag diagonal traversal of a matrix by leveraging all elements of same diagonals have same identifier, either row+col or row-col." />
     <MESSAGE value="Solve medium and tricky find single element in sorted array such that all other elements repeat twice using binary search.&#10;&#10;Trick was to note that numbers on the left side of the target have even and odd indices with same value whereas on the right, odd and even indices have the same value. Use this fact to reduce this to T,T,T,F,F,F,F along with handling edge cases when target is the first or last element of the array.&#10;While solving binary search cases, consider each index as mid and try to solve it." />
@@ -621,7 +620,8 @@
     <MESSAGE value="Solve easy find whether it's possible to transform the given pieces of array into target array by trying to concatenate them in any way possible, by tracking the leader of each piece and the entire piece.&#10;&#10;It was a bit tricky to implement though, not an easy question! Need to make sure the entire piece is fulfilled as partial pieces are not allowed." />
     <MESSAGE value="Solve medium and extremely tricky to optimize given a list of words, find which words are a subsequence of the provided string. I got AC by keeping track of occurrence of each character in the target string and see if you can find an index &gt; previous index.&#10;&#10;An optimized approach would be to maintain a mapping of character to the list of words that require that character. As we traverse the string, update the mappings." />
     <MESSAGE value="Solve medium and extremely tricky find no of fleets that will be formed by cars starting at different positions and travelling at different speed towards target using greedy. Tricky thing to note was that a car starting earlier and reaching in t time will block cars starting later and reaching in x &lt; t time. So they will become part of an existing fleet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find no of fleets that will be formed by cars starting at different positions and travelling at different speed towards target using greedy. Tricky thing to note was that a car starting earlier and reaching in t time will block cars starting later and reaching in x &lt; t time. So they will become part of an existing fleet." />
+    <MESSAGE value="Solve hard and extremely tricky count no of distinct subsequences in a string, that can contain duplicate characters using o(n^2) and o(n) DP. Please read the comments inside the source for better understanding." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky count no of distinct subsequences in a string, that can contain duplicate characters using o(n^2) and o(n) DP. Please read the comments inside the source for better understanding." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
