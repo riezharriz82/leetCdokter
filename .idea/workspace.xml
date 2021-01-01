@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00615" summary="Solve medium and tricky find the smallest weight that can allow us to ship all packages in &lt;= D days using binary search&#10;&#10;Leveraged prior learnings of using Binary search to solve optimization problems where the answer lies in a bound and verifying the result takes linear time.">
-      <created>1608382843551</created>
-      <option name="number" value="00615" />
-      <option name="presentableId" value="LOCAL-00615" />
-      <option name="project" value="LOCAL" />
-      <updated>1608382843551</updated>
-    </task>
     <task id="LOCAL-00616" summary="Update hard and extremely trick find the maximum of minimum sweetness that can satisfy k+1 persons using binary search &#10;&#10;I was not able to understand the logic of finding how many persons can be satisfied by choosing a specific min sweetness. The trick was to increase the persons satisfied count only if curSweetness &gt;= target sweetness. This way if there is some trailing subarray that can't satisfy a person won't get included in the overall count.">
       <created>1608388955434</created>
       <option name="number" value="00616" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609424004407</updated>
     </task>
-    <option name="localTasksCounter" value="664" />
+    <task id="LOCAL-00664" summary="Solve medium and a bit tricky to implement, find the longest length of consecutive 1's in a matrix in horizontal, vertical, diagonal and anti diagonal directions using 4D DP and leveraging the fact that row-col and row+col for elements in same diagonal are same&#10;&#10;Learnings -- row-col can be negative, so if we want to use array for storing current length of consecutive 1's seen in the diagonal, we need to make it positive by adding +n (column length)">
+      <created>1609431683986</created>
+      <option name="number" value="00664" />
+      <option name="presentableId" value="LOCAL-00664" />
+      <option name="project" value="LOCAL" />
+      <updated>1609431683986</updated>
+    </task>
+    <option name="localTasksCounter" value="665" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky problem (if using DSU as an optimization) find whether two sentences are similar or not if each word in a sentence can be transformed to corresponding word in another sentence if the words are connected&#10;&#10;DFS or Union Find can be used to find whether two words are connected, DSU performs better!" />
     <MESSAGE value="Solve hard find whether the frog can reach the end by jumping k, k-1 or k+1 steps (k here is the last jump performed, initially k = 1) by using recursion + memoization&#10;&#10;Thought this would be a tough problem but was pleasantly surprised." />
     <MESSAGE value="Solve medium find the maximum length of increasing pairs by solving it similar to LIS or by considering it as an interval scheduling problem&#10;&#10;Learnings -- When provided a set of points, sometimes it's simpler to solve if we visualize it as an interval scheduling problem." />
     <MESSAGE value="Solve medium and tricky find all the strobogrammatic numbers of a specific length using recursion&#10;&#10;Leveraged prior learnings of solving ConfusingNumber that only digits 0,1,6,8,9 can contribute to a valid number." />
@@ -621,7 +620,8 @@
     <MESSAGE value="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required." />
     <MESSAGE value="Solve medium support a snapshot array that returns the value of any index at a specific snap using multiple approaches&#10;&#10;1. get() in o(total_snaps) by storing (index, snap_id) -&gt; value directly in map and then iterating down to find a valid snap_id&#10;2. get() in o(log(total_snaps)) and set() in o(log(total_snaps)) by storing a treemap of snap_id -&gt; value for each index and then finding a snap_id &lt;= provided snap_id in the map of the given index." />
     <MESSAGE value="Solve medium design a leaderboard which supports updating scores of a player as well as finding the top k scores using hashmap + treemap (priority queue)&#10;&#10;Leveraged prior learning of using treemap instead of priority queue when deletion is required." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design a leaderboard which supports updating scores of a player as well as finding the top k scores using hashmap + treemap (priority queue)&#10;&#10;Leveraged prior learning of using treemap instead of priority queue when deletion is required." />
+    <MESSAGE value="Solve medium and a bit tricky to implement, find the longest length of consecutive 1's in a matrix in horizontal, vertical, diagonal and anti diagonal directions using 4D DP and leveraging the fact that row-col and row+col for elements in same diagonal are same&#10;&#10;Learnings -- row-col can be negative, so if we want to use array for storing current length of consecutive 1's seen in the diagonal, we need to make it positive by adding +n (column length)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky to implement, find the longest length of consecutive 1's in a matrix in horizontal, vertical, diagonal and anti diagonal directions using 4D DP and leveraging the fact that row-col and row+col for elements in same diagonal are same&#10;&#10;Learnings -- row-col can be negative, so if we want to use array for storing current length of consecutive 1's seen in the diagonal, we need to make it positive by adding +n (column length)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
