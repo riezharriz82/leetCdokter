@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -19,11 +20,11 @@ public class CourseSchedule {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         if (prerequisites.length != 0) {
             List<List<Integer>> graph = buildGraph(numCourses, prerequisites);
-            boolean[] visited = new boolean[numCourses];
-            boolean[] toDo = new boolean[numCourses];
+            STATE[] states = new STATE[numCourses];
+            Arrays.fill(states, STATE.UNKNOWN); //don't forget to initialize it with UNKNOWN states
             for (int i = 0; i < numCourses; i++) {
                 //try each node as the starting point of DFS as it's not a complete graph
-                if (!visited[i] && hasCycle(visited, toDo, graph, i)) {
+                if (states[i] == STATE.UNKNOWN && hasCycle(states, graph, i)) {
                     return false;
                 }
             }
@@ -31,23 +32,18 @@ public class CourseSchedule {
         return true;
     }
 
-    //topological sort
-    private boolean hasCycle(boolean[] visited, boolean[] toDo, List<List<Integer>> graph, int startingCourse) {
-        if (visited[startingCourse]) {
-            return false;
+    //perform topological sort (postorder traversal), return true if it has cycles
+    private boolean hasCycle(STATE[] states, List<List<Integer>> graph, int startingCourse) {
+        if (states[startingCourse] != STATE.UNKNOWN) {
+            return states[startingCourse] == STATE.VISITING; //if the node is in a visiting state, we have a cycle
         }
-        if (toDo[startingCourse]) {
-            return true; // same node found in the recursion stack
-        }
-        toDo[startingCourse] = true;
+        states[startingCourse] = STATE.VISITING;
         for (Integer adjacentNode : graph.get(startingCourse)) {
-            boolean cycle = hasCycle(visited, toDo, graph, adjacentNode);
-            if (cycle) {
+            if (hasCycle(states, graph, adjacentNode)) {
                 return true;
             }
         }
-        toDo[startingCourse] = false;
-        visited[startingCourse] = true;
+        states[startingCourse] = STATE.VISITED;
         return false;
     }
 
@@ -60,5 +56,9 @@ public class CourseSchedule {
             graph.get(prerequisites[i][0]).add(prerequisites[i][1]);
         }
         return graph;
+    }
+
+    private enum STATE {
+        VISITING, VISITED, UNKNOWN
     }
 }

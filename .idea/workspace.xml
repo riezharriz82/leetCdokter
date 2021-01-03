@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DistinctSubsequences2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DistinctSubsequences2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00631" summary="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes">
-      <created>1608659386448</created>
-      <option name="number" value="00631" />
-      <option name="presentableId" value="LOCAL-00631" />
-      <option name="project" value="LOCAL" />
-      <updated>1608659386448</updated>
     </task>
     <task id="LOCAL-00632" summary="Solve medium find the nearest right node in binary tree using DFS and keeping track of the current level.">
       <created>1608659905183</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609701631705</updated>
     </task>
-    <option name="localTasksCounter" value="680" />
+    <task id="LOCAL-00680" summary="Add gotchas in count distinct subsequences">
+      <created>1609702580836</created>
+      <option name="number" value="00680" />
+      <option name="presentableId" value="LOCAL-00680" />
+      <option name="project" value="LOCAL" />
+      <updated>1609702580836</updated>
+    </task>
+    <option name="localTasksCounter" value="681" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky find all strobogrammatic numbers that lies within a range low &lt;= x &lt;= high by fixing pairwise digits and checking whether the string generated at the end is within bounds. &#10;&#10;I honestly thought it would take a lot of time but I was pleasantly surprised. Digit DP is a bit tough to understand but it's surprisingly fast." />
     <MESSAGE value="Solve hard and extremely tricky find whether it's possible to reach the last index from current index, if we can jump to some specific indices during odd/even numbered jumps. Trickiest part was to compute those indices. After that, it was just regular DFS.&#10;&#10;Learnings -- When asked to find valid indices on the right such that it is not restricted to finding the first valid number on the right, it might be better to traverse from the right instead. I was trying to iterate from the left using monotonic stack but couldn't make it work." />
     <MESSAGE value="Solve hard and extremely tricky find the least numbers of transactions required to settle debts among friends by using backtracking !&#10;&#10;Learnings -- Although GFG solutions proposes Greedy solution for this but Leetcode articles prove that it's a NP Problem in which we have to check all combinations by trying to settle one person at a time by transferring one's debt/credit to another with credit/debt (opposing credit) and recurring." />
     <MESSAGE value="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency." />
@@ -633,7 +632,8 @@
     <MESSAGE value="Rename variable to make it more similar to it's usage" />
     <MESSAGE value="Fix incorrect distance check when some node is unreachable" />
     <MESSAGE value="Simplify code by using Math.min() instead" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify code by using Math.min() instead" />
+    <MESSAGE value="Add gotchas in count distinct subsequences" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gotchas in count distinct subsequences" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
