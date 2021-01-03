@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00632" summary="Solve medium find the nearest right node in binary tree using DFS and keeping track of the current level.">
-      <created>1608659905183</created>
-      <option name="number" value="00632" />
-      <option name="presentableId" value="LOCAL-00632" />
-      <option name="project" value="LOCAL" />
-      <updated>1608659905183</updated>
     </task>
     <task id="LOCAL-00633" summary="Solve medium find all the processes that needs to be killed if we kill a parent process by creating a directed graph of parent -&gt; child processes.">
       <created>1608667952482</created>
@@ -526,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609702580836</updated>
     </task>
-    <option name="localTasksCounter" value="681" />
+    <task id="LOCAL-00681" summary="Simplify topological sort by using enums as states instead of maintaining two different arrays">
+      <created>1609704581284</created>
+      <option name="number" value="00681" />
+      <option name="presentableId" value="LOCAL-00681" />
+      <option name="project" value="LOCAL" />
+      <updated>1609704581284</updated>
+    </task>
+    <option name="localTasksCounter" value="682" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,17 +582,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value=" tricky" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
               <option name="COLUMN_ID_WIDTH">
                 <map>
                   <entry key="Table.Default.Date.ColumnIdWidth" value="119" />
@@ -608,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky find whether it's possible to reach the last index from current index, if we can jump to some specific indices during odd/even numbered jumps. Trickiest part was to compute those indices. After that, it was just regular DFS.&#10;&#10;Learnings -- When asked to find valid indices on the right such that it is not restricted to finding the first valid number on the right, it might be better to traverse from the right instead. I was trying to iterate from the left using monotonic stack but couldn't make it work." />
     <MESSAGE value="Solve hard and extremely tricky find the least numbers of transactions required to settle debts among friends by using backtracking !&#10;&#10;Learnings -- Although GFG solutions proposes Greedy solution for this but Leetcode articles prove that it's a NP Problem in which we have to check all combinations by trying to settle one person at a time by transferring one's debt/credit to another with credit/debt (opposing credit) and recurring." />
     <MESSAGE value="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency." />
     <MESSAGE value="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head" />
@@ -633,7 +620,8 @@
     <MESSAGE value="Fix incorrect distance check when some node is unreachable" />
     <MESSAGE value="Simplify code by using Math.min() instead" />
     <MESSAGE value="Add gotchas in count distinct subsequences" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gotchas in count distinct subsequences" />
+    <MESSAGE value="Simplify topological sort by using enums as states instead of maintaining two different arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify topological sort by using enums as states instead of maintaining two different arrays" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
