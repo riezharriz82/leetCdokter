@@ -13,7 +13,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DistinctSubsequences2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DistinctSubsequences2.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00630" summary="Solve easy find the no of tuples f(x,y) that equals z, assuming the function is strictly increasing using binary search.&#10;&#10;First apply binary search to find the last valid x f(x,1) &lt;= z, then fix x and apply binary search on y.&#10;&#10;This can be optimized in o(x+y) if I visualize the problem as a 2D matrix of sorted row and sorted column">
-      <created>1608658750163</created>
-      <option name="number" value="00630" />
-      <option name="presentableId" value="LOCAL-00630" />
-      <option name="project" value="LOCAL" />
-      <updated>1608658750163</updated>
     </task>
     <task id="LOCAL-00631" summary="Add related problems in medium and extremely trick find number of subarrays with odd sum by using prefix sum and counting even and odd prefixes">
       <created>1608659386448</created>
@@ -523,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609700329414</updated>
     </task>
-    <option name="localTasksCounter" value="679" />
+    <task id="LOCAL-00679" summary="Simplify code by using Math.min() instead">
+      <created>1609701631705</created>
+      <option name="number" value="00679" />
+      <option name="presentableId" value="LOCAL-00679" />
+      <option name="project" value="LOCAL" />
+      <updated>1609701631705</updated>
+    </task>
+    <option name="localTasksCounter" value="680" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky find count of confusing numbers &lt;= n, a number is said to be confusing, if it's rotated 180 deg it's still valid but it should be different than input number &#10;&#10;Initially I solved it with backtracking by fixing digits one at a time using [0,1,6,8,9]. Took ~600 ms.&#10;Then found all the valid numbers with digit [0,1,6,8,9] &lt;= n. Then found strobogrammatic numbers &lt;= n. Result is a - b.&#10;This hard problem is combination of two hard problems. EPIC !" />
     <MESSAGE value="Solve hard and extremely tricky find all strobogrammatic numbers that lies within a range low &lt;= x &lt;= high by fixing pairwise digits and checking whether the string generated at the end is within bounds. &#10;&#10;I honestly thought it would take a lot of time but I was pleasantly surprised. Digit DP is a bit tough to understand but it's surprisingly fast." />
     <MESSAGE value="Solve hard and extremely tricky find whether it's possible to reach the last index from current index, if we can jump to some specific indices during odd/even numbered jumps. Trickiest part was to compute those indices. After that, it was just regular DFS.&#10;&#10;Learnings -- When asked to find valid indices on the right such that it is not restricted to finding the first valid number on the right, it might be better to traverse from the right instead. I was trying to iterate from the left using monotonic stack but couldn't make it work." />
     <MESSAGE value="Solve hard and extremely tricky find the least numbers of transactions required to settle debts among friends by using backtracking !&#10;&#10;Learnings -- Although GFG solutions proposes Greedy solution for this but Leetcode articles prove that it's a NP Problem in which we have to check all combinations by trying to settle one person at a time by transferring one's debt/credit to another with credit/debt (opposing credit) and recurring." />
@@ -630,7 +632,8 @@
     <MESSAGE value="Solve medium find all increasing subsequences using bottom up DP. Care must be taken to handle duplicates. Got a couple of WA's due to missing edge cases like handling cases where duplicates occur &gt; 2 times [1,3,3,3] and duplicates are not contiguous [10,9,10]" />
     <MESSAGE value="Rename variable to make it more similar to it's usage" />
     <MESSAGE value="Fix incorrect distance check when some node is unreachable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix incorrect distance check when some node is unreachable" />
+    <MESSAGE value="Simplify code by using Math.min() instead" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify code by using Math.min() instead" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

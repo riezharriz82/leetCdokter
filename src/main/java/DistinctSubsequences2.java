@@ -48,8 +48,8 @@ public class DistinctSubsequences2 {
             dp[i] = (2 * dp[i - 1]) % MOD;
             char c = S.charAt(i - 1);
             if (lastOccurrence[c - 'a'] != -1) { //if this character is a duplicate, remove the subsequences doubly counted
-                dp[i] -= dp[lastOccurrence[c - 'a'] - 1];
-                dp[i] = (dp[i] + MOD) % MOD;
+                dp[i] -= dp[lastOccurrence[c - 'a'] - 1]; //remember that we need the count of elements present before the last occurrence of this char hence the -1
+                dp[i] = (dp[i] + MOD) % MOD; //always remember whenever performing subtraction on modulo, make sure to make it +ve
             }
             lastOccurrence[c - 'a'] = i;
         }
