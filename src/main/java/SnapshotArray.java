@@ -44,6 +44,7 @@ public class SnapshotArray {
      * 2. For each index, maintain a treemap of snap_id -> value and for each set(), add the corresponding pair to the index
      * For each get(), perform a floor() to find a snap_id <= provided snap_id and return the value
      * TimeComplexity: get() will be O(log(total_snaps) and for set will be O(log(total_snaps))
+     * See {@link TimeBasedKeyValueStore} for this implementation
      * <p>
      * Need to explain the trade offs properly to interviewer for full marks
      */

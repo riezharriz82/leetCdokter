@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SnapshotArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00623" summary="Solve medium and extremely tricky find the min difference between min and max elements of an array given that each number can either by incremented by k or decremented by k using greedy.&#10;&#10;Still couldn't properly grasp the solution. Will get back to it.">
-      <created>1608579350095</created>
-      <option name="number" value="00623" />
-      <option name="presentableId" value="LOCAL-00623" />
-      <option name="project" value="LOCAL" />
-      <updated>1608579350095</updated>
     </task>
     <task id="LOCAL-00624" summary="Add possible hint on why we need to fix the index whose location is known correctly. Either the tallest person with no person standing in front of him or the index that was popped most recently.">
       <created>1608580551872</created>
@@ -525,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609598503562</updated>
     </task>
-    <option name="localTasksCounter" value="672" />
+    <task id="LOCAL-00672" summary="Solve medium and extremely tricky find the largest sum possible that is divisible by 3 using DP.&#10;&#10;Leveraged prior learnings of using mod whenever divisibility is involved. Here we need to do the same by using current mod and greatest sum possible at previous element. State transitions are similar to previously solved house robber.">
+      <created>1609658415978</created>
+      <option name="number" value="00672" />
+      <option name="presentableId" value="LOCAL-00672" />
+      <option name="project" value="LOCAL" />
+      <updated>1609658415979</updated>
+    </task>
+    <option name="localTasksCounter" value="673" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha around resetting the tank to 0, if current station has negative tank at current index i.e gas[i] - cost[i] is negative" />
     <MESSAGE value="Solve medium and extremely tricky find the maximum index you can reach provided a set of bricks and ladders. Given constraint screams of greedy. Trick was to use ladders at the current place or at some previous place, whichever gives the most amount of bricks back.&#10;This travel back in time and correct the mistake is a new pattern which I am seeing today." />
     <MESSAGE value="Solve easy find the count of substrings with only one distinct letter by counting the length of the longest substring with only one distinct letter and then breaking it down into smaller substrings." />
     <MESSAGE value="Solve hard and a bit tricky find the min jumps required to reach the last index given that you can jump to i-1, i+1 or any other index with the same value using BFS and biDirectional BFS&#10;&#10;Learnings -- Finally implemented Bidirectional BFS after keeping it in my todo, keep alternating between forward queue and backward queue by performing size check and remember to check whether any neighbour of current node exists in other queue or not." />
@@ -621,7 +621,8 @@
     <MESSAGE value="Solve medium and tricky remove comments from a source code using string parsing by visualizing it as a state machine. Although I knew how to write the code, still I figured to see the solution in order to &quot;save me from humiliation&quot;. &#10;&#10;Learnings -- Trick to solving string parsing question is to visualize it as a state machine i.e if /* is encountered switch to a different mode and carefully decide each mode's priority. It will make code very easier." />
     <MESSAGE value="Solve medium find the corresponding node of a target node in the cloned tree by walking both the tress simultaneously." />
     <MESSAGE value="Solve medium sort a matrix diagonally such that each diagonal is sorted separately by maintaining a map of diagonalId to priority queue of elements present in that diagonal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium sort a matrix diagonally such that each diagonal is sorted separately by maintaining a map of diagonalId to priority queue of elements present in that diagonal" />
+    <MESSAGE value="Solve medium and extremely tricky find the largest sum possible that is divisible by 3 using DP.&#10;&#10;Leveraged prior learnings of using mod whenever divisibility is involved. Here we need to do the same by using current mod and greatest sum possible at previous element. State transitions are similar to previously solved house robber." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find the largest sum possible that is divisible by 3 using DP.&#10;&#10;Leveraged prior learnings of using mod whenever divisibility is involved. Here we need to do the same by using current mod and greatest sum possible at previous element. State transitions are similar to previously solved house robber." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
