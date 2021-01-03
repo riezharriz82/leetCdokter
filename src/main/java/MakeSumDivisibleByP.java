@@ -54,15 +54,15 @@ public class MakeSumDivisibleByP {
         } else {
             HashMap<Integer, Integer> map = new HashMap<>();
             map.put(0, -1);
-            int curSum = 0, minLength = Integer.MAX_VALUE;
+            int curModSum = 0, minLength = Integer.MAX_VALUE;
             for (int i = 0; i < nums.length; i++) {
-                curSum = (curSum + nums[i]) % p; //curSum can only be positive because input array contains only +ve numbers
-                //if it had contained negative numbers, need to make it positive by doing (curSum + p)
-                if (map.containsKey((curSum - target + p) % p)) { //When comparing modulo's negative number should be made +ve
+                curModSum = (curModSum + nums[i]) % p; //curModSum can only be positive because input array contains only +ve numbers
+                //if it had contained negative numbers, need to make it positive by doing (curModSum + p)
+                if (map.containsKey((curModSum - target + p) % p)) { //When comparing modulo's negative number should be made +ve
                     //this is similar to the way we handled mod sum in SubarraySumsDivisibleByK
-                    minLength = Math.min(minLength, i - map.get((curSum - target + p) % p));
+                    minLength = Math.min(minLength, i - map.get((curModSum - target + p) % p));
                 }
-                map.put(curSum, i);
+                map.put(curModSum, i);
             }
             return minLength < nums.length ? minLength : -1;
         }
