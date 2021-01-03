@@ -60,6 +60,6 @@ public class NetworkDelayTime {
         for (int i = 0; i < N; i++) {
             maxDistance = Math.max(distance[i], maxDistance); //keep track of the max time to reach it's neighbours
         }
-        return maxDistance == Integer.MIN_VALUE ? -1 : maxDistance;
+        return maxDistance == Integer.MAX_VALUE ? -1 : maxDistance;
     }
 }
