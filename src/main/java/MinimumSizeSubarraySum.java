@@ -22,9 +22,7 @@ public class MinimumSizeSubarraySum {
         while (end < nums.length) {
             curSum += nums[end];
             while (curSum >= target) { //once a valid window is reached, keep shortening the window to find a smaller valid subarray
-                if (end - begin + 1 < minLength) {
-                    minLength = end - begin + 1;
-                }
+                minLength = Math.min(minLength, end - begin + 1);
                 curSum -= nums[begin];
                 begin++;
             }
