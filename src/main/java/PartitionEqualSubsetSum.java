@@ -1,7 +1,3 @@
-import javafx.util.Pair;
-
-import java.util.HashMap;
-
 /**
  * https://leetcode.com/problems/partition-equal-subset-sum/
  * <p>
@@ -18,8 +14,6 @@ public class PartitionEqualSubsetSum {
      * <p>
      * It can be simplified further by not considering the right sum at all, just consider whether an element is picked, increment the sum and index and recurse
      * or an element is skipped, increment the index and recurse
-     * <p>
-     * But I find it more logical this way
      */
     public boolean canPartition(int[] nums) {
         int totalSum = 0;
@@ -29,35 +23,27 @@ public class PartitionEqualSubsetSum {
         if (totalSum % 2 == 1) { //odd sum can't be divided into two
             return false;
         }
-        HashMap<Pair<Integer, Integer>, Boolean> map = new HashMap<>();
-        return recur(nums, 0, 0, totalSum / 2, 0, map);
+        int[][] memo = new int[totalSum / 2][nums.length];
+        return recur(nums, 0, totalSum / 2, 0, memo);
     }
 
-    private boolean recur(int[] nums, int leftSum, int rightSum, int targetSum, int index, HashMap<Pair<Integer, Integer>, Boolean> map) {
-        if (leftSum > targetSum || rightSum > targetSum) {
+    //returns true if you can find a subset with targetSum
+    private boolean recur(int[] nums, int curSum, int targetSum, int index, int[][] memo) {
+        if (curSum > targetSum || index > nums.length) {
             return false;
-        } else if (leftSum == targetSum || rightSum == targetSum) {
+        } else if (curSum == targetSum) {
             return true;
-        } else if (map.containsKey(new Pair<>(leftSum, rightSum))) {
-            return map.get(new Pair<>(leftSum, rightSum));
-        } else if (map.containsKey(new Pair<>(rightSum, leftSum))) { //minor optimization trick
-            //if we are able to find two partitions with sum {10,4} we can always flip the labels around to find partitions with sum {4,10}
-            return map.get(new Pair<>(rightSum, leftSum));
+        } else if (memo[curSum][index] != 0) {
+            return memo[curSum][index] == 1;
+        } else if (recur(nums, curSum + nums[index], targetSum, index + 1, memo)) { //include the current index in the target subset
+            memo[curSum][index] = 1;
+            return true;
+        } else if (recur(nums, curSum, targetSum, index + 1, memo)) { //exclude the current index from the target subset
+            memo[curSum][index] = 1;
+            return true;
         } else {
-            Pair<Integer, Integer> key1 = new Pair<>(leftSum, rightSum);
-            Pair<Integer, Integer> key2 = new Pair<>(rightSum, leftSum); //optimization trick, will get AC without this trick
-            if (recur(nums, leftSum + nums[index], rightSum, targetSum, index + 1, map)) {
-                map.put(key1, true);
-                map.put(key2, true);
-                return true;
-            }
-            if (recur(nums, leftSum, rightSum + nums[index], targetSum, index + 1, map)) {
-                map.put(key1, true);
-                map.put(key2, true);
-                return true;
-            }
-            map.put(key1, true);
-            map.put(key2, true);
+            //this index can't be part of the target subset
+            memo[curSum][index] = -1;
             return false;
         }
     }
