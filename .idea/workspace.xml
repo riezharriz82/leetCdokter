@@ -13,7 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00637" summary="Solve medium and a bit tricky detect cycle in a directed graph by maintaining 3 states for each node (Unknown, Safe, Unsafe). This is similar to maintaining 3 arrays, toDo[], visited[], state[]&#10;&#10;Leveraged prior learning of detecting cycle during topological sort. Using enum cleans up the code a lot.">
-      <created>1608735764642</created>
-      <option name="number" value="00637" />
-      <option name="presentableId" value="LOCAL-00637" />
-      <option name="project" value="LOCAL" />
-      <updated>1608735764642</updated>
     </task>
     <task id="LOCAL-00638" summary="Solve medium and extremely tricky problem find the number of free regions cut up slashes in empty grid by considering the grid as an image and upscaling the provided grid to 3 times the input size. This makes identifying the border easy.&#10;Once upscaling is done, perform DFS to identify no of islands.">
       <created>1608755758960</created>
@@ -523,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609860130126</updated>
     </task>
-    <option name="localTasksCounter" value="686" />
+    <task id="LOCAL-00686" summary="Solve easy find out how many person's can be satisfied from given set of cookies if a person needs atleast a cookie of specific size to get satisfied using greedy by sorting the size of cookies and greed of each persons.">
+      <created>1609860567797</created>
+      <option name="number" value="00686" />
+      <option name="presentableId" value="LOCAL-00686" />
+      <option name="project" value="LOCAL" />
+      <updated>1609860567797</updated>
+    </task>
+    <option name="localTasksCounter" value="687" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required." />
     <MESSAGE value="Solve medium support a snapshot array that returns the value of any index at a specific snap using multiple approaches&#10;&#10;1. get() in o(total_snaps) by storing (index, snap_id) -&gt; value directly in map and then iterating down to find a valid snap_id&#10;2. get() in o(log(total_snaps)) and set() in o(log(total_snaps)) by storing a treemap of snap_id -&gt; value for each index and then finding a snap_id &lt;= provided snap_id in the map of the given index." />
     <MESSAGE value="Solve medium design a leaderboard which supports updating scores of a player as well as finding the top k scores using hashmap + treemap (priority queue)&#10;&#10;Leveraged prior learning of using treemap instead of priority queue when deletion is required." />
     <MESSAGE value="Solve medium and a bit tricky to implement, find the longest length of consecutive 1's in a matrix in horizontal, vertical, diagonal and anti diagonal directions using 4D DP and leveraging the fact that row-col and row+col for elements in same diagonal are same&#10;&#10;Learnings -- row-col can be negative, so if we want to use array for storing current length of consecutive 1's seen in the diagonal, we need to make it positive by adding +n (column length)" />
@@ -630,7 +631,8 @@
     <MESSAGE value="Simplify code by just considering whether we can find a subset with targetSum = totalSum/2. Each element has two options, either be part of the subset or be excluded from it. Try both the options." />
     <MESSAGE value="Solve medium remove duplicates from a sorted linked list using dummy node" />
     <MESSAGE value="Solve medium design data structure to represent browser history that supports going back and forward k steps in history using arraylist and ensuring that we overwrite the index, if we are at inner indices instead of creating a new list and appending to the end of it. &#10;This smart overwrite logic ensures we work in O(1) time for all operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design data structure to represent browser history that supports going back and forward k steps in history using arraylist and ensuring that we overwrite the index, if we are at inner indices instead of creating a new list and appending to the end of it. &#10;This smart overwrite logic ensures we work in O(1) time for all operations" />
+    <MESSAGE value="Solve easy find out how many person's can be satisfied from given set of cookies if a person needs atleast a cookie of specific size to get satisfied using greedy by sorting the size of cookies and greed of each persons." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find out how many person's can be satisfied from given set of cookies if a person needs atleast a cookie of specific size to get satisfied using greedy by sorting the size of cookies and greed of each persons." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
