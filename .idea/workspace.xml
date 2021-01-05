@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartitionEqualSubsetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartitionEqualSubsetSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00634" summary="Add another question that indirectly uses LCS as a way to solve it.&#10;&#10;When given two array and need to transform one array into another by using some moves, try using LCS.">
-      <created>1608726181836</created>
-      <option name="number" value="00634" />
-      <option name="presentableId" value="LOCAL-00634" />
-      <option name="project" value="LOCAL" />
-      <updated>1608726181836</updated>
     </task>
     <task id="LOCAL-00635" summary="Solve hard and extremely trick problem find the min cost to connect all the villages, provided you can dig a well at each village independently.&#10;&#10;Trick was to create a hidden node and connect it with all the villages with edge cost as wells[i]. Then proceed with creating a MST from the graph until all nodes including the hidden nodes are visited.">
       <created>1608728550156</created>
@@ -526,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609707880372</updated>
     </task>
-    <option name="localTasksCounter" value="683" />
+    <task id="LOCAL-00683" summary="Simplify code by just considering whether we can find a subset with targetSum = totalSum/2. Each element has two options, either be part of the subset or be excluded from it. Try both the options.">
+      <created>1609801021438</created>
+      <option name="number" value="00683" />
+      <option name="presentableId" value="LOCAL-00683" />
+      <option name="project" value="LOCAL" />
+      <updated>1609801021438</updated>
+    </task>
+    <option name="localTasksCounter" value="684" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency." />
     <MESSAGE value="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head" />
     <MESSAGE value="Solve medium and a bit tricky create a quad tree from the given grid using recursion. Tricky thing was to divide the grid into 4 parts. Initially I divided it by tracking x,y of topleft and bottomright cell of current grid. New locations were calculated using low + (high-low)/2" />
     <MESSAGE value="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required." />
@@ -633,7 +631,8 @@
     <MESSAGE value="Add gotchas in count distinct subsequences" />
     <MESSAGE value="Simplify topological sort by using enums as states instead of maintaining two different arrays" />
     <MESSAGE value="Solve medium remove all adjacent duplicate characters in string which are of k length using stack." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium remove all adjacent duplicate characters in string which are of k length using stack." />
+    <MESSAGE value="Simplify code by just considering whether we can find a subset with targetSum = totalSum/2. Each element has two options, either be part of the subset or be excluded from it. Try both the options." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify code by just considering whether we can find a subset with targetSum = totalSum/2. Each element has two options, either be part of the subset or be excluded from it. Try both the options." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
