@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00642" summary="Solve medium and tricky find all the strobogrammatic numbers of a specific length using recursion&#10;&#10;Leveraged prior learnings of solving ConfusingNumber that only digits 0,1,6,8,9 can contribute to a valid number.">
-      <created>1608829992350</created>
-      <option name="number" value="00642" />
-      <option name="presentableId" value="LOCAL-00642" />
-      <option name="project" value="LOCAL" />
-      <updated>1608829992351</updated>
-    </task>
     <task id="LOCAL-00643" summary="Solve hard and extremely tricky digit dp question, find all the numbers that can be formed from a set of valid digit and is &lt; target number &#10;&#10;Solved it on my own after watching Kartik's video on Digit DP. Only thing different in this question is to perform computation for lengths of all strings of 1,2,3..(target.length).&#10;&#10;Gave myself a pat on the back.">
       <created>1608844278127</created>
       <option name="number" value="00643" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610028489550</updated>
     </task>
-    <option name="localTasksCounter" value="691" />
+    <task id="LOCAL-00691" summary="Solve medium and a bit tricky find the number of closed islands i.e find the 0's that are completely surrounded by 1's by inverting the lookup criteria. We know the cells at the border are definitely not surrounded, so we mark all the cells connected to the border water cells. The water cells left are closed.">
+      <created>1610035845454</created>
+      <option name="number" value="00691" />
+      <option name="presentableId" value="LOCAL-00691" />
+      <option name="project" value="LOCAL" />
+      <updated>1610035845454</updated>
+    </task>
+    <option name="localTasksCounter" value="692" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -607,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky to optimize given a list of words, find which words are a subsequence of the provided string. I got AC by keeping track of occurrence of each character in the target string and see if you can find an index &gt; previous index.&#10;&#10;An optimized approach would be to maintain a mapping of character to the list of words that require that character. As we traverse the string, update the mappings." />
     <MESSAGE value="Solve medium and extremely tricky find no of fleets that will be formed by cars starting at different positions and travelling at different speed towards target using greedy. Tricky thing to note was that a car starting earlier and reaching in t time will block cars starting later and reaching in x &lt; t time. So they will become part of an existing fleet." />
     <MESSAGE value="Solve hard and extremely tricky count no of distinct subsequences in a string, that can contain duplicate characters using o(n^2) and o(n) DP. Please read the comments inside the source for better understanding." />
     <MESSAGE value="Solve medium and tricky remove comments from a source code using string parsing by visualizing it as a state machine. Although I knew how to write the code, still I figured to see the solution in order to &quot;save me from humiliation&quot;. &#10;&#10;Learnings -- Trick to solving string parsing question is to visualize it as a state machine i.e if /* is encountered switch to a different mode and carefully decide each mode's priority. It will make code very easier." />
@@ -632,7 +631,8 @@
     <MESSAGE value="Solve hard and extremely tricky design a data structure that supports adding ranges and removing ranges using ordered map. Each portion itself is a medium problem of its own ! &#10;To support addRange() we need to merge overlapping intervals by removing all overlapping intervals and at the end introducing the final merged range.&#10;To support removeRange() we can add the range to insert a merged interval and then remove the entire interval only to introduce the slices that needs not to removed ie. the portion on the left and right of target range. Very tricky operation but it simplifies the code a lot" />
     <MESSAGE value="Solve hard and extremely tricky find critical connections in a network using tarzan's algorithm for detecting back edges. &#10;&#10;Keep track of the time a node was first visited, if it's neighbourTime &gt; firstVisitedTime, we have a critical connection. Meanwhile if a node is connected to a node with smaller time, this means there is another path to this node hence current path isn't critical. Keep updating the time of an index by taking the min of neighbourTime and curNodeTime" />
     <MESSAGE value="Solve medium given a set of rooms where each room has a set of keys, find whether it's possible to visit all rooms using UnionFind. A bit optimization trick to avoid visited array was to use a dummy room to perform union with. &#10;&#10;Reminder to self, union find can be applied only on undirected graphs and this problem isn't exactly an undirected graph." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium given a set of rooms where each room has a set of keys, find whether it's possible to visit all rooms using UnionFind. A bit optimization trick to avoid visited array was to use a dummy room to perform union with. &#10;&#10;Reminder to self, union find can be applied only on undirected graphs and this problem isn't exactly an undirected graph." />
+    <MESSAGE value="Solve medium and a bit tricky find the number of closed islands i.e find the 0's that are completely surrounded by 1's by inverting the lookup criteria. We know the cells at the border are definitely not surrounded, so we mark all the cells connected to the border water cells. The water cells left are closed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the number of closed islands i.e find the 0's that are completely surrounded by 1's by inverting the lookup criteria. We know the cells at the border are definitely not surrounded, so we mark all the cells connected to the border water cells. The water cells left are closed." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
