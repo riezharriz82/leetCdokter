@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00641" summary="Solve medium find the maximum length of increasing pairs by solving it similar to LIS or by considering it as an interval scheduling problem&#10;&#10;Learnings -- When provided a set of points, sometimes it's simpler to solve if we visualize it as an interval scheduling problem.">
-      <created>1608815942136</created>
-      <option name="number" value="00641" />
-      <option name="presentableId" value="LOCAL-00641" />
-      <option name="project" value="LOCAL" />
-      <updated>1608815942137</updated>
-    </task>
     <task id="LOCAL-00642" summary="Solve medium and tricky find all the strobogrammatic numbers of a specific length using recursion&#10;&#10;Leveraged prior learnings of solving ConfusingNumber that only digits 0,1,6,8,9 can contribute to a valid number.">
       <created>1608829992350</created>
       <option name="number" value="00642" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610026466170</updated>
     </task>
-    <option name="localTasksCounter" value="690" />
+    <task id="LOCAL-00690" summary="Solve medium given a set of rooms where each room has a set of keys, find whether it's possible to visit all rooms using UnionFind. A bit optimization trick to avoid visited array was to use a dummy room to perform union with. &#10;&#10;Reminder to self, union find can be applied only on undirected graphs and this problem isn't exactly an undirected graph.">
+      <created>1610028489550</created>
+      <option name="number" value="00690" />
+      <option name="presentableId" value="LOCAL-00690" />
+      <option name="project" value="LOCAL" />
+      <updated>1610028489550</updated>
+    </task>
+    <option name="localTasksCounter" value="691" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -607,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find whether it's possible to transform the given pieces of array into target array by trying to concatenate them in any way possible, by tracking the leader of each piece and the entire piece.&#10;&#10;It was a bit tricky to implement though, not an easy question! Need to make sure the entire piece is fulfilled as partial pieces are not allowed." />
     <MESSAGE value="Solve medium and extremely tricky to optimize given a list of words, find which words are a subsequence of the provided string. I got AC by keeping track of occurrence of each character in the target string and see if you can find an index &gt; previous index.&#10;&#10;An optimized approach would be to maintain a mapping of character to the list of words that require that character. As we traverse the string, update the mappings." />
     <MESSAGE value="Solve medium and extremely tricky find no of fleets that will be formed by cars starting at different positions and travelling at different speed towards target using greedy. Tricky thing to note was that a car starting earlier and reaching in t time will block cars starting later and reaching in x &lt; t time. So they will become part of an existing fleet." />
     <MESSAGE value="Solve hard and extremely tricky count no of distinct subsequences in a string, that can contain duplicate characters using o(n^2) and o(n) DP. Please read the comments inside the source for better understanding." />
@@ -632,7 +631,8 @@
     <MESSAGE value="Solve hard and extremely tricky rearrange a string such that same characters are placed at k distance apart using greedy approach. &#10;Couple of tricks were used&#10;1. Use PQ based on decreasing frequency as the characters that occurs the most should be placed first&#10;2. To ensure that we don't place characters early (&lt;k distance), use a queue for simulating characters that are waiting. Add the head of the queue back to PQ only if queue.size()==k" />
     <MESSAGE value="Solve hard and extremely tricky design a data structure that supports adding ranges and removing ranges using ordered map. Each portion itself is a medium problem of its own ! &#10;To support addRange() we need to merge overlapping intervals by removing all overlapping intervals and at the end introducing the final merged range.&#10;To support removeRange() we can add the range to insert a merged interval and then remove the entire interval only to introduce the slices that needs not to removed ie. the portion on the left and right of target range. Very tricky operation but it simplifies the code a lot" />
     <MESSAGE value="Solve hard and extremely tricky find critical connections in a network using tarzan's algorithm for detecting back edges. &#10;&#10;Keep track of the time a node was first visited, if it's neighbourTime &gt; firstVisitedTime, we have a critical connection. Meanwhile if a node is connected to a node with smaller time, this means there is another path to this node hence current path isn't critical. Keep updating the time of an index by taking the min of neighbourTime and curNodeTime" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky find critical connections in a network using tarzan's algorithm for detecting back edges. &#10;&#10;Keep track of the time a node was first visited, if it's neighbourTime &gt; firstVisitedTime, we have a critical connection. Meanwhile if a node is connected to a node with smaller time, this means there is another path to this node hence current path isn't critical. Keep updating the time of an index by taking the min of neighbourTime and curNodeTime" />
+    <MESSAGE value="Solve medium given a set of rooms where each room has a set of keys, find whether it's possible to visit all rooms using UnionFind. A bit optimization trick to avoid visited array was to use a dummy room to perform union with. &#10;&#10;Reminder to self, union find can be applied only on undirected graphs and this problem isn't exactly an undirected graph." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium given a set of rooms where each room has a set of keys, find whether it's possible to visit all rooms using UnionFind. A bit optimization trick to avoid visited array was to use a dummy room to perform union with. &#10;&#10;Reminder to self, union find can be applied only on undirected graphs and this problem isn't exactly an undirected graph." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
