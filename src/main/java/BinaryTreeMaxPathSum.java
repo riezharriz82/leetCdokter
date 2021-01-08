@@ -26,9 +26,6 @@ public class BinaryTreeMaxPathSum {
      * negative children. Simply ignore -ve children. It handles a lot of if's and else's.
      */
     public int maxPathSum(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
         helper(root);
         return maxSum;
     }
