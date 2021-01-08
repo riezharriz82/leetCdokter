@@ -29,6 +29,10 @@
  *  [9,0,20]]
  * Path to get the maximum gold, 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7.
  * </pre>
+ * Constraints:
+ * 1 <= grid.length, grid[i].length <= 15
+ * 0 <= grid[i][j] <= 100
+ * There are at most 25 cells containing gold.
  */
 public class PathWithMaximumGold {
     int[] x_offsets = new int[]{0, 1, 0, -1};
@@ -38,6 +42,9 @@ public class PathWithMaximumGold {
      * Approach: Use backtracking as Greedy/Djikstra won't work here
      * A hint that greedy won't work here would be that problem statement mentions that very low no of cells (25) contains gold
      * Need to use backtracking to visit all the paths and keep track of the path with max gold
+     * DP also doesn't work here because DP can't work if there is cycle in the graph ! Remember that DP needs DAG !
+     * Because in order to memoize you need the current direction as well, so basically you need to reach each cell in 4 directions
+     * which is similar to backtracking.
      * <p>
      * Anyways Djikstra can't give the path with the longest total distance, so that should be the first clue to not use djikstra
      * <p>
