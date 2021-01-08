@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -23,35 +24,30 @@ public class AllPathsFromSourceLeadToDestination {
      */
     public boolean leadsToDestination(int n, int[][] edges, int source, int destination) {
         List<List<Integer>> graph = buildGraph(n, edges);
-        boolean[] visited = new boolean[n];
-        boolean[] toDo = new boolean[n];
-        return DFS(graph, source, destination, visited, toDo);
+        STATE[] states = new STATE[n];
+        Arrays.fill(states, STATE.UNKNOWN);
+        return DFS(graph, source, destination, states);
     }
 
-    private boolean DFS(List<List<Integer>> graph, int source, int destination, boolean[] visited, boolean[] toDo) {
-        if (toDo[source]) {
-            //found a node that is not yet processed, cycle found
-            return false;
+    private boolean DFS(List<List<Integer>> graph, int source, int destination, STATE[] states) {
+        if (states[source] != STATE.UNKNOWN) {
+            //if this node is already visited (in case of common path e.g. LCA) return true
+            //we don't need to worry about returning false because if during previous traversal that path did not led to destination, then
+            //it would have already returned false and would have short circuited
+            return states[source] == STATE.VISITED;
         }
         if (graph.get(source).isEmpty()) {
             //if reached a node with no outdegree, it should be the destination node
             return source == destination;
         }
-        if (visited[source]) {
-            //if this node is already visited (in case of common path e.g. LCA) return true
-            //we don't need to worry about returning false because if during previous traversal that path did not led to destination, then
-            //it would have already returned false and would have shortcircuited
-            return true;
-        }
-        toDo[source] = true;
+        states[source] = STATE.VISITING;
         for (int neighbours : graph.get(source)) {
-            if (!DFS(graph, neighbours, destination, visited, toDo)) {
+            if (!DFS(graph, neighbours, destination, states)) {
                 //short circuit
                 return false;
             }
         }
-        visited[source] = true;
-        toDo[source] = false; //mark the node as done
+        states[source] = STATE.VISITED; //mark the node as done
         return true;
     }
 
@@ -64,5 +60,9 @@ public class AllPathsFromSourceLeadToDestination {
             list.get(edge[0]).add(edge[1]);
         }
         return list;
+    }
+
+    private enum STATE {
+        VISITED, VISITING, UNKNOWN
     }
 }
