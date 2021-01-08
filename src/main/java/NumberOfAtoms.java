@@ -42,6 +42,8 @@ public class NumberOfAtoms {
      */
     public String countOfAtoms(String formula) {
         Stack<Map<String, Integer>> result = new Stack<>();
+        //remember for nested string expressions, first see what is required to solve for string without nested bracket, we would required Map<String, Integer>
+        //now for nested expression, we need a stack of whatever was required for single expression i.e Stack<Map<String, Integer>>
         result.push(new HashMap<>());
         int index = 0;
         while (index < formula.length()) {
