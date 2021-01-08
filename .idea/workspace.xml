@@ -13,7 +13,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DesignPhoneDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignPhoneDirectory.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00648" summary="Solve medium and extremely tricky find the maximum index you can reach provided a set of bricks and ladders. Given constraint screams of greedy. Trick was to use ladders at the current place or at some previous place, whichever gives the most amount of bricks back.&#10;This travel back in time and correct the mistake is a new pattern which I am seeing today.">
-      <created>1608926456682</created>
-      <option name="number" value="00648" />
-      <option name="presentableId" value="LOCAL-00648" />
-      <option name="project" value="LOCAL" />
-      <updated>1608926456682</updated>
     </task>
     <task id="LOCAL-00649" summary="Solve easy find the count of substrings with only one distinct letter by counting the length of the longest substring with only one distinct letter and then breaking it down into smaller substrings.">
       <created>1609008952270</created>
@@ -523,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610124652385</updated>
     </task>
-    <option name="localTasksCounter" value="697" />
+    <task id="LOCAL-00697" summary="Add clarification on why DP doesn't work for this problem because this problem has cycles in recurrence relation">
+      <created>1610125983097</created>
+      <option name="number" value="00697" />
+      <option name="presentableId" value="LOCAL-00697" />
+      <option name="project" value="LOCAL" />
+      <updated>1610125983097</updated>
+    </task>
+    <option name="localTasksCounter" value="698" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky find the largest sum possible that is divisible by 3 using DP.&#10;&#10;Leveraged prior learnings of using mod whenever divisibility is involved. Here we need to do the same by using current mod and greatest sum possible at previous element. State transitions are similar to previously solved house robber." />
     <MESSAGE value="Solve medium design a time based key value data structure that provides the value of a key at a timestamp &lt;= provided timestamp using map + treemap combination.&#10;&#10;Leveraged prior learnings of solving SnapshotArray" />
     <MESSAGE value="Solve medium count all beautiful numbers of n digits, where we can place a digit on the ith index only if either the digit divides the index or the index divides the digit using backtracking or bitmasking&#10;&#10;Leveraged prior learnings of using (bitmask, current node/index) as an identifier for memoization during bitmasking." />
     <MESSAGE value="Solve medium and extremely tricky find the lexicographically smallest permutation of 1,2,3..n that satisfies pattern like I and D by greedy. Consider the base case of all I's, it would be 1,2,3...n. Whenever D is found, need to reverse the portion to find the smallest valid permutation. &#10;&#10;Got lost while trying to incrementally build the solution by tracking length of I's and D's and placing numbers accordingly." />
@@ -630,7 +632,8 @@
     <MESSAGE value="Solve easy find whether two string arrays result in same string upon concatenation or not using O(1) space via two pointers approach.&#10;Keep four pointers, 2 for word index and 2 for char index inside word. Increment the word index pointer if char index has reached the end of the current word.&#10;At the end check if all the words have been verified in both the arrays." />
     <MESSAGE value="Add constraints in the problem statement along with explanation of not using the curSum as a key in memoization because the numbers chosen so far can uniquely represent the dp state. We are not restricting ourselves to an index" />
     <MESSAGE value="Add approach and related line sweep problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add approach and related line sweep problems" />
+    <MESSAGE value="Add clarification on why DP doesn't work for this problem because this problem has cycles in recurrence relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add clarification on why DP doesn't work for this problem because this problem has cycles in recurrence relation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

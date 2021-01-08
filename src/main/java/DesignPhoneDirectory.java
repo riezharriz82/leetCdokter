@@ -79,7 +79,7 @@ public class DesignPhoneDirectory {
                     prev = cur;
                 }
                 return -1; //not possible
-            } else { //gap found, add a element in the gap
+            } else { //gap found at the end, add a element in the gap
                 set.add(last + 1);
                 return last + 1;
             }
