@@ -20,30 +20,32 @@ import java.util.List;
  * There are two paths: 0 -> 1 -> 3 and 0 -> 2 -> 3.
  */
 public class AllPathsFromSourceToTarget {
+    /**
+     * Approach: Backtracking, perform DFS at each path, keeping track of nodes visited so far
+     * TimeComplexity: 2^N * N, Everytime we add a node to the graph, number of paths would double, very similar to how
+     * subsequences are counted {@link DistinctSubsequences}
+     */
     public List<List<Integer>> allPathsSourceTarget(int[][] edges) {
         List<List<Integer>> graph = buildGraph(edges);
-        boolean[] visited = new boolean[edges.length];
         List<List<Integer>> paths = new ArrayList<>();
-        DFS(graph, visited, paths, new ArrayList<>(), 0, edges.length - 1);
+        //visited array isn't required because problem statement mentions that the graph has no cycles
+        DFS(graph, paths, new ArrayList<>(), 0, edges.length - 1);
         return paths;
     }
 
-    private void DFS(List<List<Integer>> graph, boolean[] visited, List<List<Integer>> paths, ArrayList<Integer> currentPath, int currentIndex, int targetIndex) {
+    private void DFS(List<List<Integer>> graph, List<List<Integer>> paths, ArrayList<Integer> currentPath, int currentIndex, int targetIndex) {
         if (currentIndex == targetIndex) { //reached target node
             currentPath.add(currentIndex);
             paths.add(new ArrayList<>(currentPath));
             currentPath.remove(currentIndex);
         } else {
-            visited[currentIndex] = true;
             currentPath.add(currentIndex);
             for (int adjacentNode : graph.get(currentIndex)) {
-                if (!visited[adjacentNode]) {
-                    DFS(graph, visited, paths, currentPath, adjacentNode, targetIndex);
-                }
+                DFS(graph, paths, currentPath, adjacentNode, targetIndex);
             }
             currentPath.remove(currentPath.size() - 1); //backtrack
-            visited[currentIndex] = false; //unset so that the node can be picked later
         }
+
     }
 
     private List<List<Integer>> buildGraph(int[][] edges) {
@@ -57,7 +59,6 @@ public class AllPathsFromSourceToTarget {
                 edgesForNode.add(edges[i][j]);
             }
         }
-
         return graph;
     }
 }
