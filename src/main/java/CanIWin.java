@@ -22,6 +22,10 @@ import java.util.HashMap;
  * If the first player choose 1, the second player can only choose integers from 2 up to 10.
  * The second player will win by choosing 10 and get a total = 11, which is >= desiredTotal.
  * Same with other integers chosen by the first player, the second player will always win.
+ * <p>
+ * Constraints:
+ * 1 <= maxChoosableInteger <= 20
+ * 0 <= desiredTotal <= 300
  */
 public class CanIWin {
     /**
@@ -54,6 +58,11 @@ public class CanIWin {
     private boolean recur(boolean[] chosen, int maxChoosableInteger, int desiredTotal, int curSum, HashMap<String, Boolean> map) {
         String key = Arrays.toString(chosen); //very important to understand this is the key, that needs to be memoized
         //in my initial implementation, I tried to memoize the choice taken along with initial state as well but it gave WA
+        //the state of the game is 1. the numbers chosen so far 2. current sum, so it looks like we have to use both as the key
+        //but the numbers chosen so far can always tell us the current sum because each number can be chosen only once
+        //we are not restricting ourselves to an index, if we had then probably we would have required curSum as a key
+        //we can also use a bitmask as a key because constraints specify that maxChoosableInteger <= 20, so we can represent
+        //all the chosen numbers in a 32 bit integer
         if (map.containsKey(key)) {
             return map.get(key);
         }
