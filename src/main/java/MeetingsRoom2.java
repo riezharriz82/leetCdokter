@@ -34,6 +34,11 @@ public class MeetingsRoom2 {
         return minHeap.size();
     }
 
+    /**
+     * Approach: Line Sweep algorithm, very commonly used for interval related problems
+     * <p>
+     * {@link EmployeeFreeTime} {@link IntervalListIntersections} related problems
+     */
     public int minMeetingRooms(int[][] intervals) {
         int max = 0, cur = 0;
         TreeMap<Integer, Integer> map = new TreeMap<>();
