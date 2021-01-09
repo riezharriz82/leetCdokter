@@ -68,7 +68,7 @@ public class ReconstructItinerary {
     public List<String> findItineraryBacktracking(List<List<String>> tickets) {
         //to avoid the edges map, we could remove the neighbour from the graph during the DFS traversal, always poll the first node until no neighbours left
         HashMap<String, List<String>> graph = new HashMap<>();
-        Map<String, Integer> edges = new HashMap<>(); //required as some nodes can have multiple edges
+        Map<String, Integer> edges = new HashMap<>(); //required because of parallel/duplicate edges
         for (List<String> ticket : tickets) {
             graph.computeIfAbsent(ticket.get(0), __ -> new ArrayList<>()).add(ticket.get(1)); //directed graph
             String key = ticket.get(0) + "->" + ticket.get(1);

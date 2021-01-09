@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MostStonesRemovedWithSameRowOrSameColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MostStonesRemovedWithSameRowOrSameColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReconstructItinerary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReconstructItinerary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00657" summary="Solve hard and extremely tricky find the least numbers of transactions required to settle debts among friends by using backtracking !&#10;&#10;Learnings -- Although GFG solutions proposes Greedy solution for this but Leetcode articles prove that it's a NP Problem in which we have to check all combinations by trying to settle one person at a time by transferring one's debt/credit to another with credit/debt (opposing credit) and recurring.">
-      <created>1609193673894</created>
-      <option name="number" value="00657" />
-      <option name="presentableId" value="LOCAL-00657" />
-      <option name="project" value="LOCAL" />
-      <updated>1609193673894</updated>
     </task>
     <task id="LOCAL-00658" summary="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency.">
       <created>1609244731894</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610203367874</updated>
     </task>
-    <option name="localTasksCounter" value="706" />
+    <task id="LOCAL-00706" summary="Add comments and time complexity in MostStonesRemovedWithSameRowOrSameColumn">
+      <created>1610205554155</created>
+      <option name="number" value="00706" />
+      <option name="presentableId" value="LOCAL-00706" />
+      <option name="project" value="LOCAL" />
+      <updated>1610205554156</updated>
+    </task>
+    <option name="localTasksCounter" value="707" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify topological sort by using enums as states instead of maintaining two different arrays" />
     <MESSAGE value="Solve medium remove all adjacent duplicate characters in string which are of k length using stack." />
     <MESSAGE value="Simplify code by just considering whether we can find a subset with targetSum = totalSum/2. Each element has two options, either be part of the subset or be excluded from it. Try both the options." />
     <MESSAGE value="Solve medium remove duplicates from a sorted linked list using dummy node" />
@@ -633,7 +632,8 @@
     <MESSAGE value="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices." />
     <MESSAGE value="Add comment to explain the additional code in union() operation on strings" />
     <MESSAGE value="Add clarifications on handling duplicate elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add clarifications on handling duplicate elements" />
+    <MESSAGE value="Add comments and time complexity in MostStonesRemovedWithSameRowOrSameColumn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments and time complexity in MostStonesRemovedWithSameRowOrSameColumn" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
