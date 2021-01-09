@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReconstructItinerary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReconstructItinerary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RemoveInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RemoveInterval.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00658" summary="Solve medium find the total no of root to leaf paths that can be reordered to make a palindrome by keeping track of frequency count of elements present in root to leaf path. Atmost one odd element should be present in order to make the path palindrome&#10;&#10;Can leverage bitmask to remove int[]. xor can be used to ensure a digit has odd frequency.">
-      <created>1609244731894</created>
-      <option name="number" value="00658" />
-      <option name="presentableId" value="LOCAL-00658" />
-      <option name="project" value="LOCAL" />
-      <updated>1609244731894</updated>
     </task>
     <task id="LOCAL-00659" summary="Solve medium and tricky to optimize, design a way to assign and release id's in a specific range using linkedlist or set.&#10;&#10;In my initial implementation I went ahead with the same approach learnt in ExamRoom, but it can be optimized if instead of maintaining set of assigned numbers, we track set of recycled numbers.&#10;In another implementation I solved it similar to circular linked list, where each node points to next unassigned node. We always assign from head. When a node is recycled, we add the recycled node back to head">
       <created>1609250665946</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610205554156</updated>
     </task>
-    <option name="localTasksCounter" value="707" />
+    <task id="LOCAL-00707" summary="Update comment regarding handling of parallel edges">
+      <created>1610207272603</created>
+      <option name="number" value="00707" />
+      <option name="presentableId" value="LOCAL-00707" />
+      <option name="project" value="LOCAL" />
+      <updated>1610207272603</updated>
+    </task>
+    <option name="localTasksCounter" value="708" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium remove all adjacent duplicate characters in string which are of k length using stack." />
     <MESSAGE value="Simplify code by just considering whether we can find a subset with targetSum = totalSum/2. Each element has two options, either be part of the subset or be excluded from it. Try both the options." />
     <MESSAGE value="Solve medium remove duplicates from a sorted linked list using dummy node" />
     <MESSAGE value="Solve medium design data structure to represent browser history that supports going back and forward k steps in history using arraylist and ensuring that we overwrite the index, if we are at inner indices instead of creating a new list and appending to the end of it. &#10;This smart overwrite logic ensures we work in O(1) time for all operations" />
@@ -633,7 +632,8 @@
     <MESSAGE value="Add comment to explain the additional code in union() operation on strings" />
     <MESSAGE value="Add clarifications on handling duplicate elements" />
     <MESSAGE value="Add comments and time complexity in MostStonesRemovedWithSameRowOrSameColumn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments and time complexity in MostStonesRemovedWithSameRowOrSameColumn" />
+    <MESSAGE value="Update comment regarding handling of parallel edges" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update comment regarding handling of parallel edges" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

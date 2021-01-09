@@ -29,6 +29,8 @@ public class RemoveInterval {
      * <p>
      * Saw the hint of considering each interval one by one and split it accordingly, then was able to implement it and got AC.
      * However the initial implementation was a bit crude, current implementation is a bit simplified
+     * <p>
+     * Alternative way of solving this would be to refer {@link RangeModule} Although the time complexity would be a bit higher
      */
     public List<List<Integer>> removeInterval(int[][] intervals, int[] toBeRemoved) {
         ArrayList<List<Integer>> result = new ArrayList<>();
