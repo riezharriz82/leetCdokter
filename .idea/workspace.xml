@@ -13,11 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountPrimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumNumberOfKConsecutiveBitFlips.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumNumberOfKConsecutiveBitFlips.java" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00662" summary="Solve medium support a snapshot array that returns the value of any index at a specific snap using multiple approaches&#10;&#10;1. get() in o(total_snaps) by storing (index, snap_id) -&gt; value directly in map and then iterating down to find a valid snap_id&#10;2. get() in o(log(total_snaps)) and set() in o(log(total_snaps)) by storing a treemap of snap_id -&gt; value for each index and then finding a snap_id &lt;= provided snap_id in the map of the given index.">
-      <created>1609419103958</created>
-      <option name="number" value="00662" />
-      <option name="presentableId" value="LOCAL-00662" />
-      <option name="project" value="LOCAL" />
-      <updated>1609419103959</updated>
     </task>
     <task id="LOCAL-00663" summary="Solve medium design a leaderboard which supports updating scores of a player as well as finding the top k scores using hashmap + treemap (priority queue)&#10;&#10;Leveraged prior learning of using treemap instead of priority queue when deletion is required.">
       <created>1609424004407</created>
@@ -527,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610224169592</updated>
     </task>
-    <option name="localTasksCounter" value="711" />
+    <task id="LOCAL-00711" summary="Add problem statement and approach for counting prime numbers &lt; n using sieve of eratosthenes">
+      <created>1610225971292</created>
+      <option name="number" value="00711" />
+      <option name="presentableId" value="LOCAL-00711" />
+      <option name="project" value="LOCAL" />
+      <updated>1610225971292</updated>
+    </task>
+    <option name="localTasksCounter" value="712" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -609,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find out how many person's can be satisfied from given set of cookies if a person needs atleast a cookie of specific size to get satisfied using greedy by sorting the size of cookies and greed of each persons." />
     <MESSAGE value="Solve hard and extremely tricky rearrange a string such that same characters are placed at k distance apart using greedy approach. &#10;Couple of tricks were used&#10;1. Use PQ based on decreasing frequency as the characters that occurs the most should be placed first&#10;2. To ensure that we don't place characters early (&lt;k distance), use a queue for simulating characters that are waiting. Add the head of the queue back to PQ only if queue.size()==k" />
     <MESSAGE value="Solve hard and extremely tricky design a data structure that supports adding ranges and removing ranges using ordered map. Each portion itself is a medium problem of its own ! &#10;To support addRange() we need to merge overlapping intervals by removing all overlapping intervals and at the end introducing the final merged range.&#10;To support removeRange() we can add the range to insert a merged interval and then remove the entire interval only to introduce the slices that needs not to removed ie. the portion on the left and right of target range. Very tricky operation but it simplifies the code a lot" />
     <MESSAGE value="Solve hard and extremely tricky find critical connections in a network using tarzan's algorithm for detecting back edges. &#10;&#10;Keep track of the time a node was first visited, if it's neighbourTime &gt; firstVisitedTime, we have a critical connection. Meanwhile if a node is connected to a node with smaller time, this means there is another path to this node hence current path isn't critical. Keep updating the time of an index by taking the min of neighbourTime and curNodeTime" />
@@ -634,7 +629,8 @@
     <MESSAGE value="Add comment to solve the problem in another way" />
     <MESSAGE value="Solve hard and extremely tricky represent data stream as disjoint intervals by merging consecutive integers ie. 1,2,3,4 are merged to form [1,4] using treeMap&#10;&#10;Learnings -- To handle interval related problem, always ensure that there is no overlapping interval before or after an operation, so whenever do something, remove overlapped intervals and introduce a merged interval" />
     <MESSAGE value="Solve hard and extremely tricky find the min no of flips required so that array does not have any 0. Whenever flip is performed, we have to flip k consecutive bits. Need to use greedy ie. whenever we see a 0, flip k consecutive bits. If we actually flip it, time complexity would be o(nk), instead we perform virtual flips i.e we keep track of indices till which we have to perform flips and size of queue would indicate the no of flips performed. If A[i] == 1 and we have performed even bits, A[i] is still 1, so skip it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky find the min no of flips required so that array does not have any 0. Whenever flip is performed, we have to flip k consecutive bits. Need to use greedy ie. whenever we see a 0, flip k consecutive bits. If we actually flip it, time complexity would be o(nk), instead we perform virtual flips i.e we keep track of indices till which we have to perform flips and size of queue would indicate the no of flips performed. If A[i] == 1 and we have performed even bits, A[i] is still 1, so skip it." />
+    <MESSAGE value="Add problem statement and approach for counting prime numbers &lt; n using sieve of eratosthenes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add problem statement and approach for counting prime numbers &lt; n using sieve of eratosthenes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
