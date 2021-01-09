@@ -25,7 +25,7 @@ public class LongestConsecutiveSequence {
         //key is the number and value is the length of the longest consecutive path ending at current key
         int maxVal = 0;
         for (int num : nums) {
-            map.put(num, 0);
+            map.put(num, 0); //need not worry about duplicates as they can't contribute anything extra
         }
         for (int num : nums) {
             maxVal = Math.max(maxVal, DFS(num, map));
@@ -37,7 +37,7 @@ public class LongestConsecutiveSequence {
         if (map.containsKey(num)) {
             int val = map.get(num);
             if (val == 0) { //if this key has not been visited
-                int newLength = 1 + DFS(num - 1, map); //recur for a longer path
+                int newLength = 1 + DFS(num - 1, map); //look down to find a longer path
                 map.put(num, newLength); //update the length of the longest path ending at num
                 return newLength;
             } else {

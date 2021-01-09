@@ -180,13 +180,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00655" summary="Solve hard and extremely tricky find all strobogrammatic numbers that lies within a range low &lt;= x &lt;= high by fixing pairwise digits and checking whether the string generated at the end is within bounds. &#10;&#10;I honestly thought it would take a lot of time but I was pleasantly surprised. Digit DP is a bit tough to understand but it's surprisingly fast.">
-      <created>1609105309449</created>
-      <option name="number" value="00655" />
-      <option name="presentableId" value="LOCAL-00655" />
-      <option name="project" value="LOCAL" />
-      <updated>1609105309449</updated>
-    </task>
     <task id="LOCAL-00656" summary="Solve hard and extremely tricky find whether it's possible to reach the last index from current index, if we can jump to some specific indices during odd/even numbered jumps. Trickiest part was to compute those indices. After that, it was just regular DFS.&#10;&#10;Learnings -- When asked to find valid indices on the right such that it is not restricted to finding the first valid number on the right, it might be better to traverse from the right instead. I was trying to iterate from the left using monotonic stack but couldn't make it work.">
       <created>1609187665288</created>
       <option name="number" value="00656" />
@@ -523,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610202217577</updated>
     </task>
-    <option name="localTasksCounter" value="704" />
+    <task id="LOCAL-00704" summary="Add comment to explain the additional code in union() operation on strings">
+      <created>1610202666791</created>
+      <option name="number" value="00704" />
+      <option name="presentableId" value="LOCAL-00704" />
+      <option name="project" value="LOCAL" />
+      <updated>1610202666791</updated>
+    </task>
+    <option name="localTasksCounter" value="705" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify code by using Math.min() instead" />
     <MESSAGE value="Add gotchas in count distinct subsequences" />
     <MESSAGE value="Simplify topological sort by using enums as states instead of maintaining two different arrays" />
     <MESSAGE value="Solve medium remove all adjacent duplicate characters in string which are of k length using stack." />
@@ -630,7 +629,8 @@
     <MESSAGE value="Simplify code by introducing enum states instead of two boolean[] array; visited and toDo" />
     <MESSAGE value="Simplify code by removing redundant null checks" />
     <MESSAGE value="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices." />
+    <MESSAGE value="Add comment to explain the additional code in union() operation on strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comment to explain the additional code in union() operation on strings" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
