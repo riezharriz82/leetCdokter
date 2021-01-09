@@ -30,8 +30,8 @@ public class MostStonesRemovedWithSameRowOrSameColumn {
      * Initially I went ahead with recursion in which I found all the conflicting stones and tried to either delete current stone or delete
      * remaining conflicting stones, but it gave WA
      * The thing I did wrong here was I missed the point in which I could think of greedily keeping only one stone in a conflicting group
-     * and delete others. This way we would always perform the largest possible no of moves. As with all greedy solutions, its difficult
-     * to prove this.
+     * and delete others. This way we would always perform the largest possible no of moves.
+     * Time Complexity: O(n^2)
      * <p>
      * {@link SmallestStringWithSwaps} related tricky union find problem
      */
@@ -41,7 +41,7 @@ public class MostStonesRemovedWithSameRowOrSameColumn {
         int noOfIslands = 0;
         for (int i = 0; i < n; i++) {
             if (!visited[i]) {
-                noOfIslands++;
+                noOfIslands++; //need to keep only one stone from each island
                 visited[i] = true;
                 DFS(visited, stones, stones[i]);
             }
@@ -52,6 +52,7 @@ public class MostStonesRemovedWithSameRowOrSameColumn {
     private void DFS(boolean[] visited, int[][] stones, int[] stone) {
         for (int i = 0; i < stones.length; i++) {
             if (!visited[i] && (stones[i][0] == stone[0] || stones[i][1] == stone[1])) {
+                //if this stone is unvisited and is either present on the same row or on same column, remove it
                 visited[i] = true;
                 DFS(visited, stones, stones[i]);
                 //this recursive part is important e.g if initial stone was [0,3] and current stone is [5,3] we need to delete
@@ -69,6 +70,8 @@ public class MostStonesRemovedWithSameRowOrSameColumn {
      * [3,5] 3 is unmapped but 5 is mapped to 0, so 3 will be mapped to 0 as well
      * [0,4] 0 is mapped to 0 and 4 is unmapped so 4 will be mapped to 0 as well
      * 0,3,4,5 all will be mapped to same component 0
+     * <p>
+     * TimeComplexity: O(n)
      */
     public int removeStonesUnionFind(int[][] stones) {
         int[] parent = new int[20000]; //max value of stone[i] is 10000 so x is < 10000, consider y to start from 10000
@@ -80,7 +83,9 @@ public class MostStonesRemovedWithSameRowOrSameColumn {
         }
         Set<Integer> uniqueComponents = new HashSet<>();
         for (int[] stone : stones) {
-            uniqueComponents.add(find(stone[0], parent)); //find component id of each stone
+            //we can't rely on decrementing uniqueComponents after performing union() because we perform union on x & y of same stone
+            //so it will give incorrect answer
+            uniqueComponents.add(find(stone[0], parent)); //find component id of x coordinate of each stone
         }
         return stones.length - uniqueComponents.size();
     }
