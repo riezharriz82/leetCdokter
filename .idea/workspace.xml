@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00660" summary="Solve medium and a bit tricky create a quad tree from the given grid using recursion. Tricky thing was to divide the grid into 4 parts. Initially I divided it by tracking x,y of topleft and bottomright cell of current grid. New locations were calculated using low + (high-low)/2">
-      <created>1609413542822</created>
-      <option name="number" value="00660" />
-      <option name="presentableId" value="LOCAL-00660" />
-      <option name="project" value="LOCAL" />
-      <updated>1609413542822</updated>
-    </task>
     <task id="LOCAL-00661" summary="Solve medium design a run length encoding iterator which if provided a rle encoded string, returns the kth next character by keeping track of frequency of each char and the frequency required.">
       <created>1609416555007</created>
       <option name="number" value="00661" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610208437237</updated>
     </task>
-    <option name="localTasksCounter" value="709" />
+    <task id="LOCAL-00709" summary="Solve hard and extremely tricky represent data stream as disjoint intervals by merging consecutive integers ie. 1,2,3,4 are merged to form [1,4] using treeMap&#10;&#10;Learnings -- To handle interval related problem, always ensure that there is no overlapping interval before or after an operation, so whenever do something, remove overlapped intervals and introduce a merged interval">
+      <created>1610212671533</created>
+      <option name="number" value="00709" />
+      <option name="presentableId" value="LOCAL-00709" />
+      <option name="project" value="LOCAL" />
+      <updated>1610212671533</updated>
+    </task>
+    <option name="localTasksCounter" value="710" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -607,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium remove duplicates from a sorted linked list using dummy node" />
     <MESSAGE value="Solve medium design data structure to represent browser history that supports going back and forward k steps in history using arraylist and ensuring that we overwrite the index, if we are at inner indices instead of creating a new list and appending to the end of it. &#10;This smart overwrite logic ensures we work in O(1) time for all operations" />
     <MESSAGE value="Solve easy find out how many person's can be satisfied from given set of cookies if a person needs atleast a cookie of specific size to get satisfied using greedy by sorting the size of cookies and greed of each persons." />
     <MESSAGE value="Solve hard and extremely tricky rearrange a string such that same characters are placed at k distance apart using greedy approach. &#10;Couple of tricks were used&#10;1. Use PQ based on decreasing frequency as the characters that occurs the most should be placed first&#10;2. To ensure that we don't place characters early (&lt;k distance), use a queue for simulating characters that are waiting. Add the head of the queue back to PQ only if queue.size()==k" />
@@ -632,7 +631,8 @@
     <MESSAGE value="Add comments and time complexity in MostStonesRemovedWithSameRowOrSameColumn" />
     <MESSAGE value="Update comment regarding handling of parallel edges" />
     <MESSAGE value="Add comment to solve the problem in another way" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comment to solve the problem in another way" />
+    <MESSAGE value="Solve hard and extremely tricky represent data stream as disjoint intervals by merging consecutive integers ie. 1,2,3,4 are merged to form [1,4] using treeMap&#10;&#10;Learnings -- To handle interval related problem, always ensure that there is no overlapping interval before or after an operation, so whenever do something, remove overlapped intervals and introduce a merged interval" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky represent data stream as disjoint intervals by merging consecutive integers ie. 1,2,3,4 are merged to form [1,4] using treeMap&#10;&#10;Learnings -- To handle interval related problem, always ensure that there is no overlapping interval before or after an operation, so whenever do something, remove overlapped intervals and introduce a merged interval" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
