@@ -57,13 +57,13 @@ public class SentenceSimilarity2 {
     }
 
     private String find(String word, HashMap<String, String> parent) {
-        if (!parent.containsKey(word)) {
+        if (!parent.containsKey(word)) { //this extra code is required to handle words that are not present in the parent array, otherwise NPE
             parent.put(word, word);
             return word;
-        } else if (parent.get(word).equals(word)) {
+        } else if (parent.get(word).equals(word)) { //parent node found
             return word;
         } else {
-            parent.put(word, find(parent.get(word), parent));
+            parent.put(word, find(parent.get(word), parent)); //path compression on strings
             return parent.get(word);
         }
     }

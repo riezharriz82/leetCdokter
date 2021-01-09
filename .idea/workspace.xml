@@ -13,9 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,13 +179,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00654" summary="Solve hard and extremely tricky find count of confusing numbers &lt;= n, a number is said to be confusing, if it's rotated 180 deg it's still valid but it should be different than input number &#10;&#10;Initially I solved it with backtracking by fixing digits one at a time using [0,1,6,8,9]. Took ~600 ms.&#10;Then found all the valid numbers with digit [0,1,6,8,9] &lt;= n. Then found strobogrammatic numbers &lt;= n. Result is a - b.&#10;This hard problem is combination of two hard problems. EPIC !">
-      <created>1609104431967</created>
-      <option name="number" value="00654" />
-      <option name="presentableId" value="LOCAL-00654" />
-      <option name="project" value="LOCAL" />
-      <updated>1609104431967</updated>
     </task>
     <task id="LOCAL-00655" summary="Solve hard and extremely tricky find all strobogrammatic numbers that lies within a range low &lt;= x &lt;= high by fixing pairwise digits and checking whether the string generated at the end is within bounds. &#10;&#10;I honestly thought it would take a lot of time but I was pleasantly surprised. Digit DP is a bit tough to understand but it's surprisingly fast.">
       <created>1609105309449</created>
@@ -525,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610144909010</updated>
     </task>
-    <option name="localTasksCounter" value="703" />
+    <task id="LOCAL-00703" summary="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices.">
+      <created>1610202217576</created>
+      <option name="number" value="00703" />
+      <option name="presentableId" value="LOCAL-00703" />
+      <option name="project" value="LOCAL" />
+      <updated>1610202217577</updated>
+    </task>
+    <option name="localTasksCounter" value="704" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -607,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fix incorrect distance check when some node is unreachable" />
     <MESSAGE value="Simplify code by using Math.min() instead" />
     <MESSAGE value="Add gotchas in count distinct subsequences" />
     <MESSAGE value="Simplify topological sort by using enums as states instead of maintaining two different arrays" />
@@ -632,7 +629,8 @@
     <MESSAGE value="Add approach and simplify code by removing visited arrays because the given graph is a DAG" />
     <MESSAGE value="Simplify code by introducing enum states instead of two boolean[] array; visited and toDo" />
     <MESSAGE value="Simplify code by removing redundant null checks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify code by removing redundant null checks" />
+    <MESSAGE value="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
