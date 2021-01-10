@@ -15,8 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PalindromLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PalindromeLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RemoveDuplicatesFromSortedList2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RemoveDuplicatesFromSortedList2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AlienDictionary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00668" summary="Solve hard and extremely tricky count no of distinct subsequences in a string, that can contain duplicate characters using o(n^2) and o(n) DP. Please read the comments inside the source for better understanding.">
-      <created>1609522643849</created>
-      <option name="number" value="00668" />
-      <option name="presentableId" value="LOCAL-00668" />
-      <option name="project" value="LOCAL" />
-      <updated>1609522643849</updated>
     </task>
     <task id="LOCAL-00669" summary="Solve medium and tricky remove comments from a source code using string parsing by visualizing it as a state machine. Although I knew how to write the code, still I figured to see the solution in order to &quot;save me from humiliation&quot;. &#10;&#10;Learnings -- Trick to solving string parsing question is to visualize it as a state machine i.e if /* is encountered switch to a different mode and carefully decide each mode's priority. It will make code very easier.">
       <created>1609534234307</created>
@@ -527,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610297472757</updated>
     </task>
-    <option name="localTasksCounter" value="717" />
+    <task id="LOCAL-00717" summary="Fix typo">
+      <created>1610308799198</created>
+      <option name="number" value="00717" />
+      <option name="presentableId" value="LOCAL-00717" />
+      <option name="project" value="LOCAL" />
+      <updated>1610308799198</updated>
+    </task>
+    <option name="localTasksCounter" value="718" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -598,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky coloring game where first player has chosen a node and we have to choose a marker node. Now after this each player can only choose nodes that are directly connected to the nodes of same color.&#10;&#10;Trick was to realize that best option for player2 would be to choose any of the 3 connected nodes to first players chosen node i.e left child, right child or it's parent. Doing so will block first player to choose any of it's subtree." />
     <MESSAGE value="Solve medium and extremely tricky to do it in O(1) space complexity, given nodes of a n-ary tree, find the root node. Simple solution is to use a visited set to keep track of nodes that were visited because they are a children of some other node. Root node will never be visited because it's not a children of any node. But this approach requires additional space.&#10;&#10;In order to reduce space complexity we have to leverage the insight that all other nodes except root node are visited twice. So if we perform xor on the values, only root node will remain." />
     <MESSAGE value="Solve easy find whether two string arrays result in same string upon concatenation or not using O(1) space via two pointers approach.&#10;Keep four pointers, 2 for word index and 2 for char index inside word. Increment the word index pointer if char index has reached the end of the current word.&#10;At the end check if all the words have been verified in both the arrays." />
     <MESSAGE value="Add constraints in the problem statement along with explanation of not using the curSum as a key in memoization because the numbers chosen so far can uniquely represent the dp state. We are not restricting ourselves to an index" />
@@ -623,7 +621,8 @@
     <MESSAGE value="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string" />
     <MESSAGE value="Solve count distinct subsequences in a string that matches target string using binary search + memoization. In my initial attempt, I thought my solution isn't memoizable but I proved myself wrong ! What a day !" />
     <MESSAGE value="Simplify code by removing if/else check during removal of key from hashmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify code by removing if/else check during removal of key from hashmap" />
+    <MESSAGE value="Fix typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix typo" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

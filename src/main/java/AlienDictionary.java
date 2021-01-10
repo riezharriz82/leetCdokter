@@ -46,7 +46,7 @@ public class AlienDictionary {
      * Care must be taken to handle invalid cases like {"abcd", "abc"}
      * <p>
      * Also care must be taken to place characters at the end whose order have not been identified i.e {"ae", "afg"}
-     * We can only confirm that e < g but we can't say anything about 'a' and 'g' so we can place them anywhere and return it
+     * We can only confirm that e < f but we can't say anything about 'a' and 'g' so we can place them anywhere and return it
      * <p>
      * {@link CourseSchedule2} for related topological sort problem
      */
@@ -108,7 +108,7 @@ public class AlienDictionary {
         }
         toDo[c - 'a'] = false; //mark the node as processed
         visited[c - 'a'] = true;
-        stack.push(c); //push the node to stack only after its required dependencies are processed
+        stack.push(c); //push the node to stack only after its required dependencies are processed aka postorder traversal
         return true;
     }
 
