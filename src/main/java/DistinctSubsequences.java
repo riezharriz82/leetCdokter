@@ -46,6 +46,9 @@ public class DistinctSubsequences {
             return memoized[s_index][t_index];
         } else {
             if (s.charAt(s_index) == t.charAt(t_index)) {
+                //this step is important to count all matching subsequences, if chars match, then either
+                //1. include char in s and char in t
+                //2. move to next char in s and keep current char in t
                 return memoized[s_index][t_index] = recur(s, t, s_index - 1, t_index - 1, memoized)
                         + recur(s, t, s_index - 1, t_index, memoized);
             } else {
