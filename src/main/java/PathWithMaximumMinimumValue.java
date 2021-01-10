@@ -124,13 +124,14 @@ public class PathWithMaximumMinimumValue {
     /**
      * Approach: Solve using union find. Since we have to connect source and target node, eventually they will become part of the same component
      * We will greedily pick up cells with largest value first and see whether picking it can merge source and target together
+     * This approach is very similar to Kruskal's algorithm to generate MST
      * <p>
      * Slowest, took ~131ms
      */
     public int maximumMinimumPathUnionFind(int[][] A) {
         int m = A.length;
         int n = A[0].length;
-        int[] parent = new int[m * n];
+        int[] parent = new int[m * n]; //we flatten 2D indices into 1D
         for (int i = 0; i < parent.length; i++) {
             parent[i] = i;
         }
@@ -171,7 +172,7 @@ public class PathWithMaximumMinimumValue {
     }
 
     private void union(int cell1, int cell2, int[] parent) {
-        int root1 = find(cell1, parent); //please make sure that you find the correct parent, not just do parent[cell1] directly
+        int root1 = find(cell1, parent); //please make sure that you find the correct parent by calling find(), do not refer to parent[cell1] directly
         //took me a hour to find this stupid bug
         int root2 = find(cell2, parent);
         if (root1 != root2) {
