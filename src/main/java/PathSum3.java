@@ -53,14 +53,11 @@ public class PathSum3 {
         if (integers.containsKey(currentSum - targetSum)) {
             count += integers.get(currentSum - targetSum); //this is important e.g 0 -> 0 -> 5 (target 5)
         }
-        integers.put(currentSum, integers.getOrDefault(currentSum, 0) + 1);
+        integers.put(currentSum, integers.getOrDefault(currentSum, 0) + 1); //add current nodes contribution
         count += pathSumHelper(root.left, targetSum, currentSum, integers);
         count += pathSumHelper(root.right, targetSum, currentSum, integers);
-        if (integers.get(currentSum) == 1) {
-            integers.remove(currentSum);
-        } else {
-            integers.put(currentSum, integers.get(currentSum) - 1);
-        }
+        integers.put(currentSum, integers.get(currentSum) - 1); //remove contribution of current node during backtrack
+        integers.remove(currentSum, 0); //cool trick to avoid if else check during removal
         return count;
     }
 

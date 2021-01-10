@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DistinctSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DistinctSubsequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PathSum3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PathSum3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00666" summary="Solve medium and extremely tricky to optimize given a list of words, find which words are a subsequence of the provided string. I got AC by keeping track of occurrence of each character in the target string and see if you can find an index &gt; previous index.&#10;&#10;An optimized approach would be to maintain a mapping of character to the list of words that require that character. As we traverse the string, update the mappings.">
-      <created>1609505562032</created>
-      <option name="number" value="00666" />
-      <option name="presentableId" value="LOCAL-00666" />
-      <option name="project" value="LOCAL" />
-      <updated>1609505562032</updated>
     </task>
     <task id="LOCAL-00667" summary="Solve medium and extremely tricky find no of fleets that will be formed by cars starting at different positions and travelling at different speed towards target using greedy. Tricky thing to note was that a car starting earlier and reaching in t time will block cars starting later and reaching in x &lt; t time. So they will become part of an existing fleet.">
       <created>1609511707028</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610294517355</updated>
     </task>
-    <option name="localTasksCounter" value="715" />
+    <task id="LOCAL-00715" summary="Solve count distinct subsequences in a string that matches target string using binary search + memoization. In my initial attempt, I thought my solution isn't memoizable but I proved myself wrong ! What a day !">
+      <created>1610295833004</created>
+      <option name="number" value="00715" />
+      <option name="presentableId" value="LOCAL-00715" />
+      <option name="project" value="LOCAL" />
+      <updated>1610295833004</updated>
+    </task>
+    <option name="localTasksCounter" value="716" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium given a set of rooms where each room has a set of keys, find whether it's possible to visit all rooms using UnionFind. A bit optimization trick to avoid visited array was to use a dummy room to perform union with. &#10;&#10;Reminder to self, union find can be applied only on undirected graphs and this problem isn't exactly an undirected graph." />
     <MESSAGE value="Solve medium and a bit tricky find the number of closed islands i.e find the 0's that are completely surrounded by 1's by inverting the lookup criteria. We know the cells at the border are definitely not surrounded, so we mark all the cells connected to the border water cells. The water cells left are closed." />
     <MESSAGE value="Solve medium and extremely tricky coloring game where first player has chosen a node and we have to choose a marker node. Now after this each player can only choose nodes that are directly connected to the nodes of same color.&#10;&#10;Trick was to realize that best option for player2 would be to choose any of the 3 connected nodes to first players chosen node i.e left child, right child or it's parent. Doing so will block first player to choose any of it's subtree." />
     <MESSAGE value="Solve medium and extremely tricky to do it in O(1) space complexity, given nodes of a n-ary tree, find the root node. Simple solution is to use a visited set to keep track of nodes that were visited because they are a children of some other node. Root node will never be visited because it's not a children of any node. But this approach requires additional space.&#10;&#10;In order to reduce space complexity we have to leverage the insight that all other nodes except root node are visited twice. So if we perform xor on the values, only root node will remain." />
@@ -622,7 +621,8 @@
     <MESSAGE value="Solve medium math related problem, find the count of numbers with odd no of divisors by counting perfect squares" />
     <MESSAGE value="Solve hard and extremely tricky count the no of ways in which we can place P,A,L to generate strings of N length such that we can have at most 1 A and at most 2 consecutive L in the generated string using recursion with memoization&#10;&#10;Learnings -- Figure out the information required at each state, this will help in figuring the parameters required in recursion. Here we need to know the count of P, A and consecutive L present at each state" />
     <MESSAGE value="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string" />
+    <MESSAGE value="Solve count distinct subsequences in a string that matches target string using binary search + memoization. In my initial attempt, I thought my solution isn't memoizable but I proved myself wrong ! What a day !" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve count distinct subsequences in a string that matches target string using binary search + memoization. In my initial attempt, I thought my solution isn't memoizable but I proved myself wrong ! What a day !" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -630,11 +630,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/DistinctSubsequences.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/SortColors.java</url>
           <line>29</line>
