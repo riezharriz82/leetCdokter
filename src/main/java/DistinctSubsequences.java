@@ -61,9 +61,10 @@ public class DistinctSubsequences {
      * Approach: My initial approach of storing indices and finding a greater index for the next index in target
      * Similar to {@link MinimumWindowSubsequence} but it timed out
      * Was feeling so proud when I thought I could do it by leveraging this prior trick but unfortunately this trick does not
-     * yield a memoizable solution
+     * yield a memoizable solution. Haha, I proved myself wrong, during revision, I figured out that this is indeed memoizable !
+     * Got AC ! ~16 ms, recursive solution is 1ms
      */
-    public int numDistinct(String s, String t) {
+    public int numDistinctBinarySearch(String s, String t) {
         if (s.length() == 0 || t.length() == 0) {
             return 0;
         }
@@ -71,12 +72,18 @@ public class DistinctSubsequences {
         for (int i = 0; i < s.length(); i++) {
             map.computeIfAbsent(s.charAt(i), __ -> new TreeSet<>()).add(i);
         }
-        return recur(map, t, 0, -1);
+        int[][] memo = new int[t.length()][s.length()];
+        for (int[] ints : memo) {
+            Arrays.fill(ints, -1);
+        }
+        return recur(map, t, 0, -1, memo);
     }
 
-    private int recur(Map<Character, TreeSet<Integer>> map, String t, int stringIndex, int previousIndex) {
+    private int recur(Map<Character, TreeSet<Integer>> map, String t, int stringIndex, int previousIndex, int[][] memo) {
         if (stringIndex == t.length()) { //if all the indices have been completed, we found a valid combination
             return 1;
+        } else if (previousIndex != -1 && memo[stringIndex][previousIndex] != -1) { //special case for not memoizing -1
+            return memo[stringIndex][previousIndex];
         }
         int count = 0;
         TreeSet<Integer> indices = map.getOrDefault(t.charAt(stringIndex), new TreeSet<>());
@@ -84,8 +91,12 @@ public class DistinctSubsequences {
         //inclusive is set to false, to find > matches otherwise results in >= matches
         SortedSet<Integer> greaterIndices = indices.tailSet(previousIndex, false);
         for (Integer greaterIndex : greaterIndices) {
-            count += recur(map, t, stringIndex + 1, greaterIndex);
+            count += recur(map, t, stringIndex + 1, greaterIndex, memo);
         }
-        return count;
+        if (previousIndex != -1) {
+            return memo[stringIndex][previousIndex] = count;
+        } else {
+            return count;
+        }
     }
 }

@@ -183,13 +183,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00665" summary="Solve easy find whether it's possible to transform the given pieces of array into target array by trying to concatenate them in any way possible, by tracking the leader of each piece and the entire piece.&#10;&#10;It was a bit tricky to implement though, not an easy question! Need to make sure the entire piece is fulfilled as partial pieces are not allowed.">
-      <created>1609500520505</created>
-      <option name="number" value="00665" />
-      <option name="presentableId" value="LOCAL-00665" />
-      <option name="project" value="LOCAL" />
-      <updated>1609500520505</updated>
-    </task>
     <task id="LOCAL-00666" summary="Solve medium and extremely tricky to optimize given a list of words, find which words are a subsequence of the provided string. I got AC by keeping track of occurrence of each character in the target string and see if you can find an index &gt; previous index.&#10;&#10;An optimized approach would be to maintain a mapping of character to the list of words that require that character. As we traverse the string, update the mappings.">
       <created>1609505562032</created>
       <option name="number" value="00666" />
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610232934993</updated>
     </task>
-    <option name="localTasksCounter" value="714" />
+    <task id="LOCAL-00714" summary="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string">
+      <created>1610294517355</created>
+      <option name="number" value="00714" />
+      <option name="presentableId" value="LOCAL-00714" />
+      <option name="project" value="LOCAL" />
+      <updated>1610294517355</updated>
+    </task>
+    <option name="localTasksCounter" value="715" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky find critical connections in a network using tarzan's algorithm for detecting back edges. &#10;&#10;Keep track of the time a node was first visited, if it's neighbourTime &gt; firstVisitedTime, we have a critical connection. Meanwhile if a node is connected to a node with smaller time, this means there is another path to this node hence current path isn't critical. Keep updating the time of an index by taking the min of neighbourTime and curNodeTime" />
     <MESSAGE value="Solve medium given a set of rooms where each room has a set of keys, find whether it's possible to visit all rooms using UnionFind. A bit optimization trick to avoid visited array was to use a dummy room to perform union with. &#10;&#10;Reminder to self, union find can be applied only on undirected graphs and this problem isn't exactly an undirected graph." />
     <MESSAGE value="Solve medium and a bit tricky find the number of closed islands i.e find the 0's that are completely surrounded by 1's by inverting the lookup criteria. We know the cells at the border are definitely not surrounded, so we mark all the cells connected to the border water cells. The water cells left are closed." />
     <MESSAGE value="Solve medium and extremely tricky coloring game where first player has chosen a node and we have to choose a marker node. Now after this each player can only choose nodes that are directly connected to the nodes of same color.&#10;&#10;Trick was to realize that best option for player2 would be to choose any of the 3 connected nodes to first players chosen node i.e left child, right child or it's parent. Doing so will block first player to choose any of it's subtree." />
@@ -622,7 +621,8 @@
     <MESSAGE value="Add problem statement and approach for counting prime numbers &lt; n using sieve of eratosthenes" />
     <MESSAGE value="Solve medium math related problem, find the count of numbers with odd no of divisors by counting perfect squares" />
     <MESSAGE value="Solve hard and extremely tricky count the no of ways in which we can place P,A,L to generate strings of N length such that we can have at most 1 A and at most 2 consecutive L in the generated string using recursion with memoization&#10;&#10;Learnings -- Figure out the information required at each state, this will help in figuring the parameters required in recursion. Here we need to know the count of P, A and consecutive L present at each state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky count the no of ways in which we can place P,A,L to generate strings of N length such that we can have at most 1 A and at most 2 consecutive L in the generated string using recursion with memoization&#10;&#10;Learnings -- Figure out the information required at each state, this will help in figuring the parameters required in recursion. Here we need to know the count of P, A and consecutive L present at each state" />
+    <MESSAGE value="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -632,7 +632,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DistinctSubsequences.java</url>
-          <line>81</line>
+          <line>87</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
