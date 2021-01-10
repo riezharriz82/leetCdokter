@@ -28,7 +28,9 @@ public class KokoEatingBananas {
     /**
      * Approach: So Koko can try eating at speed 1,2,3.. max(bananas) and see whether it can finish eating all the piles in <= H hours
      * The smallest speed that can suffice the time constraint is the result
-     * [1,2,3...100] => [F,F,F,F,T,T,T]
+     * Speed       [1,2,3...99,100]
+     * Hours       [10,9,9,...2,1]
+     * Hours <= H [F,F,F,F...T,T,T]
      * We are looking for first T
      * <p>
      * {@link DivideChocolates} {@link MagneticForceBetweenTwoBalls} {@link MissingElementInSortedArray} related problems
