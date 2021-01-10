@@ -8,7 +8,7 @@ import common.ListNode;
  * Input: 1->2->2->1
  * Output: true
  */
-public class PalindromLinkedList {
+public class PalindromeLinkedList {
     /**
      * Utilized learning from solving {@link ReorderLinkedList}
      * Whenever asked to traverse linked list from the end, reverse the linked list
@@ -43,7 +43,7 @@ public class PalindromLinkedList {
             head = head.next;
             prev = prev.next;
         }
-        //the way we have splitted leads to a bigger chunk in the left part (+1) for odd size linked list
+        //the way we split leads to a bigger chunk in the left part (+1) for odd size linked list
         // this check ensures that we have checked all the elements in second half
         // so even if the left part is bigger by 1, it can act as a middle element and does not need to be checked
         return true;

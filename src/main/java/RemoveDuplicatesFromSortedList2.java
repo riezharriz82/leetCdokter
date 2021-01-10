@@ -21,7 +21,7 @@ public class RemoveDuplicatesFromSortedList2 {
     /**
      * Approach: Keep a dummy node and append to it it the current node isn't duplicated.
      * <p>
-     * {@link SwapNodesInPairs}  {@link PalindromLinkedList} {@link ReorderLinkedList}
+     * {@link SwapNodesInPairs}  {@link PalindromeLinkedList} {@link ReorderLinkedList}
      */
     public ListNode deleteDuplicates(ListNode head) {
         ListNode dummyNode = new ListNode(), tail = dummyNode;
