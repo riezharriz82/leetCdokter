@@ -14,7 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/PathWithMaximumMinimumValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PathWithMaximumMinimumValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00670" summary="Solve medium find the corresponding node of a target node in the cloned tree by walking both the tress simultaneously.">
-      <created>1609588530030</created>
-      <option name="number" value="00670" />
-      <option name="presentableId" value="LOCAL-00670" />
-      <option name="project" value="LOCAL" />
-      <updated>1609588530030</updated>
     </task>
     <task id="LOCAL-00671" summary="Solve medium sort a matrix diagonally such that each diagonal is sorted separately by maintaining a map of diagonalId to priority queue of elements present in that diagonal">
       <created>1609598503562</created>
@@ -525,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610309736556</updated>
     </task>
-    <option name="localTasksCounter" value="719" />
+    <task id="LOCAL-00719" summary="Update comment">
+      <created>1610310729051</created>
+      <option name="number" value="00719" />
+      <option name="presentableId" value="LOCAL-00719" />
+      <option name="project" value="LOCAL" />
+      <updated>1610310729051</updated>
+    </task>
+    <option name="localTasksCounter" value="720" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +602,6 @@
     <MESSAGE value="Add constraints in the problem statement along with explanation of not using the curSum as a key in memoization because the numbers chosen so far can uniquely represent the dp state. We are not restricting ourselves to an index" />
     <MESSAGE value="Add approach and related line sweep problems" />
     <MESSAGE value="Add clarification on why DP doesn't work for this problem because this problem has cycles in recurrence relation" />
-    <MESSAGE value="Update comment" />
     <MESSAGE value="Add comment for evaluation future nested string expressions" />
     <MESSAGE value="Add approach and simplify code by removing visited arrays because the given graph is a DAG" />
     <MESSAGE value="Simplify code by introducing enum states instead of two boolean[] array; visited and toDo" />
@@ -621,7 +621,8 @@
     <MESSAGE value="Solve count distinct subsequences in a string that matches target string using binary search + memoization. In my initial attempt, I thought my solution isn't memoizable but I proved myself wrong ! What a day !" />
     <MESSAGE value="Simplify code by removing if/else check during removal of key from hashmap" />
     <MESSAGE value="Fix typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix typo" />
+    <MESSAGE value="Update comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update comment" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

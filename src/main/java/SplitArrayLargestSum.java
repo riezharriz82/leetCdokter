@@ -21,6 +21,7 @@ public class SplitArrayLargestSum {
      * Compare the maximum of left and right, lets name it maxSum.
      * As we make multiple cuts at all the places, keep track of the smallest value of maxSum.
      * Smallest value of maxSum would be the result.
+     * TimeComplexity: O(n*n*m) Total states are O(n*m) and to compute each state, we need to iterate the index so additional O(n)
      */
     public int splitArray(int[] nums, int m) {
         int[][] memoization = new int[nums.length + 1][m + 1];
@@ -66,6 +67,8 @@ public class SplitArrayLargestSum {
      * As errichto mentioned in his binary search tutorial https://www.youtube.com/watch?v=GU7DpgHINWQ we need to transform our input range into
      * prefix/suffix of T/F in order to find the required value with first F or last T
      * Here we need the first T, so if we see any index which returns T, then we try to recur left and save the potential answer
+     *
+     * TimeComplexity: O(n*log(sumOfArray)). For each iteration of binary search we need O(n) time and there are total log(sumOfArray) iterations
      */
     public int splitArrayGreedy(int[] nums, int m) {
         int sum = 0, maxValue = Integer.MIN_VALUE;
