@@ -69,7 +69,9 @@ public class LongestDuplicateSubstring {
             int begin = i - targetLength;
             //remove the contribution of character that's sliding out and add the contribution of character that's sliding in
             hash = (hash * 26 - (input.charAt(begin) - 'a') * offset + (input.charAt(i) - 'a')) % mod;
-            hash = (hash + mod) % mod; //very tricky part to handle negative mods
+            //4235, window size is 3, and base is 10, current hash is 423
+            //next hash will be 423*10 - 4*1000 + 5 = 4230 - 4000 + 5 = 235
+            hash = (hash + mod) % mod; //very tricky part to handle negative mods, remember whenever dealing with subtraction in MODULO, always MAKE IT POSITIVE
             if (map.containsKey(hash)) {
                 //in case of conflicts, iterate through the list of indices to verify whether duplicate actually exists
                 String candidate = input.substring(begin + 1, i + 1);
