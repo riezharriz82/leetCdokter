@@ -43,6 +43,11 @@ public class SmallestRange2 {
             //since array is sorted, a[i] would be the largest number and a[i+1] would be the smallest number
             //current min is a[0] + k and current max is a[n-1] - k
             //so this acts like a sliding window of size 1,2...n-1
+            //the reason we are keeping track of max and min is we have to return the smallest difference between max and min of transformed input
+            //when we perform +k on A[i], it's not necessary that it will become the largest number in the array
+            //candidate largest number is A[n-1]-k e.g. [2,2,7]
+            //similar logic for tracking min, candidate smallest number is a[0]+k
+            //this logic is very subtle, took me a lot of time to understand
             int max = Math.max(A[i] + k, A[n - 1] - k);
             int min = Math.min(A[i + 1] - k, A[0] + k);
             ans = Math.min(ans, max - min);

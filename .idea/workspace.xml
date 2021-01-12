@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SmallestRange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SmallestRange2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00674" summary="Solve medium count all beautiful numbers of n digits, where we can place a digit on the ith index only if either the digit divides the index or the index divides the digit using backtracking or bitmasking&#10;&#10;Leveraged prior learnings of using (bitmask, current node/index) as an identifier for memoization during bitmasking.">
-      <created>1609677197934</created>
-      <option name="number" value="00674" />
-      <option name="presentableId" value="LOCAL-00674" />
-      <option name="project" value="LOCAL" />
-      <updated>1609677197934</updated>
     </task>
     <task id="LOCAL-00675" summary="Solve medium and extremely tricky find the lexicographically smallest permutation of 1,2,3..n that satisfies pattern like I and D by greedy. Consider the base case of all I's, it would be 1,2,3...n. Whenever D is found, need to reverse the portion to find the smallest valid permutation. &#10;&#10;Got lost while trying to incrementally build the solution by tracking length of I's and D's and placing numbers accordingly.">
       <created>1609681353826</created>
@@ -526,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610449035792</updated>
     </task>
-    <option name="localTasksCounter" value="723" />
+    <task id="LOCAL-00723" summary="Fix logic by iterating over worker indexes first, because worker index have higher priority over bike indexes &#10;ie. (worker_idx, bike_idx) (1,2) &gt; (2,0) if distances is same">
+      <created>1610457362444</created>
+      <option name="number" value="00723" />
+      <option name="presentableId" value="LOCAL-00723" />
+      <option name="project" value="LOCAL" />
+      <updated>1610457362444</updated>
+    </task>
+    <option name="localTasksCounter" value="724" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add approach and related line sweep problems" />
     <MESSAGE value="Add clarification on why DP doesn't work for this problem because this problem has cycles in recurrence relation" />
     <MESSAGE value="Add comment for evaluation future nested string expressions" />
     <MESSAGE value="Add approach and simplify code by removing visited arrays because the given graph is a DAG" />
@@ -622,7 +622,8 @@
     <MESSAGE value="Add time complexity for both the approaches" />
     <MESSAGE value="Update approach" />
     <MESSAGE value="Add comment and simplify code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comment and simplify code" />
+    <MESSAGE value="Fix logic by iterating over worker indexes first, because worker index have higher priority over bike indexes &#10;ie. (worker_idx, bike_idx) (1,2) &gt; (2,0) if distances is same" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix logic by iterating over worker indexes first, because worker index have higher priority over bike indexes &#10;ie. (worker_idx, bike_idx) (1,2) &gt; (2,0) if distances is same" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
