@@ -14,7 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/KokoEatingBananas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KokoEatingBananas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupShiftedStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupShiftedStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00672" summary="Solve medium and extremely tricky find the largest sum possible that is divisible by 3 using DP.&#10;&#10;Leveraged prior learnings of using mod whenever divisibility is involved. Here we need to do the same by using current mod and greatest sum possible at previous element. State transitions are similar to previously solved house robber.">
-      <created>1609658415978</created>
-      <option name="number" value="00672" />
-      <option name="presentableId" value="LOCAL-00672" />
-      <option name="project" value="LOCAL" />
-      <updated>1609658415979</updated>
     </task>
     <task id="LOCAL-00673" summary="Solve medium design a time based key value data structure that provides the value of a key at a timestamp &lt;= provided timestamp using map + treemap combination.&#10;&#10;Leveraged prior learnings of solving SnapshotArray">
       <created>1609668726279</created>
@@ -525,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610311434389</updated>
     </task>
-    <option name="localTasksCounter" value="721" />
+    <task id="LOCAL-00721" summary="Update approach">
+      <created>1610311932855</created>
+      <option name="number" value="00721" />
+      <option name="presentableId" value="LOCAL-00721" />
+      <option name="project" value="LOCAL" />
+      <updated>1610311932855</updated>
+    </task>
+    <option name="localTasksCounter" value="722" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find whether two string arrays result in same string upon concatenation or not using O(1) space via two pointers approach.&#10;Keep four pointers, 2 for word index and 2 for char index inside word. Increment the word index pointer if char index has reached the end of the current word.&#10;At the end check if all the words have been verified in both the arrays." />
     <MESSAGE value="Add constraints in the problem statement along with explanation of not using the curSum as a key in memoization because the numbers chosen so far can uniquely represent the dp state. We are not restricting ourselves to an index" />
     <MESSAGE value="Add approach and related line sweep problems" />
     <MESSAGE value="Add clarification on why DP doesn't work for this problem because this problem has cycles in recurrence relation" />
@@ -621,7 +622,8 @@
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Update comment" />
     <MESSAGE value="Add time complexity for both the approaches" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add time complexity for both the approaches" />
+    <MESSAGE value="Update approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update approach" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

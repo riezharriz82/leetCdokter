@@ -32,10 +32,10 @@ public class GroupShiftedStrings {
      * or take the difference between character at adjacent indices char[1] - char[0], char[2] - char[1], char[3] - char[2]
      */
     public List<List<String>> groupStrings(String[] strings) {
-        List<List<String>> res = new ArrayList<>();
         Map<List<Integer>, List<String>> map = new HashMap<>();
         for (String string : strings) {
-            List<Integer> currentKey = new ArrayList<>();
+            List<Integer> currentKey = new ArrayList<>(); //key is a list<int> as it represents each individual digit of the key
+            //could have also represented the key as a string
             for (int j = 0; j < string.length(); j++) {
                 int offset = string.charAt(j) - string.charAt(0);
                 if (offset < 0) { //modulo is a bitch, take care of negative diff az -> za
@@ -45,7 +45,6 @@ public class GroupShiftedStrings {
             }
             map.computeIfAbsent(currentKey, __ -> new ArrayList<>()).add(string);
         }
-        map.forEach((k, v) -> res.add(v));
-        return res;
+        return new ArrayList<>(map.values());
     }
 }
