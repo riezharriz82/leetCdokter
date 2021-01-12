@@ -19,12 +19,13 @@ public class ConstrainedSubsequenceSum {
     /**
      * Approach: Extension of treeMap solution. Instead of using treeMap, used a monotonic increasing queue to keep track of sliding maximum
      * TimeComplexity: O(n)
-     *
+     * <p>
+     * {@link MaxValueOfEquation} {@link SlidingWindowMaximum}
      */
     public int constrainedSubsetSumUsingDeque(int[] nums, int k) {
         int n = nums.length;
         int[] dp = new int[n];
-        ArrayDeque<Integer> queue = new ArrayDeque<>();
+        ArrayDeque<Integer> queue = new ArrayDeque<>(); //queue of max values present in current window
         for (int i = 0; i < n; i++) {
             dp[i] = Math.max(nums[i], nums[i] + (queue.isEmpty() ? 0 : queue.peekFirst()));
             while (!queue.isEmpty() && queue.peekLast() < dp[i]) {
