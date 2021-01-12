@@ -29,6 +29,8 @@ public class SubarrayProductLessThanK {
                 curProduct /= nums[begin];
                 begin++;
             }
+            //explanation behind this sorcery is that consider begin as 0 and keep on increasing the end, each end can now
+            //start its own (end + 1) subarrays, now if begin != 0, we have to subtract begin to discount subarrays < begin
             res += (end - begin + 1);
             end++;
         }

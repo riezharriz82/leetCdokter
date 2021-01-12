@@ -14,7 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ChangeOnlyOneElementToSortArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChangeOnlyOneElementToSortArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SubarrayProductLessThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SubarrayProductLessThanK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00677" summary="Rename variable to make it more similar to it's usage">
-      <created>1609700125536</created>
-      <option name="number" value="00677" />
-      <option name="presentableId" value="LOCAL-00677" />
-      <option name="project" value="LOCAL" />
-      <updated>1609700125536</updated>
     </task>
     <task id="LOCAL-00678" summary="Fix incorrect distance check when some node is unreachable">
       <created>1609700329414</created>
@@ -526,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610461017710</updated>
     </task>
-    <option name="localTasksCounter" value="726" />
+    <task id="LOCAL-00726" summary="Add related problem, this greedy problem is also extremely tricky">
+      <created>1610461388663</created>
+      <option name="number" value="00726" />
+      <option name="presentableId" value="LOCAL-00726" />
+      <option name="project" value="LOCAL" />
+      <updated>1610461388663</updated>
+    </task>
+    <option name="localTasksCounter" value="727" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add approach and simplify code by removing visited arrays because the given graph is a DAG" />
     <MESSAGE value="Simplify code by introducing enum states instead of two boolean[] array; visited and toDo" />
     <MESSAGE value="Simplify code by removing redundant null checks" />
     <MESSAGE value="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices." />
@@ -622,7 +622,8 @@
     <MESSAGE value="Fix logic by iterating over worker indexes first, because worker index have higher priority over bike indexes &#10;ie. (worker_idx, bike_idx) (1,2) &gt; (2,0) if distances is same" />
     <MESSAGE value="Add comment on reason behind tracking max and min because we have to keep track of difference between smallest and largest transformed number" />
     <MESSAGE value="Update comment to add sample calculations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update comment to add sample calculations" />
+    <MESSAGE value="Add related problem, this greedy problem is also extremely tricky" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add related problem, this greedy problem is also extremely tricky" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
