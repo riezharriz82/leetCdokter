@@ -14,6 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LongestContiguousSubarrayWithValidDiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestContiguousSubarrayWithValidDiff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,13 +183,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00684" summary="Solve medium remove duplicates from a sorted linked list using dummy node">
-      <created>1609859229894</created>
-      <option name="number" value="00684" />
-      <option name="presentableId" value="LOCAL-00684" />
-      <option name="project" value="LOCAL" />
-      <updated>1609859229894</updated>
     </task>
     <task id="LOCAL-00685" summary="Solve medium design data structure to represent browser history that supports going back and forward k steps in history using arraylist and ensuring that we overwrite the index, if we are at inner indices instead of creating a new list and appending to the end of it. &#10;This smart overwrite logic ensures we work in O(1) time for all operations">
       <created>1609860130126</created>
@@ -525,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610473023349</updated>
     </task>
-    <option name="localTasksCounter" value="733" />
+    <task id="LOCAL-00733" summary="Add related sliding window max/min problems">
+      <created>1610473902720</created>
+      <option name="number" value="00733" />
+      <option name="presentableId" value="LOCAL-00733" />
+      <option name="project" value="LOCAL" />
+      <updated>1610473902720</updated>
+    </task>
+    <option name="localTasksCounter" value="734" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment to solve the problem in another way" />
     <MESSAGE value="Solve hard and extremely tricky represent data stream as disjoint intervals by merging consecutive integers ie. 1,2,3,4 are merged to form [1,4] using treeMap&#10;&#10;Learnings -- To handle interval related problem, always ensure that there is no overlapping interval before or after an operation, so whenever do something, remove overlapped intervals and introduce a merged interval" />
     <MESSAGE value="Solve hard and extremely tricky find the min no of flips required so that array does not have any 0. Whenever flip is performed, we have to flip k consecutive bits. Need to use greedy ie. whenever we see a 0, flip k consecutive bits. If we actually flip it, time complexity would be o(nk), instead we perform virtual flips i.e we keep track of indices till which we have to perform flips and size of queue would indicate the no of flips performed. If A[i] == 1 and we have performed even bits, A[i] is still 1, so skip it." />
     <MESSAGE value="Add problem statement and approach for counting prime numbers &lt; n using sieve of eratosthenes" />
@@ -621,7 +622,8 @@
     <MESSAGE value="Add gotcha about incrementing the result" />
     <MESSAGE value="Add gotcha about incrementing the result rather than assigning" />
     <MESSAGE value="Add comment on explaining that we have to check whether target tree contains source tree as an inverted subtree or not." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comment on explaining that we have to check whether target tree contains source tree as an inverted subtree or not." />
+    <MESSAGE value="Add related sliding window max/min problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add related sliding window max/min problems" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

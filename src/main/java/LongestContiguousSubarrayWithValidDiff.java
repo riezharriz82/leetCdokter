@@ -64,22 +64,18 @@ public class LongestContiguousSubarrayWithValidDiff {
         //Value is the count of the element as duplicate exists
         TreeMap<Integer, Integer> map = new TreeMap<>();
         while (end < nums.length) {
-            if (map.isEmpty() || Math.abs(nums[end] - map.firstKey()) <= limit && Math.abs(nums[end] - map.lastKey()) <= limit) { //can increment the end pointer
-                map.put(nums[end], map.getOrDefault(nums[end], 0) + 1);
-                curLength++;
-                maxLength = Math.max(curLength, maxLength);
-                end++;
-            } else {
-                //need to shorten the window from the left by removing the element at begin pointer
-                int curCount = map.get(nums[begin]);
-                if (curCount == 1) {
-                    map.remove(nums[begin]);
-                } else {
-                    map.put(nums[begin], curCount - 1);
-                }
+            map.put(nums[end], map.getOrDefault(nums[end], 0) + 1);
+            //standard sliding window template for finding longest valid substring
+            //keep increasing the window until the window becomes invalid
+            //then decrement the window until it becomes valid again
+            //too much fun
+            while (!map.isEmpty() && Math.abs(map.lastKey() - map.firstKey()) > limit) {
+                map.put(nums[begin], map.get(nums[begin]) - 1);
+                map.remove(nums[begin], 0);
                 begin++;
-                curLength--;
             }
+            maxLength = Math.max(maxLength, end - begin + 1);
+            end++;
         }
         return maxLength;
     }
