@@ -33,7 +33,9 @@ public class LargestNumber {
             input[i] = Integer.toString(nums[i]);
         }
         for (int i = 1; i < n; i++) { //bubble sort
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j < i; j++) { //this order is important to understand, as we want to place a[i] first at the highest place possible
+                //hence we iterate from 0th index, after swapping, a[i] will be switched to some other value, so we need to continue the check to
+                //place new a[i] at the next greater index e.g [3,30,34]
                 String pre = input[i] + input[j];
                 String post = input[j] + input[i];
                 if (pre.compareTo(post) > 0) { //ith index needs to be swapped with jth index
