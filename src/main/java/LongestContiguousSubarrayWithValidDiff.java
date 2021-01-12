@@ -22,6 +22,8 @@ public class LongestContiguousSubarrayWithValidDiff {
      * If not, keep popping elements present at being index until constraints are satisfied.
      * <p>
      * Keep track of the max length of window
+     * <p>
+     * {@link MaxValueOfEquation} {@link SlidingWindowMaximum} {@link ConstrainedSubsequenceSum}
      */
     public int longestSubarrayUsingDeque(int[] nums, int limit) {
         ArrayDeque<Integer> minSlidingQueue = new ArrayDeque<>();

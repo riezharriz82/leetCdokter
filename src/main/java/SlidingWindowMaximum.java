@@ -30,6 +30,8 @@ public class SlidingWindowMaximum {
      * till the window ending at current index.
      * However if you see a number smaller than the last element in queue, you need to add it, as it's possible that it can become the maximum
      * once the window slides.
+     * <p>
+     * {@link MaxValueOfEquation} {@link LongestContiguousSubarrayWithValidDiff} {@link ConstrainedSubsequenceSum}
      */
     public int[] maxSlidingWindowPushIndices(int[] nums, int k) {
         ArrayDeque<Integer> queue = new ArrayDeque<>(); //store the index, not the number to easily track whether that index has fallen out of window

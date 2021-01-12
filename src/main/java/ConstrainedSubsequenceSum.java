@@ -20,7 +20,7 @@ public class ConstrainedSubsequenceSum {
      * Approach: Extension of treeMap solution. Instead of using treeMap, used a monotonic increasing queue to keep track of sliding maximum
      * TimeComplexity: O(n)
      * <p>
-     * {@link MaxValueOfEquation} {@link SlidingWindowMaximum}
+     * {@link MaxValueOfEquation} {@link SlidingWindowMaximum} {@link LongestContiguousSubarrayWithValidDiff}
      */
     public int constrainedSubsetSumUsingDeque(int[] nums, int k) {
         int n = nums.length;
