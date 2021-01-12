@@ -52,11 +52,11 @@ public class CampusBikes {
         //the {worker, bike} for same distance should be sorted based on the worker index first, then bike index
         //this can be handled if we insert them at the correct order i.e if we iterate over workers in ascending order first,
         //then iterate bike indexes, we can avoid sorting!
-        for (int i = 0; i < bikes.length; i++) { //iterate bikes in ascending order
-            int[] bike = bikes[i];
-            for (int j = 0; j < workers.length; j++) { //iterate workers in ascending order
-                int distance = Math.abs(workers[j][1] - bike[1]) + Math.abs(workers[j][0] - bike[0]);
-                distances.get(distance).add(new Pair<>(j, i));
+        for (int i = 0; i < workers.length; i++) { //iterate workers in ascending order, as workers have higher priority over bike index
+            int[] worker = workers[i];
+            for (int j = 0; j < bikes.length; j++) { //iterate bikes in ascending order, as bikes has second priority
+                int distance = Math.abs(bikes[j][1] - worker[1]) + Math.abs(bikes[j][0] - worker[0]);
+                distances.get(distance).add(new Pair<>(i, j));
             }
         }
         int assigned = 0;
