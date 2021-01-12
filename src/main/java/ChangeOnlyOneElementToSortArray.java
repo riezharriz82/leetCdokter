@@ -18,6 +18,8 @@ public class ChangeOnlyOneElementToSortArray {
      * Greedy approach: When we encounter a mismatched pair i.e. nums[i-1] > nums[i] there are two options to correct it
      * 1. Change nums[i-1] to nums[i] e.g {7,10,8,9,12} -> {7,8,8,11,12} Why not nums[i] to nums[i-1] because increasing it might cause more conflict for the next range.
      * 2. But if nums[i-2] > nums[i] previous step won't work e.g {8,10,7} -> {8,7,10} would be invalid, so we need to change nums[i] to nums[i-1] e.g {8,10,10}
+     * <p>
+     * {@link SmallestRange2} related tricky problem
      */
     public boolean checkPossibility(int[] nums) {
         int misMatch = -1;
