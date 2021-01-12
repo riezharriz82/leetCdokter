@@ -17,6 +17,8 @@ import java.util.Arrays;
 public class CoinChange {
     /**
      * If current coin is 10 and you can make 5 from min 3 coins, you can make 15 from 3+1 coins
+     * <p>
+     * {@link GreatestSumDivisibleByThree} {@link HouseRobber} {@link MinCostToBuyTickets} related problems
      */
     public int coinChangeBottomUp(int[] coins, int amount) {
         int[] dp = new int[amount + 1]; //dp[i] is the min no of coins required to make sum = i
@@ -24,7 +26,8 @@ public class CoinChange {
         dp[0] = 0;
         for (int coin : coins) {
             for (int i = coin; i <= amount; i++) {
-                if (dp[i - coin] != Integer.MAX_VALUE) {
+                if (dp[i - coin] != Integer.MAX_VALUE) { //its important to ensure previous state is valid, similar to GreatestSumDivisibleBy3
+                    //otherwise will lead to inconsistent answer being saved
                     //if i is the amount, minimum no of coins required to reach (i - coin) amount is dp[i-coin]
                     dp[i] = Math.min(dp[i], 1 + dp[i - coin]);
                 }
