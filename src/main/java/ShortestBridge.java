@@ -26,11 +26,12 @@ public class ShortestBridge {
      * It was kinda BFS with pruning because I visit a cell only if I can visit it with fewer zeroesFlipped so far
      * Whenever I visit a cell belonging to second island, I update the global minima of minZeroesFlipped
      * <p>
-     * However the runtime was ~22 ms which can be improved if we use multi source bfs, ie. keep track of all cells belonging
+     * However the runtime was ~22 ms which can be improved if we use bidirectional bfs, ie. keep track of all cells belonging
      * to first island, use them as a starting point of BFS. Whenever you find a cell belonging to second island, return the
      * numZeroesFlipped so far
      * <p>
      * {@link MakingALargeIsland} {@link RottingOranges} {@link WallsAndGates} {@link CheapestFlightWithinKStop}
+     * {@link ShortestPathVisitingAllNodes} related multi bfs problem
      */
     public int shortestBridge(int[][] A) {
         int m = A.length;
