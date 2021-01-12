@@ -24,28 +24,31 @@ package alternate;
  */
 public class InvertedSubTree {
     /**
-     * Very similar to {FlipBinaryTrees} but here the problem statement asks for finding a subtree, so we need to check each non null node of target
+     * Very similar to {FlipBinaryTrees} but here the problem statement asks for finding a subtree, so for each node of target
+     * we need to check whether it contains source as an inverted subtree or not
      */
     public boolean solve(Tree source, Tree target) {
-        return iterate(target, source);
+        return recur(target, source);
     }
 
-    private boolean iterate(Tree target, Tree source) {
+    private boolean recur(Tree target, Tree source) {
         if (target == null) {
             return source == null;
         }
-        return check(target, source) || iterate(target.left, source) || iterate(target.right, source);
+        //checks whether subtree under target node contains source tree as an optionally inverted subtree
+        //if not, check the left subtree and then right subtree
+        return isOptionallyInverted(target, source) || recur(target.left, source) || recur(target.right, source);
     }
 
-    private boolean check(Tree target, Tree source) {
+    private boolean isOptionallyInverted(Tree target, Tree source) {
         if (target == null && source == null) {
             return true;
         } else if (target == null || source == null) {
             return false;
         } else {
             return source.val == target.val
-                    && ((check(target.left, source.left) && check(target.right, source.right)) //not flipped
-                    || (check(target.right, source.left) && check(target.left, source.right))); //flipped
+                    && ((isOptionallyInverted(target.left, source.left) && isOptionallyInverted(target.right, source.right)) //not flipped
+                    || (isOptionallyInverted(target.right, source.left) && isOptionallyInverted(target.left, source.right))); //flipped
         }
     }
 
