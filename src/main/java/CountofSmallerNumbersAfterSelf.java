@@ -19,16 +19,6 @@ import java.util.List;
  */
 
 public class CountofSmallerNumbersAfterSelf {
-    private class Node {
-        public int idx;
-        public int val;
-
-        public Node(int idx, int val) {
-            this.idx = idx;
-            this.val = val;
-        }
-    }
-
     /**
      * Approach: Use merge sort for problems that look for pairs (i,j) such that i < j and nums[i], nums[j] satisfy some constraint
      * The complicated part is the merge portion of the mergesort
@@ -80,6 +70,8 @@ public class CountofSmallerNumbersAfterSelf {
                 answer[left[i].idx] += smallerNumber; //smaller number will get carry forwarded to the next element in the left subarray
                 //{5,7}, {2,3,8} -> smallerNumber will be 2 for 5, which should be used for 7 as well because anything smaller than 5 would
                 //definitely be smaller than 7
+                //also notice that we are doing increment operation, because an index is evaluated multiple times in merge() operation
+                //because it's part of the recursion, so we need to increment the result already stored from previous recursions
                 nodes[k++] = left[i]; //update the original array, notice k was initialized from l
                 i++;
             } else if (left[i].val > right[j].val) {
@@ -94,6 +86,16 @@ public class CountofSmallerNumbersAfterSelf {
         }
         while (j < n2) {
             nodes[k++] = right[j++];
+        }
+    }
+
+    private static class Node {
+        public int idx;
+        public int val;
+
+        public Node(int idx, int val) {
+            this.idx = idx;
+            this.val = val;
         }
     }
 }

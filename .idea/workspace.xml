@@ -14,8 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ShortestBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestBridge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,13 +181,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00681" summary="Simplify topological sort by using enums as states instead of maintaining two different arrays">
-      <created>1609704581284</created>
-      <option name="number" value="00681" />
-      <option name="presentableId" value="LOCAL-00681" />
-      <option name="project" value="LOCAL" />
-      <updated>1609704581284</updated>
     </task>
     <task id="LOCAL-00682" summary="Solve medium remove all adjacent duplicate characters in string which are of k length using stack.">
       <created>1609707880372</created>
@@ -527,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610469838819</updated>
     </task>
-    <option name="localTasksCounter" value="730" />
+    <task id="LOCAL-00730" summary="Add related multi bfs problems">
+      <created>1610470524012</created>
+      <option name="number" value="00730" />
+      <option name="presentableId" value="LOCAL-00730" />
+      <option name="project" value="LOCAL" />
+      <updated>1610470524012</updated>
+    </task>
+    <option name="localTasksCounter" value="731" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -598,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment to explain the additional code in union() operation on strings" />
     <MESSAGE value="Add clarifications on handling duplicate elements" />
     <MESSAGE value="Add comments and time complexity in MostStonesRemovedWithSameRowOrSameColumn" />
     <MESSAGE value="Update comment regarding handling of parallel edges" />
@@ -623,7 +620,8 @@
     <MESSAGE value="Add explanation behind counting valid subarrays using (end - begin + 1)" />
     <MESSAGE value="Add gotcha and explanation behind iterating from beginning" />
     <MESSAGE value="Add related problems and comment in hard and extremely tricky find the largest subsequence sum such that all indices are within k distance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add related problems and comment in hard and extremely tricky find the largest subsequence sum such that all indices are within k distance" />
+    <MESSAGE value="Add related multi bfs problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add related multi bfs problems" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
