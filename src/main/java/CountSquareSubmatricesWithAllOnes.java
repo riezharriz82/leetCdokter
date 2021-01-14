@@ -20,6 +20,9 @@
  * Total number of squares = 10 + 4 + 1 = 15.
  */
 public class CountSquareSubmatricesWithAllOnes {
+    /**
+     * Approach: DP, This was asked in my google first interview round :)
+     */
     public int countSquares(int[][] matrix) {
         int res = 0;
         int m = matrix.length;

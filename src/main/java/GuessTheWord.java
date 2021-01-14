@@ -54,6 +54,8 @@ public class GuessTheWord {
      * <p>
      * This ensures we reduces the wordlist and will converge to the result.
      * However this does not ensure that we will guess the secret in minimum no of guesses, for that we have to use MiniMax algorithm
+     *
+     * This was asked in my google third interview round :)
      */
     public void findSecretWord(String[] wordlist, Master master) {
         List<String> words = Arrays.asList(wordlist);

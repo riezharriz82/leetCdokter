@@ -27,6 +27,8 @@ public class NumberOfMatchingSubsequences {
      * "b" -> {"bb"}, "c" -> {"cd","ce"}  //"a" has been satisfied and there are no words that require a
      * <p>
      * {@link IsSubsequence} {@link MinimumWindowSubsequence} related problem
+     * <p>
+     * This was asked in my google fourth interview round :)
      */
     public int numMatchingSubseqOptimized(String S, String[] words) {
         Map<Character, LinkedList<String>> map = new HashMap<>(); //mapping of character -> list of words waiting for the character
