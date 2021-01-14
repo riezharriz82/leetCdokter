@@ -14,9 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CountingElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConstrainedSubsequenceSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstrainedSubsequenceSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CountSquareSubmatricesWithAllOnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountSquareSubmatricesWithAllOnes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FixedPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FixedPoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SplitArrayIntoConsecutiveSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitArrayIntoConsecutiveSubsequences.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" afterDir="false" />
@@ -187,13 +190,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00688" summary="Solve hard and extremely tricky design a data structure that supports adding ranges and removing ranges using ordered map. Each portion itself is a medium problem of its own ! &#10;To support addRange() we need to merge overlapping intervals by removing all overlapping intervals and at the end introducing the final merged range.&#10;To support removeRange() we can add the range to insert a merged interval and then remove the entire interval only to introduce the slices that needs not to removed ie. the portion on the left and right of target range. Very tricky operation but it simplifies the code a lot">
-      <created>1609880709275</created>
-      <option name="number" value="00688" />
-      <option name="presentableId" value="LOCAL-00688" />
-      <option name="project" value="LOCAL" />
-      <updated>1609880709275</updated>
     </task>
     <task id="LOCAL-00689" summary="Solve hard and extremely tricky find critical connections in a network using tarzan's algorithm for detecting back edges. &#10;&#10;Keep track of the time a node was first visited, if it's neighbourTime &gt; firstVisitedTime, we have a critical connection. Meanwhile if a node is connected to a node with smaller time, this means there is another path to this node hence current path isn't critical. Keep updating the time of an index by taking the min of neighbourTime and curNodeTime">
       <created>1610026466170</created>
@@ -531,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610639379877</updated>
     </task>
-    <option name="localTasksCounter" value="737" />
+    <task id="LOCAL-00737" summary="Solve easy count pairs of consecutive elements in array containing duplicate elements e.g {3,4} {4,5} using hashmap">
+      <created>1610640833411</created>
+      <option name="number" value="00737" />
+      <option name="presentableId" value="LOCAL-00737" />
+      <option name="project" value="LOCAL" />
+      <updated>1610640833411</updated>
+    </task>
+    <option name="localTasksCounter" value="738" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium math related problem, find the count of numbers with odd no of divisors by counting perfect squares" />
     <MESSAGE value="Solve hard and extremely tricky count the no of ways in which we can place P,A,L to generate strings of N length such that we can have at most 1 A and at most 2 consecutive L in the generated string using recursion with memoization&#10;&#10;Learnings -- Figure out the information required at each state, this will help in figuring the parameters required in recursion. Here we need to know the count of P, A and consecutive L present at each state" />
     <MESSAGE value="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string" />
     <MESSAGE value="Solve count distinct subsequences in a string that matches target string using binary search + memoization. In my initial attempt, I thought my solution isn't memoizable but I proved myself wrong ! What a day !" />
@@ -627,7 +629,8 @@
     <MESSAGE value="Simplify code by rewriting it to fit sliding window template" />
     <MESSAGE value="Add gotcha to make sure previous DP state is valid before we extend the result" />
     <MESSAGE value="Solve easy find an element in an array where a[i] == i using binary search." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find an element in an array where a[i] == i using binary search." />
+    <MESSAGE value="Solve easy count pairs of consecutive elements in array containing duplicate elements e.g {3,4} {4,5} using hashmap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy count pairs of consecutive elements in array containing duplicate elements e.g {3,4} {4,5} using hashmap" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

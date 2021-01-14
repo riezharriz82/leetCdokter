@@ -54,18 +54,14 @@ public class ConstrainedSubsequenceSum {
         int[] dp = new int[n];
         TreeMap<Integer, Integer> map = new TreeMap<>();
         for (int i = 0; i < n; i++) {
-            //max to handle negative lastKey()
+            //Math.max() ensures to pick smallest negative value, if nums[i] and nums[i] + map.lastKey() are both negative
             dp[i] = Math.max(nums[i], nums[i] + (map.isEmpty() ? 0 : map.lastKey()));
             map.put(dp[i], map.getOrDefault(dp[i], 0) + 1);
             if (i >= k) {
                 //need to remove the prefix sum falling out of the window
-                int key = dp[i - k];
-                int val = map.get(key);
-                if (val == 1) {
-                    map.remove(key);
-                } else {
-                    map.put(key, val - 1);
-                }
+                int outside = dp[i - k];
+                map.put(outside, map.get(outside) - 1);
+                map.remove(outside, 0);
             }
         }
         return Arrays.stream(dp).max().getAsInt();
