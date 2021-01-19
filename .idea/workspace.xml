@@ -186,13 +186,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00692" summary="Solve medium and extremely tricky coloring game where first player has chosen a node and we have to choose a marker node. Now after this each player can only choose nodes that are directly connected to the nodes of same color.&#10;&#10;Trick was to realize that best option for player2 would be to choose any of the 3 connected nodes to first players chosen node i.e left child, right child or it's parent. Doing so will block first player to choose any of it's subtree.">
-      <created>1610052519772</created>
-      <option name="number" value="00692" />
-      <option name="presentableId" value="LOCAL-00692" />
-      <option name="project" value="LOCAL" />
-      <updated>1610052519772</updated>
-    </task>
     <task id="LOCAL-00693" summary="Solve medium and extremely tricky to do it in O(1) space complexity, given nodes of a n-ary tree, find the root node. Simple solution is to use a visited set to keep track of nodes that were visited because they are a children of some other node. Root node will never be visited because it's not a children of any node. But this approach requires additional space.&#10;&#10;In order to reduce space complexity we have to leverage the insight that all other nodes except root node are visited twice. So if we perform xor on the values, only root node will remain.">
       <created>1610116705144</created>
       <option name="number" value="00693" />
@@ -529,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610641365170</updated>
     </task>
-    <option name="localTasksCounter" value="741" />
+    <task id="LOCAL-00741" summary="Solve medium find total no of pairs with sum = k using hashmap. This seems to be a followup question for twoSum problem">
+      <created>1611063291352</created>
+      <option name="number" value="00741" />
+      <option name="presentableId" value="LOCAL-00741" />
+      <option name="project" value="LOCAL" />
+      <updated>1611063291352</updated>
+    </task>
+    <option name="localTasksCounter" value="742" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Simplify code by removing if/else check during removal of key from hashmap" />
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Update comment" />
     <MESSAGE value="Add time complexity for both the approaches" />
@@ -625,7 +624,8 @@
     <MESSAGE value="Simplify code by removing if/else check during key removal in map and add comments to explain the reason behind Math.max()" />
     <MESSAGE value="Tag my personal interview questions" />
     <MESSAGE value="Add related subsequences problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add related subsequences problem" />
+    <MESSAGE value="Solve medium find total no of pairs with sum = k using hashmap. This seems to be a followup question for twoSum problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find total no of pairs with sum = k using hashmap. This seems to be a followup question for twoSum problem" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
