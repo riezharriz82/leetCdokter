@@ -160,20 +160,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DivideChocolates" />
-      <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Application.BeautifulArrangement" />
       <item itemvalue="Application.DiceRollSimulation" />
+      <item itemvalue="Application.DivideChocolates" />
+      <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.JumpGame4" />
+        <item itemvalue="Application.DivideChocolates" />
         <item itemvalue="Application.DiceRollSimulation" />
         <item itemvalue="Application.BeautifulArrangement" />
-        <item itemvalue="Application.JumpGame4" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.DivideChocolates" />
       </list>
     </recent_temporary>
   </component>
@@ -185,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00693" summary="Solve medium and extremely tricky to do it in O(1) space complexity, given nodes of a n-ary tree, find the root node. Simple solution is to use a visited set to keep track of nodes that were visited because they are a children of some other node. Root node will never be visited because it's not a children of any node. But this approach requires additional space.&#10;&#10;In order to reduce space complexity we have to leverage the insight that all other nodes except root node are visited twice. So if we perform xor on the values, only root node will remain.">
-      <created>1610116705144</created>
-      <option name="number" value="00693" />
-      <option name="presentableId" value="LOCAL-00693" />
-      <option name="project" value="LOCAL" />
-      <updated>1610116705144</updated>
     </task>
     <task id="LOCAL-00694" summary="Solve easy find whether two string arrays result in same string upon concatenation or not using O(1) space via two pointers approach.&#10;Keep four pointers, 2 for word index and 2 for char index inside word. Increment the word index pointer if char index has reached the end of the current word.&#10;At the end check if all the words have been verified in both the arrays.">
       <created>1610117820672</created>
@@ -529,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611063291352</updated>
     </task>
-    <option name="localTasksCounter" value="742" />
+    <task id="LOCAL-00742" summary="Solve medium count no of strings that its characters are lexicographically sorted and consists only of a,e,i,o,u using recursion + memoization&#10;&#10;Leveraged prior learning of solving digit DP problems">
+      <created>1611069225449</created>
+      <option name="number" value="00742" />
+      <option name="presentableId" value="LOCAL-00742" />
+      <option name="project" value="LOCAL" />
+      <updated>1611069225449</updated>
+    </task>
+    <option name="localTasksCounter" value="743" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fix typo" />
     <MESSAGE value="Update comment" />
     <MESSAGE value="Add time complexity for both the approaches" />
     <MESSAGE value="Update approach" />
@@ -625,7 +624,8 @@
     <MESSAGE value="Tag my personal interview questions" />
     <MESSAGE value="Add related subsequences problem" />
     <MESSAGE value="Solve medium find total no of pairs with sum = k using hashmap. This seems to be a followup question for twoSum problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find total no of pairs with sum = k using hashmap. This seems to be a followup question for twoSum problem" />
+    <MESSAGE value="Solve medium count no of strings that its characters are lexicographically sorted and consists only of a,e,i,o,u using recursion + memoization&#10;&#10;Leveraged prior learning of solving digit DP problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium count no of strings that its characters are lexicographically sorted and consists only of a,e,i,o,u using recursion + memoization&#10;&#10;Leveraged prior learning of solving digit DP problems" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
