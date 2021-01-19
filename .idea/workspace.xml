@@ -14,10 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountSquareSubmatricesWithAllOnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountSquareSubmatricesWithAllOnes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SplitArrayIntoConsecutiveSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitArrayIntoConsecutiveSubsequences.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
@@ -186,20 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00690" summary="Solve medium given a set of rooms where each room has a set of keys, find whether it's possible to visit all rooms using UnionFind. A bit optimization trick to avoid visited array was to use a dummy room to perform union with. &#10;&#10;Reminder to self, union find can be applied only on undirected graphs and this problem isn't exactly an undirected graph.">
-      <created>1610028489550</created>
-      <option name="number" value="00690" />
-      <option name="presentableId" value="LOCAL-00690" />
-      <option name="project" value="LOCAL" />
-      <updated>1610028489550</updated>
-    </task>
-    <task id="LOCAL-00691" summary="Solve medium and a bit tricky find the number of closed islands i.e find the 0's that are completely surrounded by 1's by inverting the lookup criteria. We know the cells at the border are definitely not surrounded, so we mark all the cells connected to the border water cells. The water cells left are closed.">
-      <created>1610035845454</created>
-      <option name="number" value="00691" />
-      <option name="presentableId" value="LOCAL-00691" />
-      <option name="project" value="LOCAL" />
-      <updated>1610035845454</updated>
     </task>
     <task id="LOCAL-00692" summary="Solve medium and extremely tricky coloring game where first player has chosen a node and we have to choose a marker node. Now after this each player can only choose nodes that are directly connected to the nodes of same color.&#10;&#10;Trick was to realize that best option for player2 would be to choose any of the 3 connected nodes to first players chosen node i.e left child, right child or it's parent. Doing so will block first player to choose any of it's subtree.">
       <created>1610052519772</created>
@@ -530,7 +515,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610641009537</updated>
     </task>
-    <option name="localTasksCounter" value="739" />
+    <task id="LOCAL-00739" summary="Tag my personal interview questions">
+      <created>1610641279189</created>
+      <option name="number" value="00739" />
+      <option name="presentableId" value="LOCAL-00739" />
+      <option name="project" value="LOCAL" />
+      <updated>1610641279189</updated>
+    </task>
+    <task id="LOCAL-00740" summary="Add related subsequences problem">
+      <created>1610641365170</created>
+      <option name="number" value="00740" />
+      <option name="presentableId" value="LOCAL-00740" />
+      <option name="project" value="LOCAL" />
+      <updated>1610641365170</updated>
+    </task>
+    <option name="localTasksCounter" value="741" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,8 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string" />
-    <MESSAGE value="Solve count distinct subsequences in a string that matches target string using binary search + memoization. In my initial attempt, I thought my solution isn't memoizable but I proved myself wrong ! What a day !" />
     <MESSAGE value="Simplify code by removing if/else check during removal of key from hashmap" />
     <MESSAGE value="Fix typo" />
     <MESSAGE value="Update comment" />
@@ -626,7 +623,9 @@
     <MESSAGE value="Solve easy find an element in an array where a[i] == i using binary search." />
     <MESSAGE value="Solve easy count pairs of consecutive elements in array containing duplicate elements e.g {3,4} {4,5} using hashmap" />
     <MESSAGE value="Simplify code by removing if/else check during key removal in map and add comments to explain the reason behind Math.max()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplify code by removing if/else check during key removal in map and add comments to explain the reason behind Math.max()" />
+    <MESSAGE value="Tag my personal interview questions" />
+    <MESSAGE value="Add related subsequences problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add related subsequences problem" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
