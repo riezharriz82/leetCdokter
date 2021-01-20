@@ -186,13 +186,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00695" summary="Add constraints in the problem statement along with explanation of not using the curSum as a key in memoization because the numbers chosen so far can uniquely represent the dp state. We are not restricting ourselves to an index">
-      <created>1610123328268</created>
-      <option name="number" value="00695" />
-      <option name="presentableId" value="LOCAL-00695" />
-      <option name="project" value="LOCAL" />
-      <updated>1610123328268</updated>
-    </task>
     <task id="LOCAL-00696" summary="Add approach and related line sweep problems">
       <created>1610124652385</created>
       <option name="number" value="00696" />
@@ -529,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611071887588</updated>
     </task>
-    <option name="localTasksCounter" value="744" />
+    <task id="LOCAL-00744" summary="Solve medium and extremely tricky find the max profit from popping either &quot;ab&quot; or &quot;ba&quot; from a string using greedy. Tried to solve it via recursion but then realized it would give TLE, switched to greedy and got AC&#10;Feeling extremely proud of myself for solving this problem on my own.">
+      <created>1611074569571</created>
+      <option name="number" value="00744" />
+      <option name="presentableId" value="LOCAL-00744" />
+      <option name="project" value="LOCAL" />
+      <updated>1611074569571</updated>
+    </task>
+    <option name="localTasksCounter" value="745" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add time complexity for both the approaches" />
     <MESSAGE value="Update approach" />
     <MESSAGE value="Add comment and simplify code" />
     <MESSAGE value="Fix logic by iterating over worker indexes first, because worker index have higher priority over bike indexes &#10;ie. (worker_idx, bike_idx) (1,2) &gt; (2,0) if distances is same" />
@@ -625,7 +624,8 @@
     <MESSAGE value="Solve medium find total no of pairs with sum = k using hashmap. This seems to be a followup question for twoSum problem" />
     <MESSAGE value="Solve medium count no of strings that its characters are lexicographically sorted and consists only of a,e,i,o,u using recursion + memoization&#10;&#10;Leveraged prior learning of solving digit DP problems" />
     <MESSAGE value="Solve medium design a subway system which tracks avg travel time between two pairs of stations, provided the checkin and checkout time of a person using hashmaps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design a subway system which tracks avg travel time between two pairs of stations, provided the checkin and checkout time of a person using hashmaps" />
+    <MESSAGE value="Solve medium and extremely tricky find the max profit from popping either &quot;ab&quot; or &quot;ba&quot; from a string using greedy. Tried to solve it via recursion but then realized it would give TLE, switched to greedy and got AC&#10;Feeling extremely proud of myself for solving this problem on my own." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find the max profit from popping either &quot;ab&quot; or &quot;ba&quot; from a string using greedy. Tried to solve it via recursion but then realized it would give TLE, switched to greedy and got AC&#10;Feeling extremely proud of myself for solving this problem on my own." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
