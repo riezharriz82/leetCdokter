@@ -186,13 +186,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00697" summary="Add clarification on why DP doesn't work for this problem because this problem has cycles in recurrence relation">
-      <created>1610125983097</created>
-      <option name="number" value="00697" />
-      <option name="presentableId" value="LOCAL-00697" />
-      <option name="project" value="LOCAL" />
-      <updated>1610125983097</updated>
-    </task>
     <task id="LOCAL-00698" summary="Update comment">
       <created>1610127869287</created>
       <option name="number" value="00698" />
@@ -529,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611165043553</updated>
     </task>
-    <option name="localTasksCounter" value="746" />
+    <task id="LOCAL-00746" summary="Solve medium and extremely tricky find the lexicographically smallest subsequence of length k using stack. &#10;Tricky thing to understand was that we need to ensure at least k items in the stack. This observation was critical and I couldn't figure it out.">
+      <created>1611246911123</created>
+      <option name="number" value="00746" />
+      <option name="presentableId" value="LOCAL-00746" />
+      <option name="project" value="LOCAL" />
+      <updated>1611246911123</updated>
+    </task>
+    <option name="localTasksCounter" value="747" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment and simplify code" />
     <MESSAGE value="Fix logic by iterating over worker indexes first, because worker index have higher priority over bike indexes &#10;ie. (worker_idx, bike_idx) (1,2) &gt; (2,0) if distances is same" />
     <MESSAGE value="Add comment on reason behind tracking max and min because we have to keep track of difference between smallest and largest transformed number" />
     <MESSAGE value="Update comment to add sample calculations" />
@@ -625,7 +624,8 @@
     <MESSAGE value="Solve medium design a subway system which tracks avg travel time between two pairs of stations, provided the checkin and checkout time of a person using hashmaps" />
     <MESSAGE value="Solve medium and extremely tricky find the max profit from popping either &quot;ab&quot; or &quot;ba&quot; from a string using greedy. Tried to solve it via recursion but then realized it would give TLE, switched to greedy and got AC&#10;Feeling extremely proud of myself for solving this problem on my own." />
     <MESSAGE value="Solve medium design tic tac toe game for simulating game play for two players by tracking characters placed per row, per column, per diagonal and anti diagonal for each player. If count matches n, that player has won the game." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design tic tac toe game for simulating game play for two players by tracking characters placed per row, per column, per diagonal and anti diagonal for each player. If count matches n, that player has won the game." />
+    <MESSAGE value="Solve medium and extremely tricky find the lexicographically smallest subsequence of length k using stack. &#10;Tricky thing to understand was that we need to ensure at least k items in the stack. This observation was critical and I couldn't figure it out." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find the lexicographically smallest subsequence of length k using stack. &#10;Tricky thing to understand was that we need to ensure at least k items in the stack. This observation was critical and I couldn't figure it out." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
