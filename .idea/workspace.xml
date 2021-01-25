@@ -14,12 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BoundaryTraversalOfBinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TwoCityScheduling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TwoCityScheduling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/BoundaryTraversalOfBinaryTree.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
@@ -188,20 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00701" summary="Simplify code by introducing enum states instead of two boolean[] array; visited and toDo">
-      <created>1610144283072</created>
-      <option name="number" value="00701" />
-      <option name="presentableId" value="LOCAL-00701" />
-      <option name="project" value="LOCAL" />
-      <updated>1610144283072</updated>
-    </task>
-    <task id="LOCAL-00702" summary="Simplify code by removing redundant null checks">
-      <created>1610144909010</created>
-      <option name="number" value="00702" />
-      <option name="presentableId" value="LOCAL-00702" />
-      <option name="project" value="LOCAL" />
-      <updated>1610144909010</updated>
     </task>
     <task id="LOCAL-00703" summary="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices.">
       <created>1610202217576</created>
@@ -532,7 +516,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611322700802</updated>
     </task>
-    <option name="localTasksCounter" value="750" />
+    <task id="LOCAL-00750" summary="Add constraints and explanation behind why recursive solution works because of low constraints">
+      <created>1611603125757</created>
+      <option name="number" value="00750" />
+      <option name="presentableId" value="LOCAL-00750" />
+      <option name="project" value="LOCAL" />
+      <updated>1611603125757</updated>
+    </task>
+    <task id="LOCAL-00751" summary="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases.">
+      <created>1611603288804</created>
+      <option name="number" value="00751" />
+      <option name="presentableId" value="LOCAL-00751" />
+      <option name="project" value="LOCAL" />
+      <updated>1611603288804</updated>
+    </task>
+    <option name="localTasksCounter" value="752" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,8 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add related problem, this greedy problem is also extremely tricky" />
-    <MESSAGE value="Add explanation behind counting valid subarrays using (end - begin + 1)" />
     <MESSAGE value="Add gotcha and explanation behind iterating from beginning" />
     <MESSAGE value="Add related problems and comment in hard and extremely tricky find the largest subsequence sum such that all indices are within k distance" />
     <MESSAGE value="Add related multi bfs problems" />
@@ -628,7 +624,9 @@
     <MESSAGE value="Solve medium and tricky find the lexicographically smallest subsequence after deleting k chars from input string using greedy stack&#10;&#10;Leveraged prior learning of using stack to build lexicographically smallest subsequence" />
     <MESSAGE value="Solve medium and a bit tricky find whether two strings have edit distance of 1 or not using two pointers solution. &#10;Implementation heavy solution. Initially I solved by comparing frequency count of two strings but it failed for anagrams." />
     <MESSAGE value="Solve medium and a bit tricky determine if two strings can be made similar if we can swap any two existing characters or we can transform every occurrence of one existing character to another existing character&#10;&#10;Problem reduces to finding whether two strings are anagram of each other (operation1) or their frequencies are anagram of each other (operation2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky determine if two strings can be made similar if we can swap any two existing characters or we can transform every occurrence of one existing character to another existing character&#10;&#10;Problem reduces to finding whether two strings are anagram of each other (operation1) or their frequencies are anagram of each other (operation2)" />
+    <MESSAGE value="Add constraints and explanation behind why recursive solution works because of low constraints" />
+    <MESSAGE value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
