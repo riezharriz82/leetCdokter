@@ -21,11 +21,19 @@ import java.util.HashMap;
  * The fourth person goes to city B for a cost of 20.
  * <p>
  * The total minimum cost is 10 + 30 + 50 + 20 = 110 to have half the people interviewing in each city.
+ * <p>
+ * Constraints:
+ * 2 * n == costs.length
+ * 2 <= costs.length <= 100
+ * costs.length is even.
+ * 1 <= aCosti, bCosti <= 1000
  */
 public class TwoCityScheduling {
     /**
      * Approach: Similar to knapsack problem, every person has two options, go to city a or city b
      * In knapsack the constraint is weight, here the constraint is count of people in either of the city
+     * <p>
+     * It works because of low constraints of n=100 (100*50*50=2.5*10^5)
      */
     public int twoCitySchedCostRecursive(int[][] costs) {
         HashMap<String, Integer> memoized = new HashMap<>();
