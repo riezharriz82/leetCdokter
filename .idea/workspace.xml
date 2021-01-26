@@ -187,13 +187,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00703" summary="Solve medium and a bit tricky, merge all emails associated with the same person by performing union find on strings. &#10;&#10;Union find on strings is a bit tricky as we need to either have a unique identifier associated with each string, here we can use the index as an id, if we see an email is already associated with another index, we perform union on those two indices.">
-      <created>1610202217576</created>
-      <option name="number" value="00703" />
-      <option name="presentableId" value="LOCAL-00703" />
-      <option name="project" value="LOCAL" />
-      <updated>1610202217577</updated>
-    </task>
     <task id="LOCAL-00704" summary="Add comment to explain the additional code in union() operation on strings">
       <created>1610202666791</created>
       <option name="number" value="00704" />
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611603288804</updated>
     </task>
-    <option name="localTasksCounter" value="752" />
+    <task id="LOCAL-00752" summary="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10">
+      <created>1611606628438</created>
+      <option name="number" value="00752" />
+      <option name="presentableId" value="LOCAL-00752" />
+      <option name="project" value="LOCAL" />
+      <updated>1611606628438</updated>
+    </task>
+    <option name="localTasksCounter" value="753" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha and explanation behind iterating from beginning" />
     <MESSAGE value="Add related problems and comment in hard and extremely tricky find the largest subsequence sum such that all indices are within k distance" />
     <MESSAGE value="Add related multi bfs problems" />
     <MESSAGE value="Add gotcha about incrementing the result" />
@@ -626,7 +625,8 @@
     <MESSAGE value="Solve medium and a bit tricky determine if two strings can be made similar if we can swap any two existing characters or we can transform every occurrence of one existing character to another existing character&#10;&#10;Problem reduces to finding whether two strings are anagram of each other (operation1) or their frequencies are anagram of each other (operation2)" />
     <MESSAGE value="Add constraints and explanation behind why recursive solution works because of low constraints" />
     <MESSAGE value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
+    <MESSAGE value="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
