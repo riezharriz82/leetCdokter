@@ -187,13 +187,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00705" summary="Add clarifications on handling duplicate elements">
-      <created>1610203367873</created>
-      <option name="number" value="00705" />
-      <option name="presentableId" value="LOCAL-00705" />
-      <option name="project" value="LOCAL" />
-      <updated>1610203367874</updated>
-    </task>
     <task id="LOCAL-00706" summary="Add comments and time complexity in MostStonesRemovedWithSameRowOrSameColumn">
       <created>1610205554155</created>
       <option name="number" value="00706" />
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611688668473</updated>
     </task>
-    <option name="localTasksCounter" value="754" />
+    <task id="LOCAL-00754" summary="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency">
+      <created>1612082520173</created>
+      <option name="number" value="00754" />
+      <option name="presentableId" value="LOCAL-00754" />
+      <option name="project" value="LOCAL" />
+      <updated>1612082520173</updated>
+    </task>
+    <option name="localTasksCounter" value="755" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add related multi bfs problems" />
     <MESSAGE value="Add gotcha about incrementing the result" />
     <MESSAGE value="Add gotcha about incrementing the result rather than assigning" />
     <MESSAGE value="Add comment on explaining that we have to check whether target tree contains source tree as an inverted subtree or not." />
@@ -626,7 +625,8 @@
     <MESSAGE value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
     <MESSAGE value="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10" />
     <MESSAGE value="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found" />
+    <MESSAGE value="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
