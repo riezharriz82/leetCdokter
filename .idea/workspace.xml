@@ -187,13 +187,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00707" summary="Update comment regarding handling of parallel edges">
-      <created>1610207272603</created>
-      <option name="number" value="00707" />
-      <option name="presentableId" value="LOCAL-00707" />
-      <option name="project" value="LOCAL" />
-      <updated>1610207272603</updated>
-    </task>
     <task id="LOCAL-00708" summary="Add comment to solve the problem in another way">
       <created>1610208437237</created>
       <option name="number" value="00708" />
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612098509135</updated>
     </task>
-    <option name="localTasksCounter" value="756" />
+    <task id="LOCAL-00756" summary="Solve medium print binary tree in a 2D matrix, using recursion">
+      <created>1612100373274</created>
+      <option name="number" value="00756" />
+      <option name="presentableId" value="LOCAL-00756" />
+      <option name="project" value="LOCAL" />
+      <updated>1612100373274</updated>
+    </task>
+    <option name="localTasksCounter" value="757" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha about incrementing the result rather than assigning" />
     <MESSAGE value="Add comment on explaining that we have to check whether target tree contains source tree as an inverted subtree or not." />
     <MESSAGE value="Add related sliding window max/min problems" />
     <MESSAGE value="Simplify code by rewriting it to fit sliding window template" />
@@ -626,7 +625,8 @@
     <MESSAGE value="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found" />
     <MESSAGE value="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency" />
     <MESSAGE value="Solve medium find the max no of customers that can be satisfied if the owner becomes happy for a window of size X, by finding the largest subarray sum of size X using sliding window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the max no of customers that can be satisfied if the owner becomes happy for a window of size X, by finding the largest subarray sum of size X using sliding window" />
+    <MESSAGE value="Solve medium print binary tree in a 2D matrix, using recursion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium print binary tree in a 2D matrix, using recursion" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
