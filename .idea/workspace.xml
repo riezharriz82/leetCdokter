@@ -165,8 +165,8 @@
       <item itemvalue="Application.DiceRollSimulation" />
       <item itemvalue="Application.DivideChocolates" />
       <item itemvalue="Application.JumpGame4" />
-      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Java Scratch.Scratch" />
+      <item itemvalue="JUnit.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -186,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00704" summary="Add comment to explain the additional code in union() operation on strings">
-      <created>1610202666791</created>
-      <option name="number" value="00704" />
-      <option name="presentableId" value="LOCAL-00704" />
-      <option name="project" value="LOCAL" />
-      <updated>1610202666791</updated>
     </task>
     <task id="LOCAL-00705" summary="Add clarifications on handling duplicate elements">
       <created>1610203367873</created>
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611606628438</updated>
     </task>
-    <option name="localTasksCounter" value="753" />
+    <task id="LOCAL-00753" summary="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found">
+      <created>1611688668473</created>
+      <option name="number" value="00753" />
+      <option name="presentableId" value="LOCAL-00753" />
+      <option name="project" value="LOCAL" />
+      <updated>1611688668473</updated>
+    </task>
+    <option name="localTasksCounter" value="754" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add related problems and comment in hard and extremely tricky find the largest subsequence sum such that all indices are within k distance" />
     <MESSAGE value="Add related multi bfs problems" />
     <MESSAGE value="Add gotcha about incrementing the result" />
     <MESSAGE value="Add gotcha about incrementing the result rather than assigning" />
@@ -626,7 +625,8 @@
     <MESSAGE value="Add constraints and explanation behind why recursive solution works because of low constraints" />
     <MESSAGE value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
     <MESSAGE value="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10" />
+    <MESSAGE value="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
