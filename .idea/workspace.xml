@@ -187,13 +187,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00708" summary="Add comment to solve the problem in another way">
-      <created>1610208437237</created>
-      <option name="number" value="00708" />
-      <option name="presentableId" value="LOCAL-00708" />
-      <option name="project" value="LOCAL" />
-      <updated>1610208437237</updated>
-    </task>
     <task id="LOCAL-00709" summary="Solve hard and extremely tricky represent data stream as disjoint intervals by merging consecutive integers ie. 1,2,3,4 are merged to form [1,4] using treeMap&#10;&#10;Learnings -- To handle interval related problem, always ensure that there is no overlapping interval before or after an operation, so whenever do something, remove overlapped intervals and introduce a merged interval">
       <created>1610212671533</created>
       <option name="number" value="00709" />
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612100373274</updated>
     </task>
-    <option name="localTasksCounter" value="757" />
+    <task id="LOCAL-00757" summary="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings.">
+      <created>1612117092265</created>
+      <option name="number" value="00757" />
+      <option name="presentableId" value="LOCAL-00757" />
+      <option name="project" value="LOCAL" />
+      <updated>1612117092266</updated>
+    </task>
+    <option name="localTasksCounter" value="758" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment on explaining that we have to check whether target tree contains source tree as an inverted subtree or not." />
     <MESSAGE value="Add related sliding window max/min problems" />
     <MESSAGE value="Simplify code by rewriting it to fit sliding window template" />
     <MESSAGE value="Add gotcha to make sure previous DP state is valid before we extend the result" />
@@ -626,7 +625,8 @@
     <MESSAGE value="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency" />
     <MESSAGE value="Solve medium find the max no of customers that can be satisfied if the owner becomes happy for a window of size X, by finding the largest subarray sum of size X using sliding window" />
     <MESSAGE value="Solve medium print binary tree in a 2D matrix, using recursion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium print binary tree in a 2D matrix, using recursion" />
+    <MESSAGE value="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
