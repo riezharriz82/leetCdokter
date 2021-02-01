@@ -14,7 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" afterDir="false" />
@@ -186,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00709" summary="Solve hard and extremely tricky represent data stream as disjoint intervals by merging consecutive integers ie. 1,2,3,4 are merged to form [1,4] using treeMap&#10;&#10;Learnings -- To handle interval related problem, always ensure that there is no overlapping interval before or after an operation, so whenever do something, remove overlapped intervals and introduce a merged interval">
-      <created>1610212671533</created>
-      <option name="number" value="00709" />
-      <option name="presentableId" value="LOCAL-00709" />
-      <option name="project" value="LOCAL" />
-      <updated>1610212671533</updated>
     </task>
     <task id="LOCAL-00710" summary="Solve hard and extremely tricky find the min no of flips required so that array does not have any 0. Whenever flip is performed, we have to flip k consecutive bits. Need to use greedy ie. whenever we see a 0, flip k consecutive bits. If we actually flip it, time complexity would be o(nk), instead we perform virtual flips i.e we keep track of indices till which we have to perform flips and size of queue would indicate the no of flips performed. If A[i] == 1 and we have performed even bits, A[i] is still 1, so skip it.">
       <created>1610224169591</created>
@@ -530,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612117092266</updated>
     </task>
-    <option name="localTasksCounter" value="758" />
+    <task id="LOCAL-00758" summary="Solve medium and a bit tricky problem find the diameter of a n-ary tree using DFS">
+      <created>1612200155927</created>
+      <option name="number" value="00758" />
+      <option name="presentableId" value="LOCAL-00758" />
+      <option name="project" value="LOCAL" />
+      <updated>1612200155927</updated>
+    </task>
+    <option name="localTasksCounter" value="759" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add related sliding window max/min problems" />
     <MESSAGE value="Simplify code by rewriting it to fit sliding window template" />
     <MESSAGE value="Add gotcha to make sure previous DP state is valid before we extend the result" />
     <MESSAGE value="Solve easy find an element in an array where a[i] == i using binary search." />
@@ -626,7 +624,8 @@
     <MESSAGE value="Solve medium find the max no of customers that can be satisfied if the owner becomes happy for a window of size X, by finding the largest subarray sum of size X using sliding window" />
     <MESSAGE value="Solve medium print binary tree in a 2D matrix, using recursion" />
     <MESSAGE value="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings." />
+    <MESSAGE value="Solve medium and a bit tricky problem find the diameter of a n-ary tree using DFS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem find the diameter of a n-ary tree using DFS" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
