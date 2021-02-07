@@ -14,6 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" afterDir="false" />
@@ -185,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00713" summary="Solve hard and extremely tricky count the no of ways in which we can place P,A,L to generate strings of N length such that we can have at most 1 A and at most 2 consecutive L in the generated string using recursion with memoization&#10;&#10;Learnings -- Figure out the information required at each state, this will help in figuring the parameters required in recursion. Here we need to know the count of P, A and consecutive L present at each state">
-      <created>1610232934993</created>
-      <option name="number" value="00713" />
-      <option name="presentableId" value="LOCAL-00713" />
-      <option name="project" value="LOCAL" />
-      <updated>1610232934993</updated>
     </task>
     <task id="LOCAL-00714" summary="Add gotcha in hard and extremely tricky problem in counting subsequences that matches a given target string">
       <created>1610294517355</created>
@@ -529,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612693740285</updated>
     </task>
-    <option name="localTasksCounter" value="762" />
+    <task id="LOCAL-00762" summary="Solve medium find min length of string after deleting prefix and suffix of similar characters using two pointers">
+      <created>1612694173242</created>
+      <option name="number" value="00762" />
+      <option name="presentableId" value="LOCAL-00762" />
+      <option name="project" value="LOCAL" />
+      <updated>1612694173242</updated>
+    </task>
+    <option name="localTasksCounter" value="763" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -600,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy count pairs of consecutive elements in array containing duplicate elements e.g {3,4} {4,5} using hashmap" />
     <MESSAGE value="Simplify code by removing if/else check during key removal in map and add comments to explain the reason behind Math.max()" />
     <MESSAGE value="Tag my personal interview questions" />
     <MESSAGE value="Add related subsequences problem" />
@@ -625,7 +625,8 @@
     <MESSAGE value="Solve medium find diameter of a n-ary tree using DFS by tracking the largest two depths of a node" />
     <MESSAGE value="Solve easy but tricky find the maximum product of three numbers in an array containing +ve and -ve numbers by considering that two smallest negative number multiplied with the largest positive number can result in a large product." />
     <MESSAGE value="Solve easy but a bit tricky, find relative ranks of each index using custom comparator for sorting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy but a bit tricky, find relative ranks of each index using custom comparator for sorting" />
+    <MESSAGE value="Solve medium find min length of string after deleting prefix and suffix of similar characters using two pointers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find min length of string after deleting prefix and suffix of similar characters using two pointers" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
