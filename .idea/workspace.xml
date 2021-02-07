@@ -187,13 +187,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00716" summary="Simplify code by removing if/else check during removal of key from hashmap">
-      <created>1610297472757</created>
-      <option name="number" value="00716" />
-      <option name="presentableId" value="LOCAL-00716" />
-      <option name="project" value="LOCAL" />
-      <updated>1610297472757</updated>
-    </task>
     <task id="LOCAL-00717" summary="Fix typo">
       <created>1610308799198</created>
       <option name="number" value="00717" />
@@ -530,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612717792267</updated>
     </task>
-    <option name="localTasksCounter" value="765" />
+    <task id="LOCAL-00765" summary="Solve medium and extremely tricky find max score after removing stones from 2 piles, such that atleast 2 piles have non zero stones. Trick was to not pick the piles with smallest stones first as it will ensure that we reach end state faster. Hence we pick piles with larger stones first.">
+      <created>1612730262290</created>
+      <option name="number" value="00765" />
+      <option name="presentableId" value="LOCAL-00765" />
+      <option name="project" value="LOCAL" />
+      <updated>1612730262290</updated>
+    </task>
+    <option name="localTasksCounter" value="766" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add related subsequences problem" />
     <MESSAGE value="Solve medium find total no of pairs with sum = k using hashmap. This seems to be a followup question for twoSum problem" />
     <MESSAGE value="Solve medium count no of strings that its characters are lexicographically sorted and consists only of a,e,i,o,u using recursion + memoization&#10;&#10;Leveraged prior learning of solving digit DP problems" />
     <MESSAGE value="Solve medium design a subway system which tracks avg travel time between two pairs of stations, provided the checkin and checkout time of a person using hashmaps" />
@@ -626,7 +625,8 @@
     <MESSAGE value="Solve medium find min length of string after deleting prefix and suffix of similar characters using two pointers" />
     <MESSAGE value="Solve medium and extremely tricky find max absolute sum of any subarray by finding the max positive subarray sum and min negative subarray sum. Need to run kadane twice. I don't know how I was able to solve it on my own! Miracle!" />
     <MESSAGE value="Solve medium return the simplified path after reducing all . and .. in unix file path by modelling the paths as a stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium return the simplified path after reducing all . and .. in unix file path by modelling the paths as a stack" />
+    <MESSAGE value="Solve medium and extremely tricky find max score after removing stones from 2 piles, such that atleast 2 piles have non zero stones. Trick was to not pick the piles with smallest stones first as it will ensure that we reach end state faster. Hence we pick piles with larger stones first." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find max score after removing stones from 2 piles, such that atleast 2 piles have non zero stones. Trick was to not pick the piles with smallest stones first as it will ensure that we reach end state faster. Hence we pick piles with larger stones first." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
