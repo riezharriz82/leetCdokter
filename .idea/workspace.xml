@@ -14,7 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MaximumAbsoluteSumOfSubarray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
@@ -187,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00715" summary="Solve count distinct subsequences in a string that matches target string using binary search + memoization. In my initial attempt, I thought my solution isn't memoizable but I proved myself wrong ! What a day !">
-      <created>1610295833004</created>
-      <option name="number" value="00715" />
-      <option name="presentableId" value="LOCAL-00715" />
-      <option name="project" value="LOCAL" />
-      <updated>1610295833004</updated>
     </task>
     <task id="LOCAL-00716" summary="Simplify code by removing if/else check during removal of key from hashmap">
       <created>1610297472757</created>
@@ -531,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612717336502</updated>
     </task>
-    <option name="localTasksCounter" value="764" />
+    <task id="LOCAL-00764" summary="Solve medium return the simplified path after reducing all . and .. in unix file path by modelling the paths as a stack">
+      <created>1612717792267</created>
+      <option name="number" value="00764" />
+      <option name="presentableId" value="LOCAL-00764" />
+      <option name="project" value="LOCAL" />
+      <updated>1612717792267</updated>
+    </task>
+    <option name="localTasksCounter" value="765" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Tag my personal interview questions" />
     <MESSAGE value="Add related subsequences problem" />
     <MESSAGE value="Solve medium find total no of pairs with sum = k using hashmap. This seems to be a followup question for twoSum problem" />
     <MESSAGE value="Solve medium count no of strings that its characters are lexicographically sorted and consists only of a,e,i,o,u using recursion + memoization&#10;&#10;Leveraged prior learning of solving digit DP problems" />
@@ -627,7 +625,8 @@
     <MESSAGE value="Solve easy but a bit tricky, find relative ranks of each index using custom comparator for sorting" />
     <MESSAGE value="Solve medium find min length of string after deleting prefix and suffix of similar characters using two pointers" />
     <MESSAGE value="Solve medium and extremely tricky find max absolute sum of any subarray by finding the max positive subarray sum and min negative subarray sum. Need to run kadane twice. I don't know how I was able to solve it on my own! Miracle!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky find max absolute sum of any subarray by finding the max positive subarray sum and min negative subarray sum. Need to run kadane twice. I don't know how I was able to solve it on my own! Miracle!" />
+    <MESSAGE value="Solve medium return the simplified path after reducing all . and .. in unix file path by modelling the paths as a stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium return the simplified path after reducing all . and .. in unix file path by modelling the paths as a stack" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
