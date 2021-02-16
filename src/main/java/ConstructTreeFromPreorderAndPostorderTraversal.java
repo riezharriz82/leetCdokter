@@ -38,6 +38,7 @@ public class ConstructTreeFromPreorderAndPostorderTraversal {
         //do this on paper to get the feel on why we are offsetting the indexes
         root.left = buildTree(pre, post, map, postorderStart, rootPostorderIndex);
         root.right = buildTree(pre, post, map, rootPostorderIndex + 1, postorderEnd - 1);
+        //postorderEnd - 1 is important because root was at postorderEnd
         return root;
     }
 }
