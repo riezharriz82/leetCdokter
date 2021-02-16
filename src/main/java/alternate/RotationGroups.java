@@ -1,7 +1,6 @@
 package alternate;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * https://binarysearch.io/problems/Rotation-Groups
@@ -22,30 +21,38 @@ public class RotationGroups {
      * This problem is similar to {@see GroupAnagrams}
      * A string s1 is a rotation of another string s2 if (s1 + s1).contains(s2)
      * and s1.length == s2.length
-     * Keep all unique words in a set and for each candidate check if it's a rotation of a word present in the set.
-     * If not we found a new rotation group.
+     * Maintain mapping of sortedWord to actual word, for each word, check if the sorted word exists in the map or not
+     * If no, we definitely found a new rotation group
+     * If yes, check for each actual word associated with the sorted key, and check if the current word is a rotation of that word or not
+     * <p>
+     * Pattern for solving "group" string problems is to find the unique identifier for each string and try to maintain a
+     * mapping for group key -> list of candidate strings
      */
     public int solve(String[] words) {
-        Set<String> uniqueWords = new HashSet<>();
+        Map<String, Set<String>> sortedKeys = new HashMap<>();
+        int groups = 0;
         for (String word : words) {
-            if (uniqueWords.isEmpty()) {
-                uniqueWords.add(word);
+            char[] c = word.toCharArray();
+            Arrays.sort(c);
+            String sortedKey = new String(c);
+            if (!sortedKeys.containsKey(sortedKey)) {
+                groups++;
+                sortedKeys.computeIfAbsent(sortedKey, __ -> new HashSet<>()).add(word);
             } else {
+                Set<String> candidates = sortedKeys.get(sortedKey);
                 boolean isRotation = false;
-                String candidate = word + word;
-                for (String uniqueWord : uniqueWords) { //check every unique rotation group
-                    if (uniqueWord.length() == word.length() && candidate.contains(uniqueWord)) {
-                        //part of existing rotation group
+                for (String candidate : candidates) { //for each word associated with the sorted key, check if the current word is a rotation of candidate word
+                    if (candidate.length() == word.length() && (candidate + candidate).contains(word)) {
                         isRotation = true;
                         break;
                     }
                 }
                 if (!isRotation) {
-                    //new rotation group found
-                    uniqueWords.add(word);
+                    groups++;
+                    candidates.add(word);
                 }
             }
         }
-        return uniqueWords.size();
+        return groups;
     }
 }

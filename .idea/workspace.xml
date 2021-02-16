@@ -14,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00725" summary="Update comment to add sample calculations">
-      <created>1610461017710</created>
-      <option name="number" value="00725" />
-      <option name="presentableId" value="LOCAL-00725" />
-      <option name="project" value="LOCAL" />
-      <updated>1610461017710</updated>
     </task>
     <task id="LOCAL-00726" summary="Add related problem, this greedy problem is also extremely tricky">
       <created>1610461388663</created>
@@ -526,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613486675573</updated>
     </task>
-    <option name="localTasksCounter" value="774" />
+    <task id="LOCAL-00774" summary="Add explanation for performing ceiling() check on num-k value">
+      <created>1613486816103</created>
+      <option name="number" value="00774" />
+      <option name="presentableId" value="LOCAL-00774" />
+      <option name="project" value="LOCAL" />
+      <updated>1613486816103</updated>
+    </task>
+    <option name="localTasksCounter" value="775" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -597,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find whether two strings have edit distance of 1 or not using two pointers solution. &#10;Implementation heavy solution. Initially I solved by comparing frequency count of two strings but it failed for anagrams." />
     <MESSAGE value="Solve medium and a bit tricky determine if two strings can be made similar if we can swap any two existing characters or we can transform every occurrence of one existing character to another existing character&#10;&#10;Problem reduces to finding whether two strings are anagram of each other (operation1) or their frequencies are anagram of each other (operation2)" />
     <MESSAGE value="Add constraints and explanation behind why recursive solution works because of low constraints" />
     <MESSAGE value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
@@ -622,7 +621,8 @@
     <MESSAGE value="Remove deleted/ghost file" />
     <MESSAGE value="Add related problems in StudentAttendanceRecord2" />
     <MESSAGE value="Add gotcha while setting bounds in next recursive call" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha while setting bounds in next recursive call" />
+    <MESSAGE value="Add explanation for performing ceiling() check on num-k value" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add explanation for performing ceiling() check on num-k value" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
