@@ -14,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
-      <change beforePath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,20 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00723" summary="Fix logic by iterating over worker indexes first, because worker index have higher priority over bike indexes &#10;ie. (worker_idx, bike_idx) (1,2) &gt; (2,0) if distances is same">
-      <created>1610457362444</created>
-      <option name="number" value="00723" />
-      <option name="presentableId" value="LOCAL-00723" />
-      <option name="project" value="LOCAL" />
-      <updated>1610457362444</updated>
-    </task>
-    <task id="LOCAL-00724" summary="Add comment on reason behind tracking max and min because we have to keep track of difference between smallest and largest transformed number">
-      <created>1610458254247</created>
-      <option name="number" value="00724" />
-      <option name="presentableId" value="LOCAL-00724" />
-      <option name="project" value="LOCAL" />
-      <updated>1610458254247</updated>
     </task>
     <task id="LOCAL-00725" summary="Update comment to add sample calculations">
       <created>1610461017710</created>
@@ -526,7 +512,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613486341939</updated>
     </task>
-    <option name="localTasksCounter" value="772" />
+    <task id="LOCAL-00772" summary="Add related problems in StudentAttendanceRecord2">
+      <created>1613486498965</created>
+      <option name="number" value="00772" />
+      <option name="presentableId" value="LOCAL-00772" />
+      <option name="project" value="LOCAL" />
+      <updated>1613486498965</updated>
+    </task>
+    <task id="LOCAL-00773" summary="Add gotcha while setting bounds in next recursive call">
+      <created>1613486675573</created>
+      <option name="number" value="00773" />
+      <option name="presentableId" value="LOCAL-00773" />
+      <option name="project" value="LOCAL" />
+      <updated>1613486675573</updated>
+    </task>
+    <option name="localTasksCounter" value="774" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,17 +583,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="text">
-                    <value>
-                      <list>
-                        <option value="matrix" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
               <option name="COLUMN_ID_WIDTH">
                 <map>
                   <entry key="Table.Default.Date.ColumnIdWidth" value="119" />
@@ -608,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and tricky find the lexicographically smallest subsequence after deleting k chars from input string using greedy stack&#10;&#10;Leveraged prior learning of using stack to build lexicographically smallest subsequence" />
     <MESSAGE value="Solve medium and a bit tricky find whether two strings have edit distance of 1 or not using two pointers solution. &#10;Implementation heavy solution. Initially I solved by comparing frequency count of two strings but it failed for anagrams." />
     <MESSAGE value="Solve medium and a bit tricky determine if two strings can be made similar if we can swap any two existing characters or we can transform every occurrence of one existing character to another existing character&#10;&#10;Problem reduces to finding whether two strings are anagram of each other (operation1) or their frequencies are anagram of each other (operation2)" />
     <MESSAGE value="Add constraints and explanation behind why recursive solution works because of low constraints" />
@@ -633,7 +621,8 @@
     <MESSAGE value="Tag uber personal interview questions" />
     <MESSAGE value="Remove deleted/ghost file" />
     <MESSAGE value="Add related problems in StudentAttendanceRecord2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add related problems in StudentAttendanceRecord2" />
+    <MESSAGE value="Add gotcha while setting bounds in next recursive call" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gotcha while setting bounds in next recursive call" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

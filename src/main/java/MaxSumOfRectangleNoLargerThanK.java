@@ -35,7 +35,8 @@ public class MaxSumOfRectangleNoLargerThanK {
                 int prefixSum = 0;
                 for (int i = 0; i < currentSubmatrixSum.length; i++) {
                     prefixSum += currentSubmatrixSum[i];
-                    Integer ceiling = set.ceiling(prefixSum - k); //essence of the code
+                    Integer ceiling = set.ceiling(prefixSum - k); //essence of the code, upper bound on subarray sum is k
+                    //so if current prefix sum is 10 and k is 7, we need to look for prefix sum >= 3, anything less than 3 will increase the subarray sum
                     if (ceiling != null) {
                         maxSum = Math.max(maxSum, prefixSum - ceiling);
                     }
