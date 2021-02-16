@@ -14,6 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" afterDir="false" />
@@ -185,13 +186,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00720" summary="Add time complexity for both the approaches">
-      <created>1610311434389</created>
-      <option name="number" value="00720" />
-      <option name="presentableId" value="LOCAL-00720" />
-      <option name="project" value="LOCAL" />
-      <updated>1610311434389</updated>
     </task>
     <task id="LOCAL-00721" summary="Update approach">
       <created>1610311932855</created>
@@ -529,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613484998349</updated>
     </task>
-    <option name="localTasksCounter" value="769" />
+    <task id="LOCAL-00769" summary="Tag uber personal interview questions">
+      <created>1613485217963</created>
+      <option name="number" value="00769" />
+      <option name="presentableId" value="LOCAL-00769" />
+      <option name="project" value="LOCAL" />
+      <updated>1613485217963</updated>
+    </task>
+    <option name="localTasksCounter" value="770" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -611,7 +612,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky find the max profit from popping either &quot;ab&quot; or &quot;ba&quot; from a string using greedy. Tried to solve it via recursion but then realized it would give TLE, switched to greedy and got AC&#10;Feeling extremely proud of myself for solving this problem on my own." />
     <MESSAGE value="Solve medium design tic tac toe game for simulating game play for two players by tracking characters placed per row, per column, per diagonal and anti diagonal for each player. If count matches n, that player has won the game." />
     <MESSAGE value="Solve medium and extremely tricky find the lexicographically smallest subsequence of length k using stack. &#10;Tricky thing to understand was that we need to ensure at least k items in the stack. This observation was critical and I couldn't figure it out." />
     <MESSAGE value="Solve medium and tricky find the lexicographically smallest subsequence after deleting k chars from input string using greedy stack&#10;&#10;Leveraged prior learning of using stack to build lexicographically smallest subsequence" />
@@ -636,7 +636,8 @@
     <MESSAGE value="Solve medium find words in A[] that contains all words in B[] as a subset by reducing all words in B[] to a single word by tracking max frequency required for each character." />
     <MESSAGE value="Solve medium and a bit tricky implement PeekingIterator where we need to add peek() function to existing next() and hasNext() function of iterator.&#10;&#10;Learnings : Perfect example of decorator pattern. Got frustrated while trying to call super.next() instead of trying to leverage the iterator parameter in constructor." />
     <MESSAGE value="Solve easy but a bit tricky to optimize runtime and space complexity, find the k rows with smallest 1's in a row sorted matrix of 1's and 0's using column traversal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy but a bit tricky to optimize runtime and space complexity, find the k rows with smallest 1's in a row sorted matrix of 1's and 0's using column traversal" />
+    <MESSAGE value="Tag uber personal interview questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tag uber personal interview questions" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
