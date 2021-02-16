@@ -31,6 +31,8 @@ public class FriendGroups {
      * For each friend, check if it's not visited and then perform DFS for each friend and mark all the friends as visited.
      * TODO: Solve using Union find
      * https://leetcode.com/problems/friend-circles/discuss/101354/C%2B%2B-Clean-Code-DFSorUnionFind
+     * <p>
+     * This was asked in my Uber Coding interview
      */
     public int solve(int[][] friends) {
         boolean[] visited = new boolean[friends.length];

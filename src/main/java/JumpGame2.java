@@ -19,6 +19,8 @@ public class JumpGame2 {
      * Approach: Keep track of the min number of jumps required to reach a specific index i.e. x
      * From that index, update the no of jumps required to reach all the reachable indices to x + 1
      * <p>
+     * Similar question was asked in my Uber coding interview
+     * <p>
      * Similar to {@link JumpGame}
      */
     public int jump(int[] nums) {
