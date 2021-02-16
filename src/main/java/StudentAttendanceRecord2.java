@@ -31,7 +31,7 @@ public class StudentAttendanceRecord2 {
      * invalid records. Generating invalid records was getting a bit tricky for counting more than 2 consecutive L's. Maybe I could have
      * used recursion to solve that
      * <p>
-     * {@link KnightDialer} related recursive counting problem
+     * {@link KnightDialer} {@link TwoCityScheduling} {@link DiceRollSimulation} related recursive counting problem
      */
     public int checkRecord(int n) {
         int[][][] dp = new int[n][2][3];

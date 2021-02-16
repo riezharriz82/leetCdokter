@@ -14,11 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConstructTreeFromPreorderAndPostorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxSumOfRectangleNoLargerThanK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StudentAttendanceRecord2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/BoundaryTraversalOfBinaryTree.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/RotationGroups.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,20 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00721" summary="Update approach">
-      <created>1610311932855</created>
-      <option name="number" value="00721" />
-      <option name="presentableId" value="LOCAL-00721" />
-      <option name="project" value="LOCAL" />
-      <updated>1610311932855</updated>
-    </task>
-    <task id="LOCAL-00722" summary="Add comment and simplify code">
-      <created>1610449035792</created>
-      <option name="number" value="00722" />
-      <option name="presentableId" value="LOCAL-00722" />
-      <option name="project" value="LOCAL" />
-      <updated>1610449035792</updated>
     </task>
     <task id="LOCAL-00723" summary="Fix logic by iterating over worker indexes first, because worker index have higher priority over bike indexes &#10;ie. (worker_idx, bike_idx) (1,2) &gt; (2,0) if distances is same">
       <created>1610457362444</created>
@@ -530,7 +512,21 @@
       <option name="project" value="LOCAL" />
       <updated>1613485217963</updated>
     </task>
-    <option name="localTasksCounter" value="770" />
+    <task id="LOCAL-00770" summary="Remove deleted/ghost file">
+      <created>1613486156674</created>
+      <option name="number" value="00770" />
+      <option name="presentableId" value="LOCAL-00770" />
+      <option name="project" value="LOCAL" />
+      <updated>1613486156674</updated>
+    </task>
+    <task id="LOCAL-00771" summary="Add related problems in StudentAttendanceRecord2">
+      <created>1613486341939</created>
+      <option name="number" value="00771" />
+      <option name="presentableId" value="LOCAL-00771" />
+      <option name="project" value="LOCAL" />
+      <updated>1613486341939</updated>
+    </task>
+    <option name="localTasksCounter" value="772" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -612,8 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium design tic tac toe game for simulating game play for two players by tracking characters placed per row, per column, per diagonal and anti diagonal for each player. If count matches n, that player has won the game." />
-    <MESSAGE value="Solve medium and extremely tricky find the lexicographically smallest subsequence of length k using stack. &#10;Tricky thing to understand was that we need to ensure at least k items in the stack. This observation was critical and I couldn't figure it out." />
     <MESSAGE value="Solve medium and tricky find the lexicographically smallest subsequence after deleting k chars from input string using greedy stack&#10;&#10;Leveraged prior learning of using stack to build lexicographically smallest subsequence" />
     <MESSAGE value="Solve medium and a bit tricky find whether two strings have edit distance of 1 or not using two pointers solution. &#10;Implementation heavy solution. Initially I solved by comparing frequency count of two strings but it failed for anagrams." />
     <MESSAGE value="Solve medium and a bit tricky determine if two strings can be made similar if we can swap any two existing characters or we can transform every occurrence of one existing character to another existing character&#10;&#10;Problem reduces to finding whether two strings are anagram of each other (operation1) or their frequencies are anagram of each other (operation2)" />
@@ -637,7 +631,9 @@
     <MESSAGE value="Solve medium and a bit tricky implement PeekingIterator where we need to add peek() function to existing next() and hasNext() function of iterator.&#10;&#10;Learnings : Perfect example of decorator pattern. Got frustrated while trying to call super.next() instead of trying to leverage the iterator parameter in constructor." />
     <MESSAGE value="Solve easy but a bit tricky to optimize runtime and space complexity, find the k rows with smallest 1's in a row sorted matrix of 1's and 0's using column traversal" />
     <MESSAGE value="Tag uber personal interview questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tag uber personal interview questions" />
+    <MESSAGE value="Remove deleted/ghost file" />
+    <MESSAGE value="Add related problems in StudentAttendanceRecord2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add related problems in StudentAttendanceRecord2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
