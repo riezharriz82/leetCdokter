@@ -182,13 +182,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00727" summary="Add explanation behind counting valid subarrays using (end - begin + 1)">
-      <created>1610464880983</created>
-      <option name="number" value="00727" />
-      <option name="presentableId" value="LOCAL-00727" />
-      <option name="project" value="LOCAL" />
-      <updated>1610464880983</updated>
-    </task>
     <task id="LOCAL-00728" summary="Add gotcha and explanation behind iterating from beginning">
       <created>1610468688609</created>
       <option name="number" value="00728" />
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613488081171</updated>
     </task>
-    <option name="localTasksCounter" value="776" />
+    <task id="LOCAL-00776" summary="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out.">
+      <created>1613501805211</created>
+      <option name="number" value="00776" />
+      <option name="presentableId" value="LOCAL-00776" />
+      <option name="project" value="LOCAL" />
+      <updated>1613501805212</updated>
+    </task>
+    <option name="localTasksCounter" value="777" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add constraints and explanation behind why recursive solution works because of low constraints" />
     <MESSAGE value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
     <MESSAGE value="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10" />
     <MESSAGE value="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found" />
@@ -621,7 +620,8 @@
     <MESSAGE value="Add gotcha while setting bounds in next recursive call" />
     <MESSAGE value="Add explanation for performing ceiling() check on num-k value" />
     <MESSAGE value="Improve runtime complexity by creating a mapping of sorted key of each word and checking whether the current word is a rotation of any of the words associated with current sorted key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve runtime complexity by creating a mapping of sorted key of each word and checking whether the current word is a rotation of any of the words associated with current sorted key" />
+    <MESSAGE value="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
