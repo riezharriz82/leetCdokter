@@ -1,0 +1,204 @@
+5 Rounds
+1st Round:
+https://www.hackerearth.com/practice/algorithms/graphs/minimum-spanning-tree/practice-problems/algorithm/3-types/
+Could not solve completely, suggested to use MST
+
+FriendGroups -- solved in 10 minutes
+Say a group of people want to take UberPools to get to the same destination. But only people that are connected are willing to take the same Pool ride.
+We define two people are connected if they directly know each other, or indirectly know each other.
+E.g., if 0 knows 1 and 1 knows 0, 0 and 1 are connected; or if 0 and 1 know each other, 1 and 2 know each other, 0, 1, 2 are connected.
+
+Give a list of 2-element tuple, like (0, 1), meaning 0 and 1 are connected, return the number of rides they need to call.
+
+Eg.
+7 people want to travel from A to B.
+(0,1), (3,4), (2,5), (1,5), (6)
+*/
+public int noOfUberPools(int n, List<List<Integer>> edges) {
+    List<List<Integer>> graph = buildGraph(edges);
+    boolean[] visited = new boolean[n];
+    int distinctComponents = 0;
+    for (int i = 0; i < n; i++) {
+        if (!visited[i]) {
+            DFS(i, visited);
+            distinctComponents++;
+        }
+    }
+    return distinctComponents;
+}
+
+private void DFS(int index, boolean[] visited, List<List<Integer>> graph) {
+    visited[index] = true;
+    for (int neighbour : graph.get(index)) {
+        if (!visited[neighbour]) {
+            DFS(neighbour, visited, graph);
+        }
+    }
+}
+
+
+JumpGame -- got confused a bit while optimizing but solved it
+Given an array representing a list of freight stations. Each station is represented by a pair of integers
+
+[package count, transfer hops]
+
+For example [[2, 2], [7, 3], [4, 1], [1, 2], [2, 1]] means:
+
+at station 0, there are 2 packages need to be transferred 2 hops to station 2 (0+2)
+at station 1, there are 7 packages need to be transferred 3 hops to station 4 (1+3)
+... and so on
+          ┌----------7---------┐┌--2--┐
+          |                    ||     |
+   ┌------2------┐┌--4--┐┌-----1-----┐|
+   |      |      ||     ||     ||    ||
+---+------+------++-----++-----++----++---
+   0      1      2      3      4     5
+ [2,2]  [7,3]  [4,1]  [1,2]  [2,1]
+
+dp = [0,0,0,0,0]
+dp[0] = 0;
+dp[1] = max (dp[0]) 0
+dp[2] = max(dp[0] + 2, dp[1]) = 2
+dp[3] = max(dp[0], dp[1], dp[2] + 4) = max(0,0,2+4) = 6
+dp[4] = max(dp[0], dp[1] + 7, dp[2], dp[3]) = max(0,7,2,6) = 7
+dp[5] = max(dp[0], dp[1], dp[2], dp[3] + 1, dp[4] + 2) = max(0,0,2,6+1,7+2) = 9
+
+n^2
+for (i = 0 to n)
+for (j = 0 to i)
+
+dp = [0,0,0,0,0]
+dp[0] = 0;
+dp[1] = max (dp[0]) 0
+dp[2] = max(dp[0] + 2, dp[1]) = 2
+dp[3] = max(dp[0], dp[1], dp[2] + 4) = max(0,0,2+4) = 6
+dp[4] = max(dp[0], dp[1] + 7, dp[2], dp[3]) = max(0,7,2,6) = 7
+dp[5] = max(dp[0], dp[1], dp[2], dp[3] + 1, dp[4] + 2) = max(0,0,2,6+1,7+2) = 9
+
+
+Constraints
+1.You either pick up all packages at a station or nothing, there is no partial pick up
+2.Once you pickup the packages, you have to deliver through the hops. You cannot pickup anything else until the delivery.
+3.Once you unloaded your packages, you can choose to pickup new packages at the station, or move to the next station directly.
+4.You cannot go backward.
+5.The terminal station (the last one) is not in the station list, but it will be at most 1 hop away from the second to the last station.
+6.Write a function to return the maximum total packages you can transfer by driving from station 0 to N.
+
+2nd Round: Machine coding
+Implement multilevel cache
+// Multilevel Cache
+
+// 1. Different levels of cache that are chained (L1 -> L2 -> L3 -> L4 ...)
+// 2. Each cache level has a specific CAPACITY
+
+// Let's assume there are 5 levels of cache - L1, L2, L3, L4, L5
+
+// The following is the order in terms of size: L1 < L2 < L3 < L4 < L5
+
+// 3. Values at each level is a subset of values at lower level
+// 4. For Reads, if a value is not found at a particular level, try getting it from lower levels. Also, once a value is
+//  found, it needs to be updated in higher levels as well
+// 5. Synchronize this for multiple threads reading and writing at the same time.
+
+
+import java.util.List;
+import java.fx.*;
+import java.io.*;
+import java.util.Optional;
+import java.util.concurrent.ConcurrentHashMap;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+// Main class should be named 'Solution'
+class Solution {
+    List<ConcurrentHashMap<Integer, Integer>> caches = new ArrayList<>();
+    List<Integer> capacities = Arrays.asList(5,10,15,20,25);
+    int MAX_LEVELS = 5;
+    Solution() {
+        for (int i = 0; i < MAX_LEVELS; i++) {
+            caches.add(new ConcurrentHashMap<>(capacities.get(i)));
+        }
+    }
+    public synchronized void put(int key, int val) {
+        put(key, val, 0, MAX_LEVELS);
+    }
+
+    public void remove(int key) {
+        put(key, 0);
+    }
+
+    public synchronized Optional<Integer> get(int key) {
+        Optional<Pair<Integer, Integer>> valueAndMaxLevel = get(key, 0); //pair of value, level
+        if (valueAndMaxLevel.isPresent()) {
+            put(key, valueAndMaxLevel.getKey(), 0, valueAndMaxLevel.getValue());
+        }
+        return valueAndMaxLevel.map(value -> value.getKey());
+    }
+
+    private Optional<Pair<Integer, Integer>> get(int key, int level) {
+        if (level == MAX_LEVELS) {
+            return Optional.empty();
+        } else if (caches.get(level).contains(key)) {
+            return Optional.of(new Pair<>(caches.getlevel().get(key), level));
+        } else {
+            return get(key, level + 1);
+        }
+    }
+
+    private void put(int key, int val, int level, int maxLevel) {
+        if (level == maxLevel) {
+            return;
+        }
+        if (caches.get(level).contains(key) || caches.get(level).size() < capacities.get(level)) {
+            caches.get(level).put(key, val);
+            put(key, val, level + 1, maxLevel);
+        } else {
+            //evict key random
+            int firstKey = cache.get(level).iterator().next();
+            remove(firstKey, level);
+            put(key, val, level, maxLevel);
+        }
+    }
+
+    private void remove(int key, int level) {
+        if (level == MAX_LEVELS) {
+            return;
+        }
+        caches.get(level).remove(key);
+        remove(key, level + 1);
+    }
+
+    public void print() {
+        print(0);
+    }
+
+    private void print(int level) {
+        if (level == MAX_LEVELS) {
+            return;
+        }
+        System.out.println("Elements at level " + level);
+        caches.get(level).forEach((k, v) -> System.out.println(k + " -> " + v));
+        print(level + 1);
+    }
+
+    public static void main(String[] args) {
+        Solution multilevelCache =  new Solution();
+        Solution.put(1, 2);
+        Solution.print();
+    }
+}
+
+
+3rd Round: Architecture
+Design a visualization tool to represent the heatmap of drivers on the map. Need to provide a way to zoom in/zoom out over the map.
+Followed the pattern of dividing map into grid/cells and assigning them a cell id. Use key/value store to represent frequency count of cells -> no of cars
+1. How to assign a lat/long to a cell id ? Initially I told to use maths and binary search to find the cell id. Then told to precompute everything because
+no of cells can be very huge
+2. How to represent point of reference and zoom units to properly aggregate the data when zoom-in and zoom-out? Could not cleanly implement it.
+Was a bit tough
+
+4th round: Bar raiser
+
+
+5th round: Hiring manager
