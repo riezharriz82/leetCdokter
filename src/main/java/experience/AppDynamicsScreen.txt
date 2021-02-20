@@ -1,0 +1,28 @@
+AppDynamics Hacker rank test
+4 questions, 90 minutes
+Solved all 4 of them in ~45 minutes
+1. Find whether a target value is present in BST or not
+2. Find Max subarray sum in an array containing +ve and -ve integers
+3. Given an array of weights and max weight that can be carried, find the subset with the largest weight <= max weight
+Used knapsack without memoization as the input constraints were 1 <= n <= 42 and 1 <= weights[i] < 1e9
+4. Given a square grid of size n*n and maxSum, find the largest subgrid of size k * k, such that the largest subgrid sum of any subgrid of size k * k  <= maxSum.
+   Return k.
+
+   Example:
+   Given below 3 * 3 matrix
+   [2,2,2]
+   [3,3,3]
+   [4,4,4]
+
+   There are 9 Subgrids of size 1*1, [2], [2], [2], [3], [3], [3], [4], [4], [4] Max subgrid sum is 4
+   There are 4 Subgrids of size 2*2, [2,2,3,3], [2,2,3,3], [3,3,4,4], [3,3,4,4] Max subgrid sum is 14
+   There is 1 Subgrid of size 3*3, [2,2,2,3,3,3,4,4,4] Max subgrid sum is 27
+
+   Given maxSum of 30, you should return 3, because max subgrid sum of 3*3 size is 27
+   Given maxSum of 15, you should return 2, because max subgrid sum of 2*2 size is 14
+
+Since the result can lie between 0 and n, need to apply binary search to optimize the time.
+For each candidate k, find the max subgrid sum of size k*k possible in o(n*n) time by precomputation of prefix sum
+
+Worst case time complexity: O(n*n) log (n)
+Space complexity: O(n*n)

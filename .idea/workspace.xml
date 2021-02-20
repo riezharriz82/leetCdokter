@@ -29,6 +29,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -181,13 +182,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00728" summary="Add gotcha and explanation behind iterating from beginning">
-      <created>1610468688609</created>
-      <option name="number" value="00728" />
-      <option name="presentableId" value="LOCAL-00728" />
-      <option name="project" value="LOCAL" />
-      <updated>1610468688610</updated>
     </task>
     <task id="LOCAL-00729" summary="Add related problems and comment in hard and extremely tricky find the largest subsequence sum such that all indices are within k distance">
       <created>1610469838819</created>
@@ -525,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613501805212</updated>
     </task>
-    <option name="localTasksCounter" value="777" />
+    <task id="LOCAL-00777" summary="Solve medium find whether the provided set of equations are valid or not by treating them as graph and using DSU to find connected components">
+      <created>1613759436398</created>
+      <option name="number" value="00777" />
+      <option name="presentableId" value="LOCAL-00777" />
+      <option name="project" value="LOCAL" />
+      <updated>1613759436398</updated>
+    </task>
+    <option name="localTasksCounter" value="778" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -596,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases." />
     <MESSAGE value="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10" />
     <MESSAGE value="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found" />
     <MESSAGE value="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency" />
@@ -621,7 +621,8 @@
     <MESSAGE value="Add explanation for performing ceiling() check on num-k value" />
     <MESSAGE value="Improve runtime complexity by creating a mapping of sorted key of each word and checking whether the current word is a rotation of any of the words associated with current sorted key" />
     <MESSAGE value="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out." />
+    <MESSAGE value="Solve medium find whether the provided set of equations are valid or not by treating them as graph and using DSU to find connected components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether the provided set of equations are valid or not by treating them as graph and using DSU to find connected components" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
