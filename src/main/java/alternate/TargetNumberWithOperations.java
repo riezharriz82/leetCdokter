@@ -21,6 +21,8 @@ public class TargetNumberWithOperations {
      * If you start from start, you will double too much too fast and in the end you will be left with +1 operations
      * However if you start from end, if you reach an odd number, its guaranteed that you can't reach this by *2 operation, only +1 is a valid operation
      * If you reach an even number, fastest way to reach start would be to *2 operation unless start > end/2, then only +1 is a valid operation
+     * <p>
+     * {@link BrokenCalculator}
      */
     public int solve(int start, int end) {
         int cnt = 0;

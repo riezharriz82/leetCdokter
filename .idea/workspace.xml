@@ -13,8 +13,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add AppDynamics Phone screen interview experience. Solved all 4 questions. Lets see how it goes.">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/TargetNumberWithOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/TargetNumberWithOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,13 +204,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00730" summary="Add related multi bfs problems">
-      <created>1610470524012</created>
-      <option name="number" value="00730" />
-      <option name="presentableId" value="LOCAL-00730" />
-      <option name="project" value="LOCAL" />
-      <updated>1610470524012</updated>
     </task>
     <task id="LOCAL-00731" summary="Add gotcha about incrementing the result rather than assigning">
       <created>1610471934809</created>
@@ -546,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613843780478</updated>
     </task>
-    <option name="localTasksCounter" value="779" />
+    <task id="LOCAL-00779" summary="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value">
+      <created>1613854573096</created>
+      <option name="number" value="00779" />
+      <option name="presentableId" value="LOCAL-00779" />
+      <option name="project" value="LOCAL" />
+      <updated>1613854573097</updated>
+    </task>
+    <option name="localTasksCounter" value="780" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found" />
     <MESSAGE value="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency" />
     <MESSAGE value="Solve medium find the max no of customers that can be satisfied if the owner becomes happy for a window of size X, by finding the largest subarray sum of size X using sliding window" />
     <MESSAGE value="Solve medium print binary tree in a 2D matrix, using recursion" />
@@ -645,7 +646,8 @@
     <MESSAGE value="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out." />
     <MESSAGE value="Solve medium find whether the provided set of equations are valid or not by treating them as graph and using DSU to find connected components" />
     <MESSAGE value="Add Uber personal interview experience for posterity." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Uber personal interview experience for posterity." />
+    <MESSAGE value="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
