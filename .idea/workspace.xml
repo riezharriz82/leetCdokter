@@ -16,7 +16,6 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alternate/TargetNumberWithOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alternate/TargetNumberWithOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00731" summary="Add gotcha about incrementing the result rather than assigning">
-      <created>1610471934809</created>
-      <option name="number" value="00731" />
-      <option name="presentableId" value="LOCAL-00731" />
-      <option name="project" value="LOCAL" />
-      <updated>1610471934810</updated>
     </task>
     <task id="LOCAL-00732" summary="Add comment on explaining that we have to check whether target tree contains source tree as an inverted subtree or not.">
       <created>1610473023349</created>
@@ -548,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613854573097</updated>
     </task>
-    <option name="localTasksCounter" value="780" />
+    <task id="LOCAL-00780" summary="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps.">
+      <created>1613926458736</created>
+      <option name="number" value="00780" />
+      <option name="presentableId" value="LOCAL-00780" />
+      <option name="project" value="LOCAL" />
+      <updated>1613926458736</updated>
+    </task>
+    <option name="localTasksCounter" value="781" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +621,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency" />
     <MESSAGE value="Solve medium find the max no of customers that can be satisfied if the owner becomes happy for a window of size X, by finding the largest subarray sum of size X using sliding window" />
     <MESSAGE value="Solve medium print binary tree in a 2D matrix, using recursion" />
     <MESSAGE value="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings." />
@@ -647,7 +645,8 @@
     <MESSAGE value="Solve medium find whether the provided set of equations are valid or not by treating them as graph and using DSU to find connected components" />
     <MESSAGE value="Add Uber personal interview experience for posterity." />
     <MESSAGE value="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value" />
+    <MESSAGE value="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
