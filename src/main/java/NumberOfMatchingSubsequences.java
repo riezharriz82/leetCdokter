@@ -16,6 +16,12 @@ import java.util.*;
  * The length of S will be in the range of [1, 50000].
  * The length of words will be in the range of [1, 5000].
  * The length of words[i] will be in the range of [1, 50].
+ * <p>
+ * Note:
+ * All words in words and S will only consists of lowercase letters.
+ * The length of S will be in the range of [1, 50000].
+ * The length of words will be in the range of [1, 5000].
+ * The length of words[i] will be in the range of [1, 50].
  */
 public class NumberOfMatchingSubsequences {
     /**
@@ -26,7 +32,7 @@ public class NumberOfMatchingSubsequences {
      * once a is seen, now "a" is completely satisfied, "acd" and "ace" will need to wait for "c". So updated mappings are
      * "b" -> {"bb"}, "c" -> {"cd","ce"}  //"a" has been satisfied and there are no words that require a
      * <p>
-     * {@link IsSubsequence} {@link MinimumWindowSubsequence} related problem
+     * {@link IsSubsequence} {@link MinimumWindowSubsequence} {@link LongestWordInDictionaryByDeleting} related problem
      * <p>
      * This was asked in my google fourth interview round :)
      */
