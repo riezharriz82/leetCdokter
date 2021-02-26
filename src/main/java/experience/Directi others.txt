@@ -1,0 +1,81 @@
+N villages in a straight line
+
+L[i] location of ith village, P[i] population  of ith village
+
+open K covid test centres in some of the villages
+
+every person visits the nearest centre
+
+find the minimum average distance possible
+
+
+Ex :
+
+L[i]
+P - 1      L - 5        D = 4
+
+Int var=INT_MAX;
+
+(i,k,prev)
+O((n^2)*k)
+fun(int i, int k, int prev, int ans){
+
+if(k==0){
+ //handle it later
+ var=min(var,ans);
+return;
+}
+i
+//here i have two choices
+//choice 1
+//open a village here
+
+Int curr=loc[i]
+Int mid=(curr+prev)/2;
+//tot=Compute the total people at distance >=mid
+temp=0
+For all village location(d) between prev and curr {
+	temp+=pop[k]*min(d-prev,curr-d);
+}
+fun(i+1,k-1,curr, ans+temp);
+
+//choice 2
+//do not open a village here
+
+fun(i+1, k,prev,ans)
+}
+
+
+
+Your students are gonna attend a quiz. You need to share answers to as many questions as possible with all your N students adhering to following conditions
+-> A student can receive an answer of at most 1 question from you.
+-> Students convey the answer received from you to their friends.
+-> Students don't pass the answers received from their friends i.e. for below graph if you give an answer to student 1, they will share it with student 2 and student 3. But 4 won’t get it from anyone.
+-> Students can receive any number of answers from their friends.
+-> An answer is considered successfully shared with students only if it becomes known to each of them.
+
+Goal : Determine the maximum number of answers that can be successfully shared with students.
+
+
+
+E.g: For above graph answer is 3.
+Explanation : Let a1,a2,a3 be the answers. You give a1 to 1 and 4,  a2 to 2, a3 to 3 and. Then everyone would be having all the three answers. Hence the answer is 3 for this graph.
+
+Constraint is N = 15
+
+List of groups that are proper
+
+{2} {3} {1,2},{1,3},{1,4},{2,4},{3,4},{2,3},{1,2,3},{2,3,4},{1,2,3,4}
+For each node, it’ll be checked if its able to find all the nodes and answers could be shared or not.
+Then find all nodes with other nodes and group them all
+Done for other nodes similarly
+Then groups are found
+Then among groups, Check set with unique nodes
+All the group with unique nodes are used to send answers
+
+
+Consider all subsets of graph and check if it’s proper or not
+
+
+
+Given an array find number of subarrays, whose sum is zero?
