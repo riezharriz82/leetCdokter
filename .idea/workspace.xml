@@ -205,13 +205,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00734" summary="Simplify code by rewriting it to fit sliding window template">
-      <created>1610479945631</created>
-      <option name="number" value="00734" />
-      <option name="presentableId" value="LOCAL-00734" />
-      <option name="project" value="LOCAL" />
-      <updated>1610479945631</updated>
-    </task>
     <task id="LOCAL-00735" summary="Add gotcha to make sure previous DP state is valid before we extend the result">
       <created>1610481390979</created>
       <option name="number" value="00735" />
@@ -548,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614092506304</updated>
     </task>
-    <option name="localTasksCounter" value="783" />
+    <task id="LOCAL-00783" summary="Solve medium find the total score of parentheses expression using stack for representing nested expression.">
+      <created>1614372154979</created>
+      <option name="number" value="00783" />
+      <option name="presentableId" value="LOCAL-00783" />
+      <option name="project" value="LOCAL" />
+      <updated>1614372154979</updated>
+    </task>
+    <option name="localTasksCounter" value="784" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings." />
     <MESSAGE value="Solve medium and a bit tricky problem find the diameter of a n-ary tree using DFS" />
     <MESSAGE value="Solve medium find diameter of a n-ary tree using DFS by tracking the largest two depths of a node" />
     <MESSAGE value="Solve easy but tricky find the maximum product of three numbers in an array containing +ve and -ve numbers by considering that two smallest negative number multiplied with the largest positive number can result in a large product." />
@@ -647,7 +646,8 @@
     <MESSAGE value="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps." />
     <MESSAGE value="Add personal google googlyness interview round experience" />
     <MESSAGE value="Add related subsequences problem. Both of the problem are similar, one with tighter constraint that requires an optimized approach." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add related subsequences problem. Both of the problem are similar, one with tighter constraint that requires an optimized approach." />
+    <MESSAGE value="Solve medium find the total score of parentheses expression using stack for representing nested expression." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the total score of parentheses expression using stack for representing nested expression." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
