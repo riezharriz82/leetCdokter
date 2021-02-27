@@ -18,7 +18,7 @@
  * Input: N = 3, trust = [[1,3],[2,3]]
  * Output: 3
  */
-public class TownJudge {
+public class FindTheTownJudge {
     /**
      * Consider each person as nodes in graph, town judge would have in-degree - out-degree = N - 1
      */

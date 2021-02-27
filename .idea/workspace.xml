@@ -13,7 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TownJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindTheTownJudge.java" afterDir="false" />
@@ -36,10 +36,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="que" />
+      </list>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -204,13 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00735" summary="Add gotcha to make sure previous DP state is valid before we extend the result">
-      <created>1610481390979</created>
-      <option name="number" value="00735" />
-      <option name="presentableId" value="LOCAL-00735" />
-      <option name="project" value="LOCAL" />
-      <updated>1610481390979</updated>
     </task>
     <task id="LOCAL-00736" summary="Solve easy find an element in an array where a[i] == i using binary search.">
       <created>1610639379877</created>
@@ -548,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614372154979</updated>
     </task>
-    <option name="localTasksCounter" value="784" />
+    <task id="LOCAL-00784" summary="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
+      <created>1614377721566</created>
+      <option name="number" value="00784" />
+      <option name="presentableId" value="LOCAL-00784" />
+      <option name="project" value="LOCAL" />
+      <updated>1614377721566</updated>
+    </task>
+    <option name="localTasksCounter" value="785" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +630,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky problem find the diameter of a n-ary tree using DFS" />
     <MESSAGE value="Solve medium find diameter of a n-ary tree using DFS by tracking the largest two depths of a node" />
     <MESSAGE value="Solve easy but tricky find the maximum product of three numbers in an array containing +ve and -ve numbers by considering that two smallest negative number multiplied with the largest positive number can result in a large product." />
     <MESSAGE value="Solve easy but a bit tricky, find relative ranks of each index using custom comparator for sorting" />
@@ -647,7 +654,8 @@
     <MESSAGE value="Add personal google googlyness interview round experience" />
     <MESSAGE value="Add related subsequences problem. Both of the problem are similar, one with tighter constraint that requires an optimized approach." />
     <MESSAGE value="Solve medium find the total score of parentheses expression using stack for representing nested expression." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the total score of parentheses expression using stack for representing nested expression." />
+    <MESSAGE value="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
