@@ -23,10 +23,12 @@ public class NumberOfDistinctSubstringsInAString {
     /**
      * Approach: Use two pointer approach to iteratively increment trie node as well as string index
      * <p>
-     * This optimization is very crucial to solve it in an optimal manner. Very similar to {@link WordSearch2}
+     * This optimization is very crucial to solve it in O(n^2). Very similar to {@link WordSearch2}
      * It allows us to find whether current words exist in trie without actually generating the whole string.
      * Generating the whole string would take o(n) operation.
      * Imagine it to be comparing strings across same height, one length string are compared at the root, 2 length from 1 level down from root
+     * <p>
+     * Time complexity can be reduced to O(n) by using suffix automaton
      * <p>
      * Time ~49 ms, Memory 78 MB
      * <p>
