@@ -32,6 +32,8 @@ public class BinaryTreeIterativeInorderTraversal {
             TreeNode pop = stack.pop();
             list.add(pop.val);
             root = pop.right;
+            //if root is null ie. there is no right subtree, then the second while loop will automatically break
+            //and we will process the next element in the stack
         }
         return list;
     }
