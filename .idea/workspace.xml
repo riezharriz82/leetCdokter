@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BinaryTreeIterativeInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BinaryTreeIterativeInorderTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +104,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.github.izhangzhihao.rainbow.brackets.settings.RainbowConfigurable" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -212,13 +211,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00742" summary="Solve medium count no of strings that its characters are lexicographically sorted and consists only of a,e,i,o,u using recursion + memoization&#10;&#10;Leveraged prior learning of solving digit DP problems">
-      <created>1611069225449</created>
-      <option name="number" value="00742" />
-      <option name="presentableId" value="LOCAL-00742" />
-      <option name="project" value="LOCAL" />
-      <updated>1611069225449</updated>
     </task>
     <task id="LOCAL-00743" summary="Solve medium design a subway system which tracks avg travel time between two pairs of stations, provided the checkin and checkout time of a person using hashmaps">
       <created>1611071887587</created>
@@ -556,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614606091702</updated>
     </task>
-    <option name="localTasksCounter" value="791" />
+    <task id="LOCAL-00791" summary="Add explanation for handling right subtree">
+      <created>1614612237786</created>
+      <option name="number" value="00791" />
+      <option name="presentableId" value="LOCAL-00791" />
+      <option name="project" value="LOCAL" />
+      <updated>1614612237786</updated>
+    </task>
+    <option name="localTasksCounter" value="792" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,6 +615,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value="interview" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ID_WIDTH">
                 <map>
                   <entry key="Table.Default.Date.ColumnIdWidth" value="119" />
@@ -630,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky find max score after removing stones from 2 piles, such that atleast 2 piles have non zero stones. Trick was to not pick the piles with smallest stones first as it will ensure that we reach end state faster. Hence we pick piles with larger stones first." />
     <MESSAGE value="Solve medium find words in A[] that contains all words in B[] as a subset by reducing all words in B[] to a single word by tracking max frequency required for each character." />
     <MESSAGE value="Solve medium and a bit tricky implement PeekingIterator where we need to add peek() function to existing next() and hasNext() function of iterator.&#10;&#10;Learnings : Perfect example of decorator pattern. Got frustrated while trying to call super.next() instead of trying to leverage the iterator parameter in constructor." />
     <MESSAGE value="Solve easy but a bit tricky to optimize runtime and space complexity, find the k rows with smallest 1's in a row sorted matrix of 1's and 0's using column traversal" />
@@ -655,7 +664,8 @@
     <MESSAGE value="Solve easy and extremely tricky to optimize, find the min moves to turn all array elements equal by incrementing n-1 elements by 1.&#10;&#10;Trick was to simplify the problem by considering the operation as choosing one element and decrementing it by 1. Doing so is equivalent as the original operation as the relative distance is the same." />
     <MESSAGE value="Add hint to reduce time complexity by using Suffix automaton" />
     <MESSAGE value="Solve medium and a bit tricky find the min steps required to make two strings anagram by swapping any character to any other character. Trick was to swap characters that in excess to characters that are in deficit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the min steps required to make two strings anagram by swapping any character to any other character. Trick was to swap characters that in excess to characters that are in deficit." />
+    <MESSAGE value="Add explanation for handling right subtree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add explanation for handling right subtree" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
