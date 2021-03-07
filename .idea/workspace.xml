@@ -16,8 +16,6 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DesignHashMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,13 +211,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00744" summary="Solve medium and extremely tricky find the max profit from popping either &quot;ab&quot; or &quot;ba&quot; from a string using greedy. Tried to solve it via recursion but then realized it would give TLE, switched to greedy and got AC&#10;Feeling extremely proud of myself for solving this problem on my own.">
-      <created>1611074569571</created>
-      <option name="number" value="00744" />
-      <option name="presentableId" value="LOCAL-00744" />
-      <option name="project" value="LOCAL" />
-      <updated>1611074569571</updated>
     </task>
     <task id="LOCAL-00745" summary="Solve medium design tic tac toe game for simulating game play for two players by tracking characters placed per row, per column, per diagonal and anti diagonal for each player. If count matches n, that player has won the game.">
       <created>1611165043553</created>
@@ -557,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615136479932</updated>
     </task>
-    <option name="localTasksCounter" value="793" />
+    <task id="LOCAL-00793" summary="Rename classes to match problem name">
+      <created>1615139504708</created>
+      <option name="number" value="00793" />
+      <option name="presentableId" value="LOCAL-00793" />
+      <option name="project" value="LOCAL" />
+      <updated>1615139504709</updated>
+    </task>
+    <option name="localTasksCounter" value="794" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky implement PeekingIterator where we need to add peek() function to existing next() and hasNext() function of iterator.&#10;&#10;Learnings : Perfect example of decorator pattern. Got frustrated while trying to call super.next() instead of trying to leverage the iterator parameter in constructor." />
     <MESSAGE value="Solve easy but a bit tricky to optimize runtime and space complexity, find the k rows with smallest 1's in a row sorted matrix of 1's and 0's using column traversal" />
     <MESSAGE value="Tag uber personal interview questions" />
     <MESSAGE value="Remove deleted/ghost file" />
@@ -656,7 +653,8 @@
     <MESSAGE value="Solve medium and a bit tricky find the min steps required to make two strings anagram by swapping any character to any other character. Trick was to swap characters that in excess to characters that are in deficit." />
     <MESSAGE value="Add explanation for handling right subtree" />
     <MESSAGE value="Solve medium and a bit tricky find the shortest encoding that represents the entire words. Two or more words can share the same suffix.&#10;&#10;Leveraged prior learning of using Trie to solve prefix/suffix problem." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the shortest encoding that represents the entire words. Two or more words can share the same suffix.&#10;&#10;Leveraged prior learning of using Trie to solve prefix/suffix problem." />
+    <MESSAGE value="Rename classes to match problem name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename classes to match problem name" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
