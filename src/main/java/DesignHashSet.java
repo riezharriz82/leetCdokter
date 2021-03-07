@@ -8,10 +8,10 @@
  * contains(value) : Return whether the value exists in the HashSet or not.
  * remove(value): Remove a value in the HashSet. If the value does not exist in the HashSet, do nothing.
  */
-public class MyHashSet {
+public class DesignHashSet {
     int[] store = new int[1000000];
 
-    public MyHashSet() {
+    public DesignHashSet() {
 
     }
 

@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class MyHashSetTest {
+public class DesignHashSetTest {
     @Test
     public void test() {
-        MyHashSet hashSet = new MyHashSet();
+        DesignHashSet hashSet = new DesignHashSet();
         hashSet.add(1);
         hashSet.add(2);
         assertTrue(hashSet.contains(1));            // returns 1

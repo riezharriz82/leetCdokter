@@ -2,10 +2,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MyHashMapTest {
+public class DesignHashMapTest {
     @Test
     public void test() {
-        MyHashMap hashMap = new MyHashMap();
+        DesignHashMap hashMap = new DesignHashMap();
         hashMap.put(1, 1);
         hashMap.put(2, 2);
         assertEquals(1, hashMap.get(1));            // returns 1
