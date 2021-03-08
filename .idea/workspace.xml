@@ -212,13 +212,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00747" summary="Solve medium and tricky find the lexicographically smallest subsequence after deleting k chars from input string using greedy stack&#10;&#10;Leveraged prior learning of using stack to build lexicographically smallest subsequence">
-      <created>1611253263152</created>
-      <option name="number" value="00747" />
-      <option name="presentableId" value="LOCAL-00747" />
-      <option name="project" value="LOCAL" />
-      <updated>1611253263152</updated>
-    </task>
     <task id="LOCAL-00748" summary="Solve medium and a bit tricky find whether two strings have edit distance of 1 or not using two pointers solution. &#10;Implementation heavy solution. Initially I solved by comparing frequency count of two strings but it failed for anagrams.">
       <created>1611321333099</created>
       <option name="number" value="00748" />
@@ -555,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615143636095</updated>
     </task>
-    <option name="localTasksCounter" value="796" />
+    <task id="LOCAL-00796" summary="Solve medium and extremely tricky to optimize using DP, find the min no of operations to move all balls to current index.&#10;&#10;Trick was to first divide the problem into left and right non overlapping subproblem and then try to leverage results of i-1th index to generate result at ith index.">
+      <created>1615155991620</created>
+      <option name="number" value="00796" />
+      <option name="presentableId" value="LOCAL-00796" />
+      <option name="project" value="LOCAL" />
+      <updated>1615155991620</updated>
+    </task>
+    <option name="localTasksCounter" value="797" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Remove deleted/ghost file" />
     <MESSAGE value="Add related problems in StudentAttendanceRecord2" />
     <MESSAGE value="Add gotcha while setting bounds in next recursive call" />
     <MESSAGE value="Add explanation for performing ceiling() check on num-k value" />
@@ -654,7 +653,8 @@
     <MESSAGE value="Rename classes to match problem name" />
     <MESSAGE value="Solve easy find the average of each level in a binary tree using DFS with multiple passes. First pass for finding the total element in each level and another pass for finding the total sum of elements in each level." />
     <MESSAGE value="Solve easy find the min cost required to make alternating string of either &quot;010101..&quot; or &quot;10101010...&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the min cost required to make alternating string of either &quot;010101..&quot; or &quot;10101010...&quot;" />
+    <MESSAGE value="Solve medium and extremely tricky to optimize using DP, find the min no of operations to move all balls to current index.&#10;&#10;Trick was to first divide the problem into left and right non overlapping subproblem and then try to leverage results of i-1th index to generate result at ith index." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky to optimize using DP, find the min no of operations to move all balls to current index.&#10;&#10;Trick was to first divide the problem into left and right non overlapping subproblem and then try to leverage results of i-1th index to generate result at ith index." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
