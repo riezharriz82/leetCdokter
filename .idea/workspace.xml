@@ -212,13 +212,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00749" summary="Solve medium and a bit tricky determine if two strings can be made similar if we can swap any two existing characters or we can transform every occurrence of one existing character to another existing character&#10;&#10;Problem reduces to finding whether two strings are anagram of each other (operation1) or their frequencies are anagram of each other (operation2)">
-      <created>1611322700802</created>
-      <option name="number" value="00749" />
-      <option name="presentableId" value="LOCAL-00749" />
-      <option name="project" value="LOCAL" />
-      <updated>1611322700802</updated>
-    </task>
     <task id="LOCAL-00750" summary="Add constraints and explanation behind why recursive solution works because of low constraints">
       <created>1611603125757</created>
       <option name="number" value="00750" />
@@ -555,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615232607382</updated>
     </task>
-    <option name="localTasksCounter" value="798" />
+    <task id="LOCAL-00798" summary="Solve medium insert a new level in a binary tree by adding a dummy node in the new level and shifting all the children by 1 level using recursion">
+      <created>1615307627508</created>
+      <option name="number" value="00798" />
+      <option name="presentableId" value="LOCAL-00798" />
+      <option name="project" value="LOCAL" />
+      <updated>1615307627508</updated>
+    </task>
+    <option name="localTasksCounter" value="799" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add gotcha while setting bounds in next recursive call" />
     <MESSAGE value="Add explanation for performing ceiling() check on num-k value" />
     <MESSAGE value="Improve runtime complexity by creating a mapping of sorted key of each word and checking whether the current word is a rotation of any of the words associated with current sorted key" />
     <MESSAGE value="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out." />
@@ -654,7 +653,8 @@
     <MESSAGE value="Solve easy find the min cost required to make alternating string of either &quot;010101..&quot; or &quot;10101010...&quot;" />
     <MESSAGE value="Solve medium and extremely tricky to optimize using DP, find the min no of operations to move all balls to current index.&#10;&#10;Trick was to first divide the problem into left and right non overlapping subproblem and then try to leverage results of i-1th index to generate result at ith index." />
     <MESSAGE value="Solve easy and a bit tricky problem, find the min operations to make a string empty by deleting palindromic subsequences in each operation.&#10;&#10;Tricky thing to note here was since the input contains only 2 type of characters, answer can only be 0,1 or 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and a bit tricky problem, find the min operations to make a string empty by deleting palindromic subsequences in each operation.&#10;&#10;Tricky thing to note here was since the input contains only 2 type of characters, answer can only be 0,1 or 2" />
+    <MESSAGE value="Solve medium insert a new level in a binary tree by adding a dummy node in the new level and shifting all the children by 1 level using recursion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium insert a new level in a binary tree by adding a dummy node in the new level and shifting all the children by 1 level using recursion" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
