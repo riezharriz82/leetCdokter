@@ -72,3 +72,11 @@ Private int[] longestIncreasingSubsequence(int[] arr) {
 }
 Return lis;
 }
+
+Design Round
+Create a platform that supports generating business metrics like click through rate, impressions for images
+and can support queries like how many clicks for this image where location is bangalore and gender is male
+
+I was able to generate data ingestion platform but struggled a lot in data aggregation as I was trying to do it
+in-memory or in key/value store itself. Later after talking to shashwat realized that it's a data warehouse
+operation and would require a different data store itself in which you need to push data to spark that can aggregate data.
