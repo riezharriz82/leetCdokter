@@ -16,6 +16,7 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/experience/Directi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/DirectiDSAandDesign.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,13 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00751" summary="Solve medium and bit tricky find boundary traversal of a binary tree by finding the left boundary + leaves + right boundary (reversed)&#10;&#10;Trick to find left/right boundary was to recur from root.left and root.right respectively. This handles a lot of edge cases.">
-      <created>1611603288804</created>
-      <option name="number" value="00751" />
-      <option name="presentableId" value="LOCAL-00751" />
-      <option name="project" value="LOCAL" />
-      <updated>1611603288804</updated>
     </task>
     <task id="LOCAL-00752" summary="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10">
       <created>1611606628438</created>
@@ -555,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615381988702</updated>
     </task>
-    <option name="localTasksCounter" value="800" />
+    <task id="LOCAL-00800" summary="Add UpStox hackerrank interview experience">
+      <created>1615384691121</created>
+      <option name="number" value="00800" />
+      <option name="presentableId" value="LOCAL-00800" />
+      <option name="project" value="LOCAL" />
+      <updated>1615384691121</updated>
+    </task>
+    <option name="localTasksCounter" value="801" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +630,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Improve runtime complexity by creating a mapping of sorted key of each word and checking whether the current word is a rotation of any of the words associated with current sorted key" />
     <MESSAGE value="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out." />
     <MESSAGE value="Solve medium find whether the provided set of equations are valid or not by treating them as graph and using DSU to find connected components" />
     <MESSAGE value="Add Uber personal interview experience for posterity." />
@@ -654,7 +654,8 @@
     <MESSAGE value="Solve easy and a bit tricky problem, find the min operations to make a string empty by deleting palindromic subsequences in each operation.&#10;&#10;Tricky thing to note here was since the input contains only 2 type of characters, answer can only be 0,1 or 2" />
     <MESSAGE value="Solve medium insert a new level in a binary tree by adding a dummy node in the new level and shifting all the children by 1 level using recursion" />
     <MESSAGE value="Solve medium represent a given integer into its corresponding roman value using greedy ie. picking the character with the largest numeric value first." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium represent a given integer into its corresponding roman value using greedy ie. picking the character with the largest numeric value first." />
+    <MESSAGE value="Add UpStox hackerrank interview experience" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add UpStox hackerrank interview experience" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

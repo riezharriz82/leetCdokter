@@ -72,7 +72,7 @@ Private int[] longestIncreasingSubsequence(int[] arr) {
 }
 Return lis;
 }
-
+________________________________________________________________________________________________________________________
 Design Round
 Create a platform that supports generating business metrics like click through rate, impressions for images
 and can support queries like how many clicks for this image where location is bangalore and gender is male
@@ -80,3 +80,20 @@ and can support queries like how many clicks for this image where location is ba
 I was able to generate data ingestion platform but struggled a lot in data aggregation as I was trying to do it
 in-memory or in key/value store itself. Later after talking to shashwat realized that it's a data warehouse
 operation and would require a different data store itself in which you need to push data to spark that can aggregate data.
+
+https://jamboard.google.com/d/128d7zYIaXgMe1wmMqdOkwmp_mq1oIifISlmCl0iWB64/viewer
+
+Feedback of this round was not positive but due to strong positive feedback in DSA and probably machine coding round,
+I was given a second chance to ace another design round. They were keen on hiring me as a SDE2 but given my current CTC and YOE,
+probably they thought SDE3 would be an appropriate level.
+
+_______________________________________________________________________________________________________________________
+Design Round - Another chance
+Design Cricinfo platform to support realtime events like score and commentary to end users
+
+Explained using websockets, where we would store a list of webclients that are interested in a match_id
+Then use pub-sub mechanism (kafka) to push events of a specific match to all the interested websockets
+Also used an in-memory store e.g. redis or aerospike to maintain a sorted dataset for commentary to give info for fresh user
+
+https://jamboard.google.com/d/11u-m1hpIsl3O2UL06f9NYkpcoGv82zvDDBDxsRoCAgw/viewer
+https://www.youtube.com/watch?v=exSwQtMxGd4
