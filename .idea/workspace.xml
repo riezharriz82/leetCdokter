@@ -16,7 +16,6 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/experience/Directi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/DirectiDSAandDesign.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,13 +211,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00752" summary="Solve medium design twitter in which we have to generate news feed of a person by getting 10 most recent tweets of him and the person he follows, using priority queue + dequeue of fixed size of 10">
-      <created>1611606628438</created>
-      <option name="number" value="00752" />
-      <option name="presentableId" value="LOCAL-00752" />
-      <option name="project" value="LOCAL" />
-      <updated>1611606628438</updated>
     </task>
     <task id="LOCAL-00753" summary="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found">
       <created>1611688668473</created>
@@ -556,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615384691121</updated>
     </task>
-    <option name="localTasksCounter" value="801" />
+    <task id="LOCAL-00801" summary="Add Directi interview experience for second design round, let's see what's the feedback !">
+      <created>1615489104125</created>
+      <option name="number" value="00801" />
+      <option name="presentableId" value="LOCAL-00801" />
+      <option name="project" value="LOCAL" />
+      <updated>1615489104126</updated>
+    </task>
+    <option name="localTasksCounter" value="802" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out." />
     <MESSAGE value="Solve medium find whether the provided set of equations are valid or not by treating them as graph and using DSU to find connected components" />
     <MESSAGE value="Add Uber personal interview experience for posterity." />
     <MESSAGE value="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value" />
@@ -655,7 +653,8 @@
     <MESSAGE value="Solve medium insert a new level in a binary tree by adding a dummy node in the new level and shifting all the children by 1 level using recursion" />
     <MESSAGE value="Solve medium represent a given integer into its corresponding roman value using greedy ie. picking the character with the largest numeric value first." />
     <MESSAGE value="Add UpStox hackerrank interview experience" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UpStox hackerrank interview experience" />
+    <MESSAGE value="Add Directi interview experience for second design round, let's see what's the feedback !" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Directi interview experience for second design round, let's see what's the feedback !" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
