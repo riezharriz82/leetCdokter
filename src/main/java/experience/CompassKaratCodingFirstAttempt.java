@@ -49,6 +49,15 @@ import java.util.Optional;
  * </pre>
  */
 public class CompassKaratCodingFirstAttempt {
+    /**
+     * Two questions were asked, first question find_embedded_word() was easy but took me a ghastly amount of time in debugging ~30 minutes
+     * <p>
+     * Quickly coded the second question find_word_location() in 10 minutes but upon execution realized that Java 11 does not support Pair. FML !
+     * Then tried to execute it on my system, realized that I have to implement backtracking to remove the current coordinate if the current path
+     * does not lead us to a valid word.
+     * <p>
+     * Have applied for a redo. Nice of them to allow a no conditions redo.
+     */
     public static void main(String[] args) {
         char[][] grid1 = {
                 {'c', 'c', 'c', 't', 'i', 'b'},
@@ -96,6 +105,11 @@ public class CompassKaratCodingFirstAttempt {
         return new ArrayList<>();
     }
 
+    /**
+     * Challenge was to store the correct coordinates in the result properly.
+     * Have to leverage backtracking to remove the coordinate from the result if we couldn't get a valid word
+     * by going through the current path
+     */
     private static boolean DFS(char[][] grid, int i, int j, String word, int index, List<Pair<Integer, Integer>> coordinates) {
         if (index == word.length()) {
             return true;
@@ -112,17 +126,23 @@ public class CompassKaratCodingFirstAttempt {
                     if (isPresentOnBottom) {
                         return true;
                     } else {
+                        //Neither left, not bottom gave us a valid result, have to backtrack and remove coordinate of current word
                         coordinates.remove(coordinates.get(coordinates.size() - 1));
                         return false;
                     }
                 }
             } else {
+                //current word is not present, simply return false
                 return false;
             }
         }
     }
 
-    private static Optional<String> find_embedded_word(String[] words, String key) {
+    /**
+     * Given a list of words and a key, find whether the key exists in any of the word.
+     * Key can exist in a scrambled form in a word, eg. cat -> {actaaa, act, ttttcccaaa}
+     */
+    public static Optional<String> find_embedded_word(String[] words, String key) {
         int[] providedFreqCount = new int[26];
         for (char c : key.toCharArray()) {
             providedFreqCount[c - 'a']++;
@@ -132,19 +152,15 @@ public class CompassKaratCodingFirstAttempt {
             for (char c : word.toCharArray()) {
                 requiredFreqCount[c - 'a']++;
             }
-            int validChars = 0;
+            boolean isInvalid = false;
             for (int i = 0; i < 26; i++) {
-                if (requiredFreqCount[i] > 0 && providedFreqCount[i] > 0 && requiredFreqCount[i] <= providedFreqCount[i]) {
-                    validChars++;
+                if (requiredFreqCount[i] > providedFreqCount[i]) {
+                    //crux of the solution, if the required frequency > provided frequency, then the word is invalid
+                    isInvalid = true;
+                    break;
                 }
             }
-            int requiredChars = 0;
-            for (int i = 0; i < 26; i++) {
-                if (requiredFreqCount[i] > 0) {
-                    requiredChars++;
-                }
-            }
-            if (validChars == requiredChars) {
+            if (!isInvalid) {
                 return Optional.of(word);
             }
         }

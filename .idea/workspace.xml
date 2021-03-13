@@ -16,6 +16,7 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/experience/CompassKaratCodingFirstAttempt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/CompassKaratCodingFirstAttempt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,13 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00754" summary="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency">
-      <created>1612082520173</created>
-      <option name="number" value="00754" />
-      <option name="presentableId" value="LOCAL-00754" />
-      <option name="project" value="LOCAL" />
-      <updated>1612082520173</updated>
     </task>
     <task id="LOCAL-00755" summary="Solve medium find the max no of customers that can be satisfied if the owner becomes happy for a window of size X, by finding the largest subarray sum of size X using sliding window">
       <created>1612098509135</created>
@@ -555,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615570865858</updated>
     </task>
-    <option name="localTasksCounter" value="803" />
+    <task id="LOCAL-00803" summary="Solve easy and extremely tricky count binary substrings with equal no of 0's and 1's such that they are grouped consecutively by expanding equally from the center.&#10;&#10;Initially tried to leverage prefix sum by changing 0 to -1 and finding substrings with same prefix sum but it gave WA. Trick was to compute different grouping length and expand from the center.">
+      <created>1615664683170</created>
+      <option name="number" value="00803" />
+      <option name="presentableId" value="LOCAL-00803" />
+      <option name="project" value="LOCAL" />
+      <updated>1615664683170</updated>
+    </task>
+    <option name="localTasksCounter" value="804" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +630,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add Uber personal interview experience for posterity." />
     <MESSAGE value="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value" />
     <MESSAGE value="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps." />
     <MESSAGE value="Add personal google googlyness interview round experience" />
@@ -654,7 +654,8 @@
     <MESSAGE value="Add UpStox hackerrank interview experience" />
     <MESSAGE value="Add Directi interview experience for second design round, let's see what's the feedback !" />
     <MESSAGE value="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard." />
+    <MESSAGE value="Solve easy and extremely tricky count binary substrings with equal no of 0's and 1's such that they are grouped consecutively by expanding equally from the center.&#10;&#10;Initially tried to leverage prefix sum by changing 0 to -1 and finding substrings with same prefix sum but it gave WA. Trick was to compute different grouping length and expand from the center." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and extremely tricky count binary substrings with equal no of 0's and 1's such that they are grouped consecutively by expanding equally from the center.&#10;&#10;Initially tried to leverage prefix sum by changing 0 to -1 and finding substrings with same prefix sum but it gave WA. Trick was to compute different grouping length and expand from the center." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
