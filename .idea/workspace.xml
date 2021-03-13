@@ -212,13 +212,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00753" summary="Solve easy find the smallest positive value that can lead to positive prefix sum at every step by tracking the smallest negative prefix sum found">
-      <created>1611688668473</created>
-      <option name="number" value="00753" />
-      <option name="presentableId" value="LOCAL-00753" />
-      <option name="project" value="LOCAL" />
-      <updated>1611688668473</updated>
-    </task>
     <task id="LOCAL-00754" summary="Solve medium and extremely tricky find whether it's possible to divide a string into k palindromic strings by counting chars with odd frequency">
       <created>1612082520173</created>
       <option name="number" value="00754" />
@@ -555,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615489104126</updated>
     </task>
-    <option name="localTasksCounter" value="802" />
+    <task id="LOCAL-00802" summary="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard.">
+      <created>1615570865857</created>
+      <option name="number" value="00802" />
+      <option name="presentableId" value="LOCAL-00802" />
+      <option name="project" value="LOCAL" />
+      <updated>1615570865858</updated>
+    </task>
+    <option name="localTasksCounter" value="803" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether the provided set of equations are valid or not by treating them as graph and using DSU to find connected components" />
     <MESSAGE value="Add Uber personal interview experience for posterity." />
     <MESSAGE value="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value" />
     <MESSAGE value="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps." />
@@ -654,7 +653,8 @@
     <MESSAGE value="Solve medium represent a given integer into its corresponding roman value using greedy ie. picking the character with the largest numeric value first." />
     <MESSAGE value="Add UpStox hackerrank interview experience" />
     <MESSAGE value="Add Directi interview experience for second design round, let's see what's the feedback !" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Directi interview experience for second design round, let's see what's the feedback !" />
+    <MESSAGE value="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
