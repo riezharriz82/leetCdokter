@@ -212,13 +212,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00756" summary="Solve medium print binary tree in a 2D matrix, using recursion">
-      <created>1612100373274</created>
-      <option name="number" value="00756" />
-      <option name="presentableId" value="LOCAL-00756" />
-      <option name="project" value="LOCAL" />
-      <updated>1612100373274</updated>
-    </task>
     <task id="LOCAL-00757" summary="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings.">
       <created>1612117092265</created>
       <option name="number" value="00757" />
@@ -555,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615665687294</updated>
     </task>
-    <option name="localTasksCounter" value="805" />
+    <task id="LOCAL-00805" summary="Solve easy check if swapping two characters in a string can convert it into another string by keeping track of mismatched indices.">
+      <created>1615728420352</created>
+      <option name="number" value="00805" />
+      <option name="presentableId" value="LOCAL-00805" />
+      <option name="project" value="LOCAL" />
+      <updated>1615728420352</updated>
+    </task>
+    <option name="localTasksCounter" value="806" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps." />
     <MESSAGE value="Add personal google googlyness interview round experience" />
     <MESSAGE value="Add related subsequences problem. Both of the problem are similar, one with tighter constraint that requires an optimized approach." />
     <MESSAGE value="Solve medium find the total score of parentheses expression using stack for representing nested expression." />
@@ -654,7 +653,8 @@
     <MESSAGE value="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard." />
     <MESSAGE value="Solve easy and extremely tricky count binary substrings with equal no of 0's and 1's such that they are grouped consecutively by expanding equally from the center.&#10;&#10;Initially tried to leverage prefix sum by changing 0 to -1 and finding substrings with same prefix sum but it gave WA. Trick was to compute different grouping length and expand from the center." />
     <MESSAGE value="Update compass karat coding interview experience" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update compass karat coding interview experience" />
+    <MESSAGE value="Solve easy check if swapping two characters in a string can convert it into another string by keeping track of mismatched indices." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy check if swapping two characters in a string can convert it into another string by keeping track of mismatched indices." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
