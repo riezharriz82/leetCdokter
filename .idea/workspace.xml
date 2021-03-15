@@ -212,13 +212,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00757" summary="Solve easy and a bit tricky find the common characters (including duplicates) among an array of string by tracking the min freq of characters found in all strings.">
-      <created>1612117092265</created>
-      <option name="number" value="00757" />
-      <option name="presentableId" value="LOCAL-00757" />
-      <option name="project" value="LOCAL" />
-      <updated>1612117092266</updated>
-    </task>
     <task id="LOCAL-00758" summary="Solve medium and a bit tricky problem find the diameter of a n-ary tree using DFS">
       <created>1612200155927</created>
       <option name="number" value="00758" />
@@ -555,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615728420352</updated>
     </task>
-    <option name="localTasksCounter" value="806" />
+    <task id="LOCAL-00806" summary="Solve medium find the center node of a star graph by counting the no of edges of each node. Center node must have exactly n-1 edges.">
+      <created>1615730331967</created>
+      <option name="number" value="00806" />
+      <option name="presentableId" value="LOCAL-00806" />
+      <option name="project" value="LOCAL" />
+      <updated>1615730331967</updated>
+    </task>
+    <option name="localTasksCounter" value="807" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add personal google googlyness interview round experience" />
     <MESSAGE value="Add related subsequences problem. Both of the problem are similar, one with tighter constraint that requires an optimized approach." />
     <MESSAGE value="Solve medium find the total score of parentheses expression using stack for representing nested expression." />
     <MESSAGE value="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question." />
@@ -654,7 +653,8 @@
     <MESSAGE value="Solve easy and extremely tricky count binary substrings with equal no of 0's and 1's such that they are grouped consecutively by expanding equally from the center.&#10;&#10;Initially tried to leverage prefix sum by changing 0 to -1 and finding substrings with same prefix sum but it gave WA. Trick was to compute different grouping length and expand from the center." />
     <MESSAGE value="Update compass karat coding interview experience" />
     <MESSAGE value="Solve easy check if swapping two characters in a string can convert it into another string by keeping track of mismatched indices." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy check if swapping two characters in a string can convert it into another string by keeping track of mismatched indices." />
+    <MESSAGE value="Solve medium find the center node of a star graph by counting the no of edges of each node. Center node must have exactly n-1 edges." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the center node of a star graph by counting the no of edges of each node. Center node must have exactly n-1 edges." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
