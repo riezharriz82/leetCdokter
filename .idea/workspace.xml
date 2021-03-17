@@ -212,13 +212,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00759" summary="Solve medium find diameter of a n-ary tree using DFS by tracking the largest two depths of a node">
-      <created>1612200532621</created>
-      <option name="number" value="00759" />
-      <option name="presentableId" value="LOCAL-00759" />
-      <option name="project" value="LOCAL" />
-      <updated>1612200532621</updated>
-    </task>
     <task id="LOCAL-00760" summary="Solve easy but tricky find the maximum product of three numbers in an array containing +ve and -ve numbers by considering that two smallest negative number multiplied with the largest positive number can result in a large product.">
       <created>1612390652751</created>
       <option name="number" value="00760" />
@@ -555,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615847353990</updated>
     </task>
-    <option name="localTasksCounter" value="808" />
+    <task id="LOCAL-00808" summary="Solve medium stock selling problem, find the max profit that is possible by buying and selling stocks multiple times given there is a transaction fee every time you sell the stocks.&#10;&#10;Leveraged prior learning of solving stock problems by first solving it in n^2 time, then optimizing it by keeping track of max offset found so far.">
+      <created>1615929039163</created>
+      <option name="number" value="00808" />
+      <option name="presentableId" value="LOCAL-00808" />
+      <option name="project" value="LOCAL" />
+      <updated>1615929039163</updated>
+    </task>
+    <option name="localTasksCounter" value="809" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the total score of parentheses expression using stack for representing nested expression." />
     <MESSAGE value="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question." />
     <MESSAGE value="Solve medium and extremely tricky to optimize the find the celebrity index that does not know anyone but all remaining people know him using greedy logic similar to finding majority element in an array." />
     <MESSAGE value="Solve medium and a bit tricky find the min operation required to generate n words given you can perform &quot;copy all&quot; or &quot;paste&quot; operation using DP. &#10;Need to consider some intermediate indices where we perform &quot;copy all&quot; operation, followed by &quot;paste&quot; and then optionally some more &quot;copy all&quot; followed by &quot;paste&quot;." />
@@ -654,7 +653,8 @@
     <MESSAGE value="Solve easy check if swapping two characters in a string can convert it into another string by keeping track of mismatched indices." />
     <MESSAGE value="Solve medium find the center node of a star graph by counting the no of edges of each node. Center node must have exactly n-1 edges." />
     <MESSAGE value="Solve medium convert a long url into tiny url by converting it into base62 using maths. Nice design question." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium convert a long url into tiny url by converting it into base62 using maths. Nice design question." />
+    <MESSAGE value="Solve medium stock selling problem, find the max profit that is possible by buying and selling stocks multiple times given there is a transaction fee every time you sell the stocks.&#10;&#10;Leveraged prior learning of solving stock problems by first solving it in n^2 time, then optimizing it by keeping track of max offset found so far." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium stock selling problem, find the max profit that is possible by buying and selling stocks multiple times given there is a transaction fee every time you sell the stocks.&#10;&#10;Leveraged prior learning of solving stock problems by first solving it in n^2 time, then optimizing it by keeping track of max offset found so far." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
