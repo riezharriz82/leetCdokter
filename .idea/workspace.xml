@@ -16,6 +16,7 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/experience/DirectiDSAandDesign.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/DirectiDSAandDesign.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,13 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00760" summary="Solve easy but tricky find the maximum product of three numbers in an array containing +ve and -ve numbers by considering that two smallest negative number multiplied with the largest positive number can result in a large product.">
-      <created>1612390652751</created>
-      <option name="number" value="00760" />
-      <option name="presentableId" value="LOCAL-00760" />
-      <option name="project" value="LOCAL" />
-      <updated>1612390652751</updated>
     </task>
     <task id="LOCAL-00761" summary="Solve easy but a bit tricky, find relative ranks of each index using custom comparator for sorting">
       <created>1612693740285</created>
@@ -555,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615929039163</updated>
     </task>
-    <option name="localTasksCounter" value="809" />
+    <task id="LOCAL-00809" summary="Generate medium and a bit tricky problem, generate a random point in a circle using rejection sampling. &#10;&#10;Instead of worrying about generating a point in a circle, generate a point in a square and then discard it if it lies outside the circle. Big brain. Was able to come up with the solution on my own.">
+      <created>1616000584278</created>
+      <option name="number" value="00809" />
+      <option name="presentableId" value="LOCAL-00809" />
+      <option name="project" value="LOCAL" />
+      <updated>1616000584278</updated>
+    </task>
+    <option name="localTasksCounter" value="810" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +630,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question." />
     <MESSAGE value="Solve medium and extremely tricky to optimize the find the celebrity index that does not know anyone but all remaining people know him using greedy logic similar to finding majority element in an array." />
     <MESSAGE value="Solve medium and a bit tricky find the min operation required to generate n words given you can perform &quot;copy all&quot; or &quot;paste&quot; operation using DP. &#10;Need to consider some intermediate indices where we perform &quot;copy all&quot; operation, followed by &quot;paste&quot; and then optionally some more &quot;copy all&quot; followed by &quot;paste&quot;." />
     <MESSAGE value="Solve medium and a bit tricky to optimize from n^3 to n^2, find count of distinct substrings in a string using trie.&#10;&#10;Learnings: Very similar to previously solved WordSearch2. toString() of stringBuilder is expensive as it's an O(n) operation." />
@@ -654,7 +654,8 @@
     <MESSAGE value="Solve medium find the center node of a star graph by counting the no of edges of each node. Center node must have exactly n-1 edges." />
     <MESSAGE value="Solve medium convert a long url into tiny url by converting it into base62 using maths. Nice design question." />
     <MESSAGE value="Solve medium stock selling problem, find the max profit that is possible by buying and selling stocks multiple times given there is a transaction fee every time you sell the stocks.&#10;&#10;Leveraged prior learning of solving stock problems by first solving it in n^2 time, then optimizing it by keeping track of max offset found so far." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium stock selling problem, find the max profit that is possible by buying and selling stocks multiple times given there is a transaction fee every time you sell the stocks.&#10;&#10;Leveraged prior learning of solving stock problems by first solving it in n^2 time, then optimizing it by keeping track of max offset found so far." />
+    <MESSAGE value="Generate medium and a bit tricky problem, generate a random point in a circle using rejection sampling. &#10;&#10;Instead of worrying about generating a point in a circle, generate a point in a square and then discard it if it lies outside the circle. Big brain. Was able to come up with the solution on my own." />
+    <option name="LAST_COMMIT_MESSAGE" value="Generate medium and a bit tricky problem, generate a random point in a circle using rejection sampling. &#10;&#10;Instead of worrying about generating a point in a circle, generate a point in a square and then discard it if it lies outside the circle. Big brain. Was able to come up with the solution on my own." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

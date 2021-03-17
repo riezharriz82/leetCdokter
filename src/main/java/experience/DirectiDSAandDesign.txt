@@ -87,6 +87,19 @@ Feedback of this round was not positive but due to strong positive feedback in D
 I was given a second chance to ace another design round. They were keen on hiring me as a SDE2 but given my current CTC and YOE,
 probably they thought SDE3 would be an appropriate level.
 
+Feedback from recruiter:
+Good in tech and has a good understanding on technologies that he knows.
+Has experience in distributed systems and has solved problems around it.
+He does have some idea around architecture but not able to justify the choices.
+Poor trade-off skills and not able to pick hints when pointed
+Designing systems that can scale and follow good design principles - Can do better.
+
+Retrospective:
+I struggled a lot as it never occurred to me to visualize this problem as a data aggregation problem and I was trying to do all operations in-memory
+which caused a headache to me during implementation phase. This would have been better solved using lambda architecture
+similar to design top k problem - https://www.youtube.com/watch?v=kx-XDoPjoHw
+There should have been a fast path and a slow path
+
 _______________________________________________________________________________________________________________________
 Design Round - Another chance
 Design Cricinfo platform to support realtime events like score and commentary to end users
@@ -97,3 +110,26 @@ Also used an in-memory store e.g. redis or aerospike to maintain a sorted datase
 
 https://jamboard.google.com/d/11u-m1hpIsl3O2UL06f9NYkpcoGv82zvDDBDxsRoCAgw/viewer
 https://www.youtube.com/watch?v=exSwQtMxGd4
+
+Feedback from recruiter:
+Non Functional Requirements which we agreed on:
+high available
+eventual consistency
+ready heavy
+
+Came up with a design that was not focused on core of the problem.
+-Couldn't tradeoff b/w socket vs polling at server end.
+-Couldn't give justification for using kafka in b/w (which was not necessary)
+-Couldn't get deep into any component
+-Did not touch upon data flow part until asked
+
+Retrospective:
+The miss on my part was I did not clarify the expected latency of our platform. I assumed that the platform must be instantaneous and
+should be fault tolerant.
+In order to add fault tolerance, I added Kafka for which the interviewer questioned me, why kafka? Why can't we simply say "try again later"?
+I told that the customer experience would be broken but I guess the interviewer was ok in taking this hit.
+
+In order to support instantaneous update, I resorted to push mechanism using socket without clarifying does the platform needs to be fast?
+I guess he was okay with a delayed update and his preference was to reduce load on the platform.
+
+Lesson learnt the hard way, would have definitely cracked this round but due to miss in requirement gathering, over optimized the problem.
