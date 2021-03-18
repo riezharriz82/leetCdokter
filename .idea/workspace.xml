@@ -140,8 +140,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeautifulArrangement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BeautifulArrangement" />
+    <configuration name="ApnaCoderByteTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="experience.ApnaCoderByteTest" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,20 +186,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BeautifulArrangement" />
       <item itemvalue="Application.DiceRollSimulation" />
       <item itemvalue="Application.DivideChocolates" />
       <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="Application.ApnaCoderByteTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.ApnaCoderByteTest" />
         <item itemvalue="Application.JumpGame4" />
         <item itemvalue="Application.DivideChocolates" />
         <item itemvalue="Application.DiceRollSimulation" />
-        <item itemvalue="Application.BeautifulArrangement" />
       </list>
     </recent_temporary>
   </component>
@@ -211,13 +211,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00762" summary="Solve medium find min length of string after deleting prefix and suffix of similar characters using two pointers">
-      <created>1612694173242</created>
-      <option name="number" value="00762" />
-      <option name="presentableId" value="LOCAL-00762" />
-      <option name="project" value="LOCAL" />
-      <updated>1612694173242</updated>
     </task>
     <task id="LOCAL-00763" summary="Solve medium and extremely tricky find max absolute sum of any subarray by finding the max positive subarray sum and min negative subarray sum. Need to run kadane twice. I don't know how I was able to solve it on my own! Miracle!">
       <created>1612717336502</created>
@@ -555,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616001412175</updated>
     </task>
-    <option name="localTasksCounter" value="811" />
+    <task id="LOCAL-00811" summary="Add CoderByte screening experience of apna.co Overall score 17/20. Standard DP problems. Saved by the inefficiency of the platform.">
+      <created>1616003331045</created>
+      <option name="number" value="00811" />
+      <option name="presentableId" value="LOCAL-00811" />
+      <option name="project" value="LOCAL" />
+      <updated>1616003331045</updated>
+    </task>
+    <option name="localTasksCounter" value="812" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +629,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find the min operation required to generate n words given you can perform &quot;copy all&quot; or &quot;paste&quot; operation using DP. &#10;Need to consider some intermediate indices where we perform &quot;copy all&quot; operation, followed by &quot;paste&quot; and then optionally some more &quot;copy all&quot; followed by &quot;paste&quot;." />
     <MESSAGE value="Solve medium and a bit tricky to optimize from n^3 to n^2, find count of distinct substrings in a string using trie.&#10;&#10;Learnings: Very similar to previously solved WordSearch2. toString() of stringBuilder is expensive as it's an O(n) operation." />
     <MESSAGE value="Solve easy and extremely tricky to optimize, find the min moves to turn all array elements equal by incrementing n-1 elements by 1.&#10;&#10;Trick was to simplify the problem by considering the operation as choosing one element and decrementing it by 1. Doing so is equivalent as the original operation as the relative distance is the same." />
     <MESSAGE value="Add hint to reduce time complexity by using Suffix automaton" />
@@ -654,7 +653,8 @@
     <MESSAGE value="Solve medium stock selling problem, find the max profit that is possible by buying and selling stocks multiple times given there is a transaction fee every time you sell the stocks.&#10;&#10;Leveraged prior learning of solving stock problems by first solving it in n^2 time, then optimizing it by keeping track of max offset found so far." />
     <MESSAGE value="Generate medium and a bit tricky problem, generate a random point in a circle using rejection sampling. &#10;&#10;Instead of worrying about generating a point in a circle, generate a point in a square and then discard it if it lies outside the circle. Big brain. Was able to come up with the solution on my own." />
     <MESSAGE value="Update Directi interview experience with recruiter feedback and personal retrospective." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Directi interview experience with recruiter feedback and personal retrospective." />
+    <MESSAGE value="Add CoderByte screening experience of apna.co Overall score 17/20. Standard DP problems. Saved by the inefficiency of the platform." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CoderByte screening experience of apna.co Overall score 17/20. Standard DP problems. Saved by the inefficiency of the platform." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
