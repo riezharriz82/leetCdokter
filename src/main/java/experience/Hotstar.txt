@@ -5,3 +5,5 @@ Spent about 20 minutes explaining the code in dry run but he kept questioning me
 In the end, I told him, let's move on to code as we are running out of time.
 Able to execute the code flawless in first attempt on Hackerrank.
 
+//TODO Learn more about streaming technology as implementing Netflix is trivial via CDN
+//https://www.google.com/search?q=how+does+livestreamingworks

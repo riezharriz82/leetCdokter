@@ -6,3 +6,63 @@ Solved it via hashmap containing keys and their frequencies. Made sure to look i
 
 2. Segment tree. Given Q queries with each query containing a range L and R with a value V, increment the A[i] from A[L] till A[R] inclusive by V.
 Return the max in A[i] after performing Q queries
+
+Tech Round
+Weirdest round so far. Interviewer asked all sorts of random questions, trying to gauge the breadth instead of depth, I guess?
+1. Difference between Class and a Object
+Shashwat explained it pretty well, class is an map of a building but actual building is an object
+2. Abstraction
+3. Abstraction vs encapsulation. Encapsulation is a way of achieving abstraction
+4. Diamond problem
+5. How can you invoke toString() on a reference of type List but List interface does not have a toString() method
+https://stackoverflow.com/questions/6056124/do-interfaces-inherit-from-object-class-in-java
+Was not able to answer this tricky question. The answer lies in the fact that interface implicitly creates public abstract methods
+for public methods present in Object class. Neat.
+6. Covariance
+7. String pool
+8. How to create an immutable object.
+9. Array vs ArrayList
+10. Is LinkedList in java a singly linked list or DLL?
+11. Serializable
+12. HashMap optimization in Java 8. Explained the logic of replacing a linked list with a balanced binary tree per bucket upon a certain threshold.
+Was not sure whether this was done in Java 8, but it was! :D
+https://www.nagarro.com/en/blog/post/24/performance-improvement-for-hashmap-in-java-8
+13. How does ConcurrentHashMap improves performance?
+14. Using 10 threads print 1 to 100 sequentially in a file. Explained it by using a mutex. Interviewer did not ask to write a code.
+15. Relation between Java threads and OS Threads. Answered 1:1
+https://www.developer.com/java/data/an-introduction-to-jvm-threading-implementation.html
+16. How to debug cpu spike on production boxes?
+Me: Will leverage JMX metrics.
+Q: What if JMX isn't enabled?
+Me: Will take a thread dump
+Q. How to take a thread dump?
+Me: FML
+
+17.How is remote debugging implemented in Java? What's the protocol? Can multiple remote debugger clients connect to a same VM?
+https://stackoverflow.com/questions/3591497/java-remote-debugging-how-does-it-work-technically
+18. What is Virtual Machine?
+19. What is OS?
+
+Coding question asked was pretty similar to a LeetCode question, I solved earlier.
+Doing LeetCode religiously is the best decision I ever made till now.
+/**
+ * Given an array of random numbers, Push all the zero's of a given array to the end of the array.
+ * For example, if the given arrays is {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0}, it should be changed to {1, 9, 8, 4, 2, 7, 6, 0, 0, 0, 0}.
+ * The order of all other elements should be same. Expected time complexity is O(n) and extra space is O(1).
+ */
+public class Test {
+    public static void main(String[] args) {
+        int[] input = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0};
+        int index = 0;
+        for (int val : input) {
+            if (val != 0) {
+                input[index] = val;
+                index++;
+            }
+        }
+        for (int i = index; i < input.length; i++) {
+            input[i] = 0;
+        }
+        System.out.println(Arrays.toString(input));
+    }
+}
