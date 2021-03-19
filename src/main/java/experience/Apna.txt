@@ -1,0 +1,105 @@
+Design Round (1 hour)
+1. Design BookMyShow
+Emphasis on class diagram and concurrency part during booking tickets
+Requirements
+1. List movies/events based on location
+2. User view a specific movie -> Return metadata of the movie (plot, cast)
+3. Which theatres are playing that movie -> Rank them based on distance or some filters
+4. Upon selecting a theatre and date, we have to land him on the booking page
+5. Show the available seats visually.
+6. Once the seats are selected, redirect to payment gateway
+7. Upon confirmation, send him the ticket details/confirmation via QR code or email id.
+
+NFR:
+Highly available
+Latency Numbers?
+
+Entity Model Design
+/getAllMovies?location=${currentLocation}
+
+K/V Store (where clause )
+Location	 MovieID
+Bangalore 	1
+Mumbai	2
+Bangalore       3
+
+Movie
+Structured Schema
+MovieID	Title		Description
+1		Avatar		XYZ
+
+STAR Schema
+Rating Table
+MovieID	Average Rating	NoOfVotes
+1		4.5			192
+
+MovieCast Table
+MovieID	CastID		Role
+1		1		Director
+
+Cast Table
+CastID		Name		Age
+
+MovieTheatreTable
+MovieID	TheatreID
+1		X
+
+TheatreTable
+TheatreID		Name		Lat/Long 	Location
+1							Sarjapur
+
+/getAllTheatres?location=? & movie=?
+
+Scheduling
+TheaterId : {
+	ScreenId : {
+		MovieId:
+ 			{
+			Time:
+			}
+		MovieId:
+			{
+			Time:
+			}
+		}
+	ScreenId: {
+…..
+}
+
+TheaterId : {
+	ScreenId : {
+		Height:
+		Width:
+		Blocked: {1,10,20,30}
+		Booked: {2,15}
+		PaymentPending: {{3,2PM}, {5, 6PM},
+		Price: {{2,10}, {3,10}, {5,15},..........}}
+	}
+	ScreenID: {
+
+	}
+
+PendingPayment
+CustomerId : {
+	Pending: {
+	}
+}
+
+/bookSeat? theaterId= ? & seatId=1,2,3,4 & screenID =
+
+
+ID 	Value
+1 	Booked
+
+ACID
+Read isolation
+Update tableName set value = booked where ID = 1 & value = free
+
+
+TheaterID, ScreenId, Seat -> 	Mutex
+
+/callBackURL = token
+
+Kafka / SQS
+Events -> email notification / push notification / cleanup tables
+____________________________________________________________________________________
