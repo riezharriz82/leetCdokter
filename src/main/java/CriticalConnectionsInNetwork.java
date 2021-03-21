@@ -62,7 +62,8 @@ public class CriticalConnectionsInNetwork {
             //the neighbour, since current node is linked to neighbour, we can reach current node also in lower time, if any
             if (neighborTime > curTime) {
                 //critical connection found, if neighbour can be reached in a time greater than the time this node was first visited
-                //do notice that we are not comparing neighbourTime with time[index] because that keeps on changing because of neighbourTime
+                //do notice that we are not comparing neighbourTime with time[index] because that keeps on changing because of neighbourTime, so it might be
+                //possible that neighbourTime > time[index] but neighbourTime < curTime
                 result.add(Arrays.asList(index, neighbour));
             }
         }

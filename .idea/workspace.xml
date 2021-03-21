@@ -15,7 +15,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CriticalConnectionsInNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CriticalConnectionsInNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/experience/UpStox.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/UpStox.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,9 +191,9 @@
       <item itemvalue="Application.DiceRollSimulation" />
       <item itemvalue="Application.DivideChocolates" />
       <item itemvalue="Application.JumpGame4" />
+      <item itemvalue="Application.ApnaCoderByteTest" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Application.ApnaCoderByteTest" />
     </list>
     <recent_temporary>
       <list>
@@ -211,13 +213,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00763" summary="Solve medium and extremely tricky find max absolute sum of any subarray by finding the max positive subarray sum and min negative subarray sum. Need to run kadane twice. I don't know how I was able to solve it on my own! Miracle!">
-      <created>1612717336502</created>
-      <option name="number" value="00763" />
-      <option name="presentableId" value="LOCAL-00763" />
-      <option name="project" value="LOCAL" />
-      <updated>1612717336502</updated>
     </task>
     <task id="LOCAL-00764" summary="Solve medium return the simplified path after reducing all . and .. in unix file path by modelling the paths as a stack">
       <created>1612717792267</created>
@@ -555,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616003331045</updated>
     </task>
-    <option name="localTasksCounter" value="812" />
+    <task id="LOCAL-00812" summary="Add Joveo first round interview experience. Went smooth as butter. Fingers crossed.">
+      <created>1616101870057</created>
+      <option name="number" value="00812" />
+      <option name="presentableId" value="LOCAL-00812" />
+      <option name="project" value="LOCAL" />
+      <updated>1616101870057</updated>
+    </task>
+    <option name="localTasksCounter" value="813" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +631,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky to optimize from n^3 to n^2, find count of distinct substrings in a string using trie.&#10;&#10;Learnings: Very similar to previously solved WordSearch2. toString() of stringBuilder is expensive as it's an O(n) operation." />
     <MESSAGE value="Solve easy and extremely tricky to optimize, find the min moves to turn all array elements equal by incrementing n-1 elements by 1.&#10;&#10;Trick was to simplify the problem by considering the operation as choosing one element and decrementing it by 1. Doing so is equivalent as the original operation as the relative distance is the same." />
     <MESSAGE value="Add hint to reduce time complexity by using Suffix automaton" />
     <MESSAGE value="Solve medium and a bit tricky find the min steps required to make two strings anagram by swapping any character to any other character. Trick was to swap characters that in excess to characters that are in deficit." />
@@ -654,7 +655,8 @@
     <MESSAGE value="Generate medium and a bit tricky problem, generate a random point in a circle using rejection sampling. &#10;&#10;Instead of worrying about generating a point in a circle, generate a point in a square and then discard it if it lies outside the circle. Big brain. Was able to come up with the solution on my own." />
     <MESSAGE value="Update Directi interview experience with recruiter feedback and personal retrospective." />
     <MESSAGE value="Add CoderByte screening experience of apna.co Overall score 17/20. Standard DP problems. Saved by the inefficiency of the platform." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add CoderByte screening experience of apna.co Overall score 17/20. Standard DP problems. Saved by the inefficiency of the platform." />
+    <MESSAGE value="Add Joveo first round interview experience. Went smooth as butter. Fingers crossed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Joveo first round interview experience. Went smooth as butter. Fingers crossed." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
