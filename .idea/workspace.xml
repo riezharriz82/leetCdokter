@@ -15,9 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CriticalConnectionsInNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CriticalConnectionsInNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/experience/UpStox.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/UpStox.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +32,13 @@
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
     </option>
   </component>
   <component name="Git.Settings">
@@ -213,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00764" summary="Solve medium return the simplified path after reducing all . and .. in unix file path by modelling the paths as a stack">
-      <created>1612717792267</created>
-      <option name="number" value="00764" />
-      <option name="presentableId" value="LOCAL-00764" />
-      <option name="project" value="LOCAL" />
-      <updated>1612717792267</updated>
     </task>
     <task id="LOCAL-00765" summary="Solve medium and extremely tricky find max score after removing stones from 2 piles, such that atleast 2 piles have non zero stones. Trick was to not pick the piles with smallest stones first as it will ensure that we reach end state faster. Hence we pick piles with larger stones first.">
       <created>1612730262290</created>
@@ -557,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616101870057</updated>
     </task>
-    <option name="localTasksCounter" value="813" />
+    <task id="LOCAL-00813" summary="Update gotcha regarding comparing neighbourTime against curTime, the time this node was first visited instead of time[index]">
+      <created>1616343794936</created>
+      <option name="number" value="00813" />
+      <option name="presentableId" value="LOCAL-00813" />
+      <option name="project" value="LOCAL" />
+      <updated>1616343794937</updated>
+    </task>
+    <option name="localTasksCounter" value="814" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +636,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy and extremely tricky to optimize, find the min moves to turn all array elements equal by incrementing n-1 elements by 1.&#10;&#10;Trick was to simplify the problem by considering the operation as choosing one element and decrementing it by 1. Doing so is equivalent as the original operation as the relative distance is the same." />
     <MESSAGE value="Add hint to reduce time complexity by using Suffix automaton" />
     <MESSAGE value="Solve medium and a bit tricky find the min steps required to make two strings anagram by swapping any character to any other character. Trick was to swap characters that in excess to characters that are in deficit." />
     <MESSAGE value="Add explanation for handling right subtree" />
@@ -656,7 +660,8 @@
     <MESSAGE value="Update Directi interview experience with recruiter feedback and personal retrospective." />
     <MESSAGE value="Add CoderByte screening experience of apna.co Overall score 17/20. Standard DP problems. Saved by the inefficiency of the platform." />
     <MESSAGE value="Add Joveo first round interview experience. Went smooth as butter. Fingers crossed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Joveo first round interview experience. Went smooth as butter. Fingers crossed." />
+    <MESSAGE value="Update gotcha regarding comparing neighbourTime against curTime, the time this node was first visited instead of time[index]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update gotcha regarding comparing neighbourTime against curTime, the time this node was first visited instead of time[index]" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
