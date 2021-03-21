@@ -26,6 +26,7 @@ public class Typeahead {
      * Interviewer mentioned that it's going in a complicated direction. So I proposed inverted indexes in Redis.
      * e.g for saree, store s->{saree}, sa->{saree}, sar->{saree}, sare->{saree}, saree->{saree}
      * For each key maintain a sorted set based on frequency. Interviewer seems to be happy with this solution.
+     * https://jamboard.google.com/d/1oa6rjuxZBgni2JUaU_MmlaZtTWOVAuSm7fRTtjBHIKE/
      * <p>
      * Asked to write a thread safe code for trie that supports update() and get().
      * <p>
