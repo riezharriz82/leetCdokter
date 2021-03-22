@@ -16,8 +16,6 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SerializeAndDeserializeBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SerializeAndDeserializeBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/experience/Joveo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/Joveo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,13 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00767" summary="Solve medium and a bit tricky implement PeekingIterator where we need to add peek() function to existing next() and hasNext() function of iterator.&#10;&#10;Learnings : Perfect example of decorator pattern. Got frustrated while trying to call super.next() instead of trying to leverage the iterator parameter in constructor.">
-      <created>1612818727966</created>
-      <option name="number" value="00767" />
-      <option name="presentableId" value="LOCAL-00767" />
-      <option name="project" value="LOCAL" />
-      <updated>1612818727966</updated>
     </task>
     <task id="LOCAL-00768" summary="Solve easy but a bit tricky to optimize runtime and space complexity, find the k rows with smallest 1's in a row sorted matrix of 1's and 0's using column traversal">
       <created>1613484998348</created>
@@ -565,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616431916385</updated>
     </task>
-    <option name="localTasksCounter" value="816" />
+    <task id="LOCAL-00816" summary="Add Joveo second round interview experience. Probably got 3 WA due to integer overflow. &#10;Leetcode ruined me by providing input constraints in problem statements.&#10;&#10;Learnings: In case of problem with no input constraints, make sure to consider integer overflow when doing integer arithmetic.">
+      <created>1616433869181</created>
+      <option name="number" value="00816" />
+      <option name="presentableId" value="LOCAL-00816" />
+      <option name="project" value="LOCAL" />
+      <updated>1616433869181</updated>
+    </task>
+    <option name="localTasksCounter" value="817" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +637,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add explanation for handling right subtree" />
     <MESSAGE value="Solve medium and a bit tricky find the shortest encoding that represents the entire words. Two or more words can share the same suffix.&#10;&#10;Leveraged prior learning of using Trie to solve prefix/suffix problem." />
     <MESSAGE value="Rename classes to match problem name" />
     <MESSAGE value="Solve easy find the average of each level in a binary tree using DFS with multiple passes. First pass for finding the total element in each level and another pass for finding the total sum of elements in each level." />
@@ -664,7 +661,8 @@
     <MESSAGE value="Update gotcha regarding comparing neighbourTime against curTime, the time this node was first visited instead of time[index]" />
     <MESSAGE value="Solve medium and tricky problem, construct binary tree from nested string using stacks.&#10;&#10;Leveraged prior learning of using stack to solve nested stack problems. Trick was to properly link current node with the previous node upon encountering ')'. Care must be taken to handle cases like '))' and ')('" />
     <MESSAGE value="Add link to Upstox interview question." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add link to Upstox interview question." />
+    <MESSAGE value="Add Joveo second round interview experience. Probably got 3 WA due to integer overflow. &#10;Leetcode ruined me by providing input constraints in problem statements.&#10;&#10;Learnings: In case of problem with no input constraints, make sure to consider integer overflow when doing integer arithmetic." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Joveo second round interview experience. Probably got 3 WA due to integer overflow. &#10;Leetcode ruined me by providing input constraints in problem statements.&#10;&#10;Learnings: In case of problem with no input constraints, make sure to consider integer overflow when doing integer arithmetic." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

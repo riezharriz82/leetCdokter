@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * https://leetcode.com/problems/maximum-length-of-repeated-subarray/
@@ -50,7 +52,10 @@ public class LongestCommonSubarray {
     }
 
     /**
-     * Approach: Tricky return conditions
+     * Approach: Recursion with memoization, beware of tricky return conditions
+     * Time complexity: O(n^2)
+     * <p>
+     * {@link LongestCommonSubsequence}
      */
     public int findLengthTopDown(int[] A, int[] B) {
         int[][] memoized = new int[A.length][B.length];
@@ -79,5 +84,47 @@ public class LongestCommonSubarray {
         }
         return memoized[a_index][b_index] = 0; //returning 0 is important because substring care about order. If I return
         //[bxa],[bya] when at index [a, a], we need longest substring possible for [bx, by] which is 0 not 1
+    }
+
+    /**
+     * Approach: Binary Search + Rolling hash
+     * Time Complexity: O(nlogn) Can be optimized to O(n) using suffix automaton
+     * <p>
+     * Refer Lalit Kundu video https://www.youtube.com/watch?v=kpnH9lNAZ0k
+     * https://cp-algorithms.com/string/suffix-automaton.html
+     * <p>
+     * {@link LongestDuplicateSubstring} {@link RepeatedSubstringPattern} {@link KokoEatingBananas} {@link DivideChocolates}
+     */
+    public int findLengthBinarySearch(int[] A, int[] B) {
+
+    }
+
+    /**
+     * Approach: Brute force, memory limit exceeded because of lot of strings getting generated
+     * <p>
+     * TimeComplexity: O(n^2) Similar to DP but requires a lot of substrings to get generated causing MLE
+     */
+    public int findLengthBruteForce(int[] A, int[] B) {
+        Set<String> subarrays = new HashSet<>();
+        for (int i = 0; i < A.length; i++) {
+            StringBuilder sb = new StringBuilder();
+            for (int j = i; j < A.length; j++) {
+                sb.append(A[j]);
+                sb.append(","); //use , as a delimiter to distinguish between 1,2 and 12
+                subarrays.add(sb.toString());
+            }
+        }
+        int maxLength = 0;
+        for (int i = 0; i < B.length; i++) {
+            StringBuilder sb = new StringBuilder();
+            for (int j = i; j < B.length; j++) {
+                sb.append(B[j]);
+                sb.append(",");
+                if (subarrays.contains(sb.toString())) {
+                    maxLength = Math.max(j - i + 1, maxLength);
+                }
+            }
+        }
+        return maxLength;
     }
 }
