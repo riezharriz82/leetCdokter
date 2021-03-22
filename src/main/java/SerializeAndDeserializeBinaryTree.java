@@ -17,6 +17,8 @@ public class SerializeAndDeserializeBinaryTree {
      * While decoding we could simply split the string by , and create a queue from the resultant array
      * Queue will help to recursively fix the root element, then recurse for left & right respectively assigning the head of the queue
      * to the root.
+     * <p>
+     * Similar question was asked during Joveo Onsite interview.
      */
     public String serialize(TreeNode root) {
         if (root == null) {

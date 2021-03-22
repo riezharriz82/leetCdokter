@@ -2,3 +2,37 @@ FirstRound 30 minutes
 Given a pair of pageNames, which signifies startPage -> endPage, find which page was visited last
 Modelled it as map<string, string> and used DFS to find the page with no value.
 Then the problem was extended to handle cycles (visited set) and multi page visits (map<string, list<string>>)
+________________________________________________________________________________________________________________________
+
+SecondRound 1.30 hours, HackerEarth test
+1 Problem, very similar to {@link SerializeAndDeserializeBinaryTree} in which a preorder traversal of an huffman encoded tree was provided.
+Given an huffman encoded string (011110101....) and the preorder traversal of a huffman encoded tree(*a*b*c***...), need to
+1. Decode the string (01010101... -> hello)
+2. Print statistics (compression ration in percentage, rounded to 2 decimal places)
+3. Print preorder traversal with encoding information of each node (a->0, b->111, c->101...)
+
+The interviewer mentioned that you should be able to finish the task in 45 min -1 hour but it took me complete 1.30 hours and I got 7 AC and 3 WA.
+Initially 2 test cases were showing TLE, but after switching to StringBuilder() instead of String concatenation, they got WA.
+I could not figure out the root cause behind WA and I was worried about the double causing WA.
+Now, as I am writing this out, I realized that the WA might be due to int overflow because of long input. To calculate compression ratio, I have to
+multiply the decodedLength * 8, which might overflow.
+I was so fixated on the decimal places that I completely forgot about the integer overflow. DAMN !
+
+First task was to create the tree from the provided preorder traversal. Got a couple of WA because I was not using a global index variable and was
+trying to create left by (index+1) and right by (index+2) but it caused WA because the right subtree was being set to wrong index.
+In {@link SerializeAndDeserializeBinaryTree} we used queue.remove() which acted as a global index count and it solved the problem.
+
+Once encoding was done, then I did a preorder traversal and kept track of curPath per node.
+Also maintained a mapping of character -> encoding, which was later used to print encoding information per node.
+
+Now for generating decoded string, I initially maintained a reverse index of encoding -> character ie. 110 -> a, 111->b...
+and then greedily checked whether the current substring of encoded string is a valid encoding or not.
+e.g if the encoded string was 1011101... I first checked whether 1 exists in encoded map. If no, then does 10 exists? If no, then 101 exists.
+If yes, then I would start the process from next character.
+This was essentially a n^2 operation which was causing TLE.
+So I optimized by moving to left subtree when 0 is present and moving to right subtree when 1 is present.
+I terminated the recursion when a character node is found and reset the node back to root node.
+This ensured the original encoded string was traversed exactly once and hence it was a O(n) operation.
+
+Overall it was a medium level question which turned out to be a hard problem due to strict time constraints.
+_________________________________________________________________________________________________________________________
