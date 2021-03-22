@@ -1,6 +1,11 @@
 import javafx.util.Pair;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.PriorityQueue;
 
 /**
  * https://leetcode.com/problems/design-search-autocomplete-system/
@@ -146,6 +151,12 @@ public class DesignSearchAutocompleteSystem {
         return result;
     }
 
+    /**
+     * An alternate way would be to solve it similar to {@link MaxFrequencyStack} where we keep an inverted index based on frequency as well.
+     * This would avoid creation of Priority Queue.
+     * <p>
+     * See {@link experience.meesho.Typeahead} Meesho Interview experience
+     */
     private static class Trie {
         Map<String, Integer> hotnessOfSentences = new HashMap<>(); //to avoid performing DFS at each node to extract out hot sentences for this prefix
         Trie[] letters = new Trie[128];
