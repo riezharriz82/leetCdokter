@@ -43,7 +43,7 @@ https://stackoverflow.com/questions/3591497/java-remote-debugging-how-does-it-wo
 18. What is Virtual Machine?
 19. What is OS?
 
-Coding question asked was pretty similar to a LeetCode question, I solved earlier.
+Coding question asked was pretty similar to a LeetCode question, I solved earlier. {@link RemoveDuplicatesFromSortedArray2}
 Doing LeetCode religiously is the best decision I ever made till now.
 /**
  * Given an array of random numbers, Push all the zero's of a given array to the end of the array.

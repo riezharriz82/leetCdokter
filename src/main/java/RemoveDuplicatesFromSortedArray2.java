@@ -24,6 +24,8 @@ public class RemoveDuplicatesFromSortedArray2 {
      * Can also be done in single pass by comparing the current num and the number at i - 2th index
      * Add to the array only if current num > num[i - 2]
      * <p>
+     * Similar question was asked during my Upstox onsite interview
+     * <p>
      * Time Complexity: o(n)
      * Space Complexity: o(1)
      */
