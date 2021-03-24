@@ -13,7 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve hard and extremely tricky find the minimum elements that needs to be removed to make a mountain array using LIS, one for left and another for right.&#10;&#10;Was asked this question in DirectI Interview and was able to solve this question.">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00768" summary="Solve easy but a bit tricky to optimize runtime and space complexity, find the k rows with smallest 1's in a row sorted matrix of 1's and 0's using column traversal">
-      <created>1613484998348</created>
-      <option name="number" value="00768" />
-      <option name="presentableId" value="LOCAL-00768" />
-      <option name="project" value="LOCAL" />
-      <updated>1613484998349</updated>
     </task>
     <task id="LOCAL-00769" summary="Tag uber personal interview questions">
       <created>1613485217963</created>
@@ -562,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616433869181</updated>
     </task>
-    <option name="localTasksCounter" value="817" />
+    <task id="LOCAL-00817" summary="Solve medium and a bit tricky solution, find a permutation of A[] that has the maximum advantage over B[], advantage of an index in A[] occurs when A[i] &gt; B[i], using Greedy algorithm.&#10;&#10;Trick was to place the smallest number greater than B[i] in A[i]. If no such element exists, place the smallest unplaced element of A[]. This strategy reduces wastage and minimizes loss.">
+      <created>1616593445933</created>
+      <option name="number" value="00817" />
+      <option name="presentableId" value="LOCAL-00817" />
+      <option name="project" value="LOCAL" />
+      <updated>1616593445933</updated>
+    </task>
+    <option name="localTasksCounter" value="818" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +636,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find the shortest encoding that represents the entire words. Two or more words can share the same suffix.&#10;&#10;Leveraged prior learning of using Trie to solve prefix/suffix problem." />
     <MESSAGE value="Rename classes to match problem name" />
     <MESSAGE value="Solve easy find the average of each level in a binary tree using DFS with multiple passes. First pass for finding the total element in each level and another pass for finding the total sum of elements in each level." />
     <MESSAGE value="Solve easy find the min cost required to make alternating string of either &quot;010101..&quot; or &quot;10101010...&quot;" />
@@ -661,7 +660,8 @@
     <MESSAGE value="Solve medium and tricky problem, construct binary tree from nested string using stacks.&#10;&#10;Leveraged prior learning of using stack to solve nested stack problems. Trick was to properly link current node with the previous node upon encountering ')'. Care must be taken to handle cases like '))' and ')('" />
     <MESSAGE value="Add link to Upstox interview question." />
     <MESSAGE value="Add Joveo second round interview experience. Probably got 3 WA due to integer overflow. &#10;Leetcode ruined me by providing input constraints in problem statements.&#10;&#10;Learnings: In case of problem with no input constraints, make sure to consider integer overflow when doing integer arithmetic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Joveo second round interview experience. Probably got 3 WA due to integer overflow. &#10;Leetcode ruined me by providing input constraints in problem statements.&#10;&#10;Learnings: In case of problem with no input constraints, make sure to consider integer overflow when doing integer arithmetic." />
+    <MESSAGE value="Solve medium and a bit tricky solution, find a permutation of A[] that has the maximum advantage over B[], advantage of an index in A[] occurs when A[i] &gt; B[i], using Greedy algorithm.&#10;&#10;Trick was to place the smallest number greater than B[i] in A[i]. If no such element exists, place the smallest unplaced element of A[]. This strategy reduces wastage and minimizes loss." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky solution, find a permutation of A[] that has the maximum advantage over B[], advantage of an index in A[] occurs when A[i] &gt; B[i], using Greedy algorithm.&#10;&#10;Trick was to place the smallest number greater than B[i] in A[i]. If no such element exists, place the smallest unplaced element of A[]. This strategy reduces wastage and minimizes loss." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

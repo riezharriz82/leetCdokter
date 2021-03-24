@@ -1,0 +1,16 @@
+1. PhoneScreen
+Solve {@link TweetCountsPerFrequency}
+I am extremely lucky, 2 hours before the interview, thought of solving the most frequent Twitter tagged question and boom it was the same question!
+Paying for the Leetcode premium is the best investment I made so far.
+Although I was able to solve the question myself, having solved it couple of hours before ensured that I was able to handle all edge cases and run a bug-free code in ~30 minutes.
+
+We had plenty of time remaining for follow up questions which was to explain time complexity and scale the code if it does not fit in-memory of a single box.
+I solved it in scale by having custom keys like ("tweetName","time") -> frequency
+Custom key can be sharded to ensure uniform distribution of data.
+Then the interviewer followed up with optimizing the reads as currently reads take linear time.
+So I explained the concept of reverse indexes. Using reverse indexes in which we linearly update the inverse frequency count directly during update() will
+reduce query() time complexity to O(1) but will increase time complexity of update to O(n)
+
+He asked for real life examples of some system that is read heavy. I explained retweet count, as the no of reads for retweet frequency for a tweet is much higher
+than the actual retweets (update())
+
