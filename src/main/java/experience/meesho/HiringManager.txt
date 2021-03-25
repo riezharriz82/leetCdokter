@@ -1,0 +1,14 @@
+Design a system which recommends resellers to buy specific products based on their reason of purchase.
+e.g If a user bought a product from reseller for someone's birthday, remind him every year couple of weeks earlier to buy some gift.
+
+I went with a complicated approach of storing all attributes and their relationship in a graph database.
+ie. extract attributes from all events that are being generated and adjust the weights accordingly.
+
+https://drive.google.com/open?id=1kWF3ppmO1NeF_sMlJCiznkUcgeH2neFM
+
+Seems like the hiring manager didn't like my solution as I went with a complicated design and could not recommend products.
+Simpler design would be to just take a text input from user, do just string processing and based on some conditions e.g. if message contains
+birthday, recommend it every year.
+
+Recruiter feedback: Positive feedback in the technical rounds. Design round didn't went well.
+REJECTED.
