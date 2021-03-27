@@ -13,7 +13,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/experience/sense/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/SenseMachineCoding.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,13 +220,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00770" summary="Remove deleted/ghost file">
-      <created>1613486156674</created>
-      <option name="number" value="00770" />
-      <option name="presentableId" value="LOCAL-00770" />
-      <option name="project" value="LOCAL" />
-      <updated>1613486156674</updated>
     </task>
     <task id="LOCAL-00771" summary="Add related problems in StudentAttendanceRecord2">
       <created>1613486341939</created>
@@ -560,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616614062150</updated>
     </task>
-    <option name="localTasksCounter" value="819" />
+    <task id="LOCAL-00819" summary="Solve medium find smallest common element in all rows of a grid by keeping track of frequencies of each element. Smallest element with frequency == no of rows is the result.">
+      <created>1616707741800</created>
+      <option name="number" value="00819" />
+      <option name="presentableId" value="LOCAL-00819" />
+      <option name="project" value="LOCAL" />
+      <updated>1616707741800</updated>
+    </task>
+    <option name="localTasksCounter" value="820" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find the average of each level in a binary tree using DFS with multiple passes. First pass for finding the total element in each level and another pass for finding the total sum of elements in each level." />
     <MESSAGE value="Solve easy find the min cost required to make alternating string of either &quot;010101..&quot; or &quot;10101010...&quot;" />
     <MESSAGE value="Solve medium and extremely tricky to optimize using DP, find the min no of operations to move all balls to current index.&#10;&#10;Trick was to first divide the problem into left and right non overlapping subproblem and then try to leverage results of i-1th index to generate result at ith index." />
     <MESSAGE value="Solve easy and a bit tricky problem, find the min operations to make a string empty by deleting palindromic subsequences in each operation.&#10;&#10;Tricky thing to note here was since the input contains only 2 type of characters, answer can only be 0,1 or 2" />
@@ -659,7 +662,8 @@
     <MESSAGE value="Add Joveo second round interview experience. Probably got 3 WA due to integer overflow. &#10;Leetcode ruined me by providing input constraints in problem statements.&#10;&#10;Learnings: In case of problem with no input constraints, make sure to consider integer overflow when doing integer arithmetic." />
     <MESSAGE value="Solve medium and a bit tricky solution, find a permutation of A[] that has the maximum advantage over B[], advantage of an index in A[] occurs when A[i] &gt; B[i], using Greedy algorithm.&#10;&#10;Trick was to place the smallest number greater than B[i] in A[i]. If no such element exists, place the smallest unplaced element of A[]. This strategy reduces wastage and minimizes loss." />
     <MESSAGE value="Add Twitter PhoneScreen interview experience. All hail LeetCode. Solved the question couple of hours before actual onsite. &#10;&#10;Although I am confident to solve it during onsite itself, having solved it beforehand gave me an edge over all the bugs and edge cases." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Twitter PhoneScreen interview experience. All hail LeetCode. Solved the question couple of hours before actual onsite. &#10;&#10;Although I am confident to solve it during onsite itself, having solved it beforehand gave me an edge over all the bugs and edge cases." />
+    <MESSAGE value="Solve medium find smallest common element in all rows of a grid by keeping track of frequencies of each element. Smallest element with frequency == no of rows is the result." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find smallest common element in all rows of a grid by keeping track of frequencies of each element. Smallest element with frequency == no of rows is the result." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
