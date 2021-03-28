@@ -96,7 +96,7 @@ public class LongestCommonSubarray {
      * {@link LongestDuplicateSubstring} {@link RepeatedSubstringPattern} {@link KokoEatingBananas} {@link DivideChocolates}
      */
     public int findLengthBinarySearch(int[] A, int[] B) {
-
+        return 0;
     }
 
     /**
