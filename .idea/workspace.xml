@@ -13,9 +13,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Add Meesho machine coding interview experience. Around">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00775" summary="Improve runtime complexity by creating a mapping of sorted key of each word and checking whether the current word is a rotation of any of the words associated with current sorted key">
-      <created>1613488081171</created>
-      <option name="number" value="00775" />
-      <option name="presentableId" value="LOCAL-00775" />
-      <option name="project" value="LOCAL" />
-      <updated>1613488081171</updated>
     </task>
     <task id="LOCAL-00776" summary="Solve medium find the min swaps required to group all ones together using sliding window of fixed size by calculating no of 1's present in the window.&#10;&#10;No of 0's present in a window needs to be swapped out.">
       <created>1613501805211</created>
@@ -563,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616960947764</updated>
     </task>
-    <option name="localTasksCounter" value="824" />
+    <task id="LOCAL-00824" summary="Add Meesho machine coding interview experience. Really nice and challenging problem.">
+      <created>1616969846187</created>
+      <option name="number" value="00824" />
+      <option name="presentableId" value="LOCAL-00824" />
+      <option name="project" value="LOCAL" />
+      <updated>1616969846187</updated>
+    </task>
+    <option name="localTasksCounter" value="825" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +636,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium represent a given integer into its corresponding roman value using greedy ie. picking the character with the largest numeric value first." />
     <MESSAGE value="Add UpStox hackerrank interview experience" />
     <MESSAGE value="Add Directi interview experience for second design round, let's see what's the feedback !" />
     <MESSAGE value="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard." />
@@ -662,7 +660,8 @@
     <MESSAGE value="Solve medium and tricky problem, find the max product of two words length such that these two words don't share any common character using bitmask.&#10;&#10;During my initial thought process I could not think of using bitmasks and was leaning towards maintaining a reverse indexes for characters -&gt; set of indexes of words." />
     <MESSAGE value="Solve medium and extremely tricky reconstruction problem, reconstruct original digits from its scrambled english representation using tricky observation.&#10;&#10;Initially I tried to solve using greedy where I greedily checked whether I could assign &quot;zero&quot;, &quot;one&quot; or so on.. but it didn't work for input like &quot;twonine&quot;, because &quot;one&quot; is present in the input and it didn't result in proper utilization of characters.&#10;&#10;Trick was to find the unique characters of each digit and try to leverage that uniqueness to find how many times that digit exists e.g. 'z' is unique to &quot;zero&quot; and so on. Also check must be done in an ordered manner." />
     <MESSAGE value="Add related problems dealing with max absolute difference" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add related problems dealing with max absolute difference" />
+    <MESSAGE value="Add Meesho machine coding interview experience. Really nice and challenging problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Meesho machine coding interview experience. Really nice and challenging problem." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
