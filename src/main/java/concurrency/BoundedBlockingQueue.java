@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * https://leetcode.com/problems/design-bounded-blocking-queue/
+ * https://leetcode.com/problems/design-bounded-blocking-queue/ Premium
  * <p>
  * Implement a thread-safe bounded blocking queue that has the following methods:
  * <p>
