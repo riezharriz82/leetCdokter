@@ -18,8 +18,10 @@ import common.TreeNode;
  */
 public class MaximumDifferenceBetweenNodeAndAncestor {
     /**
-     * Approach: As part of prior learnings, max difference is found out by getting the diff between min and max elements.
+     * Approach: As part of prior learnings, max absolute difference is found out by getting the diff between min and max elements.
      * Similar to range bound property of BST traversal, we provide min and max found so far for each node and try to find the max diff so far
+     * <p>
+     * {@link MaximumAbsoluteSumOfSubarray}
      */
     public int maxAncestorDiff(TreeNode root) {
         return recur(root, root.val, root.val);

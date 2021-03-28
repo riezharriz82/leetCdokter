@@ -16,6 +16,8 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Update Sense Machine coding interview result. Also add maven support to resolve open csv dependency.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumAbsoluteSumOfSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumAbsoluteSumOfSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumDifferenceBetweenNodeAndAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumDifferenceBetweenNodeAndAncestor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00773" summary="Add gotcha while setting bounds in next recursive call">
-      <created>1613486675573</created>
-      <option name="number" value="00773" />
-      <option name="presentableId" value="LOCAL-00773" />
-      <option name="project" value="LOCAL" />
-      <updated>1613486675573</updated>
     </task>
     <task id="LOCAL-00774" summary="Add explanation for performing ceiling() check on num-k value">
       <created>1613486816103</created>
@@ -563,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616881111148</updated>
     </task>
-    <option name="localTasksCounter" value="822" />
+    <task id="LOCAL-00822" summary="Solve medium and extremely tricky reconstruction problem, reconstruct original digits from its scrambled english representation using tricky observation.&#10;&#10;Initially I tried to solve using greedy where I greedily checked whether I could assign &quot;zero&quot;, &quot;one&quot; or so on.. but it didn't work for input like &quot;twonine&quot;, because &quot;one&quot; is present in the input and it didn't result in proper utilization of characters.&#10;&#10;Trick was to find the unique characters of each digit and try to leverage that uniqueness to find how many times that digit exists e.g. 'z' is unique to &quot;zero&quot; and so on. Also check must be done in an ordered manner.">
+      <created>1616959793556</created>
+      <option name="number" value="00822" />
+      <option name="presentableId" value="LOCAL-00822" />
+      <option name="project" value="LOCAL" />
+      <updated>1616959793556</updated>
+    </task>
+    <option name="localTasksCounter" value="823" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy and a bit tricky problem, find the min operations to make a string empty by deleting palindromic subsequences in each operation.&#10;&#10;Tricky thing to note here was since the input contains only 2 type of characters, answer can only be 0,1 or 2" />
     <MESSAGE value="Solve medium insert a new level in a binary tree by adding a dummy node in the new level and shifting all the children by 1 level using recursion" />
     <MESSAGE value="Solve medium represent a given integer into its corresponding roman value using greedy ie. picking the character with the largest numeric value first." />
     <MESSAGE value="Add UpStox hackerrank interview experience" />
@@ -662,7 +663,8 @@
     <MESSAGE value="Solve medium find smallest common element in all rows of a grid by keeping track of frequencies of each element. Smallest element with frequency == no of rows is the result." />
     <MESSAGE value="Update Sense Machine coding interview result. Also add maven support to resolve open csv dependency." />
     <MESSAGE value="Solve medium and tricky problem, find the max product of two words length such that these two words don't share any common character using bitmask.&#10;&#10;During my initial thought process I could not think of using bitmasks and was leaning towards maintaining a reverse indexes for characters -&gt; set of indexes of words." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem, find the max product of two words length such that these two words don't share any common character using bitmask.&#10;&#10;During my initial thought process I could not think of using bitmasks and was leaning towards maintaining a reverse indexes for characters -&gt; set of indexes of words." />
+    <MESSAGE value="Solve medium and extremely tricky reconstruction problem, reconstruct original digits from its scrambled english representation using tricky observation.&#10;&#10;Initially I tried to solve using greedy where I greedily checked whether I could assign &quot;zero&quot;, &quot;one&quot; or so on.. but it didn't work for input like &quot;twonine&quot;, because &quot;one&quot; is present in the input and it didn't result in proper utilization of characters.&#10;&#10;Trick was to find the unique characters of each digit and try to leverage that uniqueness to find how many times that digit exists e.g. 'z' is unique to &quot;zero&quot; and so on. Also check must be done in an ordered manner." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky reconstruction problem, reconstruct original digits from its scrambled english representation using tricky observation.&#10;&#10;Initially I tried to solve using greedy where I greedily checked whether I could assign &quot;zero&quot;, &quot;one&quot; or so on.. but it didn't work for input like &quot;twonine&quot;, because &quot;one&quot; is present in the input and it didn't result in proper utilization of characters.&#10;&#10;Trick was to find the unique characters of each digit and try to leverage that uniqueness to find how many times that digit exists e.g. 'z' is unique to &quot;zero&quot; and so on. Also check must be done in an ordered manner." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

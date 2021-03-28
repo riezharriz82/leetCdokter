@@ -23,7 +23,7 @@ public class MaximumAbsoluteSumOfSubarray {
      * Approach: Tricky Kadane Algorithm, max absolute sum will be max of (max subarray sum, -min subarray sum)
      * Use standard kadane algo to find max subarray sum, to calculate min subarray
      * <p>
-     * {@link MaximumSumCircularSubarray} {@link SubarrayProductLessThanK} {@link SubarraysWithKDifferentIntegers}
+     * {@link MaximumSumCircularSubarray} {@link SubarrayProductLessThanK} {@link SubarraysWithKDifferentIntegers} {@link MaximumDifferenceBetweenNodeAndAncestor}
      */
     public int maxAbsoluteSum(int[] nums) {
         int curSum = 0, maxSum = 0, n = nums.length;
