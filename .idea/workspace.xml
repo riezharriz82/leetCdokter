@@ -220,13 +220,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00772" summary="Add related problems in StudentAttendanceRecord2">
-      <created>1613486498965</created>
-      <option name="number" value="00772" />
-      <option name="presentableId" value="LOCAL-00772" />
-      <option name="project" value="LOCAL" />
-      <updated>1613486498965</updated>
-    </task>
     <task id="LOCAL-00773" summary="Add gotcha while setting bounds in next recursive call">
       <created>1613486675573</created>
       <option name="number" value="00773" />
@@ -563,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616865894368</updated>
     </task>
-    <option name="localTasksCounter" value="821" />
+    <task id="LOCAL-00821" summary="Solve medium and tricky problem, find the max product of two words length such that these two words don't share any common character using bitmask.&#10;&#10;During my initial thought process I could not think of using bitmasks and was leaning towards maintaining a reverse indexes for characters -&gt; set of indexes of words.">
+      <created>1616881111147</created>
+      <option name="number" value="00821" />
+      <option name="presentableId" value="LOCAL-00821" />
+      <option name="project" value="LOCAL" />
+      <updated>1616881111148</updated>
+    </task>
+    <option name="localTasksCounter" value="822" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +637,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and extremely tricky to optimize using DP, find the min no of operations to move all balls to current index.&#10;&#10;Trick was to first divide the problem into left and right non overlapping subproblem and then try to leverage results of i-1th index to generate result at ith index." />
     <MESSAGE value="Solve easy and a bit tricky problem, find the min operations to make a string empty by deleting palindromic subsequences in each operation.&#10;&#10;Tricky thing to note here was since the input contains only 2 type of characters, answer can only be 0,1 or 2" />
     <MESSAGE value="Solve medium insert a new level in a binary tree by adding a dummy node in the new level and shifting all the children by 1 level using recursion" />
     <MESSAGE value="Solve medium represent a given integer into its corresponding roman value using greedy ie. picking the character with the largest numeric value first." />
@@ -662,7 +661,8 @@
     <MESSAGE value="Add Twitter PhoneScreen interview experience. All hail LeetCode. Solved the question couple of hours before actual onsite. &#10;&#10;Although I am confident to solve it during onsite itself, having solved it beforehand gave me an edge over all the bugs and edge cases." />
     <MESSAGE value="Solve medium find smallest common element in all rows of a grid by keeping track of frequencies of each element. Smallest element with frequency == no of rows is the result." />
     <MESSAGE value="Update Sense Machine coding interview result. Also add maven support to resolve open csv dependency." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Sense Machine coding interview result. Also add maven support to resolve open csv dependency." />
+    <MESSAGE value="Solve medium and tricky problem, find the max product of two words length such that these two words don't share any common character using bitmask.&#10;&#10;During my initial thought process I could not think of using bitmasks and was leaning towards maintaining a reverse indexes for characters -&gt; set of indexes of words." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and tricky problem, find the max product of two words length such that these two words don't share any common character using bitmask.&#10;&#10;During my initial thought process I could not think of using bitmasks and was leaning towards maintaining a reverse indexes for characters -&gt; set of indexes of words." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
