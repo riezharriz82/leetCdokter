@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartitionEqualSubsetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartitionEqualSubsetSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00778" summary="Add Uber personal interview experience for posterity.">
-      <created>1613843780477</created>
-      <option name="number" value="00778" />
-      <option name="presentableId" value="LOCAL-00778" />
-      <option name="project" value="LOCAL" />
-      <updated>1613843780478</updated>
     </task>
     <task id="LOCAL-00779" summary="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value">
       <created>1613854573096</created>
@@ -563,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616973840485</updated>
     </task>
-    <option name="localTasksCounter" value="827" />
+    <task id="LOCAL-00827" summary="Add variant of subset sum problem">
+      <created>1617010141448</created>
+      <option name="number" value="00827" />
+      <option name="presentableId" value="LOCAL-00827" />
+      <option name="project" value="LOCAL" />
+      <updated>1617010141448</updated>
+    </task>
+    <option name="localTasksCounter" value="828" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +636,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard." />
     <MESSAGE value="Solve easy and extremely tricky count binary substrings with equal no of 0's and 1's such that they are grouped consecutively by expanding equally from the center.&#10;&#10;Initially tried to leverage prefix sum by changing 0 to -1 and finding substrings with same prefix sum but it gave WA. Trick was to compute different grouping length and expand from the center." />
     <MESSAGE value="Update compass karat coding interview experience" />
     <MESSAGE value="Solve easy check if swapping two characters in a string can convert it into another string by keeping track of mismatched indices." />
@@ -662,7 +660,8 @@
     <MESSAGE value="Add Meesho machine coding interview experience. Really nice and challenging problem." />
     <MESSAGE value="Solve medium design bounded blocking queue problem using two conditions and a lock to ensure thread safe operations on shared state (queue)" />
     <MESSAGE value="Solve easy concurrency related problem, control access to three functions in order ie. call to second() must not be executed before call to first() has finished and call to third() must not be executed before call to second() has finished.&#10;&#10;Used 2 CountDownLatch to signal completion of a method and unblock another method. Could have also solved it using Semaphore in initial locked state." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy concurrency related problem, control access to three functions in order ie. call to second() must not be executed before call to first() has finished and call to third() must not be executed before call to second() has finished.&#10;&#10;Used 2 CountDownLatch to signal completion of a method and unblock another method. Could have also solved it using Semaphore in initial locked state." />
+    <MESSAGE value="Add variant of subset sum problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add variant of subset sum problem" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
