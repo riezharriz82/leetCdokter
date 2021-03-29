@@ -13,10 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the minimum no of semesters required to study courses given that the prerequisite of a course must be studied in a different semester, by finding the longest path in a DAG. &#10;&#10;In order to find the longest path, have to use DFS + Memoization in order to avoid computing the length again.&#10;DP on Graph.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParallelCourses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,13 +216,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00780" summary="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps.">
-      <created>1613926458736</created>
-      <option name="number" value="00780" />
-      <option name="presentableId" value="LOCAL-00780" />
-      <option name="project" value="LOCAL" />
-      <updated>1613926458736</updated>
     </task>
     <task id="LOCAL-00781" summary="Add personal google googlyness interview round experience">
       <created>1614031766582</created>
@@ -563,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617031961531</updated>
     </task>
-    <option name="localTasksCounter" value="829" />
+    <task id="LOCAL-00829" summary="Solve medium and a bit tricky problem, find the minimum no of semesters required to study courses given that the prerequisite of a course must be studied in a different semester, by finding the longest path in a DAG. &#10;&#10;In order to find the longest path, have to use DFS + Memoization in order to avoid computing the length again.&#10;DP on Graph.">
+      <created>1617038850145</created>
+      <option name="number" value="00829" />
+      <option name="presentableId" value="LOCAL-00829" />
+      <option name="project" value="LOCAL" />
+      <updated>1617038850145</updated>
+    </task>
+    <option name="localTasksCounter" value="830" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
