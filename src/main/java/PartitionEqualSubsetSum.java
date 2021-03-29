@@ -14,6 +14,8 @@ public class PartitionEqualSubsetSum {
      * <p>
      * It can be simplified further by not considering the right sum at all, just consider whether an element is picked, increment the sum and index and recurse
      * or an element is skipped, increment the index and recurse
+     * <p>
+     * An interesting variant of subset sum problem which is solved greedily {@link ReconstructOriginalDigitsFromEnglish}
      */
     public boolean canPartition(int[] nums) {
         int totalSum = 0;
