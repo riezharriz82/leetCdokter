@@ -13,7 +13,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the minimum no of semesters required to study courses given that the prerequisite of a course must be studied in a different semester, by finding the longest path in a DAG. &#10;&#10;In order to find the longest path, have to use DFS + Memoization in order to avoid computing the length again.&#10;DP on Graph.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ParallelCourses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,13 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00779" summary="Solve easy convert roman number to integer by string parsing. Thing to note was to perform subtraction if the next char value &gt; current char value">
-      <created>1613854573096</created>
-      <option name="number" value="00779" />
-      <option name="presentableId" value="LOCAL-00779" />
-      <option name="project" value="LOCAL" />
-      <updated>1613854573097</updated>
     </task>
     <task id="LOCAL-00780" summary="Solve medium and bit tricky problem, find the min steps required to transform x to y, given that you can double x or reduce x by 1 at any step by working backwards.&#10;&#10;At each step, question yourself, which operation would have led me to this intermediate value in min steps.">
       <created>1613926458736</created>
@@ -562,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617010141448</updated>
     </task>
-    <option name="localTasksCounter" value="828" />
+    <task id="LOCAL-00828" summary="Solve medium and a bit tricky problem, find the minimum flips required to match a provided preorder traversal of a tree using greedy.&#10;&#10;Leveraged prior learnings of converting a preorder traversal to a tree using a global index. (Joveo interview experience)">
+      <created>1617031961531</created>
+      <option name="number" value="00828" />
+      <option name="presentableId" value="LOCAL-00828" />
+      <option name="project" value="LOCAL" />
+      <updated>1617031961531</updated>
+    </task>
+    <option name="localTasksCounter" value="829" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,8 +637,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy and extremely tricky count binary substrings with equal no of 0's and 1's such that they are grouped consecutively by expanding equally from the center.&#10;&#10;Initially tried to leverage prefix sum by changing 0 to -1 and finding substrings with same prefix sum but it gave WA. Trick was to compute different grouping length and expand from the center." />
-    <MESSAGE value="Update compass karat coding interview experience" />
     <MESSAGE value="Solve easy check if swapping two characters in a string can convert it into another string by keeping track of mismatched indices." />
     <MESSAGE value="Solve medium find the center node of a star graph by counting the no of edges of each node. Center node must have exactly n-1 edges." />
     <MESSAGE value="Solve medium convert a long url into tiny url by converting it into base62 using maths. Nice design question." />
@@ -661,7 +660,9 @@
     <MESSAGE value="Solve medium design bounded blocking queue problem using two conditions and a lock to ensure thread safe operations on shared state (queue)" />
     <MESSAGE value="Solve easy concurrency related problem, control access to three functions in order ie. call to second() must not be executed before call to first() has finished and call to third() must not be executed before call to second() has finished.&#10;&#10;Used 2 CountDownLatch to signal completion of a method and unblock another method. Could have also solved it using Semaphore in initial locked state." />
     <MESSAGE value="Add variant of subset sum problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add variant of subset sum problem" />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the minimum flips required to match a provided preorder traversal of a tree using greedy.&#10;&#10;Leveraged prior learnings of converting a preorder traversal to a tree using a global index. (Joveo interview experience)" />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the minimum no of semesters required to study courses given that the prerequisite of a course must be studied in a different semester, by finding the longest path in a DAG. &#10;&#10;In order to find the longest path, have to use DFS + Memoization in order to avoid computing the length again.&#10;DP on Graph." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the minimum no of semesters required to study courses given that the prerequisite of a course must be studied in a different semester, by finding the longest path in a DAG. &#10;&#10;In order to find the longest path, have to use DFS + Memoization in order to avoid computing the length again.&#10;DP on Graph." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
