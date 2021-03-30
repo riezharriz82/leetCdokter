@@ -14,9 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/experience/Apna.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/apna/Round2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/experience/ApnaCoderByteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/apna/CoderByteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/experience/UberInterviewExperience.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/UberInterviewExperience.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00782" summary="Add related subsequences problem. Both of the problem are similar, one with tighter constraint that requires an optimized approach.">
-      <created>1614092506304</created>
-      <option name="number" value="00782" />
-      <option name="presentableId" value="LOCAL-00782" />
-      <option name="project" value="LOCAL" />
-      <updated>1614092506304</updated>
     </task>
     <task id="LOCAL-00783" summary="Solve medium find the total score of parentheses expression using stack for representing nested expression.">
       <created>1614372154979</created>
@@ -567,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617039066604</updated>
     </task>
-    <option name="localTasksCounter" value="831" />
+    <task id="LOCAL-00831" summary="Refactor apna interview experience into its own package for better readability.">
+      <created>1617119432986</created>
+      <option name="number" value="00831" />
+      <option name="presentableId" value="LOCAL-00831" />
+      <option name="project" value="LOCAL" />
+      <updated>1617119432987</updated>
+    </task>
+    <option name="localTasksCounter" value="832" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the center node of a star graph by counting the no of edges of each node. Center node must have exactly n-1 edges." />
     <MESSAGE value="Solve medium convert a long url into tiny url by converting it into base62 using maths. Nice design question." />
     <MESSAGE value="Solve medium stock selling problem, find the max profit that is possible by buying and selling stocks multiple times given there is a transaction fee every time you sell the stocks.&#10;&#10;Leveraged prior learning of solving stock problems by first solving it in n^2 time, then optimizing it by keeping track of max offset found so far." />
     <MESSAGE value="Generate medium and a bit tricky problem, generate a random point in a circle using rejection sampling. &#10;&#10;Instead of worrying about generating a point in a circle, generate a point in a square and then discard it if it lies outside the circle. Big brain. Was able to come up with the solution on my own." />
@@ -666,7 +663,8 @@
     <MESSAGE value="Solve medium and a bit tricky problem, find the minimum flips required to match a provided preorder traversal of a tree using greedy.&#10;&#10;Leveraged prior learnings of converting a preorder traversal to a tree using a global index. (Joveo interview experience)" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the minimum no of semesters required to study courses given that the prerequisite of a course must be studied in a different semester, by finding the longest path in a DAG. &#10;&#10;In order to find the longest path, have to use DFS + Memoization in order to avoid computing the length again.&#10;DP on Graph." />
     <MESSAGE value="Add problem statement and approach for FizzBuzz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add problem statement and approach for FizzBuzz" />
+    <MESSAGE value="Refactor apna interview experience into its own package for better readability." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor apna interview experience into its own package for better readability." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
