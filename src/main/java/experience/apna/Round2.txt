@@ -102,4 +102,3 @@ TheaterID, ScreenId, Seat -> 	Mutex
 
 Kafka / SQS
 Events -> email notification / push notification / cleanup tables
-____________________________________________________________________________________

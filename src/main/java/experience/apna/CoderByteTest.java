@@ -1,4 +1,4 @@
-package experience;
+package experience.apna;
 
 import javafx.util.Pair;
 
@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ApnaCoderByteTest {
+public class CoderByteTest {
     /**
      * Given an array find whether there exists a set of numbers that sum up to the largest number in the array
      * e.g given {4,6,23,10,1,3}, the task is to find a set of numbers that sums to 23.
