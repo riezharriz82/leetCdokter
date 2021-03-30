@@ -1,0 +1,70 @@
+Began with finding the num of distinct islands in a grid of 0 and 1. Immediately told that it could be solved using DFS.
+He asked whether I have seen this problem before, I told yes, it's a standard problem. He told let's move on to some another problem.
+Probably, I should have said no! and should have showed him a bit of struggle. Not really sure what was the right course of action.
+
+Second question asked was again a leetcode question {@link FindTheDuplicateNumber}
+I misread the problem statement and assumed that there is only one duplicate element in the array and I explained the XOR approach.
+Then he pointed out that I have made an incorrect assumption. Probably another point deduction for me.
+Should have clarified the problem statement properly.
+Anyways I solved the problem by marking the index as negative. Made another mistake of not taking the absolute value of arr[i] for computing index.
+He gave a test case [2,1,1] upon which I quickly fixed the mistake.
+Another point deduction for me.
+
+He asked to solve this problem in O(1) space without modifying the input. I was not able to come up the Floyd Cycle finding algorithm on the spot.
+Discussed with Shashwat, he was also not able to come up with the solution. After googling, found out that it's a famous problem.
+Probably another point deduction for me.
+___________________________________________________________________________________________________________________________________________________
+Then he moved on to a design problem
+1. Design listing and menu flows of Swiggy
+2. Given user context and location, fetch all nearby restaurants with SLA, ratings and cost
+3. Given restaurant identifier, fetch menu with item details
+
+Solved the problem in a basic way by storing restaurant lat/long in database table. For computing the nearby restaurants, use the provided location
+to compute distance with all locations and sort by distance. Leveraged UDF (user defined function in rdbms)
+Seems to be correct: https://stackoverflow.com/questions/11112926/how-to-find-nearest-location-using-latitude-and-longitude-from-sql-database
+
+He then asked for class diagrams, which I struggled with because I could find only two entities in our schema.
+Restaurant and User
+
+He explained that he is looking for a code flow from controller, to understand how the controller will interact with multiple components.
+Will Controller directly make SQL queries? I told no.
+Controller      ->    Orchestrator   ->   DAO Implementation
+Authentication       Business Logic       Interact with storage
+Authorization
+
+Explained the advantages of using DAO interface, to provide flexibility of injecting In Memory DAO implementation at runtime during unit test cases
+
+Now while writing this, I think I know what he was looking for. He was looking for a MVC style code flow with details of all the model and controller.
+
+He asked how to show the nearby restaurants in a production ready scalable manner?
+I told to leverage reverse indexes
+Locality -> RestaurantId
+Sarjapur -> 1
+Sarjapur -> 2
+Marathalli -> 3
+
+When the user first signs in, depending upon his locality, give him restaurants in his locality. Then run a background job to actually find personalized nearby
+restaurants.
+personalized_restaurants_table
+user_id  restaurant_id rank
+
+Now while writing this, I think there are multiple issues with my approach. What if there are no restaurants in my locality? How to find nearby localities?
+What if there are very few restaurants in a locality? How to move on to an adjacent locality?
+Computing personalized nearby restaurants and storing the personalized results is also not scalable as user can change the preferences anytime i.e. he can select
+veg restaurants only. Then the pre-computed results would be invalid.
+
+I guess the optimal solution would be to use S2 cell index or use quadtree
+https://stackoverflow.com/questions/838344/algorithm-for-finding-nearby-points
+https://medium.com/sidewalk-talk/s2-cells-and-space-filling-curves-keys-to-building-better-digital-map-tools-for-cities-a312aa5e2f59
+https://www.quora.com/Who-knows-whats-behind-the-Google-Nearby-Search-API-What-algorithm-do-they-use-How-does-Google-find-a-nearby-petrol-station
+https://blog.christianperone.com/2015/08/googles-s2-geometry-on-the-sphere-cells-and-hilbert-curve/
+
+This question seems very related to Uber HLD Interview Experience.
+TODO Research on Quadtree and S2, update the OneNote design sheet with findings
+___________________________________________________________________________________________________________________________________________________
+Behavioural question
+1. When did you receive any critical feedback and what steps did you took to address the issue.
+Explained being too critical in my CR comments. More data oriented, less emotional.
+
+
+
