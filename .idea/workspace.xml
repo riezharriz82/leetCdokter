@@ -221,13 +221,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00788" summary="Solve easy and extremely tricky to optimize, find the min moves to turn all array elements equal by incrementing n-1 elements by 1.&#10;&#10;Trick was to simplify the problem by considering the operation as choosing one element and decrementing it by 1. Doing so is equivalent as the original operation as the relative distance is the same.">
-      <created>1614548948946</created>
-      <option name="number" value="00788" />
-      <option name="presentableId" value="LOCAL-00788" />
-      <option name="project" value="LOCAL" />
-      <updated>1614548948946</updated>
-    </task>
     <task id="LOCAL-00789" summary="Add hint to reduce time complexity by using Suffix automaton">
       <created>1614549106874</created>
       <option name="number" value="00789" />
@@ -564,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617281110546</updated>
     </task>
-    <option name="localTasksCounter" value="837" />
+    <task id="LOCAL-00837" summary="Solve easy convert a string to it's hexadecimal format using maths.">
+      <created>1617282567591</created>
+      <option name="number" value="00837" />
+      <option name="presentableId" value="LOCAL-00837" />
+      <option name="project" value="LOCAL" />
+      <updated>1617282567591</updated>
+    </task>
+    <option name="localTasksCounter" value="838" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add Joveo first round interview experience. Went smooth as butter. Fingers crossed." />
     <MESSAGE value="Update gotcha regarding comparing neighbourTime against curTime, the time this node was first visited instead of time[index]" />
     <MESSAGE value="Solve medium and tricky problem, construct binary tree from nested string using stacks.&#10;&#10;Leveraged prior learning of using stack to solve nested stack problems. Trick was to properly link current node with the previous node upon encountering ')'. Care must be taken to handle cases like '))' and ')('" />
     <MESSAGE value="Add link to Upstox interview question." />
@@ -663,7 +662,8 @@
     <MESSAGE value="Solve easy find lucky numbers in a matrix i.e smallest number in current row and largest number in current col using two pass approach." />
     <MESSAGE value="Solve easy and a bit tricky find the shortest subarray in an array that has the same degree as the entire array. Degree here is the max frequency of any one of its elements.&#10;&#10;Tricky thing was to use sliding window to keep track of elements frequency in current window. Can also be solved without using sliding window by tracking first and last occurrence of each number." />
     <MESSAGE value="Solve easy find the missing ranges in a sorted array and a target range by comparing the expected value with the actual value to see if any range is missing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find the missing ranges in a sorted array and a target range by comparing the expected value with the actual value to see if any range is missing." />
+    <MESSAGE value="Solve easy convert a string to it's hexadecimal format using maths." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy convert a string to it's hexadecimal format using maths." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
