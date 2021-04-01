@@ -221,13 +221,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00786" summary="Solve medium and a bit tricky find the min operation required to generate n words given you can perform &quot;copy all&quot; or &quot;paste&quot; operation using DP. &#10;Need to consider some intermediate indices where we perform &quot;copy all&quot; operation, followed by &quot;paste&quot; and then optionally some more &quot;copy all&quot; followed by &quot;paste&quot;.">
-      <created>1614465124167</created>
-      <option name="number" value="00786" />
-      <option name="presentableId" value="LOCAL-00786" />
-      <option name="project" value="LOCAL" />
-      <updated>1614465124167</updated>
-    </task>
     <task id="LOCAL-00787" summary="Solve medium and a bit tricky to optimize from n^3 to n^2, find count of distinct substrings in a string using trie.&#10;&#10;Learnings: Very similar to previously solved WordSearch2. toString() of stringBuilder is expensive as it's an O(n) operation.">
       <created>1614543006242</created>
       <option name="number" value="00787" />
@@ -564,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617229289613</updated>
     </task>
-    <option name="localTasksCounter" value="835" />
+    <task id="LOCAL-00835" summary="Solve easy and a bit tricky find the shortest subarray in an array that has the same degree as the entire array. Degree here is the max frequency of any one of its elements.&#10;&#10;Tricky thing was to use sliding window to keep track of elements frequency in current window. Can also be solved without using sliding window by tracking first and last occurrence of each number.">
+      <created>1617279405158</created>
+      <option name="number" value="00835" />
+      <option name="presentableId" value="LOCAL-00835" />
+      <option name="project" value="LOCAL" />
+      <updated>1617279405158</updated>
+    </task>
+    <option name="localTasksCounter" value="836" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update Directi interview experience with recruiter feedback and personal retrospective." />
     <MESSAGE value="Add CoderByte screening experience of apna.co Overall score 17/20. Standard DP problems. Saved by the inefficiency of the platform." />
     <MESSAGE value="Add Joveo first round interview experience. Went smooth as butter. Fingers crossed." />
     <MESSAGE value="Update gotcha regarding comparing neighbourTime against curTime, the time this node was first visited instead of time[index]" />
@@ -663,7 +662,8 @@
     <MESSAGE value="Add Uber's 4th and 5th interview round experience." />
     <MESSAGE value="Add Apna fourth round interview experience. Had a couple of points deduction. Not sure whether I will get a call back for next round." />
     <MESSAGE value="Solve easy find lucky numbers in a matrix i.e smallest number in current row and largest number in current col using two pass approach." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find lucky numbers in a matrix i.e smallest number in current row and largest number in current col using two pass approach." />
+    <MESSAGE value="Solve easy and a bit tricky find the shortest subarray in an array that has the same degree as the entire array. Degree here is the max frequency of any one of its elements.&#10;&#10;Tricky thing was to use sliding window to keep track of elements frequency in current window. Can also be solved without using sliding window by tracking first and last occurrence of each number." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and a bit tricky find the shortest subarray in an array that has the same degree as the entire array. Degree here is the max frequency of any one of its elements.&#10;&#10;Tricky thing was to use sliding window to keep track of elements frequency in current window. Can also be solved without using sliding window by tracking first and last occurrence of each number." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
