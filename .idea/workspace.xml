@@ -221,13 +221,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00791" summary="Add explanation for handling right subtree">
-      <created>1614612237786</created>
-      <option name="number" value="00791" />
-      <option name="presentableId" value="LOCAL-00791" />
-      <option name="project" value="LOCAL" />
-      <updated>1614612237786</updated>
-    </task>
     <task id="LOCAL-00792" summary="Solve medium and a bit tricky find the shortest encoding that represents the entire words. Two or more words can share the same suffix.&#10;&#10;Leveraged prior learning of using Trie to solve prefix/suffix problem.">
       <created>1615136479932</created>
       <option name="number" value="00792" />
@@ -564,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617300111608</updated>
     </task>
-    <option name="localTasksCounter" value="840" />
+    <task id="LOCAL-00840" summary="Solve medium and a bit tricky find all valid substrings in a string that are present in a dictionary and mark them as bold using Trie or startsWith() approach.&#10;&#10;Was able to get AC with Trie in first attempt. Leveraged prior learnings of finding valid words in {@link WordSearch2}">
+      <created>1617375541631</created>
+      <option name="number" value="00840" />
+      <option name="presentableId" value="LOCAL-00840" />
+      <option name="project" value="LOCAL" />
+      <updated>1617375541632</updated>
+    </task>
+    <option name="localTasksCounter" value="841" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add link to Upstox interview question." />
     <MESSAGE value="Add Joveo second round interview experience. Probably got 3 WA due to integer overflow. &#10;Leetcode ruined me by providing input constraints in problem statements.&#10;&#10;Learnings: In case of problem with no input constraints, make sure to consider integer overflow when doing integer arithmetic." />
     <MESSAGE value="Solve medium and a bit tricky solution, find a permutation of A[] that has the maximum advantage over B[], advantage of an index in A[] occurs when A[i] &gt; B[i], using Greedy algorithm.&#10;&#10;Trick was to place the smallest number greater than B[i] in A[i]. If no such element exists, place the smallest unplaced element of A[]. This strategy reduces wastage and minimizes loss." />
     <MESSAGE value="Add Twitter PhoneScreen interview experience. All hail LeetCode. Solved the question couple of hours before actual onsite. &#10;&#10;Although I am confident to solve it during onsite itself, having solved it beforehand gave me an edge over all the bugs and edge cases." />
@@ -663,7 +662,8 @@
     <MESSAGE value="Solve easy convert a string to it's hexadecimal format using maths." />
     <MESSAGE value="Solve easy perform string shifts by keeping track of net shifts and handling modulo index operations." />
     <MESSAGE value="Solve easy find whether two elements exists in a rolling array whose sum equals k.&#10;&#10;Learnings: Hashmap iteration is directly proportional to its capacity rather than no of k/v mappings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether two elements exists in a rolling array whose sum equals k.&#10;&#10;Learnings: Hashmap iteration is directly proportional to its capacity rather than no of k/v mappings." />
+    <MESSAGE value="Solve medium and a bit tricky find all valid substrings in a string that are present in a dictionary and mark them as bold using Trie or startsWith() approach.&#10;&#10;Was able to get AC with Trie in first attempt. Leveraged prior learnings of finding valid words in {@link WordSearch2}" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find all valid substrings in a string that are present in a dictionary and mark them as bold using Trie or startsWith() approach.&#10;&#10;Was able to get AC with Trie in first attempt. Leveraged prior learnings of finding valid words in {@link WordSearch2}" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
