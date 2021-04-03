@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AddBoldTagInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddBoldTagInString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00793" summary="Rename classes to match problem name">
-      <created>1615139504708</created>
-      <option name="number" value="00793" />
-      <option name="presentableId" value="LOCAL-00793" />
-      <option name="project" value="LOCAL" />
-      <updated>1615139504709</updated>
     </task>
     <task id="LOCAL-00794" summary="Solve easy find the average of each level in a binary tree using DFS with multiple passes. First pass for finding the total element in each level and another pass for finding the total sum of elements in each level.">
       <created>1615140807509</created>
@@ -564,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617378648495</updated>
     </task>
-    <option name="localTasksCounter" value="842" />
+    <task id="LOCAL-00842" summary="Solve easy and a bit tricky problem, reorganize a string by ensuring neither two letters are adjacent nor two digits are adjacent using Greedy. &#10;&#10;Leveraged prior learnings of solving string reorganization problems by placing the most frequent characters first ie. place either letters or digits first.">
+      <created>1617403740938</created>
+      <option name="number" value="00842" />
+      <option name="presentableId" value="LOCAL-00842" />
+      <option name="project" value="LOCAL" />
+      <updated>1617403740938</updated>
+    </task>
+    <option name="localTasksCounter" value="843" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky solution, find a permutation of A[] that has the maximum advantage over B[], advantage of an index in A[] occurs when A[i] &gt; B[i], using Greedy algorithm.&#10;&#10;Trick was to place the smallest number greater than B[i] in A[i]. If no such element exists, place the smallest unplaced element of A[]. This strategy reduces wastage and minimizes loss." />
     <MESSAGE value="Add Twitter PhoneScreen interview experience. All hail LeetCode. Solved the question couple of hours before actual onsite. &#10;&#10;Although I am confident to solve it during onsite itself, having solved it beforehand gave me an edge over all the bugs and edge cases." />
     <MESSAGE value="Solve medium find smallest common element in all rows of a grid by keeping track of frequencies of each element. Smallest element with frequency == no of rows is the result." />
     <MESSAGE value="Update Sense Machine coding interview result. Also add maven support to resolve open csv dependency." />
@@ -663,7 +663,8 @@
     <MESSAGE value="Solve easy find whether two elements exists in a rolling array whose sum equals k.&#10;&#10;Learnings: Hashmap iteration is directly proportional to its capacity rather than no of k/v mappings." />
     <MESSAGE value="Solve medium and a bit tricky find all valid substrings in a string that are present in a dictionary and mark them as bold using Trie or startsWith() approach.&#10;&#10;Was able to get AC with Trie in first attempt. Leveraged prior learnings of finding valid words in {@link WordSearch2}" />
     <MESSAGE value="Solve easy find whether a given matrix of strings is equivalent to its transposed form by checking each char with it's respective transposed char location ie. (i,j) &lt;-&gt; (j,i)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find whether a given matrix of strings is equivalent to its transposed form by checking each char with it's respective transposed char location ie. (i,j) &lt;-&gt; (j,i)" />
+    <MESSAGE value="Solve easy and a bit tricky problem, reorganize a string by ensuring neither two letters are adjacent nor two digits are adjacent using Greedy. &#10;&#10;Leveraged prior learnings of solving string reorganization problems by placing the most frequent characters first ie. place either letters or digits first." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and a bit tricky problem, reorganize a string by ensuring neither two letters are adjacent nor two digits are adjacent using Greedy. &#10;&#10;Leveraged prior learnings of solving string reorganization problems by placing the most frequent characters first ie. place either letters or digits first." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

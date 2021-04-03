@@ -22,6 +22,8 @@ public class LongestValidParentheses {
      * <p>
      * Lastly I thought of leveraging stack to mark indices that are balanced/valid. The unbalanced indices will remain unmarked.
      * Then the problem would reduce to finding the longest subarray with all valid indices.
+     * <p>
+     * {@link AddBoldTagInString}
      */
     public int longestValidParentheses(String s) {
         boolean[] isBalanced = new boolean[s.length()];

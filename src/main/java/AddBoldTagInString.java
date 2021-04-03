@@ -30,6 +30,8 @@ public class AddBoldTagInString {
      * Approach: Very similar to {@link WordBreak1}
      * This approach has similar worst time complexity as Trie approach but is a bit faster ~8 ms than Trie approach ~35 ms
      * as we have to spend time creating the trie
+     * <p>
+     * {@link LongestValidParentheses}
      */
     public String addBoldTagSimplified(String s, String[] dict) {
         int n = s.length();
