@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Create a service that can allow any client to schedule any arbitrarily job that should be executed
  * at a specified date and time in future in a thread safe manner
- *
+ * <p>
  * Initially I told that I will manage state in a hashmap, maintain a time -> job mapping
  * But then interviewer hinted to use PriorityQueue to make life easier
  */
@@ -75,7 +75,7 @@ class TaskSchedulerService {
     }
 }
 
-public class DirectiMachineCoding {
+public class MachineCoding {
     public static void main(String[] args) {
         TaskSchedulerService taskSchedulerService = new TaskSchedulerService();
         TaskSchedulerService.TaskScheduler.Task task = new TaskSchedulerService.TaskScheduler.Task(1, () -> System.out.println("Hello World"), LocalDateTime.of(2021, Month.MARCH, 3, 15, 52, 45), 0);

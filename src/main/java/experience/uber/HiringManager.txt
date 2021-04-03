@@ -1,0 +1,4 @@
+5th round: Hiring manager
+Asked about the platform design that helped in reducing latency of IMB redesign?
+Explained the way how our platform calls multiple dependencies, using CompletableFuture and Semaphores (poor man's circuit breaker implementation)
+Standard behavioural questions? Why leave amazon? Why external, why no internal transfer?

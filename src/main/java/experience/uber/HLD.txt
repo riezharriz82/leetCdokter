@@ -1,0 +1,8 @@
+3rd Round: Architecture
+Design a visualization tool to represent the heatmap of drivers on the map. Need to provide a way to zoom in/zoom out over the map.
+Followed the pattern of dividing map into grid/cells and assigning them a cell id. Use key/value store to represent frequency count of cells -> no of cars
+1. How to assign a lat/long to a cell id ? Initially I told to use maths and binary search to find the cell id. Then told to precompute everything because
+no of cells can be very huge
+2. How to represent point of reference and zoom units to properly aggregate the data when zoom-in and zoom-out? Could not cleanly implement it.
+Was a bit tough
+
