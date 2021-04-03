@@ -1,0 +1,100 @@
+Problem:
+Clients/Companies -------Jobs-----> Joveo --------PublishJobs -----> Publishers (Indeed/LinkedIn...)
+
+1. Feed management: Distribute client XML job feeds to different publishers. Each client feed has a specific SLA to publish the feeds (~2hrs)
+Currently just implement the pull based model where clients will dump their contents on an endpoint and we will poll the contents at a fixed
+amount of time. Since it's a single file, you need to implement the diff handling logic ie. identify whether the contents of a earlier job has changed
+or a new job is added a job is deleted etc.
+Every job has an unique identifier, referenceNumber ie. specific to each clientID. Leverage that fact for uniqueness
+
+Sample feed: https://job-feeds-devlocal.s3.amazonaws.com/joveo-actual-10-jobs.xml
+
+2. Job Segmentation: JobGroup creation to tag a publisher at any of the hierarchical levels.
+Once job is published, clients can select on UI to publish a set of selected jobs to a specific publisher ie. select first 2 and publish it to linkedIn,
+select last two and publish it to Indeed.
+But since it's a manual process, it won't scale if the client has 1000's of job postings, hence need a way of specifying some rules and attaching each rule
+with a publisher ie. if the job title contains engineer and location is bangalore, publish to linkedin
+if job title contains qa or location is mumbai, publish to indeed.
+
+Need to support chaining of rules based on AND or OR operator.
+
+Expectation
+LLD - Class structure of the E2E workflow
+LLD - Data model part (Client, JobGroup, Job) and few access patterns (How will various models interact with each other and how will they support the
+required access patterns)
+
+Entities:
+Client →
+Job -
+JobGroup -- filters like - category = software push to linkedin, city etc..
+Publisher
+
+Client
+Id, Name, Polling Frequency, Data EndPoint, Data Format
+
+Client -----1 to many---> Jobs
+
+Jobs
+ClientID, Title, Company, City, State, Country, Description, ReferenceNumber, url, date, Category, Department
+
+Jobs -----Many to many----> Publisher
+
+Publisher
+Id, Name, EndPoint, Data Format
+
+Jobs ---Many to one-----> JobGroups (Many jobs will map to a specific job groups)
+
+JobGroups
+List<Rule> rules, List<Jobs> matchingJobs, List<Publisher> publishers
++evaluateRules()
++publish()
+(Added the List of matching jobs when interviewer asked how will the data model satisfy a query pattern like how many jobs are associated with this job group)
+
+Rule
+LHS (Field) Operator (Equals/Contains/Greater/Less) RHS (Condition)
+ChainingCriteria enum (AND, OR) (Required to chain this rule result with other rules)
+
+Now the interviewer asked how will the data be stored in persistent store. I answered denormalized to optimize for reads.
+JobGroups Table
+JobGroupId    MatchingJobsId
+1                     4
+1                     6
+
+He also asked how will you handle when rules are updated/modified by the end user?
+I explained two approaches
+1. Mutability: Update/Overwrite the existing rule, will be difficult to generate the audit history.
+2. Immutability: Append only mode, create a new rule and deactivate the old rule. Can easily generate the audit history. Also explained that generally insertion is fast
+as compared to update/deletion in data stores.
+
+He seemed satisfied with the immutability approach and mentioned that generally immutability is the go to approach in OLAP stores.
+
+Now he was satisfied with the models generated so far and wanted to understand how the data flow will happen ie. how the models will interact with each other.
+
+ClientRegistrationController
+registerClient() : Client
+createAndScheduleTask() : Will invoke JobController to schedule a new task that will poll client end point at a fixed time.
+
+
+JobController
+Queue<Task> tasks // priorityQueue sorted by timestamp
+
+Task
+taskID, timeStamp, Client
+
+scheduleTask() (Add newly created task in priority queue)
+poll() (Background thread that runs every 5 minutes and tries to execute the valid tasks)
+parseFile(task) : List<Jobs> (When a valid task is executed, it returns a list of jobs parsed from the end point)
+
+checkIfNewJob(job) : boolean (For each job, check if the job is a new job based on clientId and referenceNumber, if its a new job, create a new entry.
+If it's an existing job, create a new entry and deactivate the old job. Same principle of immutability applies.
+Maintain internal unique identifier for each job. Can't use reference number as it's a client facing identifier.
+
+evaluateJobGroups(job) : Job -> JobGroups (For each job, evaluate it against existing rules and associate a JobGroups with each job)
+
+publishJobs(job) : Job -> list<publisher> : (For each job, get the list of publishers from the associated JobGroups and publish it)
+
+
+PublisherService
+publish(job)
+
+I think it went well and the interviewer seems satisfied. Let's wait and watch for the results.

@@ -1,0 +1,23 @@
+Implement git diff
+ie. given a string "abcde" and target string "abxde"
+Return
+a
+b
+-c
++x
+d
+e
+
+Initially told the interviewer about solving the problem using LCS and told that finding the total cost would be simpler but tracing the path back
+would be difficult. Interviewer then hinted to use a recursive solution but I was still struggling with how to trace the path back. Then the interviewer
+hinted towards using some kind of backtracking to retrace the path and then I was able to eventually solve the problem.
+
+This problem is very similar to {@link DeleteOperationForTwoString} but differs from the fact that instead of deleting we can do addition and deletion.
+I implemented a recursive solution and then memoized the results in a 2D DP. After this was done, I started from 0,0
+1. Checked if characters match at source and target. If yes, move on to (i+1, j+1). Output the character
+2. If no, result at (i,j) would have come from Math.min( dp(i+1,j), dp(i,j+1) ). Check whichever is smaller and output the character accordingly.
+ie. (i,j+1) indicates that the jth char in target is newly added, so output +new char
+(i+1, j) indicates that the ith char in source is deleted, so output -deleted char
+
+Ran the problem against a fixed test case and fortunately the answer matched.
+Overall it was a fun and innovative problem, loved solving it on the spot.

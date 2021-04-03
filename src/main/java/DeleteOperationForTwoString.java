@@ -24,6 +24,9 @@ public class DeleteOperationForTwoString {
      * 3. In case we are done with word1 (idx1<0) but word2 isn't done (idx2>0), only option is to delete all the characters remaining in idx2.
      * <p>
      * Another way of solving this problem would be to compute LongestCommonSubsequence of word1 and word2. Answer would be m + n - 2 * lcs
+     * <p>
+     * This problem is very similar to the one asked in Joveo interview experience {@link joveo.FourthRoundDSA.txt}
+     * In order to return the path taken, use the memoized dp array to re-trace the path accordingly.
      */
     public int minDistance(String word1, String word2) {
         int[][] memoized = new int[word1.length()][word2.length()];

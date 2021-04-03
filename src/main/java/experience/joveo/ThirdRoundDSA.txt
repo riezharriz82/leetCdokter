@@ -1,0 +1,13 @@
+Given a python source code, check if it's valid source code or not based on indentation rules
+1. First line should not start with a space.
+2. Last line should not end with a colon
+3. Line after colon, indentation should increase
+4. If no colon, same indentation or match any previous (still open) indentations.
+
+Used a stack based approach where each stack entry contains the no of leading whitespaces per open block
+If cur whitespace > stack.peek(), previous line should end with a colon (keep a boolean flag to denote the same). Push new entry to stack.
+if cur whitespace == stack.peek(), previous line should not end with a colon. Do not push a duplicate entry to stack.
+if cur whitespace < stack.peek(), keep polling from the stack until you find a entry with same no of whitespaces.
+
+Ran the problem against a fixed test case and fortunately the answer matched.
+Overall it was a fun and innovative problem, loved solving it on the spot.
