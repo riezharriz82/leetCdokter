@@ -1,0 +1,89 @@
+Question : A tournament was played and score of all players is reported in a sequence, considering 2^n players.
+comparison is made between 2 consecutive scores on every level, highest one is declared as winner among 2.
+This keeps iterating until we get the final winner of tournament.
+
+10,76,12,13,45,46,80,78
+76,13,46,80
+76,80
+80
+
+            80
+     76           80
+  76     13    46    80
+ 10 76 12 13  45 46 80 5
+
+Return the third highest score from the tournament tree. Gave a nlog(3) solution to the interviewer but he wanted to optimize.
+Gave a suggestion to leverage second highest score for tournament. Still could not solve the problem optimally.
+Shashwat suggested to use three pointer approach, similar to finding third max element in an array. That could solve the problem in O(n).
+
+int getThirdHighestScoreForTournament(Node root) {
+    List<Integer> leaves = new ArrayList<>();
+    recur(root, leaves);
+    //priority queue
+    Arrays.sort(leaves);
+    return leaves.get(leaves.size() - 3);
+}
+
+private void recur(Node root, List<Integer> leaves) {
+    if (root != null) {
+        if (root.left == null && root.right == null) {
+            leaves.add(root.val);
+        } else {
+            recur(root.left, leaves);
+            recur(root.right, leaves);
+        }
+    }
+}
+
+Question : Find factorial of 150
+Approach: Divide and conquer, similar to merge sort
+16! -> 16*15...9 *.  (8!)
+
+16 ... 13 12... 9
+1,16
+1,8, 9,16
+1 4 5 8
+1 2 3 4
+1 1 2 2 3 3 4 4
+
+
+class Scratch {
+    public static void main(String[] args) {
+        Scratch scratch = new Scratch();
+        int n = 1500;
+        long start = System.currentTimeMillis();
+        BigDecimal result = scratch.getFactorialMultiThreaded(n);
+        long end = System.currentTimeMillis();
+        System.out.println("MultiThreaded Result is " + result + " Time taken (ms) " + (end - start));
+
+        start = System.currentTimeMillis();
+        result = scratch.getFactorialSequentially(n);
+        end = System.currentTimeMillis();
+        System.out.println("Sequential Result is " + result + " Time taken (ms) " + (end - start));
+    }
+
+    private BigDecimal getFactorialSequentially(int n) {
+        BigDecimal result = new BigDecimal(1);
+        for (int i = 1; i <= n; i++) {
+            result = result.multiply(new BigDecimal(i));
+        }
+        return result;
+    }
+
+    private BigDecimal getFactorialMultiThreaded(int n) {
+        return recur(1, n).join();
+    }
+
+    private CompletableFuture<BigDecimal> recur(int low, int high) {
+        if (low == high) {
+            return CompletableFuture.completedFuture(new BigDecimal(low));
+        }
+        int mid = low + (high - low) / 2;
+        CompletableFuture<BigDecimal> left = recur(low, mid);
+        CompletableFuture<BigDecimal> right = recur(mid + 1, high);
+        //reduce the two completable futures into another future
+        return Stream.of(left, right)
+                .reduce((c1, c2) -> c1.thenCombine(c2, BigDecimal::multiply))
+                .orElse(CompletableFuture.completedFuture(new BigDecimal(-1)));
+    }
+}

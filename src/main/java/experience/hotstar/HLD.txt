@@ -1,0 +1,23 @@
+Design a SplitWise like application
+1- user management.
+2- group management
+3- Expenses management
+4- Summary and analysis on the expense or may be on other factors.
+
+Followed the usual flow chart for driving HLD discussion.
+Strong vs eventual consistency? Read vs Write heavy system? Caching? Replication?
+
+Good amount of discussion on using Relational vs Non-Relational databases.
+Interviewer questioned my usage of relational database for analytical database. He was not clear on why somebody would pick MemSQL for analytical database.
+I calmly explained that since you mentioned the schema is fixed and as we are lazily propagating the data, we can always transform the data
+in a view ready manner that will avoid the usage of any joins.
+
+He was in the favour of using DynamoDB, for which I mentioned that at this moment of time, I don't have concrete access patterns and schema defined, due to
+which it's very early to pick a database.
+
+Learnings: Always clarify your assumptions while picking up a persistent storage. Clarify what you have assumed and what would have happened if those
+assumptions were not true.
+
+https://drive.google.com/file/d/1H9l-0AG1pplOLwNPEBIv7LegPwy65-B6/view?usp=sharing
+
+Overall it was a mixed round. Not sure of the overall feedback.

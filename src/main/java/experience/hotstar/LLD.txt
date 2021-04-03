@@ -1,0 +1,65 @@
+Initial Deep Dive on my code base at Amazon.
+What optimization did I perform to reduce latency? He was probably not very happy when I mentioned that we just migrated :P
+He was also curious to know on how are we generating the new notifications since the last visit to the cart page. He was probably again disappointed
+when I mentioned that we are a view layer service, which gets the backend data from a different team :P
+
+Discussion into Circuit Breaker and Semaphore framework.
+How will you reduce time spent in network calls.
+1. Reduce the payload size by switching to binary encoding instead of current json encoding.
+2. Reduce connection time by creating a thread pool to minimize time spent in handshake?
+
+Design an Expense sharing app
+
+Actors
+
+User
+userId
+
+Transaction
+User owner
+List<User> credit
+timestamp
+amount
+% split
+Map<user, amount> userShare;
+List<Settlement> settlements
+enum Settlement status
+
+
+2 -> -30; <- owns money
+3 -> -60;
+
+Settlement
+User giver;
+User taker;
+double amount;
+
+User1 ---Txn1---> User3
+User1 <--Txn2----- User3
+
+Group {
+    List<user>
+    Group name
+    List<Transaction>
+    List<Settlement>
+    int groupId;
+}
+
+Now the interviewer asked for how the data flow will happen between various entities. Initially I struggled to understand his ask, then he clarified a bit.
+
+UserDAO {
+    User createUser(....)
+    User inviteToAGroup(Group..)
+    User getGroups()
+    User delete()
+}
+
+ExpenseDAO {
+    createExpense()
+    settleExpense(ExpenseId, User owner, User creditor)
+    List<Settlement> viewExpense(ExpenseId)
+    updateExpenseStatus(Enum (initial, partial, completely))
+}
+
+Overall I think the round went poorly, as I could not properly create the different entities and
+data flow among entities. I think the Joveo LLD round was my best experience so far in creating Class Diagrams.

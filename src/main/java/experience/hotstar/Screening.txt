@@ -1,6 +1,6 @@
 1. Coding Round
 Exact problem statement as LeetCode Hard WordLadder
-Interviewer struggled with my optimal approach of preprocessing the keys and creation of map<string, set<strings>>
+Interviewer struggled with my optimal approach of preprocessing the keys and creation of reverse indexes using map<string, set<strings>>
 Spent about 20 minutes explaining the code in dry run but he kept questioning me on the time complexity of the solution.
 In the end, I told him, let's move on to code as we are running out of time.
 Able to execute the code flawless in first attempt on Hackerrank.
