@@ -1,0 +1,9 @@
+A little bit about my experience at Amazon. He asked about the 10x developer training session and was curious to know more.
+I was caught a bit off-guarded and took me some time to regain the boat.
+
+1. Given a user, create a repository
+2. List all repositories created by a user.
+3. Given a repository, star it.
+4. Return starred count of a repository. (Reverse indexes?)
+
+Overall a pretty chill round.
