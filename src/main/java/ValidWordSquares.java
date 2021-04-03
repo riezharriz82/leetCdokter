@@ -74,7 +74,7 @@ public class ValidWordSquares {
      * <p>
      * This approach does not require any extra space and will immediately exit in case of a mismatch.
      * <p>
-     * {@link LuckyNumbersInAMatrix}
+     * {@link LuckyNumbersInAMatrix} {@link alternate.ToeplitzMatrix}
      */
     public boolean validWordSquareSimplified(List<String> words) {
         for (int row = 0; row < words.size(); row++) {
