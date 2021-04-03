@@ -1,12 +1,3 @@
-Hackerrank test
-2 questions
-1. Variant of 2 Sum. Given an array containing values and a target, find pairs such that their sum equals target.
-Need to consider unique pairs e.g. {3,9} and {9,3} are duplicate but {6,6} is okay.
-Solved it via hashmap containing keys and their frequencies. Made sure to look in one direction ie. given k, find (target - k) > k exists or not
-
-2. Segment tree. Given Q queries with each query containing a range L and R with a value V, increment the A[i] from A[L] till A[R] inclusive by V.
-Return the max in A[i] after performing Q queries
-
 Tech Round
 Weirdest round so far. Interviewer asked all sorts of random questions, trying to gauge the breadth instead of depth, I guess?
 1. Difference between Class and a Object
