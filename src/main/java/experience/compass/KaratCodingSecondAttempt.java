@@ -1,9 +1,9 @@
-package experience;
+package experience.compass;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompassKaratCodingSecondAttempt {
+public class KaratCodingSecondAttempt {
     /*
     We are building a word processor and we would like to implement a "reflow" functionality that also applies full justification to the text.
     Given an array containing lines of text and a new maximum width, re-flow the text to fit the new width.

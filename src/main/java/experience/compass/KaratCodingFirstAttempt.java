@@ -1,4 +1,4 @@
-package experience;
+package experience.compass;
 
 import javafx.util.Pair;
 
@@ -48,7 +48,7 @@ import java.util.Optional;
  * find_word_location(grid2, word9) => [(0, 0)]
  * </pre>
  */
-public class CompassKaratCodingFirstAttempt {
+public class KaratCodingFirstAttempt {
     /**
      * Two questions were asked, first question find_embedded_word() was easy but took me a ghastly amount of time in debugging ~30 minutes
      * <p>
