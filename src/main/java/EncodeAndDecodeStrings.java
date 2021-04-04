@@ -19,9 +19,10 @@ public class EncodeAndDecodeStrings {
         //separate two words by " # "
         //decode by reversing the process, split by " # " and then replace ## by #
 
-        //Another generic solution is to use chunked transfer encoding used in http in which we encode the length of chunk using fixed bytes
+        //Another generic solution is to use chunked transfer encoding used in http 1.1 in which we encode the length of chunk using fixed bytes
         //and then the chunk message
         //eg. if the input string is abcd efg hijkl, encode it to 0004abcd0003edfg0005hijkl
+        //4 bytes were used to denote size of the preceding message followed by the message
         StringBuilder sb = new StringBuilder();
         for (String str : strs) {
             sb.append(str);
