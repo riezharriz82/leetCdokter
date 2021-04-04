@@ -52,7 +52,7 @@ public class DesignCircularQueue {
      * My code is inspired from {@link java.util.ArrayDeque} which uses two pointers head and tail
      * Solution could have been simplified if I used another attribute "int count" which denotes the no of elements.
      * <p>
-     * {@link DesignPhoneDirectorySimplified} {@link MaximumSumCircularSubarray}
+     * {@link DesignPhoneDirectorySimplified} {@link MaximumSumCircularSubarray} {@link DesignCircularDeque}
      */
     Integer[] queue; //Notice the Integer[] instead of int[]. This is to leverage null check just like ArrayDeque
     int head = 0, tail = 0; //tail indicates the index at which next element needs to be inserted
