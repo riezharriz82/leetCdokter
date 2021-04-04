@@ -111,7 +111,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -198,17 +198,18 @@
     <list>
       <item itemvalue="Application.CoderByteTest" />
       <item itemvalue="Application.DivideChocolates" />
-      <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Application.InventoryManagement" />
+      <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.InventoryManagement" />
         <item itemvalue="Application.JumpGame4" />
+        <item itemvalue="Application.InventoryManagement" />
         <item itemvalue="Application.DivideChocolates" />
+        <item itemvalue="Application.CoderByteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -220,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00796" summary="Solve medium and extremely tricky to optimize using DP, find the min no of operations to move all balls to current index.&#10;&#10;Trick was to first divide the problem into left and right non overlapping subproblem and then try to leverage results of i-1th index to generate result at ith index.">
-      <created>1615155991620</created>
-      <option name="number" value="00796" />
-      <option name="presentableId" value="LOCAL-00796" />
-      <option name="project" value="LOCAL" />
-      <updated>1615155991620</updated>
     </task>
     <task id="LOCAL-00797" summary="Solve easy and a bit tricky problem, find the min operations to make a string empty by deleting palindromic subsequences in each operation.&#10;&#10;Tricky thing to note here was since the input contains only 2 type of characters, answer can only be 0,1 or 2">
       <created>1615232607382</created>
@@ -564,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617438128166</updated>
     </task>
-    <option name="localTasksCounter" value="845" />
+    <task id="LOCAL-00845" summary="Solve medium find the maximum number of vowels in a substring of size k using standard sliding window template.">
+      <created>1617479751639</created>
+      <option name="number" value="00845" />
+      <option name="presentableId" value="LOCAL-00845" />
+      <option name="project" value="LOCAL" />
+      <updated>1617479751640</updated>
+    </task>
+    <option name="localTasksCounter" value="846" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update Sense Machine coding interview result. Also add maven support to resolve open csv dependency." />
     <MESSAGE value="Solve medium and tricky problem, find the max product of two words length such that these two words don't share any common character using bitmask.&#10;&#10;During my initial thought process I could not think of using bitmasks and was leaning towards maintaining a reverse indexes for characters -&gt; set of indexes of words." />
     <MESSAGE value="Solve medium and extremely tricky reconstruction problem, reconstruct original digits from its scrambled english representation using tricky observation.&#10;&#10;Initially I tried to solve using greedy where I greedily checked whether I could assign &quot;zero&quot;, &quot;one&quot; or so on.. but it didn't work for input like &quot;twonine&quot;, because &quot;one&quot; is present in the input and it didn't result in proper utilization of characters.&#10;&#10;Trick was to find the unique characters of each digit and try to leverage that uniqueness to find how many times that digit exists e.g. 'z' is unique to &quot;zero&quot; and so on. Also check must be done in an ordered manner." />
     <MESSAGE value="Add related problems dealing with max absolute difference" />
@@ -663,7 +663,8 @@
     <MESSAGE value="Solve easy and a bit tricky problem, reorganize a string by ensuring neither two letters are adjacent nor two digits are adjacent using Greedy. &#10;&#10;Leveraged prior learnings of solving string reorganization problems by placing the most frequent characters first ie. place either letters or digits first." />
     <MESSAGE value="Add problems related to marking required intervals and merging them." />
     <MESSAGE value="Add matrix related problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add matrix related problems" />
+    <MESSAGE value="Solve medium find the maximum number of vowels in a substring of size k using standard sliding window template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the maximum number of vowels in a substring of size k using standard sliding window template." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
