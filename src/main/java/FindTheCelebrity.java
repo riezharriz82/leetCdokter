@@ -64,5 +64,27 @@ public class FindTheCelebrity extends Relation {
         }
         return candidate;
     }
+
+    /**
+     * Approach: Brute force, for each people, find how many people knows him. If it equals n-1, he is the celebrity
+     */
+    public int findCelebrityBruteForce(int n) {
+        for (int i = 0; i < n; i++) {
+            int peopleThatKnowsI = 0;
+            for (int j = 0; j < n; j++) {
+                if (j != i) {
+                    if (!knows(i, j) && knows(j, i)) {
+                        peopleThatKnowsI++;
+                    } else {
+                        break;
+                    }
+                }
+            }
+            if (peopleThatKnowsI == n - 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
 
