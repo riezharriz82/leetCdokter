@@ -14,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CheckIfAStringContainsAllBinaryCodesOfSizeK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheckIfAStringContainsAllBinaryCodesOfSizeK.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CountofSmallerNumbersAfterSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountOfSmallerNumbersAfterSelf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CountofSmallerNumbersAfterSelfTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CountOfSmallerNumbersAfterSelfTest.java" afterDir="false" />
     </list>
@@ -223,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00801" summary="Add Directi interview experience for second design round, let's see what's the feedback !">
-      <created>1615489104125</created>
-      <option name="number" value="00801" />
-      <option name="presentableId" value="LOCAL-00801" />
-      <option name="project" value="LOCAL" />
-      <updated>1615489104126</updated>
     </task>
     <task id="LOCAL-00802" summary="Solve medium find whether a string contains all binary codes of size k using rolling hash or bitmask.&#10;&#10;Learnings: Generating a rolling hash of fixed size using bitmask by &amp;'ing with a mask of all one's of size k (11111)&#10;Generating rolling hash without bitmask was standard.">
       <created>1615570865857</created>
@@ -567,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617645032308</updated>
     </task>
-    <option name="localTasksCounter" value="850" />
+    <task id="LOCAL-00850" summary="Solve medium">
+      <created>1617709531566</created>
+      <option name="number" value="00850" />
+      <option name="presentableId" value="LOCAL-00850" />
+      <option name="project" value="LOCAL" />
+      <updated>1617709531566</updated>
+    </task>
+    <option name="localTasksCounter" value="851" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium design bounded blocking queue problem using two conditions and a lock to ensure thread safe operations on shared state (queue)" />
     <MESSAGE value="Solve easy concurrency related problem, control access to three functions in order ie. call to second() must not be executed before call to first() has finished and call to third() must not be executed before call to second() has finished.&#10;&#10;Used 2 CountDownLatch to signal completion of a method and unblock another method. Could have also solved it using Semaphore in initial locked state." />
     <MESSAGE value="Add variant of subset sum problem" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the minimum flips required to match a provided preorder traversal of a tree using greedy.&#10;&#10;Leveraged prior learnings of converting a preorder traversal to a tree using a global index. (Joveo interview experience)" />
@@ -666,7 +665,8 @@
     <MESSAGE value="Add comment regarding Chunked transfer encoding used in HTTP 1.1" />
     <MESSAGE value="Solve medium design circular dequeue using fixed size array and two pointers.&#10;&#10;Leveraged prior learnings of designing a circular queue." />
     <MESSAGE value="Add medium lock binary tree which supports locking and unlocking in O(h) time." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add medium lock binary tree which supports locking and unlocking in O(h) time." />
+    <MESSAGE value="Solve medium" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

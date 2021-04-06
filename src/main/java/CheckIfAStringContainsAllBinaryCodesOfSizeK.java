@@ -51,6 +51,9 @@ public class CheckIfAStringContainsAllBinaryCodesOfSizeK {
         boolean[] hashes = new boolean[1 << k];
         int hash = 0, mask = (1 << k) - 1;
         for (int i = 0; i < k; i++) {
+            //(hash << 1) allows to left shift the mask of character falling off the window
+            //( & mask) allows to keep only k characters in the window
+            //( | ) set the last bit depending upon whether it's 0 or 1
             hash = ((hash << 1) & mask) | (s.charAt(i) - '0'); //crucial part, check the comment above
         }
         hashes[hash] = true;
