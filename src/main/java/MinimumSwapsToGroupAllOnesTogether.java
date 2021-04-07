@@ -36,7 +36,7 @@ public class MinimumSwapsToGroupAllOnesTogether {
      * We can optimize the space complexity by not precomputing the no of 1's present in a subarray but rather use sliding window
      * to calculate no of 1's. Maintain a sliding window of fixed size and increment/decrement the count while moving the window
      * <p>
-     * {@link FindGroupWithSizeM} {@link MinimumWindowSubstring} {@link SubarrayProductLessThanK} related problem
+     * {@link FindGroupWithSizeM} {@link MinimumWindowSubstring} {@link SubarrayProductLessThanK} {@link MaximumPointsToObtainFromCards} related problem
      */
     public int minSwaps(int[] data) {
         int targetNumOfOnes = 0;

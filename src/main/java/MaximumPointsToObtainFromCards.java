@@ -22,6 +22,8 @@ public class MaximumPointsToObtainFromCards {
      * This problem can be reduced to sliding window problem, because the result can be either first k digits,
      * first k - 1 digits, last 1 digit or first k - 2 digits, last 2 digits and so on.
      * So if you find a min subarray of size n - k, the result will be total sum - min subarray sum
+     * <p>
+     * {@link MinimumSwapsToGroupAllOnesTogether}
      */
     public int maxScore(int[] cardPoints, int k) {
         int totalSum = 0;
@@ -42,6 +44,9 @@ public class MaximumPointsToObtainFromCards {
         return result;
     }
 
+    /**
+     * Approach: Recursive solution with top down memoization. MLE
+     */
     public int maxScoreWithMemoization(int[] cardPoints, int k) {
         //memory limit exceeded :D
         int[][][] memo = new int[k + 1][cardPoints.length][cardPoints.length];
