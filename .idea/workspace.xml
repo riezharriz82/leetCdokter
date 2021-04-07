@@ -13,10 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="asfdsfda">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumPointsToObtainFromCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumPointsToObtainFromCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumSwapsToGroupAllOnesTogether.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumSwapsToGroupAllOnesTogether.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DesignCircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignCircularQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,13 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00807" summary="Solve medium convert a long url into tiny url by converting it into base62 using maths. Nice design question.">
-      <created>1615847353990</created>
-      <option name="number" value="00807" />
-      <option name="presentableId" value="LOCAL-00807" />
-      <option name="project" value="LOCAL" />
-      <updated>1615847353990</updated>
     </task>
     <task id="LOCAL-00808" summary="Solve medium stock selling problem, find the max profit that is possible by buying and selling stocks multiple times given there is a transaction fee every time you sell the stocks.&#10;&#10;Leveraged prior learning of solving stock problems by first solving it in n^2 time, then optimizing it by keeping track of max offset found so far.">
       <created>1615929039163</created>
@@ -567,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617822391104</updated>
     </task>
-    <option name="localTasksCounter" value="856" />
+    <task id="LOCAL-00856" summary="Add related sliding window problems of fixed size">
+      <created>1617823143035</created>
+      <option name="number" value="00856" />
+      <option name="presentableId" value="LOCAL-00856" />
+      <option name="project" value="LOCAL" />
+      <updated>1617823143035</updated>
+    </task>
+    <option name="localTasksCounter" value="857" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Refactor apna interview experience into its own package for better readability." />
     <MESSAGE value="Add Uber's 4th and 5th interview round experience." />
     <MESSAGE value="Add Apna fourth round interview experience. Had a couple of points deduction. Not sure whether I will get a call back for next round." />
     <MESSAGE value="Solve easy find lucky numbers in a matrix i.e smallest number in current row and largest number in current col using two pass approach." />
@@ -666,7 +664,8 @@
     <MESSAGE value="Solve medium and extremely trick to solve in linear time find whether array has same count of global and local inversions. &#10;&#10;Solving this in nlogn was a bit easier as it involved counting inversions using merge sort. This was my first attempt writing merge sort without copying. Made a lot of mistakes while handling various indices in merge()" />
     <MESSAGE value="Add related interval based problems" />
     <MESSAGE value="Add time complexity and input constraints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add time complexity and input constraints" />
+    <MESSAGE value="Add related sliding window problems of fixed size" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add related sliding window problems of fixed size" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

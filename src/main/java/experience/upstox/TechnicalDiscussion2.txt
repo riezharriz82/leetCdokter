@@ -1,0 +1,11 @@
+Implement queue. Luckily solved a similar question {@link DesignCircularQueue} in LeetCode Monthly challenge, so was able to swiftly solve the problem including
+followups like thread safety and support for primitive data types. Used an Integer[] instead of int[] as underlying store to check for null, hence the question.
+Explained that we can support primitives by using another variable to denote capacity.
+This was done in ~30 minutes.
+
+Rest 40 minutes was spent digging on my past projects.
+1. How did you reduce memory footprint in FlatFileLoader? Cache and Stream processing
+2. Day to day responsibility? Didn't properly answer this question as I have not prepared to answer this question.
+3. Design patterns used? Singleton, Builder, Factory. Real life examples of Decorator pattern.
+
+Overall it went well.
