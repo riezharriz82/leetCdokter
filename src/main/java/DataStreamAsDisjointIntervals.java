@@ -29,7 +29,7 @@ public class DataStreamAsDisjointIntervals {
      * The invariant here is to not have any overlapping interval before or after adding a new number
      * TimeComplexity: O(logn) during add() and O(number of disjoint intervals) during get()
      * <p>
-     * {@link RangeModule} {@link RemoveInterval}
+     * {@link RangeModule} {@link RemoveInterval} {@link MyCalendar1}
      */
     public DataStreamAsDisjointIntervals() {
     }

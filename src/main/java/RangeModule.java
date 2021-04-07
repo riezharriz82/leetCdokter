@@ -29,7 +29,7 @@ public class RangeModule {
      * </pre>
      * While removing the ranges, keep track of the new left and right boundary, it will be used to create a new range
      * <p>
-     * {@link EmployeeFreeTime}
+     * {@link EmployeeFreeTime} {@link MyCalendar1} {@link DataStreamAsDisjointIntervals}
      */
     public RangeModule() {
 

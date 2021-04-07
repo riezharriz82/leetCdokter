@@ -22,6 +22,10 @@ import java.util.TreeMap;
  * Explanation:
  * The first event can be booked.  The second can't because time 15 is already booked by another event.
  * The third event can be booked, as the first event takes every time less than 20, but not including 20.
+ * <p>
+ * Note:
+ * The number of calls to MyCalendar.book per test case will be at most 1000.
+ * In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
  */
 public class MyCalendar1 {
     TreeMap<Integer, Integer> map = new TreeMap<>(); //key is start time, value is end time
@@ -36,6 +40,8 @@ public class MyCalendar1 {
      * <p>
      * In my initial implementation, I implemented by incrementing +1 at start and -1 at end and by ensuring the first event present after start
      * either does not exist or only starts after current event has finished. It was an alright solution but this one is way simpler.
+     * <p>
+     * {@link RangeModule} {@link DataStreamAsDisjointIntervals}
      */
     public boolean book(int start, int end) {
         Integer previousStart = map.lowerKey(end); //lookup by end time is important
