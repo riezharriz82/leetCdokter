@@ -222,13 +222,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00803" summary="Solve easy and extremely tricky count binary substrings with equal no of 0's and 1's such that they are grouped consecutively by expanding equally from the center.&#10;&#10;Initially tried to leverage prefix sum by changing 0 to -1 and finding substrings with same prefix sum but it gave WA. Trick was to compute different grouping length and expand from the center.">
-      <created>1615664683170</created>
-      <option name="number" value="00803" />
-      <option name="presentableId" value="LOCAL-00803" />
-      <option name="project" value="LOCAL" />
-      <updated>1615664683170</updated>
-    </task>
     <task id="LOCAL-00804" summary="Update compass karat coding interview experience">
       <created>1615665687294</created>
       <option name="number" value="00804" />
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617709990751</updated>
     </task>
-    <option name="localTasksCounter" value="852" />
+    <task id="LOCAL-00852" summary="Add brute force solution for FindTheCelebrity">
+      <created>1617711990661</created>
+      <option name="number" value="00852" />
+      <option name="presentableId" value="LOCAL-00852" />
+      <option name="project" value="LOCAL" />
+      <updated>1617711990661</updated>
+    </task>
+    <option name="localTasksCounter" value="853" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add variant of subset sum problem" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the minimum flips required to match a provided preorder traversal of a tree using greedy.&#10;&#10;Leveraged prior learnings of converting a preorder traversal to a tree using a global index. (Joveo interview experience)" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the minimum no of semesters required to study courses given that the prerequisite of a course must be studied in a different semester, by finding the longest path in a DAG. &#10;&#10;In order to find the longest path, have to use DFS + Memoization in order to avoid computing the length again.&#10;DP on Graph." />
     <MESSAGE value="Add problem statement and approach for FizzBuzz" />
@@ -664,7 +663,8 @@
     <MESSAGE value="Add medium lock binary tree which supports locking and unlocking in O(h) time." />
     <MESSAGE value="Solve medium" />
     <MESSAGE value="Add comment regarding generating a sliding bitmask" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comment regarding generating a sliding bitmask" />
+    <MESSAGE value="Add brute force solution for FindTheCelebrity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add brute force solution for FindTheCelebrity" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
