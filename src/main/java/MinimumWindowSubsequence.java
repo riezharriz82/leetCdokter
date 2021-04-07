@@ -16,6 +16,11 @@ import java.util.List;
  * Explanation:
  * "bcde" is the answer because it occurs before "bdde" which has the same length.
  * "deb" is not a smaller window because the elements of T in the window must occur in order.
+ * <p>
+ * Note:
+ * All the strings in the input will only contain lowercase letters.
+ * The length of S will be in the range [1, 20000].
+ * The length of T will be in the range [1, 100].
  */
 public class MinimumWindowSubsequence {
     /**
@@ -26,6 +31,8 @@ public class MinimumWindowSubsequence {
      * <p>
      * The correct solution would be to directly find a valid window ie. a window in S that has T as a subsequence.
      * Now to find the shortest valid window in it, iterate from the reverse to find the shortest valid window
+     * <p>
+     * Worst case time complexity is O(n^2) because of two nested loops but probably the test cases are a bit relaxed.
      */
     public String minSubsequenceUsingSlidingWindow(String S, String T) {
         int end = 0, start;
