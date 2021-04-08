@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DeleteNodeInBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DeleteNodeInBST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00809" summary="Generate medium and a bit tricky problem, generate a random point in a circle using rejection sampling. &#10;&#10;Instead of worrying about generating a point in a circle, generate a point in a square and then discard it if it lies outside the circle. Big brain. Was able to come up with the solution on my own.">
-      <created>1616000584278</created>
-      <option name="number" value="00809" />
-      <option name="presentableId" value="LOCAL-00809" />
-      <option name="project" value="LOCAL" />
-      <updated>1616000584278</updated>
     </task>
     <task id="LOCAL-00810" summary="Update Directi interview experience with recruiter feedback and personal retrospective.">
       <created>1616001412175</created>
@@ -566,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617824826391</updated>
     </task>
-    <option name="localTasksCounter" value="858" />
+    <task id="LOCAL-00858" summary="Solve medium find inorder successor in a BST using recursion and leveraging property of BST.">
+      <created>1617906317786</created>
+      <option name="number" value="00858" />
+      <option name="presentableId" value="LOCAL-00858" />
+      <option name="project" value="LOCAL" />
+      <updated>1617906317786</updated>
+    </task>
+    <option name="localTasksCounter" value="859" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add Apna fourth round interview experience. Had a couple of points deduction. Not sure whether I will get a call back for next round." />
     <MESSAGE value="Solve easy find lucky numbers in a matrix i.e smallest number in current row and largest number in current col using two pass approach." />
     <MESSAGE value="Solve easy and a bit tricky find the shortest subarray in an array that has the same degree as the entire array. Degree here is the max frequency of any one of its elements.&#10;&#10;Tricky thing was to use sliding window to keep track of elements frequency in current window. Can also be solved without using sliding window by tracking first and last occurrence of each number." />
     <MESSAGE value="Solve easy find the missing ranges in a sorted array and a target range by comparing the expected value with the actual value to see if any range is missing." />
@@ -665,7 +663,8 @@
     <MESSAGE value="Add time complexity and input constraints" />
     <MESSAGE value="Add related sliding window problems of fixed size" />
     <MESSAGE value="Add Upstox interview experience." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Upstox interview experience." />
+    <MESSAGE value="Solve medium find inorder successor in a BST using recursion and leveraging property of BST." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find inorder successor in a BST using recursion and leveraging property of BST." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
