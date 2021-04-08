@@ -222,13 +222,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00810" summary="Update Directi interview experience with recruiter feedback and personal retrospective.">
-      <created>1616001412175</created>
-      <option name="number" value="00810" />
-      <option name="presentableId" value="LOCAL-00810" />
-      <option name="project" value="LOCAL" />
-      <updated>1616001412175</updated>
-    </task>
     <task id="LOCAL-00811" summary="Add CoderByte screening experience of apna.co Overall score 17/20. Standard DP problems. Saved by the inefficiency of the platform.">
       <created>1616003331045</created>
       <option name="number" value="00811" />
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617906317786</updated>
     </task>
-    <option name="localTasksCounter" value="859" />
+    <task id="LOCAL-00859" summary="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value.">
+      <created>1617908324806</created>
+      <option name="number" value="00859" />
+      <option name="presentableId" value="LOCAL-00859" />
+      <option name="project" value="LOCAL" />
+      <updated>1617908324806</updated>
+    </task>
+    <option name="localTasksCounter" value="860" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find lucky numbers in a matrix i.e smallest number in current row and largest number in current col using two pass approach." />
     <MESSAGE value="Solve easy and a bit tricky find the shortest subarray in an array that has the same degree as the entire array. Degree here is the max frequency of any one of its elements.&#10;&#10;Tricky thing was to use sliding window to keep track of elements frequency in current window. Can also be solved without using sliding window by tracking first and last occurrence of each number." />
     <MESSAGE value="Solve easy find the missing ranges in a sorted array and a target range by comparing the expected value with the actual value to see if any range is missing." />
     <MESSAGE value="Solve easy convert a string to it's hexadecimal format using maths." />
@@ -664,7 +663,8 @@
     <MESSAGE value="Add related sliding window problems of fixed size" />
     <MESSAGE value="Add Upstox interview experience." />
     <MESSAGE value="Solve medium find inorder successor in a BST using recursion and leveraging property of BST." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find inorder successor in a BST using recursion and leveraging property of BST." />
+    <MESSAGE value="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
