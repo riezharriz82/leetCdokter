@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/largest-number/
  * <p>
@@ -8,6 +10,10 @@
  * <p>
  * Input: [3,30,34,5,9]
  * Output: "9534330"
+ * <p>
+ * Constraints:
+ * 1 <= nums.length <= 100
+ * 0 <= nums[i] <= 109
  */
 public class LargestNumber {
     /**
@@ -25,26 +31,48 @@ public class LargestNumber {
      */
     public String largestNumber(int[] nums) {
         int n = nums.length;
-        if (n == 0) {
-            return "";
-        }
         String[] input = new String[n];
         for (int i = 0; i < n; i++) {
             input[i] = Integer.toString(nums[i]);
         }
-        for (int i = 1; i < n; i++) { //bubble sort
-            for (int j = 0; j < i; j++) { //this order is important to understand, as we want to place a[i] first at the highest place possible
-                //hence we iterate from 0th index, after swapping, a[i] will be switched to some other value, so we need to continue the check to
-                //place new a[i] at the next greater index e.g [3,30,34]
-                String pre = input[i] + input[j];
-                String post = input[j] + input[i];
-                if (pre.compareTo(post) > 0) { //ith index needs to be swapped with jth index
-                    String temp = input[i];
-                    input[i] = input[j];
-                    input[j] = temp;
-                }
+        for (int i = 1; i < n; i++) { //insertion sort, visualize it as sorting a deck of cards manually
+            //insert the out of order card in place by shifting the cards
+            String key = input[i];
+            int j = i - 1;
+            while (j >= 0 && (key + input[j]).compareTo(input[j] + key) > 0) {
+                //this loop terminates when we see the first input[j] placed correctly, no need of looking further
+                input[j + 1] = input[j];
+                j--;
+            }
+            input[j + 1] = key;
+        }
+        StringBuilder res = new StringBuilder();
+        for (String num : input) {
+            res.append(num);
+        }
+        String candidate = res.toString();
+        for (int i = 0; i < candidate.length(); i++) { //tricky, remove all the leading zeroes
+            if (candidate.charAt(i) != '0') {
+                return candidate.substring(i);
             }
         }
+        return "0";
+    }
+
+    /**
+     * Approach: Use a custom comparator function for sorting
+     */
+    public String largestNumberSimplified(int[] nums) {
+        int n = nums.length;
+        String[] input = new String[n];
+        for (int i = 0; i < n; i++) {
+            input[i] = Integer.toString(nums[i]);
+        }
+        Arrays.sort(input, (o1, o2) -> {
+            String pre = o1 + o2;
+            String post = o2 + o1;
+            return -pre.compareTo(post); //notice the negative sign since we are interested in descending sort.
+        });
         StringBuilder res = new StringBuilder();
         for (String num : input) {
             res.append(num);

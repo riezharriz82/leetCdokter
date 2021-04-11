@@ -13,7 +13,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LargestNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LargestNumber.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,13 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00814" summary="Solve medium and tricky problem, construct binary tree from nested string using stacks.&#10;&#10;Leveraged prior learning of using stack to solve nested stack problems. Trick was to properly link current node with the previous node upon encountering ')'. Care must be taken to handle cases like '))' and ')('">
-      <created>1616371188339</created>
-      <option name="number" value="00814" />
-      <option name="presentableId" value="LOCAL-00814" />
-      <option name="project" value="LOCAL" />
-      <updated>1616371188339</updated>
     </task>
     <task id="LOCAL-00815" summary="Add link to Upstox interview question.">
       <created>1616431916384</created>
@@ -563,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618153676973</updated>
     </task>
-    <option name="localTasksCounter" value="863" />
+    <task id="LOCAL-00863" summary="Add Hotstar Bar Raiser interview experience with Director.">
+      <created>1618154753527</created>
+      <option name="number" value="00863" />
+      <option name="presentableId" value="LOCAL-00863" />
+      <option name="project" value="LOCAL" />
+      <updated>1618154753527</updated>
+    </task>
+    <option name="localTasksCounter" value="864" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy perform string shifts by keeping track of net shifts and handling modulo index operations." />
     <MESSAGE value="Solve easy find whether two elements exists in a rolling array whose sum equals k.&#10;&#10;Learnings: Hashmap iteration is directly proportional to its capacity rather than no of k/v mappings." />
     <MESSAGE value="Solve medium and a bit tricky find all valid substrings in a string that are present in a dictionary and mark them as bold using Trie or startsWith() approach.&#10;&#10;Was able to get AC with Trie in first attempt. Leveraged prior learnings of finding valid words in {@link WordSearch2}" />
     <MESSAGE value="Solve easy find whether a given matrix of strings is equivalent to its transposed form by checking each char with it's respective transposed char location ie. (i,j) &lt;-&gt; (j,i)" />
@@ -662,7 +664,8 @@
     <MESSAGE value="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level." />
     <MESSAGE value="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency." />
     <MESSAGE value="Add Upstox final round interview experience with Director" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Upstox final round interview experience with Director" />
+    <MESSAGE value="Add Hotstar Bar Raiser interview experience with Director." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Hotstar Bar Raiser interview experience with Director." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
