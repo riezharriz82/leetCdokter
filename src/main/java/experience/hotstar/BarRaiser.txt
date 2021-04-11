@@ -1,0 +1,37 @@
+Interview by Akash Saxena, SVP Engineering
+
+Design a Pokemon GO game with the following requirements
+1. There is only one type of monster
+2. Monster is spawned at a fixed distance every 1 km apart
+3. Consider only bengaluru
+4. Support for Massive Multiplayer Online Game
+5. Objective to collect as much monsters as possible
+6. Design E2E game flow.
+
+I started with the signup flow, where I mentioned to leverage OAuth to gain authentication from 3P email providers.
+Since the monsters are spawned every 1 km I explained that I will maintain the game state in memory to reduce n/w calls as it's a mobile application.
+In order to capture a monster, the state could be saved in an in-memory database.
+
+He then questioned that since multiple players are playing, how will you synchronize the game state between all the players, as I am loading the entire
+state in memory during startup?
+I said we can give both the players same monster but he said this seemed wrong. I also said that deciding this experience seems like a product
+problem, which I think deducted some points from my score as I was not taking "ownership" of the product.
+Okay, I said as I cursed my luck. I then presented him with two options
+1. Eventual consistency: In case a player reaches a location with a monster already captured, he can try to capture it and will see a message, "Sorry the
+monster is already captured". This will involve an atomic operation on the underlying k/v store
+2. Strong consistency: Before confirming whether a location has an un-captured monster, make a n/w call to see whether the cache is stale or not. But then
+the interviewer mentioned that what's the use of a cache? as you have to n/w calls at every location itself.
+I told probably we can update the cache regularly every 1 min or so to reduce the staleness but he seemed not satisfied.
+
+Then I thought of implementing a P2P architecture where upon capturing a monster, a node will broadcast it's update to its peers. This would reduce the load on the
+backend infrastructure as well because it's a multiplayer game where we need to have a global view of the map.
+He asked how will I identify neighbouring peers, I said consider the game as a graph where each monster location will have 8 neighbouring cells.
+Those location will be the key and value will be the list of users that are near those cells.
+We have to maintain this state using a tracker url.
+He said he is having difficulty visualizing this graph and I mentioned this is how torrent and gossip protocol works.
+
+In the end, I asked him feedback for which he mentioned that the proper flow was missing, and it seemed like instead of solving a problem, I was trying to please him
+by constantly asking whether I am on the right track. FML.
+
+Status: REJECTED
+
