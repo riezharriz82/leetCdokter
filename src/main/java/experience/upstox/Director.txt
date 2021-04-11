@@ -1,0 +1,12 @@
+Had a 1 hour discussion with a director who seemed like a non-technical person
+He was not at all interested in knowing about the optimizations project that I worked upon in my career so far and said that reducing latency
+is easy as you have to add cache and reduce redundant service calls. He was mostly interested in whether I worked on adding any new feature.
+I have to think a bit and finally came up with notifications feature on EWC.
+
+He then proceeded to ask about the team structure and what role did I play. Overall I was getting the vibe that he was trying to judge
+whether I led others in my team or not.
+
+In the end he asked my strengths and weaknesses. Why Upstox? What other companies have I applied to? Why not applied to Zerodha?
+Do you know about Upstox?
+
+I am 99% confident that I am rejected after this final round :D

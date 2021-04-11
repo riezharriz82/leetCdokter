@@ -222,13 +222,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00812" summary="Add Joveo first round interview experience. Went smooth as butter. Fingers crossed.">
-      <created>1616101870057</created>
-      <option name="number" value="00812" />
-      <option name="presentableId" value="LOCAL-00812" />
-      <option name="project" value="LOCAL" />
-      <updated>1616101870057</updated>
-    </task>
     <task id="LOCAL-00813" summary="Update gotcha regarding comparing neighbourTime against curTime, the time this node was first visited instead of time[index]">
       <created>1616343794936</created>
       <option name="number" value="00813" />
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617909905461</updated>
     </task>
-    <option name="localTasksCounter" value="861" />
+    <task id="LOCAL-00861" summary="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency.">
+      <created>1617998165321</created>
+      <option name="number" value="00861" />
+      <option name="presentableId" value="LOCAL-00861" />
+      <option name="project" value="LOCAL" />
+      <updated>1617998165321</updated>
+    </task>
+    <option name="localTasksCounter" value="862" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find the missing ranges in a sorted array and a target range by comparing the expected value with the actual value to see if any range is missing." />
     <MESSAGE value="Solve easy convert a string to it's hexadecimal format using maths." />
     <MESSAGE value="Solve easy perform string shifts by keeping track of net shifts and handling modulo index operations." />
     <MESSAGE value="Solve easy find whether two elements exists in a rolling array whose sum equals k.&#10;&#10;Learnings: Hashmap iteration is directly proportional to its capacity rather than no of k/v mappings." />
@@ -664,7 +663,8 @@
     <MESSAGE value="Solve medium find inorder successor in a BST using recursion and leveraging property of BST." />
     <MESSAGE value="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value." />
     <MESSAGE value="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level." />
+    <MESSAGE value="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
