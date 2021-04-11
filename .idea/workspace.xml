@@ -14,7 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/JumpGame4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JumpGame4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last.edited.regexp" value="abc\ntasd\n" />
+    <property name="last.edited.regexp" value="/abc/def/fef" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/common" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -221,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00817" summary="Solve medium and a bit tricky solution, find a permutation of A[] that has the maximum advantage over B[], advantage of an index in A[] occurs when A[i] &gt; B[i], using Greedy algorithm.&#10;&#10;Trick was to place the smallest number greater than B[i] in A[i]. If no such element exists, place the smallest unplaced element of A[]. This strategy reduces wastage and minimizes loss.">
-      <created>1616593445933</created>
-      <option name="number" value="00817" />
-      <option name="presentableId" value="LOCAL-00817" />
-      <option name="project" value="LOCAL" />
-      <updated>1616593445933</updated>
     </task>
     <task id="LOCAL-00818" summary="Add Twitter PhoneScreen interview experience. All hail LeetCode. Solved the question couple of hours before actual onsite. &#10;&#10;Although I am confident to solve it during onsite itself, having solved it beforehand gave me an edge over all the bugs and edge cases.">
       <created>1616614062150</created>
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618159342769</updated>
     </task>
-    <option name="localTasksCounter" value="866" />
+    <task id="LOCAL-00866" summary="Clarify problem statement and add comment">
+      <created>1618159984600</created>
+      <option name="number" value="00866" />
+      <option name="presentableId" value="LOCAL-00866" />
+      <option name="project" value="LOCAL" />
+      <updated>1618159984600</updated>
+    </task>
+    <option name="localTasksCounter" value="867" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find whether a given matrix of strings is equivalent to its transposed form by checking each char with it's respective transposed char location ie. (i,j) &lt;-&gt; (j,i)" />
     <MESSAGE value="Solve easy and a bit tricky problem, reorganize a string by ensuring neither two letters are adjacent nor two digits are adjacent using Greedy. &#10;&#10;Leveraged prior learnings of solving string reorganization problems by placing the most frequent characters first ie. place either letters or digits first." />
     <MESSAGE value="Add problems related to marking required intervals and merging them." />
     <MESSAGE value="Add matrix related problems" />
@@ -664,7 +663,8 @@
     <MESSAGE value="Add Hotstar Bar Raiser interview experience with Director." />
     <MESSAGE value="Add simplified solution which uses custom comparator for sorting and update the existing code to use insertion sort instead as it's much easier to visualize." />
     <MESSAGE value="Add input constraints in problem statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add input constraints in problem statement" />
+    <MESSAGE value="Clarify problem statement and add comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clarify problem statement and add comment" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
