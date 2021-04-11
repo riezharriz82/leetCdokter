@@ -14,6 +14,11 @@ import java.util.Arrays;
  * Input: [[5,4],[6,4],[6,7],[2,3]]
  * Output: 3
  * Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
+ * <p>
+ * Constraints:
+ * 1 <= envelopes.length <= 5000
+ * envelopes[i].length == 2
+ * 1 <= wi, hi <= 10^4
  */
 public class RussianDollEnvelopes {
     /**
