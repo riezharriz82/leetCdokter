@@ -7,9 +7,9 @@ import java.util.*;
  * <p>
  * In one step you can jump from index i to index:
  * <p>
- * i + 1 where: i + 1 < n.
- * i - 1 where: i - 1 >= 0.
- * j where: arr[i] == arr[j] and i != j.
+ * 1. i + 1 where: i + 1 < n.
+ * 2. i - 1 where: i - 1 >= 0.
+ * 3. j where: arr[i] == arr[j] and i != j.
  * Return the minimum number of steps to reach the last index of the array.
  * <p>
  * Notice that you can not jump outside of the array at any time.
@@ -72,7 +72,7 @@ public class JumpGame4 {
                 }
                 for (int indices : map.getOrDefault(arr[head], new ArrayList<>())) {
                     if (indices != head && !visited[indices]) {
-                        visited[indices] = true;
+                        visited[indices] = true; //remember to mark the new node as visited before adding it to the queue
                         queue.add(indices);
                     }
                 }
@@ -122,7 +122,6 @@ public class JumpGame4 {
                         visited[neighbour] = true;
                         nextLevel.add(neighbour);
                     }
-
                 }
                 map.get(arr[node]).clear(); //very important to clear or remove the nodes to avoid trying to visit duplicate nodes
                 //need to check whether any neighbour of current node, exist in other queue or not
