@@ -2,6 +2,7 @@ import java.util.TreeMap;
 
 /**
  * https://leetcode.com/problems/hand-of-straights/
+ * https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/
  * <p>
  * Alice has a hand of cards, given as an array of integers.
  * <p>
@@ -18,9 +19,17 @@ import java.util.TreeMap;
  * Explanation: Alice's hand can't be rearranged into groups of 4.
  */
 public class DivideArrayInSetsOfKConsecutiveNumbers {
+    /**
+     * Approach: Using TreeMap is important, allows us to give the smallest number in log(n) and find in O(1) and remove in log(n)
+     * Using PriorityQueue will increase the time complexity of remove to O(n)
+     * Remember to use TreeMap in place of priority queue where find and remove are required
+     * <p>
+     * Another approach would be to maintain a hashmap of key -> frequency and then sort the input array.
+     * Use the sorted array to traverse in an ordered manner, just like we are leveraging firstKey() of treeMap to traverse in sorted manner.
+     * <p>
+     * {@link DesignALeaderboard}
+     */
     public boolean isNStraightHand(int[] hand, int W) {
-        //this is important, allows us to give the smallest number in log(n)
-        //can be replaced by priority queue also
         TreeMap<Integer, Integer> treeMap = new TreeMap<>();
         for (int num : hand) {
             treeMap.put(num, treeMap.getOrDefault(num, 0) + 1);
