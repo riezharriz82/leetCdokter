@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartitionList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartitionList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00821" summary="Solve medium and tricky problem, find the max product of two words length such that these two words don't share any common character using bitmask.&#10;&#10;During my initial thought process I could not think of using bitmasks and was leaning towards maintaining a reverse indexes for characters -&gt; set of indexes of words.">
-      <created>1616881111147</created>
-      <option name="number" value="00821" />
-      <option name="presentableId" value="LOCAL-00821" />
-      <option name="project" value="LOCAL" />
-      <updated>1616881111148</updated>
     </task>
     <task id="LOCAL-00822" summary="Solve medium and extremely tricky reconstruction problem, reconstruct original digits from its scrambled english representation using tricky observation.&#10;&#10;Initially I tried to solve using greedy where I greedily checked whether I could assign &quot;zero&quot;, &quot;one&quot; or so on.. but it didn't work for input like &quot;twonine&quot;, because &quot;one&quot; is present in the input and it didn't result in proper utilization of characters.&#10;&#10;Trick was to find the unique characters of each digit and try to leverage that uniqueness to find how many times that digit exists e.g. 'z' is unique to &quot;zero&quot; and so on. Also check must be done in an ordered manner.">
       <created>1616959793556</created>
@@ -566,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618422596818</updated>
     </task>
-    <option name="localTasksCounter" value="870" />
+    <task id="LOCAL-00870" summary="Solve medium and extremely trick to solve in O(1) space using iterative traversal using stack, flatten a nested list.&#10;&#10;Was not able to solve it in O(1) space on my own. Failure after a long time. Still a long way to go.">
+      <created>1618517248307</created>
+      <option name="number" value="00870" />
+      <option name="presentableId" value="LOCAL-00870" />
+      <option name="project" value="LOCAL" />
+      <updated>1618517248307</updated>
+    </task>
+    <option name="localTasksCounter" value="871" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the maximum number of vowels in a substring of size k using standard sliding window template." />
     <MESSAGE value="Solve medium and a bit tricky problem, design a circular queue using a fixed size array. Decided to go with array instead of linked list because array is optimal due to optimal cache hit.&#10;&#10;Leveraged learnings from reading the ArrayDeque source code which also uses an array." />
     <MESSAGE value="Add comment regarding Chunked transfer encoding used in HTTP 1.1" />
     <MESSAGE value="Solve medium design circular dequeue using fixed size array and two pointers.&#10;&#10;Leveraged prior learnings of designing a circular queue." />
@@ -665,7 +663,8 @@
     <MESSAGE value="Solve hard design in-memory file system and support ls(), mkdir(), cat() and echo() by modelling the file system as a n-ary tree.&#10;&#10;Was able to solve this question in 30 minutes :)" />
     <MESSAGE value="Add approach in DivideArrayInSetsOfKConsecutiveNumbers" />
     <MESSAGE value="Solve medium reorder a linked list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium reorder a linked list" />
+    <MESSAGE value="Solve medium and extremely trick to solve in O(1) space using iterative traversal using stack, flatten a nested list.&#10;&#10;Was not able to solve it in O(1) space on my own. Failure after a long time. Still a long way to go." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely trick to solve in O(1) space using iterative traversal using stack, flatten a nested list.&#10;&#10;Was not able to solve it in O(1) space on my own. Failure after a long time. Still a long way to go." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
