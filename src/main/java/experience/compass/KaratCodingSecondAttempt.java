@@ -51,6 +51,11 @@ public class KaratCodingSecondAttempt {
              'flame']
 
     n = number of words OR total characters
+
+
+    Result: After a month, got a call from another recruiter asking to apply to Compass. I have to tell her that it's been a month since
+    I heard back from you. Post that she gave me the feedback stating that Karat recommended for another screening round.
+    So I have to opt for another telephonic screening round. So I guess the cutoff is 2 questions. Brutal.
     </pre>
 */
     public static void main(String[] argv) {
