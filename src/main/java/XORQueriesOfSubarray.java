@@ -25,6 +25,8 @@ public class XORQueriesOfSubarray {
      * This problem is similar to {@link SubarraySumEqualsK} except instead of sum, problem talks about subarray xor
      * <p>
      * so if the xor of a[0...i] is X and the xor of a[0 to k] is Y then xor of a[k+1, i] is X ^ Y
+     * <p>
+     * {@link MaximumXorForEachQuery} related XOR problem
      */
     public int[] xorQueries(int[] arr, int[][] queries) {
         int n = arr.length;
