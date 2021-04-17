@@ -13,10 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/XORQueriesOfSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/XORQueriesOfSubarray.java" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,13 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00825" summary="Solve medium design bounded blocking queue problem using two conditions and a lock to ensure thread safe operations on shared state (queue)">
-      <created>1616972364415</created>
-      <option name="number" value="00825" />
-      <option name="presentableId" value="LOCAL-00825" />
-      <option name="project" value="LOCAL" />
-      <updated>1616972364415</updated>
     </task>
     <task id="LOCAL-00826" summary="Solve easy concurrency related problem, control access to three functions in order ie. call to second() must not be executed before call to first() has finished and call to third() must not be executed before call to second() has finished.&#10;&#10;Used 2 CountDownLatch to signal completion of a method and unblock another method. Could have also solved it using Semaphore in initial locked state.">
       <created>1616973840485</created>
@@ -566,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618676044630</updated>
     </task>
-    <option name="localTasksCounter" value="874" />
+    <task id="LOCAL-00874" summary="Solve medium and a bit tricky find the k that maximizes the running xor for the given array by leveraging the fact that xor is complement of itself.&#10;&#10;Leveraged prior learning of solving XORQueriesOfSubarray">
+      <created>1618677199552</created>
+      <option name="number" value="00874" />
+      <option name="presentableId" value="LOCAL-00874" />
+      <option name="project" value="LOCAL" />
+      <updated>1618677199552</updated>
+    </task>
+    <option name="localTasksCounter" value="875" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +637,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add medium lock binary tree which supports locking and unlocking in O(h) time." />
     <MESSAGE value="Solve medium" />
     <MESSAGE value="Add comment regarding generating a sliding bitmask" />
     <MESSAGE value="Add brute force solution for FindTheCelebrity" />
@@ -665,7 +661,8 @@
     <MESSAGE value="Solve medium flatten a 2D vector iteratively using two pointers, one tracking the outer index and one tracking the inner index.&#10;&#10;Leveraged prior learning of solving iterator problem in FlattenNestedListIterator" />
     <MESSAGE value="Solve medium design a zig zag iterator that cycles over k lists by maintaining a queue of iterators.&#10;&#10;Push back the current head back at the end if the current iterator has still some elements left." />
     <MESSAGE value="Solve medium find the number of points that lies inside a circle using brute force." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the number of points that lies inside a circle using brute force." />
+    <MESSAGE value="Solve medium and a bit tricky find the k that maximizes the running xor for the given array by leveraging the fact that xor is complement of itself.&#10;&#10;Leveraged prior learning of solving XORQueriesOfSubarray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky find the k that maximizes the running xor for the given array by leveraging the fact that xor is complement of itself.&#10;&#10;Leveraged prior learning of solving XORQueriesOfSubarray" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
