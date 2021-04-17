@@ -66,5 +66,10 @@ Behavioural question
 1. When did you receive any critical feedback and what steps did you took to address the issue.
 Explained being too critical in my CR comments. More data oriented, less emotional.
 
-
+___________________________________________________________________________________________________________________________________________________
+Feedback for this round
+Taking a lot of assumptions without explicitly calling them out
+Class diagrams
+Extensibility of interface ? (Not sure)
+Separation of concerns ? (Not sure)
 
