@@ -35,6 +35,8 @@ private void recur(Node root, List<Integer> leaves) {
     }
 }
 
+Refer to {@link SecondMinimumNodeInABinaryTree} for further discussion
+
 Question : Find factorial of 150
 Approach: Divide and conquer, similar to merge sort
 16! -> 16*15...9 *.  (8!)
