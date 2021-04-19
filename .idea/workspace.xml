@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/experience/compass/KaratCodingSecondAttempt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/experience/compass/KaratCodingSecondAttempt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,20 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00827" summary="Add variant of subset sum problem">
-      <created>1617010141448</created>
-      <option name="number" value="00827" />
-      <option name="presentableId" value="LOCAL-00827" />
-      <option name="project" value="LOCAL" />
-      <updated>1617010141448</updated>
-    </task>
-    <task id="LOCAL-00828" summary="Solve medium and a bit tricky problem, find the minimum flips required to match a provided preorder traversal of a tree using greedy.&#10;&#10;Leveraged prior learnings of converting a preorder traversal to a tree using a global index. (Joveo interview experience)">
-      <created>1617031961531</created>
-      <option name="number" value="00828" />
-      <option name="presentableId" value="LOCAL-00828" />
-      <option name="project" value="LOCAL" />
-      <updated>1617031961531</updated>
     </task>
     <task id="LOCAL-00829" summary="Solve medium and a bit tricky problem, find the minimum no of semesters required to study courses given that the prerequisite of a course must be studied in a different semester, by finding the longest path in a DAG. &#10;&#10;In order to find the longest path, have to use DFS + Memoization in order to avoid computing the length again.&#10;DP on Graph.">
       <created>1617038850145</created>
@@ -566,7 +551,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618677490280</updated>
     </task>
-    <option name="localTasksCounter" value="876" />
+    <task id="LOCAL-00876" summary="Update Compass interview feedback">
+      <created>1618687900554</created>
+      <option name="number" value="00876" />
+      <option name="presentableId" value="LOCAL-00876" />
+      <option name="project" value="LOCAL" />
+      <updated>1618687900554</updated>
+    </task>
+    <task id="LOCAL-00877" summary="Update feedback of Apna HLD round">
+      <created>1618688126351</created>
+      <option name="number" value="00877" />
+      <option name="presentableId" value="LOCAL-00877" />
+      <option name="project" value="LOCAL" />
+      <updated>1618688126351</updated>
+    </task>
+    <option name="localTasksCounter" value="878" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,8 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment regarding generating a sliding bitmask" />
-    <MESSAGE value="Add brute force solution for FindTheCelebrity" />
     <MESSAGE value="Solve medium and extremely trick to solve in linear time find whether array has same count of global and local inversions. &#10;&#10;Solving this in nlogn was a bit easier as it involved counting inversions using merge sort. This was my first attempt writing merge sort without copying. Made a lot of mistakes while handling various indices in merge()" />
     <MESSAGE value="Add related interval based problems" />
     <MESSAGE value="Add time complexity and input constraints" />
@@ -665,7 +662,9 @@
     <MESSAGE value="Solve medium find the number of points that lies inside a circle using brute force." />
     <MESSAGE value="Solve medium and a bit tricky find the k that maximizes the running xor for the given array by leveraging the fact that xor is complement of itself.&#10;&#10;Leveraged prior learning of solving XORQueriesOfSubarray" />
     <MESSAGE value="Solve medium design a Trie data structure that support insert(), search() and startsWith()&#10;&#10;Remember to use Trie in problems that deals with prefixes of strings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium design a Trie data structure that support insert(), search() and startsWith()&#10;&#10;Remember to use Trie in problems that deals with prefixes of strings." />
+    <MESSAGE value="Update Compass interview feedback" />
+    <MESSAGE value="Update feedback of Apna HLD round" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update feedback of Apna HLD round" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
