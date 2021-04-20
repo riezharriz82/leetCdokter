@@ -41,7 +41,7 @@ public class MaxStack {
      * In order to remove in constant time, we can store the node address directly in treeMap, so that we can delete that node directly
      * <p>
      * Similar to LRUCache, keep dummy head and tail pointer to easily handle null cases
-     * {@link LRUCache} {@link MaxFrequencyStackSimplified} for related design questions
+     * {@link LRUCache} {@link MaxFrequencyStackTreeMap} for related design questions
      */
     public MaxStack() {
         head = new Node(-1);

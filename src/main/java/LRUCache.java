@@ -29,7 +29,7 @@ import java.util.Map;
 public class LRUCache {
     int maxCapacity;
     DLL dummyHead, dummyTail; //acts as dummy nodes to quickly add to and remove from
-    //structure is dummyHead -> recently used 1 -> second recently used -> third recently used .... least recently used -> dummyTail
+    //structure is dummyHead -> most recently used -> second recently used -> third recently used .... least recently used -> dummyTail
     //when adding a new node, just add it after dummyHead
     //when removing the least recently used node, remove the node before dummyTail
     Map<Integer, DLL> map;

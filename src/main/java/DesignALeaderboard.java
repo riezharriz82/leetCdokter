@@ -49,7 +49,7 @@ public class DesignALeaderboard {
      * But priority queue supports deletion in O(n) time. As learnt earlier, treemap needs to be used instead of priority queue
      * where deletion is required. So we create another treemap of score to frequency in order to find the top k scores
      * <p>
-     * {@link SlidingWindowMedian} {@link TopKFrequentElements} related problems
+     * {@link SlidingWindowMedian} {@link TopKFrequentElements} {@link MaxFrequencyStackTreeMap} related problems
      */
     public DesignALeaderboard() {
 

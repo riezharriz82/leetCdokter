@@ -15,7 +15,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SubarraySumEqualsK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SubarraySumEqualsK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DesignALeaderboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignALeaderboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaxFrequencyStackSimplified.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxFrequencyStackTreeMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaxStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,20 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00832" summary="Add Uber's 4th and 5th interview round experience.">
-      <created>1617119785019</created>
-      <option name="number" value="00832" />
-      <option name="presentableId" value="LOCAL-00832" />
-      <option name="project" value="LOCAL" />
-      <updated>1617119785019</updated>
-    </task>
-    <task id="LOCAL-00833" summary="Add Apna fourth round interview experience. Had a couple of points deduction. Not sure whether I will get a call back for next round.">
-      <created>1617130412039</created>
-      <option name="number" value="00833" />
-      <option name="presentableId" value="LOCAL-00833" />
-      <option name="project" value="LOCAL" />
-      <updated>1617130412039</updated>
     </task>
     <task id="LOCAL-00834" summary="Solve easy find lucky numbers in a matrix i.e smallest number in current row and largest number in current col using two pass approach.">
       <created>1617229289612</created>
@@ -566,7 +555,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618845394866</updated>
     </task>
-    <option name="localTasksCounter" value="881" />
+    <task id="LOCAL-00881" summary="Add hint towards using prefix sum to find a subarray that has the target xor.">
+      <created>1618932620470</created>
+      <option name="number" value="00881" />
+      <option name="presentableId" value="LOCAL-00881" />
+      <option name="project" value="LOCAL" />
+      <updated>1618932620470</updated>
+    </task>
+    <task id="LOCAL-00882" summary="Add hint towards using prefix sum to find a subarray that has the target xor.">
+      <created>1618932692777</created>
+      <option name="number" value="00882" />
+      <option name="presentableId" value="LOCAL-00882" />
+      <option name="project" value="LOCAL" />
+      <updated>1618932692777</updated>
+    </task>
+    <option name="localTasksCounter" value="883" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +643,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add related sliding window problems of fixed size" />
     <MESSAGE value="Add Upstox interview experience." />
     <MESSAGE value="Solve medium find inorder successor in a BST using recursion and leveraging property of BST." />
     <MESSAGE value="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value." />
@@ -665,7 +667,8 @@
     <MESSAGE value="Solve medium implement a Trie data structure that supports countWordsEqualTo() and countWordsStartingWith() and erase() methods.&#10;&#10;Leveraged prior learnings of storing useful information directly in nodes of Trie. Care must be taken while performing erase() to actually remove the nodes instead of just decrementing the count." />
     <MESSAGE value="Solve easy and extremely tricky find second minimum node in a binary tree using divide and conquer in O(height). Was not able to solve this on my own in O(height)&#10;&#10;Learnings: Use divide and conquer to find the min/max element in a tree along with using it in arithmetic expressions." />
     <MESSAGE value="Solve hard and a bit tricky problem find the minimum candies to give to people such that people with high ratings should be given more candies than their neighbours using two pass greedy solution.&#10;&#10;Leveraged prior learnings of solving mountain related problem using two passes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and a bit tricky problem find the minimum candies to give to people such that people with high ratings should be given more candies than their neighbours using two pass greedy solution.&#10;&#10;Leveraged prior learnings of solving mountain related problem using two passes." />
+    <MESSAGE value="Add hint towards using prefix sum to find a subarray that has the target xor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add hint towards using prefix sum to find a subarray that has the target xor." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
