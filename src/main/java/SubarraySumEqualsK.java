@@ -12,6 +12,9 @@ import java.util.HashMap;
 public class SubarraySumEqualsK {
     /**
      * Approach: Standard subarray problem dealing with prefix sum. Need a hashmap to store all the prefix sum.
+     * <p>
+     * If the question is modified to ask find a subarray whose xor equals K, then we have to use prefix sum technique as well.
+     * Remember that xor is it's inverse, so look for a key in map which is (curXor ^ targetXor)
      */
     public int subarraySum(int[] nums, int k) {
         int res = 0, curSum = 0;
