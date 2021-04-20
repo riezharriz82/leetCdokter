@@ -26,6 +26,8 @@ public class XORQueriesOfSubarray {
      * <p>
      * so if the xor of a[0...i] is X and the xor of a[0 to k] is Y then xor of a[k+1, i] is X ^ Y
      * <p>
+     * This technique can be leveraged to find all subarrays that have the target xor using prefix sum technique
+     * <p>
      * {@link MaximumXorForEachQuery} related XOR problem
      */
     public int[] xorQueries(int[] arr, int[][] queries) {
