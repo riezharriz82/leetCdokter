@@ -15,10 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DesignALeaderboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DesignALeaderboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaxFrequencyStackSimplified.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxFrequencyStackTreeMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaxStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00834" summary="Solve easy find lucky numbers in a matrix i.e smallest number in current row and largest number in current col using two pass approach.">
-      <created>1617229289612</created>
-      <option name="number" value="00834" />
-      <option name="presentableId" value="LOCAL-00834" />
-      <option name="project" value="LOCAL" />
-      <updated>1617229289613</updated>
     </task>
     <task id="LOCAL-00835" summary="Solve easy and a bit tricky find the shortest subarray in an array that has the same degree as the entire array. Degree here is the max frequency of any one of its elements.&#10;&#10;Tricky thing was to use sliding window to keep track of elements frequency in current window. Can also be solved without using sliding window by tracking first and last occurrence of each number.">
       <created>1617279405158</created>
@@ -569,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618932692777</updated>
     </task>
-    <option name="localTasksCounter" value="883" />
+    <task id="LOCAL-00883" summary="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous">
+      <created>1618938156968</created>
+      <option name="number" value="00883" />
+      <option name="presentableId" value="LOCAL-00883" />
+      <option name="project" value="LOCAL" />
+      <updated>1618938156968</updated>
+    </task>
+    <option name="localTasksCounter" value="884" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add Upstox interview experience." />
     <MESSAGE value="Solve medium find inorder successor in a BST using recursion and leveraging property of BST." />
     <MESSAGE value="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value." />
     <MESSAGE value="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level." />
@@ -668,7 +663,8 @@
     <MESSAGE value="Solve easy and extremely tricky find second minimum node in a binary tree using divide and conquer in O(height). Was not able to solve this on my own in O(height)&#10;&#10;Learnings: Use divide and conquer to find the min/max element in a tree along with using it in arithmetic expressions." />
     <MESSAGE value="Solve hard and a bit tricky problem find the minimum candies to give to people such that people with high ratings should be given more candies than their neighbours using two pass greedy solution.&#10;&#10;Leveraged prior learnings of solving mountain related problem using two passes." />
     <MESSAGE value="Add hint towards using prefix sum to find a subarray that has the target xor." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add hint towards using prefix sum to find a subarray that has the target xor." />
+    <MESSAGE value="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
