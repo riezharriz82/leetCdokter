@@ -222,13 +222,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00835" summary="Solve easy and a bit tricky find the shortest subarray in an array that has the same degree as the entire array. Degree here is the max frequency of any one of its elements.&#10;&#10;Tricky thing was to use sliding window to keep track of elements frequency in current window. Can also be solved without using sliding window by tracking first and last occurrence of each number.">
-      <created>1617279405158</created>
-      <option name="number" value="00835" />
-      <option name="presentableId" value="LOCAL-00835" />
-      <option name="project" value="LOCAL" />
-      <updated>1617279405158</updated>
-    </task>
     <task id="LOCAL-00836" summary="Solve easy find the missing ranges in a sorted array and a target range by comparing the expected value with the actual value to see if any range is missing.">
       <created>1617281110546</created>
       <option name="number" value="00836" />
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618938156968</updated>
     </task>
-    <option name="localTasksCounter" value="884" />
+    <task id="LOCAL-00884" summary="Actually add the optimized solution for designing a MaxFrequencyStack">
+      <created>1619021466050</created>
+      <option name="number" value="00884" />
+      <option name="presentableId" value="LOCAL-00884" />
+      <option name="project" value="LOCAL" />
+      <updated>1619021466050</updated>
+    </task>
+    <option name="localTasksCounter" value="885" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find inorder successor in a BST using recursion and leveraging property of BST." />
     <MESSAGE value="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value." />
     <MESSAGE value="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level." />
     <MESSAGE value="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency." />
@@ -664,7 +663,8 @@
     <MESSAGE value="Solve hard and a bit tricky problem find the minimum candies to give to people such that people with high ratings should be given more candies than their neighbours using two pass greedy solution.&#10;&#10;Leveraged prior learnings of solving mountain related problem using two passes." />
     <MESSAGE value="Add hint towards using prefix sum to find a subarray that has the target xor." />
     <MESSAGE value="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous" />
+    <MESSAGE value="Actually add the optimized solution for designing a MaxFrequencyStack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actually add the optimized solution for designing a MaxFrequencyStack" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
