@@ -222,13 +222,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00836" summary="Solve easy find the missing ranges in a sorted array and a target range by comparing the expected value with the actual value to see if any range is missing.">
-      <created>1617281110546</created>
-      <option name="number" value="00836" />
-      <option name="presentableId" value="LOCAL-00836" />
-      <option name="project" value="LOCAL" />
-      <updated>1617281110546</updated>
-    </task>
     <task id="LOCAL-00837" summary="Solve easy convert a string to it's hexadecimal format using maths.">
       <created>1617282567591</created>
       <option name="number" value="00837" />
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619021466050</updated>
     </task>
-    <option name="localTasksCounter" value="885" />
+    <task id="LOCAL-00885" summary="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm.">
+      <created>1619201413671</created>
+      <option name="number" value="00885" />
+      <option name="presentableId" value="LOCAL-00885" />
+      <option name="project" value="LOCAL" />
+      <updated>1619201413671</updated>
+    </task>
+    <option name="localTasksCounter" value="886" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value." />
     <MESSAGE value="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level." />
     <MESSAGE value="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency." />
     <MESSAGE value="Add Upstox final round interview experience with Director" />
@@ -664,7 +663,8 @@
     <MESSAGE value="Add hint towards using prefix sum to find a subarray that has the target xor." />
     <MESSAGE value="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous" />
     <MESSAGE value="Actually add the optimized solution for designing a MaxFrequencyStack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actually add the optimized solution for designing a MaxFrequencyStack" />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
