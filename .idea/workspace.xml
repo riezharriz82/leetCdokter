@@ -138,7 +138,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
+  <component name="RunManager" selected="Application.LFUCache">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -146,13 +146,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoderByteTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="experience.apna.CoderByteTest" />
-      <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,6 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LFUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LFUCache" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -196,20 +196,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CoderByteTest" />
       <item itemvalue="Application.DivideChocolates" />
       <item itemvalue="Application.InventoryManagement" />
       <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="Application.LFUCache" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LFUCache" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.JumpGame4" />
         <item itemvalue="Application.InventoryManagement" />
         <item itemvalue="Application.DivideChocolates" />
-        <item itemvalue="Application.CoderByteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -221,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00837" summary="Solve easy convert a string to it's hexadecimal format using maths.">
-      <created>1617282567591</created>
-      <option name="number" value="00837" />
-      <option name="presentableId" value="LOCAL-00837" />
-      <option name="project" value="LOCAL" />
-      <updated>1617282567591</updated>
     </task>
     <task id="LOCAL-00838" summary="Solve easy perform string shifts by keeping track of net shifts and handling modulo index operations.">
       <created>1617290123208</created>
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619201413671</updated>
     </task>
-    <option name="localTasksCounter" value="886" />
+    <task id="LOCAL-00886" summary="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles.">
+      <created>1619207557011</created>
+      <option name="number" value="00886" />
+      <option name="presentableId" value="LOCAL-00886" />
+      <option name="project" value="LOCAL" />
+      <updated>1619207557011</updated>
+    </task>
+    <option name="localTasksCounter" value="887" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level." />
     <MESSAGE value="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency." />
     <MESSAGE value="Add Upstox final round interview experience with Director" />
     <MESSAGE value="Add Hotstar Bar Raiser interview experience with Director." />
@@ -664,7 +663,8 @@
     <MESSAGE value="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous" />
     <MESSAGE value="Actually add the optimized solution for designing a MaxFrequencyStack" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm." />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
