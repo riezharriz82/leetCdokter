@@ -199,9 +199,9 @@
       <item itemvalue="Application.DivideChocolates" />
       <item itemvalue="Application.InventoryManagement" />
       <item itemvalue="Application.JumpGame4" />
+      <item itemvalue="Application.LFUCache" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Application.LFUCache" />
     </list>
     <recent_temporary>
       <list>
@@ -221,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00838" summary="Solve easy perform string shifts by keeping track of net shifts and handling modulo index operations.">
-      <created>1617290123208</created>
-      <option name="number" value="00838" />
-      <option name="presentableId" value="LOCAL-00838" />
-      <option name="project" value="LOCAL" />
-      <updated>1617290123208</updated>
     </task>
     <task id="LOCAL-00839" summary="Solve easy find whether two elements exists in a rolling array whose sum equals k.&#10;&#10;Learnings: Hashmap iteration is directly proportional to its capacity rather than no of k/v mappings.">
       <created>1617300111608</created>
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619207557011</updated>
     </task>
-    <option name="localTasksCounter" value="887" />
+    <task id="LOCAL-00887" summary="Solve hard and extremely tricky design LFU cache using hashmap of key -&gt; node + Doubly linked list of frequency -&gt; set of nodes with the respective frequency.&#10;&#10;I was not able to fully solve this problem on my own. I was not able to cleanly implement how to find the smallest frequency and reshuffle nodes to +1 frequency node in DLL. &#10;Once I saw the paper, I was able to visualize it clearly and was able to implement it cleanly as well.">
+      <created>1619270337843</created>
+      <option name="number" value="00887" />
+      <option name="presentableId" value="LOCAL-00887" />
+      <option name="project" value="LOCAL" />
+      <updated>1619270337843</updated>
+    </task>
+    <option name="localTasksCounter" value="888" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency." />
     <MESSAGE value="Add Upstox final round interview experience with Director" />
     <MESSAGE value="Add Hotstar Bar Raiser interview experience with Director." />
     <MESSAGE value="Add simplified solution which uses custom comparator for sorting and update the existing code to use insertion sort instead as it's much easier to visualize." />
@@ -664,7 +663,8 @@
     <MESSAGE value="Actually add the optimized solution for designing a MaxFrequencyStack" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles." />
+    <MESSAGE value="Solve hard and extremely tricky design LFU cache using hashmap of key -&gt; node + Doubly linked list of frequency -&gt; set of nodes with the respective frequency.&#10;&#10;I was not able to fully solve this problem on my own. I was not able to cleanly implement how to find the smallest frequency and reshuffle nodes to +1 frequency node in DLL. &#10;Once I saw the paper, I was able to visualize it clearly and was able to implement it cleanly as well." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky design LFU cache using hashmap of key -&gt; node + Doubly linked list of frequency -&gt; set of nodes with the respective frequency.&#10;&#10;I was not able to fully solve this problem on my own. I was not able to cleanly implement how to find the smallest frequency and reshuffle nodes to +1 frequency node in DLL. &#10;Once I saw the paper, I was able to visualize it clearly and was able to implement it cleanly as well." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
