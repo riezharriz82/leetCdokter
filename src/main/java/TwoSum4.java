@@ -37,7 +37,7 @@ public class TwoSum4 {
      * in backward direction.
      * Time Complexity: O(n), Space Complexity: O(height)
      * <p>
-     * {@link FlattenNestedListIteratorIterative} {@link BinaryTreeIterativeInorderTraversal}
+     * {@link FlattenNestedListIteratorIterative} {@link BinaryTreeIterativeInorderTraversal} {@link TwoSumBSTs}
      */
     public boolean findTargetIterative(TreeNode root, int k) {
         BSTIterator leftIterator = new BSTIterator(root, DIRECTION.FORWARD);
