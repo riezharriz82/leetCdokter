@@ -138,7 +138,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LFUCache">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -205,8 +205,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LFUCache" />
         <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.LFUCache" />
         <item itemvalue="Application.JumpGame4" />
         <item itemvalue="Application.InventoryManagement" />
         <item itemvalue="Application.DivideChocolates" />
@@ -221,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00841" summary="Solve easy find whether a given matrix of strings is equivalent to its transposed form by checking each char with it's respective transposed char location ie. (i,j) &lt;-&gt; (j,i)">
-      <created>1617378648495</created>
-      <option name="number" value="00841" />
-      <option name="presentableId" value="LOCAL-00841" />
-      <option name="project" value="LOCAL" />
-      <updated>1617378648495</updated>
     </task>
     <task id="LOCAL-00842" summary="Solve easy and a bit tricky problem, reorganize a string by ensuring neither two letters are adjacent nor two digits are adjacent using Greedy. &#10;&#10;Leveraged prior learnings of solving string reorganization problems by placing the most frequent characters first ie. place either letters or digits first.">
       <created>1617403740938</created>
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619277852864</updated>
     </task>
-    <option name="localTasksCounter" value="890" />
+    <task id="LOCAL-00890" summary="Solve medium balance a given BST using Divide and conquer. In order to reduce the space complexity to O(1) need to use DSW algorithm.">
+      <created>1619284469634</created>
+      <option name="number" value="00890" />
+      <option name="presentableId" value="LOCAL-00890" />
+      <option name="project" value="LOCAL" />
+      <updated>1619284469634</updated>
+    </task>
+    <option name="localTasksCounter" value="891" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add simplified solution which uses custom comparator for sorting and update the existing code to use insertion sort instead as it's much easier to visualize." />
     <MESSAGE value="Add input constraints in problem statement" />
     <MESSAGE value="Clarify problem statement and add comment" />
     <MESSAGE value="Solve hard design in-memory file system and support ls(), mkdir(), cat() and echo() by modelling the file system as a n-ary tree.&#10;&#10;Was able to solve this question in 30 minutes :)" />
@@ -664,7 +663,8 @@
     <MESSAGE value="Solve hard and extremely tricky design LFU cache using hashmap of key -&gt; node + Doubly linked list of frequency -&gt; set of nodes with the respective frequency.&#10;&#10;I was not able to fully solve this problem on my own. I was not able to cleanly implement how to find the smallest frequency and reshuffle nodes to +1 frequency node in DLL. &#10;Once I saw the paper, I was able to visualize it clearly and was able to implement it cleanly as well." />
     <MESSAGE value="Solve easy and extremely tricky to optimize space complexity, find two nodes in a BST whose value equals k using iterative BST traversal.&#10;&#10;Learnings: Iterative traversals are very tricky." />
     <MESSAGE value="Solve medium find two nodes in two BST that sums to target node using iterative traversals. Perform a inorder iterative traversal for the first tree and a reverse inorder iterative traversal for the second tree.&#10;&#10;Leveraged prior learning of doing iterative BST traversal." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find two nodes in two BST that sums to target node using iterative traversals. Perform a inorder iterative traversal for the first tree and a reverse inorder iterative traversal for the second tree.&#10;&#10;Leveraged prior learning of doing iterative BST traversal." />
+    <MESSAGE value="Solve medium balance a given BST using Divide and conquer. In order to reduce the space complexity to O(1) need to use DSW algorithm." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium balance a given BST using Divide and conquer. In order to reduce the space complexity to O(1) need to use DSW algorithm." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
