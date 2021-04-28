@@ -222,13 +222,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00843" summary="Add problems related to marking required intervals and merging them.">
-      <created>1617436934985</created>
-      <option name="number" value="00843" />
-      <option name="presentableId" value="LOCAL-00843" />
-      <option name="project" value="LOCAL" />
-      <updated>1617436934985</updated>
-    </task>
     <task id="LOCAL-00844" summary="Add matrix related problems">
       <created>1617438128166</created>
       <option name="number" value="00844" />
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619546774053</updated>
     </task>
-    <option name="localTasksCounter" value="892" />
+    <task id="LOCAL-00892" summary="Solve medium and a bit tricky problem, find the no of total hits on counters received in last 5 minutes using deque. &#10;&#10;In my initial implementation, I implemented the solution using custom binary search by writing upper_bound() and lower_bound() but the solution became simplified after knowing that the timestamps are sorted for both getHits() and hits(), so we can simply use a deque for storing elements.">
+      <created>1619637109724</created>
+      <option name="number" value="00892" />
+      <option name="presentableId" value="LOCAL-00892" />
+      <option name="project" value="LOCAL" />
+      <updated>1619637109724</updated>
+    </task>
+    <option name="localTasksCounter" value="893" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Clarify problem statement and add comment" />
     <MESSAGE value="Solve hard design in-memory file system and support ls(), mkdir(), cat() and echo() by modelling the file system as a n-ary tree.&#10;&#10;Was able to solve this question in 30 minutes :)" />
     <MESSAGE value="Add approach in DivideArrayInSetsOfKConsecutiveNumbers" />
     <MESSAGE value="Solve medium reorder a linked list" />
@@ -664,7 +663,8 @@
     <MESSAGE value="Solve medium find two nodes in two BST that sums to target node using iterative traversals. Perform a inorder iterative traversal for the first tree and a reverse inorder iterative traversal for the second tree.&#10;&#10;Leveraged prior learning of doing iterative BST traversal." />
     <MESSAGE value="Solve medium balance a given BST using Divide and conquer. In order to reduce the space complexity to O(1) need to use DSW algorithm." />
     <MESSAGE value="Solve medium and extremely tricky to do in O(1) space, rotate an image clockwise 90 degrees in place by swapping the cells in group of 4's using recursion.&#10;&#10;Very happy to solve this question on my own in first attempt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky to do in O(1) space, rotate an image clockwise 90 degrees in place by swapping the cells in group of 4's using recursion.&#10;&#10;Very happy to solve this question on my own in first attempt." />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the no of total hits on counters received in last 5 minutes using deque. &#10;&#10;In my initial implementation, I implemented the solution using custom binary search by writing upper_bound() and lower_bound() but the solution became simplified after knowing that the timestamps are sorted for both getHits() and hits(), so we can simply use a deque for storing elements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the no of total hits on counters received in last 5 minutes using deque. &#10;&#10;In my initial implementation, I implemented the solution using custom binary search by writing upper_bound() and lower_bound() but the solution became simplified after knowing that the timestamps are sorted for both getHits() and hits(), so we can simply use a deque for storing elements." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
