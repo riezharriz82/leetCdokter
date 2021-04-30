@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RemoveDuplicatesFromSortedArray2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RemoveDuplicatesFromSortedArray2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,13 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00844" summary="Add matrix related problems">
-      <created>1617438128166</created>
-      <option name="number" value="00844" />
-      <option name="presentableId" value="LOCAL-00844" />
-      <option name="project" value="LOCAL" />
-      <updated>1617438128166</updated>
     </task>
     <task id="LOCAL-00845" summary="Solve medium find the maximum number of vowels in a substring of size k using standard sliding window template.">
       <created>1617479751639</created>
@@ -565,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619637109724</updated>
     </task>
-    <option name="localTasksCounter" value="893" />
+    <task id="LOCAL-00893" summary="Solve medium and a bit tricky problem, find the kth largest element in an array using quick select algorithm.&#10;&#10;Trick was to select a random pivot between [low, high] to reduce worst case time complexity.">
+      <created>1619641191143</created>
+      <option name="number" value="00893" />
+      <option name="presentableId" value="LOCAL-00893" />
+      <option name="project" value="LOCAL" />
+      <updated>1619641191143</updated>
+    </task>
+    <option name="localTasksCounter" value="894" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard design in-memory file system and support ls(), mkdir(), cat() and echo() by modelling the file system as a n-ary tree.&#10;&#10;Was able to solve this question in 30 minutes :)" />
     <MESSAGE value="Add approach in DivideArrayInSetsOfKConsecutiveNumbers" />
     <MESSAGE value="Solve medium reorder a linked list" />
     <MESSAGE value="Solve medium and extremely trick to solve in O(1) space using iterative traversal using stack, flatten a nested list.&#10;&#10;Was not able to solve it in O(1) space on my own. Failure after a long time. Still a long way to go." />
@@ -664,7 +664,8 @@
     <MESSAGE value="Solve medium balance a given BST using Divide and conquer. In order to reduce the space complexity to O(1) need to use DSW algorithm." />
     <MESSAGE value="Solve medium and extremely tricky to do in O(1) space, rotate an image clockwise 90 degrees in place by swapping the cells in group of 4's using recursion.&#10;&#10;Very happy to solve this question on my own in first attempt." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the no of total hits on counters received in last 5 minutes using deque. &#10;&#10;In my initial implementation, I implemented the solution using custom binary search by writing upper_bound() and lower_bound() but the solution became simplified after knowing that the timestamps are sorted for both getHits() and hits(), so we can simply use a deque for storing elements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the no of total hits on counters received in last 5 minutes using deque. &#10;&#10;In my initial implementation, I implemented the solution using custom binary search by writing upper_bound() and lower_bound() but the solution became simplified after knowing that the timestamps are sorted for both getHits() and hits(), so we can simply use a deque for storing elements." />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the kth largest element in an array using quick select algorithm.&#10;&#10;Trick was to select a random pivot between [low, high] to reduce worst case time complexity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the kth largest element in an array using quick select algorithm.&#10;&#10;Trick was to select a random pivot between [low, high] to reduce worst case time complexity." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

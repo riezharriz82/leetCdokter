@@ -17,6 +17,33 @@
  */
 public class RemoveDuplicatesFromSortedArray2 {
     /**
+     * Approach: Two pointers, fast and slow pointer,
+     * <p>
+     * This is similar to partition algorithm of quick sort. Make a single pass and check whether the current element can be inserted or not.
+     * If yes, insert it at the slow pointer index.
+     * <p>
+     * {@link RemoveElement} {@link RemoveDuplicatesFromSortedArray}
+     */
+    public int removeDuplicatesSimplified(int[] nums) {
+        int prev = Integer.MIN_VALUE, duplicateCount = 0;
+        int index = 0;
+        for (int num : nums) { //fast pointer
+            if (num == prev) {
+                if (duplicateCount == 0) { //we can insert at most 1 duplicate element
+                    //found the first duplicate, can still insert
+                    nums[index++] = num; //slow pointer
+                    duplicateCount = 1;
+                }
+            } else {
+                nums[index++] = num; //slow pointer
+                prev = num;
+                duplicateCount = 0;
+            }
+        }
+        return index;
+    }
+
+    /**
      * Approach: In my initial Solution I overwrote the duplicates with Integer.MAX_VALUE and sorted the output
      * which caused the Integer.MAX_VALUE to get fixed at the end, instead of sorting we can use two pointers to swap/ignore
      * Integer.MAX_VALUE items
