@@ -27,16 +27,28 @@ public class PrefixAndSuffixSearch {
     Trie suffixRoot = new Trie();
 
     /**
+     * <pre>
      * Approach: Maintain two tries, one that stores prefixes and other that stores suffixes.
-     * As trie only stores prefixes, prior storing suffixes, reverse the word and then store in suffix trie
-     * <p>
+     * As trie only stores prefixes, prior to storing suffixes, reverse the word and then store in suffix trie
+     *
+     * So when asked to find a pattern, find that prefix in prefix trie as well as the suffix in suffix trie.
+     * Perform DFS on both the tries to find all the valid indexes that satisfies the query.
+     *
+     * Now we need to find the largest index amongst the common indexes between these two sets.
+     * This can be achieved by finding set intersection between those two, which is a costly operation (linear)
+     * Time: ~470 ms
+     *
+     * We can optimize it a bit by avoiding the DFS operation by storing set<integer> of valid indexes directly at trie nodes
+     * This is similar to {@link DesignSearchAutocompleteSystem}
+     * Then we can perform set intersection between two sets. Strangely it times out. Not sure why my original solution gets AC
+     * but this solution times out.
+     *
      * Another approach is to just maintain one trie e.g consider apple
-     * Store words like "e{apple", "le{apple", "ple{apple", "pple{apple", "apple{apple"
-     * <p>
+     * Store words like "e{apple", "le{apple", "ple{apple", "pple{apple", "apple{apple" i.e. maintain a reverse index
      * So if you query for prefix = app and suffix = le, search for "le{app" in trie
      * Space required will be much larger than my current implementation but there is always a trade off
-     * <p>
-     * {@link DesignSearchAutocompleteSystem} for trie related problems
+     * See {@link PrefixAndSuffixSearchOptimized}
+     * </pre>
      */
     public PrefixAndSuffixSearch(String[] words) {
         for (int i = 0; i < words.length; i++) {
@@ -85,7 +97,7 @@ public class PrefixAndSuffixSearch {
         }
         Set<Integer> suffixIndices = new HashSet<>();
         DFS(temp, suffixIndices);
-        //find the intersection ie. common indices
+        //find the intersection ie. common indices, linear time complexity
         prefixIndices.retainAll(suffixIndices);
         //find the largest index
         int largestIndex = Integer.MIN_VALUE;

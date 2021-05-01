@@ -13,9 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the kth largest element in an array using quick select algorithm.&#10;&#10;Trick was to select a random pivot between [low, high] to reduce worst case time complexity.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RemoveDuplicatesFromSortedArray2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RemoveDuplicatesFromSortedArray2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrefixAndSuffixSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrefixAndSuffixSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
