@@ -17,6 +17,8 @@ public class MinimumAdjacentSwapsToArrangeBinaryGrid {
      * Count no of trailing zeroes for each row. Minimum no of zeroes at each row should be n - i - 1
      * If any row does not satisfy this criteria, look for the first row after i that satisfies this and bubble sort from that index till i
      * Keep track of number of swaps performed
+     * <p>
+     * {@link MinimumAdjacentSwapsToReachKthSmallestNumber} related adjacent swaps problem
      */
     public int minSwaps(int[][] grid) {
         int n = grid.length;

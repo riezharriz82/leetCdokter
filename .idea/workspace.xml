@@ -15,6 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumAdjacentSwapsToArrangeBinaryGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumAdjacentSwapsToArrangeBinaryGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NextPermutation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00846" summary="Solve medium and a bit tricky problem, design a circular queue using a fixed size array. Decided to go with array instead of linked list because array is optimal due to optimal cache hit.&#10;&#10;Leveraged learnings from reading the ArrayDeque source code which also uses an array.">
-      <created>1617559155237</created>
-      <option name="number" value="00846" />
-      <option name="presentableId" value="LOCAL-00846" />
-      <option name="project" value="LOCAL" />
-      <updated>1617559155238</updated>
     </task>
     <task id="LOCAL-00847" summary="Add comment regarding Chunked transfer encoding used in HTTP 1.1">
       <created>1617559486309</created>
@@ -565,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619902264277</updated>
     </task>
-    <option name="localTasksCounter" value="895" />
+    <task id="LOCAL-00895" summary="Solve medium find the smallest unreserved seat using treeset. &#10;&#10;Leveraged prior learning of solving seat allocation problem using ordered set.">
+      <created>1619905070200</created>
+      <option name="number" value="00895" />
+      <option name="presentableId" value="LOCAL-00895" />
+      <option name="project" value="LOCAL" />
+      <updated>1619905070200</updated>
+    </task>
+    <option name="localTasksCounter" value="896" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium reorder a linked list" />
     <MESSAGE value="Solve medium and extremely trick to solve in O(1) space using iterative traversal using stack, flatten a nested list.&#10;&#10;Was not able to solve it in O(1) space on my own. Failure after a long time. Still a long way to go." />
     <MESSAGE value="Solve medium flatten a 2D vector iteratively using two pointers, one tracking the outer index and one tracking the inner index.&#10;&#10;Leveraged prior learning of solving iterator problem in FlattenNestedListIterator" />
     <MESSAGE value="Solve medium design a zig zag iterator that cycles over k lists by maintaining a queue of iterators.&#10;&#10;Push back the current head back at the end if the current iterator has still some elements left." />
@@ -664,7 +665,8 @@
     <MESSAGE value="Solve medium and a bit tricky problem, find the no of total hits on counters received in last 5 minutes using deque. &#10;&#10;In my initial implementation, I implemented the solution using custom binary search by writing upper_bound() and lower_bound() but the solution became simplified after knowing that the timestamps are sorted for both getHits() and hits(), so we can simply use a deque for storing elements." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the kth largest element in an array using quick select algorithm.&#10;&#10;Trick was to select a random pivot between [low, high] to reduce worst case time complexity." />
     <MESSAGE value="Solve hard and extremely tricky to optimize, find whether a word with the provided suffix and prefix exists in dictionary or not using reverse indexes in trie.&#10;&#10;Trick was to generate all possible query patterns for a word and insert into trie ie. apple can be searched via &quot;apple|ap&quot;, &quot;ple|app&quot;, &quot;pple|ap&quot;. Don't forget to store useful information ie. index directly in trie node to avoid performing DFS." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and extremely tricky to optimize, find whether a word with the provided suffix and prefix exists in dictionary or not using reverse indexes in trie.&#10;&#10;Trick was to generate all possible query patterns for a word and insert into trie ie. apple can be searched via &quot;apple|ap&quot;, &quot;ple|app&quot;, &quot;pple|ap&quot;. Don't forget to store useful information ie. index directly in trie node to avoid performing DFS." />
+    <MESSAGE value="Solve medium find the smallest unreserved seat using treeset. &#10;&#10;Leveraged prior learning of solving seat allocation problem using ordered set." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the smallest unreserved seat using treeset. &#10;&#10;Leveraged prior learning of solving seat allocation problem using ordered set." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

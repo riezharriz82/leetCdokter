@@ -19,6 +19,7 @@ import java.util.Arrays;
 public class NextPermutation {
     /**
      * Refer to {@link NextGreaterElement3} for explanation
+     * {@link MinimumAdjacentSwapsToReachKthSmallestNumber} for related problem
      */
     public void nextPermutation(int[] nums) {
         boolean mismatchFound = false;
