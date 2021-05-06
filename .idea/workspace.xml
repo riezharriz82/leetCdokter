@@ -111,7 +111,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -221,13 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00848" summary="Solve medium design circular dequeue using fixed size array and two pointers.&#10;&#10;Leveraged prior learnings of designing a circular queue.">
-      <created>1617562051994</created>
-      <option name="number" value="00848" />
-      <option name="presentableId" value="LOCAL-00848" />
-      <option name="project" value="LOCAL" />
-      <updated>1617562051994</updated>
     </task>
     <task id="LOCAL-00849" summary="Add medium lock binary tree which supports locking and unlocking in O(h) time.">
       <created>1617645032308</created>
@@ -565,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619982036363</updated>
     </task>
-    <option name="localTasksCounter" value="897" />
+    <task id="LOCAL-00897" summary="Solve medium and extremely tricky to do in O(1) space using tricky recursion, find all the gray codes of n digits.&#10;&#10;Was able to do it on my own by maintaining a visited set and try flipping a bit.">
+      <created>1620062949587</created>
+      <option name="number" value="00897" />
+      <option name="presentableId" value="LOCAL-00897" />
+      <option name="project" value="LOCAL" />
+      <updated>1620062949588</updated>
+    </task>
+    <option name="localTasksCounter" value="898" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium flatten a 2D vector iteratively using two pointers, one tracking the outer index and one tracking the inner index.&#10;&#10;Leveraged prior learning of solving iterator problem in FlattenNestedListIterator" />
     <MESSAGE value="Solve medium design a zig zag iterator that cycles over k lists by maintaining a queue of iterators.&#10;&#10;Push back the current head back at the end if the current iterator has still some elements left." />
     <MESSAGE value="Solve medium find the number of points that lies inside a circle using brute force." />
     <MESSAGE value="Solve medium and a bit tricky find the k that maximizes the running xor for the given array by leveraging the fact that xor is complement of itself.&#10;&#10;Leveraged prior learning of solving XORQueriesOfSubarray" />
@@ -664,7 +663,8 @@
     <MESSAGE value="Solve hard and extremely tricky to optimize, find whether a word with the provided suffix and prefix exists in dictionary or not using reverse indexes in trie.&#10;&#10;Trick was to generate all possible query patterns for a word and insert into trie ie. apple can be searched via &quot;apple|ap&quot;, &quot;ple|app&quot;, &quot;pple|ap&quot;. Don't forget to store useful information ie. index directly in trie node to avoid performing DFS." />
     <MESSAGE value="Solve medium find the smallest unreserved seat using treeset. &#10;&#10;Leveraged prior learning of solving seat allocation problem using ordered set." />
     <MESSAGE value="Solve medium and a bit tricky problem find min adjacent swaps required to reach kth smallest number by first finding the kth next permutation and then finding the min swaps by logic similar to insertion sort." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem find min adjacent swaps required to reach kth smallest number by first finding the kth next permutation and then finding the min swaps by logic similar to insertion sort." />
+    <MESSAGE value="Solve medium and extremely tricky to do in O(1) space using tricky recursion, find all the gray codes of n digits.&#10;&#10;Was able to do it on my own by maintaining a visited set and try flipping a bit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky to do in O(1) space using tricky recursion, find all the gray codes of n digits.&#10;&#10;Was able to do it on my own by maintaining a visited set and try flipping a bit." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
