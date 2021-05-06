@@ -13,7 +13,7 @@
  * Output: false
  * Explanation: You can't get a non-decreasing array by modify at most one element.
  */
-public class ChangeOnlyOneElementToSortArray {
+public class NonDecreasingArray {
     /**
      * Greedy approach: When we encounter a mismatched pair i.e. nums[i-1] > nums[i] there are two options to correct it
      * 1. Change nums[i-1] to nums[i] e.g {7,10,8,9,12} -> {7,8,8,11,12} Why not nums[i] to nums[i-1] because increasing it might cause more conflict for the next range.

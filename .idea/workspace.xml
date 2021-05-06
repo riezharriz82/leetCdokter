@@ -13,9 +13,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,13 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00849" summary="Add medium lock binary tree which supports locking and unlocking in O(h) time.">
-      <created>1617645032308</created>
-      <option name="number" value="00849" />
-      <option name="presentableId" value="LOCAL-00849" />
-      <option name="project" value="LOCAL" />
-      <updated>1617645032308</updated>
     </task>
     <task id="LOCAL-00850" summary="Solve medium">
       <created>1617709531566</created>
@@ -565,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620062949588</updated>
     </task>
-    <option name="localTasksCounter" value="898" />
+    <task id="LOCAL-00898" summary="Solve medium and a bit tricky to optimize time and space complexity to O(n) and O(logn) by leveraging the inorder traversal of a sorted list to convert it to a balanced BST.">
+      <created>1620309066961</created>
+      <option name="number" value="00898" />
+      <option name="presentableId" value="LOCAL-00898" />
+      <option name="project" value="LOCAL" />
+      <updated>1620309066961</updated>
+    </task>
+    <option name="localTasksCounter" value="899" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +637,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium design a zig zag iterator that cycles over k lists by maintaining a queue of iterators.&#10;&#10;Push back the current head back at the end if the current iterator has still some elements left." />
     <MESSAGE value="Solve medium find the number of points that lies inside a circle using brute force." />
     <MESSAGE value="Solve medium and a bit tricky find the k that maximizes the running xor for the given array by leveraging the fact that xor is complement of itself.&#10;&#10;Leveraged prior learning of solving XORQueriesOfSubarray" />
     <MESSAGE value="Solve medium design a Trie data structure that support insert(), search() and startsWith()&#10;&#10;Remember to use Trie in problems that deals with prefixes of strings." />
@@ -664,7 +661,8 @@
     <MESSAGE value="Solve medium find the smallest unreserved seat using treeset. &#10;&#10;Leveraged prior learning of solving seat allocation problem using ordered set." />
     <MESSAGE value="Solve medium and a bit tricky problem find min adjacent swaps required to reach kth smallest number by first finding the kth next permutation and then finding the min swaps by logic similar to insertion sort." />
     <MESSAGE value="Solve medium and extremely tricky to do in O(1) space using tricky recursion, find all the gray codes of n digits.&#10;&#10;Was able to do it on my own by maintaining a visited set and try flipping a bit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky to do in O(1) space using tricky recursion, find all the gray codes of n digits.&#10;&#10;Was able to do it on my own by maintaining a visited set and try flipping a bit." />
+    <MESSAGE value="Solve medium and a bit tricky to optimize time and space complexity to O(n) and O(logn) by leveraging the inorder traversal of a sorted list to convert it to a balanced BST." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky to optimize time and space complexity to O(n) and O(logn) by leveraging the inorder traversal of a sorted list to convert it to a balanced BST." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
