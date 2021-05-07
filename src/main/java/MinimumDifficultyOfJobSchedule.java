@@ -46,7 +46,7 @@ public class MinimumDifficultyOfJobSchedule {
      * <p>
      * An more optimized solution involving monotonic stack reduces time complexity to O(nd)
      * <p>
-     * {@link SplitArrayLargestSum} {@link DivideChocolates} {@link LargestNumberWithDigitsThatSumUpToTarget} related problems
+     * {@link SplitArrayLargestSum} {@link DivideChocolates} {@link LargestNumberWithDigitsThatSumUpToTarget} {@link LargestSumOfAverages}
      */
     public int minDifficulty(int[] jobDifficulty, int d) {
         if (d > jobDifficulty.length) {
