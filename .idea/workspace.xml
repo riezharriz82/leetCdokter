@@ -13,9 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Update class name to match problem statement name">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumDifficultyOfJobSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumDifficultyOfJobSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,8 +201,8 @@
       <item itemvalue="Application.InventoryManagement" />
       <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Application.LFUCache" />
-      <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
@@ -222,13 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00851" summary="Add comment regarding generating a sliding bitmask">
-      <created>1617709990751</created>
-      <option name="number" value="00851" />
-      <option name="presentableId" value="LOCAL-00851" />
-      <option name="project" value="LOCAL" />
-      <updated>1617709990751</updated>
     </task>
     <task id="LOCAL-00852" summary="Add brute force solution for FindTheCelebrity">
       <created>1617711990661</created>
@@ -566,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620309970614</updated>
     </task>
-    <option name="localTasksCounter" value="900" />
+    <task id="LOCAL-00900" summary="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems.">
+      <created>1620402802760</created>
+      <option name="number" value="00900" />
+      <option name="presentableId" value="LOCAL-00900" />
+      <option name="project" value="LOCAL" />
+      <updated>1620402802760</updated>
+    </task>
+    <option name="localTasksCounter" value="901" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky find the k that maximizes the running xor for the given array by leveraging the fact that xor is complement of itself.&#10;&#10;Leveraged prior learning of solving XORQueriesOfSubarray" />
     <MESSAGE value="Solve medium design a Trie data structure that support insert(), search() and startsWith()&#10;&#10;Remember to use Trie in problems that deals with prefixes of strings." />
     <MESSAGE value="Update Compass interview feedback" />
     <MESSAGE value="Update feedback of Apna HLD round" />
@@ -665,7 +664,8 @@
     <MESSAGE value="Solve medium and extremely tricky to do in O(1) space using tricky recursion, find all the gray codes of n digits.&#10;&#10;Was able to do it on my own by maintaining a visited set and try flipping a bit." />
     <MESSAGE value="Solve medium and a bit tricky to optimize time and space complexity to O(n) and O(logn) by leveraging the inorder traversal of a sorted list to convert it to a balanced BST." />
     <MESSAGE value="Update class name to match problem statement name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update class name to match problem statement name" />
+    <MESSAGE value="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

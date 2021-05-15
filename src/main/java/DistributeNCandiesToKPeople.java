@@ -24,6 +24,8 @@
 public class DistributeNCandiesToKPeople {
     /**
      * Just simulate the distribution, my initial approach was similar but the implementation was crude
+     * <p>
+     * {@link IncrementalMemoryLeak}
      */
     public int[] distributeCandies(int candies, int num_people) {
         int[] res = new int[num_people];
