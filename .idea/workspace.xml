@@ -16,6 +16,7 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RotateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RotateImage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00852" summary="Add brute force solution for FindTheCelebrity">
-      <created>1617711990661</created>
-      <option name="number" value="00852" />
-      <option name="presentableId" value="LOCAL-00852" />
-      <option name="project" value="LOCAL" />
-      <updated>1617711990661</updated>
     </task>
     <task id="LOCAL-00853" summary="Solve medium and extremely trick to solve in linear time find whether array has same count of global and local inversions. &#10;&#10;Solving this in nlogn was a bit easier as it involved counting inversions using merge sort. This was my first attempt writing merge sort without copying. Made a lot of mistakes while handling various indices in merge()">
       <created>1617820465594</created>
@@ -566,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620402802760</updated>
     </task>
-    <option name="localTasksCounter" value="901" />
+    <task id="LOCAL-00901" summary="Solve medium find the time required to fill memory sticks by consuming i bits every ith second using simulation.">
+      <created>1621100675732</created>
+      <option name="number" value="00901" />
+      <option name="presentableId" value="LOCAL-00901" />
+      <option name="project" value="LOCAL" />
+      <updated>1621100675732</updated>
+    </task>
+    <option name="localTasksCounter" value="902" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium design a Trie data structure that support insert(), search() and startsWith()&#10;&#10;Remember to use Trie in problems that deals with prefixes of strings." />
     <MESSAGE value="Update Compass interview feedback" />
     <MESSAGE value="Update feedback of Apna HLD round" />
     <MESSAGE value="Solve medium implement a Trie data structure that supports countWordsEqualTo() and countWordsStartingWith() and erase() methods.&#10;&#10;Leveraged prior learnings of storing useful information directly in nodes of Trie. Care must be taken while performing erase() to actually remove the nodes instead of just decrementing the count." />
@@ -665,7 +665,8 @@
     <MESSAGE value="Solve medium and a bit tricky to optimize time and space complexity to O(n) and O(logn) by leveraging the inorder traversal of a sorted list to convert it to a balanced BST." />
     <MESSAGE value="Update class name to match problem statement name" />
     <MESSAGE value="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems." />
+    <MESSAGE value="Solve medium find the time required to fill memory sticks by consuming i bits every ith second using simulation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the time required to fill memory sticks by consuming i bits every ith second using simulation." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

@@ -27,11 +27,11 @@ public class RotateImage {
      * Also be careful in rotating a cell only once i.e set the outer bounds carefully not to visit a cell twice.
      * <p>
      * An alternate simpler way to solve this would be to first transpose (swap the rows with the columns) and then reverse along the rows
-     * Code is much simpler this way.
+     * Code is much easier to implement this way.
      * <p>
      * Anyways, am very proud to get AC in first attempt using my own recursive solution :D
      * <p>
-     * {@link SpiralMatrix} {@link alternate.ToeplitzMatrix}
+     * {@link SpiralMatrix} {@link alternate.ToeplitzMatrix} {@link RotatingTheBox}
      */
     public void rotate(int[][] matrix) {
         int n = matrix.length;
