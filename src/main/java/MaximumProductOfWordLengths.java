@@ -30,7 +30,7 @@ public class MaximumProductOfWordLengths {
      * Have to see the related topics to solve this question, was not able to think of bitmask, was able to think of maintaining reverse lookup table
      * for each character and doing fancy set union and intersection
      * <p>
-     * {@link ShortestPathVisitingAllNodes} {@link BeautifulArrangement} related bitmasking problems
+     * {@link ShortestPathVisitingAllNodes} {@link BeautifulArrangement} {@link MaximumLengthOfAConcatenatedStringWithUniqueCharacters}
      */
     public int maxProduct(String[] words) {
         int n = words.length;

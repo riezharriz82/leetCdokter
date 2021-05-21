@@ -13,8 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems.">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumProductOfWordLengths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumProductOfWordLengths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00855" summary="Add time complexity and input constraints">
-      <created>1617822391103</created>
-      <option name="number" value="00855" />
-      <option name="presentableId" value="LOCAL-00855" />
-      <option name="project" value="LOCAL" />
-      <updated>1617822391104</updated>
     </task>
     <task id="LOCAL-00856" summary="Add related sliding window problems of fixed size">
       <created>1617823143035</created>
@@ -566,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621619777670</updated>
     </task>
-    <option name="localTasksCounter" value="904" />
+    <task id="LOCAL-00904" summary="Solve medium find the minimum path sum to reach any cell of last row from any cell in the first row using recursion + memoization.&#10;&#10;Leveraged prior learnings of directly using DP as the graph does not contain any cycles.">
+      <created>1621620492059</created>
+      <option name="number" value="00904" />
+      <option name="presentableId" value="LOCAL-00904" />
+      <option name="project" value="LOCAL" />
+      <updated>1621620492059</updated>
+    </task>
+    <option name="localTasksCounter" value="905" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium implement a Trie data structure that supports countWordsEqualTo() and countWordsStartingWith() and erase() methods.&#10;&#10;Leveraged prior learnings of storing useful information directly in nodes of Trie. Care must be taken while performing erase() to actually remove the nodes instead of just decrementing the count." />
     <MESSAGE value="Solve easy and extremely tricky find second minimum node in a binary tree using divide and conquer in O(height). Was not able to solve this on my own in O(height)&#10;&#10;Learnings: Use divide and conquer to find the min/max element in a tree along with using it in arithmetic expressions." />
     <MESSAGE value="Solve hard and a bit tricky problem find the minimum candies to give to people such that people with high ratings should be given more candies than their neighbours using two pass greedy solution.&#10;&#10;Leveraged prior learnings of solving mountain related problem using two passes." />
     <MESSAGE value="Add hint towards using prefix sum to find a subarray that has the target xor." />
@@ -665,7 +665,8 @@
     <MESSAGE value="Solve medium find the time required to fill memory sticks by consuming i bits every ith second using simulation." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the box contents after rotating a box containing stones and stationary obstacles using two pointers.&#10;&#10;Leveraged previous learnings of simulating rotation using transpose + reverse." />
     <MESSAGE value="Solve medium find whether the provided strings match the provided pattern by maintaining a mapping from source to target and from target to source.&#10;&#10;Very similar to previously solved problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find whether the provided strings match the provided pattern by maintaining a mapping from source to target and from target to source.&#10;&#10;Very similar to previously solved problems." />
+    <MESSAGE value="Solve medium find the minimum path sum to reach any cell of last row from any cell in the first row using recursion + memoization.&#10;&#10;Leveraged prior learnings of directly using DP as the graph does not contain any cycles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium find the minimum path sum to reach any cell of last row from any cell in the first row using recursion + memoization.&#10;&#10;Leveraged prior learnings of directly using DP as the graph does not contain any cycles." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
