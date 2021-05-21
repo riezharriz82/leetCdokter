@@ -39,7 +39,7 @@ public class Triangle {
      * <p>
      * Time: 1 ms
      * <p>
-     * {@link PathWithMaximumGold} {@link DungeonGame} {@link PathWithMaximumMinimumValue}
+     * {@link PathWithMaximumGold} {@link DungeonGame} {@link PathWithMaximumMinimumValue} {@link MinimumFallingPathSum}
      */
     public int minimumTotalDFS(List<List<Integer>> triangle) {
         int n = triangle.size();
