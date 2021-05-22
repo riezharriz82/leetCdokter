@@ -28,7 +28,7 @@ public class MinimumChangesToMakeAlternatingBinaryString {
      * Approach: There are only two patterns possible either "10101010.." or "01010101.."
      * Check converting to which pattern leads to minimum changes.
      * <p>
-     * {@link MinimumNumberOfStepsToMakeTwoStringsAnagram}
+     * {@link MinimumNumberOfStepsToMakeTwoStringsAnagram} {@link MinimumNumberOfSwapsToMakeTheBinaryStringAlternating}
      */
     public int minOperations(String s) {
         int placeZeroFirst = 0, placeOneFirst = 0;

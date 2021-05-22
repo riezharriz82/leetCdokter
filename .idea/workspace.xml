@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumChangesToMakeAlternatingBinaryString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumChangesToMakeAlternatingBinaryString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00857" summary="Add Upstox interview experience.">
-      <created>1617824826391</created>
-      <option name="number" value="00857" />
-      <option name="presentableId" value="LOCAL-00857" />
-      <option name="project" value="LOCAL" />
-      <updated>1617824826391</updated>
     </task>
     <task id="LOCAL-00858" summary="Solve medium find inorder successor in a BST using recursion and leveraging property of BST.">
       <created>1617906317786</created>
@@ -566,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621622078350</updated>
     </task>
-    <option name="localTasksCounter" value="906" />
+    <task id="LOCAL-00906" summary="Solve medium, find no of pairs whose sum equals target sum provided you can increment the value at any index, by maintaining a hashmap of value to its frequency.&#10;&#10;Leveraged prior learnings of solving two sum problems.">
+      <created>1621624968710</created>
+      <option name="number" value="00906" />
+      <option name="presentableId" value="LOCAL-00906" />
+      <option name="project" value="LOCAL" />
+      <updated>1621624968710</updated>
+    </task>
+    <option name="localTasksCounter" value="907" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and a bit tricky problem find the minimum candies to give to people such that people with high ratings should be given more candies than their neighbours using two pass greedy solution.&#10;&#10;Leveraged prior learnings of solving mountain related problem using two passes." />
     <MESSAGE value="Add hint towards using prefix sum to find a subarray that has the target xor." />
     <MESSAGE value="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous" />
     <MESSAGE value="Actually add the optimized solution for designing a MaxFrequencyStack" />
@@ -665,7 +665,8 @@
     <MESSAGE value="Solve medium find whether the provided strings match the provided pattern by maintaining a mapping from source to target and from target to source.&#10;&#10;Very similar to previously solved problems." />
     <MESSAGE value="Solve medium find the minimum path sum to reach any cell of last row from any cell in the first row using recursion + memoization.&#10;&#10;Leveraged prior learnings of directly using DP as the graph does not contain any cycles." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choosing to concatenate current string or skipping current string." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choosing to concatenate current string or skipping current string." />
+    <MESSAGE value="Solve medium, find no of pairs whose sum equals target sum provided you can increment the value at any index, by maintaining a hashmap of value to its frequency.&#10;&#10;Leveraged prior learnings of solving two sum problems." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium, find no of pairs whose sum equals target sum provided you can increment the value at any index, by maintaining a hashmap of value to its frequency.&#10;&#10;Leveraged prior learnings of solving two sum problems." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
