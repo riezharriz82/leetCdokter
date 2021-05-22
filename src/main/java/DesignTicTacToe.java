@@ -67,7 +67,7 @@ public class DesignTicTacToe {
     int[][] rows, cols, diagonal, antiDiagonal;
 
     /**
-     * Approach: Instead of actually placing the specific character and then checking whether the current row, col and diagonals
+     * Approach: Maintain reverse index or lookup table, Instead of actually placing the specific character and then checking whether the current row, col and diagonals
      * are filled with same character, keep track of the count of characters placed per player.
      * <p>
      * Count needs to be tracked per row, per col, per diagonal and anti diagonal. A bit of optimization can be performed for
