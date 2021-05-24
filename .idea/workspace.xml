@@ -15,7 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumChangesToMakeAlternatingBinaryString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumChangesToMakeAlternatingBinaryString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MagneticForceBetweenTwoBalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MagneticForceBetweenTwoBalls.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -223,20 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00858" summary="Solve medium find inorder successor in a BST using recursion and leveraging property of BST.">
-      <created>1617906317786</created>
-      <option name="number" value="00858" />
-      <option name="presentableId" value="LOCAL-00858" />
-      <option name="project" value="LOCAL" />
-      <updated>1617906317786</updated>
-    </task>
-    <task id="LOCAL-00859" summary="Solve medium and a bit tricky find inorder successor in a BST where direct node access is provided instead of root access.&#10;&#10;Trick was to break down the problem into multiple cases, one where node has right child and one where it does not.&#10;In case of no right child, you have to walk up the tree to find a parent whose value is greater than current node value.">
-      <created>1617908324806</created>
-      <option name="number" value="00859" />
-      <option name="presentableId" value="LOCAL-00859" />
-      <option name="project" value="LOCAL" />
-      <updated>1617908324806</updated>
     </task>
     <task id="LOCAL-00860" summary="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level.">
       <created>1617909905461</created>
@@ -567,7 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621624968710</updated>
     </task>
-    <option name="localTasksCounter" value="907" />
+    <task id="LOCAL-00907" summary="Solve medium and a bit tricky problem, find the min no of swaps required to make a binary string alternating using greedy. Target string would either start from 1 or from 0. Result would be the smallest mismatches between those. Care must be taken to weed out the impossible swaps cases.&#10;&#10;Leveraged prior learning of solving alternating string problem.">
+      <created>1621695443380</created>
+      <option name="number" value="00907" />
+      <option name="presentableId" value="LOCAL-00907" />
+      <option name="project" value="LOCAL" />
+      <updated>1621695443380</updated>
+    </task>
+    <task id="LOCAL-00908" summary="Add comment to tag a reverse index/lookup problem.">
+      <created>1621695540447</created>
+      <option name="number" value="00908" />
+      <option name="presentableId" value="LOCAL-00908" />
+      <option name="project" value="LOCAL" />
+      <updated>1621695540447</updated>
+    </task>
+    <option name="localTasksCounter" value="909" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,8 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add hint towards using prefix sum to find a subarray that has the target xor." />
-    <MESSAGE value="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous" />
     <MESSAGE value="Actually add the optimized solution for designing a MaxFrequencyStack" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles." />
@@ -666,7 +664,9 @@
     <MESSAGE value="Solve medium find the minimum path sum to reach any cell of last row from any cell in the first row using recursion + memoization.&#10;&#10;Leveraged prior learnings of directly using DP as the graph does not contain any cycles." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choosing to concatenate current string or skipping current string." />
     <MESSAGE value="Solve medium, find no of pairs whose sum equals target sum provided you can increment the value at any index, by maintaining a hashmap of value to its frequency.&#10;&#10;Leveraged prior learnings of solving two sum problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium, find no of pairs whose sum equals target sum provided you can increment the value at any index, by maintaining a hashmap of value to its frequency.&#10;&#10;Leveraged prior learnings of solving two sum problems." />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the min no of swaps required to make a binary string alternating using greedy. Target string would either start from 1 or from 0. Result would be the smallest mismatches between those. Care must be taken to weed out the impossible swaps cases.&#10;&#10;Leveraged prior learning of solving alternating string problem." />
+    <MESSAGE value="Add comment to tag a reverse index/lookup problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comment to tag a reverse index/lookup problem." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

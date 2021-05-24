@@ -26,7 +26,7 @@ public class MagneticForceBetweenTwoBalls {
      * at a minimum distance of k, if yes, recur right for a possible larger value
      * if no, recur left to try out a possible smaller value
      * <p>
-     * {@link SplitArrayLargestSum} {@link DivideChocolates} {@link MissingElementInSortedArray} {@link FindMinimumInRotatedSortedArray2}
+     * {@link SplitArrayLargestSum} {@link DivideChocolates} {@link MissingElementInSortedArray} {@link FindMinimumInRotatedSortedArray2} {@link MinimumSpeedToArriveOnTime}
      * related binary search problems
      */
     public int maxDistance(int[] position, int m) {
