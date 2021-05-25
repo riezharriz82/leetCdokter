@@ -15,8 +15,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MagneticForceBetweenTwoBalls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MagneticForceBetweenTwoBalls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SwimInRisingWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SwimInRisingWater.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +141,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
+  <component name="RunManager" selected="Application.JumpGame7">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -148,13 +149,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DivideChocolates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DivideChocolates" />
-      <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,6 +162,13 @@
     </configuration>
     <configuration name="JumpGame4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JumpGame4" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JumpGame7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JumpGame7" />
       <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,20 +199,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DivideChocolates" />
       <item itemvalue="Application.InventoryManagement" />
       <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Application.LFUCache" />
+      <item itemvalue="Application.JumpGame7" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JumpGame7" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.LFUCache" />
         <item itemvalue="Application.JumpGame4" />
         <item itemvalue="Application.InventoryManagement" />
-        <item itemvalue="Application.DivideChocolates" />
       </list>
     </recent_temporary>
   </component>
@@ -223,13 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00860" summary="Solve medium find the sum of nodes present at the deepest level in a binary tree using 2 pass. First pass to find the deepest level and second pass to find sum of nodes at that level.">
-      <created>1617909905461</created>
-      <option name="number" value="00860" />
-      <option name="presentableId" value="LOCAL-00860" />
-      <option name="project" value="LOCAL" />
-      <updated>1617909905461</updated>
     </task>
     <task id="LOCAL-00861" summary="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency.">
       <created>1617998165321</created>
@@ -567,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621695540447</updated>
     </task>
-    <option name="localTasksCounter" value="909" />
+    <task id="LOCAL-00909" summary="Solve medium problem, find the min speed of train required to arrive before time using binary search.&#10;&#10;Leveraged prior learning of solving binary search problem. Followed errichto's template.">
+      <created>1621860285233</created>
+      <option name="number" value="00909" />
+      <option name="presentableId" value="LOCAL-00909" />
+      <option name="project" value="LOCAL" />
+      <updated>1621860285233</updated>
+    </task>
+    <option name="localTasksCounter" value="910" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Actually add the optimized solution for designing a MaxFrequencyStack" />
     <MESSAGE value="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles." />
     <MESSAGE value="Solve hard and extremely tricky design LFU cache using hashmap of key -&gt; node + Doubly linked list of frequency -&gt; set of nodes with the respective frequency.&#10;&#10;I was not able to fully solve this problem on my own. I was not able to cleanly implement how to find the smallest frequency and reshuffle nodes to +1 frequency node in DLL. &#10;Once I saw the paper, I was able to visualize it clearly and was able to implement it cleanly as well." />
@@ -666,7 +666,8 @@
     <MESSAGE value="Solve medium, find no of pairs whose sum equals target sum provided you can increment the value at any index, by maintaining a hashmap of value to its frequency.&#10;&#10;Leveraged prior learnings of solving two sum problems." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the min no of swaps required to make a binary string alternating using greedy. Target string would either start from 1 or from 0. Result would be the smallest mismatches between those. Care must be taken to weed out the impossible swaps cases.&#10;&#10;Leveraged prior learning of solving alternating string problem." />
     <MESSAGE value="Add comment to tag a reverse index/lookup problem." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comment to tag a reverse index/lookup problem." />
+    <MESSAGE value="Solve medium problem, find the min speed of train required to arrive before time using binary search.&#10;&#10;Leveraged prior learning of solving binary search problem. Followed errichto's template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, find the min speed of train required to arrive before time using binary search.&#10;&#10;Leveraged prior learning of solving binary search problem. Followed errichto's template." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

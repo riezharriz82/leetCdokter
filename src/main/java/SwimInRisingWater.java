@@ -44,7 +44,7 @@ public class SwimInRisingWater {
      * Approach: Minimize the maximum value present in the path
      * Multiple approaches can be used to solve the problem, Binary Search, Priority Queue or Union Find
      * <p>
-     * {@link PathWithMaximumMinimumValue} {@link PathWithMinimumEffort} {@link PathWithMaximumGold} related grid traversal problems
+     * {@link PathWithMaximumMinimumValue} {@link PathWithMinimumEffort} {@link PathWithMaximumGold} {@link MinimumCostToMakeAtLeastOneValidPathInAGrid}
      */
     public int swimInWater(int[][] grid) {
         PriorityQueue<Node> pq = new PriorityQueue<>((o1, o2) -> Integer.compare(o1.currentVal, o2.currentVal)); //we chose the node with smallest current value
