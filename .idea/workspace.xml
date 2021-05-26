@@ -17,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SwimInRisingWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SwimInRisingWater.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00861" summary="Solve easy find count of visits to all subdomains of a website by maintaining a hashmap of domain to their frequency.">
-      <created>1617998165321</created>
-      <option name="number" value="00861" />
-      <option name="presentableId" value="LOCAL-00861" />
-      <option name="project" value="LOCAL" />
-      <updated>1617998165321</updated>
     </task>
     <task id="LOCAL-00862" summary="Add Upstox final round interview experience with Director">
       <created>1618153676973</created>
@@ -568,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621860285233</updated>
     </task>
-    <option name="localTasksCounter" value="910" />
+    <task id="LOCAL-00910" summary="Solve hard and a bit tricky problem, find the min cost to make at least one valid path in a grid where we can flip the cell value to reach other cell by incurring a cost of 1. Tricky thing was to imagine it as a connected graph with unconnected cell having edge weight of 1.&#10;&#10;Was not able to solve this question on my own. Need a lot of practice on hard problems.">
+      <created>1621975903323</created>
+      <option name="number" value="00910" />
+      <option name="presentableId" value="LOCAL-00910" />
+      <option name="project" value="LOCAL" />
+      <updated>1621975903323</updated>
+    </task>
+    <option name="localTasksCounter" value="911" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,6 +627,22 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="text">
+                    <value>
+                      <list>
+                        <option value=".*extremely tricky.*greedy" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
+              </option>
               <option name="COLUMN_ID_WIDTH">
                 <map>
                   <entry key="Table.Default.Date.ColumnIdWidth" value="119" />
@@ -642,7 +657,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles." />
     <MESSAGE value="Solve hard and extremely tricky design LFU cache using hashmap of key -&gt; node + Doubly linked list of frequency -&gt; set of nodes with the respective frequency.&#10;&#10;I was not able to fully solve this problem on my own. I was not able to cleanly implement how to find the smallest frequency and reshuffle nodes to +1 frequency node in DLL. &#10;Once I saw the paper, I was able to visualize it clearly and was able to implement it cleanly as well." />
     <MESSAGE value="Solve easy and extremely tricky to optimize space complexity, find two nodes in a BST whose value equals k using iterative BST traversal.&#10;&#10;Learnings: Iterative traversals are very tricky." />
@@ -667,7 +681,8 @@
     <MESSAGE value="Solve medium and a bit tricky problem, find the min no of swaps required to make a binary string alternating using greedy. Target string would either start from 1 or from 0. Result would be the smallest mismatches between those. Care must be taken to weed out the impossible swaps cases.&#10;&#10;Leveraged prior learning of solving alternating string problem." />
     <MESSAGE value="Add comment to tag a reverse index/lookup problem." />
     <MESSAGE value="Solve medium problem, find the min speed of train required to arrive before time using binary search.&#10;&#10;Leveraged prior learning of solving binary search problem. Followed errichto's template." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, find the min speed of train required to arrive before time using binary search.&#10;&#10;Leveraged prior learning of solving binary search problem. Followed errichto's template." />
+    <MESSAGE value="Solve hard and a bit tricky problem, find the min cost to make at least one valid path in a grid where we can flip the cell value to reach other cell by incurring a cost of 1. Tricky thing was to imagine it as a connected graph with unconnected cell having edge weight of 1.&#10;&#10;Was not able to solve this question on my own. Need a lot of practice on hard problems." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve hard and a bit tricky problem, find the min cost to make at least one valid path in a grid where we can flip the cell value to reach other cell by incurring a cost of 1. Tricky thing was to imagine it as a connected graph with unconnected cell having edge weight of 1.&#10;&#10;Was not able to solve this question on my own. Need a lot of practice on hard problems." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
