@@ -22,6 +22,11 @@ public class RottingOranges {
     int[] x_offset = new int[]{0, 1, 0, -1};
     int[] y_offset = new int[]{1, 0, -1, 0};
 
+    /**
+     * Approach: Multi Source BFS, push all the rotten oranges in the BFS queue and keep marking the adjacent fresh oranges as rotten.
+     * <p>
+     * {@link ShortestBridge} {@link ZeroOneMatrix} {@link WallsAndGates} related problems
+     */
     public int orangesRotting(int[][] grid) {
         Queue<Pair<Integer, Integer>> queue = new ArrayDeque<>();
         int fresh = 0;
