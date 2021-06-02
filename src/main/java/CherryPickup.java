@@ -72,6 +72,7 @@ public class CherryPickup {
      * If we have taken t steps, r1 + c1 = t, and since person2 is moving at the same speed, r2 + c2 = t as well
      * so we can find c2 = r2 - t => c2 = r2 - (r1 + c1)
      * So this means, we don't have to explicitly pass c2 around and can generate it from r1, c1 and r2
+     * Similar optimization can be seen in {@link InterleavingString}
      */
     private int recur(int[][] grid, int row1, int col1, int row2, int col2, int[][][][] memoized) {
         int cherriesPicked, n = grid.length;
