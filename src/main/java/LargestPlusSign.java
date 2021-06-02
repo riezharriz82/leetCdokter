@@ -23,6 +23,12 @@ import java.util.Arrays;
  * 00000
  */
 public class LargestPlusSign {
+    /**
+     * Approach: DP, Keep track of count of consecutive 1's in each direction at each cell ie. what's the length of consecutive 1's in left/right/top/bottom direction
+     * for every cell.
+     * <p>
+     * {@link ZeroOneMatrix} similar problem
+     */
     public int orderOfLargestPlusSign(int N, int[][] mines) {
         int[][] grid = new int[N][N];
         for (int i = 0; i < N; i++) {
@@ -46,7 +52,7 @@ public class LargestPlusSign {
                     grid[i][j] = cnt;
                     cnt++;
                 } else {
-                    cnt = 1;
+                    cnt = 1; //reset the count when 0 is encountered
                 }
             }
         }
@@ -90,7 +96,7 @@ public class LargestPlusSign {
             }
         }
         System.out.println("bottom to top" + Arrays.deepToString(grid));
-        //calculate the max value present
+        //calculate the max value present in all 4 directions
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 res = Math.max(grid[i][j], res);

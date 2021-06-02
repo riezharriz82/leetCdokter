@@ -14,12 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LargestPlusSign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LargestPlusSign.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RottingOranges.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShortestBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestBridge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShortestPathInGridWithObstacleElimination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestPathInGridWithObstacleElimination.java" afterDir="false" />
     </list>
@@ -228,13 +227,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00866" summary="Clarify problem statement and add comment">
-      <created>1618159984600</created>
-      <option name="number" value="00866" />
-      <option name="presentableId" value="LOCAL-00866" />
-      <option name="project" value="LOCAL" />
-      <updated>1618159984600</updated>
     </task>
     <task id="LOCAL-00867" summary="Solve hard design in-memory file system and support ls(), mkdir(), cat() and echo() by modelling the file system as a n-ary tree.&#10;&#10;Was able to solve this question in 30 minutes :)">
       <created>1618163358784</created>
@@ -572,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622653143594</updated>
     </task>
-    <option name="localTasksCounter" value="915" />
+    <task id="LOCAL-00915" summary="Add approach and related multi BFS problems in RottingOranges">
+      <created>1622656141180</created>
+      <option name="number" value="00915" />
+      <option name="presentableId" value="LOCAL-00915" />
+      <option name="project" value="LOCAL" />
+      <updated>1622656141180</updated>
+    </task>
+    <option name="localTasksCounter" value="916" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium balance a given BST using Divide and conquer. In order to reduce the space complexity to O(1) need to use DSW algorithm." />
     <MESSAGE value="Solve medium and extremely tricky to do in O(1) space, rotate an image clockwise 90 degrees in place by swapping the cells in group of 4's using recursion.&#10;&#10;Very happy to solve this question on my own in first attempt." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the no of total hits on counters received in last 5 minutes using deque. &#10;&#10;In my initial implementation, I implemented the solution using custom binary search by writing upper_bound() and lower_bound() but the solution became simplified after knowing that the timestamps are sorted for both getHits() and hits(), so we can simply use a deque for storing elements." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the kth largest element in an array using quick select algorithm.&#10;&#10;Trick was to select a random pivot between [low, high] to reduce worst case time complexity." />
@@ -676,7 +674,8 @@
     <MESSAGE value="Solve medium problem, find the maximum sum of subarray containing unique elements using sliding window.&#10;&#10;Leveraged prior learning of solving &quot;maximum&quot; sliding window problem." />
     <MESSAGE value="Solve medium and a bit tricky to optimize find whether a string is composed by interleaving substrings from two different string using DP.&#10;&#10;Leveraged prior learning of solving similar string related recursive problems. Tricky thing was to reduce time complexity from n^3 to n^2 by reducing no of states by generating redundant states from remaining states." />
     <MESSAGE value="Solve medium problem, find the shortest path to get nearest food in a matrix using BFS.&#10;&#10;Leveraged prior learning of applying BFS to find shortest path in an unweighted cyclic graph." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, find the shortest path to get nearest food in a matrix using BFS.&#10;&#10;Leveraged prior learning of applying BFS to find shortest path in an unweighted cyclic graph." />
+    <MESSAGE value="Add approach and related multi BFS problems in RottingOranges" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add approach and related multi BFS problems in RottingOranges" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
