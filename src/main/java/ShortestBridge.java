@@ -31,7 +31,7 @@ public class ShortestBridge {
      * numZeroesFlipped so far
      * <p>
      * {@link MakingALargeIsland} {@link RottingOranges} {@link WallsAndGates} {@link CheapestFlightWithinKStop}
-     * {@link ShortestPathVisitingAllNodes} related multi bfs problem
+     * {@link ShortestPathVisitingAllNodes} {@link ZeroOneMatrix} related multi bfs problem
      */
     public int shortestBridge(int[][] A) {
         int m = A.length;
