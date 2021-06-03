@@ -21,6 +21,8 @@ public class RectangleOverlap {
      * Problem deals with finding intersection of two line segment
      * For 1D Intersection, if one line segment is (a1,a2) and other is (b1, b2), they will intersect if max(a1, b1) < min(a2,b2)
      * This is the first time awice made the editorial easier to understand
+     * <p>
+     * {@link MaximumAreaOfAPieceOfCakeAfterHorizontalAndVerticalCuts} rectangle related problem
      */
     public boolean solve(int[] rect0, int[] rect1) {
         //check for x coordinates
