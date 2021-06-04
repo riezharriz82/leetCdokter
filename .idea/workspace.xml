@@ -15,12 +15,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheapestFlightWithinKStop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShortestPathInGridWithObstacleElimination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestPathInGridWithObstacleElimination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CheapestFlightWithinKStopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CheapestFlightWithinKStopTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,13 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00871" summary="Solve medium flatten a 2D vector iteratively using two pointers, one tracking the outer index and one tracking the inner index.&#10;&#10;Leveraged prior learning of solving iterator problem in FlattenNestedListIterator">
-      <created>1618602587372</created>
-      <option name="number" value="00871" />
-      <option name="presentableId" value="LOCAL-00871" />
-      <option name="project" value="LOCAL" />
-      <updated>1618602587372</updated>
     </task>
     <task id="LOCAL-00872" summary="Solve medium design a zig zag iterator that cycles over k lists by maintaining a queue of iterators.&#10;&#10;Push back the current head back at the end if the current iterator has still some elements left.">
       <created>1618604790966</created>
@@ -574,7 +565,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622812299485</updated>
     </task>
-    <option name="localTasksCounter" value="920" />
+    <task id="LOCAL-00920" summary="Add solution for medium and extremely tricky problem, find the cheapest flight within k stops from a source to destination using modified djikstra.&#10;&#10;Learnings: This is a weighted graph, so need to apply Djikstra but we have another constraint apart from cost, so maintain another array similar to cost[]. Visit an edge only if it either reduces the cost or reduces the no of hops.">
+      <created>1622824644785</created>
+      <option name="number" value="00920" />
+      <option name="presentableId" value="LOCAL-00920" />
+      <option name="project" value="LOCAL" />
+      <updated>1622824644785</updated>
+    </task>
+    <option name="localTasksCounter" value="921" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,7 +651,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the smallest unreserved seat using treeset. &#10;&#10;Leveraged prior learning of solving seat allocation problem using ordered set." />
     <MESSAGE value="Solve medium and a bit tricky problem find min adjacent swaps required to reach kth smallest number by first finding the kth next permutation and then finding the min swaps by logic similar to insertion sort." />
     <MESSAGE value="Solve medium and extremely tricky to do in O(1) space using tricky recursion, find all the gray codes of n digits.&#10;&#10;Was able to do it on my own by maintaining a visited set and try flipping a bit." />
     <MESSAGE value="Solve medium and a bit tricky to optimize time and space complexity to O(n) and O(logn) by leveraging the inorder traversal of a sorted list to convert it to a balanced BST." />
@@ -678,7 +675,8 @@
     <MESSAGE value="Solve medium problem, find the shortest distance from nearest 0 for each cell using Multi BFS.&#10;&#10;Tricky thing was to solve this problem using DP in multiple passes. Learnt something new tonight." />
     <MESSAGE value="Solve medium and extremely tricky problem find the largest rectangle after performing horizontal and vertical cuts using greedy. &#10;&#10;Learnings: Reduce the rectangle problems (2D) into 1D and then solve for each dimension independently ie. find the largest horizontal cut and vertical cut which would result in the rectangle with largest area." />
     <MESSAGE value="Add medium and extremely tricky problem, find the smallest impossible subset sum that is not possible to be generated from an array using greedy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add medium and extremely tricky problem, find the smallest impossible subset sum that is not possible to be generated from an array using greedy" />
+    <MESSAGE value="Add solution for medium and extremely tricky problem, find the cheapest flight within k stops from a source to destination using modified djikstra.&#10;&#10;Learnings: This is a weighted graph, so need to apply Djikstra but we have another constraint apart from cost, so maintain another array similar to cost[]. Visit an edge only if it either reduces the cost or reduces the no of hops." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add solution for medium and extremely tricky problem, find the cheapest flight within k stops from a source to destination using modified djikstra.&#10;&#10;Learnings: This is a weighted graph, so need to apply Djikstra but we have another constraint apart from cost, so maintain another array similar to cost[]. Visit an edge only if it either reduces the cost or reduces the no of hops." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
