@@ -10,6 +10,11 @@ import common.TreeNode;
  * Explanation: The LCA of nodes 5 and 1 is 3.
  */
 public class LCABinaryTree {
+    /**
+     * Approach: Recursion
+     * <p>
+     * {@link FindDistanceInABinaryTree}
+     */
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         return DFS(root, p, q);
     }
