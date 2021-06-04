@@ -15,19 +15,38 @@ import java.util.*;
  * src = 0, dst = 2, k = 1
  * Output: 200
  * <p>
- * The cheapest price from city 0 to city 2 with at most 1 stop costs 200, as marked red in the picture.
+ * The cheapest price from city 0 to city 2 with at most 1 stop costs 200
+ * <p>
+ * Constraints:
+ * 1 <= n <= 100
+ * 0 <= flights.length <= (n * (n - 1) / 2)
+ * flights[i].length == 3
+ * 0 <= fromi, toi < n
+ * fromi != toi
+ * 1 <= pricei <= 104
+ * There will not be any multiple flights between two cities.
+ * 0 <= src, dst, k < n
+ * src != dst
  */
 public class CheapestFlightWithinKStop {
 
     /**
-     * Approach: Leverage Djikstra to find the lowest cost to reach a target node from source node.
+     * Approach: Greedy, Since the graph is a weighted graph, leverage Djikstra to find the lowest cost to reach a target node from source node.
      * The trick is to relax the djikstra condition to not process a node if current distance to reach node > distance present already for node
      * because the current distance might be higher but it might have shorter hops. Hence add all the nodes whose hops are within bounds
+     * <p>
+     * This solution adds another parameter per node similar to what we learnt earlier in {@link ShortestPathInGridWithObstacleElimination} but
+     * this gives TLE because the constraints in the linked problem are much relaxed than this problem.
      */
-    public int findCheapestPriceUsingDjikstra(int n, int[][] flights, int src, int dst, int K) {
+    public int findCheapestPriceUsingDjikstraTLE(int n, int[][] flights, int src, int dst, int K) {
         List<List<Pair<Integer, Integer>>> graph = buildGraph(n, flights); //pair of city, cost
         PriorityQueue<Node> pq = new PriorityQueue<>((o1, o2) -> Integer.compare(o1.currentDistance, o2.currentDistance));
         pq.add(new Node(src, 0, -1));
+        int[][] cost = new int[n][K + 1]; //add another state per node
+        for (int[] rows : cost) {
+            Arrays.fill(rows, Integer.MAX_VALUE);
+        }
+        cost[src][0] = 0;
         while (!pq.isEmpty()) {
             Node head = pq.remove();
             if (head.cityID == dst) {
@@ -35,8 +54,59 @@ public class CheapestFlightWithinKStop {
                 return head.currentDistance;
             }
             for (Pair<Integer, Integer> adjacentCity : graph.get(head.cityID)) {
-                if (head.currentHops + 1 <= K) { //don't check whether the current distance < distance already present
-                    pq.add(new Node(adjacentCity.getKey(), head.currentDistance + adjacentCity.getValue(), head.currentHops + 1));
+                int new_hops = head.currentHops + 1;
+                int new_cost = head.currentDistance + adjacentCity.getValue();
+                if (new_hops <= K && cost[adjacentCity.getKey()][new_hops] > new_cost) { //if hops are valid and this hop reduces the existing cost
+                    pq.add(new Node(adjacentCity.getKey(), new_cost, new_hops));
+                }
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * <pre>
+     * Approach: Greedy, Instead of maintaining nested states (2D) per node, maintain a separate cost array and hops array per node.
+     * Visit a node only if visiting current edge reduces either the cost of that node or reaches that node in lesser hops.
+     * This drastically reduces the no of states that are pushed in PriorityQueue.
+     *
+     * Thing to note here is you have to keep the information at each node in a consistent state ie. if you reach a node in less hops but with more distance
+     * you will still have to update the distance to the current info.
+     * Do a dry run on this graph
+     *               a
+     *          50 /   \ 10
+     *           b _20_ c
+     *        5 /
+     *        d
+     * </pre>
+     * {@link ShortestPathInGridWithObstacleElimination}
+     */
+    public int findCheapestPriceUsingDjikstraOptimized(int n, int[][] flights, int src, int dst, int K) {
+        List<List<Pair<Integer, Integer>>> graph = buildGraph(n, flights); //pair of city, cost
+        PriorityQueue<Node> pq = new PriorityQueue<>((o1, o2) -> Integer.compare(o1.currentDistance, o2.currentDistance));
+        pq.add(new Node(src, 0, -1));
+        //maintain separate states per node instead of nested (2D) array
+        int[] cost = new int[n];
+        int[] stops = new int[n];
+        Arrays.fill(cost, Integer.MAX_VALUE);
+        Arrays.fill(stops, Integer.MAX_VALUE);
+        cost[src] = 0;
+        stops[src] = -1;
+        while (!pq.isEmpty()) {
+            Node head = pq.remove();
+            if (head.cityID == dst) {
+                //priority queue ensures that the current distance would be the cheapest to reach destination
+                return head.currentDistance;
+            }
+            for (Pair<Integer, Integer> adjacentCity : graph.get(head.cityID)) {
+                int new_hops = head.currentHops + 1;
+                int new_cost = head.currentDistance + adjacentCity.getValue();
+                if (new_hops <= K && (cost[adjacentCity.getKey()] > new_cost || stops[adjacentCity.getKey()] > new_hops)) {
+                    //if visiting this edge relaxes any of the conditions for node, update the cost and stops irrespective of the current minimum
+                    //ie. if new_hops < cur_hops but new_cost > cur_cost, still update the cost to a higher value.
+                    cost[adjacentCity.getKey()] = new_cost;
+                    stops[adjacentCity.getKey()] = new_hops;
+                    pq.add(new Node(adjacentCity.getKey(), new_cost, new_hops));
                 }
             }
         }

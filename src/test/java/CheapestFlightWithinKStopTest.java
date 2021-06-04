@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CheapestFlightWithinKStopTest {
     @Test
     public void test() {
-        assertEquals(6, new CheapestFlightWithinKStop().findCheapestPriceUsingDjikstra(4,
+        assertEquals(6, new CheapestFlightWithinKStop().findCheapestPriceUsingDjikstraOptimized(4,
                 new int[][]{{0, 1, 1}, {0, 2, 5}, {1, 2, 1}, {2, 3, 1}},
                 0,
                 3,

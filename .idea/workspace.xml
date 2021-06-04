@@ -20,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ShortestPathInGridWithObstacleElimination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShortestPathInGridWithObstacleElimination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheapestFlightWithinKStopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CheapestFlightWithinKStopTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JumpGame7">
+  <component name="RunManager" selected="JUnit.CheapestFlightWithinKStopTest.test">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -151,13 +152,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InventoryManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="experience.meesho.InventoryManagement" />
-      <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,6 +177,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CheapestFlightWithinKStopTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode-practice" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CheapestFlightWithinKStopTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -201,20 +205,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.InventoryManagement" />
       <item itemvalue="Application.JumpGame4" />
       <item itemvalue="Application.LFUCache" />
       <item itemvalue="Application.JumpGame7" />
       <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheapestFlightWithinKStopTest.test" />
         <item itemvalue="Application.JumpGame7" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.LFUCache" />
         <item itemvalue="Application.JumpGame4" />
-        <item itemvalue="Application.InventoryManagement" />
       </list>
     </recent_temporary>
   </component>
@@ -226,13 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00870" summary="Solve medium and extremely trick to solve in O(1) space using iterative traversal using stack, flatten a nested list.&#10;&#10;Was not able to solve it in O(1) space on my own. Failure after a long time. Still a long way to go.">
-      <created>1618517248307</created>
-      <option name="number" value="00870" />
-      <option name="presentableId" value="LOCAL-00870" />
-      <option name="project" value="LOCAL" />
-      <updated>1618517248307</updated>
     </task>
     <task id="LOCAL-00871" summary="Solve medium flatten a 2D vector iteratively using two pointers, one tracking the outer index and one tracking the inner index.&#10;&#10;Leveraged prior learning of solving iterator problem in FlattenNestedListIterator">
       <created>1618602587372</created>
@@ -570,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622742230808</updated>
     </task>
-    <option name="localTasksCounter" value="919" />
+    <task id="LOCAL-00919" summary="Add medium and extremely tricky problem, find the smallest impossible subset sum that is not possible to be generated from an array using greedy">
+      <created>1622812299485</created>
+      <option name="number" value="00919" />
+      <option name="presentableId" value="LOCAL-00919" />
+      <option name="project" value="LOCAL" />
+      <updated>1622812299485</updated>
+    </task>
+    <option name="localTasksCounter" value="920" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +653,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve hard and extremely tricky to optimize, find whether a word with the provided suffix and prefix exists in dictionary or not using reverse indexes in trie.&#10;&#10;Trick was to generate all possible query patterns for a word and insert into trie ie. apple can be searched via &quot;apple|ap&quot;, &quot;ple|app&quot;, &quot;pple|ap&quot;. Don't forget to store useful information ie. index directly in trie node to avoid performing DFS." />
     <MESSAGE value="Solve medium find the smallest unreserved seat using treeset. &#10;&#10;Leveraged prior learning of solving seat allocation problem using ordered set." />
     <MESSAGE value="Solve medium and a bit tricky problem find min adjacent swaps required to reach kth smallest number by first finding the kth next permutation and then finding the min swaps by logic similar to insertion sort." />
     <MESSAGE value="Solve medium and extremely tricky to do in O(1) space using tricky recursion, find all the gray codes of n digits.&#10;&#10;Was able to do it on my own by maintaining a visited set and try flipping a bit." />
@@ -674,7 +677,8 @@
     <MESSAGE value="Add approach and related tricky problem for LargestPlusSign." />
     <MESSAGE value="Solve medium problem, find the shortest distance from nearest 0 for each cell using Multi BFS.&#10;&#10;Tricky thing was to solve this problem using DP in multiple passes. Learnt something new tonight." />
     <MESSAGE value="Solve medium and extremely tricky problem find the largest rectangle after performing horizontal and vertical cuts using greedy. &#10;&#10;Learnings: Reduce the rectangle problems (2D) into 1D and then solve for each dimension independently ie. find the largest horizontal cut and vertical cut which would result in the rectangle with largest area." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky problem find the largest rectangle after performing horizontal and vertical cuts using greedy. &#10;&#10;Learnings: Reduce the rectangle problems (2D) into 1D and then solve for each dimension independently ie. find the largest horizontal cut and vertical cut which would result in the rectangle with largest area." />
+    <MESSAGE value="Add medium and extremely tricky problem, find the smallest impossible subset sum that is not possible to be generated from an array using greedy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add medium and extremely tricky problem, find the smallest impossible subset sum that is not possible to be generated from an array using greedy" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
