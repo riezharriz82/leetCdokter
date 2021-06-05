@@ -13,6 +13,8 @@ public class RepeatedSubstringPattern {
      * n^2 solution because of contains().
      * To reduce it to linear time, use rolling hash or kmp
      * for rolling hash implementation see {@link RepeatedDNASequence}
+     * <p>
+     * {@link RepeatedStringMatch}
      */
     public boolean repeatedSubstringPatternSimplified(String s) {
         String concat = (s + s);

@@ -18,7 +18,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZeroOneMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZeroOneMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RepeatedStringMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RepeatedStringMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RepeatedSubstringPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RepeatedSubstringPattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,13 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00875" summary="Solve medium design a Trie data structure that support insert(), search() and startsWith()&#10;&#10;Remember to use Trie in problems that deals with prefixes of strings.">
-      <created>1618677490280</created>
-      <option name="number" value="00875" />
-      <option name="presentableId" value="LOCAL-00875" />
-      <option name="project" value="LOCAL" />
-      <updated>1618677490280</updated>
     </task>
     <task id="LOCAL-00876" summary="Update Compass interview feedback">
       <created>1618687900554</created>
@@ -572,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622897231272</updated>
     </task>
-    <option name="localTasksCounter" value="924" />
+    <task id="LOCAL-00924" summary="Solve easy problem, find the maximum subarray of size k in an array using sliding window.&#10;&#10;Learnings: Smallest negative double value is -Double.MAX_VALUE or Double.NEGATIVE_INFINITY. Double.MIN_VALUE is actually the smallest positive value. Mind blown! Learnt something new today.">
+      <created>1622898554355</created>
+      <option name="number" value="00924" />
+      <option name="presentableId" value="LOCAL-00924" />
+      <option name="project" value="LOCAL" />
+      <updated>1622898554355</updated>
+    </task>
+    <option name="localTasksCounter" value="925" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +652,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update class name to match problem statement name" />
     <MESSAGE value="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems." />
     <MESSAGE value="Solve medium find the time required to fill memory sticks by consuming i bits every ith second using simulation." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the box contents after rotating a box containing stones and stationary obstacles using two pointers.&#10;&#10;Leveraged previous learnings of simulating rotation using transpose + reverse." />
@@ -676,7 +676,8 @@
     <MESSAGE value="Add another solutions to hard and extremely tricky problem, find the shortest path in a grid with obstacle eliminations using Djikstra and BFS by maintaining additional state per node.&#10;&#10;Learnings: Since this was a unweighted graph, BFS was the way to go. But we need to maintain additional state per node, so either maintain a nested array with additional dimension or maintain additional array similar to cost array. Visit an edge only if it reduces the cost or reduces no of eliminations. Last but not the least. Maintain a consistent state every node." />
     <MESSAGE value="Solve medium find distance between two nodes in a binary tree by finding the LCA." />
     <MESSAGE value="Solve easy problem, arrange an array into pairs such that sum of minimum of all pairs is maximized using greedy.&#10;&#10;Trick was to organize into pair such that waste is minimum. Since we are interested only in the minimum value of the pair, any number we pair with it would go to waste. So we need to pair it with a value &gt;= ai." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy problem, arrange an array into pairs such that sum of minimum of all pairs is maximized using greedy.&#10;&#10;Trick was to organize into pair such that waste is minimum. Since we are interested only in the minimum value of the pair, any number we pair with it would go to waste. So we need to pair it with a value &gt;= ai." />
+    <MESSAGE value="Solve easy problem, find the maximum subarray of size k in an array using sliding window.&#10;&#10;Learnings: Smallest negative double value is -Double.MAX_VALUE or Double.NEGATIVE_INFINITY. Double.MIN_VALUE is actually the smallest positive value. Mind blown! Learnt something new today." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy problem, find the maximum subarray of size k in an array using sliding window.&#10;&#10;Learnings: Smallest negative double value is -Double.MAX_VALUE or Double.NEGATIVE_INFINITY. Double.MIN_VALUE is actually the smallest positive value. Mind blown! Learnt something new today." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
