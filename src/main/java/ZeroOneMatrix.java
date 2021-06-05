@@ -40,7 +40,7 @@ public class ZeroOneMatrix {
      * https://leetcode.com/problems/01-matrix/discuss/101102/Short-solution-Each-path-needs-at-most-one-turn
      * This is quite similar to {@link LargestPlusSign}
      * <p>
-     * {@link ShortestBridge} {@link RottingOranges} {@link WallsAndGates} related multi BFS problem
+     * {@link ShortestBridge} {@link RottingOranges} {@link WallsAndGates} {@link AsFarFromLandAsPossible} related multi BFS problem
      */
     public int[][] updateMatrix(int[][] mat) {
         ArrayDeque<Pair<Integer, Integer>> queue = new ArrayDeque<>();
