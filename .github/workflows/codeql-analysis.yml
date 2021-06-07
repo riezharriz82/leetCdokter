@@ -38,7 +38,7 @@ jobs:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
 
     steps:
-    - run: wget -O java_package.tar.gz https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-linux_x64.tar.gz
+    - run: wget -O $RUNNER_TEMP/java_package.tar.gz https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-linux_x64.tar.gz
     - uses: actions/setup-java@v2
       with:
         distribution: 'jdkfile'
