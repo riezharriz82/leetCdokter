@@ -14,6 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
@@ -226,13 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00879" summary="Solve easy and extremely tricky find second minimum node in a binary tree using divide and conquer in O(height). Was not able to solve this on my own in O(height)&#10;&#10;Learnings: Use divide and conquer to find the min/max element in a tree along with using it in arithmetic expressions.">
-      <created>1618842725408</created>
-      <option name="number" value="00879" />
-      <option name="presentableId" value="LOCAL-00879" />
-      <option name="project" value="LOCAL" />
-      <updated>1618842725408</updated>
     </task>
     <task id="LOCAL-00880" summary="Solve hard and a bit tricky problem find the minimum candies to give to people such that people with high ratings should be given more candies than their neighbours using two pass greedy solution.&#10;&#10;Leveraged prior learnings of solving mountain related problem using two passes.">
       <created>1618845394866</created>
@@ -570,7 +565,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623062567056</updated>
     </task>
-    <option name="localTasksCounter" value="928" />
+    <task id="LOCAL-00928" summary="Solve easy and a bit tricky problem, split a string such that it results in all balanced substrings, containing equal no of L and R using greedy.&#10;&#10;Reduce the problem to finding balanced parentheses substrings in a string by assigning -1 to L and 1 to R.">
+      <created>1623063235420</created>
+      <option name="number" value="00928" />
+      <option name="presentableId" value="LOCAL-00928" />
+      <option name="project" value="LOCAL" />
+      <updated>1623063235420</updated>
+    </task>
+    <option name="localTasksCounter" value="929" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +651,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find whether the provided strings match the provided pattern by maintaining a mapping from source to target and from target to source.&#10;&#10;Very similar to previously solved problems." />
     <MESSAGE value="Solve medium find the minimum path sum to reach any cell of last row from any cell in the first row using recursion + memoization.&#10;&#10;Leveraged prior learnings of directly using DP as the graph does not contain any cycles." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choosing to concatenate current string or skipping current string." />
     <MESSAGE value="Solve medium, find no of pairs whose sum equals target sum provided you can increment the value at any index, by maintaining a hashmap of value to its frequency.&#10;&#10;Leveraged prior learnings of solving two sum problems." />
@@ -674,7 +675,8 @@
     <MESSAGE value="Add approach and related problems in RepeatedStringMatch problem. Find the minimum number of times a string has to be repeated such that another string is a substring of it." />
     <MESSAGE value="Add approach and related non overlapping problems in NumberOfGoodWaysToSplitString" />
     <MESSAGE value="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking." />
+    <MESSAGE value="Solve easy and a bit tricky problem, split a string such that it results in all balanced substrings, containing equal no of L and R using greedy.&#10;&#10;Reduce the problem to finding balanced parentheses substrings in a string by assigning -1 to L and 1 to R." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and a bit tricky problem, split a string such that it results in all balanced substrings, containing equal no of L and R using greedy.&#10;&#10;Reduce the problem to finding balanced parentheses substrings in a string by assigning -1 to L and 1 to R." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
