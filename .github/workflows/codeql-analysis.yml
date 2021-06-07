@@ -41,7 +41,7 @@ jobs:
     - name: Setup Java JDK
       uses: actions/setup-java@v2
       with:
-        distribution: 'adopt'
+        distribution: 'zulu'
         java-version: '8'
         
     - name: Checkout repository
