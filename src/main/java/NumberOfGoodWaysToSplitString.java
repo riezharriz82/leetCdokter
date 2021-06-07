@@ -24,6 +24,12 @@ import java.util.Set;
  * ("aacab", "a") Left string and right string contains 3 and 1 different letters respectively.
  */
 public class NumberOfGoodWaysToSplitString {
+    /**
+     * Approach: Two pass algorithm by maintaining a left/right array. Solve it similar to solving non-overlapping problems by
+     * maintaining two arrays tracking count of distinct characters found at each index from left and right direction.
+     * <p>
+     * {@link NumberOfWaysToSplitAString} {@link SplitAStringIntoMaxNumberOfUniqueSubstrings} {@link MaximumNumberOfNonOverlappingSubarraysWithTargetSum}
+     */
     public int numSplits(String s) {
         int size = s.length();
         int[] leftDistinct = new int[size]; //for each index, find number of distinct characters found till index i
