@@ -13,11 +13,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking.">
       <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfGoodWaysToSplitString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfGoodWaysToSplitString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,20 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00877" summary="Update feedback of Apna HLD round">
-      <created>1618688126351</created>
-      <option name="number" value="00877" />
-      <option name="presentableId" value="LOCAL-00877" />
-      <option name="project" value="LOCAL" />
-      <updated>1618688126351</updated>
-    </task>
-    <task id="LOCAL-00878" summary="Solve medium implement a Trie data structure that supports countWordsEqualTo() and countWordsStartingWith() and erase() methods.&#10;&#10;Leveraged prior learnings of storing useful information directly in nodes of Trie. Care must be taken while performing erase() to actually remove the nodes instead of just decrementing the count.">
-      <created>1618836038710</created>
-      <option name="number" value="00878" />
-      <option name="presentableId" value="LOCAL-00878" />
-      <option name="project" value="LOCAL" />
-      <updated>1618836038710</updated>
     </task>
     <task id="LOCAL-00879" summary="Solve easy and extremely tricky find second minimum node in a binary tree using divide and conquer in O(height). Was not able to solve this on my own in O(height)&#10;&#10;Learnings: Use divide and conquer to find the min/max element in a tree along with using it in arithmetic expressions.">
       <created>1618842725408</created>
@@ -572,7 +556,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622902351786</updated>
     </task>
-    <option name="localTasksCounter" value="926" />
+    <task id="LOCAL-00926" summary="Add approach and related non overlapping problems in NumberOfGoodWaysToSplitString">
+      <created>1623062458782</created>
+      <option name="number" value="00926" />
+      <option name="presentableId" value="LOCAL-00926" />
+      <option name="project" value="LOCAL" />
+      <updated>1623062458783</updated>
+    </task>
+    <task id="LOCAL-00927" summary="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking.">
+      <created>1623062567056</created>
+      <option name="number" value="00927" />
+      <option name="presentableId" value="LOCAL-00927" />
+      <option name="project" value="LOCAL" />
+      <updated>1623062567056</updated>
+    </task>
+    <option name="localTasksCounter" value="928" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,8 +649,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium find the time required to fill memory sticks by consuming i bits every ith second using simulation." />
-    <MESSAGE value="Solve medium and a bit tricky problem, find the box contents after rotating a box containing stones and stationary obstacles using two pointers.&#10;&#10;Leveraged previous learnings of simulating rotation using transpose + reverse." />
     <MESSAGE value="Solve medium find whether the provided strings match the provided pattern by maintaining a mapping from source to target and from target to source.&#10;&#10;Very similar to previously solved problems." />
     <MESSAGE value="Solve medium find the minimum path sum to reach any cell of last row from any cell in the first row using recursion + memoization.&#10;&#10;Leveraged prior learnings of directly using DP as the graph does not contain any cycles." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choosing to concatenate current string or skipping current string." />
@@ -676,7 +672,9 @@
     <MESSAGE value="Solve easy problem, arrange an array into pairs such that sum of minimum of all pairs is maximized using greedy.&#10;&#10;Trick was to organize into pair such that waste is minimum. Since we are interested only in the minimum value of the pair, any number we pair with it would go to waste. So we need to pair it with a value &gt;= ai." />
     <MESSAGE value="Solve easy problem, find the maximum subarray of size k in an array using sliding window.&#10;&#10;Learnings: Smallest negative double value is -Double.MAX_VALUE or Double.NEGATIVE_INFINITY. Double.MIN_VALUE is actually the smallest positive value. Mind blown! Learnt something new today." />
     <MESSAGE value="Add approach and related problems in RepeatedStringMatch problem. Find the minimum number of times a string has to be repeated such that another string is a substring of it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add approach and related problems in RepeatedStringMatch problem. Find the minimum number of times a string has to be repeated such that another string is a substring of it." />
+    <MESSAGE value="Add approach and related non overlapping problems in NumberOfGoodWaysToSplitString" />
+    <MESSAGE value="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
