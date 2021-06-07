@@ -35,6 +35,9 @@ public class SplitAStringIntoMaxNumberOfUniqueSubstrings {
      * Maintain a set of current substrings and try cutting at each index if the current cut yields a distinct substring.
      * Remove the current cut and make a cut at another index, keeping track of max cuts formed so far.
      * <p>
+     * Alternatively we can leverage bit magic to generate all permutations from 1 to 2^n-1
+     * https://federico-feresini.medium.com/split-a-string-into-the-max-number-of-unique-substrings-algorithms-visualizations-6116561b7fc6
+     * <p>
      * {@link Subsets} {@link SplitAStringInBalancedStrings} {@link NumberOfWaysToSplitAString} {@link NumberOfGoodWaysToSplitString}
      */
     public int maxUniqueSplit(String s) {
