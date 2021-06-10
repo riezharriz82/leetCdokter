@@ -13,11 +13,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking.">
+    <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrefixAndSuffixSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrefixAndSuffixSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +143,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConcertTickets (1)">
+  <component name="RunManager" selected="Application.MovieFestival">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -149,20 +151,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Apartments (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Apartments" />
-      <module name="leetcode-practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Apartments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cses.SortingAndSearching.Apartments" />
-      <module name="leetcode-practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,6 +176,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieFestival" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cses.SortingAndSearching.MovieFestival" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestaurantCustomers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cses.SortingAndSearching.RestaurantCustomers" />
+      <module name="leetcode-practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="leetcode-practice" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -200,19 +202,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Application.Apartments" />
-      <item itemvalue="Application.Apartments (1)" />
       <item itemvalue="Application.FerrisWheel" />
       <item itemvalue="Application.ConcertTickets" />
       <item itemvalue="Application.ConcertTickets (1)" />
+      <item itemvalue="Application.RestaurantCustomers" />
+      <item itemvalue="Application.MovieFestival" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MovieFestival" />
+        <item itemvalue="Application.RestaurantCustomers" />
         <item itemvalue="Application.ConcertTickets (1)" />
         <item itemvalue="Application.ConcertTickets" />
         <item itemvalue="Application.FerrisWheel" />
-        <item itemvalue="Application.Apartments (1)" />
-        <item itemvalue="Application.Apartments" />
       </list>
     </recent_temporary>
   </component>
@@ -224,13 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00883" summary="Add an optimized constant time solution for designing a MaxFrequencyStack by leveraging the fact that maxfrequency will be continuous">
-      <created>1618938156968</created>
-      <option name="number" value="00883" />
-      <option name="presentableId" value="LOCAL-00883" />
-      <option name="project" value="LOCAL" />
-      <updated>1618938156968</updated>
     </task>
     <task id="LOCAL-00884" summary="Actually add the optimized solution for designing a MaxFrequencyStack">
       <created>1619021466050</created>
@@ -568,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623072549153</updated>
     </task>
-    <option name="localTasksCounter" value="932" />
+    <task id="LOCAL-00932" summary="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
+      <created>1623182110116</created>
+      <option name="number" value="00932" />
+      <option name="presentableId" value="LOCAL-00932" />
+      <option name="project" value="LOCAL" />
+      <updated>1623182110116</updated>
+    </task>
+    <option name="localTasksCounter" value="933" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,7 +649,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky problem, find the min no of swaps required to make a binary string alternating using greedy. Target string would either start from 1 or from 0. Result would be the smallest mismatches between those. Care must be taken to weed out the impossible swaps cases.&#10;&#10;Leveraged prior learning of solving alternating string problem." />
     <MESSAGE value="Add comment to tag a reverse index/lookup problem." />
     <MESSAGE value="Solve medium problem, find the min speed of train required to arrive before time using binary search.&#10;&#10;Leveraged prior learning of solving binary search problem. Followed errichto's template." />
     <MESSAGE value="Solve hard and a bit tricky problem, find the min cost to make at least one valid path in a grid where we can flip the cell value to reach other cell by incurring a cost of 1. Tricky thing was to imagine it as a connected graph with unconnected cell having edge weight of 1.&#10;&#10;Was not able to solve this question on my own. Need a lot of practice on hard problems." />
@@ -672,7 +673,8 @@
     <MESSAGE value="Update README by adding &quot;How to use&quot; instructions." />
     <MESSAGE value="Add another approach to solve SplitAStringIntoMaxNumberOfUniqueSubstrings using Bit magic" />
     <MESSAGE value="Solve CSES Introductory problem, weird algorithm using simulation.&#10;&#10;Learnings: While multiplication, take care of integer overflow." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve CSES Introductory problem, weird algorithm using simulation.&#10;&#10;Learnings: While multiplication, take care of integer overflow." />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

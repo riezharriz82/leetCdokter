@@ -40,13 +40,19 @@ public class PrefixAndSuffixSearch {
      *
      * We can optimize it a bit by avoiding the DFS operation by storing set<integer> of valid indexes directly at trie nodes
      * This is similar to {@link DesignSearchAutocompleteSystem}
-     * Then we can perform set intersection between two sets. Strangely it times out. Not sure why my original solution gets AC
-     * but this solution times out.
+     * Then we can perform set intersection between two sets. It times out.
+     * The reason is the size of set stored at the nodes would be much larger in the timed out code, as we are storing lot of redundant information per node.
+     * ie. if words are repeated ie. "apple", "apple", we would store {0,1} per every node but we are interested only in the latest node.
+     * Trick to solve this would be to avoid duplicates ie. use a hashmap of <string, integer>, value being the latest index.
+     * Using this trick gives AC in similar time as the reverse index code, however during actual interviews, it's very important to explain the interviewers
+     * the trade off in both the approaches, as the reverse indexes is very beneficial if no of find operations highly exceeds no of insert operations
      *
      * Another approach is to just maintain one trie e.g consider apple
      * Store words like "e{apple", "le{apple", "ple{apple", "pple{apple", "apple{apple" i.e. maintain a reverse index
      * So if you query for prefix = app and suffix = le, search for "le{app" in trie
      * Space required will be much larger than my current implementation but there is always a trade off
+     *
+     * This was asked in Google onsite interview
      * See {@link PrefixAndSuffixSearchOptimized}
      * </pre>
      */
@@ -111,6 +117,7 @@ public class PrefixAndSuffixSearch {
         if (root.index != -1) {
             //found a valid word, store it's index
             indices.add(root.index);
+            //notice that we are not stopping the recursion here in order to consider words like "apple", "apples"
         }
         for (int i = 0; i < 26; i++) {
             if (root.letters[i] != null) {
