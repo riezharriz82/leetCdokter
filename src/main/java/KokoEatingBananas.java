@@ -33,7 +33,7 @@ public class KokoEatingBananas {
      * Hours <= H [F,F,F,F...T,T,T]
      * We are looking for first T
      * <p>
-     * {@link DivideChocolates} {@link MagneticForceBetweenTwoBalls} {@link MissingElementInSortedArray} related problems
+     * {@link DivideChocolates} {@link MagneticForceBetweenTwoBalls} {@link MissingElementInSortedArray} {@link FindKClosestElements}
      */
     public int minEatingSpeed(int[] piles, int H) {
         int min = Integer.MAX_VALUE;

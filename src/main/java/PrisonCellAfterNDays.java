@@ -47,6 +47,8 @@ public class PrisonCellAfterNDays {
      * In the future when you see questions where you have to make a large amount of state transitions over a state space
      * that seems small, just compare the size of the state space to the # of transitions to determine if there's a cycle
      * so you can bound complexity to the size of the state space.
+     * <p>
+     * {@link FindTheStudentThatWilReplaceTheChalk}
      */
     public int[] prisonAfterNDays(int[] cells, int N) {
         Set<String> states = new HashSet<>();

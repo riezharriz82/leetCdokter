@@ -93,7 +93,7 @@ public class LongestCommonSubarray {
      * Refer Lalit Kundu video https://www.youtube.com/watch?v=kpnH9lNAZ0k
      * https://cp-algorithms.com/string/suffix-automaton.html
      * <p>
-     * {@link LongestDuplicateSubstring} {@link RepeatedSubstringPattern} {@link KokoEatingBananas} {@link DivideChocolates}
+     * {@link LongestDuplicateSubstring} {@link RepeatedSubstringPattern} {@link KokoEatingBananas} {@link DivideChocolates} {@link MaximumNumberOfRemovableCharacters}
      */
     public int findLengthBinarySearch(int[] A, int[] B) {
         return 0;

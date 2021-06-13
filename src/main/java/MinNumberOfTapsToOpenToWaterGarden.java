@@ -27,6 +27,8 @@ public class MinNumberOfTapsToOpenToWaterGarden {
      * Approach: Similar to {@link JumpGame2}
      * First you have to modify the input to match jump games input i.e. need a way of finding the max index an index can jump to
      * Once converted it will be similar to greedy logic in JumpGame2
+     * <p>
+     * {@link JumpGame7} {@link MinimumNumberOfRefuelingStops}
      */
     public int minTapsGreedy(int n, int[] ranges) {
         int[] jumpTo = new int[n + 1];

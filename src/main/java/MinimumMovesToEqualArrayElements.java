@@ -24,7 +24,7 @@ public class MinimumMovesToEqualArrayElements {
      * <p>
      * Can also be solved mathematically
      * <p>
-     * {@link SmallestRange2} {@link MinimumMovesToEqualArrayElements2} {@link BulbSwitcher4} {@link BulbSwitcher}
+     * {@link SmallestRange2} {@link MinimumMovesToEqualArrayElements2} {@link BulbSwitcher4} {@link BulbSwitcher} {@link ConstructTargetArrayWithMultipleSums}
      */
     public int minMoves(int[] nums) {
         int steps = 0, min = Integer.MAX_VALUE;

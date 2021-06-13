@@ -23,7 +23,7 @@ public class MaximumPointsToObtainFromCards {
      * first k - 1 digits, last 1 digit or first k - 2 digits, last 2 digits and so on.
      * So if you find a min subarray of size n - k, the result will be total sum - min subarray sum
      * <p>
-     * {@link MinimumSwapsToGroupAllOnesTogether}
+     * {@link MinimumSwapsToGroupAllOnesTogether} {@link FindKClosestElements}
      */
     public int maxScore(int[] cardPoints, int k) {
         int totalSum = 0;

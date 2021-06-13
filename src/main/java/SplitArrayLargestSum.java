@@ -69,6 +69,8 @@ public class SplitArrayLargestSum {
      * Here we need the first T, so if we see any index which returns T, then we try to recur left and save the potential answer
      *
      * TimeComplexity: O(n*log(sumOfArray)). For each iteration of binary search we need O(n) time and there are total log(sumOfArray) iterations
+     *
+     * {@link KokoEatingBananas} {@link FindKClosestElements}
      */
     public int splitArrayGreedy(int[] nums, int m) {
         int sum = 0, maxValue = Integer.MIN_VALUE;
