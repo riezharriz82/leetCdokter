@@ -16,6 +16,9 @@ import java.util.List;
  * ((2*(3-4))*5) = -10
  * (2*((3-4)*5)) = -10
  * (((2*3)-4)*5) = 10
+ *
+ * 1 <= expression.length <= 20
+ * expression consists of digits and the operator '+', '-', and '*'.
  */
 public class DifferentWaysToAddParanthesis {
     /**
