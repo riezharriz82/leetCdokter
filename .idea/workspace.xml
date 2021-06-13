@@ -14,6 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,12 +197,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="Application.FerrisWheel" />
-      <item itemvalue="Application.ConcertTickets" />
       <item itemvalue="Application.ConcertTickets (1)" />
-      <item itemvalue="Application.RestaurantCustomers" />
+      <item itemvalue="Application.ConcertTickets" />
+      <item itemvalue="Application.FerrisWheel" />
       <item itemvalue="Application.MovieFestival" />
+      <item itemvalue="Application.RestaurantCustomers" />
+      <item itemvalue="JUnit.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -221,13 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00888" summary="Solve easy and extremely tricky to optimize space complexity, find two nodes in a BST whose value equals k using iterative BST traversal.&#10;&#10;Learnings: Iterative traversals are very tricky.">
-      <created>1619275592983</created>
-      <option name="number" value="00888" />
-      <option name="presentableId" value="LOCAL-00888" />
-      <option name="project" value="LOCAL" />
-      <updated>1619275592984</updated>
     </task>
     <task id="LOCAL-00889" summary="Solve medium find two nodes in two BST that sums to target node using iterative traversals. Perform a inorder iterative traversal for the first tree and a reverse inorder iterative traversal for the second tree.&#10;&#10;Leveraged prior learning of doing iterative BST traversal.">
       <created>1619277852864</created>
@@ -565,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623581871045</updated>
     </task>
-    <option name="localTasksCounter" value="937" />
+    <task id="LOCAL-00937" summary="Solve medium problem, find the first student which have to replace the chalk given total amount of chalk available and the amount of chalk consumed by each student using modulo arithmetic.">
+      <created>1623582047520</created>
+      <option name="number" value="00937" />
+      <option name="presentableId" value="LOCAL-00937" />
+      <option name="project" value="LOCAL" />
+      <updated>1623582047521</updated>
+    </task>
+    <option name="localTasksCounter" value="938" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +645,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium and a bit tricky problem, find the min number of deci binary numbers that sum to the target value using greedy.&#10;&#10;Trick was to build the answer digit by digit by keeping track of number of 1's required per digit." />
     <MESSAGE value="Solve medium problem, find the maximum sum of subarray containing unique elements using sliding window.&#10;&#10;Leveraged prior learning of solving &quot;maximum&quot; sliding window problem." />
     <MESSAGE value="Solve medium and a bit tricky to optimize find whether a string is composed by interleaving substrings from two different string using DP.&#10;&#10;Leveraged prior learning of solving similar string related recursive problems. Tricky thing was to reduce time complexity from n^3 to n^2 by reducing no of states by generating redundant states from remaining states." />
     <MESSAGE value="Solve medium problem, find the shortest path to get nearest food in a matrix using BFS.&#10;&#10;Leveraged prior learning of applying BFS to find shortest path in an unweighted cyclic graph." />
@@ -669,7 +669,8 @@
     <MESSAGE value="Solve medium and a bit tricky problem, find the max number of characters that you can remove from a string and still a target string remains the subsequence of that string using binary search.&#10;&#10;Leveraged prior learnings of performing binary search when the result lies in a target space. Happy to solve this question in the contest." />
     <MESSAGE value="Add a bunch of related problems to multiple independent problems" />
     <MESSAGE value="Add constraints in the problem statement of DifferentWaysToAddParanthesis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add constraints in the problem statement of DifferentWaysToAddParanthesis" />
+    <MESSAGE value="Solve medium problem, find the first student which have to replace the chalk given total amount of chalk available and the amount of chalk consumed by each student using modulo arithmetic." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, find the first student which have to replace the chalk given total amount of chalk available and the amount of chalk consumed by each student using modulo arithmetic." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

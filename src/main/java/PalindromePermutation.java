@@ -17,6 +17,8 @@ public class PalindromePermutation {
      * {@link LengthOfLongestPalindrome} Very similar problem to previously solved problem
      * All even frequency characters can happily contribute to palindrome, the odd count characters has a caveat that there should be only one
      * character with odd frequency, that can act as the center of the palindrome.
+     * <p>
+     * {@link RedistributeCharactersToMakeAllStringsEqual}
      */
     public boolean canPermutePalindrome(String s) {
         int[] cnt = new int[256];
