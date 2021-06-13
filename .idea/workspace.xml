@@ -14,18 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DifferentWaysToAddParanthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DifferentWaysToAddParanthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/KokoEatingBananas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KokoEatingBananas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumPointsToObtainFromCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumPointsToObtainFromCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrisonCellAfterNDays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrisonCellAfterNDays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SentenceScreenFitting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SentenceScreenFitting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,27 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00885" summary="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm.">
-      <created>1619201413671</created>
-      <option name="number" value="00885" />
-      <option name="presentableId" value="LOCAL-00885" />
-      <option name="project" value="LOCAL" />
-      <updated>1619201413671</updated>
-    </task>
-    <task id="LOCAL-00886" summary="Solve medium and a bit tricky problem, find the smallest cost to reach last row from first row in a triangle using DFS + Memoization.&#10;&#10;Learnings: I made the implementation complicated by solving it via Djikstra/Greedy instead of solving it via simple DFS + Memoization. Greedy would have been optimal in case the graph had cycles.">
-      <created>1619207557011</created>
-      <option name="number" value="00886" />
-      <option name="presentableId" value="LOCAL-00886" />
-      <option name="project" value="LOCAL" />
-      <updated>1619207557011</updated>
-    </task>
-    <task id="LOCAL-00887" summary="Solve hard and extremely tricky design LFU cache using hashmap of key -&gt; node + Doubly linked list of frequency -&gt; set of nodes with the respective frequency.&#10;&#10;I was not able to fully solve this problem on my own. I was not able to cleanly implement how to find the smallest frequency and reshuffle nodes to +1 frequency node in DLL. &#10;Once I saw the paper, I was able to visualize it clearly and was able to implement it cleanly as well.">
-      <created>1619270337843</created>
-      <option name="number" value="00887" />
-      <option name="presentableId" value="LOCAL-00887" />
-      <option name="project" value="LOCAL" />
-      <updated>1619270337843</updated>
     </task>
     <task id="LOCAL-00888" summary="Solve easy and extremely tricky to optimize space complexity, find two nodes in a BST whose value equals k using iterative BST traversal.&#10;&#10;Learnings: Iterative traversals are very tricky.">
       <created>1619275592983</created>
@@ -576,7 +544,28 @@
       <option name="project" value="LOCAL" />
       <updated>1623342658092</updated>
     </task>
-    <option name="localTasksCounter" value="934" />
+    <task id="LOCAL-00934" summary="Solve medium and a bit tricky problem, find the max number of characters that you can remove from a string and still a target string remains the subsequence of that string using binary search.&#10;&#10;Leveraged prior learnings of performing binary search when the result lies in a target space. Happy to solve this question in the contest.">
+      <created>1623581720555</created>
+      <option name="number" value="00934" />
+      <option name="presentableId" value="LOCAL-00934" />
+      <option name="project" value="LOCAL" />
+      <updated>1623581720555</updated>
+    </task>
+    <task id="LOCAL-00935" summary="Add a bunch of related problems to multiple independent problems">
+      <created>1623581828537</created>
+      <option name="number" value="00935" />
+      <option name="presentableId" value="LOCAL-00935" />
+      <option name="project" value="LOCAL" />
+      <updated>1623581828537</updated>
+    </task>
+    <task id="LOCAL-00936" summary="Add constraints in the problem statement of DifferentWaysToAddParanthesis">
+      <created>1623581871045</created>
+      <option name="number" value="00936" />
+      <option name="presentableId" value="LOCAL-00936" />
+      <option name="project" value="LOCAL" />
+      <updated>1623581871045</updated>
+    </task>
+    <option name="localTasksCounter" value="937" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,9 +644,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add comment to tag a reverse index/lookup problem." />
-    <MESSAGE value="Solve medium problem, find the min speed of train required to arrive before time using binary search.&#10;&#10;Leveraged prior learning of solving binary search problem. Followed errichto's template." />
-    <MESSAGE value="Solve hard and a bit tricky problem, find the min cost to make at least one valid path in a grid where we can flip the cell value to reach other cell by incurring a cost of 1. Tricky thing was to imagine it as a connected graph with unconnected cell having edge weight of 1.&#10;&#10;Was not able to solve this question on my own. Need a lot of practice on hard problems." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the min number of deci binary numbers that sum to the target value using greedy.&#10;&#10;Trick was to build the answer digit by digit by keeping track of number of 1's required per digit." />
     <MESSAGE value="Solve medium problem, find the maximum sum of subarray containing unique elements using sliding window.&#10;&#10;Leveraged prior learning of solving &quot;maximum&quot; sliding window problem." />
     <MESSAGE value="Solve medium and a bit tricky to optimize find whether a string is composed by interleaving substrings from two different string using DP.&#10;&#10;Leveraged prior learning of solving similar string related recursive problems. Tricky thing was to reduce time complexity from n^3 to n^2 by reducing no of states by generating redundant states from remaining states." />
@@ -680,7 +666,10 @@
     <MESSAGE value="Add another approach to solve SplitAStringIntoMaxNumberOfUniqueSubstrings using Bit magic" />
     <MESSAGE value="Solve CSES Introductory problem, weird algorithm using simulation.&#10;&#10;Learnings: While multiplication, take care of integer overflow." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first." />
+    <MESSAGE value="Solve medium and a bit tricky problem, find the max number of characters that you can remove from a string and still a target string remains the subsequence of that string using binary search.&#10;&#10;Leveraged prior learnings of performing binary search when the result lies in a target space. Happy to solve this question in the contest." />
+    <MESSAGE value="Add a bunch of related problems to multiple independent problems" />
+    <MESSAGE value="Add constraints in the problem statement of DifferentWaysToAddParanthesis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add constraints in the problem statement of DifferentWaysToAddParanthesis" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
