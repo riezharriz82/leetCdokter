@@ -15,6 +15,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BulbSwitcher4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BulbSwitcher4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00889" summary="Solve medium find two nodes in two BST that sums to target node using iterative traversals. Perform a inorder iterative traversal for the first tree and a reverse inorder iterative traversal for the second tree.&#10;&#10;Leveraged prior learning of doing iterative BST traversal.">
-      <created>1619277852864</created>
-      <option name="number" value="00889" />
-      <option name="presentableId" value="LOCAL-00889" />
-      <option name="project" value="LOCAL" />
-      <updated>1619277852864</updated>
     </task>
     <task id="LOCAL-00890" summary="Solve medium balance a given BST using Divide and conquer. In order to reduce the space complexity to O(1) need to use DSW algorithm.">
       <created>1619284469634</created>
@@ -566,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623582047521</updated>
     </task>
-    <option name="localTasksCounter" value="938" />
+    <task id="LOCAL-00938" summary="Solve easy problem, find whether we can make all the strings equal by redistributing the characters using greedy.&#10;&#10;Keep track of frequency of all the characters and check whether it's possible to distribute each character evenly between all the strings.">
+      <created>1623582699121</created>
+      <option name="number" value="00938" />
+      <option name="presentableId" value="LOCAL-00938" />
+      <option name="project" value="LOCAL" />
+      <updated>1623582699121</updated>
+    </task>
+    <option name="localTasksCounter" value="939" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +646,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium problem, find the maximum sum of subarray containing unique elements using sliding window.&#10;&#10;Leveraged prior learning of solving &quot;maximum&quot; sliding window problem." />
     <MESSAGE value="Solve medium and a bit tricky to optimize find whether a string is composed by interleaving substrings from two different string using DP.&#10;&#10;Leveraged prior learning of solving similar string related recursive problems. Tricky thing was to reduce time complexity from n^3 to n^2 by reducing no of states by generating redundant states from remaining states." />
     <MESSAGE value="Solve medium problem, find the shortest path to get nearest food in a matrix using BFS.&#10;&#10;Leveraged prior learning of applying BFS to find shortest path in an unweighted cyclic graph." />
     <MESSAGE value="Add approach and related multi BFS problems in RottingOranges" />
@@ -670,7 +670,8 @@
     <MESSAGE value="Add a bunch of related problems to multiple independent problems" />
     <MESSAGE value="Add constraints in the problem statement of DifferentWaysToAddParanthesis" />
     <MESSAGE value="Solve medium problem, find the first student which have to replace the chalk given total amount of chalk available and the amount of chalk consumed by each student using modulo arithmetic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, find the first student which have to replace the chalk given total amount of chalk available and the amount of chalk consumed by each student using modulo arithmetic." />
+    <MESSAGE value="Solve easy problem, find whether we can make all the strings equal by redistributing the characters using greedy.&#10;&#10;Keep track of frequency of all the characters and check whether it's possible to distribute each character evenly between all the strings." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy problem, find whether we can make all the strings equal by redistributing the characters using greedy.&#10;&#10;Keep track of frequency of all the characters and check whether it's possible to distribute each character evenly between all the strings." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

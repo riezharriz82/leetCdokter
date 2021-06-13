@@ -35,7 +35,7 @@ public class BulbSwitcher4 {
      * However if this bulb is 0, then we need to flip this and perform an additional operation.
      * keep repeating this for the remaining indices.
      * <p>
-     * {@link MinimumNumberOfOperationsToReachTargetArray} for similar question
+     * {@link MinimumNumberOfOperationsToReachTargetArray} {@link MergeTripletsToFormTargetTriplet}
      */
     public int minFlips(String target) {
         int res = 0;
