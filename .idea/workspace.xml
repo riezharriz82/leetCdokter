@@ -15,11 +15,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DifferentWaysToAddParanthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DifferentWaysToAddParanthesis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KokoEatingBananas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KokoEatingBananas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LongestCommonSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaximumPointsToObtainFromCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaximumPointsToObtainFromCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinNumberOfTapsToOpenToWaterGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NumberOfMatchingSubsequences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrefixAndSuffixSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrefixAndSuffixSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrisonCellAfterNDays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrisonCellAfterNDays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SentenceScreenFitting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SentenceScreenFitting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SplitArrayLargestSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,13 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00884" summary="Actually add the optimized solution for designing a MaxFrequencyStack">
-      <created>1619021466050</created>
-      <option name="number" value="00884" />
-      <option name="presentableId" value="LOCAL-00884" />
-      <option name="project" value="LOCAL" />
-      <updated>1619021466050</updated>
     </task>
     <task id="LOCAL-00885" summary="Solve medium and a bit tricky problem, find the optimal index to place a line that intersects the least amount of bricks using greedy voting algorithm.">
       <created>1619201413671</created>
@@ -570,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623182110116</updated>
     </task>
-    <option name="localTasksCounter" value="933" />
+    <task id="LOCAL-00933" summary="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
+      <created>1623342658092</created>
+      <option name="number" value="00933" />
+      <option name="presentableId" value="LOCAL-00933" />
+      <option name="project" value="LOCAL" />
+      <updated>1623342658092</updated>
+    </task>
+    <option name="localTasksCounter" value="934" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
