@@ -14,9 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -321,13 +319,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00891" summary="Solve medium and extremely tricky to do in O(1) space, rotate an image clockwise 90 degrees in place by swapping the cells in group of 4's using recursion.&#10;&#10;Very happy to solve this question on my own in first attempt.">
-      <created>1619546774053</created>
-      <option name="number" value="00891" />
-      <option name="presentableId" value="LOCAL-00891" />
-      <option name="project" value="LOCAL" />
-      <updated>1619546774053</updated>
     </task>
     <task id="LOCAL-00892" summary="Solve medium and a bit tricky problem, find the no of total hits on counters received in last 5 minutes using deque. &#10;&#10;In my initial implementation, I implemented the solution using custom binary search by writing upper_bound() and lower_bound() but the solution became simplified after knowing that the timestamps are sorted for both getHits() and hits(), so we can simply use a deque for storing elements.">
       <created>1619637109724</created>
@@ -665,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623586611853</updated>
     </task>
-    <option name="localTasksCounter" value="940" />
+    <task id="LOCAL-00940" summary="Update JDK to 16 in order to try out new features of Java.">
+      <created>1623657244947</created>
+      <option name="number" value="00940" />
+      <option name="presentableId" value="LOCAL-00940" />
+      <option name="project" value="LOCAL" />
+      <updated>1623657244947</updated>
+    </task>
+    <option name="localTasksCounter" value="941" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -744,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium problem, find the shortest path to get nearest food in a matrix using BFS.&#10;&#10;Leveraged prior learning of applying BFS to find shortest path in an unweighted cyclic graph." />
     <MESSAGE value="Add approach and related multi BFS problems in RottingOranges" />
     <MESSAGE value="Add approach and related tricky problem for LargestPlusSign." />
     <MESSAGE value="Solve medium problem, find the shortest distance from nearest 0 for each cell using Multi BFS.&#10;&#10;Tricky thing was to solve this problem using DP in multiple passes. Learnt something new tonight." />
@@ -769,7 +766,8 @@
     <MESSAGE value="Solve medium problem, find the first student which have to replace the chalk given total amount of chalk available and the amount of chalk consumed by each student using modulo arithmetic." />
     <MESSAGE value="Solve easy problem, find whether we can make all the strings equal by redistributing the characters using greedy.&#10;&#10;Keep track of frequency of all the characters and check whether it's possible to distribute each character evenly between all the strings." />
     <MESSAGE value="Solve medium and extremely tricky problem, find whether it's possible to merge triplets to form target triplets using greedy.&#10;&#10;Trick was to first ignore any triplet with any value &gt; target triplet value. Then with the remaining triplets, check whether the max value of any triplet equals target value." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and extremely tricky problem, find whether it's possible to merge triplets to form target triplets using greedy.&#10;&#10;Trick was to first ignore any triplet with any value &gt; target triplet value. Then with the remaining triplets, check whether the max value of any triplet equals target value." />
+    <MESSAGE value="Update JDK to 16 in order to try out new features of Java." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update JDK to 16 in order to try out new features of Java." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
