@@ -43,6 +43,7 @@ public class RangeSumQuery2DImmutable {
      * |        (r2,c2)|   |       (r2,c2)|   |   (r2,c1)     |   |              |   |              |
      * +---------------+   +--------------+   +---------------+   +--------------+   +--------------+
      * </pre>
+     * {@link LargestPlusSign} {@link LargestMagicSquare}
      */
     public RangeSumQuery2DImmutable(int[][] matrix) {
         cumulativeSum = matrix;
