@@ -6,19 +6,24 @@
  * Input: nums = [4, 3, 2, 3, 5, 2, 1], k = 4
  * Output: True
  * Explanation: It's possible to divide it into 4 subsets (5), (1, 4), (2,3), (2,3) with equal sums.
+ *
+ * Constraints:
+ * 1 <= k <= nums.length <= 16
+ * 1 <= nums[i] <= 10^4
+ * The frequency of each element is in the range [1, 4].
  */
 public class PartitionKEqualSumSubsets {
     /**
-     * Approach: Recursion with backtracking
-     * Need to find k subsets each with sum = totalSum/k
+     * Approach: Backtracking, Need to find k subsets each with sum = totalSum/k
      * Keep a visited set and try adding elements to a set in order to reach target sum.
      * If target sum is reached, we need to find k-1 such subsets.
      * Every number has two choices either be a part of the current set or don't
+     * Time Complexity: k * (2^n) because we generate all the permutations k times
      * <p>
      * Trick was to use visited set to perform backtracking.
      * <p>
      * I was unable to think about backtracking solution on my own.
-     * Followup for {@link PartitionEqualSubsetSum}
+     * {@link PartitionEqualSubsetSum} {@link MatchsticksToSquare}
      */
     public boolean canPartitionKSubsets(int[] nums, int k) {
         int totalSum = 0;

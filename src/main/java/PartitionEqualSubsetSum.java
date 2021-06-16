@@ -6,6 +6,10 @@
  * Input: [1, 5, 11, 5]
  * Output: true
  * Explanation: The array can be partitioned as [1, 5, 5] and [11].
+ *
+ * Constraints:
+ * 1 <= nums.length <= 200
+ * 1 <= nums[i] <= 100
  */
 public class PartitionEqualSubsetSum {
     /**
@@ -16,6 +20,8 @@ public class PartitionEqualSubsetSum {
      * or an element is skipped, increment the index and recurse
      * <p>
      * An interesting variant of subset sum problem which is solved greedily {@link ReconstructOriginalDigitsFromEnglish}
+     *
+     * {@link PartitionKEqualSumSubsets} {@link MatchsticksToSquare}
      */
     public boolean canPartition(int[] nums) {
         int totalSum = 0;
