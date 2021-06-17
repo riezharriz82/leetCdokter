@@ -15,9 +15,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BrokenCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BrokenCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartitionEqualSubsetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartitionEqualSubsetSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PartitionKEqualSumSubsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PartitionKEqualSumSubsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MinimumMovesToEqualArrayElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,13 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00894" summary="Solve hard and extremely tricky to optimize, find whether a word with the provided suffix and prefix exists in dictionary or not using reverse indexes in trie.&#10;&#10;Trick was to generate all possible query patterns for a word and insert into trie ie. apple can be searched via &quot;apple|ap&quot;, &quot;ple|app&quot;, &quot;pple|ap&quot;. Don't forget to store useful information ie. index directly in trie node to avoid performing DFS.">
-      <created>1619902264277</created>
-      <option name="number" value="00894" />
-      <option name="presentableId" value="LOCAL-00894" />
-      <option name="project" value="LOCAL" />
-      <updated>1619902264277</updated>
     </task>
     <task id="LOCAL-00895" summary="Solve medium find the smallest unreserved seat using treeset. &#10;&#10;Leveraged prior learning of solving seat allocation problem using ordered set.">
       <created>1619905070200</created>
@@ -665,7 +658,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623682837727</updated>
     </task>
-    <option name="localTasksCounter" value="943" />
+    <task id="LOCAL-00943" summary="Solve medium and a bit tricky problem, convert all matchsticks into a valid square by reducing the problem to divide a set into 4 subsets with equal sum using backtracking.&#10;&#10;Leveraged prior learning of PartitionKEqualSumSubsets">
+      <created>1623850757345</created>
+      <option name="number" value="00943" />
+      <option name="presentableId" value="LOCAL-00943" />
+      <option name="project" value="LOCAL" />
+      <updated>1623850757345</updated>
+    </task>
+    <option name="localTasksCounter" value="944" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -744,7 +744,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve medium problem, find the shortest distance from nearest 0 for each cell using Multi BFS.&#10;&#10;Tricky thing was to solve this problem using DP in multiple passes. Learnt something new tonight." />
     <MESSAGE value="Solve medium and extremely tricky problem find the largest rectangle after performing horizontal and vertical cuts using greedy. &#10;&#10;Learnings: Reduce the rectangle problems (2D) into 1D and then solve for each dimension independently ie. find the largest horizontal cut and vertical cut which would result in the rectangle with largest area." />
     <MESSAGE value="Add medium and extremely tricky problem, find the smallest impossible subset sum that is not possible to be generated from an array using greedy" />
     <MESSAGE value="Add solution for medium and extremely tricky problem, find the cheapest flight within k stops from a source to destination using modified djikstra.&#10;&#10;Learnings: This is a weighted graph, so need to apply Djikstra but we have another constraint apart from cost, so maintain another array similar to cost[]. Visit an edge only if it either reduces the cost or reduces the no of hops." />
@@ -769,7 +768,8 @@
     <MESSAGE value="Update JDK to 16 in order to try out new features of Java." />
     <MESSAGE value="Solve medium problem, find all the buildings whose height is strictly less than all the buildings on its right." />
     <MESSAGE value="Solve medium and a bit tricky problem," />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem," />
+    <MESSAGE value="Solve medium and a bit tricky problem, convert all matchsticks into a valid square by reducing the problem to divide a set into 4 subsets with equal sum using backtracking.&#10;&#10;Leveraged prior learning of PartitionKEqualSumSubsets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium and a bit tricky problem, convert all matchsticks into a valid square by reducing the problem to divide a set into 4 subsets with equal sum using backtracking.&#10;&#10;Leveraged prior learning of PartitionKEqualSumSubsets" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

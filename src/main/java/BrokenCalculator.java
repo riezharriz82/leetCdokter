@@ -43,7 +43,7 @@ public class BrokenCalculator {
      * <p>
      * Was able to solve it after solving some examples on paper and revisiting the related problem
      * <p>
-     * {@link alternate.TargetNumberWithOperations} related problem
+     * {@link alternate.TargetNumberWithOperations} {@link CheckIfAWordIsValidAfterSubstitution} related problem
      */
     public int brokenCalc(int X, int Y) {
         int steps = 0;
