@@ -11,6 +11,8 @@ import java.util.Arrays;
 public class ShortestDistanceToACharacter {
     /**
      * Approach: Keep track of the shortest distance to target from left and right separately. Result would be the min of those two distances
+     *
+     * {@link ShortestDistanceToTargetColor}
      */
     public int[] shortestToChar(String S, char C) {
         int n = S.length();
