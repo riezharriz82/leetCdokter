@@ -1,0 +1,8 @@
+XML Validator
+Find whether the given string contains valid xml or not.
+Need to check
+1. Whether all the start tag have a corresponding end tag.
+2. Whether all the tags are properly nested e.g <a><b></a></b>
+3. Whether all the tags are valid e.g <> or <aaaaa <b>
+
+Solved it using stacks. {@link RemoveComments} is a similar string parsing question.

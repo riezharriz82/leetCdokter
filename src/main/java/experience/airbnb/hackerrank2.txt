@@ -1,0 +1,24 @@
+Find the root of a perfectly contained BST
+Given a list of nodes [a, b, c] where a is value of the node, b and c are the value of it's left and right child respectively,
+find whether we can create a BST out from the nodes such that
+1. There is only a single BST ie. there are no multiple trees in the forest.
+2. BST is valid ie. no cycles in the tree
+3. Root node of the BST can cover all the nodes present in the input.
+4. No node in the BST points to an non-existent node ie. if b is the left child of a but b does not exists as a root node in the input
+
+Solved it by modelling the input as a graph ie. Map of Integer to Pair of Integer, Integer where pair contains the left and right child
+After creating the graph perform validations one by one
+First check no node in the graph points to an non-existent node by checking whether that key exists in the map or not
+
+Then find the root node by finding the node with in-degree of 0 by maintaining a visited set. The key which is not visited by any other node must be the root.
+If there are multiple such keys, the forest has multiple roots.
+
+Then do a DFS from the root to see whether the graph has cycles or not using a visited set.
+Also if visitedSet.size() == input.size(), this indicates all the nodes are reachable from root node.
+At this point the input is a valid BST.
+
+However I added an additional check to see whether the tree is actually a valid BST or not by performing simple range bound check at each node
+This check was not called out in the problem statement and doing this led to an interesting observation.
+I saw input like [48, 30, 10] which indicates 10 is the right child of 48 which can't lead to a valid BST.
+This validation resulted in me returning -1 whereas the expected output was different.
+Upon debugging and printing the input cases, I realized the problem. Wasted a lot of time in a problem which was not mine. Story of every software developer.
