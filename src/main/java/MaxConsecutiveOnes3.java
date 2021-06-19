@@ -23,7 +23,7 @@ public class MaxConsecutiveOnes3 {
      * Follow the standard sliding window paradigm for longest window problem, keep expanding the window until it becomes invalid
      * After that, keep shrinking it until it becomes valid again
      * <p>
-     * {@link LongestRepeatingCharacterReplacement} {@link SubarrayProductLessThanK} related problem
+     * {@link LongestRepeatingCharacterReplacement} {@link SubarrayProductLessThanK} {@link LongestSubarrayOfOnesAfterDeletingOneElement}
      */
     public int longestOnes(int[] A, int K) {
         int begin = 0, end = 0, result = 0;
