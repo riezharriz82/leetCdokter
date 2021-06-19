@@ -15,8 +15,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindDistanceInABinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindDistanceInABinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaxConsecutiveOnes3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MaxConsecutiveOnes3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,13 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00898" summary="Solve medium and a bit tricky to optimize time and space complexity to O(n) and O(logn) by leveraging the inorder traversal of a sorted list to convert it to a balanced BST.">
-      <created>1620309066961</created>
-      <option name="number" value="00898" />
-      <option name="presentableId" value="LOCAL-00898" />
-      <option name="project" value="LOCAL" />
-      <updated>1620309066961</updated>
     </task>
     <task id="LOCAL-00899" summary="Update class name to match problem statement name">
       <created>1620309970614</created>
@@ -664,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623961145853</updated>
     </task>
-    <option name="localTasksCounter" value="947" />
+    <task id="LOCAL-00947" summary="Solve medium problem, find the longest subarray of ones that can be made after deleting one element using sliding window.&#10;&#10;Leveraged prior learnings of solving standard sliding window problem where we are asked to increase window until the window becomes invalid. Then try to shrink the window until it becomes valid again. Too much fun :D">
+      <created>1624126235705</created>
+      <option name="number" value="00947" />
+      <option name="presentableId" value="LOCAL-00947" />
+      <option name="project" value="LOCAL" />
+      <updated>1624126235705</updated>
+    </task>
+    <option name="localTasksCounter" value="948" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -743,7 +743,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add another solutions to hard and extremely tricky problem, find the shortest path in a grid with obstacle eliminations using Djikstra and BFS by maintaining additional state per node.&#10;&#10;Learnings: Since this was a unweighted graph, BFS was the way to go. But we need to maintain additional state per node, so either maintain a nested array with additional dimension or maintain additional array similar to cost array. Visit an edge only if it reduces the cost or reduces no of eliminations. Last but not the least. Maintain a consistent state every node." />
     <MESSAGE value="Solve medium find distance between two nodes in a binary tree by finding the LCA." />
     <MESSAGE value="Solve easy problem, arrange an array into pairs such that sum of minimum of all pairs is maximized using greedy.&#10;&#10;Trick was to organize into pair such that waste is minimum. Since we are interested only in the minimum value of the pair, any number we pair with it would go to waste. So we need to pair it with a value &gt;= ai." />
     <MESSAGE value="Solve easy problem, find the maximum subarray of size k in an array using sliding window.&#10;&#10;Learnings: Smallest negative double value is -Double.MAX_VALUE or Double.NEGATIVE_INFINITY. Double.MIN_VALUE is actually the smallest positive value. Mind blown! Learnt something new today." />
@@ -768,7 +767,8 @@
     <MESSAGE value="Solve medium and a bit tricky problem, check whether we can generate the given string from an empty string by inserting &quot;abc&quot; at any position in the input string.&#10;&#10;Leveraged prior learnings of solving array transformation problems where the trick is to try to generate empty string from given string by deleting &quot;abc&quot; whenever found." />
     <MESSAGE value="Solve medium and a bit tricky problem, find the shortest distance to a target color using DP and Binary Search.&#10;&#10;Leveraged prior learnings of finding shortest distance to a specific character. This problem requires use of a 2D array." />
     <MESSAGE value="Add Airbnb hackerrank interview experiences." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Airbnb hackerrank interview experiences." />
+    <MESSAGE value="Solve medium problem, find the longest subarray of ones that can be made after deleting one element using sliding window.&#10;&#10;Leveraged prior learnings of solving standard sliding window problem where we are asked to increase window until the window becomes invalid. Then try to shrink the window until it becomes valid again. Too much fun :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, find the longest subarray of ones that can be made after deleting one element using sliding window.&#10;&#10;Leveraged prior learnings of solving standard sliding window problem where we are asked to increase window until the window becomes invalid. Then try to shrink the window until it becomes valid again. Too much fun :D" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

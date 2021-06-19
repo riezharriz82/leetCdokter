@@ -32,7 +32,7 @@ public class FindDistanceInABinaryTree {
      * TimeComplexity: 3 linear passes.
      * Can be reduced to a single pass.
      * <p>
-     * {@link LCABinaryTree}
+     * {@link LCABinaryTree} {@link LowestCommonAncestorOfABinaryTree4}
      */
     public int findDistance(TreeNode root, int p, int q) {
         if (p == q) {
