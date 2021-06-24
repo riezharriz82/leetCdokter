@@ -320,13 +320,6 @@
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
     </task>
-    <task id="LOCAL-00900" summary="Solve medium and a bit tricky problem, split the array into at most k groups such that sum of averages is maximised using recursion + memoization. &#10;&#10;Do note that the largest average would be possible by splitting into maximum groups, so the problem statement reduces to split the array into k groups such that sum of averages is maximized.&#10;&#10;Leveraged past learnings of solving similar split array problems.">
-      <created>1620402802760</created>
-      <option name="number" value="00900" />
-      <option name="presentableId" value="LOCAL-00900" />
-      <option name="project" value="LOCAL" />
-      <updated>1620402802760</updated>
-    </task>
     <task id="LOCAL-00901" summary="Solve medium find the time required to fill memory sticks by consuming i bits every ith second using simulation.">
       <created>1621100675732</created>
       <option name="number" value="00901" />
@@ -663,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624127228602</updated>
     </task>
-    <option name="localTasksCounter" value="949" />
+    <task id="LOCAL-00949" summary="Solve easy and a bit tricky problem, find the largest odd number that exists as a substring in the given string using greedy.&#10;&#10;Took a lot of time to solve this &quot;easy&quot; problem during the contest.">
+      <created>1624189204804</created>
+      <option name="number" value="00949" />
+      <option name="presentableId" value="LOCAL-00949" />
+      <option name="project" value="LOCAL" />
+      <updated>1624189204804</updated>
+    </task>
+    <option name="localTasksCounter" value="950" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -742,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy problem, arrange an array into pairs such that sum of minimum of all pairs is maximized using greedy.&#10;&#10;Trick was to organize into pair such that waste is minimum. Since we are interested only in the minimum value of the pair, any number we pair with it would go to waste. So we need to pair it with a value &gt;= ai." />
     <MESSAGE value="Solve easy problem, find the maximum subarray of size k in an array using sliding window.&#10;&#10;Learnings: Smallest negative double value is -Double.MAX_VALUE or Double.NEGATIVE_INFINITY. Double.MIN_VALUE is actually the smallest positive value. Mind blown! Learnt something new today." />
     <MESSAGE value="Add approach and related problems in RepeatedStringMatch problem. Find the minimum number of times a string has to be repeated such that another string is a substring of it." />
     <MESSAGE value="Add approach and related non overlapping problems in NumberOfGoodWaysToSplitString" />
@@ -767,7 +766,8 @@
     <MESSAGE value="Add Airbnb hackerrank interview experiences." />
     <MESSAGE value="Solve medium problem, find the longest subarray of ones that can be made after deleting one element using sliding window.&#10;&#10;Leveraged prior learnings of solving standard sliding window problem where we are asked to increase window until the window becomes invalid. Then try to shrink the window until it becomes valid again. Too much fun :D" />
     <MESSAGE value="Solve medium problem, find the lowest common ancestor (LCA) for the provided K nodes using recursion.&#10;&#10;Leveraged prior learning of finding LCA for 2 nodes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, find the lowest common ancestor (LCA) for the provided K nodes using recursion.&#10;&#10;Leveraged prior learning of finding LCA for 2 nodes." />
+    <MESSAGE value="Solve easy and a bit tricky problem, find the largest odd number that exists as a substring in the given string using greedy.&#10;&#10;Took a lot of time to solve this &quot;easy&quot; problem during the contest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and a bit tricky problem, find the largest odd number that exists as a substring in the given string using greedy.&#10;&#10;Took a lot of time to solve this &quot;easy&quot; problem during the contest." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
