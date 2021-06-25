@@ -14,6 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -318,13 +319,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00903" summary="Solve medium find whether the provided strings match the provided pattern by maintaining a mapping from source to target and from target to source.&#10;&#10;Very similar to previously solved problems.">
-      <created>1621619777669</created>
-      <option name="number" value="00903" />
-      <option name="presentableId" value="LOCAL-00903" />
-      <option name="project" value="LOCAL" />
-      <updated>1621619777670</updated>
     </task>
     <task id="LOCAL-00904" summary="Solve medium find the minimum path sum to reach any cell of last row from any cell in the first row using recursion + memoization.&#10;&#10;Leveraged prior learnings of directly using DP as the graph does not contain any cycles.">
       <created>1621620492059</created>
@@ -662,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624643514227</updated>
     </task>
-    <option name="localTasksCounter" value="952" />
+    <task id="LOCAL-00952" summary="Add gotchas in tricky greedy problem RemoveKDigits and FindTheMostCompetitiveSubsequence">
+      <created>1624644220052</created>
+      <option name="number" value="00952" />
+      <option name="presentableId" value="LOCAL-00952" />
+      <option name="project" value="LOCAL" />
+      <updated>1624644220052</updated>
+    </task>
+    <option name="localTasksCounter" value="953" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -741,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Add approach and related non overlapping problems in NumberOfGoodWaysToSplitString" />
     <MESSAGE value="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking." />
     <MESSAGE value="Solve easy and a bit tricky problem, split a string such that it results in all balanced substrings, containing equal no of L and R using greedy.&#10;&#10;Reduce the problem to finding balanced parentheses substrings in a string by assigning -1 to L and 1 to R." />
     <MESSAGE value="Update README by adding &quot;How to use&quot; instructions." />
@@ -766,7 +766,8 @@
     <MESSAGE value="Solve easy and a bit tricky problem, find the largest odd number that exists as a substring in the given string using greedy.&#10;&#10;Took a lot of time to solve this &quot;easy&quot; problem during the contest." />
     <MESSAGE value="Solve medium problem, reverse a contiguous block of linked list [left, right] using three pointers" />
     <MESSAGE value="Update approach and add related problems for RemoveKDigits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update approach and add related problems for RemoveKDigits" />
+    <MESSAGE value="Add gotchas in tricky greedy problem RemoveKDigits and FindTheMostCompetitiveSubsequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gotchas in tricky greedy problem RemoveKDigits and FindTheMostCompetitiveSubsequence" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
