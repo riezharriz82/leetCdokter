@@ -16,6 +16,8 @@
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NextGreaterElement3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NextGreaterElement3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RemoveKDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RemoveKDigits.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,10 +306,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.MovieFestival" />
         <item itemvalue="Application.RestaurantCustomers" />
-        <item itemvalue="Application.ConcertTickets (1)" />
+        <item itemvalue="Application.MovieFestival" />
         <item itemvalue="Application.ConcertTickets" />
+        <item itemvalue="Application.ConcertTickets (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -319,13 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00901" summary="Solve medium find the time required to fill memory sticks by consuming i bits every ith second using simulation.">
-      <created>1621100675732</created>
-      <option name="number" value="00901" />
-      <option name="presentableId" value="LOCAL-00901" />
-      <option name="project" value="LOCAL" />
-      <updated>1621100675732</updated>
     </task>
     <task id="LOCAL-00902" summary="Solve medium and a bit tricky problem, find the box contents after rotating a box containing stones and stationary obstacles using two pointers.&#10;&#10;Leveraged previous learnings of simulating rotation using transpose + reverse.">
       <created>1621102744282</created>
@@ -663,7 +658,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624189204804</updated>
     </task>
-    <option name="localTasksCounter" value="950" />
+    <task id="LOCAL-00950" summary="Solve medium problem, reverse a contiguous block of linked list [left, right] using three pointers">
+      <created>1624563720522</created>
+      <option name="number" value="00950" />
+      <option name="presentableId" value="LOCAL-00950" />
+      <option name="project" value="LOCAL" />
+      <updated>1624563720523</updated>
+    </task>
+    <option name="localTasksCounter" value="951" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -742,7 +744,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy problem, find the maximum subarray of size k in an array using sliding window.&#10;&#10;Learnings: Smallest negative double value is -Double.MAX_VALUE or Double.NEGATIVE_INFINITY. Double.MIN_VALUE is actually the smallest positive value. Mind blown! Learnt something new today." />
     <MESSAGE value="Add approach and related problems in RepeatedStringMatch problem. Find the minimum number of times a string has to be repeated such that another string is a substring of it." />
     <MESSAGE value="Add approach and related non overlapping problems in NumberOfGoodWaysToSplitString" />
     <MESSAGE value="Solve medium problem, split a string such that it results into max number of unique substrings using backtracking." />
@@ -767,7 +768,8 @@
     <MESSAGE value="Solve medium problem, find the longest subarray of ones that can be made after deleting one element using sliding window.&#10;&#10;Leveraged prior learnings of solving standard sliding window problem where we are asked to increase window until the window becomes invalid. Then try to shrink the window until it becomes valid again. Too much fun :D" />
     <MESSAGE value="Solve medium problem, find the lowest common ancestor (LCA) for the provided K nodes using recursion.&#10;&#10;Leveraged prior learning of finding LCA for 2 nodes." />
     <MESSAGE value="Solve easy and a bit tricky problem, find the largest odd number that exists as a substring in the given string using greedy.&#10;&#10;Took a lot of time to solve this &quot;easy&quot; problem during the contest." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve easy and a bit tricky problem, find the largest odd number that exists as a substring in the given string using greedy.&#10;&#10;Took a lot of time to solve this &quot;easy&quot; problem during the contest." />
+    <MESSAGE value="Solve medium problem, reverse a contiguous block of linked list [left, right] using three pointers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, reverse a contiguous block of linked list [left, right] using three pointers" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

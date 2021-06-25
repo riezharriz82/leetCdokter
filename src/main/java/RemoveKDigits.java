@@ -23,14 +23,19 @@ import java.util.ArrayDeque;
  */
 public class RemoveKDigits {
     /**
+     * <pre>
      * Approach: Greedy, Removal of characters will lead to a subsequence of the number, so we can reframe the question
-     * as find lexicographically smallest subsequence after removing k characters from the string
-     * <p>
+     * as find the lexicographically smallest subsequence after removing k characters from the string
+     *
+     * Now given a string of same length, the value of the leftmost digits contain the most weight ie. "1axxxx" < "1bxxx" if a < b
+     * So we have to scan left to right and delete those digits that are greater than the digits occurring on its right
+     *
      * We keep adding characters to a stack and pop from it only when we see a smaller character. Pop here signifies skipping
      * that character in the result because in subsequence we have two options, either pick the character or skip it.
      * If we see a smaller character to the right, it makes sense to try to start subsequence from it, rather than current character
-     * <p>
+     * </pre>
      * {@link SmallestSubsequenceOfDistinctCharacters} {@link FindTheMostCompetitiveSubsequence} {@link LongestSubstringWithAtLeastKRepeatingCharacters}
+     * {@link NextGreaterElement3}
      */
     public String removeKdigits(String num, int k) {
         ArrayDeque<Character> stack = new ArrayDeque<>();
@@ -42,7 +47,7 @@ public class RemoveKDigits {
             }
             stack.push(c);
         }
-        //if stack size > k, trim the characters falling out of limits e.g if stack is {1,2,3,4} and k=2, result is {1,2}
+        //if k > 0, trim the characters falling out of limits e.g if stack is {1,2,3,4} and k=2, result is {1,2}
         while (k > 0) {
             stack.pop();
             k--;

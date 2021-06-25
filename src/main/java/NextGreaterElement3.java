@@ -17,12 +17,11 @@ import java.util.List;
 public class NextGreaterElement3 {
     /**
      * Approach : Iterate from the right to find a digit a[i] greater than adjacent left a[i-1]
-     * <p>
      * Now find an index j (j >= i) such that a[j] > a[i-1]
-     * <p>
      * Swap out a[i-1], a[j]
-     * <p>
      * Sort the digits from i till end (NOT Reverse, as numbers can be duplicate)
+     *
+     * {@link RemoveKDigits}
      */
     public int nextGreaterElement(int n) {
         List<Integer> digits = new ArrayList<>();
