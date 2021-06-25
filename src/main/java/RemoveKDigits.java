@@ -40,7 +40,7 @@ public class RemoveKDigits {
     public String removeKdigits(String num, int k) {
         ArrayDeque<Character> stack = new ArrayDeque<>();
         for (char c : num.toCharArray()) {
-            while (!stack.isEmpty() && stack.peek() > c && k > 0) {
+            while (!stack.isEmpty() && stack.peek() > c && k > 0) { //notice that we don't pop when stack.peek() == c
                 //skip characters that are greater than current char and if within limits k > 0
                 stack.pop();
                 k--;

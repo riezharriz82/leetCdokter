@@ -44,7 +44,7 @@ public class FindTheMostCompetitiveSubsequence {
         ArrayDeque<Integer> stack = new ArrayDeque<>();
         int maxPopPossible = nums.length - k; //this is important as it ensures we have at least k items in the stack
         for (int num : nums) {
-            while (!stack.isEmpty() && stack.peek() > num && maxPopPossible > 0) {
+            while (!stack.isEmpty() && stack.peek() > num && maxPopPossible > 0) { //notice that we don't pop when stack.peek() == num
                 stack.pop();
                 maxPopPossible--;
             }
