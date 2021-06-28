@@ -15,7 +15,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dbb84ff-cb70-4f33-84ac-c2138746d980" name="Default Changelist" comment="Solve medium and a bit tricky problem, find the min no of boats to save people using greedy.&#10;&#10;Trick was to leverage 2 pointers properly and to reduce the wastage by assigning the higher weight people first.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Candy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindKClosestElements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WordLadder.java" afterDir="false" />
     </list>
@@ -321,13 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561288929632</updated>
-    </task>
-    <task id="LOCAL-00905" summary="Solve medium and a bit tricky problem, find the maximum length of concatenated string such that it does not contain any duplicate char using bitmasking + backtracking.&#10;&#10;Leveraged prior learning of using bitmasking to find common characters in strings and then applied backtracking by either choosing to concatenate current string or skipping current string.">
-      <created>1621622078350</created>
-      <option name="number" value="00905" />
-      <option name="presentableId" value="LOCAL-00905" />
-      <option name="project" value="LOCAL" />
-      <updated>1621622078350</updated>
     </task>
     <task id="LOCAL-00906" summary="Solve medium, find no of pairs whose sum equals target sum provided you can increment the value at any index, by maintaining a hashmap of value to its frequency.&#10;&#10;Leveraged prior learnings of solving two sum problems.">
       <created>1621624968710</created>
@@ -665,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624651585075</updated>
     </task>
-    <option name="localTasksCounter" value="954" />
+    <task id="LOCAL-00954" summary="Fix typo in approach of Candy">
+      <created>1624890077239</created>
+      <option name="number" value="00954" />
+      <option name="presentableId" value="LOCAL-00954" />
+      <option name="project" value="LOCAL" />
+      <updated>1624890077240</updated>
+    </task>
+    <option name="localTasksCounter" value="955" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -744,7 +743,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Solve easy and a bit tricky problem, split a string such that it results in all balanced substrings, containing equal no of L and R using greedy.&#10;&#10;Reduce the problem to finding balanced parentheses substrings in a string by assigning -1 to L and 1 to R." />
     <MESSAGE value="Update README by adding &quot;How to use&quot; instructions." />
     <MESSAGE value="Add another approach to solve SplitAStringIntoMaxNumberOfUniqueSubstrings using Bit magic" />
     <MESSAGE value="Solve CSES Introductory problem, weird algorithm using simulation.&#10;&#10;Learnings: While multiplication, take care of integer overflow." />
@@ -769,7 +767,8 @@
     <MESSAGE value="Update approach and add related problems for RemoveKDigits" />
     <MESSAGE value="Add gotchas in tricky greedy problem RemoveKDigits and FindTheMostCompetitiveSubsequence" />
     <MESSAGE value="Solve medium problem, find the most visited sequence of website by users using brute force." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve medium problem, find the most visited sequence of website by users using brute force." />
+    <MESSAGE value="Fix typo in approach of Candy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix typo in approach of Candy" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
