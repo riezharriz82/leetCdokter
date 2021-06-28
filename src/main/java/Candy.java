@@ -38,7 +38,7 @@ public class Candy {
      * If the ratings form a graph like this, the root element must get 7 candies
      * So make a pass from left to right and assign candies greedily based on whether current rating is greater than previous neighbour
      * Similarly make another pass from right to left
-     * In the end, return the sum of maximum candy a person should receive.
+     * In the end, return the maximum candy a person should receive based on either left or right pass.
      *
      * Happy to solve this question on my own in ~40 minutes.
      * </pre>
