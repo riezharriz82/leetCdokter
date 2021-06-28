@@ -28,7 +28,9 @@ public class CountSubstringsWithEquals0And1 {
     /**
      * Approach: Prefix sum, consider lower case character as -1 and upper case character as 1, then the problem reduces to finding
      * no of subarrays with target sum of 0
-     * <p>
+     * Similar to https://leetcode.com/problems/contiguous-array/
+     *
+     * {@link CountBinarySubstrings}
      * TimeComplexity: O(n)
      */
     int countSubstringOptimized(String S) {

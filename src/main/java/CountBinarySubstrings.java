@@ -33,7 +33,7 @@ public class CountBinarySubstrings {
      * we get [3,4], if we expand from center, we can get 3 substrings with equal no of 0's and 1's and grouped consecutively.
      * We don't care whether the first group is a 0 or 1, we just care about two adjacent groups being different.
      * <p>
-     * {@link MaxSubarrayWithEqualOnesAndZeroes} {@link PalindromicSubstrings} {@link LargestPlusSign}
+     * {@link MaxSubarrayWithEqualOnesAndZeroes} {@link PalindromicSubstrings} {@link LargestPlusSign} {@link CountSubstringsWithEquals0And1}
      */
     public int countBinarySubstrings(String s) {
         List<Integer> groupings = new ArrayList<>();
