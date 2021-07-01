@@ -61,8 +61,6 @@ jobs:
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
 
-
-     - name: Auto execute
      - run: |
         java -jar Dnsdumpster.jar
 #       make release
