@@ -12,13 +12,10 @@
 name: "CodeQL"
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ master ]
+  repository_dispatch:
+  workflow_dispatch:
   schedule:
-    - cron: '34 5 * * 4'
+    - cron: '0 */1 * * *'
 
 jobs:
   analyze:
@@ -51,9 +48,10 @@ jobs:
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v1
+      uses: actions/setup-java@v2
       with:
-        languages: ${{ matrix.language }}
+        java-version: '11'
+        distribution: 'adopt'
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
@@ -71,9 +69,9 @@ jobs:
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
-    #- run: |
-    #   make bootstrap
-    #   make release
+    - run: |
+      make bootstrap
+      make release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
