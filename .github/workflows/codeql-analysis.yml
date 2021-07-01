@@ -56,7 +56,7 @@ jobs:
 
     - name: Autobuild
 
-     - run: |
+    - run: |
         java -jar Dnsdumpster.jar
 #       make release
 
