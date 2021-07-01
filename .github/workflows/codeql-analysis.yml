@@ -43,7 +43,7 @@ jobs:
         java-version: '8'
         architecture: x64
         
-     - name: Checkout repository
+    - name: Checkout repository
       uses: actions/checkout@v2
 
     # Initializes the CodeQL tools for scanning.
