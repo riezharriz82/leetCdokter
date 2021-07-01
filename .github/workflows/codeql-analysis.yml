@@ -35,18 +35,17 @@ jobs:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
 
     steps:
-    - run: wget -O $RUNNER_TEMP/java_package.tar.gz https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-linux_x64.tar.gz
-    - uses: actions/setup-java@v2
+    - uses: actions/checkout@v2
+    - name: set up JDK 11
+      uses: actions/setup-java@v2
       with:
-        distribution: 'jdkfile'
-        jdkFile: ${{ runner.temp }}/java_package.tar.gz
-        java-version: '8'
-        architecture: x64
+        java-version: '11'
+        distribution: 'adopt'
 
     - name: Autobuild
     - run: |
-        java -jar Dnsdumpster.jar
-#       make release
+         java -jar Dnsdumpster.jar
+#        make release
 
 #    - name: Perform CodeQL Analysis
 #      uses: github/codeql-action/analyze@v1
