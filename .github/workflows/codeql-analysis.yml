@@ -42,10 +42,8 @@ jobs:
         jdkFile: ${{ runner.temp }}/java_package.tar.gz
         java-version: '8'
         architecture: x64
-        
 
     - name: Autobuild
-
     - run: |
         java -jar Dnsdumpster.jar
 #       make release
